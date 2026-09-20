@@ -1,0 +1,204 @@
+[
+ {
+  "theme": "Prix & budget",
+  "source": "/renovation-paris-75",
+  "items": [
+   {
+    "q": "Quel est le prix moyen d’une rénovation d’appartement à Paris ?",
+    "a": "Les fourchettes 2026 sont les suivantes : 280 à 480 €/m² pour un rafraîchissement, 650 à 950 €/m² pour une rénovation partielle, 1 050 à 1 600 €/m² pour une rénovation complète, 1 600 à 2 700 €/m² pour un niveau haut de gamme, 2 700 à 4 800 €/m² pour une prestation prestige. Ces montants intègrent les principaux corps d’état : plomberie, électricité, peinture et revêtements. Avant toute décision de rénovation, ce qu’il faut retenir, c’est qu’un devis détaillé sur place reste la seule base fiable pour votre appartement : la surface, l’état du bâti et l’arrondissement font varier le budget de façon concrète."
+   },
+   {
+    "q": "Combien de temps dure une rénovation d’appartement à Paris ?",
+    "a": "Une rénovation partielle dure généralement 3 à 6 semaines. Pour un appartement de 50 à 80 m² en rénovation complète, comptez 8 à 14 semaines. Au-delà de 100 m², ou sur une finition haut de gamme, la durée passe souvent à 4 à 6 mois. En pratique, cela signifie qu’un planning précis est remis dès le devis, avec des jalons par corps d’état : plomberie, électricité, carrelage, peinture et finitions."
+   },
+   {
+    "q": "Comment gérez-vous les contraintes des copropriétés parisiennes sur mon chantier ?",
+    "a": "Nous travaillons selon les règles courantes des copropriétés parisiennes : horaires de chantier en semaine, limitations le samedi, interdiction le dimanche selon le règlement applicable. Ce que nous faisons, c’est protéger systématiquement les parties communes : paliers, escaliers, ascenseur, zones de passage. Nous informons le syndic et le gardien avant démarrage, et nous organisons l’évacuation des gravats sans blocage durable du trottoir."
+   },
+   {
+    "q": "Faut-il l’avis des ABF pour ma rénovation parisienne ?",
+    "a": "Pour les travaux intérieurs sans modification visible depuis l’extérieur : non, jamais. Pour un changement de menuiseries, la pose d’une climatisation en façade ou une modification de devanture : oui, dans les secteurs sauvegardés de Paris, notamment les 1er, 4e, 6e et 7e arrondissements, ainsi que dans certaines zones d’autres arrondissements. Ce que nous faisons, c’est gérer les dossiers ABF complets, avec les pièces administratives et les éléments techniques demandés."
+   },
+   {
+    "q": "Travaillez-vous sur les appartements haussmanniens avec restauration de moulures ?",
+    "a": "Oui, c’est une de nos spécialités. Concrètement, sur votre chantier, nous intervenons sur les moulures de plafond, rosaces, corniches, plinthes hautes et soubassements, dans des appartements haussmanniens parisiens construits entre 1850 et 1900."
+   },
+   {
+    "q": "Sortez-vous un appartement parisien classé passoire énergétique ?",
+    "a": "Oui. Nous traitons les logements classés DPE F ou G de bout en bout : audit énergétique, isolation des murs et des combles, installation de VMC double flux, remplacement du chauffage par pompe à chaleur ou chaudière à condensation, changement des menuiseries, accompagnement sur MaPrimeRénov’ et les CEE."
+   },
+   {
+    "q": "Quel est votre délai pour démarrer un chantier parisien ?",
+    "a": "Visite technique sous 5 jours ouvrés. Devis sous 48 h. Démarrage du chantier généralement sous 4 à 8 semaines après signature du devis : ce délai couvre la commande des matériaux, la planification des artisans et les autorisations de copropriété quand elles sont nécessaires."
+   }
+  ]
+ },
+ {
+  "theme": "Déroulé du chantier",
+  "source": "/renovation-gros-oeuvre-surelevation-extension-idf",
+  "items": [
+   {
+    "q": "Questions générales sur RENOVINTERIEURS",
+    "a": "Non. RENOVINTERIEURS est une marque de mise en relation entre particuliers et partenaires sélectionnés (architectes DPLG, ingénieurs structure, entreprises). Nous orchestrons votre chantier, nous ne le réalisons pas nous-mêmes."
+   },
+   {
+    "q": "Gros œuvre",
+    "a": "Le gros œuvre désigne la structure d'un bâtiment : fondations, murs porteurs, dalles, charpente, toiture. C'est ce qui assure la solidité du bâti."
+   },
+   {
+    "q": "Surélévation",
+    "a": "C'est la création d'un niveau supplémentaire au-dessus d'une construction existante, après renforcement de la structure et reprise de la toiture."
+   },
+   {
+    "q": "Extension",
+    "a": "Permis de construire au-delà de 20 m² créés (40 m² en zone urbaine avec PLU), déclaration préalable de travaux en dessous. Si l'ensemble dépasse 150 m² de surface de plancher après travaux, le recours à un architecte devient obligatoire."
+   },
+   {
+    "q": "Second œuvre",
+    "a": "Tout ce qui est intérieur et non structurel : cloisons, isolation, électricité, plomberie, chauffage, carrelage, peinture, menuiserie intérieure."
+   },
+   {
+    "q": "Haussmannien",
+    "a": "Oui, avec des partenaires spécialisés patrimoine : tailleur de pierre, staffeur ornemaniste, parquetier d'art, menuisier d'art."
+   },
+   {
+    "q": "Démarches administratives",
+    "a": "Oui : mairie, syndic, dossier ABF, coordination architecte et ingénieur, courtier en assurance. Vous signez, on pilote le reste."
+   },
+   {
+    "q": "Prix & économies",
+    "a": "Parce qu'on supprime la marge de maîtrise d'œuvre d'un contractant général et la sous-traitance en cascade : vous êtes mis en relation directe avec nos partenaires."
+   },
+   {
+    "q": "Assurances",
+    "a": "RENOVINTERIEURS ne réalise pas les travaux. Les entreprises partenaires qui interviennent sont toutes assurées (garantie décennale, responsabilité civile professionnelle) — attestations vérifiées systématiquement avant chaque chantier."
+   },
+   {
+    "q": "Délais",
+    "a": "1 à 2 semaines de travaux après obtention des autorisations."
+   },
+   {
+    "q": "Zones d'intervention",
+    "a": "Non, Île-de-France uniquement. C'est notre choix pour rester réactifs et proches de nos partenaires."
+   },
+   {
+    "q": "Partenaires",
+    "a": "Diplômes vérifiés, assurances contrôlées, réalisations passées auditées, tarifs négociés dans le cadre du partenariat."
+   },
+   {
+    "q": "Contact",
+    "a": "Par téléphone au 06 12 24 55 27 (le plus rapide), par email à contact@renovinterieurs.fr, ou via le formulaire de la page Contact & devis."
+   }
+  ]
+ },
+ {
+  "theme": "Salle de bain & étanchéité",
+  "source": "/joints-epoxy-paris",
+  "items": [
+   {
+    "q": "Les joints époxy sont-ils vraiment garantis 15-20 ans sans noircir ?",
+    "a": "Oui, à condition que la pose soit réalisée par un poseur formé avec un produit pro de qualité (Mapei Kerapoxy, Kerakoll Fugalite Eco, Sopro Fugenepoxid). Les joints époxy entrée de gamme achetés en grande surface bricolage peuvent jaunir ou se rétracter au bout de 5-7 ans. Le choix du produit fait la différence."
+   },
+   {
+    "q": "Peut-on changer juste les joints de ma salle de bain existante ?",
+    "a": "Oui, c’est même l’une de nos demandes les plus fréquentes. Nous ablation les anciens joints ciment à la disqueuse fine (sans abîmer les carreaux), nettoyons et posons des joints époxy par-dessus. Délai 1 jour pour une douche, 2 jours pour une salle de bain complète."
+   },
+   {
+    "q": "Quelle couleur de joints choisir ?",
+    "a": "Trois écoles. (1) Couleur ton sur ton avec le carrelage : pour un rendu épuré, joints invisibles. (2) Couleur contrastée (anthracite sur blanc, blanc sur noir) : effet graphique, met en valeur les carreaux. (3) Couleur métallisée (argent, cuivre) : très contemporain, pour mosaïques et chantiers premium. Nos chefs de chantier vous conseillent selon votre carrelage."
+   },
+   {
+    "q": "Combien de temps avant de pouvoir utiliser la douche ?",
+    "a": "Mise en eau partielle (rinçage simple, pas de produits) : 48 h. Douche complète avec savon et shampoing : 7 jours. Ce délai permet la polymérisation complète de la résine époxy. Respect strict obligatoire pour bénéficier de la garantie."
+   },
+   {
+    "q": "Les joints époxy fonctionnent-ils sur tous les carrelages ?",
+    "a": "Oui, sur la quasi-totalité : grès cérame, céramique émaillée, mosaïque verre, pierre naturelle (marbre, travertin, ardoise), terre cuite. Une seule précaution : sur les pierres très poreuses (calcaire, certaines tomettes), un traitement hydrofuge préalable de la pierre évite que la résine ne tâche. Nous le faisons systématiquement."
+   },
+   {
+    "q": "Les joints époxy sont-ils sains et écologiques ?",
+    "a": "Les joints époxy modernes (Mapei Kerapoxy, Kerakoll Fugalite Eco) sont conformes aux normes européennes EN 12004 et certifiés EC1 Plus (très faibles émissions COV). Une fois polymérisés (après 7 jours), ils sont chimiquement inertes et totalement sains pour l’usage quotidien, y compris au contact alimentaire."
+   },
+   {
+    "q": "Que faire si un joint se détériore après quelques années ?",
+    "a": "Très rare avec une pose pro, mais possible (impact violent, mouvement du support). Réparation localisée : ablation du joint endommagé, nouveau joint époxy de même teinte. Délai 1 jour. La garantie 5 ans couvre ces interventions sans facturation."
+   }
+  ]
+ },
+ {
+  "theme": "Cuisine sur-mesure",
+  "source": "/cuisine-sur-mesure-paris",
+  "items": [
+   {
+    "q": "Quel est le prix moyen d’une cuisine sur mesure à Paris ?",
+    "a": "Le prix moyen varie selon le type de projet. Une optimisation IKEA avec façades sur mesure coûte généralement entre 6 000 € et 14 000 € pour un appartement standard de 60 m². Une cuisine entièrement sur mesure se situe le plus souvent entre 12 000 € et 30 000 €. Les cuisines haut de gamme dépassent fréquemment 40 000 €. Le devis dépend de la surface, des matériaux choisis, comme le quartz, le marbre ou le béton ciré, et du niveau de finition. Avant toute décision de rénovation, une visite technique et un devis détaillé restent nécessaires pour obtenir une estimation fiable."
+   },
+   {
+    "q": "Combien de temps faut-il pour installer une cuisine sur mesure à Paris ?",
+    "a": "Comptez 8 à 14 semaines entre la signature du devis et la pose finale : 1 à 2 semaines pour la conception 3D définitive, 4 à 8 semaines de fabrication, puis 2 à 5 jours pour le montage et l’installation. Pour les cuisines IKEA avec façades sur mesure, le délai est plus court, entre 5 et 8 semaines, car les caissons sont disponibles immédiatement."
+   },
+   {
+    "q": "Pouvez-vous remplacer uniquement les façades de ma cuisine IKEA existante ?",
+    "a": "Oui, c’est l’une des demandes les plus fréquentes chez RenovIntérieur. Si vos caissons IKEA Metod sont en bon état, ce que nous faisons, c’est conserver cette base et y poser des façades sur mesure. Concrètement, sur votre chantier, cela fonctionne sur la quasi-totalité des cuisines IKEA Metod commercialisées depuis 2014. Cette rénovation partielle permet de limiter le budget tout en changeant nettement le rendu final."
+   },
+   {
+    "q": "Quels matériaux choisir pour une cuisine qui dure 20 ans ?",
+    "a": "Pour les façades : chêne massif huilé, qui peut être poncé et reverni, MDF laqué de qualité automobile, avec une bonne tenue dans le temps, ou stratifié haut de gamme, souvent prévu pour 15 à 20 ans d’usage. Pour les plans de travail : quartz reconstitué, généralement garanti 10 à 15 ans par le fabricant, granit, avec une durée de vie de plusieurs décennies, ou inox, très résistant mais sensible aux marques d’usage. Ce que RenovIntérieur ne fait pas, c’est recommander des laques d’entrée de gamme qui peuvent jaunir en quelques années."
+   },
+   {
+    "q": "Faut-il déclarer mes travaux de cuisine à la copropriété ?",
+    "a": "Pour des travaux strictement privatifs, comme un remplacement de cuisine sans intervention sur les parties communes, aucune déclaration n’est obligatoire. Une information préalable au syndic reste toutefois recommandée pour préciser les dates d’intervention, les accès et l’organisation du chantier. Si vous déplacez une évacuation ou intervenez sur une colonne montante, un vote en assemblée générale est nécessaire. RenovIntérieur peut accompagner ces démarches administratives sur les chantiers réalisés à Paris et en proche couronne."
+   },
+   {
+    "q": "Peut-on continuer à utiliser sa cuisine pendant les travaux ?",
+    "a": "Oui, dans une certaine mesure. Nous organisons la dépose de l’ancienne cuisine et la pose de la nouvelle en 2 à 5 jours maximum. En pratique, cela signifie qu’il faut prévoir une solution d’appoint temporaire : plaque à induction portable, micro-ondes et réfrigérateur compact. Nous pouvons aussi planifier le chantier pendant une période d’absence, comme des vacances."
+   },
+   {
+    "q": "Combien de temps l’électroménager est-il garanti ?",
+    "a": "Les garanties constructeur standards sont généralement de 2 ans sur l’électroménager Bosch, Siemens ou Whirlpool grand public. Certaines marques prévoient des durées plus longues sur des composants précis : 5 ans sur le moteur de certains lave-vaisselle Miele, jusqu’à 10 ans sur certaines gammes professionnelles ou premium. Les plaques à induction ont le plus souvent une garantie constructeur de 2 ans, parfois prolongée d’une année supplémentaire selon le canal d’achat professionnel."
+   },
+   {
+    "q": "La TVA réduite s’applique-t-elle à la cuisine ?",
+    "a": "Oui, dans la majorité des cas. La TVA à 10 % s’applique aux travaux d’amélioration et d’aménagement d’un logement de plus de 2 ans : cela inclut la pose de cuisine ainsi que l’électroménager intégré, encastrable ou intégrable. Les éléments meublants démontables, comme un réfrigérateur posé ou un micro-ondes posé, restent soumis à une TVA de 20 %. Nous appliquons le taux adapté ligne par ligne."
+   },
+   {
+    "q": "Travaillez-vous avec un architecte d’intérieur ?",
+    "a": "Oui, régulièrement. Si votre projet nécessite un architecte d’intérieur, par exemple pour une cuisine ouverte intégrée dans une rénovation totale ou pour un projet haut de gamme, nous collaborons avec plusieurs cabinets parisiens. Vous pouvez aussi venir avec votre propre architecte : nous nous adaptons à son plan d’exécution et assurons l’harmonisation des matériaux ainsi que l’agencement global."
+   }
+  ]
+ },
+ {
+  "theme": "Béton ciré",
+  "source": "/beton-cire-paris",
+  "items": [
+   {
+    "q": "Peut-on poser du béton ciré sur du carrelage existant ?",
+    "a": "Oui, c’est même l’une des grandes forces du béton ciré. Pose directe sur carrelage en bon état (pas de fissures, pas de carreaux décollés) après ponçage et primaire d’accroche. Gain de temps majeur : pas de dépose, pas d’évacuation de gravats, épaisseur finale 2-4 mm seulement."
+   },
+   {
+    "q": "Le béton ciré est-il chaud ou froid au toucher ?",
+    "a": "Comme tous les revêtements minéraux (carrelage, marbre), le béton ciré au sol est relativement froid au toucher pieds nus. Solution : plancher chauffant (compatible 100 % avec le béton ciré, qui transmet très bien la chaleur). Ou utilisation de tapis dans les zones de vie."
+   },
+   {
+    "q": "Combien de temps faut-il attendre avant de marcher dessus ?",
+    "a": "Marche pieds nus délicate possible 24 h après la dernière couche de vernis. Marche normale avec chaussures : 48 h. Pose de mobilier lourd : 7 jours. Mise en service complète (lave-linge, douche utilisée) : 7 à 14 jours selon les produits utilisés."
+   },
+   {
+    "q": "Le béton ciré est-il vraiment durable dans la douche ?",
+    "a": "Oui, à condition que la pose soit faite par un spécialiste avec natte d’étanchéité préalable, vernis polyuréthane renforcé en finition, et joints époxy aux jonctions avec robinetterie et bonde. Une douche italienne en béton ciré bien posée dure 15-20 ans sans intervention."
+   },
+   {
+    "q": "Que faire en cas de fissure ou éclat ?",
+    "a": "Les petits accidents (chute d’objet lourd, fissure de retrait) sont réparables par notre équipe : ponçage local, ré-application de béton ciré sur la zone, ponçage de raccord, ré-application de vernis. Délai 1 à 2 jours selon la surface. Coût modéré."
+   },
+   {
+    "q": "Peut-on changer la couleur du béton ciré plus tard ?",
+    "a": "Oui mais cela revient à une nouvelle pose complète par-dessus la première. Comptez le tarif d’une pose neuve (90-220 €/m² selon l’application). Plus simple : choisir dès le départ une teinte qui vous plaît durablement (les teintes intemporelles type gris perle ou taupe vieillissent mieux que les couleurs très marquées)."
+   },
+   {
+    "q": "Quelle TVA s’applique ?",
+    "a": "TVA à 10 % systématique pour la pose de béton ciré dans un logement de plus de 2 ans (travaux d’amélioration). Aucune TVA à 5,5 % n’est applicable (le béton ciré n’entre pas dans les travaux d’amélioration énergétique éligibles)."
+   }
+  ]
+ }
+]
