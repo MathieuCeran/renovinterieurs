@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 import { ActionBar } from "@/components/layout/action-bar";
 import { Footer } from "@/components/layout/footer";
@@ -120,7 +121,20 @@ const jsonLd = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="fr" className={`${inter.variable} ${fraunces.variable}`}>
+      {/* Google Tag Manager : charge gtm.js via next/script (le composant
+          officiel ne rend pas le fallback <noscript>, posé ci-dessous). */}
+      <GoogleTagManager gtmId="GTM-P8SVQPKV" />
       <body className="min-h-dvh">
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-P8SVQPKV"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+            title="Google Tag Manager"
+          />
+        </noscript>
         {/* L’ouverture cinématique n’est jouée qu’une fois par session.
             Exécuté en tête de <body> : l’attribut est posé avant que le
             rideau ne soit peint. (Un <head> manuel casserait la gestion
