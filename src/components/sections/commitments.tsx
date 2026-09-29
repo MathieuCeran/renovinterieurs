@@ -33,9 +33,9 @@ const prestations = [
     href: "/renovation-appartement-paris",
   },
   {
-    label: "Paris 75",
-    title: "Rénovation appartement Paris",
-    href: "/renovation-appartement-paris",
+    label: "Zones 75 · 92 · 78 · 94",
+    title: "Nos zones d’intervention en Île-de-France",
+    href: "/zones",
   },
   {
     label: "Salle de bain",
