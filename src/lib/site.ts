@@ -7,7 +7,7 @@ export const site = {
   name: "RenovIntérieurs",
   legalName: "RenovIntérieurs — Marque de Archi Renov",
   tagline: "Rénovation intérieur & second œuvre",
-  url: "https://renovinterieurs.fr",
+  url: "https://www.renovinterieurs.fr",
   email: "contact@renovinterieurs.fr",
   phoneDisplay: "06 12 24 55 27",
   phoneHref: "tel:+33612245527",

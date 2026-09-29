@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Article, SectionHeading, Toc } from "@/components/page/article";
 import { Inline, Links } from "@/components/page/blocks";
 import { InnerHero, anchorId } from "@/components/page/inner-hero";
+import { PhoneIcon, Pill } from "@/components/ui/kit";
 import { Commitments } from "@/components/sections/commitments";
 import { Cta } from "@/components/sections/cta";
 import {
@@ -158,33 +159,80 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
         crumbHref={parentCrumb.href}
       />
 
-      {/* Chapeau : accroche à gauche, détail à droite, alignés en haut */}
+      {/* Chapeau : accroche + actions à gauche, carte « ce que nous pilotons » à droite */}
       {page.intro.length > 0 && (
         <section
           className="container-x pt-12 pb-4 lg:pt-16 lg:pb-6"
           aria-label="Introduction"
         >
-          <div className="grid gap-8 lg:grid-cols-2 lg:gap-16">
-            <div>
+          <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14">
+            <div className="flex flex-col">
               <p className="dot-label reveal-sm text-muted">
                 {page.eyebrow ?? parentCrumb.label}
               </p>
-              <p className="reveal mt-5 max-w-[36ch] text-[clamp(1.2rem,2vw,1.6rem)] leading-[1.4] font-medium tracking-[-0.015em] text-balance text-ink">
+              <p className="reveal mt-5 max-w-[34ch] text-[clamp(1.2rem,1.9vw,1.55rem)] leading-[1.4] font-medium tracking-[-0.015em] text-balance text-ink">
                 <Inline v={page.intro[0]} />
               </p>
+              <div className="reveal mt-auto flex flex-wrap items-center gap-3 pt-8">
+                <Pill href="#devis" tone="terra">
+                  Obtenir un devis
+                </Pill>
+                <a
+                  href={site.phoneHref}
+                  className="group inline-flex items-center gap-2.5 rounded-full border border-ink/20 px-5 py-3 text-[0.88rem] font-medium text-ink transition-colors duration-500 hover:border-ink hover:bg-ink hover:text-paper"
+                >
+                  <PhoneIcon className="size-4 text-terra transition-colors group-hover:text-paper" />
+                  {site.phoneDisplay}
+                </a>
+              </div>
             </div>
-            {page.intro.length > 1 && (
-              <div className="reveal max-w-lg border-line lg:border-l lg:pt-8 lg:pl-10">
-                {page.intro.slice(1).map((p, i) => (
+
+            <aside className="reveal rounded-[clamp(18px,2.4vw,28px)] bg-paper p-7 lg:self-start lg:p-8">
+              <p className="dot-label text-[0.74rem] text-terra">
+                Ce que nous pilotons
+              </p>
+              {page.intro.length > 1 ? (
+                page.intro.slice(1).map((p, i) => (
                   <p
                     key={i}
-                    className="mt-4 text-[0.98rem] leading-[1.75] text-muted first:mt-0"
+                    className="mt-4 text-[0.95rem] leading-[1.7] text-muted"
                   >
                     <Inline v={p} />
                   </p>
+                ))
+              ) : (
+                <p className="mt-4 text-[0.95rem] leading-[1.7] text-muted">
+                  Un interlocuteur unique du diagnostic à la réception, un
+                  devis détaillé sous 48 h, un compte-rendu chaque semaine.
+                </p>
+              )}
+              <ul className="mt-6 grid gap-2.5 border-t border-line pt-5 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
+                {[
+                  "Devis détaillé sous 48 h",
+                  "Visite technique sous 5 jours",
+                  "SAV 12 mois après livraison",
+                ].map((t) => (
+                  <li
+                    key={t}
+                    className="flex items-center gap-2.5 text-[0.84rem] font-medium text-ink"
+                  >
+                    <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-terra/12 text-terra">
+                      <svg viewBox="0 0 16 16" aria-hidden className="size-3">
+                        <path
+                          d="M4.5 8.3l2.2 2.2 4.8-5"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="1.8"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                    {t}
+                  </li>
                 ))}
-              </div>
-            )}
+              </ul>
+            </aside>
           </div>
         </section>
       )}
