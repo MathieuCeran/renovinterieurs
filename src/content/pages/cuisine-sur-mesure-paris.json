@@ -1,0 +1,166 @@
+{
+  "title": "Cuisine sur mesure Paris : sur plan ou façades Metod",
+  "description": "Cuisine sur mesure à Paris : conçue sur plan ou façades sur mesure sur caissons IKEA Metod. Chêne, laque, quartz, inox. Devis détaillé sous 48 h.",
+  "h1": "Cuisine sur mesure à Paris : dessinée sur plan ou façades sur Metod",
+  "kind": "service",
+  "parent": "/nos-services",
+  "eyebrow": "Cuisine sur mesure · Paris et Île-de-France",
+  "hero": "/images/paris-cuisine-sur-mesure.jpg",
+  "intro": [
+    "Dans un appartement parisien, la cuisine en kit tombe rarement juste : murs hors d’équerre, gaine à contourner, fenêtre basse, hotte sans conduit. Une cuisine dessinée pour la pièce absorbe ces vides et ces décalages. RenovIntérieurs propose deux voies : la conception sur plan avec notre cuisiniste partenaire, ou des façades sur mesure posées sur des caissons IKEA Metod.",
+    "Dans les deux cas, nous pilotons tout ce qui entoure le meuble : plomberie, circuits électriques dédiés, ventilation, crédence, sol et peinture. Un seul devis, un interlocuteur unique, une pose de 2 à 5 jours et un compte-rendu chaque semaine jusqu’à la mise en service."
+  ],
+  "sections": [
+    {
+      "title": "En bref",
+      "blocks": [
+        {
+          "t": "stats",
+          "items": [
+            { "value": "48 h", "label": "pour un devis détaillé" },
+            { "value": "2 à 5 jours", "label": "de dépose et de pose" },
+            { "value": "5 à 8 sem.", "label": "du devis à la pose sur Metod" },
+            { "value": "40 à 60 %", "label": "d’économie face au tout sur mesure" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nos cuisines à Paris",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Deux approches, un même niveau de finition : [nos réalisations](/realisations-renovation) montrent le résultat en situation."
+        },
+        {
+          "t": "gallery",
+          "items": [
+            {
+              "src": "/images/paris-cuisine-sur-mesure.jpg",
+              "alt": "Cuisine sur mesure avec façades toute hauteur et plan de travail usiné",
+              "caption": "Cuisine sur mesure : façades toute hauteur, plan de travail usiné aux cotes de la pièce."
+            },
+            {
+              "src": "/images/loft-cuisine-cheminee.jpg",
+              "alt": "Cuisine ouverte sur le séjour d’un loft avec cheminée et sol en béton ciré",
+              "caption": "Cuisine ouverte dans un loft : îlot, cheminée et sol en béton ciré continu."
+            },
+            {
+              "src": "/images/bibliotheque-sur-mesure.webp",
+              "alt": "Bibliothèque sur mesure en bois massif avec niches et rangements fermés",
+              "caption": "Bibliothèque sur mesure en bois massif : la même menuiserie que pour nos façades de cuisine."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ce que vous obtenez",
+      "blocks": [
+        {
+          "t": "cards",
+          "items": [
+            {
+              "title": "Un relevé au millimètre",
+              "text": "Relevé laser, photos, repérage du gaz, de la VMC et des évacuations. Puis un échange sur vos usages : qui cuisine, combien à table, où poser l’ordinateur."
+            },
+            {
+              "title": "Une conception validée en 3D",
+              "text": "Sous 7 à 10 jours, une modélisation 3D et un devis poste par poste : caissons, façades, plan, électroménager, montage et pose."
+            },
+            {
+              "title": "La conception sur plan",
+              "text": "Caissons, façades, plan et rangements fabriqués aux cotes de votre pièce par notre cuisiniste partenaire. Le plus souvent entre 12 000 et 30 000 €."
+            },
+            {
+              "title": "Les façades sur mesure sur IKEA Metod",
+              "text": "Caissons Metod conservés, façades dessinées et fabriquées par un menuisier ébéniste. Le rendu du sur mesure pour 40 à 60 % de moins."
+            },
+            {
+              "title": "Les travaux autour",
+              "text": "Circuits 32 A et 16 A dédiés, tableau mis aux normes si besoin, évacuation déplacée avec sa pente, hotte à recyclage quand il n’y a pas de conduit."
+            },
+            {
+              "title": "La pose et la mise en service",
+              "text": "2 à 5 jours de dépose et de pose, électroménager mis en service, joints époxy sur la crédence, nettoyage de fin de chantier."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nos signatures : matériaux et finitions",
+      "blocks": [
+        {
+          "t": "callout",
+          "title": "Façades : chêne massif huilé, MDF laqué, stratifié",
+          "v": "Le chêne huilé se ponce et se rénove, le MDF laqué se décline dans toutes les teintes RAL, le stratifié haut de gamme imite le béton ou le marbre. Nous écartons les laques d’entrée de gamme qui jaunissent."
+        },
+        {
+          "t": "callout",
+          "title": "Plans de travail : quartz, granit, inox",
+          "v": "Quartz non poreux pour l’usage quotidien, granit pour les cuisines très sollicitées, inox brossé pour l’esprit professionnel. Chaque plan est usiné aux dimensions exactes de la pièce."
+        },
+        {
+          "t": "callout",
+          "title": "Compatibles Metod depuis 2014",
+          "v": "Nos façades se posent sans modification sur la quasi-totalité des cuisines Metod vendues depuis 2014. Vos caissons restent en place, et leur garantie fabricant aussi.",
+          "href": "/conseils/renovation-cuisine-complete",
+          "label": "Lire le guide de la rénovation de cuisine"
+        }
+      ]
+    },
+    {
+      "title": "Prix d’une cuisine sur mesure à Paris",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Fourchettes 2026 pour une cuisine fournie et posée, hors travaux annexes. Les autres postes d’une rénovation sont détaillés sur [la page prix de rénovation](/prix-renovation) et dans [l’estimateur de budget](/outils/estimateur-budget-renovation)."
+        },
+        {
+          "t": "table",
+          "head": ["Formule", "Fourchette", "Du devis signé à la pose"],
+          "rows": [
+            ["Façades sur mesure sur caissons Metod", "6 000 à 14 000 €", "5 à 8 semaines"],
+            ["Cuisine conçue sur plan", "12 000 à 30 000 €", "8 à 14 semaines"],
+            ["Haut de gamme, plan marbre, électroménager pro", "plus de 40 000 €", "8 à 14 semaines"]
+          ],
+          "note": "TVA à 10 % sur la pose et l’électroménager encastré dans un logement de plus de 2 ans ; les appareils simplement posés restent à 20 %."
+        },
+        {
+          "t": "p",
+          "v": "Le déroulé d’un chantier, du premier échange au SAV 12 mois, est décrit sur [notre méthode](/methode)."
+        }
+      ]
+    },
+    {
+      "title": "Questions fréquentes sur la cuisine sur mesure",
+      "blocks": [
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Pouvez-vous ne changer que les façades de ma cuisine IKEA ?",
+              "a": "Oui, si les caissons Metod sont en bon état. Nous les conservons et posons des façades en chêne, laque ou stratifié. C’est la demande la plus fréquente pour transformer une cuisine sans la déposer."
+            },
+            {
+              "q": "Puis-je cuisiner pendant les travaux ?",
+              "a": "La dépose et la pose prennent 2 à 5 jours. Prévoyez une plaque portable, un micro-ondes et un réfrigérateur d’appoint, ou nous calons le chantier sur une période d’absence."
+            },
+            {
+              "q": "Gaz ou induction dans un appartement ancien ?",
+              "a": "Le gaz reste autorisé, mais l’installation doit être conforme. Si vous passez à l’induction, le compteur peut être supprimé. Pour une cuisine neuve en immeuble ancien, l’induction est presque toujours le choix le plus simple."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Notre méthode", "href": "/methode", "desc": "Relevé, conception 3D, devis sous 48 h, pose et SAV 12 mois." },
+    { "label": "Prix de rénovation", "href": "/prix-renovation", "desc": "Situer la cuisine dans le budget global de votre appartement." },
+    { "label": "Rénovation d’appartement à Paris", "href": "/renovation-appartement-paris", "desc": "La cuisine intégrée à une rénovation complète, arrondissement par arrondissement." },
+    { "label": "Rénover sa cuisine de A à Z", "href": "/conseils/renovation-cuisine-complete", "desc": "Étapes, matériaux, erreurs à éviter." },
+    { "label": "Nos réalisations", "href": "/realisations-renovation", "desc": "Cuisines sur plan et façades Metod livrées à Paris." }
+  ]
+}

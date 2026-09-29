@@ -1,4 +1,4 @@
-# RenovIntérieur — refonte Next.js
+# RenovIntérieurs — refonte Next.js
 
 Refonte du site WordPress `renovinterieurs.fr` en Next.js 16 (App Router, Tailwind v4).
 **Étape en cours : page d'accueil uniquement**, pour validation de la direction design.

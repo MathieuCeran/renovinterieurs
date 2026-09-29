@@ -1,4 +1,4 @@
-import { Pill } from "@/components/ui/kit";
+import { Pill, PillGhost } from "@/components/ui/kit";
 import { pricing, pricingNote } from "@/lib/site";
 
 export function Pricing() {
@@ -26,10 +26,11 @@ export function Pricing() {
               visite technique reste la seule référence fiable.
             </p>
 
-            <div className="reveal">
+            <div className="reveal flex flex-wrap items-center gap-3">
               <Pill href="#devis" tone="terra">
                 Chiffrer mon projet
               </Pill>
+              <PillGhost href="/prix-renovation">Voir la grille complète</PillGhost>
             </div>
           </div>
         </div>

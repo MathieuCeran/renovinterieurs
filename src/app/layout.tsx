@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         url: "/og.jpg",
         width: 1200,
         height: 630,
-        alt: "Séjour haussmannien rénové par RenovIntérieur à Paris",
+        alt: "Séjour haussmannien rénové par RenovIntérieurs à Paris",
       },
     ],
   },

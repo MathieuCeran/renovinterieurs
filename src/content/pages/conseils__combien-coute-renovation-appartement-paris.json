@@ -1,0 +1,184 @@
+{
+  "title": "Combien coûte la rénovation d’un appartement à Paris ?",
+  "description": "Facteurs de prix, postes qui pèsent, erreurs à éviter : comprenez le coût d’une rénovation d’appartement à Paris avant de demander votre devis sous 48 h.",
+  "h1": "Rénovation d’appartement à Paris : ce qui fait le prix",
+  "kind": "article",
+  "parent": "/conseils",
+  "eyebrow": "Budget",
+  "intro": [
+    "Entre 250 et 2 500 € HT par m² selon le niveau de rénovation : c’est la fourchette observée à Paris en 2026. Le montant final dépend surtout de l’état du bien, de sa surface et des finitions retenues, bien plus que de l’arrondissement.",
+    "Cet article explique ce qui fait varier un devis, quels postes pèsent le plus lourd et quelles erreurs font dériver un budget. La grille tarifaire complète reste sur [notre page prix au m²](/prix-renovation) : ici, l’objectif est de comprendre dans quelle fourchette votre projet se situe, et pourquoi."
+  ],
+  "sections": [
+    {
+      "title": "À retenir",
+      "blocks": [
+        {
+          "t": "callout",
+          "title": "À retenir",
+          "v": "Une rénovation d’appartement à Paris coûte de 250 à 450 € HT/m² pour un rafraîchissement et de 1 000 à 1 500 € HT/m² pour une rénovation complète, jusqu’à 2 500 € en haut de gamme. L’état initial, la surface et le niveau de finition expliquent l’essentiel des écarts. Seul un devis détaillé après visite technique donne un chiffrage fiable : RenovIntérieurs le remet sous 48 h.",
+          "href": "/renovation-appartement-paris",
+          "label": "Voir la rénovation d’appartement à Paris"
+        },
+        {
+          "t": "p",
+          "v": "Les quatre niveaux (rafraîchissement, partielle, complète, haut de gamme) servent de repère de départ. Ce qui compte ensuite, c’est de savoir ce qui vous place dans l’une ou l’autre fourchette. Sur un chantier de [rénovation d’appartement à Paris](/renovation-appartement-paris), cinq paramètres font la différence."
+        }
+      ]
+    },
+    {
+      "title": "Les cinq facteurs qui font varier le prix",
+      "blocks": [
+        {
+          "t": "stats",
+          "items": [
+            { "value": "3 à 5 ×", "label": "plus de travail sur un haussmannien jamais rénové" },
+            { "value": "+25 à 40 %", "label": "sur la peinture avec 3,20 m sous plafond" },
+            { "value": "× 5", "label": "d’écart possible selon les matériaux" },
+            { "value": "10 à 15 %", "label": "de marge pour les imprévus" }
+          ]
+        },
+        {
+          "t": "h3",
+          "v": "L’état initial du bien"
+        },
+        {
+          "t": "p",
+          "v": "Un appartement des années 1900 jamais rénové demande trois à cinq fois plus de travail qu’un bien des années 2000 en bon état. Amiante, plomb, électricité vétuste, canalisations en plomb : chaque découverte à la dépose ajoute une ligne au devis. C’est le premier facteur, et le moins visible avant la visite technique."
+        },
+        {
+          "t": "h3",
+          "v": "La surface et le type d’appartement"
+        },
+        {
+          "t": "p",
+          "v": "Les coûts fixes (installation de chantier, déplacements, gestion) se répartissent mieux sur 90 m² que sur un studio de 25 m² : le prix au m² baisse avec la surface. Le type de bâti joue aussi. Un haussmannien impose de préserver moulures et parquet point de Hongrie ; un immeuble des années 70-80 est souvent à refaire intégralement ; un bien post-2000 reste le moins coûteux."
+        },
+        {
+          "t": "h3",
+          "v": "Le niveau de finition et les choix techniques"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Carrelage premier prix à 15 €/m² ou marbre à 200 €/m² : à surface égale, les matériaux peuvent multiplier la facture par cinq.",
+            "Joints époxy bi-composants : +15 à 20 €/ml par rapport à un joint ciment, mais aucun noircissement et 15 à 20 ans de tenue.",
+            "Natte d’étanchéité sous receveur de douche : +200 à 400 €, contre des infiltrations qui coûtent une salle de bain entière.",
+            "Béton ciré au lieu d’un carrelage standard : rendu continu sans joints, sur sols, murs, douches et plans de travail."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les postes qui pèsent le plus dans le devis",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Pour un appartement parisien de 60 m², voici les fourchettes constatées poste par poste. Elles expliquent pourquoi une rénovation complète, qui les cumule presque tous, se situe entre 60 000 et 90 000 €."
+        },
+        {
+          "t": "table",
+          "head": ["Poste", "Fourchette (60 m²)", "Ce qui fait varier"],
+          "rows": [
+            ["Cuisine", "5 000 à 12 000 € (IKEA + façades sur mesure), 15 000 à 40 000 € (tout sur mesure)", "Plan de travail 300 à 1 200 €/ml, électroménager 2 000 à 10 000 €"],
+            ["Salle de bain", "7 000 à 25 000 €", "Douche italienne étanche +1 000 à 2 500 €, pierre naturelle +20 à 40 %"],
+            ["Électricité", "4 000 à 8 000 €", "Remise aux normes NF C 15-100, tableau neuf 800 à 1 500 €"],
+            ["Plomberie", "3 000 à 7 000 €", "Réseau complet et évacuations, production d’eau chaude 1 000 à 3 500 €"],
+            ["Peinture", "25 à 45 €/m²", "Hauteur sous plafond, boiseries, état des supports"],
+            ["Sols", "80 à 150 €/m² (parquet chêne), 60 à 180 €/m² (carrelage), 100 à 200 €/m² (béton ciré)", "Format, pose, préparation du support"]
+          ],
+          "note": "Fourchettes HT indicatives 2026, hors gros œuvre. Le devis détaillé après visite technique fait foi."
+        },
+        {
+          "t": "p",
+          "v": "Si l’appartement est classé F ou G au DPE, ajoutez les postes énergétiques : isolation par l’intérieur de 60 à 120 €/m², VMC double flux de 3 500 à 6 000 €, pompe à chaleur de 8 000 à 15 000 €. Ces travaux ouvrent droit à la TVA à 5,5 % et aux aides, détaillées sur [notre offre isolation et DPE](/isolation-amelioration-energetique)."
+        }
+      ]
+    },
+    {
+      "title": "Les erreurs qui font déraper un budget",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Les dépassements viennent rarement des prix unitaires. Ils viennent de ce qui n’a pas été chiffré, ou de décisions prises dans le mauvais ordre."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Signer un devis « global » sans détail : il masque des oublis (évacuation des gravats, reprises de support, protections) qui réapparaissent en cours de chantier.",
+            "Oublier la marge d’imprévus : sur une rénovation complète, gardez 10 à 15 % du budget pour les canalisations cachées, les sols irréguliers ou les problèmes révélés à la dépose des cloisons.",
+            "Faire intervenir cinq artisans en direct : cinq devis, cinq plannings, cinq SAV, et des renvois de responsabilité au premier défaut.",
+            "Économiser sur les zones humides : un joint ciment noircit en quelques mois, une douche sans natte finit par fuir. Le surcoût initial est faible, la reprise ne l’est pas.",
+            "Sous-estimer les délais de copropriété : mur porteur, façade ou sanitaire en partie commune exigent un vote en assemblée générale, soit 4 à 8 semaines d’attente."
+          ]
+        },
+        {
+          "t": "callout",
+          "title": "Situer votre projet en deux minutes",
+          "v": "Surface, niveau de rénovation, pièces concernées : l’estimateur applique les fourchettes 2026 à votre appartement et vous donne un ordre de grandeur avant tout rendez-vous.",
+          "href": "/outils/estimateur-budget-renovation",
+          "label": "Utiliser l’estimateur de budget"
+        }
+      ]
+    },
+    {
+      "title": "TVA, aides et durée : ce qui joue sur le montant final",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Sur un logement de plus de 2 ans, la TVA à 10 % s’applique aux travaux d’amélioration, ce qui représente 5 000 à 15 000 € d’écart sur une rénovation complète par rapport au taux plein. Les travaux énergétiques éligibles passent à 5,5 % et peuvent être financés par MaPrimeRénov’, les CEE et l’éco-PTZ (jusqu’à 50 000 € sur 15 ou 20 ans)."
+        },
+        {
+          "t": "p",
+          "v": "La durée pèse aussi sur le budget, ne serait-ce que par le logement à prévoir pendant les travaux. Les repères sont les mêmes à Paris et dans les communes voisines de [Boulogne, Neuilly ou Levallois](/renovation-hauts-de-seine-92) :"
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Rafraîchissement (peinture et sols) : 1 à 3 semaines.",
+            "Rénovation partielle (1 à 2 pièces) : 3 à 6 semaines.",
+            "Rénovation complète d’un 50 à 80 m² : 8 à 14 semaines.",
+            "Plus de 100 m² ou haut de gamme avec sur-mesure : 4 à 6 mois.",
+            "Dans tous les cas : 2 à 4 semaines entre la signature et le démarrage (commandes, planning des artisans)."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Passer du repère au devis",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Les fourchettes de cet article cadrent un projet, elles ne le chiffrent pas. Un devis fiable suppose une visite technique (RenovIntérieurs la programme sous 5 jours) et un document poste par poste, avec quantités, marques de matériaux, planning prévisionnel et conditions de paiement, remis sous 48 h."
+        },
+        {
+          "t": "p",
+          "v": "Vérifiez aussi les garanties avant de signer : décennale 10 ans, biennale 2 ans, parfait achèvement 1 an et responsabilité civile professionnelle, attestations fournies avant démarrage. Pour voir comment RenovIntérieurs pilote ces chantiers avec un interlocuteur unique, consultez [la page rénovation d’appartement à Paris](/renovation-appartement-paris)."
+        },
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Faut-il l’accord de la copropriété pour rénover son appartement ?",
+              "a": "Non pour les travaux qui ne touchent ni la structure ni les parties communes. L’ouverture d’un mur porteur, le déplacement d’un sanitaire raccordé à une colonne commune ou une modification de façade exigent en revanche un vote en assemblée générale."
+            },
+            {
+              "q": "Peut-on habiter l’appartement pendant les travaux ?",
+              "a": "Difficilement lors d’une rénovation complète. C’est possible pour un rafraîchissement ou une rénovation partielle phasée pièce par pièce, à organiser dès le devis avec le planning des artisans."
+            },
+            {
+              "q": "Que recouvre le second œuvre dans une rénovation ?",
+              "a": "Tout ce qui vient après la structure : plomberie, électricité, cloisons, isolation, peinture et sols. Une rénovation d’appartement relève du second œuvre, avec parfois une transformation d’usage (déplacement de cloisons, création d’ouvertures) qui relève du gros œuvre."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Rénovation d’appartement à Paris", "href": "/renovation-appartement-paris", "desc": "Second œuvre tous corps d’état, un interlocuteur unique, devis sous 48 h." },
+    { "label": "Estimateur de budget", "href": "/outils/estimateur-budget-renovation", "desc": "Un ordre de grandeur en deux minutes, à partir des fourchettes 2026." },
+    { "label": "Combien coûte la rénovation complète d’une maison ?", "href": "/conseils/combien-coute-renovation-complete-maison", "desc": "Budgets par surface, postes lourds et marge d’imprévus en maison." },
+    { "label": "Nos prix au m²", "href": "/prix-renovation", "desc": "La grille complète par niveau de rénovation, exemples chiffrés et TVA." }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "title": "Rénovation salle de bain complète : étapes, prix, délais",
+  "description": "Ordre des travaux, durée, prix au m² et choix du meuble vasque : le guide pour rénover entièrement une salle de bain à Paris et en Île-de-France.",
+  "h1": "Rénovation de salle de bain complète : étapes, budget et délais",
+  "kind": "article",
+  "parent": "/conseils",
+  "eyebrow": "Conseils salle de bain",
+  "hero": "/images/sdb-douche-italienne.webp",
+  "intro": [
+    "Une rénovation complète de salle de bain enchaîne toujours les mêmes étapes : relevé, démolition, réseaux, étanchéité, revêtements, puis sanitaires. Comptez 2 à 6 semaines de chantier et 700 à 2 000 €/m² selon la surface et le niveau de prestation.",
+    "Sur ses chantiers de [salle de bain à Paris et en Île-de-France](/salle-de-bain-paris), RenovIntérieurs pilote l’ensemble des corps d’état avec un interlocuteur unique, des joints époxy et des nattes d’étanchéité posés systématiquement."
+  ],
+  "sections": [
+    {
+      "title": "À retenir",
+      "blocks": [
+        {
+          "t": "callout",
+          "title": "À retenir",
+          "v": "L’étanchéité se pose avant tout revêtement et les réseaux se déplacent avant de fermer les murs : cet ordre ne se négocie pas. Une salle de bain de 6 à 8 m² sans déplacement de réseaux se refait en 2 à 3 semaines, en 3 à 6 semaines dès qu’il faut reprendre plomberie ou électricité. Prévoyez une marge de 10 à 15 % pour les imprévus, surtout dans l’ancien.",
+          "href": "/salle-de-bain-paris",
+          "label": "Découvrir notre prestation salle de bain"
+        }
+      ]
+    },
+    {
+      "title": "Par où commencer : le relevé et le budget",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Tout part du relevé de la pièce et de ses réseaux. Dimensions, aplombs, état des supports, arrivées d’eau, évacuations et alimentation électrique conditionnent l’implantation, la pose des revêtements et le choix des matériaux. Dans un immeuble ancien, un mur peut présenter jusqu’à 5 cm d’écart sur sa longueur : ce défaut change la mise en œuvre d’un carrelage ou d’un meuble."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Réseaux : position des arrivées d’eau, des évacuations et du tableau électrique, faisabilité d’un déplacement.",
+            "Ventilation : une VMC est obligatoire si la pièce n’a pas de fenêtre, avec passage des gaines avant fermeture des cloisons.",
+            "Électricité : conformité à la norme NF C 15-100 près des volumes d’eau, remise aux normes de 500 à 1 500 €.",
+            "Accès : largeur de l’escalier, créneaux de livraison et règles de copropriété, qui pèsent sur le planning en Île-de-France."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Le budget se fixe à ce stade, avec une marge de 10 à 15 % pour les imprévus. Déplacer une alimentation ou une évacuation coûte souvent 1 000 à 3 000 € : ce poste se décide avant l’ouverture des murs, jamais en cours de chantier. Des références visuelles précises (formats de carrelage, teintes, robinetterie) rendent ensuite le devis plus fiable."
+        }
+      ]
+    },
+    {
+      "title": "L’ordre des travaux, étape par étape",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "La logique de chantier impose une séquence stricte. Chaque étape se vérifie avant de lancer la suivante, en particulier les raccordements sanitaires et les points électriques proches des zones d’eau."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Conception et validation du projet : plan, implantation, choix des équipements.",
+            "Démolition : dépose du carrelage, des sanitaires et, si prévu, des cloisons non porteuses.",
+            "Réseaux : reprise de la plomberie, mise aux normes électrique, passage des gaines de ventilation.",
+            "Étanchéité : nattes d’étanchéité ou système SPEC sur toutes les zones exposées, avant le moindre revêtement.",
+            "Revêtements : carrelage au sol et aux murs avec joints époxy, ou béton ciré.",
+            "Sanitaires et finitions : douche, baignoire, meuble vasque, accessoires, réglages."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Deux signatures techniques font la différence dans le temps. Les nattes d’étanchéité protègent le support sous le carrelage de la douche ; les joints époxy bi-composants, contrairement aux joints ciment, ne noircissent pas et tiennent 15 à 20 ans. Le [béton ciré](/beton-cire-paris) s’intègre à la même logique, à condition d’une étanchéité réalisée en amont."
+        }
+      ]
+    },
+    {
+      "title": "Combien de temps dure le chantier",
+      "blocks": [
+        {
+          "t": "table",
+          "head": ["Configuration", "Durée indicative", "Ce qui pèse sur le délai"],
+          "rows": [
+            ["6 à 8 m², plan conservé", "2 à 3 semaines", "Séchage de l’étanchéité, livraison des sanitaires"],
+            ["Réseaux déplacés ou électricité reprise", "3 à 6 semaines", "Ouverture des murs, mise en conformité"],
+            ["Meuble vasque sur mesure", "2 à 8 semaines de fabrication", "Se lance pendant le second œuvre"]
+          ],
+          "note": "Durées observées sur nos chantiers en Île-de-France, hors délais de copropriété."
+        },
+        {
+          "t": "p",
+          "v": "Le temps de fabrication d’un meuble sur mesure n’allonge pas le chantier s’il est lancé tôt : il sert à reprendre les murs, vérifier les réseaux et préparer le sol. Pour visualiser l’enchaînement des lots, utilisez notre [planning de travaux de rénovation](/outils/planning-travaux-renovation) : il place chaque étape sur un calendrier."
+        }
+      ]
+    },
+    {
+      "title": "Prix au m² d’une salle de bain complète",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "En 2026, une rénovation complète de salle de bain se situe entre 700 et 2 000 €/m². Plus la pièce est grande, plus les frais fixes (installation, déplacements, protection) s’amortissent et plus le prix au m² baisse."
+        },
+        {
+          "t": "table",
+          "head": ["Niveau", "Enveloppe globale", "Ce que cela couvre"],
+          "rows": [
+            ["Économique", "3 000 à 7 000 €", "Plan conservé, carrelage standard, douche classique, meuble MDF peint"],
+            ["Standard", "7 000 à 15 000 €", "Réseaux repris, douche à l’italienne, meuble sur mesure"],
+            ["Haut de gamme", "Plus de 15 000 €", "Pierre naturelle, béton ciré, baignoire îlot, robinetterie encastrée"]
+          ],
+          "note": "TVA à 10 % sur l’amélioration d’un logement de plus de 2 ans. Fourchettes indicatives, hors déplacement lourd de réseaux."
+        },
+        {
+          "t": "p",
+          "v": "La main-d’œuvre pèse 40 à 60 % du total, avec un surcoût de 20 à 30 % en Île-de-France : la plomberie se facture autour de 60 €/h en région parisienne contre 50 €/h ailleurs. Les matériaux représentent 30 à 50 %. Reprises de murs, raccords et plinthes atteignent parfois un quart du budget : un devis poste par poste les fait apparaître."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Douche classique : 3 000 à 5 000 €, pose comprise ; douche à l’italienne : 4 500 à 7 000 €, avec reprise de pente et étanchéité renforcée.",
+            "Baignoire standard : 1 000 à 1 700 € ; baignoire îlot : 2 300 à 3 300 €, si la surface et l’alimentation le permettent.",
+            "Carrelage grès cérame : 15 à 80 €/m² au sol, 20 à 70 €/m² au mur ; béton ciré : 80 à 150 €/m² ; marbre : 140 à 1 300 €/m².",
+            "Sèche-serviettes : 150 à 800 € ; miroir antibuée rétroéclairé et spots encastrés en complément."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Pour rester sous 7 000 €, gardez le plan existant et des équipements simples. Notre [estimateur de budget](/outils/estimateur-budget-renovation) et la [grille de prix au m²](/prix-renovation) donnent un premier ordre de grandeur avant la visite technique."
+        }
+      ]
+    },
+    {
+      "title": "Meuble vasque : standard ou sur mesure ?",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Un meuble standard impose ses formats. Dès que la pièce est en longueur, mansardée ou marquée par une niche, il laisse un vide contre le mur, bloque un tiroir ou déborde sur le passage. Dans l’ancien, 3 mm de décalage suffisent à faire frotter une façade : le sur-mesure absorbe ces défauts, à condition d’une prise de cotes sérieuse."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Faux aplombs : repérage des murs non perpendiculaires avant fabrication.",
+            "Équerrage : contrôle des angles réels pour éviter tout forçage à la pose.",
+            "Profondeur utile : prise en compte des gaines et de la plomberie qui réduisent la place du caisson.",
+            "Pose : version suspendue pour alléger le volume, sur pieds réglables ou avec socle selon le support."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Côté matériaux, deux familles dominent : le bois massif verni (chêne, érable, pin, cerisier) et le MDF peint, disponible dans plus de 200 teintes RAL. Une garantie inférieure à 10 ans signale souvent un panneau trop léger pour une pièce humide. Demandez des échantillons pour vérifier grain, teinte et finition avant de lancer la fabrication."
+        },
+        {
+          "t": "p",
+          "v": "La vasque se choisit ensuite : simple ou double, intégrée ou à poser, centrée ou décalée selon l’arrivée d’eau. Plan en céramique, résine solid surface, verre ou stratifié ; tiroirs à fermeture douce ; colonne assortie. Le meuble se dessine avec la salle de bain, pas après : hauteur du plan, ouverture des tiroirs et circulation se règlent sur le plan d’implantation."
+        }
+      ]
+    },
+    {
+      "title": "Choisir son entreprise et questions fréquentes",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Sur des travaux comparables, les tarifs varient jusqu’à 30 % en région parisienne. Demandez trois propositions et comparez-les sur le même périmètre : dépose, réseaux, étanchéité, fournitures, finitions. Un devis poste par poste, établi après visite, reste la seule base fiable."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Réalisations comparables en surface et en complexité, de préférence en Île-de-France.",
+            "Assurances à jour : décennale 10 ans, biennale 2 ans, parfait achèvement 1 an, RC pro, attestations fournies avant démarrage.",
+            "Un interlocuteur unique pour la démolition, la plomberie, le carrelage et les finitions, avec compte-rendu hebdomadaire."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "RenovIntérieurs applique ce cadre sur chaque [rénovation de salle de bain à Paris](/salle-de-bain-paris) et dans les [Hauts-de-Seine](/renovation-hauts-de-seine-92) : visite technique sous 5 jours, devis détaillé sous 48 h, livraison avec levée des réserves et SAV 12 mois."
+        },
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Quel budget pour une petite salle de bain ?",
+              "a": "Comptez environ 3 000 à 4 500 € pour 3 m², 4 500 à 10 000 € pour 5 m² et 9 000 à 13 000 € pour 10 m². Ajoutez 1 000 à 3 000 € si une alimentation ou une évacuation doit être déplacée."
+            },
+            {
+              "q": "Combien coûte une salle de bain avec douche à l’italienne ?",
+              "a": "La douche à l’italienne seule revient à 4 500 à 7 000 € posée, contre 3 000 à 5 000 € pour une douche classique. Pour une pièce de 5 m² entièrement refaite avec ce type de douche, prévoyez 7 000 à 12 000 € hors modification lourde de plomberie."
+            },
+            {
+              "q": "Artisan indépendant ou entreprise tous corps d’état ?",
+              "a": "Un artisan convient pour un poste isolé, comme un carrelage ou une robinetterie. Dès que démolition, plomberie, électricité, étanchéité et menuiserie s’enchaînent, un interlocuteur unique qui pilote l’ensemble limite les décalages entre intervenants et clarifie les responsabilités."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Rénovation de salle de bain à Paris",
+      "href": "/salle-de-bain-paris",
+      "desc": "Étanchéité, joints époxy, douche à l’italienne : notre prestation."
+    },
+    {
+      "label": "Planning de travaux",
+      "href": "/outils/planning-travaux-renovation",
+      "desc": "Placez chaque étape de votre chantier sur un calendrier."
+    },
+    {
+      "label": "Résine ou béton ciré en salle de bain",
+      "href": "/conseils/resine-beton-cire-salle-de-bain",
+      "desc": "Comparatif des deux revêtements continus."
+    },
+    {
+      "label": "Prix de la rénovation au m²",
+      "href": "/prix-renovation",
+      "desc": "Grille 2026 par niveau de prestation."
+    }
+  ]
+}

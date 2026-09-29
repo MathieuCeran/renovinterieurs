@@ -1,4 +1,4 @@
-import { allPaths } from "@/lib/content";
+import { pagesOfKind } from "@/lib/content";
 import { faq, pricing, process, site } from "@/lib/site";
 import { tools } from "@/lib/tools";
 
@@ -10,16 +10,9 @@ import { tools } from "@/lib/tools";
 export const dynamic = "force-static";
 
 export function GET() {
-  const services = allPaths().filter(
-    (p) =>
-      !p.startsWith("/conseils/") &&
-      !p.startsWith("/renovation-appartement-") &&
-      p !== "/",
-  );
-  const guides = allPaths().filter((p) => p.startsWith("/conseils/"));
-  const villes = allPaths().filter((p) =>
-    p.startsWith("/renovation-appartement-"),
-  );
+  const services = pagesOfKind("service").map(([p]) => p);
+  const zones = pagesOfKind("zone").map(([p]) => p);
+  const guides = pagesOfKind("article").map(([p]) => p);
 
   const md = `# ${site.name}
 
@@ -55,11 +48,16 @@ ${tools.map((t) => `- [${t.name}](${site.url}${t.href}) : ${t.short}`).join("\n"
 ## Questions fréquentes
 ${faq.map((f) => `### ${f.q}\n${f.a}`).join("\n\n")}
 
-## Pages services et zones
+## Pages services
 ${services.map((p) => `- ${site.url}${p}`).join("\n")}
 
-## Pages par commune
-${villes.map((p) => `- ${site.url}${p}`).join("\n")}
+## Zones d'intervention (Paris 75 : voir rénovation d'appartement à Paris)
+- ${site.url}/renovation-appartement-paris
+${zones.map((p) => `- ${site.url}${p}`).join("\n")}
+
+## Prix et méthode
+- ${site.url}/prix-renovation
+- ${site.url}/methode
 
 ## Guides
 ${guides.map((p) => `- ${site.url}${p}`).join("\n")}

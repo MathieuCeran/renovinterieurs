@@ -30,7 +30,7 @@ const prestations = [
   {
     label: "Appartement",
     title: "Rénovation d’appartement",
-    href: "/renovation-appartement",
+    href: "/renovation-appartement-paris",
   },
   {
     label: "Paris 75",
@@ -40,32 +40,27 @@ const prestations = [
   {
     label: "Salle de bain",
     title: "Rénovation de salle de bain",
-    href: "/salle-de-bain",
+    href: "/salle-de-bain-paris",
   },
   {
     label: "Cuisine",
     title: "Cuisine sur-mesure",
-    href: "/cuisine-sur-mesure",
+    href: "/cuisine-sur-mesure-paris",
   },
   {
     label: "Béton ciré",
     title: "Béton ciré sols et murs",
-    href: "/beton-cire",
-  },
-  {
-    label: "Joints époxy",
-    title: "Joints époxy salle de bain",
-    href: "/joints-epoxy",
+    href: "/beton-cire-paris",
   },
   {
     label: "Isolation DPE",
     title: "Isolation et sortie de passoire énergétique",
-    href: "/isolation-dpe",
+    href: "/isolation-amelioration-energetique",
   },
   {
     label: "Gros œuvre",
     title: "Gros œuvre, surélévation et extension",
-    href: "/gros-oeuvre",
+    href: "/renovation-gros-oeuvre-surelevation-extension-idf",
   },
   {
     label: "Dépannage",

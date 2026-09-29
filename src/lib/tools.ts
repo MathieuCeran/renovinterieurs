@@ -2,7 +2,7 @@
  * Les trois outils interactifs du site.
  *
  * Toutes les valeurs de calcul proviennent des contenus publiés par
- * RenovIntérieur (fourchettes de prix au m², durées de chantier, gains
+ * RenovIntérieurs (fourchettes de prix au m², durées de chantier, gains
  * de classes DPE annoncés). Rien n'est inventé : les résultats sont
  * présentés comme des estimations indicatives, jamais comme un devis.
  */
@@ -89,7 +89,7 @@ export function getTool(slug: string) {
 /*  1. Estimateur de budget                                            */
 /* ------------------------------------------------------------------ */
 
-/** Fourchettes €/m² publiées par RenovIntérieur (page Prix). */
+/** Fourchettes €/m² publiées par RenovIntérieurs (page Prix). */
 export const NIVEAUX = [
   {
     id: "rafraichissement",
@@ -251,7 +251,7 @@ export const POSTES_DPE = [
     label: "Remplacement des menuiseries",
     gain: 0.7,
     note: "Double ou triple vitrage, étanchéité thermique et acoustique.",
-    href: "/conseils/isolation-thermique-fenetres-portes",
+    href: "/conseils/isolation-maison-ancienne-par-linterieur",
   },
   {
     id: "vmc",
@@ -272,7 +272,7 @@ export const POSTES_DPE = [
     label: "Isolation des planchers bas",
     gain: 0.4,
     note: "Sur vide sanitaire, cave ou passage non chauffé.",
-    href: "/conseils/isolation-cave-maison-ancienne",
+    href: "/conseils/isolation-maison-ancienne-par-linterieur",
   },
 ] as const;
 
@@ -320,7 +320,7 @@ export function simulateDpe(from: Classe, postes: PosteDpeId[]): DpeResult {
 /* ------------------------------------------------------------------ */
 
 /**
- * Durées issues des repères publiés par RenovIntérieur :
+ * Durées issues des repères publiés par RenovIntérieurs :
  * rénovation partielle 3-6 semaines, complète 50-80 m² 8-14 semaines,
  * au-delà de 100 m² ou haut de gamme 4-6 mois.
  */

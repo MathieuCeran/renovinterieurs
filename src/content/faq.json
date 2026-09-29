@@ -1,7 +1,7 @@
 [
  {
   "theme": "Prix & budget",
-  "source": "/renovation-paris-75",
+  "source": "/renovation-appartement-paris",
   "items": [
    {
     "q": "Quel est le prix moyen d’une rénovation d’appartement à Paris ?",
@@ -63,11 +63,11 @@
    },
    {
     "q": "Démarches administratives",
-    "a": "Oui : mairie, syndic, dossier ABF, coordination architecte et ingénieur, courtier en assurance. Vous signez, on pilote le reste."
+    "a": "Oui : mairie, syndic, dossier ABF, échanges avec l'architecte et l'ingénieur, courtier en assurance. Vous signez, on pilote le reste."
    },
    {
     "q": "Prix & économies",
-    "a": "Parce qu'on supprime la marge de maîtrise d'œuvre d'un contractant général et la sous-traitance en cascade : vous êtes mis en relation directe avec nos partenaires."
+    "a": "Parce qu'on supprime la marge d'une entreprise générale classique et la sous-traitance en cascade : vous êtes mis en relation directe avec nos partenaires."
    },
    {
     "q": "Assurances",
@@ -93,7 +93,7 @@
  },
  {
   "theme": "Salle de bain & étanchéité",
-  "source": "/joints-epoxy-paris",
+  "source": "/salle-de-bain-paris",
   "items": [
    {
     "q": "Les joints époxy sont-ils vraiment garantis 15-20 ans sans noircir ?",
@@ -139,15 +139,15 @@
    },
    {
     "q": "Pouvez-vous remplacer uniquement les façades de ma cuisine IKEA existante ?",
-    "a": "Oui, c’est l’une des demandes les plus fréquentes chez RenovIntérieur. Si vos caissons IKEA Metod sont en bon état, ce que nous faisons, c’est conserver cette base et y poser des façades sur mesure. Concrètement, sur votre chantier, cela fonctionne sur la quasi-totalité des cuisines IKEA Metod commercialisées depuis 2014. Cette rénovation partielle permet de limiter le budget tout en changeant nettement le rendu final."
+    "a": "Oui, c’est l’une des demandes les plus fréquentes chez RenovIntérieurs. Si vos caissons IKEA Metod sont en bon état, ce que nous faisons, c’est conserver cette base et y poser des façades sur mesure. Concrètement, sur votre chantier, cela fonctionne sur la quasi-totalité des cuisines IKEA Metod commercialisées depuis 2014. Cette rénovation partielle permet de limiter le budget tout en changeant nettement le rendu final."
    },
    {
     "q": "Quels matériaux choisir pour une cuisine qui dure 20 ans ?",
-    "a": "Pour les façades : chêne massif huilé, qui peut être poncé et reverni, MDF laqué de qualité automobile, avec une bonne tenue dans le temps, ou stratifié haut de gamme, souvent prévu pour 15 à 20 ans d’usage. Pour les plans de travail : quartz reconstitué, généralement garanti 10 à 15 ans par le fabricant, granit, avec une durée de vie de plusieurs décennies, ou inox, très résistant mais sensible aux marques d’usage. Ce que RenovIntérieur ne fait pas, c’est recommander des laques d’entrée de gamme qui peuvent jaunir en quelques années."
+    "a": "Pour les façades : chêne massif huilé, qui peut être poncé et reverni, MDF laqué de qualité automobile, avec une bonne tenue dans le temps, ou stratifié haut de gamme, souvent prévu pour 15 à 20 ans d’usage. Pour les plans de travail : quartz reconstitué, généralement garanti 10 à 15 ans par le fabricant, granit, avec une durée de vie de plusieurs décennies, ou inox, très résistant mais sensible aux marques d’usage. Ce que RenovIntérieurs ne fait pas, c’est recommander des laques d’entrée de gamme qui peuvent jaunir en quelques années."
    },
    {
     "q": "Faut-il déclarer mes travaux de cuisine à la copropriété ?",
-    "a": "Pour des travaux strictement privatifs, comme un remplacement de cuisine sans intervention sur les parties communes, aucune déclaration n’est obligatoire. Une information préalable au syndic reste toutefois recommandée pour préciser les dates d’intervention, les accès et l’organisation du chantier. Si vous déplacez une évacuation ou intervenez sur une colonne montante, un vote en assemblée générale est nécessaire. RenovIntérieur peut accompagner ces démarches administratives sur les chantiers réalisés à Paris et en proche couronne."
+    "a": "Pour des travaux strictement privatifs, comme un remplacement de cuisine sans intervention sur les parties communes, aucune déclaration n’est obligatoire. Une information préalable au syndic reste toutefois recommandée pour préciser les dates d’intervention, les accès et l’organisation du chantier. Si vous déplacez une évacuation ou intervenez sur une colonne montante, un vote en assemblée générale est nécessaire. RenovIntérieurs peut accompagner ces démarches administratives sur les chantiers réalisés à Paris et en proche couronne."
    },
    {
     "q": "Peut-on continuer à utiliser sa cuisine pendant les travaux ?",

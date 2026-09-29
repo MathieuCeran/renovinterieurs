@@ -1,35 +1,77 @@
-import raw from "@/content/pages.json";
+import fs from "node:fs";
+import path from "node:path";
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
 /* ------------------------------------------------------------------ */
 
 export type Block =
-  { t: "p"; v: string } | { t: "h3"; v: string } | { t: "ul"; items: string[] };
+  | { t: "p"; v: string }
+  | { t: "h3"; v: string }
+  | { t: "ul"; items: string[] }
+  | { t: "stats"; items: { value: string; label: string }[] }
+  | { t: "cards"; items: { title: string; text: string; href?: string }[] }
+  | { t: "table"; head: string[]; rows: string[][]; note?: string }
+  | { t: "callout"; title?: string; v: string; href?: string; label?: string }
+  | { t: "steps"; items: { title: string; text: string }[] }
+  | { t: "faq"; items: { q: string; a: string }[] }
+  | { t: "gallery"; items: { src: string; alt: string; caption: string }[] }
+  | { t: "links"; items: { label: string; href: string; desc?: string }[] };
 
 export type Section = {
   title: string;
   blocks: Block[];
-  imgs?: string[];
+  id?: string;
 };
+
+export type PageKind = "service" | "zone" | "article" | "hub" | "info";
+export type Parent = "/" | "/nos-services" | "/zones" | "/conseils";
 
 export type Page = {
   title: string;
   description: string;
   h1: string;
+  kind: PageKind;
+  parent: Parent;
+  eyebrow?: string;
+  hero?: string;
   intro: string[];
   sections: Section[];
+  related?: { label: string; href: string; desc?: string }[];
 };
 
-const pages = raw as unknown as Record<string, Page>;
+/* ------------------------------------------------------------------ */
+/*  Chargement : un fichier JSON par page dans src/content/pages       */
+/* ------------------------------------------------------------------ */
+
+const PAGES_DIR = path.join(process.cwd(), "src", "content", "pages");
+
+/** `index.json` → `/`, `conseils__slug.json` → `/conseils/slug`. */
+function slugFromFile(file: string): string {
+  const base = file.replace(/\.json$/, "");
+  if (base === "index") return "/";
+  return `/${base.replace(/__/g, "/")}`;
+}
+
+function loadPages(): Record<string, Page> {
+  const out: Record<string, Page> = {};
+  for (const file of fs.readdirSync(PAGES_DIR)) {
+    if (!file.endsWith(".json")) continue;
+    const raw = fs.readFileSync(path.join(PAGES_DIR, file), "utf8");
+    out[slugFromFile(file)] = JSON.parse(raw) as Page;
+  }
+  return out;
+}
+
+const pages: Record<string, Page> = loadPages();
 
 /* ------------------------------------------------------------------ */
 /*  Accès                                                              */
 /* ------------------------------------------------------------------ */
 
 /**
- * Pages dotées d’un gabarit dédié : elles ne passent pas par la route
- * attrape-tout (contenu éditorial générique) mais par leur propre route.
+ * Pages dotées d'un gabarit dédié : elles ne passent pas par la route
+ * attrape-tout mais par leur propre route.
  */
 const CUSTOM_ROUTES = new Set([
   "/",
@@ -45,7 +87,7 @@ export function allSlugs(): string[] {
   return Object.keys(pages).filter((s) => !CUSTOM_ROUTES.has(s));
 }
 
-/** Pages créées de toutes pièces (absentes du site actuel). */
+/** Pages sans fichier de contenu (gabarit entièrement en code). */
 const EXTRA_PATHS = ["/mentions-legales", "/politique-de-confidentialite"];
 
 /** Toutes les URL du site, gabarits dédiés compris (sitemap). */
@@ -59,8 +101,39 @@ export function getPage(slug: string): Page | null {
   return p;
 }
 
+export function pagesOfKind(kind: PageKind): [string, Page][] {
+  return Object.entries(pages).filter(([, p]) => p.kind === kind);
+}
+
 /* ------------------------------------------------------------------ */
-/*  Visuels — on pioche dans la photothèque locale selon le sujet      */
+/*  Liens inline : [texte](/url) dans les paragraphes et les listes     */
+/* ------------------------------------------------------------------ */
+
+export type Inline = { text: string; href?: string };
+
+const LINK_RE = /\[([^\]]+)\]\(([^)\s]+)\)/g;
+
+/** Découpe une chaîne en segments texte / lien. */
+export function parseInline(v: string): Inline[] {
+  const out: Inline[] = [];
+  let last = 0;
+  for (const m of v.matchAll(LINK_RE)) {
+    const i = m.index ?? 0;
+    if (i > last) out.push({ text: v.slice(last, i) });
+    out.push({ text: m[1], href: m[2] });
+    last = i + m[0].length;
+  }
+  if (last < v.length) out.push({ text: v.slice(last) });
+  return out;
+}
+
+/** Texte brut sans la syntaxe des liens (métadonnées, JSON-LD). */
+export function stripInline(v: string): string {
+  return v.replace(LINK_RE, "$1");
+}
+
+/* ------------------------------------------------------------------ */
+/*  Visuels : photothèque locale, choisie selon le sujet               */
 /* ------------------------------------------------------------------ */
 
 const POOL = {
@@ -101,7 +174,7 @@ export function visualsFor(slug: string): Visuals {
     return pick(POOL.loft, POOL.betonCire, POOL.parquet, POOL.detail);
   if (s.includes("cuisine"))
     return pick(POOL.cuisine, POOL.biblio, POOL.parquet, POOL.artisan);
-  if (s.includes("joints-epoxy"))
+  if (s.includes("salle-de-bain") || s.includes("joints-epoxy"))
     return pick(POOL.sdb, POOL.sdbSombre, POOL.sdbDetail, POOL.detail);
   if (s.includes("isolation") || s.includes("energetique"))
     return pick(POOL.isolation, POOL.haussmannien, POOL.chantier, POOL.artisan);
@@ -115,6 +188,10 @@ export function visualsFor(slug: string): Visuals {
     return pick(POOL.salon, POOL.cuisine, POOL.sdb, POOL.parquet);
   if (s.includes("nos-services"))
     return pick(POOL.accueil, POOL.cuisine, POOL.sdb, POOL.loft);
+  if (s.includes("prix"))
+    return pick(POOL.pose, POOL.cuisine, POOL.sdb, POOL.parquet);
+  if (s.includes("methode"))
+    return pick(POOL.equipe, POOL.chantier, POOL.artisan, POOL.detail);
   if (s.includes("a-propos"))
     return pick(POOL.equipe, POOL.artisan, POOL.pose, POOL.detail);
   if (s.includes("contact") || s.includes("guide"))
@@ -123,51 +200,42 @@ export function visualsFor(slug: string): Visuals {
     return pick(POOL.haussmannien, POOL.salon, POOL.parquet, POOL.artisan);
   if (s.includes("conseils"))
     return pick(POOL.salonBis, POOL.menuiserie, POOL.dressing, POOL.biblio);
-  if (s.includes("paris-75") || s === "/renovation-appartement-paris")
+  if (s === "/renovation-appartement-paris")
     return pick(POOL.haussmannien, POOL.parisToits, POOL.parquet, POOL.cuisine);
   if (s.includes("hauts-de-seine") || s.includes("val-de-marne"))
     return pick(POOL.salonBis, POOL.balcon, POOL.pose, POOL.cuisine);
   if (s.includes("yvelines"))
     return pick(POOL.salon, POOL.ville, POOL.parquet, POOL.artisan);
-  if (s.startsWith("/renovation-appartement-"))
-    return pick(POOL.salonBis, POOL.parquet, POOL.cuisine, POOL.pose);
+  if (s === "/zones")
+    return pick(POOL.parisToits, POOL.balcon, POOL.ville, POOL.salon);
 
   return pick(POOL.accueil, POOL.salon, POOL.parquet, POOL.cuisine);
 }
 
 /* ------------------------------------------------------------------ */
-/*  Fil d'Ariane                                                       */
+/*  Fil d'Ariane, dérivé du parent déclaré par la page                 */
 /* ------------------------------------------------------------------ */
 
-export function breadcrumbLabel(slug: string): string {
-  const s = slug.toLowerCase();
-  if (s.startsWith("/conseils/")) return "Conseils";
-  if (
-    s.startsWith("/renovation-appartement-") &&
-    s !== "/renovation-appartement-paris"
-  )
-    return "Zones d’intervention";
-  if (
-    s.includes("renovation-paris-75") ||
-    s.includes("-92") ||
-    s.includes("-78") ||
-    s.includes("-94")
-  )
-    return "Zones d’intervention";
-  if (s === "/renovation-appartement-paris") return "Zones d’intervention";
-  return "Nos services";
-}
+const PARENT_LABEL: Record<Parent, string> = {
+  "/": "Accueil",
+  "/nos-services": "Nos services",
+  "/zones": "Zones d’intervention",
+  "/conseils": "Conseils",
+};
 
-export function breadcrumbHref(slug: string): string {
-  const label = breadcrumbLabel(slug);
-  if (label === "Conseils") return "/conseils";
-  if (label === "Zones d’intervention") return "/nos-services";
-  return "/nos-services";
+export function breadcrumbFor(
+  slug: string,
+): { label: string; href: string }[] {
+  const page = getPage(slug);
+  const crumbs = [{ label: "Accueil", href: "/" }];
+  if (page && page.parent !== "/")
+    crumbs.push({ label: PARENT_LABEL[page.parent], href: page.parent });
+  return crumbs;
 }
 
 /**
  * Coupe un H1 « Sujet : précision » pour mettre la seconde moitié
- * en serif italique — la signature typographique du site.
+ * en serif italique, la signature typographique du site.
  */
 export function splitHeading(h1: string): [string, string | null] {
   const m = h1.match(/^(.*?)\s*[:—–]\s*(.+)$/);
@@ -176,12 +244,20 @@ export function splitHeading(h1: string): [string, string | null] {
 }
 
 /**
- * Retire le(s) suffixe(s) de marque du <title> du site actuel — certains
- * le contiennent deux fois — puisque le layout le rajoute via le template.
+ * Retire le(s) suffixe(s) de marque d'un <title>, puisque le layout
+ * le rajoute via le template.
  */
 export function cleanTitle(title: string): string {
-  const BRAND = /\s*[|\u2013\u2014\u2012-]\s*RenovInt[e\u00e9]rieurs?\s*$/iu;
+  const BRAND = /\s*[|–—‒-]\s*RenovInt[eé]rieurs?\s*$/iu;
   let t = title.trim();
   while (BRAND.test(t)) t = t.replace(BRAND, "").trim();
   return t;
+}
+
+/** Tronque proprement sur un mot, avec une ellipse. */
+export function clamp(text: string, max: number): string {
+  const t = text.trim();
+  if (t.length <= max) return t;
+  const cut = t.slice(0, max - 1);
+  return `${cut.slice(0, Math.max(cut.lastIndexOf(" "), 20))}…`;
 }

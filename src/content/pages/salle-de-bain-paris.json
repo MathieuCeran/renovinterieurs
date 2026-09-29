@@ -1,0 +1,167 @@
+{
+  "title": "Salle de bain Paris : étanche, joints époxy 15-20 ans",
+  "description": "Rénovation de salle de bain à Paris : natte d’étanchéité, joints époxy sans noircissement pendant 15 à 20 ans, douche à l’italienne. Devis sous 48 h.",
+  "h1": "Salle de bain à Paris : étanche, durable, sans joints qui noircissent",
+  "kind": "service",
+  "parent": "/nos-services",
+  "eyebrow": "Salle de bain · Paris et Île-de-France",
+  "hero": "/images/sdb-douche-italienne.webp",
+  "intro": [
+    "Une salle de bain refaite devrait tenir quinze ans. Beaucoup vieillissent en trois : joints noircis, fissure en pied de mur, infiltration sous le receveur. La cause est presque toujours la même, deux raccourcis pris sur les joints et sur l’étanchéité sous carrelage. RenovIntérieurs rénove les salles de bain parisiennes en traitant d’abord ces deux postes.",
+    "Nous pilotons la pièce complète : dépose, plomberie cachée, électricité aux volumes de sécurité, ventilation, natte d’étanchéité, carrelage ou béton ciré, joints époxy, meuble et robinetterie. Un interlocuteur unique, un devis détaillé sous 48 h, un compte-rendu hebdomadaire."
+  ],
+  "sections": [
+    {
+      "title": "En bref",
+      "blocks": [
+        {
+          "t": "stats",
+          "items": [
+            { "value": "15-20 ans", "label": "sans reprise des joints époxy" },
+            { "value": "1 à 2 jours", "label": "pour refaire les joints d’une pièce" },
+            { "value": "7 jours", "label": "avant la première douche complète" },
+            { "value": "12 mois", "label": "de SAV après livraison" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Salles de bain réalisées",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Trois ambiances, une même règle : l’étanchéité se joue sous le carrelage, avant tout ce qui se voit. [Voir nos réalisations](/realisations-renovation)."
+        },
+        {
+          "t": "gallery",
+          "items": [
+            {
+              "src": "/images/sdb-douche-italienne.webp",
+              "alt": "Salle de bain sombre haut de gamme avec douche à l’italienne et baignoire îlot",
+              "caption": "Salle de bain sombre : douche à l’italienne, baignoire îlot, joints époxy assortis au carrelage."
+            },
+            {
+              "src": "/images/paris-sdb.jpg",
+              "alt": "Salle de bain claire rénovée avec carrelage grand format",
+              "caption": "Salle de bain claire : carrelage grand format, joints fins, lumière préservée."
+            },
+            {
+              "src": "/images/service-sdb.jpg",
+              "alt": "Plan vasque en pierre naturelle avec robinetterie laiton",
+              "caption": "Plan vasque en pierre naturelle et robinetterie laiton : la pierre est hydrofugée avant les joints."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ce que vous obtenez",
+      "blocks": [
+        {
+          "t": "cards",
+          "items": [
+            {
+              "title": "Une étanchéité sous le carrelage",
+              "text": "Natte d’étanchéité polymère sur toute la zone d’eau, bande de pontage dans les angles, conformément au DTU 52.2."
+            },
+            {
+              "title": "Des joints qui restent propres",
+              "text": "Joints époxy bi-composants entre les carreaux, silicone sanitaire dans les angles vifs. Aucun noircissement, entretien à l’éponge."
+            },
+            {
+              "title": "Une douche à l’italienne",
+              "text": "Receveur à carreler ou en béton ciré, sol antidérapant R10 ou R11, bonde et pente réglées avant le revêtement.",
+              "href": "/beton-cire-paris"
+            },
+            {
+              "title": "Une plomberie accessible",
+              "text": "Alimentation en PER, évacuations en PVC pression, vannes d’arrêt accessibles pour ne jamais casser un carreau en cas de fuite."
+            },
+            {
+              "title": "Une électricité aux volumes",
+              "text": "Volumes 0, 1 et 2 respectés, IP44 minimum, prise rasoir séparée. Bouche de VMC hygroréglable et gaine isolée."
+            },
+            {
+              "title": "Meuble, vasque, robinetterie",
+              "text": "Plan vasque en pierre, quartz ou béton ciré, meuble suspendu, robinetterie choisie avec vous et posée par nos équipes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nos signatures techniques",
+      "blocks": [
+        {
+          "t": "callout",
+          "title": "Joints époxy bi-composants",
+          "v": "Résine et durcisseur mélangés sur place : un joint non poreux, insensible au savon, au calcaire et aux moisissures, qui garde sa teinte 15 à 20 ans. Le surcoût de 15 à 25 % face au ciment s’amortit en moins de cinq ans."
+        },
+        {
+          "t": "callout",
+          "title": "Nattes d’étanchéité",
+          "v": "Une membrane posée sous le carrelage de la douche, avec bande de pontage dans les angles. Si un joint faiblit un jour, la chape et les cloisons restent au sec."
+        },
+        {
+          "t": "callout",
+          "title": "Béton ciré en douche",
+          "v": "Receveur, murs et plafond d’une seule surface, sur natte et sous vernis polyuréthane renforcé. Aucun joint, donc rien qui puisse noircir.",
+          "href": "/conseils/resine-beton-cire-salle-de-bain",
+          "label": "Résine ou béton ciré : le comparatif"
+        }
+      ]
+    },
+    {
+      "title": "Prix d’une salle de bain à Paris",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Fourchettes 2026 hors taxes. La grille complète est sur [la page prix de rénovation](/prix-renovation) ; [l’estimateur de budget](/outils/estimateur-budget-renovation) donne un premier ordre de grandeur."
+        },
+        {
+          "t": "table",
+          "head": ["Prestation", "Fourchette HT", "Délai"],
+          "rows": [
+            ["Reprise des joints en époxy, douche ou pièce entière", "12 à 30 €/m² de carrelage, pose comprise", "1 à 2 jours, douche complète à 7 jours"],
+            ["Salle de bain complète, dans une rénovation partielle", "600 à 900 €/m² de logement", "3 à 6 semaines"],
+            ["Douche à l’italienne en béton ciré", "90 à 220 €/m² selon le support", "2 à 5 jours de pose, 7 jours de séchage"]
+          ],
+          "note": "TVA à 10 % sur l’amélioration d’un logement de plus de 2 ans. Le devis établi après visite technique fait seul foi."
+        },
+        {
+          "t": "p",
+          "v": "Chaque étape, de la visite technique sous 5 jours au SAV 12 mois, est détaillée sur [notre méthode](/methode)."
+        }
+      ]
+    },
+    {
+      "title": "Questions fréquentes sur la salle de bain",
+      "blocks": [
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Pouvez-vous seulement refaire les joints de ma salle de bain ?",
+              "a": "Oui. Les joints ciment sont retirés à la disqueuse fine sans abîmer les carreaux, puis remplacés par de l’époxy. Comptez 1 jour pour une douche, 2 pour la pièce entière."
+            },
+            {
+              "q": "Quand puis-je réutiliser la douche après la pose ?",
+              "a": "Rinçage simple après 48 h, douche complète avec savon après 7 jours, le temps que la résine polymérise. Ce délai conditionne la tenue des joints dans la durée."
+            },
+            {
+              "q": "Quelle couleur de joints choisir ?",
+              "a": "Ton sur ton pour un rendu épuré, contrasté pour souligner le calepinage, métallisé pour une mosaïque. Nous apportons le nuancier lors de la visite technique."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Notre méthode", "href": "/methode", "desc": "Visite sous 5 jours, devis sous 48 h, compte-rendu hebdomadaire, SAV 12 mois." },
+    { "label": "Prix de rénovation", "href": "/prix-renovation", "desc": "Situer la salle de bain dans le budget de votre appartement." },
+    { "label": "Rénovation d’appartement à Paris", "href": "/renovation-appartement-paris", "desc": "La salle de bain dans une rénovation complète, arrondissement par arrondissement." },
+    { "label": "Rénover sa salle de bain de A à Z", "href": "/conseils/renovation-salle-de-bain-complete", "desc": "Étapes, budget, erreurs à éviter." },
+    { "label": "Nos réalisations", "href": "/realisations-renovation", "desc": "Douches à l’italienne, plans vasques, salles de bain livrées à Paris." }
+  ]
+}

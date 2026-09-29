@@ -30,7 +30,7 @@ export function Services() {
 
           <div className="flex flex-col items-start gap-7 lg:pb-2">
             <p className="reveal max-w-md text-[0.92rem] leading-relaxed text-muted">
-              Six métiers maîtrisés en interne, coordonnés par un seul
+              Six métiers maîtrisés en interne, pilotés par un seul
               interlocuteur. Chaque poste est traité avec le même niveau
               d’exigence — du diagnostic à la finition.
             </p>
@@ -49,7 +49,7 @@ export function Services() {
                 <div className="relative aspect-4/3 overflow-hidden rounded-[clamp(16px,2vw,24px)]">
                   <Image
                     src={s.image}
-                    alt={`${s.title} — réalisation RenovIntérieur en Île-de-France`}
+                    alt={`${s.title} — réalisation RenovIntérieurs en Île-de-France`}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover transition-transform duration-[1300ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-107"

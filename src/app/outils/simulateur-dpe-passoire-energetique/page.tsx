@@ -149,10 +149,6 @@ export default function Page() {
           href: "/conseils/sortir-passoire-energetique-dpe-f-g",
         },
         {
-          label: "Isolation thermique fenêtres & portes",
-          href: "/conseils/isolation-thermique-fenetres-portes",
-        },
-        {
           label: "Isolation d’une maison ancienne",
           href: "/conseils/isolation-maison-ancienne-par-linterieur",
         },

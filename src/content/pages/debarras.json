@@ -1,0 +1,164 @@
+{
+  "title": "Débarras appartement, cave et succession à Paris et IDF",
+  "description": "Débarras d’appartement, cave ou local à Paris et en Île-de-France : succession, fin de bail, après travaux. Tri, évacuation, nettoyage. Devis sous 48 h.",
+  "h1": "Débarras : succession, fin de bail et nettoyage fin de chantier",
+  "kind": "service",
+  "parent": "/nos-services",
+  "eyebrow": "Débarras & nettoyage",
+  "hero": "/images/paris-chantier.jpg",
+  "intro": [
+    "Un appartement à vider avant la signature chez le notaire, un local à restituer en fin de bail, une cave saturée, un chantier à nettoyer avant livraison : à Paris, un débarras se heurte vite aux paliers étroits, aux ascenseurs inaccessibles et aux filières de déchets. RenovIntérieurs prend en charge le tri, l’évacuation et la remise au propre en un seul devis.",
+    "Nous pilotons l’opération de la visite d’estimation à la remise des justificatifs : équipe formée, camion adapté aux rues parisiennes, parties communes protégées, filières de recyclage respectées. Vous gardez la main sur ce qui doit être conservé, nous nous occupons du reste."
+  ],
+  "sections": [
+    {
+      "title": "En bref",
+      "blocks": [
+        {
+          "t": "stats",
+          "items": [
+            { "value": "5 jours", "label": "pour la visite d’estimation sur place" },
+            { "value": "48 h", "label": "pour le devis détaillé après visite" },
+            { "value": "72 h", "label": "pour intervenir en cas d’urgence" },
+            { "value": "15 à 40 %", "label": "du volume revalorisé ou donné" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nos interventions",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Nous intervenons dans les 20 arrondissements de Paris et en petite couronne, notamment dans le [Val-de-Marne](/renovation-val-de-marne-94) et les [Hauts-de-Seine](/renovation-hauts-de-seine-92). La deuxième couronne est possible sur devis."
+        },
+        {
+          "t": "cards",
+          "items": [
+            {
+              "title": "Débarras de succession",
+              "text": "Vider l’appartement d’un proche demande du temps et de la discrétion. Les objets de valeur sentimentale, patrimoniale ou administrative vous sont remis avant tout traitement."
+            },
+            {
+              "title": "Fin de bail et remise en location",
+              "text": "Logement meublé à restituer, bien à préparer entre deux locataires : vidage complet, évacuation, puis nettoyage pour une présentation immédiate."
+            },
+            {
+              "title": "Cave, garage et local commercial",
+              "text": "Descente par l’escalier ou le monte-charge, tri sur place, évacuation par catégorie, dépoussiérage. Mobilier de bureau et archives pris en charge pour les locaux."
+            },
+            {
+              "title": "Débarras après travaux",
+              "text": "Gravats, plâtre, carrelage et emballages : benne dédiée avec bordereau de suivi, aucun dépôt sur la voie publique."
+            },
+            {
+              "title": "Nettoyage fin de chantier",
+              "text": "Aspiration, dépoussiérage, nettoyage humide des sols, désinfection des sanitaires et de la cuisine, vitres si accessibles. Le bien sort prêt à habiter ou à visiter."
+            },
+            {
+              "title": "Situations sensibles",
+              "text": "Syndrome de Diogène, logement très dégradé : équipe protégée, protocole adapté, désinfection professionnelle, discrétion totale et sans jugement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Avant et après nos passages",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Un espace vidé, nettoyé, puis parfois rénové dans la foulée par nos artisans : [voir nos réalisations](/realisations-renovation)."
+        },
+        {
+          "t": "gallery",
+          "items": [
+            {
+              "src": "/images/paris-chantier.jpg",
+              "alt": "Chantier de rénovation en cours, avant le nettoyage final",
+              "caption": "Fin de chantier : évacuation des gravats et nettoyage avant la livraison"
+            },
+            {
+              "src": "/images/paris-renovation-appartement.jpg",
+              "alt": "Appartement en cours de rénovation, pose des revêtements",
+              "caption": "Après travaux : le nettoyage transforme un espace poussiéreux en logement habitable"
+            },
+            {
+              "src": "/images/sejour-haussmannien.jpg",
+              "alt": "Séjour haussmannien vide, rénové, double exposition",
+              "caption": "Appartement prêt à être présenté à un acquéreur ou à un locataire"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Un devis transparent, du tri aux justificatifs",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Un débarras mal préparé finit en week-ends perdus et en déchets mélangés. Nous appliquons la même rigueur qu’à un chantier de rénovation piloté selon [notre méthode](/methode) : une visite, un devis ferme, une équipe, des justificatifs."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Visite gratuite sur place : volume estimé au m³, contraintes d’accès, objets à conserver identifiés avec vous.",
+            "Devis détaillé sous 48 h, prix forfaitaire ferme ou prix au m³ si le volume est incertain.",
+            "Tri par filière : revalorisation (Emmaüs, Le Relais, recycleries), DEEE en éco-organismes agréés, déchets dangereux en filière spécialisée.",
+            "Papiers, photos et documents personnels mis de côté, jamais jetés sans votre validation.",
+            "Bordereaux de volumes par filière, attestations de don et facture conforme, utiles au notaire ou à l’assurance.",
+            "Nettoyage fin de chantier proposé en option, le même jour ou après vos travaux."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tarifs indicatifs du débarras",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Si le débarras précède des travaux, [nos tarifs de rénovation au m²](/prix-renovation) et [l’estimateur de budget](/outils/estimateur-budget-renovation) vous permettent de chiffrer l’ensemble."
+        },
+        {
+          "t": "table",
+          "head": ["Prestation", "Fourchette", "Volume"],
+          "rows": [
+            ["Petit débarras : une pièce, une cave", "200 à 500 €", "1 à 5 m³"],
+            ["Studio ou T1 complet, garage", "500 à 1 200 €", "5 à 15 m³"],
+            ["Appartement T2 à T4, succession", "1 200 à 2 800 €", "15 à 35 m³"]
+          ],
+          "note": "Fourchettes indicatives 2026, devis ferme après visite. Nettoyage fin de chantier en option de 15 à 25 €/m². TVA 10 % sur un logement de plus de 2 ans. Le mobilier revalorisé peut venir en déduction du devis."
+        }
+      ]
+    },
+    {
+      "title": "Questions sur le débarras",
+      "blocks": [
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Dois-je être présent pendant le débarras ?",
+              "a": "Non. Nous pouvons intervenir avec vos clés et vous restituer le bien vidé. Pour une succession où des choix de tri restent à faire, votre présence ou celle d’un mandataire est recommandée au moins en début d’intervention."
+            },
+            {
+              "q": "Que deviennent les meubles et objets en bon état ?",
+              "a": "Ils sont remis à Emmaüs, au Relais, à des recycleries ou à des brocantes professionnelles. Vous recevez les justificatifs de don, qui peuvent ouvrir droit à une réduction d’impôt de 66 % du montant valorisé pour les associations reconnues d’utilité publique."
+            },
+            {
+              "q": "Mon immeuble n’a pas d’ascenseur : est-ce un problème ?",
+              "a": "Non, c’est fréquent dans le bâti parisien. Nous renforçons l’équipe, utilisons des sangles de portage et, pour les pièces très volumineuses ou les étages élevés, un monte-meuble par la fenêtre. Ces contraintes figurent dans le devis."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Notre méthode", "href": "/methode", "desc": "Visite, devis ferme, intervention pilotée" },
+    { "label": "Prix de la rénovation", "href": "/prix-renovation", "desc": "Pour chiffrer les travaux qui suivent" },
+    { "label": "Rénovation dans le Val-de-Marne", "href": "/renovation-val-de-marne-94", "desc": "Vincennes, Saint-Maur, Nogent, Maisons-Alfort" },
+    { "label": "Les étapes d’une rénovation intérieure", "href": "/conseils/renovation-interieure-maison-etapes", "desc": "Du débarras à la livraison" },
+    { "label": "Nos réalisations", "href": "/realisations-renovation", "desc": "Logements vidés, nettoyés, rénovés" }
+  ]
+}

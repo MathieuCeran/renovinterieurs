@@ -4,8 +4,8 @@
  */
 
 export const site = {
-  name: "RenovIntérieur",
-  legalName: "RenovIntérieur — Marque de Archi Renov",
+  name: "RenovIntérieurs",
+  legalName: "RenovIntérieurs — Marque de Archi Renov",
   tagline: "Rénovation intérieur & second œuvre",
   url: "https://renovinterieurs.fr",
   email: "contact@renovinterieurs.fr",
@@ -13,7 +13,7 @@ export const site = {
   phoneHref: "tel:+33612245527",
   whatsapp: "https://wa.me/33612245527",
   area: "Île-de-France",
-  title: "Entreprise rénovation Paris & IDF — devis 48h | RenovIntérieur",
+  title: "Entreprise rénovation Paris & IDF — devis 48h | RenovIntérieurs",
   description:
     "Rénovation appartement à Paris & Île-de-France : second œuvre tous corps d’état, cuisine sur-mesure, salle de bain, isolation DPE. Devis 48 h.",
 } as const;
@@ -26,32 +26,32 @@ export const nav = [
       {
         label: "Rénovation d’appartement",
         href: "/renovation-appartement-paris",
-        desc: "Second œuvre tous corps d’état",
+        desc: "Tous corps d’état, Paris & IDF",
       },
       {
-        label: "Paris (75)",
-        href: "/renovation-appartement-paris",
-        desc: "Les 20 arrondissements",
+        label: "Cuisine sur-mesure",
+        href: "/cuisine-sur-mesure-paris",
+        desc: "Sur plan ou façades sur caissons Metod",
       },
       {
-        label: "Hauts-de-Seine (92)",
-        href: "/renovation-hauts-de-seine-92",
-        desc: "Boulogne, Neuilly, Levallois…",
+        label: "Salle de bain étanche",
+        href: "/salle-de-bain-paris",
+        desc: "Joints époxy, nattes d’étanchéité",
       },
       {
-        label: "Yvelines (78)",
-        href: "/renovation-yvelines-78",
-        desc: "Versailles, Saint-Germain…",
+        label: "Béton ciré",
+        href: "/beton-cire-paris",
+        desc: "Sols, murs, douches, plans de travail",
       },
       {
-        label: "Val-de-Marne (94)",
-        href: "/renovation-val-de-marne-94",
-        desc: "Vincennes, Saint-Maur…",
-      },
-      {
-        label: "Isolation / DPE",
+        label: "Isolation & DPE",
         href: "/isolation-amelioration-energetique",
         desc: "Sortie de passoire énergétique",
+      },
+      {
+        label: "Gros œuvre & extension",
+        href: "/renovation-gros-oeuvre-surelevation-extension-idf",
+        desc: "Mur porteur, surélévation, extension",
       },
       {
         label: "Dépannage",
@@ -61,8 +61,9 @@ export const nav = [
       { label: "Débarras", href: "/debarras", desc: "Vidage et évacuation" },
     ],
   },
-  { label: "Nos Réalisations", href: "/realisations-renovation" },
-  { label: "Outils", href: "/outils" },
+  { label: "Zones", href: "/zones" },
+  { label: "Prix", href: "/prix-renovation" },
+  { label: "Réalisations", href: "/realisations-renovation" },
   { label: "Conseils", href: "/conseils" },
   { label: "Contact", href: "/contact-devis" },
 ] as const;
@@ -105,7 +106,7 @@ export const heroSlides = [
     eyebrow: "Gros œuvre & surélévation",
     titleTop: "Surélévation, extension,",
     titleBottom: "ouverture de mur porteur",
-    text: "Architectes DPLG, ingénieurs structure et entreprises sélectionnées : nous orchestrons votre projet de A à Z, toutes démarches pilotées, jusqu’à 15-20 % d’économie.",
+    text: "Architectes DPLG, ingénieurs structure et entreprises sélectionnées : nous pilotons votre projet de A à Z, toutes démarches prises en charge, jusqu’à 15-20 % d’économie.",
     primary: {
       label: "Découvrir le gros œuvre",
       href: "/renovation-gros-oeuvre-surelevation-extension-idf",
@@ -135,7 +136,7 @@ export const services = [
   {
     title: "Salle de bain étanche",
     text: "Joints époxy + nattes d’étanchéité. Zéro noircissement, durabilité 15-20 ans.",
-    href: "/joints-epoxy-paris",
+    href: "/salle-de-bain-paris",
     image: "/images/paris-sdb.jpg",
     index: "02",
   },
@@ -172,7 +173,7 @@ export const services = [
 export const grosOeuvre = {
   eyebrow: "Gros œuvre",
   title: "Gros œuvre, surélévation & extension",
-  text: "Mur porteur, surélévation, extension : orchestrés avec nos partenaires architectes DPLG, ingénieurs structure et entreprises sélectionnées. Jusqu’à 15-20 % d’économie, toutes les démarches pilotées.",
+  text: "Mur porteur, surélévation, extension : pilotés avec nos partenaires architectes DPLG, ingénieurs structure et entreprises sélectionnées. Jusqu’à 15-20 % d’économie, toutes les démarches pilotées.",
   href: "/renovation-gros-oeuvre-surelevation-extension-idf",
   image: "/images/paris-chantier.jpg",
 } as const;
@@ -192,7 +193,7 @@ export const pillars = [
   },
   {
     title: "Un accompagnement de A à Z",
-    text: "Du premier diagnostic à la livraison finale, un interlocuteur unique coordonne votre projet. Pas de sous-traitance opaque, pas de surprise : vous savez toujours où en est votre chantier.",
+    text: "Du premier diagnostic à la livraison finale, un interlocuteur unique pilote votre projet. Pas de sous-traitance opaque, pas de surprise : vous savez toujours où en est votre chantier.",
     image: "/images/paris-pourquoi-specialiste.jpg",
     alt: "Conducteur de travaux échangeant avec les artisans sur le chantier",
   },
@@ -312,7 +313,7 @@ export const process = [
   },
   {
     step: "04",
-    title: "Travaux coordonnés",
+    title: "Travaux pilotés",
     text: "Tous corps d’état pilotés par un interlocuteur unique, compte-rendu hebdomadaire.",
   },
   {
@@ -338,7 +339,7 @@ export const faq = [
   {
     q: "Pourquoi des joints époxy plutôt que des joints classiques ?",
     a: "Les joints ciment noircissent en quelques mois et se fissurent. Les joints époxy que nous posons systématiquement en salle de bain et cuisine sont étanches, ne noircissent pas, ne bougent pas et durent 15-20 ans.",
-    link: { label: "En savoir plus", href: "/joints-epoxy-paris" },
+    link: { label: "En savoir plus", href: "/salle-de-bain-paris" },
   },
   {
     q: "Sortez-vous un appartement classé DPE F ou G ?",
@@ -353,8 +354,8 @@ export const faq = [
     a: "Trois garanties légales sur tous nos chantiers : garantie décennale (10 ans), garantie biennale (2 ans, équipements), garantie de parfait achèvement (1 an). Plus responsabilité civile professionnelle à jour. Attestations fournies avant démarrage.",
   },
   {
-    q: "Comment se déroule un projet avec RenovIntérieur ?",
-    a: "5 étapes : (1) premier échange par téléphone/WhatsApp, (2) visite technique sous 5 jours, (3) devis détaillé sous 48 h, (4) travaux coordonnés tous corps d’état avec compte-rendu hebdo, (5) livraison et SAV 12 mois. Un seul interlocuteur du diagnostic à la remise des clés.",
+    q: "Comment se déroule un projet avec RenovIntérieurs ?",
+    a: "5 étapes : (1) premier échange par téléphone/WhatsApp, (2) visite technique sous 5 jours, (3) devis détaillé sous 48 h, (4) travaux pilotés tous corps d’état avec compte-rendu hebdo, (5) livraison et SAV 12 mois. Un seul interlocuteur du diagnostic à la remise des clés.",
   },
 ] as const;
 
@@ -412,16 +413,24 @@ export const footerTools = [
 ] as const;
 
 export const footerServices = [
+  { label: "Rénovation d’appartement", href: "/renovation-appartement-paris" },
   { label: "Cuisine sur-mesure", href: "/cuisine-sur-mesure-paris" },
+  { label: "Salle de bain étanche", href: "/salle-de-bain-paris" },
   { label: "Béton ciré", href: "/beton-cire-paris" },
-  { label: "Joints époxy", href: "/joints-epoxy-paris" },
   { label: "Isolation & DPE", href: "/isolation-amelioration-energetique" },
+  {
+    label: "Gros œuvre & extension",
+    href: "/renovation-gros-oeuvre-surelevation-extension-idf",
+  },
   { label: "Dépannage urgent", href: "/depannage" },
   { label: "Débarras", href: "/debarras" },
 ] as const;
 
 export const footerInfo = [
   { label: "Nos services", href: "/nos-services" },
+  { label: "Comment ça se passe", href: "/methode" },
+  { label: "Prix de la rénovation", href: "/prix-renovation" },
+  { label: "Zones d’intervention", href: "/zones" },
   { label: "Outils gratuits", href: "/outils" },
   { label: "Réalisations", href: "/realisations-renovation" },
   { label: "À propos", href: "/a-propos" },

@@ -1,0 +1,179 @@
+{
+  "title": "Notre méthode : votre chantier en cinq étapes",
+  "description": "Premier échange, visite technique sous 5 jours, devis détaillé sous 48 h, travaux pilotés, livraison et SAV 12 mois : le déroulé de votre chantier.",
+  "h1": "Comment ça se passe : votre chantier en cinq étapes",
+  "kind": "info",
+  "parent": "/",
+  "eyebrow": "Méthode",
+  "hero": "/images/paris-pourquoi-specialiste.jpg",
+  "intro": [
+    "Un chantier de rénovation inquiète rarement par son ampleur, plutôt par ses inconnues : qui appeler, quand, pour quel montant. RenovIntérieurs répond par un déroulé fixe en cinq étapes, appliqué à chaque projet, de la salle de bain à la [rénovation complète d’un appartement](/renovation-appartement-paris). Vous savez toujours où en est votre chantier.",
+    "Un interlocuteur unique pilote les artisans, vous rend compte chaque semaine et reste joignable après la livraison. Les délais indiqués ci-dessous valent pour tous nos chantiers, à Paris comme en Île-de-France."
+  ],
+  "sections": [
+    {
+      "title": "Les cinq étapes de votre projet",
+      "blocks": [
+        {
+          "t": "steps",
+          "items": [
+            {
+              "title": "Premier échange",
+              "text": "Par téléphone, WhatsApp ou formulaire, vous décrivez votre projet, votre commune et votre budget. Nous vérifions ensemble que le périmètre est cohérent, puis nous fixons la date de la visite. Aucun devis n’est établi sur simple photo : un chiffrage sérieux commence sur place."
+            },
+            {
+              "title": "Visite technique sous 5 jours",
+              "text": "Notre chef de chantier se déplace dans les cinq jours. Il relève les surfaces, examine les réseaux existants et note les contraintes de copropriété. C’est là que se décident les choix techniques : nattes d’étanchéité, joints époxy, reprise de l’électricité. Visite gratuite et sans engagement."
+            },
+            {
+              "title": "Devis détaillé sous 48 h",
+              "text": "Deux jours après la visite, vous recevez un devis poste par poste : matériaux retenus, quantités, options et planning prévisionnel. Rien n’est facturé en plus sans avenant signé. Pour situer votre budget avant même la visite, consultez [nos prix au m²](/prix-renovation)."
+            },
+            {
+              "title": "Travaux pilotés, compte-rendu hebdomadaire",
+              "text": "Devis signé, le chantier démarre selon le planning convenu. Le chef de chantier pilote tous les corps d’état, anticipe les commandes et protège les parties communes. Chaque semaine, vous recevez un compte-rendu avec photos d’avancement et les points à valider."
+            },
+            {
+              "title": "Livraison et SAV 12 mois",
+              "text": "Réception point par point avec vous, levée des réserves, remise des attestations de garantie et des conseils d’entretien des matériaux. Pendant les 12 mois qui suivent, tout désordre signalé est repris sans facturation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "En bref",
+      "blocks": [
+        {
+          "t": "stats",
+          "items": [
+            {
+              "value": "5 jours",
+              "label": "Visite technique sur place"
+            },
+            {
+              "value": "48 h",
+              "label": "Devis détaillé après visite"
+            },
+            {
+              "value": "Hebdo",
+              "label": "Compte-rendu de chantier avec photos"
+            },
+            {
+              "value": "12 mois",
+              "label": "SAV après la livraison"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les garanties qui couvrent votre chantier",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Quatre protections s’appliquent à chaque chantier RenovIntérieurs. Les attestations vous sont remises avant le démarrage, sans que vous ayez à les réclamer."
+        },
+        {
+          "t": "cards",
+          "items": [
+            {
+              "title": "Garantie décennale, 10 ans",
+              "text": "Couvre pendant dix ans le gros œuvre et les ouvrages indissociables du bâti : structure, étanchéité, réseaux encastrés."
+            },
+            {
+              "title": "Garantie biennale, 2 ans",
+              "text": "Deux ans sur les équipements dissociables : robinetterie, radiateurs, chauffe-eau, appareillage électrique."
+            },
+            {
+              "title": "Parfait achèvement, 1 an",
+              "text": "Un an pour reprendre tout désordre signalé à la réception ou dans l’année qui suit. Notre SAV 12 mois l’applique à la lettre."
+            },
+            {
+              "title": "Responsabilité civile professionnelle",
+              "text": "Assurance à jour sur l’ensemble de nos interventions, pour les dommages causés à votre logement ou aux parties communes pendant les travaux."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Visualisez votre planning avant de signer",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "À titre de repère : 3 à 6 semaines pour une rénovation partielle, 8 à 14 semaines pour un appartement complet de 50 à 80 m², 4 à 6 mois au-delà de 100 m² ou en haut de gamme. Les durées par niveau sont détaillées sur [la page prix](/prix-renovation)."
+        },
+        {
+          "t": "callout",
+          "title": "Planning de chantier",
+          "v": "Combien de semaines entre la signature et la remise des clés ? Notre outil gratuit génère un calendrier indicatif, phase par phase, selon la surface et l’ampleur du chantier, du diagnostic à la réception.",
+          "href": "/outils/planning-travaux-renovation",
+          "label": "Ouvrir le planning de chantier"
+        }
+      ]
+    },
+    {
+      "title": "Le pilotage au quotidien",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Pendant les travaux, vous n’avez qu’un seul numéro à retenir. Le chef de chantier organise l’enchaînement des métiers, règle les interférences entre plombier, électricien et plaquiste, et prend les décisions du quotidien pour que le planning tienne. Les questions qui demandent votre arbitrage vous sont posées avec une proposition claire."
+        },
+        {
+          "t": "p",
+          "v": "Le compte-rendu hebdomadaire récapitule ce qui a été fait, ce qui vient et les points à valider, photos à l’appui. En copropriété, nous gérons les échanges avec le syndic : autorisations, protection des parties communes, horaires de chantier. Ce cadre s’applique à [tous nos services](/nos-services), à Paris comme dans [les communes du 92, du 78 et du 94](/zones)."
+        }
+      ]
+    },
+    {
+      "title": "Questions fréquentes sur le déroulé",
+      "blocks": [
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "La visite et le devis sont-ils gratuits ?",
+              "a": "Oui. La visite technique et le devis détaillé sont gratuits et sans engagement. Vous recevez le chiffrage poste par poste sous 48 h après la visite et vous restez libre de le comparer."
+            },
+            {
+              "q": "Que se passe-t-il si un imprévu apparaît en cours de chantier ?",
+              "a": "Nous vous prévenons immédiatement avec une solution chiffrée. Aucun supplément n’est engagé sans avenant signé de votre part, et le compte-rendu hebdomadaire garde la trace de chaque décision."
+            },
+            {
+              "q": "Peut-on habiter sur place pendant les travaux ?",
+              "a": "Difficilement pour une rénovation complète. C’est envisageable pour un rafraîchissement ou une rénovation partielle organisée pièce par pièce. Nous en parlons dès la visite technique pour adapter le planning."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Prix de rénovation au m²",
+      "href": "/prix-renovation",
+      "desc": "Grille 2026, exemples chiffrés, TVA et aides."
+    },
+    {
+      "label": "Tous nos services",
+      "href": "/nos-services",
+      "desc": "Huit métiers, un interlocuteur unique."
+    },
+    {
+      "label": "Nos réalisations",
+      "href": "/realisations-renovation",
+      "desc": "Chantiers livrés à Paris et en Île-de-France."
+    },
+    {
+      "label": "À propos de RenovIntérieurs",
+      "href": "/a-propos",
+      "desc": "Qui nous sommes, comment nous travaillons."
+    },
+    {
+      "label": "Questions fréquentes",
+      "href": "/faq",
+      "desc": "Prix, délais, garanties, DPE."
+    }
+  ]
+}

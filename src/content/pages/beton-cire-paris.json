@@ -1,0 +1,164 @@
+{
+  "title": "Béton ciré Paris : sols, murs, douches sans joint",
+  "description": "Béton ciré à Paris : sols, murs, douches à l’italienne et plans de travail en 2 à 4 mm, sans joint. Pose possible sur carrelage existant. Devis sous 48 h.",
+  "h1": "Béton ciré à Paris : sols, murs et douches d’un seul tenant",
+  "kind": "service",
+  "parent": "/nos-services",
+  "eyebrow": "Béton ciré · Paris et Île-de-France",
+  "hero": "/images/loft-beton-cire.jpg",
+  "intro": [
+    "Le béton ciré est ce revêtement continu, sans joint ni ligne, qui donne à un séjour ou à une douche l’allure d’un volume taillé dans la masse. Sur 2 à 4 mm d’épaisseur, il se pose sur un carrelage existant sans dépose ni recoupe de porte. RenovIntérieurs l’applique à Paris sur les sols, les murs, les douches à l’italienne, les plans de travail et les escaliers.",
+    "Nous pilotons le chantier de bout en bout : diagnostic du support, ragréage si nécessaire, primaire, deux à trois couches à la spatule, ponçage, vernis polyuréthane bi-composant. Un interlocuteur unique, des échantillons pour choisir la teinte chez vous, un devis détaillé sous 48 h."
+  ],
+  "sections": [
+    {
+      "title": "En bref",
+      "blocks": [
+        {
+          "t": "stats",
+          "items": [
+            { "value": "2 à 4 mm", "label": "d’épaisseur finie, sans dépose" },
+            { "value": "2 à 5 jours", "label": "de pose selon la surface" },
+            { "value": "15-25 ans", "label": "de durabilité avec entretien" },
+            { "value": "10 ans", "label": "de garantie décennale" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Béton ciré : nos réalisations",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Le béton ciré ne pardonne pas un support mal préparé ; c’est là que nous passons le plus de temps. [Voir nos réalisations](/realisations-renovation)."
+        },
+        {
+          "t": "gallery",
+          "items": [
+            {
+              "src": "/images/loft-beton-cire.jpg",
+              "alt": "Grand volume ouvert avec escalier suspendu et sol en béton ciré",
+              "caption": "Grand volume ouvert, escalier suspendu : sol en béton ciré d’un seul tenant."
+            },
+            {
+              "src": "/images/loft-cuisine-cheminee.jpg",
+              "alt": "Loft avec cuisine ouverte, cheminée et sol en béton ciré",
+              "caption": "Loft : cuisine ouverte, cheminée, sol en béton ciré continu jusqu’au séjour."
+            },
+            {
+              "src": "/images/paris-chantier.jpg",
+              "alt": "Chantier de rénovation en cours dans un appartement parisien",
+              "caption": "Chantier en cours : la préparation du support fait la qualité de la pose."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ce que vous obtenez",
+      "blocks": [
+        {
+          "t": "cards",
+          "items": [
+            {
+              "title": "Sol de pièce de vie",
+              "text": "Sur carrelage existant, chape ou plancher stabilisé. Compatible plancher chauffant, du gris clair au noir charbon."
+            },
+            {
+              "title": "Mur et crédence",
+              "text": "Mur d’accent en salon ou en chambre, crédence lessivable en cuisine, parois de douche. Un relief subtil sous un éclairage rasant."
+            },
+            {
+              "title": "Douche à l’italienne",
+              "text": "Receveur, murs et plafond continus, sur natte d’étanchéité et sous vernis renforcé. Joints époxy aux jonctions avec la robinetterie et la bonde.",
+              "href": "/salle-de-bain-paris"
+            },
+            {
+              "title": "Plan de travail",
+              "text": "Sur panneau hydrofuge, dans la continuité de la crédence. Résiste à la chaleur en contact bref ; les projections acides s’essuient sans attendre.",
+              "href": "/cuisine-sur-mesure-paris"
+            },
+            {
+              "title": "Escalier",
+              "text": "Marches, contremarches et paliers traités d’un bloc, avec un vernis antidérapant. Une réponse aux duplex et aux lofts parisiens."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nos signatures : pose et teintes",
+      "blocks": [
+        {
+          "t": "callout",
+          "title": "Un protocole en six temps",
+          "v": "Support sain et plan, primaire adapté, deux couches d’un millimètre, ponçage au grain fin, troisième couche sur les zones passantes, puis vernis en deux ou trois couches. Chaque temps de séchage est respecté."
+        },
+        {
+          "t": "callout",
+          "title": "Des teintes testées chez vous",
+          "v": "Toute la palette RAL et NCS, du gris perle au terracotta. Nous laissons des échantillons de 20 × 20 cm pour juger avec votre lumière avant de valider."
+        },
+        {
+          "t": "callout",
+          "title": "En salle de bain, résine ou béton ciré ?",
+          "v": "Le béton ciré tient en douche s’il est posé sur natte, sous vernis renforcé, avec des joints époxy aux raccords. Notre comparatif détaille les deux options.",
+          "href": "/conseils/resine-beton-cire-salle-de-bain",
+          "label": "Lire le comparatif"
+        }
+      ]
+    },
+    {
+      "title": "Prix du béton ciré à Paris",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Fourchettes 2026 hors taxes, fourniture et pose. Pour situer ce poste dans un budget global, voyez [la page prix de rénovation](/prix-renovation) et [l’estimateur de budget](/outils/estimateur-budget-renovation)."
+        },
+        {
+          "t": "table",
+          "head": ["Application", "Fourchette HT", "Délai"],
+          "rows": [
+            ["Sol, mur ou crédence", "90 à 220 €/m² selon support et préparation", "2 à 5 jours de pose, 7 jours de séchage"],
+            ["Douche à l’italienne, natte et vernis renforcé", "sur devis après visite", "2 à 5 jours, mise en eau à 7 jours"],
+            ["Escalier ou plan de travail", "devis spécifique", "selon la configuration"]
+          ],
+          "note": "TVA à 10 % dans un logement de plus de 2 ans ; le béton ciré n’ouvre pas droit au taux de 5,5 %, réservé aux travaux énergétiques. Tarifs dégressifs au-delà de 50 m²."
+        },
+        {
+          "t": "p",
+          "v": "La visite technique, le devis et le suivi hebdomadaire suivent [notre méthode](/methode), la même pour tous nos chantiers."
+        }
+      ]
+    },
+    {
+      "title": "Questions fréquentes sur le béton ciré",
+      "blocks": [
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Peut-on poser du béton ciré sur mon carrelage ?",
+              "a": "Oui, si les carreaux sont sains et adhérents. Après ponçage et primaire, la pose se fait sans dépose ni gravats, en 2 à 4 mm d’épaisseur. Les carreaux fissurés ou décollés sont repris avant."
+            },
+            {
+              "q": "Combien de temps avant de marcher dessus ?",
+              "a": "Pieds nus après 24 h, avec des chaussures après 48 h, mobilier lourd après 7 jours. Une douche ou un lave-linge se remet en service entre 7 et 14 jours selon les produits."
+            },
+            {
+              "q": "Comment entretenir un sol en béton ciré ?",
+              "a": "Aspirateur ou balai microfibre au quotidien, serpillière et savon noir chaque semaine, jamais d’acide ni d’abrasif. Tous les 5 à 8 ans, une couche de vernis sur les zones de passage prolonge la vie du sol."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Notre méthode", "href": "/methode", "desc": "Visite sous 5 jours, devis sous 48 h, compte-rendu hebdomadaire, SAV 12 mois." },
+    { "label": "Prix de rénovation", "href": "/prix-renovation", "desc": "Situer le béton ciré dans le budget de votre appartement." },
+    { "label": "Rénovation d’appartement à Paris", "href": "/renovation-appartement-paris", "desc": "Le béton ciré dans une rénovation complète, arrondissement par arrondissement." },
+    { "label": "Résine ou béton ciré en salle de bain", "href": "/conseils/resine-beton-cire-salle-de-bain", "desc": "Le comparatif pour choisir en connaissance de cause." },
+    { "label": "Nos réalisations", "href": "/realisations-renovation", "desc": "Lofts, séjours et douches en béton ciré livrés à Paris." }
+  ]
+}

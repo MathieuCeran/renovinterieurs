@@ -11,11 +11,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const priority = (path: string) => {
     if (path === "/") return 1;
     if (path.startsWith("/conseils/")) return 0.5;
-    if (
-      path.startsWith("/renovation-appartement-") &&
-      path !== "/renovation-appartement-paris"
-    )
-      return 0.6;
+    if (path.startsWith("/outils/")) return 0.6;
+    if (/^\/(mentions-legales|politique-de-confidentialite)$/.test(path))
+      return 0.2;
     return 0.8;
   };
 

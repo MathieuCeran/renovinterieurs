@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 const path = "/mentions-legales";
 const title = "Mentions légales";
 const description =
-  "Mentions légales du site RenovIntérieur : éditeur, hébergeur, propriété intellectuelle et responsabilité.";
+  "Mentions légales du site RenovIntérieurs : éditeur, hébergeur, propriété intellectuelle et responsabilité.";
 
 export const metadata: Metadata = {
   title,

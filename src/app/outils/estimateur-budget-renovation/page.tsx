@@ -35,7 +35,7 @@ export default function Page() {
               <p>
                 Le prix au m² reste la manière la plus fiable de comparer deux
                 projets de rénovation. Il intègre la main-d’œuvre, les matériaux
-                courants et la coordination des corps d’état, mais{" "}
+                courants et le pilotage des corps d’état, mais{" "}
                 <strong>pas</strong> le mobilier, l’électroménager ni les
                 honoraires d’architecte.
               </p>
@@ -137,11 +137,11 @@ export default function Page() {
         },
       ]}
       related={[
+        { label: "Prix de rénovation au m²", href: "/prix-renovation" },
         {
-          label: "Prix de rénovation au m²",
+          label: "Rénovation d’appartement à Paris",
           href: "/renovation-appartement-paris",
         },
-        { label: "Rénovation à Paris (75)", href: "/renovation-paris-75" },
         {
           label: "Combien coûte une rénovation à Paris ?",
           href: "/conseils/combien-coute-renovation-appartement-paris",

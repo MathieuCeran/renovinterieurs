@@ -1,3 +1,4 @@
+import { PillGhost } from "@/components/ui/kit";
 import { process } from "@/lib/site";
 
 export function Process() {
@@ -18,10 +19,15 @@ export function Process() {
               </span>
             </span>
           </h2>
-          <p className="reveal max-w-md text-[0.92rem] leading-relaxed text-muted lg:pb-2">
-            Du premier appel à la remise des clés, chaque phase est cadrée,
-            datée et documentée. Vous savez toujours où en est votre chantier.
-          </p>
+          <div className="flex flex-col items-start gap-7 lg:pb-2">
+            <p className="reveal max-w-md text-[0.92rem] leading-relaxed text-muted">
+              Du premier appel à la remise des clés, chaque phase est cadrée,
+              datée et documentée. Vous savez toujours où en est votre chantier.
+            </p>
+            <div className="reveal">
+              <PillGhost href="/methode">Comment ça se passe</PillGhost>
+            </div>
+          </div>
         </div>
 
         <ol className="reveal-stagger mt-12 grid gap-px overflow-hidden rounded-[clamp(18px,2.4vw,28px)] bg-line md:grid-cols-3 lg:grid-cols-5">

@@ -1,0 +1,132 @@
+{
+  "title": "À propos de RenovIntérieurs, rénovation à Paris et IDF",
+  "description": "RenovIntérieurs, marque de Archi Renov : pilotage de vos travaux de rénovation à Paris et en Île-de-France, artisans qualifiés, interlocuteur unique.",
+  "h1": "RenovIntérieurs : une marque de Archi Renov, un interlocuteur unique",
+  "kind": "info",
+  "parent": "/",
+  "eyebrow": "Qui sommes-nous",
+  "hero": "/images/paris-pourquoi-specialiste.jpg",
+  "intro": [
+    "Rénover à Paris, c’est souvent cinq artisans en direct, cinq plannings désynchronisés et personne pour répondre quand quelque chose ne va pas. RenovIntérieurs, marque de Archi Renov, a été créée pour proposer autre chose : un interlocuteur unique qui pilote la technique, le planning et le budget de votre rénovation intérieure.",
+    "Second œuvre tous corps d’état, cuisine et salle de bain sur mesure, isolation, dépannage, débarras : nos artisans qualifiés sont sélectionnés par spécialité, et vous savez toujours où en est votre chantier."
+  ],
+  "sections": [
+    {
+      "title": "En bref",
+      "blocks": [
+        {
+          "t": "stats",
+          "items": [
+            { "value": "48 h", "label": "pour un devis détaillé poste par poste" },
+            { "value": "5 jours", "label": "pour la visite technique" },
+            { "value": "10 ans", "label": "de garantie décennale" },
+            { "value": "12 mois", "label": "de SAV après livraison" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ce qui nous guide",
+      "blocks": [
+        {
+          "t": "cards",
+          "items": [
+            {
+              "title": "Un savoir-faire artisanal",
+              "text": "De la plâtrerie à la pose de matériaux nobles, chaque étape est confiée à un artisan de la spécialité. Le soin des finitions fait la différence au quotidien."
+            },
+            {
+              "title": "La qualité dans chaque détail",
+              "text": "Parquet chevron, tasseaux bois, éclairages encastrés : chaque élément compose un ensemble cohérent et durable. Un chantier n’est livré que lorsque tout est en place."
+            },
+            {
+              "title": "Un accompagnement de A à Z",
+              "text": "Du premier diagnostic à la livraison, un interlocuteur unique pilote votre projet. Pas de sous-traitance opaque, pas de surprise en cours de route."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Comment nous travaillons",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Un seul devis, un seul planning, un seul responsable si un problème survient après livraison. Nous pilotons les corps d’état dans le bon ordre, anticipons les blocages avant qu’ils immobilisent le chantier et vous adressons un compte-rendu chaque semaine. [Les 5 étapes sont décrites sur notre page méthode](/methode)."
+        },
+        {
+          "t": "p",
+          "v": "Les choix techniques sont pris avant la pose, pas en cours de chantier : joints époxy en pièces humides, nattes d’étanchéité sous les douches, béton ciré, cuisines conçues sur plan. [Toutes nos prestations sont présentées ici](/nos-services), et nos fourchettes de prix au m² sont publiques [sur la page prix](/prix-renovation)."
+        },
+        {
+          "t": "p",
+          "v": "Sur certains projets, vous pouvez acheter vos matériaux directement auprès de nos fournisseurs partenaires, aux conditions professionnelles. Cette option est étudiée à chaque devis : le budget reste lisible de bout en bout, sans reconstitution après coup."
+        }
+      ]
+    },
+    {
+      "title": "Nos garanties",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Chaque chantier est couvert par les garanties légales, et les attestations d’assurance vous sont remises avant le démarrage."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Garantie décennale : 10 ans sur les ouvrages.",
+            "Garantie biennale : 2 ans sur les équipements.",
+            "Garantie de parfait achèvement : 1 an après réception.",
+            "Responsabilité civile professionnelle à jour.",
+            "SAV 12 mois après la livraison, levée des réserves incluse."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sur nos chantiers",
+      "blocks": [
+        {
+          "t": "gallery",
+          "items": [
+            {
+              "src": "/images/paris-pourquoi-specialiste.jpg",
+              "alt": "Conducteur de travaux échangeant avec les artisans sur le chantier",
+              "caption": "Pilotage : un conducteur de travaux, des artisans par spécialité, un compte-rendu hebdomadaire"
+            },
+            {
+              "src": "/images/savoir-faire-1.jpg",
+              "alt": "Artisan réalisant les finitions d’un chantier de rénovation",
+              "caption": "Finitions : le soin apporté aux derniers détails avant la réception"
+            },
+            {
+              "src": "/images/why-2.jpg",
+              "alt": "Détail de parquet chevron et de tasseaux bois",
+              "caption": "Parquet chevron et tasseaux bois : des matériaux choisis pour durer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Où nous intervenons",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Notre siège est à La Garenne-Colombes. Nous intervenons dans les 20 arrondissements de [Paris](/renovation-appartement-paris), dans les [Hauts-de-Seine](/renovation-hauts-de-seine-92), les [Yvelines](/renovation-yvelines-78) et le [Val-de-Marne](/renovation-val-de-marne-94). Visite technique sous 5 jours et devis sous 48 h, quelle que soit la commune."
+        },
+        {
+          "t": "p",
+          "v": "Nos avis clients sont publiés sur Google, et [nos réalisations](/realisations-renovation) montrent le niveau de finition attendu. Pour parler de votre projet, appelez le 06 12 24 55 27, écrivez à contact@renovinterieurs.fr ou [utilisez le formulaire de contact](/contact-devis)."
+        }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Notre méthode", "href": "/methode", "desc": "Les 5 étapes, du premier échange au SAV" },
+    { "label": "Prix de la rénovation", "href": "/prix-renovation", "desc": "Fourchettes au m², TVA et aides" },
+    { "label": "Nos services", "href": "/nos-services", "desc": "Second œuvre, cuisine, salle de bain, isolation, dépannage, débarras" },
+    { "label": "Nos réalisations", "href": "/realisations-renovation", "desc": "Chantiers livrés à Paris et en Île-de-France" },
+    { "label": "Contact et devis", "href": "/contact-devis", "desc": "Réponse sous 48 h, sans engagement" }
+  ]
+}

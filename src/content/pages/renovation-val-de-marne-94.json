@@ -1,0 +1,215 @@
+{
+  "title": "Rénovation appartement et maison Val-de-Marne (94)",
+  "description": "Vincennes, Saint-Mandé, Saint-Maur, bords de Marne et sud du 94 : rénovation d’appartement, de maison et de pavillon, un interlocuteur unique. Devis 48 h.",
+  "h1": "Rénovation dans le Val-de-Marne : de Vincennes aux bords de Marne",
+  "kind": "zone",
+  "parent": "/zones",
+  "eyebrow": "Val-de-Marne (94)",
+  "hero": "/images/paris-zones.jpg",
+  "intro": [
+    "Le Val-de-Marne change de visage en quelques kilomètres. Au nord, Vincennes, Saint-Mandé et Charenton prolongent le Paris haussmannien de 1880-1900. Le long de la Marne, Nogent, Saint-Maur et Joinville alignent maisons Belle Époque et immeubles 1930. Au sud, Cachan et Arcueil mêlent immeubles 1920-1970, résidences neuves et pavillons. À chaque bâti, sa méthode de rénovation.",
+    "RenovIntérieurs pilote le second œuvre dans 10 communes du département : [rénovation d’appartement](/renovation-appartement-paris) haussmannien ou récent, [cuisine sur mesure](/cuisine-sur-mesure-paris), [salle de bain](/salle-de-bain-paris) en béton ciré, sortie de passoire énergétique. Visite technique sous 5 jours, devis détaillé sous 48 h, compte-rendu chaque semaine."
+  ],
+  "sections": [
+    {
+      "title": "En bref",
+      "blocks": [
+        {
+          "t": "stats",
+          "items": [
+            { "value": "10", "label": "communes du nord au sud du 94" },
+            { "value": "8 à 14", "label": "semaines pour une rénovation complète de 50 à 80 m²" },
+            { "value": "2 à 3", "label": "classes DPE gagnées sur une passoire énergétique" },
+            { "value": "2 ans", "label": "de garantie biennale sur les équipements" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Le bâti du 94 et ses contraintes",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Les haussmanniens et immeubles bourgeois de Vincennes, Saint-Mandé et Charenton offrent hauteurs sous plafond, moulures et parquets, mais des distributions à repenser et des réseaux à refaire. Sur les bords de Marne, les maisons Belle Époque et Art Nouveau de Nogent, Saint-Maur et Joinville conservent vitraux, cheminées et escaliers à balustres ; leur proximité avec la rivière impose une attention renforcée aux infiltrations et à l’étanchéité."
+        },
+        {
+          "t": "p",
+          "v": "Dans les immeubles 1920-1970 de Maisons-Alfort, Charenton, Cachan ou Arcueil, beaucoup de logements sont classés F ou G au DPE : déperditions fortes, charges élevées. Isolation des murs ou des rampants, VMC double flux et pompe à chaleur font gagner 2 à 3 classes, avec [MaPrimeRénov’ et les CEE](/isolation-amelioration-energetique). Les résidences récentes de Bercy 2, du Port de Plaisance ou de Vert-de-Maisons demandent plutôt de l’agencement."
+        },
+        {
+          "t": "callout",
+          "title": "Copropriété et démarches, prises en charge",
+          "v": "Avant chaque chantier en immeuble, nous informons le syndic, transmettons les attestations de décennale et de responsabilité civile, puis calons les horaires votés par la copropriété. Parties communes protégées par tapis, films et bâches, gravats évacués chaque jour. Si le projet touche un mur porteur, une gaine technique ou la façade, le dossier pour l’assemblée générale est préparé par nos soins et intégré au planning.",
+          "href": "/methode",
+          "label": "Le déroulé complet d’un chantier"
+        }
+      ]
+    },
+    {
+      "title": "Nos interventions commune par commune",
+      "blocks": [
+        {
+          "t": "cards",
+          "items": [
+            {
+              "title": "Vincennes",
+              "text": "Haussmanniens du centre et du cours Marigny, immeubles Art Déco du Plateau et du quartier Saint-Mandé, résidences contemporaines du Domaine du Bois. Rénovation complète adaptée à chaque copropriété, isolation des murs ou des rampants.",
+              "href": "/renovation-appartement-paris"
+            },
+            {
+              "title": "Saint-Mandé",
+              "text": "Haussmanniens et immeubles bourgeois du centre, résidences contemporaines autour du Bois, hôtels particuliers de l’avenue Foch et du lac. Cuisines sur mesure haut de gamme, salles de bain en marbre, parquets point de Hongrie restaurés.",
+              "href": "/cuisine-sur-mesure-paris"
+            },
+            {
+              "title": "Charenton-le-Pont",
+              "text": "Appartements 1920-1970 du centre, résidences des Berges et de Bercy 2, petits immeubles bourgeois du Petit-Château. Marché aligné sur Paris : rénovations complètes, pièces d’eau avec joints époxy et nattes d’étanchéité.",
+              "href": "/salle-de-bain-paris"
+            },
+            {
+              "title": "Saint-Maur-des-Fossés",
+              "text": "Maisons bourgeoises de La Varenne et d’Adamville, immeubles cossus du centre et du Parc, résidences récentes en bord de Marne. Cheminées en marbre, moulures et escaliers préservés, réseaux entièrement repris.",
+              "href": "/renovation-appartement-paris"
+            },
+            {
+              "title": "Maisons-Alfort",
+              "text": "Immeubles 1920-1970 du centre et de Charentonneau, souvent classés F ou G, résidences des Juilliottes et de Vert-de-Maisons, pavillons du Plateau. Sortie de passoire énergétique, caissons IKEA Metod à façades sur mesure.",
+              "href": "/isolation-amelioration-energetique"
+            },
+            {
+              "title": "Nogent-sur-Marne",
+              "text": "Appartements Belle Époque du centre, maisons Belle Époque et Art Nouveau des bords de Marne et du Plateau, résidences du Port de Plaisance et de Baltard. Restauration des vitraux et parquets anciens, séjours tournés vers la rivière.",
+              "href": "/renovation-appartement-paris"
+            },
+            {
+              "title": "Joinville-le-Pont",
+              "text": "Maisons Belle Époque ou Art Déco de 1900 à 1930 des bords de Marne et de l’Île Fanac, appartements du centre, pavillons du Polangis. Salles de bain en béton ciré, cuisines sur mesure, étanchéité renforcée près de l’eau.",
+              "href": "/beton-cire-paris"
+            },
+            {
+              "title": "Champigny-sur-Marne",
+              "text": "Maisons des bords de Marne, appartements du centre et de Cœuilly, pavillons des Mordacs et du Plateau. Rénovation complète de pavillon : isolation, refonte de la plomberie et de l’électricité, carrelage, finitions, parfois une extension.",
+              "href": "/renovation-gros-oeuvre-surelevation-extension-idf"
+            },
+            {
+              "title": "Cachan",
+              "text": "Appartements 1920-1970 du centre, résidences récentes de la Plaine, pavillons des Coteaux, à proximité du 14e arrondissement et de l’ENS. Rénovation partielle ou complète, salle de bain et cuisine, remise en état entre deux locataires.",
+              "href": "/salle-de-bain-paris"
+            },
+            {
+              "title": "Arcueil",
+              "text": "Appartements 1920-1970 du centre, résidences du Vert, pavillons des Coteaux et de la Vache Noire, dans une commune portée par l’arrivée de la ligne 15. Sortie des étiquettes F et G, modernisation des réseaux, agencement sur mesure.",
+              "href": "/isolation-amelioration-energetique"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Réalisations dans l’est parisien",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Un aperçu des finitions livrées sur nos chantiers d’appartement et de maison ; [la page réalisations](/realisations-renovation) rassemble l’ensemble de nos photos."
+        },
+        {
+          "t": "gallery",
+          "items": [
+            {
+              "src": "/images/sdb-douche-italienne.webp",
+              "alt": "Salle de bain sombre avec douche à l’italienne et baignoire îlot",
+              "caption": "Salle de bain : douche à l’italienne sur natte d’étanchéité, baignoire îlot, joints époxy"
+            },
+            {
+              "src": "/images/why-2.jpg",
+              "alt": "Détail d’un parquet en chevron et d’un habillage en tasseaux de bois",
+              "caption": "Détail de finition : parquet chevron et claustra en tasseaux de bois"
+            },
+            {
+              "src": "/images/bibliotheque-sur-mesure.webp",
+              "alt": "Bibliothèque sur mesure en bois massif avec niches et rangements fermés",
+              "caption": "Bibliothèque sur mesure en bois massif : niches ouvertes et rangements fermés"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Combien coûte une rénovation dans le 94",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Le Val-de-Marne reste plus accessible que Paris et le 92, avec des fourchettes de 10 à 15 % inférieures, hors Vincennes, Saint-Mandé et Saint-Maur où l’écart se resserre. Prix hors taxes, indicatifs pour 2026 ; le devis établi après visite reste la seule référence."
+        },
+        {
+          "t": "table",
+          "head": ["Niveau de rénovation", "Prix HT au m²", "Délai"],
+          "rows": [
+            ["Partielle, plomberie et électricité reprises en partie", "600 à 900 €", "3 à 6 semaines"],
+            ["Complète, cuisine et salle de bain neuves, 50 à 80 m²", "1 000 à 1 500 €", "8 à 14 semaines"],
+            ["Haut de gamme, maison ou plus de 100 m²", "1 500 à 2 500 €", "4 à 6 mois"]
+          ],
+          "note": "TVA à 10 % sur les travaux d’amélioration d’un logement de plus de 2 ans, TVA à 5,5 % sur l’amélioration énergétique éligible."
+        },
+        {
+          "t": "p",
+          "v": "Retrouvez [la grille de prix complète](/prix-renovation) avec ses exemples chiffrés par type de bien, et testez [l’estimateur de budget](/outils/estimateur-budget-renovation) pour cadrer votre projet avant la visite."
+        }
+      ]
+    },
+    {
+      "title": "Questions fréquentes dans le Val-de-Marne",
+      "blocks": [
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Faites-vous de la rénovation locative à Cachan ou Arcueil ?",
+              "a": "Oui, c’est une part majeure de notre activité au sud du département : remise en état entre deux locataires, valorisation avant mise en location et sortie de passoire énergétique pour louer sans restriction. Les délais sont calés sur la rotation locative et le devis est remis sous 48 h."
+            },
+            {
+              "q": "Une maison des bords de Marne à Nogent ou Joinville présente-t-elle des risques particuliers ?",
+              "a": "La proximité de la rivière expose ces maisons de 1900 à 1930 aux infiltrations. Nous vérifions l’étanchéité dès la visite technique et la traitons avant les finitions, puis restaurons vitraux, parquets et cheminées tout en refaisant les réseaux. Le [béton ciré](/beton-cire-paris) est souvent retenu pour les pièces d’eau."
+            },
+            {
+              "q": "Quel écart de prix entre Vincennes et Paris ?",
+              "a": "À prestations identiques, comptez 5 à 10 % de moins qu’à Paris dans les secteurs premium de Vincennes, un peu plus dans le quartier du Domaine du Bois. L’accès logistique plus simple explique la différence ; le niveau de finition, lui, reste le même que sur nos chantiers parisiens."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Rénovation d’appartement haussmannien ou récent",
+      "href": "/renovation-appartement-paris",
+      "desc": "Notre page mère : prestations, signatures techniques, déroulé"
+    },
+    {
+      "label": "Cuisine sur mesure",
+      "href": "/cuisine-sur-mesure-paris",
+      "desc": "Chêne massif, laque, quartz, ou façades sur mesure sur Metod"
+    },
+    {
+      "label": "Béton ciré",
+      "href": "/beton-cire-paris",
+      "desc": "Sols, murs, douches et plans de travail sans joint"
+    },
+    {
+      "label": "Prix de la rénovation",
+      "href": "/prix-renovation",
+      "desc": "Grille au m², exemples par surface, TVA réduite"
+    },
+    {
+      "label": "Méthode et garanties",
+      "href": "/methode",
+      "desc": "Cinq étapes, décennale, biennale, SAV 12 mois"
+    },
+    {
+      "label": "Zones d’intervention",
+      "href": "/zones",
+      "desc": "Les 35 communes couvertes autour de Paris"
+    }
+  ]
+}

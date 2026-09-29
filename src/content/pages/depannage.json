@@ -1,0 +1,164 @@
+{
+  "title": "Dépannage plomberie, électricité, serrurerie à Paris et IDF",
+  "description": "Fuite, panne électrique, porte claquée, chaudière en panne : intervention rapide à Paris et en Île-de-France, devis écrit avant travaux, tarifs annoncés.",
+  "h1": "Dépannage : plomberie, électricité, serrurerie et chauffage",
+  "kind": "service",
+  "parent": "/nos-services",
+  "eyebrow": "Dépannage à domicile",
+  "hero": "/images/nos-services-depannage.jpg",
+  "intro": [
+    "Une fuite sous l’évier, un disjoncteur qui saute, une porte claquée, une chaudière qui s’arrête en plein hiver : l’urgence domestique ne prévient pas, et ses conséquences dépassent l’inconfort. RenovIntérieurs intervient rapidement à Paris et en Île-de-France, avec un devis écrit avant tout démarrage et une garantie sur le travail réalisé.",
+    "Un seul appel couvre les quatre métiers du dépannage : plomberie, électricité, serrurerie, chauffage. Nous pilotons l’intervention du diagnostic à la facture, et si la panne révèle un besoin de rénovation, le même interlocuteur connaît déjà votre logement."
+  ],
+  "sections": [
+    {
+      "title": "En bref",
+      "blocks": [
+        {
+          "t": "stats",
+          "items": [
+            { "value": "4", "label": "métiers pour un seul appel" },
+            { "value": "80 %", "label": "des pannes réglées dès la première visite" },
+            { "value": "2 ans", "label": "de garantie sur la main-d’œuvre" },
+            { "value": "10 %", "label": "de TVA, logement de plus de 2 ans" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nos interventions",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Nos techniciens se déplacent dans les 20 arrondissements de [Paris](/renovation-appartement-paris), dans les [Hauts-de-Seine](/renovation-hauts-de-seine-92), les Yvelines et le Val-de-Marne, en véhicule équipé des pièces courantes."
+        },
+        {
+          "t": "cards",
+          "items": [
+            {
+              "title": "Plomberie",
+              "text": "Fuite sous évier ou lavabo, robinetterie, chasse d’eau, canalisation bouchée, chauffe-eau. Détection non destructive quand l’origine n’est pas visible."
+            },
+            {
+              "title": "Électricité",
+              "text": "Disjoncteur qui saute, prise qui chauffe, point lumineux hors service, tableau vétuste. Nous cherchons la cause avant de réarmer."
+            },
+            {
+              "title": "Serrurerie",
+              "text": "Porte claquée, clé cassée, cylindre à remplacer. Ouverture fine sans destruction dans la plupart des cas, perçage annoncé avant de commencer si nécessaire."
+            },
+            {
+              "title": "Chauffage",
+              "text": "Chaudière en panne, code erreur, radiateurs froids, purge et désembouage. Entretien annuel obligatoire avec attestation pour votre assurance."
+            },
+            {
+              "title": "Volets et menuiseries",
+              "text": "Volet roulant bloqué, fenêtre qui ne ferme plus, porte d’entrée qui frotte : réparation ou remplacement, joints d’étanchéité sur les fenêtres anciennes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sur le terrain",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Diagnostic, réparation, contrôle du bon fonctionnement avant de partir : le dépannage se termine par un chantier nettoyé. [Voir nos réalisations](/realisations-renovation)."
+        },
+        {
+          "t": "gallery",
+          "items": [
+            {
+              "src": "/images/nos-services-depannage.jpg",
+              "alt": "Technicien en intervention de dépannage à domicile",
+              "caption": "Dépannage : diagnostic sur place, pièces courantes en stock, contrôle avant départ"
+            },
+            {
+              "src": "/images/service-sdb.jpg",
+              "alt": "Plan vasque en pierre naturelle et robinetterie laiton",
+              "caption": "Robinetterie : remplacement à l’identique ou montée en gamme, au prix catalogue"
+            },
+            {
+              "src": "/images/paris-sdb.jpg",
+              "alt": "Salle de bain claire après remise en état",
+              "caption": "Salle de bain : après la fuite, la remise en état des finitions si nécessaire"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Un devis transparent, avant toute intervention",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Le dépannage à domicile est un secteur où les litiges sont fréquents : devis non remis, pièces surfacturées, travaux imposés sous pression. Notre réponse tient en quelques règles simples, appliquées à chaque intervention comme sur un chantier de rénovation piloté selon [notre méthode](/methode)."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Forfait de déplacement et taux horaire annoncés avant le déplacement.",
+            "Devis écrit remis sur place : pièces, main-d’œuvre, TVA, total. Rien ne démarre sans votre accord.",
+            "Pièces de marques professionnelles facturées au prix catalogue fournisseur.",
+            "Aucun supplément sans avenant signé.",
+            "Facture détaillée remise immédiatement, conforme aux exigences de votre assureur ou de votre bailleur.",
+            "Garantie écrite sur la main-d’œuvre et sur les pièces remplacées."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Nous traitons l’urgence, puis nous vous disons ce qu’elle révèle. Une installation électrique qui saute à répétition, une chaudière qui multiplie les pannes ou une fuite récurrente appellent parfois une mise en sécurité, une mise aux normes du tableau ou une [salle de bain à refaire](/salle-de-bain-paris). Vous décidez, sans pression, avec un devis distinct."
+        }
+      ]
+    },
+    {
+      "title": "Tarifs indicatifs du dépannage",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Si la panne révèle une installation à refaire, [nos tarifs de rénovation au m²](/prix-renovation) et [l’estimateur de budget](/outils/estimateur-budget-renovation) vous donnent un ordre de grandeur avant la visite technique."
+        },
+        {
+          "t": "table",
+          "head": ["Intervention", "Fourchette", "Ce qui est compris"],
+          "rows": [
+            ["Forfait déplacement et diagnostic", "45 à 85 €", "Déduit de la facture si vous validez le devis"],
+            ["Intervention courante plomberie ou électricité", "90 à 280 €", "Main-d’œuvre, hors pièces"],
+            ["Ouverture de porte sans destruction", "120 à 250 €", "Hors cylindre (80 à 200 € fourni posé)"]
+          ],
+          "note": "Fourchettes indicatives 2026, hors pièces majeures. Majoration la nuit, le week-end et les jours fériés, annoncée avant le déplacement. TVA 10 % sur l’entretien et l’amélioration d’un logement de plus de 2 ans."
+        }
+      ]
+    },
+    {
+      "title": "Questions sur le dépannage",
+      "blocks": [
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Le forfait de déplacement est-il déduit de la facture ?",
+              "a": "Oui, si vous validez le devis et que l’intervention est réalisée dans la foulée. Si vous refusez le devis, le forfait reste dû : il rémunère le déplacement et le diagnostic effectivement réalisés."
+            },
+            {
+              "q": "Comment éviter les arnaques au dépannage ?",
+              "a": "Exigez un devis écrit avant l’intervention, méfiez-vous des tarifs anormalement bas en publicité et privilégiez une entreprise identifiable, avec une adresse, un SIREN et des avis vérifiables, plutôt qu’un simple numéro de téléphone."
+            },
+            {
+              "q": "Je suis locataire : qui paie la réparation ?",
+              "a": "Pour une réparation urgente qui menace l’habitabilité (fuite, panne de chauffage en hiver, panne électrique majeure), vous pouvez faire intervenir un professionnel et demander le remboursement au propriétaire. Conservez la facture conforme que nous remettons et envoyez-la en recommandé."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Notre méthode", "href": "/methode", "desc": "Un interlocuteur unique, du dépannage au chantier complet" },
+    { "label": "Prix de la rénovation", "href": "/prix-renovation", "desc": "Quand la panne appelle des travaux" },
+    { "label": "Rénovation à Paris", "href": "/renovation-appartement-paris", "desc": "Les 20 arrondissements" },
+    { "label": "Rénover une salle de bain complète", "href": "/conseils/renovation-salle-de-bain-complete", "desc": "Quand la fuite révèle une pièce à refaire" },
+    { "label": "Nos réalisations", "href": "/realisations-renovation", "desc": "Chantiers livrés à Paris et en Île-de-France" }
+  ]
+}

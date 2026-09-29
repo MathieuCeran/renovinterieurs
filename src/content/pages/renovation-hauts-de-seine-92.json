@@ -1,0 +1,255 @@
+{
+  "title": "Rénovation appartement et maison Hauts-de-Seine (92)",
+  "description": "Rénovation d’appartement et de maison dans 18 communes du 92, de Neuilly à Sceaux. Interlocuteur unique, visite sous 5 jours, devis détaillé sous 48 h.",
+  "h1": "Rénovation dans les Hauts-de-Seine : 18 communes, un interlocuteur unique",
+  "kind": "zone",
+  "parent": "/zones",
+  "eyebrow": "Hauts-de-Seine (92)",
+  "hero": "/images/ville-hero.jpg",
+  "intro": [
+    "Haussmannien à Neuilly et Levallois, Art Déco à Boulogne et Puteaux, tours de La Défense, résidences livrées après 2010 au Trapèze ou à Issy, maisons de Sceaux et d’Antony : les Hauts-de-Seine réunissent toutes les époques de construction d’Île-de-France. Chaque bâti impose ses règles, du plafond à 3 m aux créneaux d’ascenseur de service.",
+    "RenovIntérieurs pilote vos travaux de second œuvre dans 18 communes du 92 : [rénovation complète d’appartement](/renovation-appartement-paris), [cuisine sur mesure](/cuisine-sur-mesure-paris), [salle de bain étanche](/salle-de-bain-paris), béton ciré, isolation. Un seul interlocuteur du premier échange à la livraison, une visite technique sous 5 jours, un devis détaillé sous 48 h."
+  ],
+  "sections": [
+    {
+      "title": "En bref",
+      "blocks": [
+        {
+          "t": "stats",
+          "items": [
+            { "value": "18", "label": "communes couvertes dans le 92" },
+            { "value": "48 h", "label": "pour recevoir votre devis détaillé" },
+            { "value": "5 jours", "label": "pour la visite technique" },
+            { "value": "10 ans", "label": "de garantie décennale" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Le bâti du 92 et ses contraintes",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Au nord, Levallois, Neuilly, Clichy et Asnières abritent des immeubles haussmanniens aux moulures et parquets anciens, sous des plafonds de 3 m. Boulogne nord, Puteaux centre, Madrid à Neuilly et Suresnes centre relèvent des immeubles 1930, décors Art Déco et plafonds de 2,70 à 2,90 m. Autour de La Défense dominent tours et résidences des années 1970 à 1990."
+        },
+        {
+          "t": "p",
+          "v": "Les quartiers récents du Trapèze à Boulogne, du Pont d’Issy ou des bords de Seine à Suresnes et Saint-Cloud appellent surtout de l’optimisation de plan et du [béton ciré](/beton-cire-paris). Au sud, les maisons de Sceaux, Antony ou Meudon demandent des rénovations complètes : isolation, réseaux, cuisine, salles de bain, avec parquets et cheminées à préserver."
+        },
+        {
+          "t": "callout",
+          "title": "Copropriété, syndic et secteurs protégés",
+          "v": "Dans les tours de Puteaux et de Courbevoie, les travaux passent par une autorisation d’assemblée générale, des créneaux d’ascenseur réservés et une protection renforcée des parties communes. Au Trapèze, les résidences récentes ont leurs propres règles, vérifiées avant de préparer les pièces pour le syndic. À Saint-Cloud et à Sèvres, centre et abords du parc sont en périmètre ABF : nous montons le dossier, comptez 2 à 4 mois d’instruction.",
+          "href": "/methode",
+          "label": "Voir comment nous pilotons le chantier"
+        }
+      ]
+    },
+    {
+      "title": "Nos interventions commune par commune",
+      "blocks": [
+        {
+          "t": "cards",
+          "items": [
+            {
+              "title": "Boulogne-Billancourt",
+              "text": "Immeubles 1930-1970 du centre et du quartier Reine, résidences du Trapèze livrées après 2010, petits immeubles bourgeois de Boulogne-Nord. Rénovation complète familiale et sortie de passoire énergétique.",
+              "href": "/renovation-appartement-paris"
+            },
+            {
+              "title": "Neuilly-sur-Seine",
+              "text": "Appartements Art Déco du Sablon, immeubles bourgeois du centre, hôtels particuliers du quartier Madrid. Cuisines sur mesure, salles de bain en marbre, parquets point de Hongrie restaurés.",
+              "href": "/cuisine-sur-mesure-paris"
+            },
+            {
+              "title": "Levallois-Perret",
+              "text": "Immeubles 1920-1970 du centre, résidences du Front de Seine, appartements destinés à la location. Rénovations complètes de 50 à 90 m², caissons IKEA Metod habillés de façades sur mesure.",
+              "href": "/renovation-appartement-paris"
+            },
+            {
+              "title": "Issy-les-Moulineaux",
+              "text": "Résidences récentes des Bords de Seine et du Fort d’Issy, immeubles 1960-1980 du centre, pavillons des Hauts d’Issy. Plans optimisés, rangements sur mesure en médium laqué, pièces d’eau refaites.",
+              "href": "/salle-de-bain-paris"
+            },
+            {
+              "title": "Courbevoie",
+              "text": "Immeubles bourgeois de la fin du XIXe siècle au centre et à Bécon, résidences du Faubourg de l’Arche, tours proches de La Défense. Rénovations partielles cuisine ou salle de bain, chantiers complets de 60 à 100 m².",
+              "href": "/renovation-appartement-paris"
+            },
+            {
+              "title": "Puteaux",
+              "text": "Tours résidentielles de La Défense, immeubles 1900-1970 du centre historique, résidences des Bergères et des bords de Seine. Ascenseur de service, créneaux d’accès et autorisation du syndic pris en charge.",
+              "href": "/renovation-appartement-paris"
+            },
+            {
+              "title": "Suresnes",
+              "text": "Appartements 1920-1970 du centre, résidences du Cluzeau et du Pont de Suresnes, pavillons des Coteaux. Béton ciré très demandé sur les chantiers contemporains des bords de Seine.",
+              "href": "/beton-cire-paris"
+            },
+            {
+              "title": "Saint-Cloud",
+              "text": "Appartements de standing du centre et de la Coulée Verte, hôtels particuliers du Coteau, villas de Montretout en pierre de taille. Périmètre ABF au centre, identifié dès la visite technique.",
+              "href": "/renovation-appartement-paris"
+            },
+            {
+              "title": "Rueil-Malmaison",
+              "text": "Appartements du centre et des abords du château de Malmaison, résidences du Bois Préau, maisons de Buzenval, Plaine Gare et Mont-Valérien. Rénovation complète de maison : isolation, réseaux, cuisine, salles de bain.",
+              "href": "/isolation-amelioration-energetique"
+            },
+            {
+              "title": "Asnières-sur-Seine",
+              "text": "Immeubles 1900-1970 du centre, résidences du Parc Robinson et des bords de Seine, pavillons de Bourguignons et d’Aulagnier. Rénovations globales de pavillon, parfois avec agrandissement.",
+              "href": "/renovation-gros-oeuvre-surelevation-extension-idf"
+            },
+            {
+              "title": "Clichy",
+              "text": "Immeubles 1900-1970 du centre, nombreux logements classés F ou G, résidences du Bac d’Asnières, petits immeubles de standing de Beaujon. Sortie de passoire énergétique et rénovation partielle.",
+              "href": "/isolation-amelioration-energetique"
+            },
+            {
+              "title": "Bois-Colombes",
+              "text": "Maisons des Bruyères et de la République, appartements Belle Époque autour de la gare, résidences des Carlsbergs. Parquets en chêne et cheminées en marbre conservés, pièces techniques modernisées.",
+              "href": "/renovation-appartement-paris"
+            },
+            {
+              "title": "Colombes",
+              "text": "Appartements 1920-1970 du centre, résidences du Petit Colombes, pavillons des années 1920 à 1950 des Vallées, de l’Agent-Sarre et de Bouvier. Isolation, installations remplacées, agrandissement possible.",
+              "href": "/renovation-gros-oeuvre-surelevation-extension-idf"
+            },
+            {
+              "title": "Sèvres",
+              "text": "Maisons des Bruyères, de Brimborion et de Croix-Bosset, appartements du centre et de la Cristallerie, hôtels particuliers près de la Manufacture. Secteurs ABF autour du parc, escaliers à balustres et moulures restaurés.",
+              "href": "/renovation-appartement-paris"
+            },
+            {
+              "title": "Meudon",
+              "text": "Maisons bourgeoises de Bellevue et du Val, appartements du centre, grands ensembles de Meudon-la-Forêt, pavillons de Meudon-sur-Seine. Séjours ouverts sur la vue, cuisines sur mesure, salles de bain en béton ciré.",
+              "href": "/cuisine-sur-mesure-paris"
+            },
+            {
+              "title": "Vanves",
+              "text": "Immeubles 1900-1970 du centre, résidences du Plateau, biens proches de la Porte de Versailles, à des prix voisins du 15e arrondissement. Rénovation complète ou partielle en copropriété.",
+              "href": "/salle-de-bain-paris"
+            },
+            {
+              "title": "Antony",
+              "text": "Appartements du centre, résidences du Pont d’Antony, pavillons des Bas-Graviers, de la Croix-de-Berny et de Pajeaud. Rénovations globales de pavillon : isolation, fenêtres, chauffage, cuisines ouvertes.",
+              "href": "/isolation-amelioration-energetique"
+            },
+            {
+              "title": "Sceaux",
+              "text": "Maisons des Blagis, de Robinson et des Mathurins, appartements de standing du centre, résidences proches du parc. Parquets anciens, cheminées et escaliers à balustres restaurés ; budgets dans le haut de la fourchette.",
+              "href": "/renovation-appartement-paris"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Réalisations dans l’ouest parisien",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Du séjour haussmannien restauré au grand volume contemporain, trois chantiers représentatifs ; d’autres photos dans [nos réalisations](/realisations-renovation)."
+        },
+        {
+          "t": "gallery",
+          "items": [
+            {
+              "src": "/images/sejour-haussmannien.jpg",
+              "alt": "Séjour haussmannien rénové en double exposition, moulures restaurées",
+              "caption": "Séjour haussmannien : moulures restaurées, double exposition, peintures et parquet repris"
+            },
+            {
+              "src": "/images/loft-beton-cire.jpg",
+              "alt": "Grand volume ouvert avec escalier suspendu et sol en béton ciré",
+              "caption": "Volume ouvert : sol en béton ciré, escalier suspendu, finition monobloc"
+            },
+            {
+              "src": "/images/paris-cuisine-sur-mesure.jpg",
+              "alt": "Cuisine sur mesure aux façades laquées et plan de travail continu",
+              "caption": "Cuisine sur mesure : façades laquées, plan de travail continu, rangements toute hauteur"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prix d’une rénovation dans le 92",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Les budgets du département sont légèrement en retrait de Paris, sauf à Neuilly et Saint-Cloud où le niveau de prestation tire les devis vers le haut. Fourchettes hors taxes, indicatives pour 2026 ; seul un devis après visite fait foi."
+        },
+        {
+          "t": "table",
+          "head": ["Prestation", "Fourchette HT au m²", "Délai indicatif"],
+          "rows": [
+            ["Rénovation partielle (1 à 2 pièces)", "600 à 900 €", "3 à 6 semaines"],
+            ["Rénovation complète de 50 à 80 m²", "1 000 à 1 500 €", "8 à 14 semaines"],
+            ["Haut de gamme ou plus de 100 m²", "1 500 à 2 500 €", "4 à 6 mois"]
+          ],
+          "note": "TVA à 10 % sur l’amélioration d’un logement de plus de 2 ans, 5,5 % sur les travaux énergétiques éligibles."
+        },
+        {
+          "t": "p",
+          "v": "La grille complète, les facteurs de variation et des exemples chiffrés sont réunis sur [notre page prix](/prix-renovation). Pour un premier ordre de grandeur, utilisez [l’estimateur de budget](/outils/estimateur-budget-renovation)."
+        }
+      ]
+    },
+    {
+      "title": "Questions fréquentes dans les Hauts-de-Seine",
+      "blocks": [
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Intervenez-vous dans les tours résidentielles de La Défense ?",
+              "a": "Oui, à Puteaux comme à Courbevoie. Nous obtenons l’autorisation en assemblée générale, réservons les créneaux d’ascenseur de service, protégeons les parties communes et remettons les attestations d’assurance avant le premier jour. Vous n’avez aucune démarche à mener auprès du syndic."
+            },
+            {
+              "q": "Mon appartement de Boulogne ou de Clichy est classé F : que proposez-vous ?",
+              "a": "Les immeubles des années 1930 à 1970 de ces communes sont souvent des passoires énergétiques. Audit, isolation des murs ou des combles quand c’est possible, VMC double flux et nouveau chauffage, dossiers MaPrimeRénov’ et CEE compris : l’objectif est de gagner 2 à 3 classes. Détails sur [notre offre isolation](/isolation-amelioration-energetique)."
+            },
+            {
+              "q": "Une maison de Sceaux ou de Bois-Colombes peut-elle garder son cachet ?",
+              "a": "C’est le principe de nos chantiers de maison : parquets en chêne, cheminées en marbre, escaliers à balustres et moulures sont restaurés pendant que plomberie, électricité, isolation et chauffage sont refaits. Le planning détaillé vous est remis avec le devis."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Rénovation d’appartement",
+      "href": "/renovation-appartement-paris",
+      "desc": "Second œuvre tous corps d’état, du diagnostic à la remise des clés"
+    },
+    {
+      "label": "Salle de bain étanche",
+      "href": "/salle-de-bain-paris",
+      "desc": "Joints époxy, nattes d’étanchéité, douche à l’italienne"
+    },
+    {
+      "label": "Isolation et DPE",
+      "href": "/isolation-amelioration-energetique",
+      "desc": "Sortie de passoire énergétique, aides MaPrimeRénov’ et CEE"
+    },
+    {
+      "label": "Prix d’une rénovation",
+      "href": "/prix-renovation",
+      "desc": "Grille au m², facteurs de prix, exemples chiffrés"
+    },
+    {
+      "label": "Notre méthode",
+      "href": "/methode",
+      "desc": "Cinq étapes, garanties, compte-rendu hebdomadaire"
+    },
+    {
+      "label": "Toutes nos zones",
+      "href": "/zones",
+      "desc": "Paris, Hauts-de-Seine, Yvelines, Val-de-Marne"
+    }
+  ]
+}

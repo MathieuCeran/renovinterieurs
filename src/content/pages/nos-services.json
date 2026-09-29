@@ -1,0 +1,113 @@
+{
+  "title": "Nos services de rénovation à Paris et en Île-de-France",
+  "description": "Rénovation d’appartement, cuisine, salle de bain, béton ciré, isolation DPE, gros œuvre, dépannage, débarras : huit services, un interlocuteur unique.",
+  "h1": "Nos services : huit métiers, un interlocuteur unique",
+  "kind": "hub",
+  "parent": "/",
+  "eyebrow": "Nos services",
+  "hero": "/images/nos-services-hero.jpg",
+  "intro": [
+    "Vous cherchez une entreprise capable de prendre votre rénovation en charge de bout en bout, sans multiplier les prestataires. RenovIntérieurs pilote le second œuvre tous corps d’état à Paris et en Île-de-France : appartement, cuisine, salle de bain, béton ciré, isolation, gros œuvre avec nos partenaires, dépannage et débarras. Visite technique sous 5 jours, devis détaillé sous 48 h.",
+    "Chaque service a sa page, avec ses signatures techniques, ses prix et ses réalisations. Pour situer votre budget, consultez [nos prix au m²](/prix-renovation) ; pour le déroulé d’un chantier, lisez [notre méthode en cinq étapes](/methode)."
+  ],
+  "sections": [
+    {
+      "title": "Huit services, une même exigence de finition",
+      "blocks": [
+        {
+          "t": "cards",
+          "items": [
+            {
+              "title": "Rénovation d’appartement",
+              "text": "Second œuvre tous corps d’état : plomberie, électricité, cloisons, peinture, sols et menuiseries, du diagnostic à la remise des clés.",
+              "href": "/renovation-appartement-paris"
+            },
+            {
+              "title": "Cuisine sur mesure",
+              "text": "Conception sur plan ou façades sur mesure sur caissons IKEA Metod. Chêne massif huilé, MDF laqué, quartz, granit, inox.",
+              "href": "/cuisine-sur-mesure-paris"
+            },
+            {
+              "title": "Salle de bain",
+              "text": "Douche à l’italienne, nattes d’étanchéité et joints époxy bi-composants qui ne noircissent pas pendant 15 à 20 ans.",
+              "href": "/salle-de-bain-paris"
+            },
+            {
+              "title": "Béton ciré",
+              "text": "Sols, murs, douches et plans de travail en finition continue, sans joint apparent.",
+              "href": "/beton-cire-paris"
+            },
+            {
+              "title": "Isolation et DPE",
+              "text": "Audit DPE, isolation, VMC double flux, pompe à chaleur. Objectif : gagner 2 à 3 classes, avec MaPrimeRénov’ et CEE.",
+              "href": "/isolation-amelioration-energetique"
+            },
+            {
+              "title": "Gros œuvre, surélévation, extension",
+              "text": "Mur porteur, surélévation ou extension avec architectes DPLG et ingénieurs structure. Démarches pilotées, jusqu’à 15-20 % d’économie.",
+              "href": "/renovation-gros-oeuvre-surelevation-extension-idf"
+            },
+            {
+              "title": "Dépannage",
+              "text": "Plomberie, électricité, serrurerie, chauffage. Intervention rapide, devis transparent.",
+              "href": "/depannage"
+            },
+            {
+              "title": "Débarras",
+              "text": "Succession, fin de bail, après travaux : vidage, évacuation, nettoyage de fin de chantier.",
+              "href": "/debarras"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Un seul interlocuteur, quel que soit le chantier",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Salle de bain ou rénovation complète, le cadre ne change pas : un interlocuteur unique pilote les artisans, vous recevez un compte-rendu chaque semaine et le SAV court 12 mois après la livraison. Les attestations de garantie (décennale, biennale, parfait achèvement, RC pro) vous sont remises avant le démarrage."
+        },
+        {
+          "t": "p",
+          "v": "Nous intervenons dans les 20 arrondissements de Paris, dans les Hauts-de-Seine, les Yvelines et le Val-de-Marne. Retrouvez [nos communes d’intervention](/zones) et [nos réalisations récentes](/realisations-renovation)."
+        }
+      ]
+    },
+    {
+      "title": "Pour aller plus loin",
+      "blocks": [
+        {
+          "t": "links",
+          "items": [
+            {
+              "label": "Prix de rénovation au m²",
+              "href": "/prix-renovation",
+              "desc": "Grille 2026, exemples chiffrés, TVA et aides."
+            },
+            {
+              "label": "Notre méthode en cinq étapes",
+              "href": "/methode",
+              "desc": "Du premier échange au SAV 12 mois."
+            },
+            {
+              "label": "Nos réalisations",
+              "href": "/realisations-renovation",
+              "desc": "Séjours haussmanniens, cuisines, salles de bain, lofts."
+            },
+            {
+              "label": "Conseils et guides",
+              "href": "/conseils",
+              "desc": "Prix, délais, isolation, cuisine, salle de bain."
+            },
+            {
+              "label": "Zones d’intervention",
+              "href": "/zones",
+              "desc": "Paris, Hauts-de-Seine, Yvelines, Val-de-Marne."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

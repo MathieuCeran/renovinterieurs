@@ -1,0 +1,197 @@
+{
+  "title": "Isolation d’une maison ancienne par l’intérieur",
+  "description": "Murs, combles, cave, fenêtres : isoler une maison ancienne par l’intérieur sans piéger l’humidité. Isolants, prix au m², aides et ordre des travaux.",
+  "h1": "Isoler une maison ancienne par l’intérieur : murs, combles, cave et fenêtres",
+  "kind": "article",
+  "parent": "/conseils",
+  "eyebrow": "Isolation et DPE",
+  "hero": "/images/dpe-1.jpg",
+  "intro": [
+    "Isoler une maison ancienne par l’intérieur fonctionne à une condition : respecter la capacité des murs en pierre ou en brique à laisser passer la vapeur d’eau. Avec un isolant perspirant, l’humidité traitée en amont et une ventilation adaptée, le gain atteint 2 à 3 classes au DPE.",
+    "Cet article couvre les quatre zones d’une maison ancienne dans l’ordre où elles pèsent sur la facture : les murs, les combles aménageables, la cave et le plancher bas, puis les fenêtres et portes. Avec, pour chacune, les isolants adaptés, les prix constatés et les erreurs à éviter."
+  ],
+  "sections": [
+    {
+      "title": "À retenir",
+      "blocks": [
+        {
+          "t": "callout",
+          "title": "À retenir",
+          "v": "Dans une maison ancienne, un isolant trop fermé déplace l’humidité dans le mur et provoque condensation, moisissures et éclatement des enduits. Privilégiez fibre de bois, chanvre, liège ou laine minérale avec frein-vapeur hygrovariable, et traitez remontées capillaires et fissures avant tout doublage. RenovIntérieurs pilote diagnostic, isolation, finitions et dossiers d’aides avec un interlocuteur unique.",
+          "href": "/isolation-amelioration-energetique",
+          "label": "Voir notre offre isolation et DPE"
+        },
+        {
+          "t": "p",
+          "v": "En Île-de-France, près de 40 % des logements datent d’avant 1975, quand les exigences thermiques étaient quasi inexistantes. Ces maisons sont souvent classées E, F ou G. L’[isolation par l’intérieur pilotée par RenovIntérieurs](/isolation-amelioration-energetique) conserve les façades, ne demande en général aucune autorisation et peut avancer pièce par pièce."
+        }
+      ]
+    },
+    {
+      "title": "Les murs : là où tout se joue",
+      "blocks": [
+        {
+          "t": "stats",
+          "items": [
+            { "value": "20 à 25 %", "label": "des déperditions passent par les murs" },
+            { "value": "5 à 10 cm", "label": "d’emprise par paroi isolée" },
+            { "value": "60 à 95 €/m²", "label": "posé, tarif RenovIntérieurs" },
+            { "value": "R ≥ 3,7", "label": "résistance thermique visée pour les aides" }
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Un mur en pierre, en brique ou en pisé absorbe l’humidité puis la restitue. Cet équilibre fait partie de son mode constructif. Poser un isolant qui bloque la vapeur crée un point froid invisible où l’eau s’accumule : mur humide, moisissures, enduits qui se décollent. Le choix de l’isolant se fait donc sur sa perméabilité autant que sur son lambda."
+        },
+        {
+          "t": "table",
+          "head": ["Isolant", "Conductivité (W/m·K)", "Adapté à"],
+          "rows": [
+            ["Fibre de bois", "0,038 à 0,042", "Murs anciens, bon confort d’été, perspirant"],
+            ["Chanvre", "0,040 à 0,048", "Pierre, brique, terre : régule l’humidité"],
+            ["Laine de mouton", "0,035 à 0,040", "Parois exposées aux condensats"],
+            ["Liège expansé", "Variable selon densité", "Murs à fortes variations d’humidité, caves"],
+            ["Laine minérale", "Selon produit", "Possible avec frein-vapeur hygrovariable, jamais avec un pare-vapeur standard"],
+            ["Polystyrène, panneaux fermés", "Faible, mais étanche à la vapeur", "Déconseillé sur mur ancien : point de rosée entre support et isolant"]
+          ],
+          "note": "Visez R ≥ 3,7 m².K/W sur les murs pour rester éligible aux aides."
+        },
+        {
+          "t": "p",
+          "v": "Trois mises en œuvre existent. Le doublage collé va vite mais exige un support plan, sec et stable. L’ossature bois ou métallique rattrape les faux aplombs d’un mur irrégulier. La lame d’air de 2 cm entre le mur et l’isolant reste la solution des supports poreux ou légèrement humides. Aux jonctions plancher, tableaux de fenêtre et refends, des retours d’isolant évitent les ponts thermiques."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Remontées capillaires : à traiter avant tout doublage, aucun isolant ne compense une humidité active en pied de mur.",
+            "Fissures et salpêtre : signes d’infiltration ou de mouvement, à stabiliser avant le second œuvre.",
+            "Enduit ciment imperméable : il bloque la vapeur et doit être déposé pour laisser le mur respirer.",
+            "Ventilation : une VMC double flux renouvelle l’air sans perdre la chaleur, indispensable une fois l’enveloppe fermée."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Combles aménageables : isoler sous les rampants",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "La toiture laisse partir 20 à 30 % de la chaleur d’un logement mal isolé. Dans des combles aménageables, le soufflage au sol est exclu : l’isolant se pose sous les rampants, entre et sous les chevrons, ce qui préserve le volume habitable et ne touche pas à la couverture, un avantage en secteur protégé."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Pose entre chevrons avec une lame d’air de 2 à 4 cm côté couverture pour la ventilation.",
+            "Deux couches croisées de fibre de bois ou de laine de roche pour neutraliser les ponts thermiques au droit des chevrons.",
+            "Membrane frein-vapeur hygrovariable côté intérieur, continue et jointoyée, pour protéger la charpente.",
+            "Finition en plaques de plâtre sur ossature suspendue, avec calfeutrement des trappes et passages de gaines."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "La résistance thermique minimale pour les aides est R = 6 m²·K/W ; viser 7 sécurise le confort et le DPE. L’épaisseur dépend du matériau : 17,5 cm de polyuréthane, 24,5 cm de laine minérale, 28 cm de biosourcé. Quand la hauteur sous faîtage manque, un lambda bas libère jusqu’à 7 cm ; dans un bâti ancien, un biosourcé au déphasage supérieur à 10 h protège mieux l’été."
+        },
+        {
+          "t": "p",
+          "v": "Côté budget, l’isolation sous rampants coûte 50 à 150 €/m² TTC pose comprise ; RenovIntérieurs se situe entre 60 et 95 €/m² posé. Si la couverture est à refaire, le sarking (isolant rigide posé sur les chevrons depuis l’extérieur) revient à 150 à 250 €/m² mais supprime les ponts thermiques de structure. Une fenêtre de toit ajoute 800 à 1 500 €."
+        }
+      ]
+    },
+    {
+      "title": "Cave et plancher bas : le sol froid du rez-de-chaussée",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Une cave non traitée représente 7 à 10 % des déperditions et fait perdre 2 à 3 °C de température ressentie dans les pièces du dessus. Isoler le plafond de cave, c’est isoler le plancher du rez-de-chaussée sans toucher aux revêtements. La résistance visée est R ≥ 3,0 m².K/W, seuil de la TVA à 5,5 % et de MaPrimeRénov’."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Plafond béton plan : panneaux rigides XPS ou PUR collés ou vissés en sous-face, sans ossature.",
+            "Plafond sur solives bois : isolant semi-rigide entre solives, pare-vapeur côté chauffé pour protéger la structure.",
+            "Cave voûtée ou irrégulière : mousse polyuréthane projetée (0,022 à 0,028 W/m·K), qui épouse les formes et ferme les jonctions.",
+            "Murs enterrés en pierre : chaux-chanvre, chaux-liège ou panneaux de liège, avec lame d’air de 2 cm sur les parois encore poreuses.",
+            "Sol de cave : pare-vapeur remonté en périphérie, panneaux XPS, puis carrelage ou dalles PVC ; jamais de bois massif en milieu humide."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Ici encore, l’humidité se traite avant l’isolant : injection hydrophobe contre les remontées capillaires, enduit d’imperméabilisation ou résine sur les zones d’infiltration. Isoler un mur enterré encore chargé en eau piège l’humidité et fragilise la pierre aux cycles de gel."
+        }
+      ]
+    },
+    {
+      "title": "Fenêtres et portes : le dernier quart des pertes",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Les menuiseries représentent jusqu’à 25 % des déperditions. Un simple vitrage laisse passer quatre à six fois plus de chaleur qu’un mur isolé. Un double vitrage à isolation renforcée (couche basse émissivité, argon) atteint un Uw de 1,1 à 1,3 W/m²K ; un triple vitrage descend à 0,6 à 0,9, pour un coût supérieur de 60 à 80 %, justifié surtout en façade nord."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Pour MaPrimeRénov’ : Uw ≤ 1,3 W/m²K, facteur solaire Sw ≥ 0,3, pose par une entreprise RGE.",
+            "Châssis : bois et PVC isolent naturellement ; l’aluminium exige une rupture de pont thermique.",
+            "Classification AEV : A*3 E*6 V*2 en zone urbaine, A*4 E*7 V*3 en étage élevé ou façade exposée.",
+            "Avant de remplacer : joints dormant-ouvrant, mastic sur le pourtour, bas de porte. Un calfeutrement continu vaut souvent un vitrage neuf mal posé.",
+            "Budget : 400 à 900 € par fenêtre posée en double vitrage, 4 000 à 8 000 € pour quatre à six fenêtres PVC."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Dans les Yvelines, à Versailles, Saint-Germain-en-Laye ou Maisons-Laffitte, les règles d’urbanisme orientent souvent le choix vers le bois en façade sur rue. RenovIntérieurs intègre ces contraintes dès la visite technique de [rénovation dans les Yvelines](/renovation-yvelines-78)."
+        }
+      ]
+    },
+    {
+      "title": "Budget global, aides et ordre des travaux",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Pour les murs, le marché s’étend de 50 à 130 €/m² TTC selon la technique et l’isolant ; RenovIntérieurs se positionne entre 60 et 95 €/m² posé. Ajoutez les travaux liés : reprises électriques, plinthes et tableaux, VMC double flux, menuiseries. Un bilan énergétique en amont hiérarchise les pertes et permet de phaser le chantier en une ou plusieurs campagnes."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "MaPrimeRénov’ : jusqu’à 25 €/m² sur les murs et les combles aménageables, modulée selon les revenus et le gain énergétique.",
+            "Prime CEE : jusqu’à 13 €/m² sur les combles, cumulable avec MaPrimeRénov’ pour un logement de plus de 2 ans.",
+            "Éco-PTZ : jusqu’à 50 000 € à taux zéro, remboursables sur 20 ans maximum.",
+            "TVA à 5,5 % sur fourniture et pose des isolants, logement achevé depuis plus de 2 ans, entreprise RGE.",
+            "Les dossiers se déposent avant la première intervention : aucune prime n’est rétroactive."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "L’ordre reste le même que pour toute sortie de passoire : traiter l’humidité, isoler murs et combles, puis plancher bas et fenêtres, installer la VMC quand l’enveloppe est fermée, et dimensionner le chauffage en dernier. Le [simulateur DPE](/outils/simulateur-dpe-passoire-energetique) donne une première idée de la classe atteignable selon les postes traités."
+        },
+        {
+          "t": "p",
+          "v": "Une isolation cohérente réduit la facture de chauffage de 30 à 60 % : pour une maison qui consomme 3 000 à 4 000 € par an, cela représente 1 200 à 2 400 € d’économies. Le passage de F à C valorise le bien de 8 à 15 %. Pour un chantier piloté de bout en bout, du diagnostic aux finitions, consultez notre [offre isolation et amélioration énergétique](/isolation-amelioration-energetique)."
+        },
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Quel isolant choisir pour une maison en pierre ?",
+              "a": "Un isolant biosourcé : fibre de bois, chanvre ou laine de mouton laissent circuler la vapeur et respectent l’équilibre du mur. Les laines minérales conviennent avec un frein-vapeur hygrovariable. Les polystyrènes fermés sont à éviter sur ce type de support."
+            },
+            {
+              "q": "Quels sont les inconvénients de l’isolation par l’intérieur ?",
+              "a": "Une perte de 5 à 10 cm par mur, qui modifie retours de cloisons et emplacement des prises. Les pièces doivent être libérées pendant les travaux. Et les ponts thermiques (jonctions plancher, tableaux, refends) demandent un traitement soigné, sinon une partie du gain est perdue."
+            },
+            {
+              "q": "Combien coûte l’isolation des murs par l’intérieur ?",
+              "a": "Entre 50 et 130 €/m² TTC sur le marché, 60 à 95 €/m² posé chez RenovIntérieurs en Île-de-France, hors travaux connexes (menuiseries, VMC, reprises d’enduit). MaPrimeRénov’, CEE, éco-PTZ et TVA à 5,5 % réduisent le reste à charge."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Isolation et amélioration énergétique", "href": "/isolation-amelioration-energetique", "desc": "Audit DPE, isolation murs et combles, VMC double flux, MaPrimeRénov’ et CEE." },
+    { "label": "Simulateur DPE", "href": "/outils/simulateur-dpe-passoire-energetique", "desc": "Estimez la classe atteignable selon les postes isolés." },
+    { "label": "Sortir d’une passoire énergétique (DPE F ou G)", "href": "/conseils/sortir-passoire-energetique-dpe-f-g", "desc": "Les trois leviers, l’ordre des travaux, les aides et un cas chiffré." },
+    { "label": "Nos prix au m²", "href": "/prix-renovation", "desc": "Fourchettes par niveau de rénovation, TVA à 10 % et 5,5 %." }
+  ]
+}

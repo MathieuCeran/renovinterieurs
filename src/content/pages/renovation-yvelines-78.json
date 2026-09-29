@@ -1,0 +1,200 @@
+{
+  "title": "Rénovation maison et appartement Yvelines (78)",
+  "description": "Versailles, Saint-Germain, Le Vésinet, Maisons-Laffitte et les boucles de la Seine : rénovation patrimoniale et second œuvre pilotés. Devis sous 48 h.",
+  "h1": "Rénovation dans les Yvelines : patrimoine, boucles de Seine et dossiers ABF",
+  "kind": "zone",
+  "parent": "/zones",
+  "eyebrow": "Yvelines (78)",
+  "hero": "/images/salon-haussmannien-moulures.jpg",
+  "intro": [
+    "Appartements bourgeois du XVIIIe et du XIXe siècle autour du château de Versailles, villas Belle Époque de 1880 à 1920 sur les boucles de la Seine, hôtels particuliers du Vieux Marché à Saint-Germain, pavillons familiaux partout ailleurs : le bâti yvelinois se restaure plus qu’il ne se remplace. Parquets d’époque, vitraux, cheminées et boiseries sont des atouts à conserver.",
+    "Dans 7 communes de l’est du département, RenovIntérieurs accompagne cette exigence : [rénovation complète](/renovation-appartement-paris) respectueuse de l’existant, mise aux normes de l’électricité et de la plomberie, [isolation compatible avec les prescriptions patrimoniales](/isolation-amelioration-energetique), dossiers ABF constitués et suivis. Un interlocuteur unique, un devis détaillé sous 48 h."
+  ],
+  "sections": [
+    {
+      "title": "En bref",
+      "blocks": [
+        {
+          "t": "stats",
+          "items": [
+            { "value": "7", "label": "communes des boucles de la Seine et de Versailles" },
+            { "value": "2 à 4 mois", "label": "d’instruction pour un dossier ABF" },
+            { "value": "12 mois", "label": "de SAV après la livraison" },
+            { "value": "1", "label": "interlocuteur du devis à la réception" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Le bâti yvelinois et ses contraintes",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Quatre familles de biens se partagent le territoire. Les appartements versaillais des quartiers Notre-Dame et Saint-Louis, en secteur sauvegardé, avec moulures hautes et fenêtres à petits carreaux. Les villas Belle Époque de Croissy, du Vésinet, de Chatou, du Pecq et de Maisons-Laffitte, posées dans des parcs privés. Les résidences des années 1990 à 2020 comme Boulingrin à Versailles ou Pereire au Vésinet. Enfin les pavillons familiaux, souvent avec dépendances."
+        },
+        {
+          "t": "p",
+          "v": "Ces maisons anciennes demandent une lecture technique avant tout choix décoratif. En bord de Seine, la proximité du fleuve entraîne des remontées capillaires et des expositions thermiques marquées : l’étanchéité et l’isolation passent avant les finitions. Dans les secteurs protégés, les menuiseries se refont en chêne ou en noyer, aux profils et teintes prescrits. Les réseaux d’électricité, de plomberie et le chauffage sont repris en parallèle, sans toucher au cachet."
+        },
+        {
+          "t": "callout",
+          "title": "Avis ABF : quand il s’applique, comment nous le gérons",
+          "v": "Un chantier intérieur sans effet visible depuis la rue ne requiert aucun avis. Fenêtres, façades, devantures ou climatisation en façade exigent une déclaration préalable et l’avis de l’Architecte des Bâtiments de France : centre de Versailles, secteur sauvegardé de Saint-Germain, toute la ville-parc du Vésinet, parc Mansart. RenovIntérieurs constitue le dossier, le dépose en mairie et suit l’instruction, 2 à 4 mois. Le parc Mansart ajoute son règlement de copropriété.",
+          "href": "/methode",
+          "label": "Notre méthode, étape par étape"
+        }
+      ]
+    },
+    {
+      "title": "Nos interventions commune par commune",
+      "blocks": [
+        {
+          "t": "cards",
+          "items": [
+            {
+              "title": "Versailles",
+              "text": "Appartements bourgeois du centre en périmètre ABF, maisons bourgeoises de Notre-Dame et Saint-Louis, résidences plus récentes des Chantiers et de Clagny. Escaliers, boiseries et moulures hautes restaurés, électricité aux normes, isolation et chauffage performant.",
+              "href": "/renovation-appartement-paris"
+            },
+            {
+              "title": "Saint-Germain-en-Laye",
+              "text": "Appartements de standing du centre, hôtels particuliers du Vieux Marché, villas de Hennemont et de Bel-Air, en grande partie dans le secteur sauvegardé. Second œuvre complet du diagnostic à la livraison, matériaux choisis pour le bâti ancien.",
+              "href": "/renovation-appartement-paris"
+            },
+            {
+              "title": "Le Vésinet",
+              "text": "Villas Belle Époque du Parc, appartements bourgeois du centre, hôtels particuliers autour des lacs, dans une ville-parc classée. Isolation des murs par l’intérieur, combles soufflés, menuiseries sur mesure en chêne ou noyer conformes aux prescriptions.",
+              "href": "/isolation-amelioration-energetique"
+            },
+            {
+              "title": "Maisons-Laffitte",
+              "text": "Appartements du centre, villas du parc Mansart, lotissement de 1830 classé, maisons vers Achères-Plage. Corniches, rosaces et moulures reprises, puis finitions contemporaines : béton ciré, joints époxy, plans en pierre.",
+              "href": "/beton-cire-paris"
+            },
+            {
+              "title": "Croissy-sur-Seine",
+              "text": "Maisons des bords de Seine, villas du Mont aux parquets, vitraux et escaliers d’époque, appartements bourgeois du centre. Nous restaurons ces éléments au lieu de les remplacer et modernisons plomberie, électricité, isolation et chauffage.",
+              "href": "/renovation-appartement-paris"
+            },
+            {
+              "title": "Le Pecq",
+              "text": "Maisons des bords de Seine, appartements du centre, résidences de standing du quartier du Mexique. Sur les maisons proches du fleuve, remontées capillaires et déperditions sont traitées en priorité, avant les finitions.",
+              "href": "/isolation-amelioration-energetique"
+            },
+            {
+              "title": "Chatou",
+              "text": "Maisons Belle Époque ou Art Déco des bords de Seine et de l’Île des Impressionnistes, appartements bourgeois du centre, pavillons des Coteaux et de Chatou-Bel-Air. Cuisines et salles de bain refaites avec une étanchéité renforcée.",
+              "href": "/cuisine-sur-mesure-paris"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Réalisations de restauration et de second œuvre",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Le type de finition que nous visons sur les maisons et appartements anciens des Yvelines ; la galerie complète est visible sur [la page réalisations](/realisations-renovation)."
+        },
+        {
+          "t": "gallery",
+          "items": [
+            {
+              "src": "/images/salon-haussmannien-moulures.jpg",
+              "alt": "Salon ancien restauré avec cheminée en marbre et parquet en chevron",
+              "caption": "Salon restauré : cheminée en marbre conservée, moulures reprises, parquet chevron poncé et vitrifié"
+            },
+            {
+              "src": "/images/paris-parquet.jpg",
+              "alt": "Parquet en chêne posé en point de Hongrie",
+              "caption": "Parquet chêne point de Hongrie : pose neuve dans une pièce de réception"
+            },
+            {
+              "src": "/images/service-sdb.jpg",
+              "alt": "Plan vasque en pierre naturelle avec robinetterie en laiton",
+              "caption": "Salle de bain : plan vasque en pierre naturelle, robinetterie laiton, joints époxy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Budget d’une rénovation dans les Yvelines",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Les fourchettes du département sont proches de celles de Paris et s’en rapprochent encore au Vésinet, à Maisons-Laffitte et à Croissy, où les demandes portent sur des finitions de haut niveau. Montants hors taxes, indicatifs pour 2026, à confirmer par un devis après visite."
+        },
+        {
+          "t": "table",
+          "head": ["Type de chantier", "Budget HT au m²", "Durée moyenne"],
+          "rows": [
+            ["Partielle : une ou deux pièces", "600 à 900 €", "3 à 6 semaines"],
+            ["Complète, appartement de 50 à 80 m²", "1 000 à 1 500 €", "8 à 14 semaines"],
+            ["Restauration patrimoniale ou maison", "1 500 à 2 500 €", "4 à 6 mois"]
+          ],
+          "note": "TVA réduite à 10 % pour un logement achevé depuis plus de 2 ans ; 5,5 % sur les postes d’amélioration énergétique éligibles."
+        },
+        {
+          "t": "p",
+          "v": "Les fourchettes par niveau de prestation et les aides mobilisables sont détaillées sur [la page prix](/prix-renovation). Pour situer votre projet avant le premier appel, [l’estimateur de budget](/outils/estimateur-budget-renovation) vous donne un ordre de grandeur."
+        }
+      ]
+    },
+    {
+      "title": "Questions fréquentes dans les Yvelines",
+      "blocks": [
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Faut-il un avis ABF pour rénover l’intérieur d’un appartement à Versailles ?",
+              "a": "Non, tant que rien ne change vu de l’extérieur. Si le projet touche aux fenêtres, à la façade ou à une devanture dans le périmètre protégé, nous préparons la déclaration préalable avec plans, photos et descriptif, puis suivons l’instruction, comptée entre 2 et 4 mois. Le planning du chantier en tient compte dès le devis."
+            },
+            {
+              "q": "Restaurez-vous les villas Belle Époque du Vésinet et de Croissy ?",
+              "a": "Oui, c’est une part importante de notre activité dans les boucles de la Seine. Parquets anciens, vitraux, cheminées et escaliers sont restaurés, tandis que l’électricité, la plomberie, l’isolation et le chauffage sont refaits selon les règles actuelles. Notre [offre de rénovation](/renovation-appartement-paris) précise ce que nous pilotons."
+            },
+            {
+              "q": "Comment traitez-vous l’humidité d’une maison en bord de Seine au Pecq ou à Chatou ?",
+              "a": "La visite technique repère les remontées capillaires et les parois les plus exposées. Nous traitons ensuite l’étanchéité et l’isolation avant d’engager cloisons, revêtements et peintures, pour un résultat qui tient sans reprise à court terme. Les salles de bain reçoivent nattes d’étanchéité et joints époxy."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Rénovation complète",
+      "href": "/renovation-appartement-paris",
+      "desc": "Appartement ou maison, tous corps d’état du second œuvre"
+    },
+    {
+      "label": "Isolation et sortie de DPE F ou G",
+      "href": "/isolation-amelioration-energetique",
+      "desc": "Audit, isolation, VMC double flux, pompe à chaleur"
+    },
+    {
+      "label": "Cuisine sur mesure",
+      "href": "/cuisine-sur-mesure-paris",
+      "desc": "Conception sur plan ou façades sur mesure sur caissons Metod"
+    },
+    {
+      "label": "Tarifs au m²",
+      "href": "/prix-renovation",
+      "desc": "Fourchettes 2026, facteurs de variation, TVA et aides"
+    },
+    {
+      "label": "Comment se déroule un chantier",
+      "href": "/methode",
+      "desc": "Visite sous 5 jours, devis sous 48 h, suivi hebdomadaire"
+    },
+    {
+      "label": "Nos autres zones",
+      "href": "/zones",
+      "desc": "Paris et les trois départements de la petite couronne"
+    }
+  ]
+}

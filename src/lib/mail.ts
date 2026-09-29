@@ -75,7 +75,7 @@ export async function sendLeadMail(lead: LeadMail) {
     .join("")}</table>`;
 
   await transporter().sendMail({
-    from: { name: "RenovIntérieur — Site web", address: user },
+    from: { name: "RenovIntérieurs — Site web", address: user },
     to,
     replyTo: lead.email,
     subject,

@@ -1,0 +1,174 @@
+{
+  "title": "Gros œuvre, surélévation et extension en Île-de-France",
+  "description": "Mur porteur, surélévation, extension : architectes DPLG, ingénieurs structure et entreprises sélectionnées, démarches pilotées. Jusqu’à 15-20 % d’économie.",
+  "h1": "Gros œuvre : surélévation, extension et mur porteur pilotés",
+  "kind": "service",
+  "parent": "/nos-services",
+  "eyebrow": "Gros œuvre & structure",
+  "hero": "/images/paris-chantier.jpg",
+  "intro": [
+    "Ouvrir un mur porteur, ajouter un étage, agrandir une maison : ces projets exigent un architecte, un ingénieur structure et une entreprise de gros œuvre qui avancent ensemble. RenovIntérieurs vous met en relation avec ces partenaires sélectionnés en Île-de-France et pilote votre projet du premier échange à la livraison.",
+    "Nous ne réalisons pas le gros œuvre nous-mêmes : nous activons les bons partenaires, pilotons les démarches (permis, syndic, Architecte des Bâtiments de France) et restons votre interlocuteur unique. Sans marge intermédiaire ni sous-traitance en cascade, vous économisez jusqu’à 15-20 % sur le total du chantier."
+  ],
+  "sections": [
+    {
+      "title": "En bref",
+      "blocks": [
+        {
+          "t": "stats",
+          "items": [
+            { "value": "15-20 %", "label": "d’économie sur le total du chantier" },
+            { "value": "3", "label": "partenaires : architecte, ingénieur, entreprise" },
+            { "value": "2 à 3 mois", "label": "d’instruction d’un permis en Île-de-France" },
+            { "value": "+40 à 80 %", "label": "de surface avec une surélévation" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nos chantiers de structure",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Volumes réunis, murs porteurs ouverts, second œuvre livré dans la continuité : quelques chantiers pilotés avec nos partenaires, [d’autres sont visibles dans nos réalisations](/realisations-renovation)."
+        },
+        {
+          "t": "gallery",
+          "items": [
+            {
+              "src": "/images/loft-beton-cire.jpg",
+              "alt": "Grand volume ouvert avec escalier suspendu et sol en béton ciré",
+              "caption": "Ouverture de mur porteur : un volume traversant, poutre métallique dissimulée, sol béton ciré"
+            },
+            {
+              "src": "/images/paris-chantier.jpg",
+              "alt": "Chantier de rénovation en cours, structure apparente",
+              "caption": "Chantier en cours : la structure est reprise avant l’intervention du second œuvre"
+            },
+            {
+              "src": "/images/loft-cuisine-cheminee.jpg",
+              "alt": "Loft avec cuisine ouverte, cheminée et sol en béton ciré",
+              "caption": "Loft : cuisine ouverte sur le séjour, cheminée conservée, finitions en béton ciré"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ce que vous obtenez",
+      "blocks": [
+        {
+          "t": "cards",
+          "items": [
+            {
+              "title": "Ouverture de mur porteur",
+              "text": "Descente de charges, dimensionnement de la poutre IPN et plans d’exécution par l’ingénieur partenaire, puis mise en œuvre par une entreprise assurée."
+            },
+            {
+              "title": "Surélévation",
+              "text": "Un étage supplémentaire sur un pavillon, une maison de ville ou un immeuble, après étude de faisabilité et vérification de la structure existante."
+            },
+            {
+              "title": "Extension",
+              "text": "Extension latérale en maçonnerie ou en ossature bois, conçue par un architecte DPLG partenaire inscrit à l’Ordre."
+            },
+            {
+              "title": "Études techniques",
+              "text": "Étude de sol, étude structure, étude thermique ou acoustique selon le projet. Rien n’est engagé sans les études préalables."
+            },
+            {
+              "title": "Démarches administratives",
+              "text": "Déclaration préalable, permis de construire, dossier syndic et dossier ABF en zone protégée : vous signez, nous pilotons le reste."
+            },
+            {
+              "title": "Second œuvre dans la continuité",
+              "text": "Cloisons, électricité, plomberie, isolation et finitions par nos artisans, comme pour une [rénovation d’appartement à Paris](/renovation-appartement-paris).",
+              "href": "/renovation-appartement-paris"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pourquoi ce modèle vous fait économiser 15-20 %",
+      "blocks": [
+        {
+          "t": "callout",
+          "title": "Pas de marge intermédiaire",
+          "v": "Une entreprise générale classique ajoute sa marge, une gestion administrative et une sous-traitance en cascade. Ici, chaque partenaire facture sa prestation et notre rémunération figure en clair dans le devis consolidé."
+        },
+        {
+          "t": "callout",
+          "title": "Jamais de mur porteur sans étude",
+          "v": "Aucune ouverture sans architecte et ingénieur structure, aucune surélévation sans étude de structure, aucune fondation sans étude de sol. L’ingénieur remet une attestation après travaux pour votre assurance."
+        },
+        {
+          "t": "callout",
+          "title": "Des partenaires vérifiés",
+          "v": "Diplômes, inscription à l’Ordre, assurances décennale et RC pro, réalisations passées : chaque partenaire est contrôlé avant le chantier. Les honoraires sont négociés dans le cadre du partenariat."
+        }
+      ]
+    },
+    {
+      "title": "Comment se déroule votre projet",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Premier échange par téléphone ou WhatsApp, visite technique offerte en Île-de-France, mise en relation avec les partenaires utiles, puis devis consolidé : prestations de chacun, calendrier, démarches planifiées. Le chantier est ensuite piloté par un interlocuteur unique jusqu’à la levée des réserves. [Les étapes sont détaillées sur notre page méthode](/methode)."
+        },
+        {
+          "t": "p",
+          "v": "Nous intervenons dans toute l’Île-de-France, avec une présence forte dans les [Hauts-de-Seine](/renovation-hauts-de-seine-92), à Paris et dans les Yvelines. Sur un immeuble haussmannien, nos partenaires ont l’habitude des dossiers ABF, de la pierre de taille et des reprises de plancher ancien. Pour une maison, lisez [notre guide de la rénovation complète en Île-de-France](/conseils/renovation-complete-maison-ile-de-france)."
+        }
+      ]
+    },
+    {
+      "title": "Prix et délais indicatifs",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Chaque devis est consolidé après les études. Pour le second œuvre qui suit, [nos tarifs au m² sont détaillés ici](/prix-renovation) et [l’estimateur de budget](/outils/estimateur-budget-renovation) vous donne un premier ordre de grandeur."
+        },
+        {
+          "t": "table",
+          "head": ["Prestation", "Fourchette", "Délai de travaux"],
+          "rows": [
+            ["Ouverture de mur porteur avec IPN", "2 500 à 8 000 €", "1 à 2 semaines après autorisations"],
+            ["Extension de maison", "38 000 à 65 000 €", "8 à 16 semaines"],
+            ["Surélévation", "1 800 à 2 800 €/m²", "12 à 24 semaines"]
+          ],
+          "note": "Fourchettes indicatives 2026 en Île-de-France, hors études (étude structure : 800 à 2 500 €). Comptez 2 à 3 mois d’instruction pour un permis, davantage en zone ABF. TVA 10 % sur l’amélioration d’un logement de plus de 2 ans."
+        }
+      ]
+    },
+    {
+      "title": "Questions sur le gros œuvre et la surélévation",
+      "blocks": [
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Faut-il un permis de construire pour une surélévation ou une extension ?",
+              "a": "Au-delà de 20 m² créés (40 m² en zone urbaine couverte par un PLU), le permis est obligatoire ; en dessous, une déclaration préalable suffit souvent. Si la surface de plancher dépasse 150 m² après travaux, l’architecte devient obligatoire. Nous montons le dossier."
+            },
+            {
+              "q": "Qui est assuré si RenovIntérieurs ne réalise pas les travaux ?",
+              "a": "Les entreprises partenaires qui interviennent sont toutes assurées en décennale et en RC pro, attestations vérifiées avant chaque chantier. Quand l’opération l’exige, un courtier partenaire intègre l’assurance dommages-ouvrage au montage du projet, en clair dans le devis."
+            },
+            {
+              "q": "Puis-je travailler avec mon propre architecte ?",
+              "a": "Oui, s’il accepte d’avancer avec nos autres partenaires. Le cas échéant, nous nous adaptons : l’ingénieur structure, l’entreprise de gros œuvre et le pilotage des démarches restent assurés de notre côté."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Notre méthode", "href": "/methode", "desc": "Du premier échange à la livraison, un interlocuteur unique" },
+    { "label": "Prix de la rénovation", "href": "/prix-renovation", "desc": "Fourchettes au m² pour le second œuvre" },
+    { "label": "Rénovation dans les Hauts-de-Seine", "href": "/renovation-hauts-de-seine-92", "desc": "Boulogne, Neuilly, Levallois, Saint-Cloud" },
+    { "label": "Rénover une maison en Île-de-France", "href": "/conseils/renovation-complete-maison-ile-de-france", "desc": "Étapes, budget, autorisations" },
+    { "label": "Nos réalisations", "href": "/realisations-renovation", "desc": "Chantiers livrés avec nos partenaires" }
+  ]
+}

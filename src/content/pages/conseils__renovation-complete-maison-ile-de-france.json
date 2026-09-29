@@ -1,0 +1,205 @@
+{
+  "title": "Rénovation complète de maison en Île-de-France : le guide",
+  "description": "Prix au m² par département, ordre des travaux, démarches, aides énergétiques et déroulé du chantier pour rénover entièrement une maison en Île-de-France.",
+  "h1": "Rénovation complète de maison en Île-de-France : budget, ordre des travaux et démarches",
+  "kind": "article",
+  "parent": "/conseils",
+  "eyebrow": "Conseils rénovation",
+  "hero": "/images/paris-chantier.jpg",
+  "intro": [
+    "Une rénovation complète de maison en Île-de-France se situe entre 1 000 et 1 500 €/m² en standard et 1 500 à 2 500 €/m² en haut de gamme, hors mobilier. Le chantier dure 8 à 14 semaines pour 50 à 80 m², 4 à 6 mois au-delà de 100 m² ou en haut de gamme.",
+    "RenovIntérieurs pilote ces chantiers en [rénovation tous corps d’état](/renovation-appartement-paris) et, quand la structure est concernée, en [gros œuvre, surélévation et extension](/renovation-gros-oeuvre-surelevation-extension-idf) avec des architectes et ingénieurs partenaires."
+  ],
+  "sections": [
+    {
+      "title": "À retenir",
+      "blocks": [
+        {
+          "t": "callout",
+          "title": "À retenir",
+          "v": "L’ordre des travaux ne varie pas : structure, réseaux, isolation, aménagement, finitions. Le budget se cadre par département et par niveau de prestation, avec une réserve de 10 à 20 % pour ce que les cloisons cachent. Les démarches (déclaration préalable, permis, syndic, ABF) se lancent avant le premier jour de chantier, car elles prennent 1 à 4 mois.",
+          "href": "/renovation-gros-oeuvre-surelevation-extension-idf",
+          "label": "Voir notre offre gros œuvre et extension"
+        }
+      ]
+    },
+    {
+      "title": "Un bâti contrasté, des contraintes propres à chaque commune",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Le parc francilien mélange les époques : haussmannien avec moulures et parquets anciens, art déco des années 1930, résidences des années 1970 à 1990, pavillons de périphérie. Chaque bien impose sa logique de mise en œuvre, ses matériaux et son enchaînement de second œuvre. Le bon prestataire s’adapte au bâti, aux accès et au rythme réel du chantier."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "[Yvelines](/renovation-yvelines-78) : Versailles, Saint-Germain-en-Laye, Le Vésinet, Maisons-Laffitte, Chatou, Croissy-sur-Seine, avec de nombreux secteurs protégés.",
+            "[Hauts-de-Seine](/renovation-hauts-de-seine-92) : de Neuilly-sur-Seine à Sceaux, un bâti dense où stationnement et accès pèsent sur le planning.",
+            "[Paris](/renovation-appartement-paris) et [Val-de-Marne](/renovation-val-de-marne-94) : maisons de ville et pavillons, souvent rénovés en site occupé."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Dans les secteurs couverts par les Architectes des Bâtiments de France, à Versailles, au Vésinet, à Maisons-Laffitte ou à Saint-Germain-en-Laye, toute modification visible depuis la rue (menuiseries, teinte de façade, équipement extérieur) exige un avis conforme. Les travaux intérieurs restent hors de ce cadre tant que l’aspect extérieur ne change pas."
+        }
+      ]
+    },
+    {
+      "title": "L’ordre des travaux dans une maison ancienne",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Peindre avant une reprise électrique ou fermer une cloison avant le passage de la plomberie oblige presque toujours à refaire. Un plan clair fixe l’enchaînement dès la préparation."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Gros œuvre et structure : démolitions, ouvertures de murs porteurs, traitement de l’humidité et des fissures, reprises de fondation.",
+            "Second œuvre technique : mise aux normes électrique, plomberie, chauffage et isolation avant la fermeture des cloisons.",
+            "Aménagement : cloisons, doublages, plâtrerie, menuiseries intérieures, carrelage et parquet.",
+            "Finitions : peinture, béton ciré, équipements sanitaires, réglages."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "L’isolation sous toiture se traite avant tout aménagement des combles, sous peine de reprises évitables. Le déroulé complet d’un projet avec RenovIntérieurs, du premier échange au SAV, est détaillé sur [notre page méthode](/methode) ; le détail phase par phase figure dans [notre guide des étapes d’une rénovation intérieure](/conseils/renovation-interieure-maison-etapes)."
+        }
+      ]
+    },
+    {
+      "title": "Quel budget par département et par poste",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Le prix au m² dépend de la commune, de l’accessibilité du chantier et des matériaux. Les fourchettes suivantes s’entendent hors mobilier et électroménager, pour une réfection complète avec second œuvre, finitions et équipements sanitaires."
+        },
+        {
+          "t": "table",
+          "head": ["Département", "Standard", "Haut de gamme", "Prestige"],
+          "rows": [
+            ["Hauts-de-Seine (92)", "1 000 à 1 500 €/m²", "1 500 à 2 500 €/m²", "Jusqu’à 4 500 €/m² à Neuilly-sur-Seine et Saint-Cloud"],
+            ["Yvelines (78)", "1 020 à 1 550 €/m²", "1 550 à 2 600 €/m²", "Jusqu’à 4 800 €/m² au Vésinet et à Maisons-Laffitte"]
+          ],
+          "note": "Prix HT indicatifs 2026. TVA à 10 % sur l’amélioration d’un logement de plus de 2 ans."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Électricité : 40 à 130 €/m² pour une réfection complète, remplacement du tableau 1 200 à 1 900 €.",
+            "Plomberie : 70 à 110 €/m², soit 3 000 à 6 000 € pour une maison individuelle.",
+            "Cuisine sur mesure : 400 à 800 €/m² ; salle de bain complète : 500 à 1 500 €/m².",
+            "Fenêtres double vitrage : 400 à 1 200 € par menuiserie."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Les écarts viennent souvent des exigences de mise en œuvre : reprise complète de réseaux encastrés, nattes d’étanchéité sous un carrelage grand format, ragréage de supports dégradés. Une marge de 10 à 20 % reste indispensable : pour 100 000 € de travaux, prévoyez une enveloppe de 110 000 à 120 000 €. Notre [estimateur de budget](/outils/estimateur-budget-renovation) et la [grille de prix](/prix-renovation) donnent un premier cadrage."
+        }
+      ]
+    },
+    {
+      "title": "Mur porteur, extension, surélévation : les démarches",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Dès que la structure est touchée, le projet change d’échelle. RenovIntérieurs met en relation avec des architectes DPLG, des ingénieurs structure et des entreprises sélectionnées, puis pilote l’ensemble : elle ne réalise pas elle-même le gros œuvre. Cette organisation permet jusqu’à 15 à 20 % d’économie et un seul interlocuteur pour les [travaux de gros œuvre, surélévation et extension](/renovation-gros-oeuvre-surelevation-extension-idf)."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Déclaration préalable ou permis de construire dès que l’aspect extérieur change ou que la surface augmente de plus de 5 m² : 1 à 4 mois selon le dossier.",
+            "Copropriété : ouverture de mur porteur ou modification de façade autorisée par le syndicat avant travaux.",
+            "Voirie : benne ou échafaudage sur l’espace public soumis à autorisation municipale.",
+            "Secteur ABF : avis conforme préalable pour menuiseries, volets, garde-corps ou équipements visibles."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Ces démarches s’intègrent dès le devis. Lancées tard, elles arrêtent le chantier ; lancées tôt, elles tiennent dans le calendrier global."
+        }
+      ]
+    },
+    {
+      "title": "Rénovation énergétique et aides mobilisables",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Beaucoup de maisons franciliennes sont classées F ou G au DPE. Un audit énergétique repère les priorités avant toute mise en œuvre ; les gains sont plus nets quand l’enveloppe et le chauffage sont pensés ensemble. L’objectif de RenovIntérieurs sur ces chantiers : gagner 2 à 3 classes DPE."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Isolation des combles : 20 à 35 €/m², un rapport coût/gain souvent favorable quand la toiture est accessible.",
+            "Isolation des murs : 40 à 80 €/m² par l’intérieur, 100 à 180 €/m² par l’extérieur, selon l’épaisseur disponible et les contraintes ABF.",
+            "Fenêtres double vitrage PVC : 400 à 1 200 € l’unité ; pompe à chaleur hybride : 4 500 à 12 000 €."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "La TVA descend à 5,5 % sur les travaux d’amélioration énergétique éligibles, contre 10 % pour l’amélioration générale. MaPrimeRénov’ et les certificats d’économie d’énergie réduisent le reste à charge de plusieurs milliers d’euros selon les revenus ; l’éco-prêt à taux zéro complète sans avance de trésorerie. Ces dispositifs exigent une entreprise RGE. Voir [notre offre isolation et DPE](/isolation-amelioration-energetique)."
+        }
+      ]
+    },
+    {
+      "title": "Comment se déroule le chantier avec RenovIntérieurs",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Visite technique sous 5 jours après le premier échange, pour lire le bâti, les accès et le périmètre. Devis détaillé sous 48 h, poste par poste. Puis un chef de projet dédié, interlocuteur unique pour les arbitrages et le calendrier, avec compte-rendu hebdomadaire et photos de suivi."
+        },
+        {
+          "t": "p",
+          "v": "Le pilotage couvre tous les postes : cloisons, peinture, sols, plomberie, électricité, isolation, chauffage, parquet, béton ciré, cuisine sur mesure et salle de bain étanche. La réception se fait point par point, avec levée des réserves, SAV 12 mois et garanties décennale, biennale et de parfait achèvement, attestations fournies avant démarrage."
+        },
+        {
+          "t": "p",
+          "v": "Que votre projet relève de la [rénovation tous corps d’état](/renovation-appartement-paris) ou du [gros œuvre avec extension](/renovation-gros-oeuvre-surelevation-extension-idf), le premier échange par téléphone ou WhatsApp suffit pour cadrer la commune, le périmètre et le budget."
+        },
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Quel prix au m² pour une maison en Île-de-France ?",
+              "a": "1 000 à 1 500 €/m² en standard dans les Hauts-de-Seine, 1 020 à 1 550 €/m² dans les Yvelines ; 1 500 à 2 600 €/m² en haut de gamme selon le secteur. Le prestige atteint 4 500 à 4 800 €/m² à Neuilly-sur-Seine, Saint-Cloud, au Vésinet ou à Maisons-Laffitte. Hors mobilier et électroménager."
+            },
+            {
+              "q": "Par où commencer dans une maison ancienne ?",
+              "a": "Par le gros œuvre et les pathologies : humidité, fissures, stabilité des murs porteurs. Puis les réseaux, le chauffage et l’isolation avant la fermeture des cloisons. L’aménagement et les finitions viennent ensuite. Un audit technique et une réserve de 10 à 20 % complètent le cadrage."
+            },
+            {
+              "q": "Quelles aides pour une rénovation énergétique ?",
+              "a": "MaPrimeRénov’ selon les revenus et la nature des travaux, les CEE des fournisseurs d’énergie, l’éco-prêt à taux zéro, et parfois des aides locales selon la commune. Toutes supposent une entreprise RGE et un dossier monté avant le début des travaux."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Gros œuvre, surélévation et extension",
+      "href": "/renovation-gros-oeuvre-surelevation-extension-idf",
+      "desc": "Mur porteur, extension, surélévation : projet piloté de bout en bout."
+    },
+    {
+      "label": "Rénovation tous corps d’état",
+      "href": "/renovation-appartement-paris",
+      "desc": "Second œuvre complet, du relevé à la livraison."
+    },
+    {
+      "label": "Estimateur de budget",
+      "href": "/outils/estimateur-budget-renovation",
+      "desc": "Un ordre de grandeur en quelques questions."
+    },
+    {
+      "label": "Combien coûte une rénovation complète de maison",
+      "href": "/conseils/combien-coute-renovation-complete-maison",
+      "desc": "Les postes qui font varier le budget."
+    },
+    {
+      "label": "Prix de la rénovation au m²",
+      "href": "/prix-renovation",
+      "desc": "Grille 2026 par niveau de prestation."
+    }
+  ]
+}

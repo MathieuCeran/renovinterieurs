@@ -1,0 +1,181 @@
+{
+  "title": "Prix rénovation appartement Paris 2026 : tarifs au m²",
+  "description": "Grille 2026 des prix de rénovation au m² à Paris et en Île-de-France, exemples chiffrés, TVA 10 % et 5,5 %, aides et durées. Devis détaillé sous 48 h.",
+  "h1": "Prix d’une rénovation : la grille au m² en 2026",
+  "kind": "info",
+  "parent": "/",
+  "eyebrow": "Prix",
+  "hero": "/images/paris-renovation-appartement.jpg",
+  "intro": [
+    "Combien coûte une rénovation à Paris ? Entre 250 et 2 500 € HT par m² selon le niveau de travaux : rafraîchissement, rénovation partielle, complète ou haut de gamme. Cette page réunit notre grille 2026, les facteurs qui font bouger le devis, des exemples chiffrés et le point sur la TVA et les aides.",
+    "Ces fourchettes sont indicatives et valent pour un appartement à Paris ou en Île-de-France. Seul un devis établi après [visite technique](/methode) engage RenovIntérieurs : il est détaillé poste par poste et remis sous 48 h."
+  ],
+  "sections": [
+    {
+      "title": "La grille 2026 au m²",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Quatre niveaux couvrent l’essentiel des demandes. Les montants sont hors taxes ; la TVA applicable est précisée plus bas."
+        },
+        {
+          "t": "table",
+          "head": ["Niveau", "Prix HT au m²", "Ce que cela couvre"],
+          "rows": [
+            ["Rafraîchissement", "250 à 450 €", "Peinture, sols simples, petites finitions"],
+            ["Rénovation partielle", "600 à 900 €", "Une à deux pièces refaites, plomberie et électricité partielles"],
+            ["Rénovation complète", "1 000 à 1 500 €", "Toutes pièces, réseaux refaits, cuisine et salle de bain neuves"],
+            ["Haut de gamme", "1 500 à 2 500 €", "Matériaux premium, sur-mesure, finitions d’architecte"]
+          ],
+          "note": "Fourchettes indicatives 2026, hors TVA. Au-delà de 2 500 €/m², on entre dans le prestige avec architecte."
+        }
+      ]
+    },
+    {
+      "title": "Ce qui fait varier le prix",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "À surface égale, deux appartements n’ont jamais le même devis. Six paramètres expliquent l’essentiel des écarts."
+        },
+        {
+          "t": "cards",
+          "items": [
+            {
+              "title": "L’état initial du bien",
+              "text": "Un appartement jamais rénové demande plus de dépose, de reprises de supports et de mises aux normes qu’un bien entretenu. La visite technique révèle ces points avant le devis."
+            },
+            {
+              "title": "La surface",
+              "text": "Les coûts fixes (installation, protection, gestion du chantier) pèsent davantage sur un studio que sur un 90 m². Le prix au m² baisse donc avec la surface."
+            },
+            {
+              "title": "Le niveau de finition",
+              "text": "Carrelage standard ou pierre naturelle, cuisine sur caissons IKEA Metod ou entièrement sur mesure : le choix des matériaux fait varier fortement la facture."
+            },
+            {
+              "title": "Le type d’immeuble",
+              "text": "Haussmannien, art déco ou résidence moderne : hauteur sous plafond, moulures à préserver, parquet point de Hongrie à restaurer ou réseaux à reprendre ne coûtent pas la même chose."
+            },
+            {
+              "title": "Les réseaux",
+              "text": "Refaire l’électricité et la plomberie fait basculer un projet du partiel au complet. C’est le premier poste qui sépare 600-900 € de 1 000-1 500 € par m²."
+            },
+            {
+              "title": "Les choix techniques durables",
+              "text": "Joints époxy bi-composants (15 à 20 ans sans noircir), nattes d’étanchéité, béton ciré : un surcoût à la pose qui évite une salle de bain à refaire. Détail sur [notre page salle de bain](/salle-de-bain-paris)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Exemples chiffrés, calculés à partir de la grille",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Pour vous situer, voici la grille appliquée à des surfaces courantes. Ces montants sont des ordres de grandeur, pas des devis."
+        },
+        {
+          "t": "table",
+          "head": ["Type de bien", "Surface", "Niveau", "Fourchette HT"],
+          "rows": [
+            ["Studio", "25 m²", "Rafraîchissement", "6 250 à 11 250 €"],
+            ["Deux-pièces", "40 m²", "Rénovation partielle", "24 000 à 36 000 €"],
+            ["Trois-pièces", "60 m²", "Rénovation complète", "60 000 à 90 000 €"],
+            ["Trois-pièces", "60 m²", "Haut de gamme", "90 000 à 150 000 €"],
+            ["Quatre-pièces", "80 m²", "Rénovation complète", "80 000 à 120 000 €"],
+            ["Appartement familial", "100 m²", "Haut de gamme", "150 000 à 250 000 €"]
+          ],
+          "note": "Calcul indicatif : surface multipliée par la fourchette du niveau. Le devis après visite reste la seule référence."
+        },
+        {
+          "t": "p",
+          "v": "Pour une rénovation d’appartement à Paris, le détail par poste (cuisine, salle de bain, électricité, plomberie, sols) est développé dans [notre article sur le coût d’une rénovation à Paris](/conseils/combien-coute-renovation-appartement-paris)."
+        }
+      ]
+    },
+    {
+      "title": "Estimez votre budget en trente secondes",
+      "blocks": [
+        {
+          "t": "callout",
+          "title": "Estimateur de budget",
+          "v": "Renseignez la surface et le niveau de rénovation : l’estimateur applique notre grille, répartit le budget par poste et indique la TVA applicable. Gratuit, sans inscription, avant même la visite technique.",
+          "href": "/outils/estimateur-budget-renovation",
+          "label": "Ouvrir l’estimateur de budget"
+        }
+      ]
+    },
+    {
+      "title": "TVA et aides : ce qui réduit la facture",
+      "blocks": [
+        {
+          "t": "cards",
+          "items": [
+            {
+              "title": "TVA à 10 %",
+              "text": "S’applique aux travaux d’amélioration, de transformation et d’entretien d’un logement achevé depuis plus de deux ans. C’est le cas de la quasi-totalité de nos chantiers de second œuvre."
+            },
+            {
+              "title": "TVA à 5,5 %",
+              "text": "Réservée aux travaux d’amélioration énergétique éligibles : isolation, VMC double flux, pompe à chaleur. Elle s’ajoute aux aides sur un [projet de sortie de passoire énergétique](/isolation-amelioration-energetique)."
+            },
+            {
+              "title": "MaPrimeRénov’ et CEE",
+              "text": "Deux dispositifs cumulables pour les travaux énergétiques. RenovIntérieurs vous accompagne dans le montage des dossiers, avec pour objectif de gagner 2 à 3 classes DPE."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Combien de temps durent les travaux ?",
+      "blocks": [
+        {
+          "t": "table",
+          "head": ["Niveau", "Durée indicative", "Ce qui rythme le chantier"],
+          "rows": [
+            ["Rénovation partielle", "3 à 6 semaines", "Une à deux pièces, réseaux partiels"],
+            ["Rénovation complète, 50 à 80 m²", "8 à 14 semaines", "Réseaux, cuisine et salle de bain, finitions"],
+            ["Plus de 100 m² ou haut de gamme", "4 à 6 mois", "Sur-mesure, matériaux premium, finitions d’architecte"]
+          ],
+          "note": "Le planning précis est remis avec le devis, poste par poste."
+        },
+        {
+          "t": "p",
+          "v": "Pour voir l’enchaînement des phases avant de signer, ouvrez [le planning de chantier](/outils/planning-travaux-renovation) ou lisez [le déroulé en cinq étapes](/methode), du premier échange au SAV 12 mois."
+        }
+      ]
+    },
+    {
+      "title": "Questions fréquentes sur les prix",
+      "blocks": [
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Pourquoi une fourchette plutôt qu’un prix fixe au m² ?",
+              "a": "Parce que deux appartements de 60 m² n’ont jamais le même état de départ ni les mêmes finitions. La grille vous situe ; la visite technique, gratuite, fixe le chiffre. Le devis détaillé arrive 48 h après."
+            },
+            {
+              "q": "Le devis engage-t-il RenovIntérieurs sur les prix ?",
+              "a": "Oui. Le devis est établi poste par poste après visite et engage RenovIntérieurs sur les montants indiqués. Aucun supplément n’est possible sans avenant signé de votre part."
+            },
+            {
+              "q": "Le gros œuvre est-il compris dans ces fourchettes ?",
+              "a": "Non, elles couvrent le second œuvre. Un mur porteur, une surélévation ou une extension font l’objet d’un chiffrage à part avec architectes DPLG et ingénieurs structure. Voir [notre page gros œuvre](/renovation-gros-oeuvre-surelevation-extension-idf)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Estimateur de budget", "href": "/outils/estimateur-budget-renovation", "desc": "Votre fourchette en trente secondes." },
+    { "label": "Notre méthode", "href": "/methode", "desc": "Cinq étapes, un interlocuteur unique." },
+    { "label": "Rénovation d’appartement à Paris", "href": "/renovation-appartement-paris", "desc": "Second œuvre tous corps d’état." },
+    { "label": "Combien coûte une rénovation à Paris ?", "href": "/conseils/combien-coute-renovation-appartement-paris", "desc": "Le détail poste par poste." },
+    { "label": "Tous nos services", "href": "/nos-services", "desc": "Huit métiers, une exigence." }
+  ]
+}

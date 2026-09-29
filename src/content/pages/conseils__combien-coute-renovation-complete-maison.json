@@ -1,0 +1,197 @@
+{
+  "title": "Combien coûte la rénovation complète d’une maison ?",
+  "description": "Budget d’une rénovation complète de maison selon la surface et l’état du bâti : postes lourds, marge d’imprévus, durée et aides. Devis détaillé sous 48 h.",
+  "h1": "Rénovation complète d’une maison : quel budget prévoir",
+  "kind": "article",
+  "parent": "/conseils",
+  "eyebrow": "Budget",
+  "intro": [
+    "Une rénovation complète de maison se situe autour de 700 à 1 100 €/m² en repère national, soit 70 000 à 110 000 € pour 100 m² ; en Île-de-France, comptez plutôt 1 000 à 1 500 € HT/m² en standard. Dès qu’il faut reprendre la structure, la toiture ou l’ensemble des réseaux, le chantier passe en rénovation lourde, entre 2 000 et 4 000 €/m².",
+    "Ces chiffres ne veulent rien dire sans leur contenu. Cet article relie chaque fourchette à ce qu’elle comprend, poste par poste, et montre où se cachent les écarts entre le prix annoncé et la réalité d’une maison ancienne."
+  ],
+  "sections": [
+    {
+      "title": "À retenir",
+      "blocks": [
+        {
+          "t": "callout",
+          "title": "À retenir",
+          "v": "Le budget d’une rénovation complète dépend de trois choses : le périmètre (légère, complète ou lourde), la surface et l’état réel du bâti. Sur 100 m², une rénovation complète coûte 70 000 à 110 000 € et une rénovation lourde peut atteindre 250 000 €. Prévoyez 10 à 20 % de marge pour les imprévus et exigez un devis poste par poste avant de signer.",
+          "href": "/renovation-appartement-paris",
+          "label": "Voir la rénovation tous corps d’état"
+        },
+        {
+          "t": "p",
+          "v": "RenovIntérieurs pilote le second œuvre d’une maison comme celui d’un appartement : [rénovation tous corps d’état](/renovation-appartement-paris) avec un interlocuteur unique. Quand le projet touche la structure, l’équipe s’appuie sur des architectes DPLG et des ingénieurs pour le [gros œuvre, la surélévation ou l’extension](/renovation-gros-oeuvre-surelevation-extension-idf)."
+        }
+      ]
+    },
+    {
+      "title": "Légère, complète ou lourde : trois périmètres, trois budgets",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Le prix au m² se lit en trois niveaux, plus le cas particulier d’un bien très dégradé. La frontière entre eux n’est pas esthétique : elle tient à ce qui est ouvert pendant le chantier. Dès qu’un réseau électrique, une plomberie encastrée ou une isolation intérieure sont repris, la maison change de catégorie."
+        },
+        {
+          "t": "table",
+          "head": ["Niveau", "Prix au m²", "Ce qui est compris", "Budget pour 100 m²"],
+          "rows": [
+            ["Rénovation légère", "250 à 700 €", "Peinture, sols, plafonds, sanitaires remplacés sans toucher aux réseaux", "25 000 à 70 000 €"],
+            ["Rénovation complète", "700 à 1 100 €", "Électricité, plomberie, isolation partielle, cuisine et salle de bain refaites", "70 000 à 110 000 €"],
+            ["Rénovation lourde", "2 000 à 4 000 €", "Murs porteurs, charpente, refonte totale des réseaux, isolation généralisée", "Jusqu’à 250 000 €"],
+            ["Réhabilitation de ruine", "Plus de 3 500 à 4 000 €", "Toiture, façades, mise hors d’eau hors d’air, intérieur complet", "Plus de 300 000 €"]
+          ],
+          "note": "Repères nationaux, finitions standard, hors ameublement, électroménager et honoraires de conception (12 à 14 % pour une mission complète)."
+        },
+        {
+          "t": "p",
+          "v": "En Île-de-France, la logistique déplace ces repères vers le haut. Dans les Hauts-de-Seine, un niveau standard se situe entre 1 000 et 1 500 €/m² ; dans les [Yvelines, à Versailles ou au Vésinet](/renovation-yvelines-78), entre 1 020 et 1 550 €/m², et 1 550 à 2 600 €/m² en haut de gamme. Accès difficile, stationnement limité et livraisons sur créneau expliquent l’écart."
+        }
+      ]
+    },
+    {
+      "title": "Le budget selon la surface de la maison",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Certains coûts ne bougent pas avec la surface : installation de chantier, benne, tableau électrique, chaudière, équipements de salle de bain. Sur 80 m², ils pèsent proportionnellement plus que sur 150 m². C’est pourquoi une grande maison revient souvent moins cher au m², à prestations comparables."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "60 m² : 15 000 à 45 000 € en rénovation légère, 42 000 à 66 000 € en rénovation complète, jusqu’à 120 000 € en rénovation lourde.",
+            "80 m² : 20 000 à 56 000 € en légère, 56 000 à 88 000 € en complète, plus de 200 000 € en lourde.",
+            "100 m² : 25 000 à 70 000 € en légère, 70 000 à 110 000 € en complète, jusqu’à 250 000 € en lourde.",
+            "120 m² : 30 000 à 84 000 € en légère, 84 000 à 132 000 € en complète, 180 000 à 480 000 € en lourde.",
+            "150 m² : 37 500 à 105 000 € en légère, 105 000 à 165 000 € en complète, jusqu’à 400 000 € en lourde."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Pour situer ces montants : 20 000 € sur 100 m² permettent une peinture complète, le ponçage d’un parquet et 60 m² de carrelage, sans toucher aux réseaux. Avec 60 000 € sur 120 m², on peut décloisonner, mettre l’électricité à niveau, remplacer les radiateurs et refaire les sols."
+        },
+        {
+          "t": "callout",
+          "title": "Un ordre de grandeur avant la visite",
+          "v": "Surface, niveau de rénovation, pièces concernées : l’estimateur applique ces fourchettes à votre maison et vous donne une première enveloppe en deux minutes.",
+          "href": "/outils/estimateur-budget-renovation",
+          "label": "Utiliser l’estimateur de budget"
+        }
+      ]
+    },
+    {
+      "title": "Les postes qui pèsent le plus",
+      "blocks": [
+        {
+          "t": "stats",
+          "items": [
+            { "value": "38 %", "label": "du budget pour l’isolation en rénovation énergétique" },
+            { "value": "60 à 70 %", "label": "pour isolation, toiture, chauffage et réseaux réunis" },
+            { "value": "40 à 130 €/m²", "label": "pour une électricité complète" },
+            { "value": "10 à 20 %", "label": "de marge d’imprévus en maison ancienne" }
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Quatre familles de travaux concentrent l’essentiel d’une rénovation complète. Les chiffrer en premier évite de découvrir trop tard le poids réel des pièces d’eau et des finitions."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Électricité : 40 à 130 €/m² pour une réfection complète, plus 1 200 à 1 900 € de tableau. Plomberie : 3 000 à 6 000 € pour une maison de 70 à 110 m².",
+            "Chauffage : chaudière gaz 4 000 à 7 000 €, pompe à chaleur hybride 4 500 à 12 000 €, chaudière à granulés 6 500 à 17 000 €. À dimensionner après l’isolation, jamais avant.",
+            "Isolation : combles perdus 20 à 35 €/m², murs par l’intérieur 40 à 80 €/m², murs par l’extérieur 100 à 180 €/m². Toiture complète : 170 à 320 €/m².",
+            "Cuisine : 6 500 à 12 000 €. Salle de bain complète : 6 500 à 12 000 € pour 8 à 12 m². Fenêtres double vitrage PVC : 400 à 1 200 € l’unité.",
+            "Menuiseries intérieures : porte 100 à 300 € hors pose, verrière 90 à 1 000 €/m², escalier 1 500 à 15 000 €. Ouverture de mur porteur : 1 000 à 4 000 € hors IPN."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Maison ancienne : l’état du bâti fait le devis",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Une maison saine et entretenue se rénove entre 300 et 800 €/m². Un bien dégradé, avec réseaux à refaire, supports à reprendre et interventions structurelles, monte entre 1 500 et 2 500 €/m². Une ruine dépasse 2 000 €/m² avec toiture et façades. Entre ces cas, tout se joue sur ce que la dépose révèle."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Canalisations hors d’usage derrière les doublages, qui imposent une plomberie complète non prévue.",
+            "Anciens revêtements contenant du plomb ou de l’amiante, avec dépose réglementée.",
+            "Enduits décollés ou murs en pierre mal jointoyés, à reprendre avant toute finition.",
+            "Installation électrique non conforme, impossible à laisser en l’état une fois les cloisons ouvertes.",
+            "Gaines, alimentations et passages techniques non repérés, qui modifient le phasage."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "D’où la marge de 10 à 20 % à provisionner dès le chiffrage : sur une rénovation complète de 100 m², cela représente 7 000 à 22 000 €. Un diagnostic préalable (électricité, plomb, amiante, performance énergétique) réduit ce risque sans le supprimer. Il affine surtout le devis avant que plusieurs lots ne se croisent sur le chantier."
+        }
+      ]
+    },
+    {
+      "title": "Ordre des travaux, durée et aides",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "L’ordre du chantier protège le budget autant que les prix unitaires. Poser un revêtement avant la fin de la plomberie oblige à déposer ce qui vient d’être fait. Dans une maison à étages, on progresse du haut vers le bas pour préserver les zones terminées des gravats."
+        },
+        {
+          "t": "steps",
+          "items": [
+            { "title": "Gros œuvre", "text": "Démolition, murs porteurs, ouvertures, toiture, planchers. Tout ce qui touche la structure se termine avant le passage des réseaux." },
+            { "title": "Second œuvre", "text": "Électricité, plomberie, chauffage, isolation, étanchéité. Les réseaux passent avant les habillages pour éviter toute reprise." },
+            { "title": "Finitions", "text": "Enduits, peinture, sols, menuiseries intérieures, puis cuisine et salle de bain en dernier." }
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Comptez 3 à 6 mois pour une rénovation complète de 100 m², et 6 à 12 mois pour une rénovation lourde en maison ancienne, diagnostics et validations administratives compris. Le [planning de chantier](/outils/planning-travaux-renovation) permet de visualiser l’enchaînement des lots avant de fixer une date de démarrage."
+        },
+        {
+          "t": "p",
+          "v": "Côté financement, la TVA à 10 % s’applique sur un logement de plus de 2 ans, et 5,5 % sur les travaux énergétiques éligibles. Isolation et chauffage réalisés par une entreprise RGE ouvrent droit à MaPrimeRénov’, aux CEE et à l’éco-PTZ. Les dossiers se montent avant l’ouverture du chantier : certaines primes ne sont pas rétroactives."
+        }
+      ]
+    },
+    {
+      "title": "Obtenir un chiffrage fiable",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Deux devis au même prix au m² peuvent couvrir des prestations très différentes. Comparez 3 à 4 devis établis sur le même périmètre, avec les mêmes matériaux et les mêmes hypothèses d’accès. Chaque ligne doit séparer main-d’œuvre, matériaux, évacuation et reprises de support ; un prix anormalement bas appelle autant de vigilance qu’un prix élevé."
+        },
+        {
+          "t": "p",
+          "v": "RenovIntérieurs programme une visite technique sous 5 jours puis remet un devis poste par poste sous 48 h, avec planning prévisionnel et compte-rendu hebdomadaire pendant les travaux. Pour une maison en Île-de-France, la [rénovation tous corps d’état](/renovation-appartement-paris) est pilotée par un interlocuteur unique, du diagnostic à la livraison, avec décennale, biennale, parfait achèvement et SAV 12 mois."
+        },
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Que peut-on faire avec 50 000 € sur une maison de 100 m² ?",
+              "a": "Une rénovation légère bien cadrée : peintures, revêtements, salle de bain et cuisine remises à niveau sans déplacer les réseaux. Ou une intervention ciblée sur les postes techniques : électricité, plomberie, isolation des combles. Une approche par phases reste souvent la plus réaliste."
+            },
+            {
+              "q": "Rénover ou reconstruire une maison très dégradée ?",
+              "a": "Construire 100 m² neufs coûte 120 000 à 200 000 €, soit 1 200 à 2 000 €/m², avec la performance RE2020 incluse. Une réhabilitation de ruine dépasse souvent 300 000 €. L’arbitrage se fait sur l’état de la structure, la surface exploitable et le niveau énergétique visé."
+            },
+            {
+              "q": "Peut-on réaliser une partie des travaux soi-même ?",
+              "a": "Sur les finitions (peinture, sol souple, petites reprises d’enduit), oui. Dès qu’il s’agit d’électricité, de plomberie sous pression, d’étanchéité en salle de bain ou de structure, l’intervention d’artisans qualifiés sécurise le chantier et les garanties."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Rénovation tous corps d’état", "href": "/renovation-appartement-paris", "desc": "Second œuvre complet piloté par un interlocuteur unique, devis sous 48 h." },
+    { "label": "Gros œuvre, surélévation, extension", "href": "/renovation-gros-oeuvre-surelevation-extension-idf", "desc": "Mur porteur, surélévation, extension avec architectes et ingénieurs structure." },
+    { "label": "Estimateur de budget", "href": "/outils/estimateur-budget-renovation", "desc": "Une première enveloppe en deux minutes à partir de la surface et du niveau." },
+    { "label": "Rénovation complète de maison en Île-de-France", "href": "/conseils/renovation-complete-maison-ile-de-france", "desc": "Contraintes locales, accès, délais et organisation du chantier." },
+    { "label": "Nos prix au m²", "href": "/prix-renovation", "desc": "La grille de référence par niveau de rénovation, exemples et TVA." }
+  ]
+}

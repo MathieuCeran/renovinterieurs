@@ -1,0 +1,208 @@
+{
+  "title": "Comment sortir d’une passoire énergétique (DPE F ou G)",
+  "description": "Audit, isolation, VMC double flux, chauffage : les trois leviers pour gagner 2 à 3 classes DPE, les coûts, les aides 2026 et l’ordre des travaux.",
+  "h1": "Sortir d’une passoire énergétique : la méthode qui fait gagner 2 à 3 classes",
+  "kind": "article",
+  "parent": "/conseils",
+  "eyebrow": "Isolation et DPE",
+  "hero": "/images/dpe-1.jpg",
+  "intro": [
+    "On sort d’un DPE F ou G en combinant trois leviers, dans cet ordre : isolation, ventilation double flux, puis chauffage performant. Ensemble, ils font gagner 2 à 3 classes, parfois 4, et les aides cumulées couvrent jusqu’à 70 % du coût.",
+    "Depuis 2025, un logement classé G ne peut plus être loué ; la classe F suivra en 2028 et la classe E en 2034. À Paris, la décote à la revente atteint 15 à 25 %. Cet article détaille l’audit, les travaux, les budgets et l’ordre à respecter pour ne pas payer deux fois."
+  ],
+  "sections": [
+    {
+      "title": "À retenir",
+      "blocks": [
+        {
+          "t": "callout",
+          "title": "À retenir",
+          "v": "L’isolation fait gagner 1 à 2 classes à elle seule, le chauffage performant 1 à 2 de plus, la VMC double flux jusqu’à 15 % sur la facture de chauffage. Faites d’abord réaliser un audit énergétique, puis isolez avant de dimensionner le chauffage. RenovIntérieurs pilote l’ensemble avec des artisans RGE et monte les dossiers MaPrimeRénov’ et CEE.",
+          "href": "/isolation-amelioration-energetique",
+          "label": "Voir notre offre isolation et DPE"
+        },
+        {
+          "t": "p",
+          "v": "Une passoire énergétique est un logement dont l’étiquette DPE est F ou G. À Paris et en Île-de-France, près de 40 % du parc ancien est concerné. La sortie de passoire est l’une des spécialités de [RenovIntérieurs en isolation et amélioration énergétique](/isolation-amelioration-energetique) : audit, isolation, VMC, chauffage et accompagnement sur les aides."
+        }
+      ]
+    },
+    {
+      "title": "Pourquoi le bâti francilien est si souvent classé F ou G",
+      "blocks": [
+        {
+          "t": "stats",
+          "items": [
+            { "value": "40 %", "label": "du parc ancien francilien classé F ou G" },
+            { "value": "2025", "label": "interdiction de louer les logements G" },
+            { "value": "2028", "label": "même interdiction pour la classe F" },
+            { "value": "15 à 25 %", "label": "de décote à la revente à Paris" }
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Les causes reviennent presque toujours aux mêmes postes. Les repérer permet de comprendre pourquoi un seul levier ne suffit jamais à sortir d’un F ou d’un G."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Une isolation insuffisante : murs pleins, combles non traités, fenêtres en simple vitrage.",
+            "Un chauffage énergivore : convecteurs électriques anciens, chaudière gaz ou fioul d’ancienne génération.",
+            "Une ventilation absente ou inefficace, qui dégrade l’air intérieur et favorise l’humidité.",
+            "Des ponts thermiques structurels, fréquents dans le haussmannien et les immeubles des années 70."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "L’audit énergétique, point de départ obligé",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Avant tout chantier, faites réaliser un audit énergétique réglementaire. Il est obligatoire pour vendre un bien classé F ou G et indispensable pour cibler les travaux utiles. Il coûte 500 à 1 200 €, finançables à 100 % par MaPrimeRénov’ sous conditions de revenus, ou par les CEE."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Les déperditions principales : murs, toiture, plancher bas, fenêtres.",
+            "Les postes énergivores : chauffage, eau chaude sanitaire, climatisation.",
+            "Des scénarios de travaux chiffrés pour atteindre la classe C, voire mieux.",
+            "Les économies prévisionnelles à 5, 10 et 15 ans."
+          ]
+        },
+        {
+          "t": "callout",
+          "title": "Avant l’audit, une première projection",
+          "v": "Le simulateur estime la classe DPE atteignable selon votre bâti, votre chauffage et les travaux envisagés. Il ne remplace pas l’audit, mais il aide à cadrer le projet avant le premier rendez-vous.",
+          "href": "/outils/simulateur-dpe-passoire-energetique",
+          "label": "Lancer le simulateur DPE"
+        }
+      ]
+    },
+    {
+      "title": "Les trois leviers et leur coût",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Chaque levier a un effet mesurable sur la classe DPE. Le tableau donne les fourchettes constatées en 2026 pour un appartement parisien de 60 à 80 m² ; le coût réel dépend de la configuration, de la copropriété et des matériaux."
+        },
+        {
+          "t": "table",
+          "head": ["Travaux", "Effet attendu", "Coût indicatif"],
+          "rows": [
+            ["Isolation des murs (intérieur ou extérieur)", "1 à 2 classes", "60 à 150 €/m²"],
+            ["Isolation des combles et du plancher bas", "Complète le gain des murs", "30 à 90 €/m² (combles), 30 à 70 €/m² (plancher)"],
+            ["Fenêtres double ou triple vitrage", "Étanchéité à l’air, confort", "400 à 900 € par fenêtre posée"],
+            ["VMC double flux", "Jusqu’à 15 % de chauffage en moins", "3 500 à 6 000 €, durée de vie 15 à 20 ans"],
+            ["Pompe à chaleur air/eau ou chaudière à condensation", "1 à 2 classes", "8 000 à 15 000 € (PAC), 4 000 à 7 000 € (condensation)"],
+            ["Radiateurs basse température, chauffe-eau thermodynamique", "Complément du chauffage", "300 à 800 € par radiateur, 2 500 à 4 500 € pour l’ECS"]
+          ],
+          "note": "Fourchettes HT indicatives. Les travaux énergétiques éligibles bénéficient de la TVA à 5,5 %."
+        },
+        {
+          "t": "p",
+          "v": "À Paris, l’isolation par l’extérieur est souvent impossible sur une façade haussmannienne. On isole alors par l’intérieur en préservant moulures et hauteur sous plafond, une contrainte que RenovIntérieurs traite régulièrement en [rénovation d’appartement à Paris](/renovation-appartement-paris). Sans accord de copropriété pour les travaux intérieurs, le chantier peut démarrer dès le devis signé."
+        }
+      ]
+    },
+    {
+      "title": "Dans quel ordre faire les travaux",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "L’erreur la plus coûteuse consiste à remplacer le chauffage avant d’isoler : on achète un équipement surdimensionné pour un bâti qui va perdre la moitié de ses besoins. L’ordre ci-dessous évite ce piège et maximise les économies."
+        },
+        {
+          "t": "steps",
+          "items": [
+            { "title": "Audit énergétique", "text": "Pour hiérarchiser les déperditions et chiffrer les scénarios." },
+            { "title": "Isolation", "text": "Murs, combles, plancher bas. C’est elle qui dimensionne le futur chauffage." },
+            { "title": "Étanchéité à l’air et fenêtres", "text": "Avant la ventilation, pour que la VMC travaille sur une enveloppe fermée." },
+            { "title": "VMC double flux", "text": "Une fois l’enveloppe étanche, elle récupère la chaleur de l’air extrait." },
+            { "title": "Chauffage et eau chaude", "text": "En dernier, dimensionnés sur le bâti isolé. Pompe à chaleur, condensation, chauffe-eau thermodynamique." }
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Comptez 6 à 14 semaines de travaux pour un projet global sur 60 à 80 m², précédés de 2 à 4 mois pour l’audit, le montage des dossiers d’aides et l’attente des accords. Pendant l’isolation des murs et le remplacement du chauffage, rester sur place est difficile 4 à 8 semaines ; combles, VMC et fenêtres se font pièce par pièce."
+        }
+      ]
+    },
+    {
+      "title": "Aides 2026 et exemple chiffré",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "La rénovation énergétique est l’un des chantiers les mieux aidés. Les dispositifs se cumulent, à condition de faire intervenir des artisans RGE et de déposer les dossiers avant le début des travaux."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "MaPrimeRénov’ Parcours Accompagné : pour un gain d’au moins 2 classes, jusqu’à 70 000 € selon les revenus, soit 30 à 90 % du coût des travaux. Un Accompagnateur Rénov’ agréé est obligatoire.",
+            "CEE : primes des fournisseurs d’énergie, 1 500 à 8 000 € selon les actions, cumulables avec MaPrimeRénov’.",
+            "Éco-PTZ « performance énergétique globale » : jusqu’à 50 000 € à taux zéro, remboursables sur 15 à 20 ans.",
+            "TVA à 5,5 % sur l’isolation, la ventilation et le chauffage performant, soit 5 à 15 % d’économie supplémentaire.",
+            "Aides locales : Région, Ville de Paris et certaines communes, jusqu’à 5 000 € de prime dans certains cas."
+          ]
+        },
+        {
+          "t": "h3",
+          "v": "Cas pratique : un 70 m² haussmannien du 11e, de F à C"
+        },
+        {
+          "t": "p",
+          "v": "Situation initiale : convecteurs électriques, simple vitrage, pas de VMC, 2 400 € de factures par an. Travaux : isolation intérieure de trois façades sur quatre (12 000 €), huit fenêtres double vitrage (6 400 €), pompe à chaleur et radiateurs basse température (14 000 €), VMC double flux (4 800 €), chauffe-eau thermodynamique (3 200 €). Total : 40 400 € HT, 42 622 € TTC à 5,5 %."
+        },
+        {
+          "t": "p",
+          "v": "Financement : 15 000 € de MaPrimeRénov’ (revenus intermédiaires), 4 200 € de CEE, 23 422 € d’éco-PTZ sur 15 ans. Reste à charge immédiat : 0 €. Résultat : DPE passé de F à C, factures ramenées de 2 400 à 950 € par an, mensualité d’éco-PTZ de 130 € couverte par l’économie réalisée, et une revalorisation estimée de 8 à 12 % sur le marché parisien."
+        }
+      ]
+    },
+    {
+      "title": "Choisir l’entreprise et lancer le projet",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Une sortie de passoire mobilise isolateurs, plaquistes, électriciens, chauffagistes et installateurs de VMC. Sans pilotage unique, les ruptures de planning et les renvois de responsabilité sont la règle. Avant de signer, vérifiez quatre points."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "La qualification RGE de l’entreprise et de ses artisans : sans elle, ni MaPrimeRénov’ ni CEE.",
+            "Des références concrètes de logements F ou G sortis du statut, sur le même type de bâti que le vôtre.",
+            "Un interlocuteur unique qui pilote tous les corps d’état, avec un planning et un compte-rendu réguliers.",
+            "L’accompagnement administratif : Accompagnateur Rénov’ intégré ou partenaire, dossiers montés avant chantier."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "RenovIntérieurs réunit ces quatre points dans son [offre d’isolation et d’amélioration énergétique](/isolation-amelioration-energetique) : audit, dimensionnement, artisans RGE, dossiers MaPrimeRénov’ et CEE, devis détaillé sous 48 h. Gardez 10 à 15 % de marge pour les surprises de chantier, comme l’adaptation du circuit électrique à une pompe à chaleur."
+        },
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Suffit-il de passer de G à E pour être tranquille ?",
+              "a": "Non. La classe F sera interdite à la location en 2028 et la classe E en 2034. Visez au minimum la classe D, idéalement C, pour sécuriser la location et la valeur du bien sur le long terme."
+            },
+            {
+              "q": "Faut-il l’accord de la copropriété ?",
+              "a": "Pas pour les travaux intérieurs : isolation des murs par l’intérieur, VMC, chauffage individuel. L’isolation par l’extérieur ou des fenêtres visibles depuis la rue exigent un vote en assemblée générale. Une rénovation globale portée par la copropriété est parfois l’option la plus avantageuse."
+            },
+            {
+              "q": "Quelle économie sur les factures après les travaux ?",
+              "a": "En passant d’un F ou G à un C, la baisse se situe entre 50 et 70 %. Pour un 70 m² parisien qui consomme 2 400 € par an, cela représente 1 200 à 1 700 € d’économies annuelles."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Isolation et amélioration énergétique", "href": "/isolation-amelioration-energetique", "desc": "Audit DPE, isolation, VMC double flux, chauffage, MaPrimeRénov’ et CEE." },
+    { "label": "Simulateur DPE", "href": "/outils/simulateur-dpe-passoire-energetique", "desc": "Estimez la classe atteignable selon vos travaux avant l’audit." },
+    { "label": "Isoler une maison ancienne par l’intérieur", "href": "/conseils/isolation-maison-ancienne-par-linterieur", "desc": "Murs en pierre, combles, cave, fenêtres : isolants et mise en œuvre." },
+    { "label": "Nos prix au m²", "href": "/prix-renovation", "desc": "Fourchettes par niveau de rénovation, TVA à 10 % et 5,5 %, aides." }
+  ]
+}

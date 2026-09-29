@@ -36,7 +36,7 @@ export function Intro() {
         <span className="intro-rule mt-7 block" />
 
         <p className="intro-caption mt-6 text-[0.66rem] font-medium tracking-[0.4em] text-paper/55 uppercase sm:text-[0.72rem]">
-          Renovintérieur — Paris &amp; Île-de-France
+          Renovintérieurs — Paris &amp; Île-de-France
         </p>
       </div>
     </div>

@@ -67,7 +67,7 @@ export function Header() {
           {/* --- Logo --- */}
           <Link
             href="/"
-            aria-label="RenovIntérieur — accueil"
+            aria-label="RenovIntérieurs — accueil"
             className="hdr-logo flex shrink-0 items-center gap-2.5"
           >
             <Image
@@ -79,7 +79,7 @@ export function Header() {
               className="size-8"
             />
             <span className="text-[0.9rem] leading-none font-semibold tracking-[0.16em] uppercase">
-              Renov<span className="font-normal opacity-70">intérieur</span>
+              Renov<span className="font-normal opacity-70">intérieurs</span>
             </span>
           </Link>
 
@@ -231,7 +231,7 @@ export function Header() {
         <div className="flex h-full flex-col">
           <div className="container-x flex h-[62px] shrink-0 items-center justify-between">
             <span className="text-[0.92rem] font-semibold tracking-[0.16em] uppercase">
-              Renov<span className="font-normal opacity-60">intérieur</span>
+              Renov<span className="font-normal opacity-60">intérieurs</span>
             </span>
             <button
               type="button"

@@ -36,8 +36,6 @@ const CAT_IMAGE: Record<string, string> = {
   "Isolation & énergie": "/images/dpe-1.jpg",
   "Salle de bain": "/images/paris-sdb.jpg",
   Cuisine: "/images/paris-cuisine-sur-mesure.jpg",
-  Menuiseries: "/images/salon-haussmannien-moulures.jpg",
-  "Rangements sur-mesure": "/images/bibliotheque-sur-mesure.webp",
   "Méthode & étapes": "/images/paris-chantier.jpg",
 };
 
@@ -47,8 +45,6 @@ const CAT_IMAGE_ALT: Record<string, string> = {
   "Isolation & énergie": "/images/why-2.jpg",
   "Salle de bain": "/images/sdb-douche-italienne.webp",
   Cuisine: "/images/loft-cuisine-cheminee.jpg",
-  Menuiseries: "/images/balcon-haussmannien-paris.jpg",
-  "Rangements sur-mesure": "/images/dressing-sur-mesure.webp",
   "Méthode & étapes": "/images/paris-pourquoi-specialiste.jpg",
 };
 
@@ -59,9 +55,6 @@ function categorize(slug: string): string {
   if (/(isolation|passoire|thermique)/.test(s)) return "Isolation & énergie";
   if (/(salle-de-bain|carrelage|resine-beton)/.test(s)) return "Salle de bain";
   if (/(cuisine|cuisiniste)/.test(s)) return "Cuisine";
-  if (/(fenetre|menuiserie|menuiseries)/.test(s)) return "Menuiseries";
-  if (/(placard|dressing|bibliotheque|rangement|amenagement|meuble)/.test(s))
-    return "Rangements sur-mesure";
   return "Méthode & étapes";
 }
 
@@ -80,18 +73,7 @@ const articles: Article[] = allPaths()
       cat: categorize(slug),
       readMin: Math.max(
         3,
-        Math.round(
-          page.sections.reduce(
-            (n, s) =>
-              n +
-              s.blocks.reduce(
-                (m, b) =>
-                  m + ("v" in b ? b.v.length : b.items.join(" ").length),
-                0,
-              ),
-            0,
-          ) / 1100,
-        ),
+        Math.round(JSON.stringify(page.sections).length / 1300),
       ),
       image: "",
     };

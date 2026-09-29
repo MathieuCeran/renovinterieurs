@@ -1,0 +1,206 @@
+{
+  "title": "Rénovation appartement Paris : second œuvre, devis 48 h",
+  "description": "Rénovation d’appartement à Paris, du haussmannien au loft : second œuvre tous corps d’état, un interlocuteur unique, devis détaillé sous 48 h.",
+  "h1": "Rénovation d’appartement à Paris : du haussmannien au loft",
+  "kind": "service",
+  "parent": "/nos-services",
+  "eyebrow": "Rénovation d’appartement · Paris 75",
+  "hero": "/images/salon-haussmannien-moulures.jpg",
+  "intro": [
+    "Un appartement parisien ne se rénove pas comme un pavillon. Copropriété stricte, palier étroit, ascenseur d’époque, moulures à préserver, parfois avis de l’ABF : chaque chantier commence par une lecture du bâti et du règlement de l’immeuble. RenovIntérieurs intervient dans les 20 arrondissements, sur le haussmannien comme sur les résidences récentes, avec la même exigence de finition.",
+    "Nous pilotons l’ensemble du second œuvre : démolition légère, plomberie, électricité, plâtrerie, peinture, sols, menuiserie, cuisine et salle de bain. Un interlocuteur unique, une visite technique sous 5 jours, un devis détaillé sous 48 h et un compte-rendu chaque semaine. Vous savez toujours où en est votre chantier."
+  ],
+  "sections": [
+    {
+      "title": "En bref",
+      "blocks": [
+        {
+          "t": "stats",
+          "items": [
+            { "value": "48 h", "label": "pour un devis poste par poste" },
+            { "value": "5 jours", "label": "pour la visite technique" },
+            { "value": "20", "label": "arrondissements couverts" },
+            { "value": "10 ans", "label": "de garantie décennale" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Paris, arrondissement par arrondissement",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Le parc parisien n’est pas homogène, et nos interventions non plus. Voici comment nous lisons la ville, secteur par secteur, et ce que l’on nous demande le plus souvent dans chacun."
+        },
+        {
+          "t": "cards",
+          "items": [
+            {
+              "title": "Centre historique : 1er, 4e, 6e, 7e, 8e",
+              "text": "Hôtels particuliers et haussmannien de prestige, souvent soumis à l’avis de l’ABF pour ce qui se voit depuis la rue. Restauration de moulures, marbre, ébénisterie, cuisine dessinée sur plan.",
+              "href": "/cuisine-sur-mesure-paris"
+            },
+            {
+              "title": "Ouest résidentiel : 15e, 16e, 17e",
+              "text": "Haussmannien majoritaire, immeubles des années 1930 à Beaugrenelle, Auteuil et aux Batignolles. Rénovations complètes entre deux propriétaires, parquet point de Hongrie, sortie de DPE F ou G.",
+              "href": "/isolation-amelioration-energetique"
+            },
+            {
+              "title": "Faubourgs de l’Est : 10e, 11e, 12e, 20e",
+              "text": "Haussmannien autour de République et de Nation, ateliers d’artistes, petits immeubles 1900. Rénovations partielles, cuisines Metod à façades sur mesure, ouverture des volumes type loft.",
+              "href": "/cuisine-sur-mesure-paris"
+            },
+            {
+              "title": "Nord : 18e, 19e",
+              "text": "Petits immeubles anciens et résidences récentes autour de Stalingrad. Demande forte sur le béton ciré et les rénovations contemporaines à budget tenu.",
+              "href": "/beton-cire-paris"
+            },
+            {
+              "title": "Rive Gauche : 5e, 13e, 14e",
+              "text": "Haussmannien du Quartier Latin, tours des années 1960-1970 et résidences récentes du 13e, art déco vers Plaisance et Pernety. Du rafraîchissement locatif à la rénovation complète.",
+              "href": "/prix-renovation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Réalisations à Paris",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Trois chantiers parisiens qui résument notre façon de faire : conserver ce qui a de la valeur, moderniser le reste. [Voir toutes nos réalisations](/realisations-renovation)."
+        },
+        {
+          "t": "gallery",
+          "items": [
+            {
+              "src": "/images/sejour-haussmannien.jpg",
+              "alt": "Séjour haussmannien rénové, double exposition et moulures restaurées",
+              "caption": "Séjour haussmannien : moulures conservées, double exposition retrouvée, peinture et parquet repris."
+            },
+            {
+              "src": "/images/paris-parquet.jpg",
+              "alt": "Parquet chêne posé en point de Hongrie dans un appartement parisien",
+              "caption": "Parquet chêne posé en point de Hongrie, la signature des appartements haussmanniens."
+            },
+            {
+              "src": "/images/salon-canape-courbe.jpg",
+              "alt": "Salon contemporain rénové avec canapé courbe",
+              "caption": "Salon contemporain : volumes ouverts, éclairage repensé, finitions sobres."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ce que vous obtenez",
+      "blocks": [
+        {
+          "t": "cards",
+          "items": [
+            {
+              "title": "Un diagnostic avant le devis",
+              "text": "Visite technique sous 5 jours : état des murs, des planchers et des réseaux, contraintes de copropriété, hiérarchie de vos priorités."
+            },
+            {
+              "title": "Un devis poste par poste",
+              "text": "Sous 48 h, par corps de métier, avec planning prévisionnel, matériaux nommés et options. Aucun supplément sans avenant signé."
+            },
+            {
+              "title": "Le second œuvre tous corps d’état",
+              "text": "Plomberie, électricité aux normes, plâtrerie, peinture, sols, menuiserie. Un seul devis, un seul contrat, une seule garantie."
+            },
+            {
+              "title": "Cuisine et salle de bain intégrées",
+              "text": "Cuisine conçue sur plan ou façades sur mesure sur Metod, salle de bain étanche avec natte et joints époxy.",
+              "href": "/salle-de-bain-paris"
+            },
+            {
+              "title": "Une copropriété informée",
+              "text": "Parties communes protégées, gravats évacués au fil du chantier, syndic et gardien prévenus avant le premier jour."
+            },
+            {
+              "title": "Livraison et SAV 12 mois",
+              "text": "Réception point par point, levée des réserves, attestations décennale, biennale et parfait achèvement remises."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nos signatures techniques",
+      "blocks": [
+        {
+          "t": "callout",
+          "title": "Parquet point de Hongrie",
+          "v": "Pose à la française sur parquet massif ou contrecollé, ponçage et vitrification. C’est la finition que les acquéreurs parisiens reconnaissent au premier regard."
+        },
+        {
+          "t": "callout",
+          "title": "Joints époxy et nattes d’étanchéité",
+          "v": "Sous chaque douche, une natte d’étanchéité avant le carrelage. Sur chaque jonction humide, des joints époxy bi-composants qui ne noircissent pas pendant 15 à 20 ans.",
+          "href": "/salle-de-bain-paris",
+          "label": "Voir la salle de bain étanche"
+        },
+        {
+          "t": "callout",
+          "title": "Moulures restaurées ou reconstituées",
+          "v": "Rosaces, corniches et soubassements réparés au plâtre quand ils existent, reconstitués en staff quand ils ont disparu. Le cachet haussmannien sans le figer."
+        }
+      ]
+    },
+    {
+      "title": "Prix d’une rénovation d’appartement à Paris",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Fourchettes 2026 hors taxes, au m² de logement. Le détail par niveau et les exemples chiffrés sont sur [notre page prix de rénovation](/prix-renovation) ; pour un premier ordre de grandeur, utilisez [l’estimateur de budget](/outils/estimateur-budget-renovation)."
+        },
+        {
+          "t": "table",
+          "head": ["Périmètre", "Fourchette HT", "Durée indicative"],
+          "rows": [
+            ["Rénovation partielle, 1 à 2 pièces", "600 à 900 €/m²", "3 à 6 semaines"],
+            ["Rénovation complète, 50 à 80 m²", "1 000 à 1 500 €/m²", "8 à 14 semaines"],
+            ["Haut de gamme ou plus de 100 m²", "1 500 à 2 500 €/m²", "4 à 6 mois"]
+          ],
+          "note": "TVA à 10 % sur l’amélioration d’un logement de plus de 2 ans, 5,5 % sur les travaux énergétiques éligibles. Seul le devis établi après visite technique fait foi."
+        },
+        {
+          "t": "p",
+          "v": "Notre façon de piloter un chantier, de la visite technique à la livraison, est décrite étape par étape sur [la page méthode](/methode)."
+        }
+      ]
+    },
+    {
+      "title": "Questions fréquentes à Paris",
+      "blocks": [
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Faut-il l’accord de la copropriété pour rénover mon appartement ?",
+              "a": "Non pour les travaux privatifs sans effet sur la structure. Oui, par vote en assemblée générale, pour un mur porteur, un sanitaire déplacé sur une colonne commune ou une modification de façade. Nous préparons le dossier avec vous."
+            },
+            {
+              "q": "Mon immeuble est en secteur ABF : qu’est-ce que cela change ?",
+              "a": "Rien pour l’intérieur. Pour ce qui se voit depuis la rue, fenêtres ou climatiseur en façade, un dossier ABF est nécessaire dans les 1er, 4e, 6e, 7e et 8e notamment. Nous le montons avec les pièces techniques."
+            },
+            {
+              "q": "Quel délai entre la signature du devis et le début du chantier ?",
+              "a": "Généralement 4 à 8 semaines : commande des matériaux, planification des artisans, autorisations de copropriété si besoin. Le planning hebdomadaire vous est remis dès le premier jour."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Notre méthode", "href": "/methode", "desc": "Visite sous 5 jours, devis sous 48 h, compte-rendu hebdomadaire, SAV 12 mois." },
+    { "label": "Prix de rénovation", "href": "/prix-renovation", "desc": "Grille au m², facteurs de prix, exemples chiffrés, TVA et aides." },
+    { "label": "Nos zones d’intervention", "href": "/zones", "desc": "Paris, Hauts-de-Seine, Yvelines, Val-de-Marne." },
+    { "label": "Combien coûte une rénovation d’appartement à Paris ?", "href": "/conseils/combien-coute-renovation-appartement-paris", "desc": "Le guide chiffré, poste par poste." },
+    { "label": "Nos réalisations", "href": "/realisations-renovation", "desc": "Séjours, cuisines, salles de bain et parquets livrés à Paris." }
+  ]
+}

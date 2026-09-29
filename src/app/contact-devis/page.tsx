@@ -12,7 +12,7 @@ const path = "/contact-devis";
 
 export async function generateMetadata(): Promise<Metadata> {
   const page = getPage(path);
-  const title = page?.title ?? "Contact & devis gratuit — RenovIntérieur";
+  const title = page?.title ?? "Contact & devis gratuit — RenovIntérieurs";
   const description =
     page?.description ??
     "Décrivez votre projet de rénovation : visite technique sous 5 jours, devis détaillé sous 48 h. Paris & Île-de-France.";
@@ -62,7 +62,7 @@ export default function ContactPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    name: "Contact & devis — RenovIntérieur",
+    name: "Contact & devis — RenovIntérieurs",
     url: `${site.url}${path}`,
     mainEntity: {
       "@id": `${site.url}#entreprise`,

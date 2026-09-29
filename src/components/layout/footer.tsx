@@ -30,7 +30,7 @@ export function Footer() {
                 className="size-10"
               />
               <span className="text-[1rem] leading-none font-semibold tracking-[0.14em] uppercase">
-                Renov<span className="font-normal opacity-70">intérieur</span>
+                Renov<span className="font-normal opacity-70">intérieurs</span>
               </span>
             </Link>
             <p className="mt-6 max-w-sm text-[0.92rem] leading-relaxed text-muted">
@@ -247,13 +247,15 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Filigrane */}
-      <p
-        aria-hidden
-        className="pointer-events-none -mb-[0.24em] w-full overflow-hidden text-center whitespace-nowrap text-[clamp(1.7rem,11.5vw,13rem)] leading-none font-medium tracking-[-0.04em] text-ink/[0.055] select-none"
-      >
-        RenovIntérieur
-      </p>
+      {/* Filigrane — calé sur la largeur du contenu du footer */}
+      <div className="container-x @container">
+        <p
+          aria-hidden
+          className="pointer-events-none -mb-[0.24em] w-full overflow-hidden bg-gradient-to-b from-gold-light via-gold to-[#a8861d] bg-clip-text text-center whitespace-nowrap text-[11.3cqw] leading-none font-medium tracking-[-0.04em] text-transparent uppercase opacity-[0.18] select-none"
+        >
+          RENOVINTÉRIEURS
+        </p>
+      </div>
     </footer>
   );
 }

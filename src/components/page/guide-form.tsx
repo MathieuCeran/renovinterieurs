@@ -127,7 +127,7 @@ export function GuideForm() {
           />
           <span>
             J’accepte de recevoir le guide par e-mail et d’être recontacté(e)
-            par RenovIntérieur. *
+            par RenovIntérieurs. *
           </span>
         </label>
 

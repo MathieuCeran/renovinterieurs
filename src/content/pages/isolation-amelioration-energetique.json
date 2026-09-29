@@ -1,0 +1,181 @@
+{
+  "title": "Isolation et sortie de passoire DPE F/G en Île-de-France",
+  "description": "Audit DPE, isolation murs et combles, VMC double flux, pompe à chaleur : gagnez 2 à 3 classes DPE avec MaPrimeRénov’ et CEE. Devis détaillé sous 48 h.",
+  "h1": "Isolation et DPE : sortir votre logement de la classe F ou G",
+  "kind": "service",
+  "parent": "/nos-services",
+  "eyebrow": "Isolation & performance énergétique",
+  "hero": "/images/dpe-1.jpg",
+  "intro": [
+    "Parois froides, factures de chauffage qui grimpent, étiquette F ou G qui bloque la location ou la vente : les logements franciliens construits avant 1975 cumulent souvent les trois. RenovIntérieurs traite la passoire énergétique de bout en bout, de l’audit DPE au nouveau diagnostic, avec un objectif clair : gagner 2 à 3 classes en une seule opération.",
+    "Sur ce type de chantier, nous pilotons l’audit, l’isolation des murs et des combles, la VMC double flux, le remplacement du chauffage et le dossier d’aides MaPrimeRénov’ et CEE. Un interlocuteur unique, un devis détaillé sous 48 h, et vous savez toujours où en est votre chantier."
+  ],
+  "sections": [
+    {
+      "title": "En bref",
+      "blocks": [
+        {
+          "t": "stats",
+          "items": [
+            { "value": "2 à 3", "label": "classes DPE gagnées en une opération" },
+            { "value": "5,5 %", "label": "de TVA sur les travaux énergétiques éligibles" },
+            { "value": "3 à 6 sem.", "label": "pour un bouquet isolation en appartement" },
+            { "value": "90 %", "label": "de chaleur récupérée par la VMC double flux" }
+          ]
+        },
+        {
+          "t": "callout",
+          "title": "Votre logement est-il une passoire énergétique ?",
+          "v": "Renseignez la surface, l’année de construction, le chauffage et l’isolation actuelle : le simulateur estime votre classe DPE et les travaux prioritaires pour en sortir.",
+          "href": "/outils/simulateur-dpe-passoire-energetique",
+          "label": "Tester mon logement"
+        }
+      ]
+    },
+    {
+      "title": "Nos chantiers énergétiques",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Doublage des murs froids, combles, ventilation, chauffage : voici le type de chantier que nous menons à Paris et en petite couronne, souvent couplé à une rénovation intérieure. [D’autres projets sont présentés dans nos réalisations](/realisations-renovation)."
+        },
+        {
+          "t": "gallery",
+          "items": [
+            {
+              "src": "/images/dpe-1.jpg",
+              "alt": "Chantier d’isolation et d’amélioration énergétique en cours",
+              "caption": "Isolation par l’intérieur : doublage des murs froids et traitement des ponts thermiques"
+            },
+            {
+              "src": "/images/paris-renovation-appartement.jpg",
+              "alt": "Appartement en cours de rénovation, pose des nouveaux revêtements",
+              "caption": "Rénovation combinée : l’isolation est posée avant les finitions, rien n’est déposé deux fois"
+            },
+            {
+              "src": "/images/savoir-faire-1.jpg",
+              "alt": "Artisan réalisant les finitions d’un chantier de rénovation",
+              "caption": "Après le doublage : plâtrerie et peinture reprises dans le même chantier"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ce que vous obtenez",
+      "blocks": [
+        {
+          "t": "cards",
+          "items": [
+            {
+              "title": "Audit énergétique préalable",
+              "text": "Un diagnostiqueur certifié identifie les postes prioritaires : parois froides, ponts thermiques, ventilation. Le devis s’appuie sur ce constat, pas sur une estimation."
+            },
+            {
+              "title": "Isolation des murs et des combles",
+              "text": "Doublage par l’intérieur des murs froids, combles perdus ou aménagés, planchers bas. Étanchéité à l’air renforcée aux jonctions avec les menuiseries."
+            },
+            {
+              "title": "VMC double flux",
+              "text": "Un air renouvelé en permanence sans courant d’air froid. Les gaines passent en faux plafond ou en plinthes techniques."
+            },
+            {
+              "title": "Pompe à chaleur",
+              "text": "Remplacement d’une chaudière fioul ou gaz par une pompe à chaleur air-eau ou air-air, avec les démarches en assemblée générale si une unité extérieure est nécessaire."
+            },
+            {
+              "title": "Dossier MaPrimeRénov’ et CEE",
+              "text": "Nous montons le dossier d’aides et calculons votre reste à charge dès le devis. Vous n’avez pas de démarche supplémentaire à faire."
+            },
+            {
+              "title": "Nouveau DPE à la livraison",
+              "text": "Réception, mesure d’étanchéité à l’air si applicable, puis nouveau diagnostic certifié pour valider les classes gagnées et débloquer les aides."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nos signatures techniques",
+      "blocks": [
+        {
+          "t": "callout",
+          "title": "Isolation par l’intérieur adaptée à la copropriété",
+          "v": "Les murs sont doublés côté pièce avec un isolant performant recouvert d’une plaque de plâtre. Vous perdez 5 à 10 cm par mur traité, mais vous agissez sans toucher la façade ni attendre un vote d’assemblée générale."
+        },
+        {
+          "t": "callout",
+          "title": "VMC double flux, même en haussmannien",
+          "v": "L’échangeur récupère jusqu’à 90 % de la chaleur de l’air extrait pour préchauffer l’air entrant. Dans un appartement aux moulures préservées, nous adaptons le passage des gaines pour limiter l’impact visuel."
+        },
+        {
+          "t": "callout",
+          "title": "Pompe à chaleur air-eau",
+          "v": "Elle divise par 3 à 4 la consommation nécessaire pour produire la même chaleur qu’une chaudière fioul ou gaz. Elle est éligible à MaPrimeRénov’ et aux CEE, et le retour sur investissement se situe entre 6 et 10 ans."
+        }
+      ]
+    },
+    {
+      "title": "Un chantier piloté de l’audit au nouveau DPE",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Visite technique sous 5 jours, devis poste par poste sous 48 h avec calcul des aides, puis travaux pilotés par un interlocuteur unique avec compte-rendu hebdomadaire. [Notre méthode en 5 étapes est détaillée ici](/methode)."
+        },
+        {
+          "t": "p",
+          "v": "Nous intervenons dans les 20 arrondissements de [Paris](/renovation-appartement-paris), dans les [Hauts-de-Seine](/renovation-hauts-de-seine-92), les Yvelines et le Val-de-Marne. Pour comprendre le calendrier des interdictions de location, lisez [notre guide pour sortir d’une passoire énergétique](/conseils/sortir-passoire-energetique-dpe-f-g) et [nos conseils sur l’isolation d’une maison ancienne par l’intérieur](/conseils/isolation-maison-ancienne-par-linterieur)."
+        }
+      ]
+    },
+    {
+      "title": "Prix et délais indicatifs",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Le montant final dépend de l’audit et du bouquet retenu : [consultez nos tarifs au m²](/prix-renovation) et [chiffrez votre projet avec l’estimateur de budget](/outils/estimateur-budget-renovation)."
+        },
+        {
+          "t": "table",
+          "head": ["Prestation", "Fourchette HT", "Délai"],
+          "rows": [
+            ["Audit énergétique réglementaire", "800 à 1 500 €", "Avant le devis, valide 5 ans"],
+            ["Isolation des murs par l’intérieur", "60 à 95 €/m² posé", "3 à 6 semaines pour le bouquet"],
+            ["VMC double flux posée", "3 800 à 6 500 €", "Dans le même bouquet"]
+          ],
+          "note": "Prix indicatifs 2026, hors aides. TVA 5,5 % sur les travaux énergétiques éligibles, 10 % sur les autres travaux d’amélioration d’un logement de plus de 2 ans. Les aides peuvent couvrir 60 à 80 % du coût selon vos revenus et le bouquet retenu."
+        }
+      ]
+    },
+    {
+      "title": "Questions sur l’isolation et le DPE",
+      "blocks": [
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Quelles aides sont mobilisables pour sortir d’une classe F ou G ?",
+              "a": "MaPrimeRénov’, les certificats d’économie d’énergie (CEE), l’éco-PTZ et la TVA à 5,5 %. Le cumul peut atteindre 60 à 80 % du coût selon vos revenus. Les travaux doivent être réalisés par des entreprises RGE, ce que nous garantissons dans le devis."
+            },
+            {
+              "q": "Faut-il isoler avant ou pendant la rénovation intérieure ?",
+              "a": "Pendant. Une rénovation globale qui intègre isolation, plâtrerie, électricité, peinture et sols coûte 20 à 30 % de moins qu’une rénovation intérieure refaite après l’isolation, car rien n’est déposé deux fois."
+            },
+            {
+              "q": "Isolation par l’intérieur ou par l’extérieur ?",
+              "a": "En appartement, l’isolation par l’intérieur (60 à 95 €/m²) est souvent la seule option sans accord de copropriété. Pour une maison individuelle, l’isolation par l’extérieur (140 à 220 €/m²) traite mieux les ponts thermiques et ne réduit pas la surface habitable."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Notre méthode", "href": "/methode", "desc": "Visite sous 5 jours, devis sous 48 h, compte-rendu hebdomadaire" },
+    { "label": "Prix de la rénovation", "href": "/prix-renovation", "desc": "Fourchettes au m², TVA et aides" },
+    { "label": "Rénovation à Paris", "href": "/renovation-appartement-paris", "desc": "Haussmannien, années 30, résidences récentes" },
+    { "label": "Sortir d’une passoire énergétique", "href": "/conseils/sortir-passoire-energetique-dpe-f-g", "desc": "Calendrier, travaux prioritaires, aides" },
+    { "label": "Isoler une maison ancienne par l’intérieur", "href": "/conseils/isolation-maison-ancienne-par-linterieur", "desc": "Matériaux, épaisseurs, points de vigilance" },
+    { "label": "Nos réalisations", "href": "/realisations-renovation", "desc": "Chantiers livrés à Paris et en Île-de-France" }
+  ]
+}

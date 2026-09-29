@@ -1,0 +1,224 @@
+{
+  "title": "Rénovation intérieure de maison : les étapes dans l’ordre",
+  "description": "Diagnostics, structure, réseaux, isolation, finitions : l’ordre des travaux pour rénover l’intérieur d’une maison sans reprise, budget au m² et durées.",
+  "h1": "Rénovation intérieure de maison : les étapes clés, dans l’ordre",
+  "kind": "article",
+  "parent": "/conseils",
+  "eyebrow": "Conseils rénovation",
+  "hero": "/images/paris-renovation-appartement.jpg",
+  "intro": [
+    "Une rénovation intérieure de maison suit toujours la même séquence : diagnostics, structure, réseaux, isolation, chauffage et ventilation, puis finitions. Respecter cet ordre évite de déposer un parquet neuf pour reprendre une canalisation oubliée.",
+    "RenovIntérieurs pilote ce type de chantier en [rénovation tous corps d’état](/renovation-appartement-paris), maison comme appartement, avec un interlocuteur unique du relevé à la livraison."
+  ],
+  "sections": [
+    {
+      "title": "À retenir",
+      "blocks": [
+        {
+          "t": "callout",
+          "title": "À retenir",
+          "v": "Les réseaux passent avant l’isolation, l’isolation avant le chauffage, le chauffage avant la ventilation, et tout cela avant le premier revêtement. Dans une maison à étages, on travaille du haut vers le bas pour protéger ce qui est terminé. Prévoyez une marge de 10 à 20 % du budget pour ce que les murs cachent.",
+          "href": "/renovation-appartement-paris",
+          "label": "Voir notre prestation tous corps d’état"
+        }
+      ]
+    },
+    {
+      "title": "Avant le chantier : état des lieux et diagnostics",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Tout commence par une lecture précise de l’existant. Cet examen distingue un rafraîchissement d’une intervention lourde avec reprise des murs, des sols, de la plomberie ou d’éléments porteurs. Il intègre aussi les accès, la circulation des matériaux et les conditions réelles d’intervention, qui pèsent vite sur le planning en Île-de-France."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Inspection visuelle : murs, plafonds, sols et menuiseries pour repérer fissures, humidité, déformations.",
+            "Diagnostic électrique : indispensable avant toute reprise de distribution.",
+            "Plomb et amiante : repérages obligatoires selon l’année de construction, avec impact direct sur la démolition.",
+            "Termites et assainissement : à vérifier selon la zone et la configuration de la maison.",
+            "DPE actualisé : base pour hiérarchiser isolation, ventilation et priorités budgétaires."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Vient ensuite la traduction des usages en choix concrets, pièce par pièce : circulation, rangements, lumière, niveau de finition. Une salle de bain n’impose pas les mêmes contraintes qu’un séjour. Ce cadrage fixe le niveau d’intervention : rénovation légère (peintures, sols), moyenne (réseaux, cuisine, salle de bain) ou lourde (cloisons, murs porteurs, isolation généralisée, toiture)."
+        },
+        {
+          "t": "p",
+          "v": "Ce niveau détermine aussi les démarches. Selon le projet, une déclaration préalable, un permis de construire ou l’avis des Architectes des Bâtiments de France peut être requis, et un architecte devient obligatoire au-delà de 150 m². Un dossier incomplet retarde le chantier de plusieurs semaines."
+        }
+      ]
+    },
+    {
+      "title": "Les phases du chantier, dans l’ordre",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Le déroulé complet d’un projet avec RenovIntérieurs, du premier échange au SAV, est décrit sur [notre page méthode](/methode). Sur le chantier lui-même, les phases s’enchaînent ainsi."
+        },
+        {
+          "t": "steps",
+          "items": [
+            {
+              "title": "Structure et démolition",
+              "text": "Murs porteurs, cloisons, planchers, toiture et ouvertures. Un sondage avant démolition évite de fragiliser l’existant, surtout dans une maison ancienne."
+            },
+            {
+              "title": "Réseaux",
+              "text": "Plomberie et électricité passent en premier, avant toute fermeture de cloison. Les gaines de ventilation se réservent au même moment."
+            },
+            {
+              "title": "Isolation",
+              "text": "Depuis la toiture ou les combles, puis les murs, avant les planchers bas et les menuiseries. L’enveloppe se stabilise avant de dimensionner le chauffage."
+            },
+            {
+              "title": "Chauffage puis ventilation",
+              "text": "Un équipement calibré sur l’enveloppe rénovée, jamais avant. La ventilation se règle en fin de parcours, sans rouvrir de cloison neuve."
+            },
+            {
+              "title": "Plâtrerie et menuiseries intérieures",
+              "text": "Doublages, cloisons, enduits, portes : les supports des finitions se préparent et sèchent à cœur."
+            },
+            {
+              "title": "Finitions",
+              "text": "Sols, peinture, cuisine, salle de bain, crédences et aménagements. Le chantier se ferme par une réception point par point."
+            }
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Dans une maison à plusieurs niveaux, on démarre en haut pour descendre étage par étage. Gravats, poussière, eau de mise en œuvre et passage des artisans abîment vite un support terminé si ce sens n’est pas tenu. Pour placer ces phases sur un calendrier, utilisez le [planning de travaux de rénovation](/outils/planning-travaux-renovation)."
+        }
+      ]
+    },
+    {
+      "title": "Les erreurs de séquençage qui coûtent cher",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Le coût grimpe dès qu’un revêtement ou une finition doit être déposé pour reprendre un réseau ou corriger un support. Quatre erreurs reviennent sur la plupart des chantiers mal préparés."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Poser le sol trop tôt : parquet, vinyle ou pierre exigent un support sec, stable et terminé ; avant la fin des finitions humides, déformations et taches menacent.",
+            "Changer le chauffage avant d’isoler : l’équipement se retrouve surdimensionné après travaux, avec une consommation inutile.",
+            "Démolir sans étude : ouvrir un mur ou supprimer une cloison sans diagnostic fragilise l’existant.",
+            "Commander sans plan validé : dès que le projet bouge, délais d’approvisionnement et pertes de matière perturbent toutes les étapes."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Une maison ancienne ajoute ses propres pièges : humidité remontante, réseaux vieillissants, incompatibilité entre matériaux anciens et solutions modernes. Un mur en pierre ou un enduit ancien ne réagit pas comme une paroi récente ; un isolant mal choisi bloque les échanges d’humidité et dégrade le mur dans le temps. Le diagnostic du support prime sur l’apparence des pièces."
+        }
+      ]
+    },
+    {
+      "title": "Budget et durée d’une rénovation intérieure",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Le budget dépend de l’état du bien, des matériaux et de l’ampleur des travaux. En Île-de-France, main-d’œuvre, accès et logistique coûtent plus qu’ailleurs. Les fourchettes ci-dessous s’entendent hors mobilier et électroménager."
+        },
+        {
+          "t": "table",
+          "head": ["Niveau", "Prix indicatif HT", "Durée indicative"],
+          "rows": [
+            ["Rafraîchissement", "250 à 450 €/m²", "Selon la surface"],
+            ["Rénovation partielle", "600 à 900 €/m²", "3 à 6 semaines"],
+            ["Rénovation complète", "1 000 à 1 500 €/m²", "8 à 14 semaines pour 50 à 80 m²"],
+            ["Haut de gamme ou plus de 100 m²", "1 500 à 2 500 €/m²", "4 à 6 mois"]
+          ],
+          "note": "TVA à 10 % sur l’amélioration d’un logement de plus de 2 ans, 5,5 % sur les travaux énergétiques éligibles."
+        },
+        {
+          "t": "p",
+          "v": "Dans un projet orienté performance énergétique, le coût se répartit en moyenne ainsi."
+        },
+        {
+          "t": "stats",
+          "items": [
+            { "value": "38 %", "label": "isolation" },
+            { "value": "26 %", "label": "chauffage" },
+            { "value": "24 %", "label": "menuiseries" },
+            { "value": "8 %", "label": "ventilation" }
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Côté isolation, comptez 20 à 35 €/m² en combles perdus, 30 à 50 €/m² en planchers bas, 40 à 80 €/m² pour des murs par l’intérieur et 100 à 180 €/m² par l’extérieur. Pour MaPrimeRénov’, les CEE ou l’éco-prêt à taux zéro, l’entreprise doit être RGE."
+        },
+        {
+          "t": "p",
+          "v": "Une marge de 10 à 20 % absorbe les découvertes à l’ouverture des murs ; elle figure dans le devis initial, pas en fin de parcours. La [grille de prix au m²](/prix-renovation) détaille chaque niveau de prestation."
+        }
+      ]
+    },
+    {
+      "title": "Les finitions : sols, peinture, crédences",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Avant de poser un sol, on contrôle le support : planéité, humidité résiduelle, stabilité. Un parquet demande un support plan, sec et stable, en pose collée, clouée ou flottante. Carrelage et pierre naturelle vont en salle de bain et en cuisine, sur une chape nivelée avec joints de dilatation. Vinyle, résine et moquette restent adaptés aux rénovations légères ou aux zones très circulées."
+        },
+        {
+          "t": "p",
+          "v": "La peinture tient par sa préparation : nettoyage, décapage si nécessaire, ponçage, enduit de lissage, puis séchage à cœur des enduits. Sans ce délai, différences de teinte, traces de reprise et décollements apparaissent vite. Le papier peint reste fiable sur des murs lisses et stables."
+        },
+        {
+          "t": "p",
+          "v": "Les crédences arrivent en dernier, une fois le revêtement mural posé et la peinture stabilisée. En cuisine comme en salle de bain, elles protègent le mur des projections et prolongent la ligne du projet : faïence, marbre, verre laqué ou surface technique, posés avec les mêmes exigences d’alignement que le reste du chantier."
+        }
+      ]
+    },
+    {
+      "title": "Un interlocuteur unique du relevé à la livraison",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Un chantier tous corps d’état se tient par son organisation : un plan arrêté, un séquençage réaliste et un pilotage serré des intervenants, des matériaux et des délais. C’est ce que RenovIntérieurs met en place sur chaque [rénovation tous corps d’état](/renovation-appartement-paris), à Paris comme dans le [Val-de-Marne](/renovation-val-de-marne-94) : visite technique sous 5 jours, devis poste par poste sous 48 h, compte-rendu hebdomadaire, SAV 12 mois."
+        },
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Quel est l’ordre des travaux dans une maison ?",
+              "a": "Structure et enveloppe d’abord (démolition, murs porteurs, toiture, menuiseries extérieures), puis second œuvre (plomberie, électricité, isolation, chauffage, ventilation), enfin finitions (sols, enduits, peinture, menuiseries intérieures, aménagements). À étages, du haut vers le bas."
+            },
+            {
+              "q": "Quel budget pour une rénovation intérieure complète ?",
+              "a": "Comptez 1 000 à 1 500 €/m² HT pour une rénovation complète et 1 500 à 2 500 €/m² en haut de gamme, hors mobilier. Ajoutez 10 à 20 % de marge pour l’imprévu, surtout en maison ancienne, et vérifiez que chaque devis inclut plâtrerie et évacuation des déchets."
+            },
+            {
+              "q": "Quels diagnostics avant de rénover une maison ancienne ?",
+              "a": "Diagnostic électrique, recherche de plomb et d’amiante, DPE, contrôle termites et vérification de l’assainissement. Ils conditionnent la démolition et la mise en œuvre de certains lots, et permettent d’établir un devis fiable."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Rénovation tous corps d’état",
+      "href": "/renovation-appartement-paris",
+      "desc": "Second œuvre complet, du relevé à la livraison."
+    },
+    {
+      "label": "Planning de travaux",
+      "href": "/outils/planning-travaux-renovation",
+      "desc": "Placez chaque phase de votre chantier sur un calendrier."
+    },
+    {
+      "label": "Rénovation complète de maison en Île-de-France",
+      "href": "/conseils/renovation-complete-maison-ile-de-france",
+      "desc": "Budget par département, démarches et aides."
+    },
+    {
+      "label": "Prix de la rénovation au m²",
+      "href": "/prix-renovation",
+      "desc": "Grille 2026 par niveau de prestation."
+    }
+  ]
+}

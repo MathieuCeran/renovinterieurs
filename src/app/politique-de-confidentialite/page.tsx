@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 const path = "/politique-de-confidentialite";
 const title = "Politique de confidentialité";
 const description =
-  "Quelles données RenovIntérieur collecte via ses formulaires, pourquoi, combien de temps elles sont conservées et comment exercer vos droits.";
+  "Quelles données RenovIntérieurs collecte via ses formulaires, pourquoi, combien de temps elles sont conservées et comment exercer vos droits.";
 
 export const metadata: Metadata = {
   title,

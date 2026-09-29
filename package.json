@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:content": "node scripts/check-content.mjs",
+    "prebuild": "node scripts/check-content.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^16.3.5",

@@ -1,0 +1,102 @@
+{
+  "title": "Zones d’intervention : Paris, 92, 78 et 94",
+  "description": "RenovIntérieurs rénove à Paris et dans les Hauts-de-Seine, les Yvelines et le Val-de-Marne. Visite technique sous 5 jours, devis détaillé sous 48 h.",
+  "h1": "Nos zones d’intervention : Paris, 92, 78 et 94",
+  "kind": "hub",
+  "parent": "/",
+  "eyebrow": "Zones",
+  "hero": "/images/paris-zones.jpg",
+  "intro": [
+    "Une entreprise qui connaît votre type d’immeuble gagne du temps dès la visite technique. RenovIntérieurs intervient dans les 20 arrondissements de Paris et dans trois départements voisins : Hauts-de-Seine, Yvelines et Val-de-Marne. Haussmannien, art déco ou résidence moderne, chaque page départementale décrit le bâti local et nos interventions commune par commune.",
+    "Le cadre reste le même partout : visite technique sous 5 jours, [devis détaillé sous 48 h](/methode), un interlocuteur unique du diagnostic à la livraison et une [grille de prix au m²](/prix-renovation) établie pour l’Île-de-France."
+  ],
+  "sections": [
+    {
+      "title": "Quatre territoires, un même niveau d’exigence",
+      "blocks": [
+        {
+          "t": "cards",
+          "items": [
+            {
+              "title": "Paris (75)",
+              "text": "Les 20 arrondissements, du haussmannien à l’art déco et aux résidences modernes. Rénovation d’appartement, cuisine, salle de bain, moulures et parquets point de Hongrie restaurés.",
+              "href": "/renovation-appartement-paris"
+            },
+            {
+              "title": "Hauts-de-Seine (92)",
+              "text": "Boulogne-Billancourt, Neuilly-sur-Seine, Levallois-Perret, Issy-les-Moulineaux, Courbevoie, Puteaux, Suresnes, Saint-Cloud, Rueil-Malmaison, Sceaux et les communes voisines.",
+              "href": "/renovation-hauts-de-seine-92"
+            },
+            {
+              "title": "Yvelines (78)",
+              "text": "Versailles, Saint-Germain-en-Laye, Le Vésinet, Maisons-Laffitte, Croissy-sur-Seine, Le Pecq et Chatou.",
+              "href": "/renovation-yvelines-78"
+            },
+            {
+              "title": "Val-de-Marne (94)",
+              "text": "Vincennes, Saint-Mandé, Charenton-le-Pont, Saint-Maur-des-Fossés, Maisons-Alfort, Nogent-sur-Marne, Joinville-le-Pont, Champigny-sur-Marne, Cachan et Arcueil.",
+              "href": "/renovation-val-de-marne-94"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Toutes nos communes",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "La liste complète des communes où nos équipes se déplacent pour une visite technique, un chantier de second œuvre, un dépannage ou un débarras."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Paris (75) : du 1er au 20e arrondissement.",
+            "Hauts-de-Seine (92) : Boulogne-Billancourt, Neuilly-sur-Seine, Levallois-Perret, Issy-les-Moulineaux, Courbevoie, Puteaux, Suresnes, Saint-Cloud, Rueil-Malmaison, Asnières-sur-Seine, Clichy, Bois-Colombes, Colombes, Sèvres, Meudon, Vanves, Antony, Sceaux.",
+            "Yvelines (78) : Versailles, Saint-Germain-en-Laye, Le Vésinet, Maisons-Laffitte, Croissy-sur-Seine, Le Pecq, Chatou.",
+            "Val-de-Marne (94) : Vincennes, Saint-Mandé, Charenton-le-Pont, Saint-Maur-des-Fossés, Maisons-Alfort, Nogent-sur-Marne, Joinville-le-Pont, Champigny-sur-Marne, Cachan, Arcueil."
+          ]
+        },
+        {
+          "t": "p",
+          "v": "Votre commune n’apparaît pas ? Décrivez votre projet via [le formulaire de contact](/contact-devis) et nous vous dirons si nous pouvons intervenir. Pour un aperçu de ce que nous livrons, parcourez [nos réalisations](/realisations-renovation)."
+        }
+      ]
+    },
+    {
+      "title": "Pour aller plus loin",
+      "blocks": [
+        {
+          "t": "links",
+          "items": [
+            {
+              "label": "Tous nos services",
+              "href": "/nos-services",
+              "desc": "Appartement, cuisine, salle de bain, béton ciré, isolation, gros œuvre, dépannage, débarras."
+            },
+            {
+              "label": "Prix de rénovation au m²",
+              "href": "/prix-renovation",
+              "desc": "Grille 2026 et exemples chiffrés."
+            },
+            {
+              "label": "Notre méthode",
+              "href": "/methode",
+              "desc": "Cinq étapes, un interlocuteur unique."
+            },
+            {
+              "label": "Nos réalisations",
+              "href": "/realisations-renovation",
+              "desc": "Chantiers livrés à Paris et en Île-de-France."
+            },
+            {
+              "label": "Conseils",
+              "href": "/conseils",
+              "desc": "Guides pratiques pour préparer votre projet."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
