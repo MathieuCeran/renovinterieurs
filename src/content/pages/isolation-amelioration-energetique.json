@@ -17,10 +17,22 @@
         {
           "t": "stats",
           "items": [
-            { "value": "2 à 3", "label": "classes DPE gagnées en une opération" },
-            { "value": "5,5 %", "label": "de TVA sur les travaux énergétiques éligibles" },
-            { "value": "3 à 6 sem.", "label": "pour un bouquet isolation en appartement" },
-            { "value": "90 %", "label": "de chaleur récupérée par la VMC double flux" }
+            {
+              "value": "2 à 3",
+              "label": "classes DPE gagnées en une opération"
+            },
+            {
+              "value": "5,5 %",
+              "label": "de TVA sur les travaux énergétiques éligibles"
+            },
+            {
+              "value": "3 à 6 sem.",
+              "label": "pour un bouquet isolation en appartement"
+            },
+            {
+              "value": "90 %",
+              "label": "de chaleur récupérée par la VMC double flux"
+            }
           ]
         },
         {
@@ -137,11 +149,27 @@
         },
         {
           "t": "table",
-          "head": ["Prestation", "Fourchette HT", "Délai"],
+          "head": [
+            "Prestation",
+            "Fourchette HT",
+            "Délai"
+          ],
           "rows": [
-            ["Audit énergétique réglementaire", "800 à 1 500 €", "Avant le devis, valide 5 ans"],
-            ["Isolation des murs par l’intérieur", "60 à 95 €/m² posé", "3 à 6 semaines pour le bouquet"],
-            ["VMC double flux posée", "3 800 à 6 500 €", "Dans le même bouquet"]
+            [
+              "Audit énergétique réglementaire",
+              "800 à 1 500 €",
+              "Avant le devis, valide 5 ans"
+            ],
+            [
+              "Isolation des murs par l’intérieur",
+              "60 à 95 €/m² posé",
+              "3 à 6 semaines pour le bouquet"
+            ],
+            [
+              "VMC double flux posée",
+              "3 800 à 6 500 €",
+              "Dans le même bouquet"
+            ]
           ],
           "note": "Prix indicatifs 2026, hors aides. TVA 5,5 % sur les travaux énergétiques éligibles, 10 % sur les autres travaux d’amélioration d’un logement de plus de 2 ans. Les aides peuvent couvrir 60 à 80 % du coût selon vos revenus et le bouquet retenu."
         }
@@ -171,11 +199,45 @@
     }
   ],
   "related": [
-    { "label": "Notre méthode", "href": "/methode", "desc": "Visite sous 5 jours, devis sous 48 h, compte-rendu hebdomadaire" },
-    { "label": "Prix de la rénovation", "href": "/prix-renovation", "desc": "Fourchettes au m², TVA et aides" },
-    { "label": "Rénovation à Paris", "href": "/renovation-appartement-paris", "desc": "Haussmannien, années 30, résidences récentes" },
-    { "label": "Sortir d’une passoire énergétique", "href": "/conseils/sortir-passoire-energetique-dpe-f-g", "desc": "Calendrier, travaux prioritaires, aides" },
-    { "label": "Isoler une maison ancienne par l’intérieur", "href": "/conseils/isolation-maison-ancienne-par-linterieur", "desc": "Matériaux, épaisseurs, points de vigilance" },
-    { "label": "Nos réalisations", "href": "/realisations-renovation", "desc": "Chantiers livrés à Paris et en Île-de-France" }
+    {
+      "label": "Notre méthode",
+      "href": "/methode",
+      "desc": "Visite sous 5 jours, devis sous 48 h, compte-rendu hebdomadaire"
+    },
+    {
+      "label": "Prix de la rénovation",
+      "href": "/prix-renovation",
+      "desc": "Fourchettes au m², TVA et aides"
+    },
+    {
+      "label": "Rénovation à Paris",
+      "href": "/renovation-appartement-paris",
+      "desc": "Haussmannien, années 30, résidences récentes"
+    },
+    {
+      "label": "Sortir d’une passoire énergétique",
+      "href": "/conseils/sortir-passoire-energetique-dpe-f-g",
+      "desc": "Calendrier, travaux prioritaires, aides"
+    },
+    {
+      "label": "Isoler une maison ancienne par l’intérieur",
+      "href": "/conseils/isolation-maison-ancienne-par-linterieur",
+      "desc": "Matériaux, épaisseurs, points de vigilance"
+    },
+    {
+      "label": "Nos réalisations",
+      "href": "/realisations-renovation",
+      "desc": "Chantiers livrés à Paris et en Île-de-France"
+    },
+    {
+      "label": "Simulateur DPE",
+      "href": "/outils/simulateur-dpe-passoire-energetique",
+      "desc": "Estimez les classes gagnées selon les travaux envisagés."
+    },
+    {
+      "label": "Rénovation dans les Yvelines",
+      "href": "/renovation-yvelines-78",
+      "desc": "Versailles, Saint-Germain, Le Vésinet, Maisons-Laffitte."
+    }
   ]
 }

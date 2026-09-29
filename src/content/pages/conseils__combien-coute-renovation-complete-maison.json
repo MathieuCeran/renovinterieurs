@@ -35,12 +35,37 @@
         },
         {
           "t": "table",
-          "head": ["Niveau", "Prix au m²", "Ce qui est compris", "Budget pour 100 m²"],
+          "head": [
+            "Niveau",
+            "Prix au m²",
+            "Ce qui est compris",
+            "Budget pour 100 m²"
+          ],
           "rows": [
-            ["Rénovation légère", "250 à 700 €", "Peinture, sols, plafonds, sanitaires remplacés sans toucher aux réseaux", "25 000 à 70 000 €"],
-            ["Rénovation complète", "700 à 1 100 €", "Électricité, plomberie, isolation partielle, cuisine et salle de bain refaites", "70 000 à 110 000 €"],
-            ["Rénovation lourde", "2 000 à 4 000 €", "Murs porteurs, charpente, refonte totale des réseaux, isolation généralisée", "Jusqu’à 250 000 €"],
-            ["Réhabilitation de ruine", "Plus de 3 500 à 4 000 €", "Toiture, façades, mise hors d’eau hors d’air, intérieur complet", "Plus de 300 000 €"]
+            [
+              "Rénovation légère",
+              "250 à 700 €",
+              "Peinture, sols, plafonds, sanitaires remplacés sans toucher aux réseaux",
+              "25 000 à 70 000 €"
+            ],
+            [
+              "Rénovation complète",
+              "700 à 1 100 €",
+              "Électricité, plomberie, isolation partielle, cuisine et salle de bain refaites",
+              "70 000 à 110 000 €"
+            ],
+            [
+              "Rénovation lourde",
+              "2 000 à 4 000 €",
+              "Murs porteurs, charpente, refonte totale des réseaux, isolation généralisée",
+              "Jusqu’à 250 000 €"
+            ],
+            [
+              "Réhabilitation de ruine",
+              "Plus de 3 500 à 4 000 €",
+              "Toiture, façades, mise hors d’eau hors d’air, intérieur complet",
+              "Plus de 300 000 €"
+            ]
           ],
           "note": "Repères nationaux, finitions standard, hors ameublement, électroménager et honoraires de conception (12 à 14 % pour une mission complète)."
         },
@@ -86,10 +111,22 @@
         {
           "t": "stats",
           "items": [
-            { "value": "38 %", "label": "du budget pour l’isolation en rénovation énergétique" },
-            { "value": "60 à 70 %", "label": "pour isolation, toiture, chauffage et réseaux réunis" },
-            { "value": "40 à 130 €/m²", "label": "pour une électricité complète" },
-            { "value": "10 à 20 %", "label": "de marge d’imprévus en maison ancienne" }
+            {
+              "value": "38 %",
+              "label": "du budget pour l’isolation en rénovation énergétique"
+            },
+            {
+              "value": "60 à 70 %",
+              "label": "pour isolation, toiture, chauffage et réseaux réunis"
+            },
+            {
+              "value": "40 à 130 €/m²",
+              "label": "pour une électricité complète"
+            },
+            {
+              "value": "10 à 20 %",
+              "label": "de marge d’imprévus en maison ancienne"
+            }
           ]
         },
         {
@@ -141,9 +178,18 @@
         {
           "t": "steps",
           "items": [
-            { "title": "Gros œuvre", "text": "Démolition, murs porteurs, ouvertures, toiture, planchers. Tout ce qui touche la structure se termine avant le passage des réseaux." },
-            { "title": "Second œuvre", "text": "Électricité, plomberie, chauffage, isolation, étanchéité. Les réseaux passent avant les habillages pour éviter toute reprise." },
-            { "title": "Finitions", "text": "Enduits, peinture, sols, menuiseries intérieures, puis cuisine et salle de bain en dernier." }
+            {
+              "title": "Gros œuvre",
+              "text": "Démolition, murs porteurs, ouvertures, toiture, planchers. Tout ce qui touche la structure se termine avant le passage des réseaux."
+            },
+            {
+              "title": "Second œuvre",
+              "text": "Électricité, plomberie, chauffage, isolation, étanchéité. Les réseaux passent avant les habillages pour éviter toute reprise."
+            },
+            {
+              "title": "Finitions",
+              "text": "Enduits, peinture, sols, menuiseries intérieures, puis cuisine et salle de bain en dernier."
+            }
           ]
         },
         {
@@ -188,10 +234,40 @@
     }
   ],
   "related": [
-    { "label": "Rénovation tous corps d’état", "href": "/renovation-appartement-paris", "desc": "Second œuvre complet piloté par un interlocuteur unique, devis sous 48 h." },
-    { "label": "Gros œuvre, surélévation, extension", "href": "/renovation-gros-oeuvre-surelevation-extension-idf", "desc": "Mur porteur, surélévation, extension avec architectes et ingénieurs structure." },
-    { "label": "Estimateur de budget", "href": "/outils/estimateur-budget-renovation", "desc": "Une première enveloppe en deux minutes à partir de la surface et du niveau." },
-    { "label": "Rénovation complète de maison en Île-de-France", "href": "/conseils/renovation-complete-maison-ile-de-france", "desc": "Contraintes locales, accès, délais et organisation du chantier." },
-    { "label": "Nos prix au m²", "href": "/prix-renovation", "desc": "La grille de référence par niveau de rénovation, exemples et TVA." }
+    {
+      "label": "Rénovation tous corps d’état",
+      "href": "/renovation-appartement-paris",
+      "desc": "Second œuvre complet piloté par un interlocuteur unique, devis sous 48 h."
+    },
+    {
+      "label": "Gros œuvre, surélévation, extension",
+      "href": "/renovation-gros-oeuvre-surelevation-extension-idf",
+      "desc": "Mur porteur, surélévation, extension avec architectes et ingénieurs structure."
+    },
+    {
+      "label": "Estimateur de budget",
+      "href": "/outils/estimateur-budget-renovation",
+      "desc": "Une première enveloppe en deux minutes à partir de la surface et du niveau."
+    },
+    {
+      "label": "Rénovation complète de maison en Île-de-France",
+      "href": "/conseils/renovation-complete-maison-ile-de-france",
+      "desc": "Contraintes locales, accès, délais et organisation du chantier."
+    },
+    {
+      "label": "Nos prix au m²",
+      "href": "/prix-renovation",
+      "desc": "La grille de référence par niveau de rénovation, exemples et TVA."
+    },
+    {
+      "label": "Simulateur DPE",
+      "href": "/outils/simulateur-dpe-passoire-energetique",
+      "desc": "Estimez les classes gagnées selon les travaux envisagés."
+    },
+    {
+      "label": "Rénovation dans les Yvelines",
+      "href": "/renovation-yvelines-78",
+      "desc": "Versailles, Saint-Germain, Le Vésinet, Maisons-Laffitte."
+    }
   ]
 }

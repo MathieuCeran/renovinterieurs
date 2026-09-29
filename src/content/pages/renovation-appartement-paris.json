@@ -17,10 +17,22 @@
         {
           "t": "stats",
           "items": [
-            { "value": "48 h", "label": "pour un devis poste par poste" },
-            { "value": "5 jours", "label": "pour la visite technique" },
-            { "value": "20", "label": "arrondissements couverts" },
-            { "value": "10 ans", "label": "de garantie décennale" }
+            {
+              "value": "48 h",
+              "label": "pour un devis poste par poste"
+            },
+            {
+              "value": "5 jours",
+              "label": "pour la visite technique"
+            },
+            {
+              "value": "20",
+              "label": "arrondissements couverts"
+            },
+            {
+              "value": "10 ans",
+              "label": "de garantie décennale"
+            }
           ]
         }
       ]
@@ -159,11 +171,27 @@
         },
         {
           "t": "table",
-          "head": ["Périmètre", "Fourchette HT", "Durée indicative"],
+          "head": [
+            "Périmètre",
+            "Fourchette HT",
+            "Durée indicative"
+          ],
           "rows": [
-            ["Rénovation partielle, 1 à 2 pièces", "600 à 900 €/m²", "3 à 6 semaines"],
-            ["Rénovation complète, 50 à 80 m²", "1 000 à 1 500 €/m²", "8 à 14 semaines"],
-            ["Haut de gamme ou plus de 100 m²", "1 500 à 2 500 €/m²", "4 à 6 mois"]
+            [
+              "Rénovation partielle, 1 à 2 pièces",
+              "600 à 900 €/m²",
+              "3 à 6 semaines"
+            ],
+            [
+              "Rénovation complète, 50 à 80 m²",
+              "1 000 à 1 500 €/m²",
+              "8 à 14 semaines"
+            ],
+            [
+              "Haut de gamme ou plus de 100 m²",
+              "1 500 à 2 500 €/m²",
+              "4 à 6 mois"
+            ]
           ],
           "note": "TVA à 10 % sur l’amélioration d’un logement de plus de 2 ans, 5,5 % sur les travaux énergétiques éligibles. Seul le devis établi après visite technique fait foi."
         },
@@ -197,10 +225,40 @@
     }
   ],
   "related": [
-    { "label": "Notre méthode", "href": "/methode", "desc": "Visite sous 5 jours, devis sous 48 h, compte-rendu hebdomadaire, SAV 12 mois." },
-    { "label": "Prix de rénovation", "href": "/prix-renovation", "desc": "Grille au m², facteurs de prix, exemples chiffrés, TVA et aides." },
-    { "label": "Nos zones d’intervention", "href": "/zones", "desc": "Paris, Hauts-de-Seine, Yvelines, Val-de-Marne." },
-    { "label": "Combien coûte une rénovation d’appartement à Paris ?", "href": "/conseils/combien-coute-renovation-appartement-paris", "desc": "Le guide chiffré, poste par poste." },
-    { "label": "Nos réalisations", "href": "/realisations-renovation", "desc": "Séjours, cuisines, salles de bain et parquets livrés à Paris." }
+    {
+      "label": "Notre méthode",
+      "href": "/methode",
+      "desc": "Visite sous 5 jours, devis sous 48 h, compte-rendu hebdomadaire, SAV 12 mois."
+    },
+    {
+      "label": "Prix de rénovation",
+      "href": "/prix-renovation",
+      "desc": "Grille au m², facteurs de prix, exemples chiffrés, TVA et aides."
+    },
+    {
+      "label": "Nos zones d’intervention",
+      "href": "/zones",
+      "desc": "Paris, Hauts-de-Seine, Yvelines, Val-de-Marne."
+    },
+    {
+      "label": "Combien coûte une rénovation d’appartement à Paris ?",
+      "href": "/conseils/combien-coute-renovation-appartement-paris",
+      "desc": "Le guide chiffré, poste par poste."
+    },
+    {
+      "label": "Nos réalisations",
+      "href": "/realisations-renovation",
+      "desc": "Séjours, cuisines, salles de bain et parquets livrés à Paris."
+    },
+    {
+      "label": "Débarras et nettoyage",
+      "href": "/debarras",
+      "desc": "Succession, fin de bail, après travaux : tri, évacuation, justificatifs."
+    },
+    {
+      "label": "Dépannage urgent",
+      "href": "/depannage",
+      "desc": "Plomberie, électricité, serrurerie, chauffage : devis écrit avant intervention."
+    }
   ]
 }

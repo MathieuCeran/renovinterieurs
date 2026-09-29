@@ -17,10 +17,22 @@
         {
           "t": "stats",
           "items": [
-            { "value": "7", "label": "communes des boucles de la Seine et de Versailles" },
-            { "value": "2 à 4 mois", "label": "d’instruction pour un dossier ABF" },
-            { "value": "12 mois", "label": "de SAV après la livraison" },
-            { "value": "1", "label": "interlocuteur du devis à la réception" }
+            {
+              "value": "7",
+              "label": "communes des boucles de la Seine et de Versailles"
+            },
+            {
+              "value": "2 à 4 mois",
+              "label": "d’instruction pour un dossier ABF"
+            },
+            {
+              "value": "12 mois",
+              "label": "de SAV après la livraison"
+            },
+            {
+              "value": "1",
+              "label": "interlocuteur du devis à la réception"
+            }
           ]
         }
       ]
@@ -128,11 +140,27 @@
         },
         {
           "t": "table",
-          "head": ["Type de chantier", "Budget HT au m²", "Durée moyenne"],
+          "head": [
+            "Type de chantier",
+            "Budget HT au m²",
+            "Durée moyenne"
+          ],
           "rows": [
-            ["Partielle : une ou deux pièces", "600 à 900 €", "3 à 6 semaines"],
-            ["Complète, appartement de 50 à 80 m²", "1 000 à 1 500 €", "8 à 14 semaines"],
-            ["Restauration patrimoniale ou maison", "1 500 à 2 500 €", "4 à 6 mois"]
+            [
+              "Partielle : une ou deux pièces",
+              "600 à 900 €",
+              "3 à 6 semaines"
+            ],
+            [
+              "Complète, appartement de 50 à 80 m²",
+              "1 000 à 1 500 €",
+              "8 à 14 semaines"
+            ],
+            [
+              "Restauration patrimoniale ou maison",
+              "1 500 à 2 500 €",
+              "4 à 6 mois"
+            ]
           ],
           "note": "TVA réduite à 10 % pour un logement achevé depuis plus de 2 ans ; 5,5 % sur les postes d’amélioration énergétique éligibles."
         },
@@ -195,6 +223,21 @@
       "label": "Nos autres zones",
       "href": "/zones",
       "desc": "Paris et les trois départements de la petite couronne"
+    },
+    {
+      "label": "Rénovation dans les Hauts-de-Seine",
+      "href": "/renovation-hauts-de-seine-92",
+      "desc": "Neuilly, Boulogne, Levallois, Issy."
+    },
+    {
+      "label": "Rénovation dans le Val-de-Marne",
+      "href": "/renovation-val-de-marne-94",
+      "desc": "Vincennes, Saint-Mandé, Saint-Maur, Nogent."
+    },
+    {
+      "label": "Simulateur DPE",
+      "href": "/outils/simulateur-dpe-passoire-energetique",
+      "desc": "Estimez les classes gagnées selon les travaux envisagés."
     }
   ]
 }

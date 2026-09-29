@@ -17,10 +17,22 @@
         {
           "t": "stats",
           "items": [
-            { "value": "2 à 4 mm", "label": "d’épaisseur finie, sans dépose" },
-            { "value": "2 à 5 jours", "label": "de pose selon la surface" },
-            { "value": "15-25 ans", "label": "de durabilité avec entretien" },
-            { "value": "10 ans", "label": "de garantie décennale" }
+            {
+              "value": "2 à 4 mm",
+              "label": "d’épaisseur finie, sans dépose"
+            },
+            {
+              "value": "2 à 5 jours",
+              "label": "de pose selon la surface"
+            },
+            {
+              "value": "15-25 ans",
+              "label": "de durabilité avec entretien"
+            },
+            {
+              "value": "10 ans",
+              "label": "de garantie décennale"
+            }
           ]
         }
       ]
@@ -117,11 +129,27 @@
         },
         {
           "t": "table",
-          "head": ["Application", "Fourchette HT", "Délai"],
+          "head": [
+            "Application",
+            "Fourchette HT",
+            "Délai"
+          ],
           "rows": [
-            ["Sol, mur ou crédence", "90 à 220 €/m² selon support et préparation", "2 à 5 jours de pose, 7 jours de séchage"],
-            ["Douche à l’italienne, natte et vernis renforcé", "sur devis après visite", "2 à 5 jours, mise en eau à 7 jours"],
-            ["Escalier ou plan de travail", "devis spécifique", "selon la configuration"]
+            [
+              "Sol, mur ou crédence",
+              "90 à 220 €/m² selon support et préparation",
+              "2 à 5 jours de pose, 7 jours de séchage"
+            ],
+            [
+              "Douche à l’italienne, natte et vernis renforcé",
+              "sur devis après visite",
+              "2 à 5 jours, mise en eau à 7 jours"
+            ],
+            [
+              "Escalier ou plan de travail",
+              "devis spécifique",
+              "selon la configuration"
+            ]
           ],
           "note": "TVA à 10 % dans un logement de plus de 2 ans ; le béton ciré n’ouvre pas droit au taux de 5,5 %, réservé aux travaux énergétiques. Tarifs dégressifs au-delà de 50 m²."
         },
@@ -155,10 +183,35 @@
     }
   ],
   "related": [
-    { "label": "Notre méthode", "href": "/methode", "desc": "Visite sous 5 jours, devis sous 48 h, compte-rendu hebdomadaire, SAV 12 mois." },
-    { "label": "Prix de rénovation", "href": "/prix-renovation", "desc": "Situer le béton ciré dans le budget de votre appartement." },
-    { "label": "Rénovation d’appartement à Paris", "href": "/renovation-appartement-paris", "desc": "Le béton ciré dans une rénovation complète, arrondissement par arrondissement." },
-    { "label": "Résine ou béton ciré en salle de bain", "href": "/conseils/resine-beton-cire-salle-de-bain", "desc": "Le comparatif pour choisir en connaissance de cause." },
-    { "label": "Nos réalisations", "href": "/realisations-renovation", "desc": "Lofts, séjours et douches en béton ciré livrés à Paris." }
+    {
+      "label": "Notre méthode",
+      "href": "/methode",
+      "desc": "Visite sous 5 jours, devis sous 48 h, compte-rendu hebdomadaire, SAV 12 mois."
+    },
+    {
+      "label": "Prix de rénovation",
+      "href": "/prix-renovation",
+      "desc": "Situer le béton ciré dans le budget de votre appartement."
+    },
+    {
+      "label": "Rénovation d’appartement à Paris",
+      "href": "/renovation-appartement-paris",
+      "desc": "Le béton ciré dans une rénovation complète, arrondissement par arrondissement."
+    },
+    {
+      "label": "Résine ou béton ciré en salle de bain",
+      "href": "/conseils/resine-beton-cire-salle-de-bain",
+      "desc": "Le comparatif pour choisir en connaissance de cause."
+    },
+    {
+      "label": "Nos réalisations",
+      "href": "/realisations-renovation",
+      "desc": "Lofts, séjours et douches en béton ciré livrés à Paris."
+    },
+    {
+      "label": "Rénovation dans le Val-de-Marne",
+      "href": "/renovation-val-de-marne-94",
+      "desc": "Vincennes, Saint-Mandé, Saint-Maur, Nogent."
+    }
   ]
 }

@@ -33,10 +33,22 @@
         {
           "t": "stats",
           "items": [
-            { "value": "40 %", "label": "du parc ancien francilien classé F ou G" },
-            { "value": "2025", "label": "interdiction de louer les logements G" },
-            { "value": "2028", "label": "même interdiction pour la classe F" },
-            { "value": "15 à 25 %", "label": "de décote à la revente à Paris" }
+            {
+              "value": "40 %",
+              "label": "du parc ancien francilien classé F ou G"
+            },
+            {
+              "value": "2025",
+              "label": "interdiction de louer les logements G"
+            },
+            {
+              "value": "2028",
+              "label": "même interdiction pour la classe F"
+            },
+            {
+              "value": "15 à 25 %",
+              "label": "de décote à la revente à Paris"
+            }
           ]
         },
         {
@@ -88,14 +100,42 @@
         },
         {
           "t": "table",
-          "head": ["Travaux", "Effet attendu", "Coût indicatif"],
+          "head": [
+            "Travaux",
+            "Effet attendu",
+            "Coût indicatif"
+          ],
           "rows": [
-            ["Isolation des murs (intérieur ou extérieur)", "1 à 2 classes", "60 à 150 €/m²"],
-            ["Isolation des combles et du plancher bas", "Complète le gain des murs", "30 à 90 €/m² (combles), 30 à 70 €/m² (plancher)"],
-            ["Fenêtres double ou triple vitrage", "Étanchéité à l’air, confort", "400 à 900 € par fenêtre posée"],
-            ["VMC double flux", "Jusqu’à 15 % de chauffage en moins", "3 500 à 6 000 €, durée de vie 15 à 20 ans"],
-            ["Pompe à chaleur air/eau ou chaudière à condensation", "1 à 2 classes", "8 000 à 15 000 € (PAC), 4 000 à 7 000 € (condensation)"],
-            ["Radiateurs basse température, chauffe-eau thermodynamique", "Complément du chauffage", "300 à 800 € par radiateur, 2 500 à 4 500 € pour l’ECS"]
+            [
+              "Isolation des murs (intérieur ou extérieur)",
+              "1 à 2 classes",
+              "60 à 150 €/m²"
+            ],
+            [
+              "Isolation des combles et du plancher bas",
+              "Complète le gain des murs",
+              "30 à 90 €/m² (combles), 30 à 70 €/m² (plancher)"
+            ],
+            [
+              "Fenêtres double ou triple vitrage",
+              "Étanchéité à l’air, confort",
+              "400 à 900 € par fenêtre posée"
+            ],
+            [
+              "VMC double flux",
+              "Jusqu’à 15 % de chauffage en moins",
+              "3 500 à 6 000 €, durée de vie 15 à 20 ans"
+            ],
+            [
+              "Pompe à chaleur air/eau ou chaudière à condensation",
+              "1 à 2 classes",
+              "8 000 à 15 000 € (PAC), 4 000 à 7 000 € (condensation)"
+            ],
+            [
+              "Radiateurs basse température, chauffe-eau thermodynamique",
+              "Complément du chauffage",
+              "300 à 800 € par radiateur, 2 500 à 4 500 € pour l’ECS"
+            ]
           ],
           "note": "Fourchettes HT indicatives. Les travaux énergétiques éligibles bénéficient de la TVA à 5,5 %."
         },
@@ -115,11 +155,26 @@
         {
           "t": "steps",
           "items": [
-            { "title": "Audit énergétique", "text": "Pour hiérarchiser les déperditions et chiffrer les scénarios." },
-            { "title": "Isolation", "text": "Murs, combles, plancher bas. C’est elle qui dimensionne le futur chauffage." },
-            { "title": "Étanchéité à l’air et fenêtres", "text": "Avant la ventilation, pour que la VMC travaille sur une enveloppe fermée." },
-            { "title": "VMC double flux", "text": "Une fois l’enveloppe étanche, elle récupère la chaleur de l’air extrait." },
-            { "title": "Chauffage et eau chaude", "text": "En dernier, dimensionnés sur le bâti isolé. Pompe à chaleur, condensation, chauffe-eau thermodynamique." }
+            {
+              "title": "Audit énergétique",
+              "text": "Pour hiérarchiser les déperditions et chiffrer les scénarios."
+            },
+            {
+              "title": "Isolation",
+              "text": "Murs, combles, plancher bas. C’est elle qui dimensionne le futur chauffage."
+            },
+            {
+              "title": "Étanchéité à l’air et fenêtres",
+              "text": "Avant la ventilation, pour que la VMC travaille sur une enveloppe fermée."
+            },
+            {
+              "title": "VMC double flux",
+              "text": "Une fois l’enveloppe étanche, elle récupère la chaleur de l’air extrait."
+            },
+            {
+              "title": "Chauffage et eau chaude",
+              "text": "En dernier, dimensionnés sur le bâti isolé. Pompe à chaleur, condensation, chauffe-eau thermodynamique."
+            }
           ]
         },
         {
@@ -200,9 +255,30 @@
     }
   ],
   "related": [
-    { "label": "Isolation et amélioration énergétique", "href": "/isolation-amelioration-energetique", "desc": "Audit DPE, isolation, VMC double flux, chauffage, MaPrimeRénov’ et CEE." },
-    { "label": "Simulateur DPE", "href": "/outils/simulateur-dpe-passoire-energetique", "desc": "Estimez la classe atteignable selon vos travaux avant l’audit." },
-    { "label": "Isoler une maison ancienne par l’intérieur", "href": "/conseils/isolation-maison-ancienne-par-linterieur", "desc": "Murs en pierre, combles, cave, fenêtres : isolants et mise en œuvre." },
-    { "label": "Nos prix au m²", "href": "/prix-renovation", "desc": "Fourchettes par niveau de rénovation, TVA à 10 % et 5,5 %, aides." }
+    {
+      "label": "Isolation et amélioration énergétique",
+      "href": "/isolation-amelioration-energetique",
+      "desc": "Audit DPE, isolation, VMC double flux, chauffage, MaPrimeRénov’ et CEE."
+    },
+    {
+      "label": "Simulateur DPE",
+      "href": "/outils/simulateur-dpe-passoire-energetique",
+      "desc": "Estimez la classe atteignable selon vos travaux avant l’audit."
+    },
+    {
+      "label": "Isoler une maison ancienne par l’intérieur",
+      "href": "/conseils/isolation-maison-ancienne-par-linterieur",
+      "desc": "Murs en pierre, combles, cave, fenêtres : isolants et mise en œuvre."
+    },
+    {
+      "label": "Nos prix au m²",
+      "href": "/prix-renovation",
+      "desc": "Fourchettes par niveau de rénovation, TVA à 10 % et 5,5 %, aides."
+    },
+    {
+      "label": "Rénovation dans les Yvelines",
+      "href": "/renovation-yvelines-78",
+      "desc": "Versailles, Saint-Germain, Le Vésinet, Maisons-Laffitte."
+    }
   ]
 }

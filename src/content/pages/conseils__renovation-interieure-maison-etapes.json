@@ -123,12 +123,32 @@
         },
         {
           "t": "table",
-          "head": ["Niveau", "Prix indicatif HT", "Durée indicative"],
+          "head": [
+            "Niveau",
+            "Prix indicatif HT",
+            "Durée indicative"
+          ],
           "rows": [
-            ["Rafraîchissement", "250 à 450 €/m²", "Selon la surface"],
-            ["Rénovation partielle", "600 à 900 €/m²", "3 à 6 semaines"],
-            ["Rénovation complète", "1 000 à 1 500 €/m²", "8 à 14 semaines pour 50 à 80 m²"],
-            ["Haut de gamme ou plus de 100 m²", "1 500 à 2 500 €/m²", "4 à 6 mois"]
+            [
+              "Rafraîchissement",
+              "250 à 450 €/m²",
+              "Selon la surface"
+            ],
+            [
+              "Rénovation partielle",
+              "600 à 900 €/m²",
+              "3 à 6 semaines"
+            ],
+            [
+              "Rénovation complète",
+              "1 000 à 1 500 €/m²",
+              "8 à 14 semaines pour 50 à 80 m²"
+            ],
+            [
+              "Haut de gamme ou plus de 100 m²",
+              "1 500 à 2 500 €/m²",
+              "4 à 6 mois"
+            ]
           ],
           "note": "TVA à 10 % sur l’amélioration d’un logement de plus de 2 ans, 5,5 % sur les travaux énergétiques éligibles."
         },
@@ -139,10 +159,22 @@
         {
           "t": "stats",
           "items": [
-            { "value": "38 %", "label": "isolation" },
-            { "value": "26 %", "label": "chauffage" },
-            { "value": "24 %", "label": "menuiseries" },
-            { "value": "8 %", "label": "ventilation" }
+            {
+              "value": "38 %",
+              "label": "isolation"
+            },
+            {
+              "value": "26 %",
+              "label": "chauffage"
+            },
+            {
+              "value": "24 %",
+              "label": "menuiseries"
+            },
+            {
+              "value": "8 %",
+              "label": "ventilation"
+            }
           ]
         },
         {
@@ -219,6 +251,16 @@
       "label": "Prix de la rénovation au m²",
       "href": "/prix-renovation",
       "desc": "Grille 2026 par niveau de prestation."
+    },
+    {
+      "label": "Débarras et nettoyage",
+      "href": "/debarras",
+      "desc": "Succession, fin de bail, après travaux : tri, évacuation, justificatifs."
+    },
+    {
+      "label": "Rénovation dans le Val-de-Marne",
+      "href": "/renovation-val-de-marne-94",
+      "desc": "Vincennes, Saint-Mandé, Saint-Maur, Nogent."
     }
   ]
 }

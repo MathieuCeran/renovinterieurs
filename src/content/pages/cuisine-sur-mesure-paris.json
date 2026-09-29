@@ -17,10 +17,22 @@
         {
           "t": "stats",
           "items": [
-            { "value": "48 h", "label": "pour un devis détaillé" },
-            { "value": "2 à 5 jours", "label": "de dépose et de pose" },
-            { "value": "5 à 8 sem.", "label": "du devis à la pose sur Metod" },
-            { "value": "40 à 60 %", "label": "d’économie face au tout sur mesure" }
+            {
+              "value": "48 h",
+              "label": "pour un devis détaillé"
+            },
+            {
+              "value": "2 à 5 jours",
+              "label": "de dépose et de pose"
+            },
+            {
+              "value": "5 à 8 sem.",
+              "label": "du devis à la pose sur Metod"
+            },
+            {
+              "value": "40 à 60 %",
+              "label": "d’économie face au tout sur mesure"
+            }
           ]
         }
       ]
@@ -119,11 +131,27 @@
         },
         {
           "t": "table",
-          "head": ["Formule", "Fourchette", "Du devis signé à la pose"],
+          "head": [
+            "Formule",
+            "Fourchette",
+            "Du devis signé à la pose"
+          ],
           "rows": [
-            ["Façades sur mesure sur caissons Metod", "6 000 à 14 000 €", "5 à 8 semaines"],
-            ["Cuisine conçue sur plan", "12 000 à 30 000 €", "8 à 14 semaines"],
-            ["Haut de gamme, plan marbre, électroménager pro", "plus de 40 000 €", "8 à 14 semaines"]
+            [
+              "Façades sur mesure sur caissons Metod",
+              "6 000 à 14 000 €",
+              "5 à 8 semaines"
+            ],
+            [
+              "Cuisine conçue sur plan",
+              "12 000 à 30 000 €",
+              "8 à 14 semaines"
+            ],
+            [
+              "Haut de gamme, plan marbre, électroménager pro",
+              "plus de 40 000 €",
+              "8 à 14 semaines"
+            ]
           ],
           "note": "TVA à 10 % sur la pose et l’électroménager encastré dans un logement de plus de 2 ans ; les appareils simplement posés restent à 20 %."
         },
@@ -157,10 +185,35 @@
     }
   ],
   "related": [
-    { "label": "Notre méthode", "href": "/methode", "desc": "Relevé, conception 3D, devis sous 48 h, pose et SAV 12 mois." },
-    { "label": "Prix de rénovation", "href": "/prix-renovation", "desc": "Situer la cuisine dans le budget global de votre appartement." },
-    { "label": "Rénovation d’appartement à Paris", "href": "/renovation-appartement-paris", "desc": "La cuisine intégrée à une rénovation complète, arrondissement par arrondissement." },
-    { "label": "Rénover sa cuisine de A à Z", "href": "/conseils/renovation-cuisine-complete", "desc": "Étapes, matériaux, erreurs à éviter." },
-    { "label": "Nos réalisations", "href": "/realisations-renovation", "desc": "Cuisines sur plan et façades Metod livrées à Paris." }
+    {
+      "label": "Notre méthode",
+      "href": "/methode",
+      "desc": "Relevé, conception 3D, devis sous 48 h, pose et SAV 12 mois."
+    },
+    {
+      "label": "Prix de rénovation",
+      "href": "/prix-renovation",
+      "desc": "Situer la cuisine dans le budget global de votre appartement."
+    },
+    {
+      "label": "Rénovation d’appartement à Paris",
+      "href": "/renovation-appartement-paris",
+      "desc": "La cuisine intégrée à une rénovation complète, arrondissement par arrondissement."
+    },
+    {
+      "label": "Rénover sa cuisine de A à Z",
+      "href": "/conseils/renovation-cuisine-complete",
+      "desc": "Étapes, matériaux, erreurs à éviter."
+    },
+    {
+      "label": "Nos réalisations",
+      "href": "/realisations-renovation",
+      "desc": "Cuisines sur plan et façades Metod livrées à Paris."
+    },
+    {
+      "label": "Rénovation dans le Val-de-Marne",
+      "href": "/renovation-val-de-marne-94",
+      "desc": "Vincennes, Saint-Mandé, Saint-Maur, Nogent."
+    }
   ]
 }

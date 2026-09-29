@@ -33,10 +33,22 @@
         {
           "t": "stats",
           "items": [
-            { "value": "20 à 25 %", "label": "des déperditions passent par les murs" },
-            { "value": "5 à 10 cm", "label": "d’emprise par paroi isolée" },
-            { "value": "60 à 95 €/m²", "label": "posé, tarif RenovIntérieurs" },
-            { "value": "R ≥ 3,7", "label": "résistance thermique visée pour les aides" }
+            {
+              "value": "20 à 25 %",
+              "label": "des déperditions passent par les murs"
+            },
+            {
+              "value": "5 à 10 cm",
+              "label": "d’emprise par paroi isolée"
+            },
+            {
+              "value": "60 à 95 €/m²",
+              "label": "posé, tarif RenovIntérieurs"
+            },
+            {
+              "value": "R ≥ 3,7",
+              "label": "résistance thermique visée pour les aides"
+            }
           ]
         },
         {
@@ -45,14 +57,42 @@
         },
         {
           "t": "table",
-          "head": ["Isolant", "Conductivité (W/m·K)", "Adapté à"],
+          "head": [
+            "Isolant",
+            "Conductivité (W/m·K)",
+            "Adapté à"
+          ],
           "rows": [
-            ["Fibre de bois", "0,038 à 0,042", "Murs anciens, bon confort d’été, perspirant"],
-            ["Chanvre", "0,040 à 0,048", "Pierre, brique, terre : régule l’humidité"],
-            ["Laine de mouton", "0,035 à 0,040", "Parois exposées aux condensats"],
-            ["Liège expansé", "Variable selon densité", "Murs à fortes variations d’humidité, caves"],
-            ["Laine minérale", "Selon produit", "Possible avec frein-vapeur hygrovariable, jamais avec un pare-vapeur standard"],
-            ["Polystyrène, panneaux fermés", "Faible, mais étanche à la vapeur", "Déconseillé sur mur ancien : point de rosée entre support et isolant"]
+            [
+              "Fibre de bois",
+              "0,038 à 0,042",
+              "Murs anciens, bon confort d’été, perspirant"
+            ],
+            [
+              "Chanvre",
+              "0,040 à 0,048",
+              "Pierre, brique, terre : régule l’humidité"
+            ],
+            [
+              "Laine de mouton",
+              "0,035 à 0,040",
+              "Parois exposées aux condensats"
+            ],
+            [
+              "Liège expansé",
+              "Variable selon densité",
+              "Murs à fortes variations d’humidité, caves"
+            ],
+            [
+              "Laine minérale",
+              "Selon produit",
+              "Possible avec frein-vapeur hygrovariable, jamais avec un pare-vapeur standard"
+            ],
+            [
+              "Polystyrène, panneaux fermés",
+              "Faible, mais étanche à la vapeur",
+              "Déconseillé sur mur ancien : point de rosée entre support et isolant"
+            ]
           ],
           "note": "Visez R ≥ 3,7 m².K/W sur les murs pour rester éligible aux aides."
         },
@@ -189,9 +229,30 @@
     }
   ],
   "related": [
-    { "label": "Isolation et amélioration énergétique", "href": "/isolation-amelioration-energetique", "desc": "Audit DPE, isolation murs et combles, VMC double flux, MaPrimeRénov’ et CEE." },
-    { "label": "Simulateur DPE", "href": "/outils/simulateur-dpe-passoire-energetique", "desc": "Estimez la classe atteignable selon les postes isolés." },
-    { "label": "Sortir d’une passoire énergétique (DPE F ou G)", "href": "/conseils/sortir-passoire-energetique-dpe-f-g", "desc": "Les trois leviers, l’ordre des travaux, les aides et un cas chiffré." },
-    { "label": "Nos prix au m²", "href": "/prix-renovation", "desc": "Fourchettes par niveau de rénovation, TVA à 10 % et 5,5 %." }
+    {
+      "label": "Isolation et amélioration énergétique",
+      "href": "/isolation-amelioration-energetique",
+      "desc": "Audit DPE, isolation murs et combles, VMC double flux, MaPrimeRénov’ et CEE."
+    },
+    {
+      "label": "Simulateur DPE",
+      "href": "/outils/simulateur-dpe-passoire-energetique",
+      "desc": "Estimez la classe atteignable selon les postes isolés."
+    },
+    {
+      "label": "Sortir d’une passoire énergétique (DPE F ou G)",
+      "href": "/conseils/sortir-passoire-energetique-dpe-f-g",
+      "desc": "Les trois leviers, l’ordre des travaux, les aides et un cas chiffré."
+    },
+    {
+      "label": "Nos prix au m²",
+      "href": "/prix-renovation",
+      "desc": "Fourchettes par niveau de rénovation, TVA à 10 % et 5,5 %."
+    },
+    {
+      "label": "Rénovation dans le Val-de-Marne",
+      "href": "/renovation-val-de-marne-94",
+      "desc": "Vincennes, Saint-Mandé, Saint-Maur, Nogent."
+    }
   ]
 }

@@ -17,10 +17,22 @@
         {
           "t": "stats",
           "items": [
-            { "value": "18", "label": "communes couvertes dans le 92" },
-            { "value": "48 h", "label": "pour recevoir votre devis détaillé" },
-            { "value": "5 jours", "label": "pour la visite technique" },
-            { "value": "10 ans", "label": "de garantie décennale" }
+            {
+              "value": "18",
+              "label": "communes couvertes dans le 92"
+            },
+            {
+              "value": "48 h",
+              "label": "pour recevoir votre devis détaillé"
+            },
+            {
+              "value": "5 jours",
+              "label": "pour la visite technique"
+            },
+            {
+              "value": "10 ans",
+              "label": "de garantie décennale"
+            }
           ]
         }
       ]
@@ -183,11 +195,27 @@
         },
         {
           "t": "table",
-          "head": ["Prestation", "Fourchette HT au m²", "Délai indicatif"],
+          "head": [
+            "Prestation",
+            "Fourchette HT au m²",
+            "Délai indicatif"
+          ],
           "rows": [
-            ["Rénovation partielle (1 à 2 pièces)", "600 à 900 €", "3 à 6 semaines"],
-            ["Rénovation complète de 50 à 80 m²", "1 000 à 1 500 €", "8 à 14 semaines"],
-            ["Haut de gamme ou plus de 100 m²", "1 500 à 2 500 €", "4 à 6 mois"]
+            [
+              "Rénovation partielle (1 à 2 pièces)",
+              "600 à 900 €",
+              "3 à 6 semaines"
+            ],
+            [
+              "Rénovation complète de 50 à 80 m²",
+              "1 000 à 1 500 €",
+              "8 à 14 semaines"
+            ],
+            [
+              "Haut de gamme ou plus de 100 m²",
+              "1 500 à 2 500 €",
+              "4 à 6 mois"
+            ]
           ],
           "note": "TVA à 10 % sur l’amélioration d’un logement de plus de 2 ans, 5,5 % sur les travaux énergétiques éligibles."
         },
@@ -250,6 +278,21 @@
       "label": "Toutes nos zones",
       "href": "/zones",
       "desc": "Paris, Hauts-de-Seine, Yvelines, Val-de-Marne"
+    },
+    {
+      "label": "Dépannage urgent",
+      "href": "/depannage",
+      "desc": "Plomberie, électricité, serrurerie, chauffage : devis écrit avant intervention."
+    },
+    {
+      "label": "Rénovation dans les Yvelines",
+      "href": "/renovation-yvelines-78",
+      "desc": "Versailles, Saint-Germain, Le Vésinet, Maisons-Laffitte."
+    },
+    {
+      "label": "Rénovation dans le Val-de-Marne",
+      "href": "/renovation-val-de-marne-94",
+      "desc": "Vincennes, Saint-Mandé, Saint-Maur, Nogent."
     }
   ]
 }

@@ -86,7 +86,7 @@ export function Commitments() {
       className="px-[clamp(0.6rem,2vw,1.5rem)] py-4 lg:py-6"
       aria-labelledby="engagements-title"
     >
-      <div className="overflow-hidden rounded-[clamp(20px,3vw,36px)] bg-ink text-paper">
+      <div className="overflow-hidden rounded-[clamp(20px,3vw,36px)] bg-paper text-ink">
         <div className="container-x py-14 lg:py-18">
           <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
             <h2
@@ -102,18 +102,18 @@ export function Commitments() {
                 </span>
               </span>
             </h2>
-            <p className="reveal max-w-sm text-[0.9rem] leading-relaxed text-paper/55">
+            <p className="reveal max-w-sm text-[0.9rem] leading-relaxed text-muted">
               Quatre repères simples pour comparer objectivement les devis de
               rénovation que vous recevez, chez nous comme ailleurs.
             </p>
           </div>
 
-          <ul className="reveal-stagger mt-12 grid gap-px overflow-hidden bg-paper/12 sm:grid-cols-2 lg:grid-cols-4">
+          <ul className="reveal-stagger mt-12 grid gap-px overflow-hidden bg-line sm:grid-cols-2 lg:grid-cols-4">
             {commitments.map((c, i) => (
               <li
                 key={c.n}
                 style={{ "--i": i } as React.CSSProperties}
-                className="bg-ink px-6 py-7 lg:px-7"
+                className="bg-paper px-6 py-7 lg:px-7"
               >
                 <span className="display-italic text-[1.6rem] leading-none text-terra">
                   {c.n}
@@ -121,7 +121,7 @@ export function Commitments() {
                 <h3 className="mt-5 text-[1.05rem] leading-snug font-medium">
                   {c.title}
                 </h3>
-                <p className="mt-3 text-[0.86rem] leading-relaxed text-paper/55">
+                <p className="mt-3 text-[0.86rem] leading-relaxed text-muted">
                   {c.text}
                 </p>
               </li>
@@ -129,14 +129,14 @@ export function Commitments() {
           </ul>
 
           {/* Maillage interne */}
-          <div className="reveal mt-12 border-t border-paper/12 pt-8">
+          <div className="reveal mt-12 border-t border-line pt-8">
             <div className="flex flex-wrap items-center justify-between gap-4">
-              <p className="dot-label text-[0.74rem] text-paper/50">
+              <p className="dot-label text-[0.74rem] text-muted">
                 Nos prestations
               </p>
               <Link
                 href="#devis"
-                className="group inline-flex items-center gap-3 rounded-full bg-paper py-1.5 pr-1.5 pl-5 text-[0.84rem] font-medium text-ink transition-colors duration-500 hover:bg-terra hover:text-paper"
+                className="group inline-flex items-center gap-3 rounded-full bg-ink py-1.5 pr-1.5 pl-5 text-[0.84rem] font-medium text-paper transition-colors duration-500 hover:bg-terra hover:text-paper"
               >
                 Comparer avec notre devis
                 <span className="pill-arrow flex size-8 items-center justify-center rounded-full bg-terra text-paper transition-colors duration-500 group-hover:bg-paper group-hover:text-terra">
@@ -151,7 +151,7 @@ export function Commitments() {
                   <Link
                     href={p.href}
                     title={p.title}
-                    className="inline-block rounded-full border border-paper/15 px-4 py-2 text-[0.82rem] whitespace-nowrap text-paper/70 transition-colors duration-400 hover:border-terra hover:bg-terra hover:text-paper"
+                    className="inline-block rounded-full border border-line px-4 py-2 text-[0.82rem] whitespace-nowrap text-muted transition-colors duration-400 hover:border-terra hover:bg-terra hover:text-paper"
                   >
                     {p.label}
                   </Link>

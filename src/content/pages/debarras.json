@@ -17,10 +17,22 @@
         {
           "t": "stats",
           "items": [
-            { "value": "5 jours", "label": "pour la visite d’estimation sur place" },
-            { "value": "48 h", "label": "pour le devis détaillé après visite" },
-            { "value": "72 h", "label": "pour intervenir en cas d’urgence" },
-            { "value": "15 à 40 %", "label": "du volume revalorisé ou donné" }
+            {
+              "value": "5 jours",
+              "label": "pour la visite d’estimation sur place"
+            },
+            {
+              "value": "48 h",
+              "label": "pour le devis détaillé après visite"
+            },
+            {
+              "value": "72 h",
+              "label": "pour intervenir en cas d’urgence"
+            },
+            {
+              "value": "15 à 40 %",
+              "label": "du volume revalorisé ou donné"
+            }
           ]
         }
       ]
@@ -121,11 +133,27 @@
         },
         {
           "t": "table",
-          "head": ["Prestation", "Fourchette", "Volume"],
+          "head": [
+            "Prestation",
+            "Fourchette",
+            "Volume"
+          ],
           "rows": [
-            ["Petit débarras : une pièce, une cave", "200 à 500 €", "1 à 5 m³"],
-            ["Studio ou T1 complet, garage", "500 à 1 200 €", "5 à 15 m³"],
-            ["Appartement T2 à T4, succession", "1 200 à 2 800 €", "15 à 35 m³"]
+            [
+              "Petit débarras : une pièce, une cave",
+              "200 à 500 €",
+              "1 à 5 m³"
+            ],
+            [
+              "Studio ou T1 complet, garage",
+              "500 à 1 200 €",
+              "5 à 15 m³"
+            ],
+            [
+              "Appartement T2 à T4, succession",
+              "1 200 à 2 800 €",
+              "15 à 35 m³"
+            ]
           ],
           "note": "Fourchettes indicatives 2026, devis ferme après visite. Nettoyage fin de chantier en option de 15 à 25 €/m². TVA 10 % sur un logement de plus de 2 ans. Le mobilier revalorisé peut venir en déduction du devis."
         }
@@ -155,10 +183,40 @@
     }
   ],
   "related": [
-    { "label": "Notre méthode", "href": "/methode", "desc": "Visite, devis ferme, intervention pilotée" },
-    { "label": "Prix de la rénovation", "href": "/prix-renovation", "desc": "Pour chiffrer les travaux qui suivent" },
-    { "label": "Rénovation dans le Val-de-Marne", "href": "/renovation-val-de-marne-94", "desc": "Vincennes, Saint-Maur, Nogent, Maisons-Alfort" },
-    { "label": "Les étapes d’une rénovation intérieure", "href": "/conseils/renovation-interieure-maison-etapes", "desc": "Du débarras à la livraison" },
-    { "label": "Nos réalisations", "href": "/realisations-renovation", "desc": "Logements vidés, nettoyés, rénovés" }
+    {
+      "label": "Notre méthode",
+      "href": "/methode",
+      "desc": "Visite, devis ferme, intervention pilotée"
+    },
+    {
+      "label": "Prix de la rénovation",
+      "href": "/prix-renovation",
+      "desc": "Pour chiffrer les travaux qui suivent"
+    },
+    {
+      "label": "Rénovation dans le Val-de-Marne",
+      "href": "/renovation-val-de-marne-94",
+      "desc": "Vincennes, Saint-Maur, Nogent, Maisons-Alfort"
+    },
+    {
+      "label": "Les étapes d’une rénovation intérieure",
+      "href": "/conseils/renovation-interieure-maison-etapes",
+      "desc": "Du débarras à la livraison"
+    },
+    {
+      "label": "Nos réalisations",
+      "href": "/realisations-renovation",
+      "desc": "Logements vidés, nettoyés, rénovés"
+    },
+    {
+      "label": "Dépannage urgent",
+      "href": "/depannage",
+      "desc": "Plomberie, électricité, serrurerie, chauffage : devis écrit avant intervention."
+    },
+    {
+      "label": "Rénovation dans les Yvelines",
+      "href": "/renovation-yvelines-78",
+      "desc": "Versailles, Saint-Germain, Le Vésinet, Maisons-Laffitte."
+    }
   ]
 }

@@ -155,7 +155,7 @@ export function ResultCard({
     <div
       aria-live="polite"
       className={`rounded-[clamp(18px,2.4vw,28px)] p-7 text-paper sm:p-9 ${
-        tone === "clay" ? "bg-clay" : "bg-ink"
+        tone === "clay" ? "bg-terra" : "bg-ink"
       }`}
     >
       <p className="dot-label text-[0.74rem] text-paper/60">{label}</p>

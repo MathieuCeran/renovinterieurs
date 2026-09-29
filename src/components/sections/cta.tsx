@@ -10,11 +10,11 @@ export function Cta() {
       id="devis"
       className="px-[clamp(0.6rem,2vw,1.5rem)] pb-[clamp(0.6rem,2vw,1.5rem)]"
     >
-      <div className="overflow-hidden rounded-[clamp(20px,3vw,40px)] bg-clay text-paper">
-        <div className="container-x py-16 lg:py-24">
+      <div className="overflow-hidden rounded-[clamp(20px,3vw,40px)] bg-ink text-paper">
+        <div className="container-x py-12 lg:py-16">
           <div className="grid items-start gap-10 lg:grid-cols-[1fr_1.05fr] lg:gap-16">
             {/* --- Argumentaire --- */}
-            <div className="lg:sticky lg:top-28">
+            <div className="flex h-full flex-col lg:sticky lg:top-28">
               <p className="dot-label reveal-sm text-paper/60">
                 Un projet de rénovation ?
               </p>
@@ -85,7 +85,7 @@ export function Cta() {
                 </a>
               </div>
 
-              <p className="reveal mt-8 border-t border-paper/15 pt-6 text-[0.86rem] leading-relaxed text-paper/60">
+              <p className="reveal mt-auto border-t border-paper/15 pt-6 text-[0.86rem] leading-relaxed text-paper/60 lg:mt-8">
                 Pas encore prêt ? Téléchargez notre guide gratuit :{" "}
                 <Link
                   href="/guide-renovation-2026"

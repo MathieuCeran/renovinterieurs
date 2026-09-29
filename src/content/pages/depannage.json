@@ -17,10 +17,22 @@
         {
           "t": "stats",
           "items": [
-            { "value": "4", "label": "métiers pour un seul appel" },
-            { "value": "80 %", "label": "des pannes réglées dès la première visite" },
-            { "value": "2 ans", "label": "de garantie sur la main-d’œuvre" },
-            { "value": "10 %", "label": "de TVA, logement de plus de 2 ans" }
+            {
+              "value": "4",
+              "label": "métiers pour un seul appel"
+            },
+            {
+              "value": "80 %",
+              "label": "des pannes réglées dès la première visite"
+            },
+            {
+              "value": "2 ans",
+              "label": "de garantie sur la main-d’œuvre"
+            },
+            {
+              "value": "10 %",
+              "label": "de TVA, logement de plus de 2 ans"
+            }
           ]
         }
       ]
@@ -121,11 +133,27 @@
         },
         {
           "t": "table",
-          "head": ["Intervention", "Fourchette", "Ce qui est compris"],
+          "head": [
+            "Intervention",
+            "Fourchette",
+            "Ce qui est compris"
+          ],
           "rows": [
-            ["Forfait déplacement et diagnostic", "45 à 85 €", "Déduit de la facture si vous validez le devis"],
-            ["Intervention courante plomberie ou électricité", "90 à 280 €", "Main-d’œuvre, hors pièces"],
-            ["Ouverture de porte sans destruction", "120 à 250 €", "Hors cylindre (80 à 200 € fourni posé)"]
+            [
+              "Forfait déplacement et diagnostic",
+              "45 à 85 €",
+              "Déduit de la facture si vous validez le devis"
+            ],
+            [
+              "Intervention courante plomberie ou électricité",
+              "90 à 280 €",
+              "Main-d’œuvre, hors pièces"
+            ],
+            [
+              "Ouverture de porte sans destruction",
+              "120 à 250 €",
+              "Hors cylindre (80 à 200 € fourni posé)"
+            ]
           ],
           "note": "Fourchettes indicatives 2026, hors pièces majeures. Majoration la nuit, le week-end et les jours fériés, annoncée avant le déplacement. TVA 10 % sur l’entretien et l’amélioration d’un logement de plus de 2 ans."
         }
@@ -155,10 +183,40 @@
     }
   ],
   "related": [
-    { "label": "Notre méthode", "href": "/methode", "desc": "Un interlocuteur unique, du dépannage au chantier complet" },
-    { "label": "Prix de la rénovation", "href": "/prix-renovation", "desc": "Quand la panne appelle des travaux" },
-    { "label": "Rénovation à Paris", "href": "/renovation-appartement-paris", "desc": "Les 20 arrondissements" },
-    { "label": "Rénover une salle de bain complète", "href": "/conseils/renovation-salle-de-bain-complete", "desc": "Quand la fuite révèle une pièce à refaire" },
-    { "label": "Nos réalisations", "href": "/realisations-renovation", "desc": "Chantiers livrés à Paris et en Île-de-France" }
+    {
+      "label": "Notre méthode",
+      "href": "/methode",
+      "desc": "Un interlocuteur unique, du dépannage au chantier complet"
+    },
+    {
+      "label": "Prix de la rénovation",
+      "href": "/prix-renovation",
+      "desc": "Quand la panne appelle des travaux"
+    },
+    {
+      "label": "Rénovation à Paris",
+      "href": "/renovation-appartement-paris",
+      "desc": "Les 20 arrondissements"
+    },
+    {
+      "label": "Rénover une salle de bain complète",
+      "href": "/conseils/renovation-salle-de-bain-complete",
+      "desc": "Quand la fuite révèle une pièce à refaire"
+    },
+    {
+      "label": "Nos réalisations",
+      "href": "/realisations-renovation",
+      "desc": "Chantiers livrés à Paris et en Île-de-France"
+    },
+    {
+      "label": "Débarras et nettoyage",
+      "href": "/debarras",
+      "desc": "Succession, fin de bail, après travaux : tri, évacuation, justificatifs."
+    },
+    {
+      "label": "Rénovation dans les Yvelines",
+      "href": "/renovation-yvelines-78",
+      "desc": "Versailles, Saint-Germain, Le Vésinet, Maisons-Laffitte."
+    }
   ]
 }

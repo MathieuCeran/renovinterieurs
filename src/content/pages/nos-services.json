@@ -109,5 +109,17 @@
         }
       ]
     }
+  ],
+  "related": [
+    {
+      "label": "Dépannage urgent",
+      "href": "/depannage",
+      "desc": "Plomberie, électricité, serrurerie, chauffage : devis écrit avant intervention."
+    },
+    {
+      "label": "Débarras et nettoyage",
+      "href": "/debarras",
+      "desc": "Succession, fin de bail, après travaux : tri, évacuation, justificatifs."
+    }
   ]
 }

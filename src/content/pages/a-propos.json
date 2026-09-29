@@ -17,10 +17,22 @@
         {
           "t": "stats",
           "items": [
-            { "value": "48 h", "label": "pour un devis détaillé poste par poste" },
-            { "value": "5 jours", "label": "pour la visite technique" },
-            { "value": "10 ans", "label": "de garantie décennale" },
-            { "value": "12 mois", "label": "de SAV après livraison" }
+            {
+              "value": "48 h",
+              "label": "pour un devis détaillé poste par poste"
+            },
+            {
+              "value": "5 jours",
+              "label": "pour la visite technique"
+            },
+            {
+              "value": "10 ans",
+              "label": "de garantie décennale"
+            },
+            {
+              "value": "12 mois",
+              "label": "de SAV après livraison"
+            }
           ]
         }
       ]
@@ -123,10 +135,40 @@
     }
   ],
   "related": [
-    { "label": "Notre méthode", "href": "/methode", "desc": "Les 5 étapes, du premier échange au SAV" },
-    { "label": "Prix de la rénovation", "href": "/prix-renovation", "desc": "Fourchettes au m², TVA et aides" },
-    { "label": "Nos services", "href": "/nos-services", "desc": "Second œuvre, cuisine, salle de bain, isolation, dépannage, débarras" },
-    { "label": "Nos réalisations", "href": "/realisations-renovation", "desc": "Chantiers livrés à Paris et en Île-de-France" },
-    { "label": "Contact et devis", "href": "/contact-devis", "desc": "Réponse sous 48 h, sans engagement" }
+    {
+      "label": "Notre méthode",
+      "href": "/methode",
+      "desc": "Les 5 étapes, du premier échange au SAV"
+    },
+    {
+      "label": "Prix de la rénovation",
+      "href": "/prix-renovation",
+      "desc": "Fourchettes au m², TVA et aides"
+    },
+    {
+      "label": "Nos services",
+      "href": "/nos-services",
+      "desc": "Second œuvre, cuisine, salle de bain, isolation, dépannage, débarras"
+    },
+    {
+      "label": "Nos réalisations",
+      "href": "/realisations-renovation",
+      "desc": "Chantiers livrés à Paris et en Île-de-France"
+    },
+    {
+      "label": "Contact et devis",
+      "href": "/contact-devis",
+      "desc": "Réponse sous 48 h, sans engagement"
+    },
+    {
+      "label": "Dépannage urgent",
+      "href": "/depannage",
+      "desc": "Plomberie, électricité, serrurerie, chauffage : devis écrit avant intervention."
+    },
+    {
+      "label": "Débarras et nettoyage",
+      "href": "/debarras",
+      "desc": "Succession, fin de bail, après travaux : tri, évacuation, justificatifs."
+    }
   ]
 }

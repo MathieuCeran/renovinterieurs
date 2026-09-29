@@ -77,7 +77,7 @@ export function Services() {
         <div className="reveal mt-14">
           <Link
             href={grosOeuvre.href}
-            className="group grid overflow-hidden rounded-[clamp(18px,2.4vw,28px)] bg-clay text-paper md:grid-cols-[1.05fr_0.95fr]"
+            className="group grid overflow-hidden rounded-[clamp(18px,2.4vw,28px)] bg-ink text-paper md:grid-cols-[1.05fr_0.95fr]"
           >
             <div className="p-8 sm:p-11 lg:p-14">
               <p className="dot-label text-paper/60">{grosOeuvre.eyebrow}</p>
@@ -90,9 +90,9 @@ export function Services() {
               <p className="mt-5 max-w-xl text-[0.93rem] leading-relaxed text-paper/70">
                 {grosOeuvre.text}
               </p>
-              <span className="mt-8 inline-flex items-center gap-3 rounded-full bg-paper/10 py-1.5 pr-1.5 pl-5 text-[0.86rem] font-medium transition-colors duration-500 group-hover:bg-paper group-hover:text-clay">
+              <span className="mt-8 inline-flex items-center gap-3 rounded-full bg-paper/10 py-1.5 pr-1.5 pl-5 text-[0.86rem] font-medium transition-colors duration-500 group-hover:bg-paper group-hover:text-ink">
                 Découvrir le gros œuvre
-                <span className="pill-arrow flex size-9 items-center justify-center rounded-full bg-paper text-clay transition-colors duration-500 group-hover:bg-terra group-hover:text-paper">
+                <span className="pill-arrow flex size-9 items-center justify-center rounded-full bg-paper text-ink transition-colors duration-500 group-hover:bg-terra group-hover:text-paper">
                   <ArrowRight />
                 </span>
               </span>

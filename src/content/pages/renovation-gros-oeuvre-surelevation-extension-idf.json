@@ -17,10 +17,22 @@
         {
           "t": "stats",
           "items": [
-            { "value": "15-20 %", "label": "d’économie sur le total du chantier" },
-            { "value": "3", "label": "partenaires : architecte, ingénieur, entreprise" },
-            { "value": "2 à 3 mois", "label": "d’instruction d’un permis en Île-de-France" },
-            { "value": "+40 à 80 %", "label": "de surface avec une surélévation" }
+            {
+              "value": "15-20 %",
+              "label": "d’économie sur le total du chantier"
+            },
+            {
+              "value": "3",
+              "label": "partenaires : architecte, ingénieur, entreprise"
+            },
+            {
+              "value": "2 à 3 mois",
+              "label": "d’instruction d’un permis en Île-de-France"
+            },
+            {
+              "value": "+40 à 80 %",
+              "label": "de surface avec une surélévation"
+            }
           ]
         }
       ]
@@ -131,11 +143,27 @@
         },
         {
           "t": "table",
-          "head": ["Prestation", "Fourchette", "Délai de travaux"],
+          "head": [
+            "Prestation",
+            "Fourchette",
+            "Délai de travaux"
+          ],
           "rows": [
-            ["Ouverture de mur porteur avec IPN", "2 500 à 8 000 €", "1 à 2 semaines après autorisations"],
-            ["Extension de maison", "38 000 à 65 000 €", "8 à 16 semaines"],
-            ["Surélévation", "1 800 à 2 800 €/m²", "12 à 24 semaines"]
+            [
+              "Ouverture de mur porteur avec IPN",
+              "2 500 à 8 000 €",
+              "1 à 2 semaines après autorisations"
+            ],
+            [
+              "Extension de maison",
+              "38 000 à 65 000 €",
+              "8 à 16 semaines"
+            ],
+            [
+              "Surélévation",
+              "1 800 à 2 800 €/m²",
+              "12 à 24 semaines"
+            ]
           ],
           "note": "Fourchettes indicatives 2026 en Île-de-France, hors études (étude structure : 800 à 2 500 €). Comptez 2 à 3 mois d’instruction pour un permis, davantage en zone ABF. TVA 10 % sur l’amélioration d’un logement de plus de 2 ans."
         }
@@ -165,10 +193,40 @@
     }
   ],
   "related": [
-    { "label": "Notre méthode", "href": "/methode", "desc": "Du premier échange à la livraison, un interlocuteur unique" },
-    { "label": "Prix de la rénovation", "href": "/prix-renovation", "desc": "Fourchettes au m² pour le second œuvre" },
-    { "label": "Rénovation dans les Hauts-de-Seine", "href": "/renovation-hauts-de-seine-92", "desc": "Boulogne, Neuilly, Levallois, Saint-Cloud" },
-    { "label": "Rénover une maison en Île-de-France", "href": "/conseils/renovation-complete-maison-ile-de-france", "desc": "Étapes, budget, autorisations" },
-    { "label": "Nos réalisations", "href": "/realisations-renovation", "desc": "Chantiers livrés avec nos partenaires" }
+    {
+      "label": "Notre méthode",
+      "href": "/methode",
+      "desc": "Du premier échange à la livraison, un interlocuteur unique"
+    },
+    {
+      "label": "Prix de la rénovation",
+      "href": "/prix-renovation",
+      "desc": "Fourchettes au m² pour le second œuvre"
+    },
+    {
+      "label": "Rénovation dans les Hauts-de-Seine",
+      "href": "/renovation-hauts-de-seine-92",
+      "desc": "Boulogne, Neuilly, Levallois, Saint-Cloud"
+    },
+    {
+      "label": "Rénover une maison en Île-de-France",
+      "href": "/conseils/renovation-complete-maison-ile-de-france",
+      "desc": "Étapes, budget, autorisations"
+    },
+    {
+      "label": "Nos réalisations",
+      "href": "/realisations-renovation",
+      "desc": "Chantiers livrés avec nos partenaires"
+    },
+    {
+      "label": "Rénovation dans les Yvelines",
+      "href": "/renovation-yvelines-78",
+      "desc": "Versailles, Saint-Germain, Le Vésinet, Maisons-Laffitte."
+    },
+    {
+      "label": "Débarras et nettoyage",
+      "href": "/debarras",
+      "desc": "Succession, fin de bail, après travaux : tri, évacuation, justificatifs."
+    }
   ]
 }

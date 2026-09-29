@@ -476,7 +476,7 @@ function Callout({ c, tone = "light" }: { c: CalloutData; tone?: Tone }) {
   return (
     <aside
       className={`reveal grid gap-6 rounded-[clamp(18px,2.4vw,28px)] p-7 lg:grid-cols-[auto_1fr_auto] lg:items-center lg:gap-10 lg:p-9 ${
-        dark ? "bg-paper/6" : "bg-clay text-paper"
+        dark ? "bg-paper/6" : "bg-ink text-paper"
       }`}
     >
       <span

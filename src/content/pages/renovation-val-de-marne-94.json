@@ -17,10 +17,22 @@
         {
           "t": "stats",
           "items": [
-            { "value": "10", "label": "communes du nord au sud du 94" },
-            { "value": "8 à 14", "label": "semaines pour une rénovation complète de 50 à 80 m²" },
-            { "value": "2 à 3", "label": "classes DPE gagnées sur une passoire énergétique" },
-            { "value": "2 ans", "label": "de garantie biennale sur les équipements" }
+            {
+              "value": "10",
+              "label": "communes du nord au sud du 94"
+            },
+            {
+              "value": "8 à 14",
+              "label": "semaines pour une rénovation complète de 50 à 80 m²"
+            },
+            {
+              "value": "2 à 3",
+              "label": "classes DPE gagnées sur une passoire énergétique"
+            },
+            {
+              "value": "2 ans",
+              "label": "de garantie biennale sur les équipements"
+            }
           ]
         }
       ]
@@ -139,15 +151,31 @@
       "blocks": [
         {
           "t": "p",
-          "v": "Le Val-de-Marne reste plus accessible que Paris et le 92, avec des fourchettes de 10 à 15 % inférieures, hors Vincennes, Saint-Mandé et Saint-Maur où l’écart se resserre. Prix hors taxes, indicatifs pour 2026 ; le devis établi après visite reste la seule référence."
+          "v": "Le Val-de-Marne reste plus accessible que Paris et [les Hauts-de-Seine](/renovation-hauts-de-seine-92), avec des fourchettes de 10 à 15 % inférieures, hors Vincennes, Saint-Mandé et Saint-Maur où l’écart se resserre. Prix hors taxes, indicatifs pour 2026 ; le devis établi après visite reste la seule référence."
         },
         {
           "t": "table",
-          "head": ["Niveau de rénovation", "Prix HT au m²", "Délai"],
+          "head": [
+            "Niveau de rénovation",
+            "Prix HT au m²",
+            "Délai"
+          ],
           "rows": [
-            ["Partielle, plomberie et électricité reprises en partie", "600 à 900 €", "3 à 6 semaines"],
-            ["Complète, cuisine et salle de bain neuves, 50 à 80 m²", "1 000 à 1 500 €", "8 à 14 semaines"],
-            ["Haut de gamme, maison ou plus de 100 m²", "1 500 à 2 500 €", "4 à 6 mois"]
+            [
+              "Partielle, plomberie et électricité reprises en partie",
+              "600 à 900 €",
+              "3 à 6 semaines"
+            ],
+            [
+              "Complète, cuisine et salle de bain neuves, 50 à 80 m²",
+              "1 000 à 1 500 €",
+              "8 à 14 semaines"
+            ],
+            [
+              "Haut de gamme, maison ou plus de 100 m²",
+              "1 500 à 2 500 €",
+              "4 à 6 mois"
+            ]
           ],
           "note": "TVA à 10 % sur les travaux d’amélioration d’un logement de plus de 2 ans, TVA à 5,5 % sur l’amélioration énergétique éligible."
         },
@@ -210,6 +238,21 @@
       "label": "Zones d’intervention",
       "href": "/zones",
       "desc": "Les 35 communes couvertes autour de Paris"
+    },
+    {
+      "label": "Débarras et nettoyage",
+      "href": "/debarras",
+      "desc": "Succession, fin de bail, après travaux : tri, évacuation, justificatifs."
+    },
+    {
+      "label": "Rénovation dans les Hauts-de-Seine",
+      "href": "/renovation-hauts-de-seine-92",
+      "desc": "Neuilly, Boulogne, Levallois, Issy."
+    },
+    {
+      "label": "Rénovation dans les Yvelines",
+      "href": "/renovation-yvelines-78",
+      "desc": "Versailles, Saint-Germain, Le Vésinet, Maisons-Laffitte."
     }
   ]
 }

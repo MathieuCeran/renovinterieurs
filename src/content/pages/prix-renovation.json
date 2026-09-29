@@ -20,12 +20,32 @@
         },
         {
           "t": "table",
-          "head": ["Niveau", "Prix HT au m²", "Ce que cela couvre"],
+          "head": [
+            "Niveau",
+            "Prix HT au m²",
+            "Ce que cela couvre"
+          ],
           "rows": [
-            ["Rafraîchissement", "250 à 450 €", "Peinture, sols simples, petites finitions"],
-            ["Rénovation partielle", "600 à 900 €", "Une à deux pièces refaites, plomberie et électricité partielles"],
-            ["Rénovation complète", "1 000 à 1 500 €", "Toutes pièces, réseaux refaits, cuisine et salle de bain neuves"],
-            ["Haut de gamme", "1 500 à 2 500 €", "Matériaux premium, sur-mesure, finitions d’architecte"]
+            [
+              "Rafraîchissement",
+              "250 à 450 €",
+              "Peinture, sols simples, petites finitions"
+            ],
+            [
+              "Rénovation partielle",
+              "600 à 900 €",
+              "Une à deux pièces refaites, plomberie et électricité partielles"
+            ],
+            [
+              "Rénovation complète",
+              "1 000 à 1 500 €",
+              "Toutes pièces, réseaux refaits, cuisine et salle de bain neuves"
+            ],
+            [
+              "Haut de gamme",
+              "1 500 à 2 500 €",
+              "Matériaux premium, sur-mesure, finitions d’architecte"
+            ]
           ],
           "note": "Fourchettes indicatives 2026, hors TVA. Au-delà de 2 500 €/m², on entre dans le prestige avec architecte."
         }
@@ -78,14 +98,49 @@
         },
         {
           "t": "table",
-          "head": ["Type de bien", "Surface", "Niveau", "Fourchette HT"],
+          "head": [
+            "Type de bien",
+            "Surface",
+            "Niveau",
+            "Fourchette HT"
+          ],
           "rows": [
-            ["Studio", "25 m²", "Rafraîchissement", "6 250 à 11 250 €"],
-            ["Deux-pièces", "40 m²", "Rénovation partielle", "24 000 à 36 000 €"],
-            ["Trois-pièces", "60 m²", "Rénovation complète", "60 000 à 90 000 €"],
-            ["Trois-pièces", "60 m²", "Haut de gamme", "90 000 à 150 000 €"],
-            ["Quatre-pièces", "80 m²", "Rénovation complète", "80 000 à 120 000 €"],
-            ["Appartement familial", "100 m²", "Haut de gamme", "150 000 à 250 000 €"]
+            [
+              "Studio",
+              "25 m²",
+              "Rafraîchissement",
+              "6 250 à 11 250 €"
+            ],
+            [
+              "Deux-pièces",
+              "40 m²",
+              "Rénovation partielle",
+              "24 000 à 36 000 €"
+            ],
+            [
+              "Trois-pièces",
+              "60 m²",
+              "Rénovation complète",
+              "60 000 à 90 000 €"
+            ],
+            [
+              "Trois-pièces",
+              "60 m²",
+              "Haut de gamme",
+              "90 000 à 150 000 €"
+            ],
+            [
+              "Quatre-pièces",
+              "80 m²",
+              "Rénovation complète",
+              "80 000 à 120 000 €"
+            ],
+            [
+              "Appartement familial",
+              "100 m²",
+              "Haut de gamme",
+              "150 000 à 250 000 €"
+            ]
           ],
           "note": "Calcul indicatif : surface multipliée par la fourchette du niveau. Le devis après visite reste la seule référence."
         },
@@ -123,7 +178,7 @@
             },
             {
               "title": "MaPrimeRénov’ et CEE",
-              "text": "Deux dispositifs cumulables pour les travaux énergétiques. RenovIntérieurs vous accompagne dans le montage des dossiers, avec pour objectif de gagner 2 à 3 classes DPE."
+              "text": "Deux dispositifs cumulables pour les travaux énergétiques. RenovIntérieurs vous accompagne dans le montage des dossiers, avec pour objectif de gagner 2 à 3 classes DPE. Mesurez le gain possible avec [le simulateur DPE](/outils/simulateur-dpe-passoire-energetique)."
             }
           ]
         }
@@ -134,11 +189,27 @@
       "blocks": [
         {
           "t": "table",
-          "head": ["Niveau", "Durée indicative", "Ce qui rythme le chantier"],
+          "head": [
+            "Niveau",
+            "Durée indicative",
+            "Ce qui rythme le chantier"
+          ],
           "rows": [
-            ["Rénovation partielle", "3 à 6 semaines", "Une à deux pièces, réseaux partiels"],
-            ["Rénovation complète, 50 à 80 m²", "8 à 14 semaines", "Réseaux, cuisine et salle de bain, finitions"],
-            ["Plus de 100 m² ou haut de gamme", "4 à 6 mois", "Sur-mesure, matériaux premium, finitions d’architecte"]
+            [
+              "Rénovation partielle",
+              "3 à 6 semaines",
+              "Une à deux pièces, réseaux partiels"
+            ],
+            [
+              "Rénovation complète, 50 à 80 m²",
+              "8 à 14 semaines",
+              "Réseaux, cuisine et salle de bain, finitions"
+            ],
+            [
+              "Plus de 100 m² ou haut de gamme",
+              "4 à 6 mois",
+              "Sur-mesure, matériaux premium, finitions d’architecte"
+            ]
           ],
           "note": "Le planning précis est remis avec le devis, poste par poste."
         },
@@ -172,10 +243,40 @@
     }
   ],
   "related": [
-    { "label": "Estimateur de budget", "href": "/outils/estimateur-budget-renovation", "desc": "Votre fourchette en trente secondes." },
-    { "label": "Notre méthode", "href": "/methode", "desc": "Cinq étapes, un interlocuteur unique." },
-    { "label": "Rénovation d’appartement à Paris", "href": "/renovation-appartement-paris", "desc": "Second œuvre tous corps d’état." },
-    { "label": "Combien coûte une rénovation à Paris ?", "href": "/conseils/combien-coute-renovation-appartement-paris", "desc": "Le détail poste par poste." },
-    { "label": "Tous nos services", "href": "/nos-services", "desc": "Huit métiers, une exigence." }
+    {
+      "label": "Estimateur de budget",
+      "href": "/outils/estimateur-budget-renovation",
+      "desc": "Votre fourchette en trente secondes."
+    },
+    {
+      "label": "Notre méthode",
+      "href": "/methode",
+      "desc": "Cinq étapes, un interlocuteur unique."
+    },
+    {
+      "label": "Rénovation d’appartement à Paris",
+      "href": "/renovation-appartement-paris",
+      "desc": "Second œuvre tous corps d’état."
+    },
+    {
+      "label": "Combien coûte une rénovation à Paris ?",
+      "href": "/conseils/combien-coute-renovation-appartement-paris",
+      "desc": "Le détail poste par poste."
+    },
+    {
+      "label": "Tous nos services",
+      "href": "/nos-services",
+      "desc": "Huit métiers, une exigence."
+    },
+    {
+      "label": "Simulateur DPE",
+      "href": "/outils/simulateur-dpe-passoire-energetique",
+      "desc": "Estimez les classes gagnées selon les travaux envisagés."
+    },
+    {
+      "label": "Dépannage urgent",
+      "href": "/depannage",
+      "desc": "Plomberie, électricité, serrurerie, chauffage : devis écrit avant intervention."
+    }
   ]
 }

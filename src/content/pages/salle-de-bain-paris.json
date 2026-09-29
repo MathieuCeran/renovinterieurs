@@ -17,10 +17,22 @@
         {
           "t": "stats",
           "items": [
-            { "value": "15-20 ans", "label": "sans reprise des joints époxy" },
-            { "value": "1 à 2 jours", "label": "pour refaire les joints d’une pièce" },
-            { "value": "7 jours", "label": "avant la première douche complète" },
-            { "value": "12 mois", "label": "de SAV après livraison" }
+            {
+              "value": "15-20 ans",
+              "label": "sans reprise des joints époxy"
+            },
+            {
+              "value": "1 à 2 jours",
+              "label": "pour refaire les joints d’une pièce"
+            },
+            {
+              "value": "7 jours",
+              "label": "avant la première douche complète"
+            },
+            {
+              "value": "12 mois",
+              "label": "de SAV après livraison"
+            }
           ]
         }
       ]
@@ -75,7 +87,7 @@
             },
             {
               "title": "Une plomberie accessible",
-              "text": "Alimentation en PER, évacuations en PVC pression, vannes d’arrêt accessibles pour ne jamais casser un carreau en cas de fuite."
+              "text": "Alimentation en PER, évacuations en PVC pression, vannes d’arrêt accessibles pour ne jamais casser un carreau en cas de fuite. En urgence, [notre dépannage plomberie](/depannage) intervient dans Paris et la petite couronne."
             },
             {
               "title": "Une électricité aux volumes",
@@ -120,11 +132,27 @@
         },
         {
           "t": "table",
-          "head": ["Prestation", "Fourchette HT", "Délai"],
+          "head": [
+            "Prestation",
+            "Fourchette HT",
+            "Délai"
+          ],
           "rows": [
-            ["Reprise des joints en époxy, douche ou pièce entière", "12 à 30 €/m² de carrelage, pose comprise", "1 à 2 jours, douche complète à 7 jours"],
-            ["Salle de bain complète, dans une rénovation partielle", "600 à 900 €/m² de logement", "3 à 6 semaines"],
-            ["Douche à l’italienne en béton ciré", "90 à 220 €/m² selon le support", "2 à 5 jours de pose, 7 jours de séchage"]
+            [
+              "Reprise des joints en époxy, douche ou pièce entière",
+              "12 à 30 €/m² de carrelage, pose comprise",
+              "1 à 2 jours, douche complète à 7 jours"
+            ],
+            [
+              "Salle de bain complète, dans une rénovation partielle",
+              "600 à 900 €/m² de logement",
+              "3 à 6 semaines"
+            ],
+            [
+              "Douche à l’italienne en béton ciré",
+              "90 à 220 €/m² selon le support",
+              "2 à 5 jours de pose, 7 jours de séchage"
+            ]
           ],
           "note": "TVA à 10 % sur l’amélioration d’un logement de plus de 2 ans. Le devis établi après visite technique fait seul foi."
         },
@@ -158,10 +186,30 @@
     }
   ],
   "related": [
-    { "label": "Notre méthode", "href": "/methode", "desc": "Visite sous 5 jours, devis sous 48 h, compte-rendu hebdomadaire, SAV 12 mois." },
-    { "label": "Prix de rénovation", "href": "/prix-renovation", "desc": "Situer la salle de bain dans le budget de votre appartement." },
-    { "label": "Rénovation d’appartement à Paris", "href": "/renovation-appartement-paris", "desc": "La salle de bain dans une rénovation complète, arrondissement par arrondissement." },
-    { "label": "Rénover sa salle de bain de A à Z", "href": "/conseils/renovation-salle-de-bain-complete", "desc": "Étapes, budget, erreurs à éviter." },
-    { "label": "Nos réalisations", "href": "/realisations-renovation", "desc": "Douches à l’italienne, plans vasques, salles de bain livrées à Paris." }
+    {
+      "label": "Notre méthode",
+      "href": "/methode",
+      "desc": "Visite sous 5 jours, devis sous 48 h, compte-rendu hebdomadaire, SAV 12 mois."
+    },
+    {
+      "label": "Prix de rénovation",
+      "href": "/prix-renovation",
+      "desc": "Situer la salle de bain dans le budget de votre appartement."
+    },
+    {
+      "label": "Rénovation d’appartement à Paris",
+      "href": "/renovation-appartement-paris",
+      "desc": "La salle de bain dans une rénovation complète, arrondissement par arrondissement."
+    },
+    {
+      "label": "Rénover sa salle de bain de A à Z",
+      "href": "/conseils/renovation-salle-de-bain-complete",
+      "desc": "Étapes, budget, erreurs à éviter."
+    },
+    {
+      "label": "Nos réalisations",
+      "href": "/realisations-renovation",
+      "desc": "Douches à l’italienne, plans vasques, salles de bain livrées à Paris."
+    }
   ]
 }

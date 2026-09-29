@@ -137,7 +137,7 @@ export default function ConseilsPage() {
 
       {/* Guide PDF */}
       <section className="container-x py-10 lg:py-14" aria-label="Guide PDF">
-        <div className="grid gap-8 overflow-hidden rounded-[clamp(18px,2.4vw,28px)] bg-clay p-8 text-paper sm:p-11 lg:grid-cols-[1.1fr_auto] lg:items-center lg:gap-14">
+        <div className="grid gap-8 overflow-hidden rounded-[clamp(18px,2.4vw,28px)] bg-ink p-8 text-paper sm:p-11 lg:grid-cols-[1.1fr_auto] lg:items-center lg:gap-14">
           <div>
             <p className="dot-label text-paper/60">Le condensé, en PDF</p>
             <h2 className="mt-4 max-w-xl text-[clamp(1.5rem,3vw,2.3rem)] leading-[1.06] font-medium tracking-[-0.02em]">
