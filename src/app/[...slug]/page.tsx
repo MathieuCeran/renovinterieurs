@@ -170,10 +170,10 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
               <p className="dot-label reveal-sm text-muted">
                 {page.eyebrow ?? parentCrumb.label}
               </p>
-              <p className="reveal mt-5 max-w-[34ch] text-[clamp(1.2rem,1.9vw,1.55rem)] leading-[1.4] font-medium tracking-[-0.015em] text-balance text-ink">
+              <p className="reveal mt-4 max-w-[46ch] text-[clamp(1.02rem,1.35vw,1.22rem)] leading-[1.55] font-medium tracking-[-0.01em] text-pretty text-ink">
                 <Inline v={page.intro[0]} />
               </p>
-              <div className="reveal mt-auto flex flex-wrap items-center gap-3 pt-8">
+              <div className="reveal mt-auto flex flex-wrap items-center gap-3 pt-6">
                 <Pill href="#devis" tone="terra">
                   Obtenir un devis
                 </Pill>
@@ -187,7 +187,7 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
               </div>
             </div>
 
-            <aside className="reveal rounded-[clamp(18px,2.4vw,28px)] bg-paper p-7 lg:self-start lg:p-8">
+            <aside className="reveal flex flex-col rounded-[clamp(18px,2.4vw,28px)] bg-paper p-7 lg:p-8">
               <p className="dot-label text-[0.74rem] text-terra">
                 Ce que nous pilotons
               </p>
@@ -195,18 +195,18 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
                 page.intro.slice(1).map((p, i) => (
                   <p
                     key={i}
-                    className="mt-4 text-[0.95rem] leading-[1.7] text-muted"
+                    className="mt-4 mb-6 text-[0.95rem] leading-[1.7] text-muted"
                   >
                     <Inline v={p} />
                   </p>
                 ))
               ) : (
-                <p className="mt-4 text-[0.95rem] leading-[1.7] text-muted">
+                <p className="mt-4 mb-6 text-[0.95rem] leading-[1.7] text-muted">
                   Un interlocuteur unique du diagnostic à la réception, un
                   devis détaillé sous 48 h, un compte-rendu chaque semaine.
                 </p>
               )}
-              <ul className="mt-6 grid gap-2.5 border-t border-line pt-5 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
+              <ul className="mt-auto grid gap-2.5 border-t border-line pt-5 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
                 {[
                   "Devis détaillé sous 48 h",
                   "Visite technique sous 5 jours",
