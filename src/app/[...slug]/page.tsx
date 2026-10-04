@@ -22,14 +22,22 @@ import {
   cleanBody,
   plainText,
   publishedArticle,
+  publishedArticles,
   type WwArticle,
+  wwPath,
 } from "@/lib/whatswrong";
 
-/** Les pages JSON sont pré-rendues ; les articles WhatsWrong à la demande. */
-export const dynamicParams = true;
+/** Pages JSON et articles WhatsWrong (copiés dans le dépôt) : tout est pré-rendu. */
+export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return allSlugs().map((s) => ({ slug: s.replace(/^\//, "").split("/") }));
+  const paths = [
+    ...allSlugs(),
+    ...publishedArticles()
+      .map(wwPath)
+      .filter((p) => !getPage(p)),
+  ];
+  return paths.map((s) => ({ slug: s.replace(/^\//, "").split("/") }));
 }
 
 function slugOf(parts: string[]) {
@@ -37,7 +45,7 @@ function slugOf(parts: string[]) {
 }
 
 /** Article WhatsWrong publié sous /conseils/<slug>, sinon null. */
-async function wwArticleAt(parts: string[]): Promise<WwArticle | null> {
+function wwArticleAt(parts: string[]): WwArticle | null {
   if (parts.length !== 2 || parts[0] !== "conseils") return null;
   return publishedArticle(parts[1]);
 }
@@ -49,7 +57,7 @@ export async function generateMetadata({
   const path = slugOf(slug);
   const page = getPage(path);
   if (!page) {
-    const ww = await wwArticleAt(slug);
+    const ww = wwArticleAt(slug);
     return ww ? wwMetadata(ww, path) : {};
   }
 
@@ -87,7 +95,7 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
   const path = slugOf(slug);
   const page = getPage(path);
   if (!page) {
-    const ww = await wwArticleAt(slug);
+    const ww = wwArticleAt(slug);
     if (!ww) notFound();
     return <WwPage article={ww} path={path} />;
   }
@@ -295,7 +303,7 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
 /* ------------------------------------------------------------------ */
 
 function wwMetadata(a: WwArticle, path: string): Metadata {
-  const d = a.data!;
+  const d = a;
   const title = clamp(cleanTitle(d.title), 60);
   const description = clamp(d.description, 155);
   const image = d.cover?.url ?? visualsFor(path).hero;
@@ -319,7 +327,7 @@ function wwMetadata(a: WwArticle, path: string): Metadata {
 }
 
 function WwPage({ article, path }: { article: WwArticle; path: string }) {
-  const d = article.data!;
+  const d = article;
   const url = `${site.url}${path}`;
   const hero = visualsFor(path).hero;
   const faq = d.faq?.items?.length
@@ -353,7 +361,7 @@ function WwPage({ article, path }: { article: WwArticle; path: string }) {
       headline: d.title,
       name: d.title,
       description: d.description,
-      image: d.cover?.url ?? `${site.url}${hero}`,
+      image: `${site.url}${d.cover?.url ?? hero}`,
       inLanguage: "fr-FR",
       ...(d.createdAt ? { datePublished: d.createdAt } : {}),
       ...(d.lastModifiedAt ? { dateModified: d.lastModifiedAt } : {}),

@@ -59,7 +59,17 @@ for (const f of fs.readdirSync(PAGES_DIR)) {
   }
 }
 
-const known = new Set([...Object.keys(pages), ...STATIC_ROUTES]);
+/** Articles WhatsWrong copiés dans le dépôt (scripts/whatswrong-sync.mjs). */
+let wwPaths = [];
+try {
+  wwPaths = JSON.parse(
+    fs.readFileSync(path.join(ROOT, "src", "content", "whatswrong", "articles.json"), "utf8"),
+  ).map((a) => `/conseils/${a.slug}`);
+} catch {
+  /* aucun article importé */
+}
+
+const known = new Set([...Object.keys(pages), ...STATIC_ROUTES, ...wwPaths]);
 const errors = [];
 const err = (slug, msg) => errors.push(`${slug}  ${msg}`);
 

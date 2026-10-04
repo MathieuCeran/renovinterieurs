@@ -5,11 +5,8 @@ import { tools } from "@/lib/tools";
 import { site } from "@/lib/site";
 import { publishedArticles, wwPath } from "@/lib/whatswrong";
 
-/** Les articles WhatsWrong y entrent au plus tard une heure après publication. */
-export const revalidate = 3600;
-
 /** Dérivé du store de contenu : toute page ajoutée y apparaît automatiquement. */
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
   const priority = (path: string) => {
@@ -22,7 +19,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   };
 
   const local = allPaths();
-  const articles = (await publishedArticles())
+  const articles = publishedArticles()
     .map(wwPath)
     .filter((p) => !local.includes(p));
   const paths = [...local, ...articles, "/outils", ...tools.map((t) => t.href)];

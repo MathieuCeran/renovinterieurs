@@ -1,175 +1,59 @@
-import sanitizeHtml from "sanitize-html";
+import fs from "node:fs";
+import path from "node:path";
 
-import { site } from "@/lib/site";
+import sanitizeHtml from "sanitize-html";
 
 /* ------------------------------------------------------------------ */
 /*  WhatsWrong : articles SEO rédigés par Léa                          */
 /*                                                                     */
-/*  WhatsWrong ne pousse rien. Le site lit les articles terminés       */
-/*  (DRAFT), les publie sous /conseils/<slug>, puis renvoie l'URL      */
-/*  publique (PATCH PUBLISHED). WhatsWrong reste la source du contenu : */
-/*  les pages lisent les articles PUBLISHED, mis en cache une heure.    */
+/*  Le site garde une copie de chaque article (texte + images) dans    */
+/*  le dépôt : src/content/whatswrong/articles.json et                 */
+/*  public/uploads/whatswrong/. La copie est faite chaque heure par    */
+/*  GitHub Actions (scripts/whatswrong-sync.mjs), qui confirme ensuite */
+/*  l'URL publique à WhatsWrong. Si WhatsWrong tombe ou si             */
+/*  l'abonnement s'arrête, les articles restent en ligne.              */
 /* ------------------------------------------------------------------ */
-
-const API = "https://www.whatswrong.io";
-
-/** Tag de cache commun aux pages qui lisent les articles WhatsWrong. */
-export const WW_TAG = "whatswrong";
 
 export type WwArticle = {
   id: string;
-  state: string;
-  data: {
+  slug: string;
+  title: string;
+  description: string;
+  body: string;
+  mainKeyword: string | null;
+  /** Copie locale (/uploads/whatswrong/<slug>/cover.*). */
+  cover: { url: string; alt: string } | null;
+  faq: {
     title: string;
-    description: string;
-    body: string;
-    slug: string;
-    mainKeyword: string | null;
-    cover: { url: string; alt: string } | null;
-    faq: {
-      title: string;
-      items: { question: string; answer: string }[];
-    } | null;
-    createdAt?: string;
-    lastModifiedAt?: string;
+    items: { question: string; answer: string }[];
   } | null;
+  createdAt: string;
+  lastModifiedAt: string;
 };
 
-type WwList = { contents: WwArticle[]; pagination?: { total?: number } };
-
-function apiKey(): string | undefined {
-  return process.env.WW_API_KEY || process.env.WHATSWRONG_API_KEY;
-}
-
-async function whatswrong<T>(
-  method: "GET" | "PATCH",
-  path: string,
-  body?: unknown,
-  init?: RequestInit,
-): Promise<T> {
-  const key = apiKey();
-  if (!key) throw new Error("WW_API_KEY manquante");
-
-  const res = await fetch(API + path, {
-    ...init,
-    method,
-    headers: {
-      Authorization: `Bearer ${key}`,
-      "Content-Type": "application/json",
-    },
-    body: body === undefined ? undefined : JSON.stringify(body),
-  });
-  if (res.status === 429) {
-    // Limite atteinte : on s'arrête, le prochain passage reprendra.
-    throw new Error(
-      `WhatsWrong : limite atteinte, réessayer dans ${res.headers.get("Retry-After")} s`,
-    );
-  }
-  if (!res.ok) {
-    const { message } = await res.json().catch(() => ({ message: "" }));
-    throw new Error(`WhatsWrong ${res.status} : ${message}`);
-  }
-  return res.json() as Promise<T>;
-}
-
-/** Slug réduit à un seul segment d'URL propre. */
-export function wwSlug(raw: string): string {
-  const last = raw.split("/").filter(Boolean).pop() ?? "";
-  return last
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9-]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
+const ARTICLES_FILE = path.join(
+  process.cwd(),
+  "src",
+  "content",
+  "whatswrong",
+  "articles.json",
+);
 
 export function wwPath(a: WwArticle): string {
-  return `/conseils/${wwSlug(a.data?.slug ?? "")}`;
+  return `/conseils/${a.slug}`;
 }
 
-/* ------------------------------------------------------------------ */
-/*  Lecture : articles en ligne, mis en cache une heure                */
-/* ------------------------------------------------------------------ */
-
-/** Tous les articles publiés. Liste vide si l'API est indisponible. */
-export async function publishedArticles(): Promise<WwArticle[]> {
-  if (!apiKey()) return [];
-  const out: WwArticle[] = [];
+/** Tous les articles publiés, lus dans le dépôt. */
+export function publishedArticles(): WwArticle[] {
   try {
-    for (let offset = 0; offset < 500; offset += 20) {
-      const { contents } = await whatswrong<WwList>(
-        "GET",
-        `/api/v1/lea/blog-articles?states=PUBLISHED&limit=20&offset=${offset}`,
-        undefined,
-        { next: { revalidate: 3600, tags: [WW_TAG] } },
-      );
-      out.push(...contents.filter((a) => a.data && wwSlug(a.data.slug)));
-      if (contents.length < 20) break;
-    }
-  } catch (err) {
-    console.error("[whatswrong]", err);
+    return JSON.parse(fs.readFileSync(ARTICLES_FILE, "utf8")) as WwArticle[];
+  } catch {
+    return [];
   }
-  return out;
 }
 
-export async function publishedArticle(
-  slug: string,
-): Promise<WwArticle | null> {
-  const all = await publishedArticles();
-  return all.find((a) => wwPath(a) === `/conseils/${slug}`) ?? null;
-}
-
-/* ------------------------------------------------------------------ */
-/*  Synchronisation : appelée chaque heure par le cron Vercel          */
-/* ------------------------------------------------------------------ */
-
-export type SyncReport = {
-  published: { id: string; url: string }[];
-  skipped: { id: string; reason: string }[];
-};
-
-/**
- * Publie chaque article terminé (DRAFT) et renvoie son URL à WhatsWrong.
- * Idempotent : un article publié passe en PUBLISHED et ne revient plus
- * dans la liste des DRAFT. `taken` dit si une URL est déjà occupée par
- * une page du site.
- */
-export async function syncWhatsWrong(
-  taken: (path: string) => boolean,
-): Promise<SyncReport> {
-  const report: SyncReport = { published: [], skipped: [] };
-
-  const { contents } = await whatswrong<WwList>(
-    "GET",
-    "/api/v1/lea/blog-articles?states=DRAFT&limit=20",
-    undefined,
-    { cache: "no-store" },
-  );
-
-  for (const article of contents) {
-    if (!article.data || !wwSlug(article.data.slug)) {
-      report.skipped.push({ id: article.id, reason: "slug manquant" });
-      continue;
-    }
-    const path = wwPath(article);
-    if (taken(path)) {
-      report.skipped.push({
-        id: article.id,
-        reason: `${path} existe déjà sur le site`,
-      });
-      continue;
-    }
-
-    const url = `${site.url}${path}`;
-    // Le suivi SEO démarre ici : WhatsWrong sait où vit l'article.
-    await whatswrong("PATCH", `/api/v1/lea/blog-articles/${article.id}`, {
-      state: "PUBLISHED",
-      url,
-    });
-    report.published.push({ id: article.id, url });
-  }
-
-  return report;
+export function publishedArticle(slug: string): WwArticle | null {
+  return publishedArticles().find((a) => a.slug === slug) ?? null;
 }
 
 /* ------------------------------------------------------------------ */

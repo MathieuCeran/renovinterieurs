@@ -10,9 +10,6 @@ import { allPaths, cleanTitle, getPage, visualsFor } from "@/lib/content";
 import { site } from "@/lib/site";
 import { publishedArticles, wwPath } from "@/lib/whatswrong";
 
-/** Les articles WhatsWrong y entrent au plus tard une heure après publication. */
-export const revalidate = 3600;
-
 const path = "/conseils";
 
 const title = "Conseils : tout savoir sur la rénovation à Paris";
@@ -63,7 +60,7 @@ function categorize(slug: string): string {
 }
 
 /** Guides du site + articles WhatsWrong, chacun avec un visuel de thème. */
-async function loadArticles(): Promise<Article[]> {
+function loadArticles(): Article[] {
   const local = allPaths()
     .filter((p) => p.startsWith("/conseils/"))
     .map((p) => {
@@ -84,14 +81,14 @@ async function loadArticles(): Promise<Article[]> {
     })
     .filter((a): a is Article => a !== null);
 
-  const remote = (await publishedArticles())
+  const remote = publishedArticles()
     .filter((a) => !getPage(wwPath(a)))
     .map((a) => ({
       href: wwPath(a),
-      title: a.data!.title,
-      excerpt: a.data!.description,
+      title: a.title,
+      excerpt: a.description,
       cat: categorize(wwPath(a).replace("/conseils/", "")),
-      readMin: Math.max(3, Math.round(a.data!.body.length / 1300)),
+      readMin: Math.max(3, Math.round(a.body.length / 1300)),
       image: "",
     }));
 
@@ -105,9 +102,9 @@ async function loadArticles(): Promise<Article[]> {
     });
 }
 
-export default async function ConseilsPage() {
+export default function ConseilsPage() {
   const { hero } = visualsFor(path);
-  const articles = await loadArticles();
+  const articles = loadArticles();
 
   const jsonLd = {
     "@context": "https://schema.org",

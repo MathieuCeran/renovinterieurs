@@ -1,0 +1,42 @@
+name: Synchronisation WhatsWrong
+
+# Toutes les heures. GitHub Actions n'est pas ponctuel à la minute près :
+# un décalage de quelques minutes est normal et sans conséquence ici.
+# Lancement manuel : onglet Actions → « Synchronisation WhatsWrong » → Run workflow.
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Essai à blanc (liste les articles, aucune écriture, aucun PATCH)"
+        type: boolean
+        default: false
+
+# Un seul run à la fois : deux synchronisations simultanées se marcheraient
+# dessus sur le fichier d'état et sur le push.
+concurrency:
+  group: whatswrong-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write # commit des articles et des images
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Synchroniser
+        env:
+          WW_API_KEY: ${{ secrets.WW_API_KEY }}
+          SITE_ORIGIN: ${{ vars.SITE_ORIGIN }}
+        run: node scripts/whatswrong-sync.mjs ${{ inputs.dry_run && '--dry-run' || '' }}
