@@ -8,6 +8,10 @@ import { Cta } from "@/components/sections/cta";
 import { ArrowRight } from "@/components/ui/kit";
 import { allPaths, cleanTitle, getPage, visualsFor } from "@/lib/content";
 import { site } from "@/lib/site";
+import { publishedArticles, wwPath } from "@/lib/whatswrong";
+
+/** Les articles WhatsWrong y entrent au plus tard une heure après publication. */
+export const revalidate = 3600;
 
 const path = "/conseils";
 
@@ -58,38 +62,52 @@ function categorize(slug: string): string {
   return "Méthode & étapes";
 }
 
-let catCount: Record<string, number> = {};
+/** Guides du site + articles WhatsWrong, chacun avec un visuel de thème. */
+async function loadArticles(): Promise<Article[]> {
+  const local = allPaths()
+    .filter((p) => p.startsWith("/conseils/"))
+    .map((p) => {
+      const page = getPage(p);
+      if (!page) return null;
+      const slug = p.replace("/conseils/", "");
+      return {
+        href: p,
+        title: page.h1 || cleanTitle(page.title),
+        excerpt: page.description || page.intro[0] || "",
+        cat: categorize(slug),
+        readMin: Math.max(
+          3,
+          Math.round(JSON.stringify(page.sections).length / 1300),
+        ),
+        image: "",
+      };
+    })
+    .filter((a): a is Article => a !== null);
 
-const articles: Article[] = allPaths()
-  .filter((p) => p.startsWith("/conseils/"))
-  .map((p) => {
-    const page = getPage(p);
-    if (!page) return null;
-    const slug = p.replace("/conseils/", "");
-    return {
-      href: p,
-      title: page.h1 || cleanTitle(page.title),
-      excerpt: page.description || page.intro[0] || "",
-      cat: categorize(slug),
-      readMin: Math.max(
-        3,
-        Math.round(JSON.stringify(page.sections).length / 1300),
-      ),
+  const remote = (await publishedArticles())
+    .filter((a) => !getPage(wwPath(a)))
+    .map((a) => ({
+      href: wwPath(a),
+      title: a.data!.title,
+      excerpt: a.data!.description,
+      cat: categorize(wwPath(a).replace("/conseils/", "")),
+      readMin: Math.max(3, Math.round(a.data!.body.length / 1300)),
       image: "",
-    };
-  })
-  .filter((a): a is Article => a !== null)
-  .sort((a, b) => a.title.localeCompare(b.title, "fr"))
-  .map((a) => {
-    const n = (catCount[a.cat] = (catCount[a.cat] ?? 0) + 1);
-    const table = n % 2 === 0 ? CAT_IMAGE_ALT : CAT_IMAGE;
-    return { ...a, image: table[a.cat] ?? "/images/salon-canape-courbe.jpg" };
-  });
+    }));
 
-catCount = {};
+  const catCount: Record<string, number> = {};
+  return [...local, ...remote]
+    .sort((a, b) => a.title.localeCompare(b.title, "fr"))
+    .map((a) => {
+      const n = (catCount[a.cat] = (catCount[a.cat] ?? 0) + 1);
+      const table = n % 2 === 0 ? CAT_IMAGE_ALT : CAT_IMAGE;
+      return { ...a, image: table[a.cat] ?? "/images/salon-canape-courbe.jpg" };
+    });
+}
 
-export default function ConseilsPage() {
+export default async function ConseilsPage() {
   const { hero } = visualsFor(path);
+  const articles = await loadArticles();
 
   const jsonLd = {
     "@context": "https://schema.org",

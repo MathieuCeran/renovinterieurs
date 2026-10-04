@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { Article, SectionHeading, Toc } from "@/components/page/article";
 import { Inline, Links } from "@/components/page/blocks";
+import { HtmlArticle } from "@/components/page/html-article";
 import { InnerHero, anchorId } from "@/components/page/inner-hero";
 import { PhoneIcon, Pill } from "@/components/ui/kit";
 import { Commitments } from "@/components/sections/commitments";
@@ -17,8 +18,15 @@ import {
   visualsFor,
 } from "@/lib/content";
 import { site } from "@/lib/site";
+import {
+  cleanBody,
+  plainText,
+  publishedArticle,
+  type WwArticle,
+} from "@/lib/whatswrong";
 
-export const dynamicParams = false;
+/** Les pages JSON sont pré-rendues ; les articles WhatsWrong à la demande. */
+export const dynamicParams = true;
 
 export function generateStaticParams() {
   return allSlugs().map((s) => ({ slug: s.replace(/^\//, "").split("/") }));
@@ -28,13 +36,22 @@ function slugOf(parts: string[]) {
   return `/${parts.join("/")}`;
 }
 
+/** Article WhatsWrong publié sous /conseils/<slug>, sinon null. */
+async function wwArticleAt(parts: string[]): Promise<WwArticle | null> {
+  if (parts.length !== 2 || parts[0] !== "conseils") return null;
+  return publishedArticle(parts[1]);
+}
+
 export async function generateMetadata({
   params,
 }: PageProps<"/[...slug]">): Promise<Metadata> {
   const { slug } = await params;
   const path = slugOf(slug);
   const page = getPage(path);
-  if (!page) return {};
+  if (!page) {
+    const ww = await wwArticleAt(slug);
+    return ww ? wwMetadata(ww, path) : {};
+  }
 
   const hero = page.hero ?? visualsFor(path).hero;
   const title = clamp(cleanTitle(page.title), 60);
@@ -69,7 +86,11 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
   const { slug } = await params;
   const path = slugOf(slug);
   const page = getPage(path);
-  if (!page) notFound();
+  if (!page) {
+    const ww = await wwArticleAt(slug);
+    if (!ww) notFound();
+    return <WwPage article={ww} path={path} />;
+  }
 
   const visuals = visualsFor(path);
   const hero = page.hero ?? visuals.hero;
@@ -263,6 +284,110 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
         </section>
       )}
 
+      <Commitments />
+      <Cta />
+    </>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  Articles WhatsWrong : corps HTML nettoyé, même habillage            */
+/* ------------------------------------------------------------------ */
+
+function wwMetadata(a: WwArticle, path: string): Metadata {
+  const d = a.data!;
+  const title = clamp(cleanTitle(d.title), 60);
+  const description = clamp(d.description, 155);
+  const image = d.cover?.url ?? visualsFor(path).hero;
+  return {
+    title,
+    description,
+    alternates: { canonical: path },
+    openGraph: {
+      type: "article",
+      locale: "fr_FR",
+      url: `${site.url}${path}`,
+      siteName: site.name,
+      title,
+      description,
+      images: [{ url: image, alt: d.cover?.alt ?? d.title }],
+      ...(d.createdAt ? { publishedTime: d.createdAt } : {}),
+      ...(d.lastModifiedAt ? { modifiedTime: d.lastModifiedAt } : {}),
+    },
+    twitter: { card: "summary_large_image", title, description, images: [image] },
+  };
+}
+
+function WwPage({ article, path }: { article: WwArticle; path: string }) {
+  const d = article.data!;
+  const url = `${site.url}${path}`;
+  const hero = visualsFor(path).hero;
+  const faq = d.faq?.items?.length
+    ? {
+        title: d.faq.title,
+        items: d.faq.items.map((f) => ({
+          q: plainText(f.question),
+          a: plainText(f.answer),
+        })),
+      }
+    : null;
+
+  const jsonLd: Record<string, unknown>[] = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: site.url },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Conseils",
+          item: `${site.url}/conseils`,
+        },
+        { "@type": "ListItem", position: 3, name: d.title, item: url },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: d.title,
+      name: d.title,
+      description: d.description,
+      image: d.cover?.url ?? `${site.url}${hero}`,
+      inLanguage: "fr-FR",
+      ...(d.createdAt ? { datePublished: d.createdAt } : {}),
+      ...(d.lastModifiedAt ? { dateModified: d.lastModifiedAt } : {}),
+      isPartOf: { "@type": "WebSite", name: site.name, url: site.url },
+      publisher: { "@id": `${site.url}#entreprise` },
+      mainEntityOfPage: url,
+    },
+  ];
+  if (faq) {
+    jsonLd.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faq.items.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    });
+  }
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <InnerHero
+        h1={d.title}
+        intro={d.description}
+        image={hero}
+        crumbLabel="Conseils"
+        crumbHref="/conseils"
+      />
+      <HtmlArticle html={cleanBody(d.body)} cover={d.cover} faq={faq} />
       <Commitments />
       <Cta />
     </>
