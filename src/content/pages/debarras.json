@@ -5,7 +5,7 @@
   "kind": "service",
   "parent": "/nos-services",
   "eyebrow": "Débarras & nettoyage",
-  "hero": "/images/paris-chantier.jpg",
+  "hero": "/images/chantiers/cloisons-ossature-metallique.jpg",
   "intro": [
     "Un appartement à vider avant la signature chez le notaire, un local à restituer en fin de bail, une cave saturée, un chantier à nettoyer avant livraison : à Paris, un débarras se heurte vite aux paliers étroits, aux ascenseurs inaccessibles et aux filières de déchets. RenovIntérieurs prend en charge le tri, l’évacuation et la remise au propre en un seul devis.",
     "Nous pilotons l’opération de la visite d’estimation à la remise des justificatifs : équipe formée, camion adapté aux rues parisiennes, parties communes protégées, filières de recyclage respectées. Vous gardez la main sur ce qui doit être conservé, nous nous occupons du reste."
@@ -86,19 +86,19 @@
           "t": "gallery",
           "items": [
             {
-              "src": "/images/paris-chantier.jpg",
-              "alt": "Chantier de rénovation en cours, avant le nettoyage final",
-              "caption": "Fin de chantier : évacuation des gravats et nettoyage avant la livraison"
+              "src": "/images/chantiers/cloisons-ossature-metallique.jpg",
+              "alt": "Cloisons en plaques de plâtre sur ossature métallique en cours de montage",
+              "caption": "Avant travaux : pièces vidées et évacuées pour laisser place au chantier"
             },
             {
-              "src": "/images/paris-renovation-appartement.jpg",
-              "alt": "Appartement en cours de rénovation, pose des revêtements",
-              "caption": "Après travaux : le nettoyage transforme un espace poussiéreux en logement habitable"
+              "src": "/images/chantiers/doublage-plaques-de-platre.jpg",
+              "alt": "Doublage de mur en plaques de plâtre sur rails métalliques",
+              "caption": "Pendant le chantier : chutes de plaques et emballages évacués au fil de l’eau"
             },
             {
-              "src": "/images/sejour-haussmannien.jpg",
-              "alt": "Séjour haussmannien vide, rénové, double exposition",
-              "caption": "Appartement prêt à être présenté à un acquéreur ou à un locataire"
+              "src": "/images/chantiers/dressing-entree-parquet-chevron.jpg",
+              "alt": "Dressing d’entrée toute hauteur aux façades beiges, parquet en chevron",
+              "caption": "Appartement livré propre, prêt à être présenté à un acquéreur ou à un locataire"
             }
           ]
         }

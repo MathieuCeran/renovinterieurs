@@ -33,7 +33,7 @@ export const tools: Tool[] = [
     eyebrow: "Outil gratuit",
     line1: "Estimez le budget",
     line2: "de votre rénovation",
-    image: "/images/paris-renovation-appartement.jpg",
+    image: "/images/chantiers/cuisine-noire-ilot-bois.jpg",
     keywords: [
       "estimation prix rénovation appartement",
       "prix rénovation au m2 Paris",
@@ -52,7 +52,7 @@ export const tools: Tool[] = [
     eyebrow: "Outil gratuit",
     line1: "Sortez de la",
     line2: "passoire énergétique",
-    image: "/images/dpe-1.jpg",
+    image: "/images/chantiers/isolation-exterieure-laine-de-roche.jpg",
     keywords: [
       "simulateur DPE",
       "sortir passoire énergétique",
@@ -71,7 +71,7 @@ export const tools: Tool[] = [
     eyebrow: "Outil gratuit",
     line1: "Planifiez votre",
     line2: "chantier semaine par semaine",
-    image: "/images/paris-chantier.jpg",
+    image: "/images/chantiers/cloisons-ossature-metallique.jpg",
     keywords: [
       "durée travaux rénovation appartement",
       "planning chantier rénovation",

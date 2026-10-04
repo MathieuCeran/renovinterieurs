@@ -5,7 +5,7 @@
   "kind": "zone",
   "parent": "/zones",
   "eyebrow": "Yvelines (78)",
-  "hero": "/images/salon-haussmannien-moulures.jpg",
+  "hero": "/images/chantiers/ravalement-immeuble-ancien.jpg",
   "intro": [
     "Appartements bourgeois du XVIIIe et du XIXe siècle autour du château de Versailles, villas Belle Époque de 1880 à 1920 sur les boucles de la Seine, hôtels particuliers du Vieux Marché à Saint-Germain, pavillons familiaux partout ailleurs : le bâti yvelinois se restaure plus qu’il ne se remplace. Parquets d’époque, vitraux, cheminées et boiseries sont des atouts à conserver.",
     "Dans 7 communes de l’est du département, RenovIntérieurs accompagne cette exigence : [rénovation complète](/renovation-appartement-paris) respectueuse de l’existant, mise aux normes de l’électricité et de la plomberie, [isolation compatible avec les prescriptions patrimoniales](/isolation-amelioration-energetique), dossiers ABF constitués et suivis. Un interlocuteur unique, un devis détaillé sous 48 h."
@@ -113,19 +113,19 @@
           "t": "gallery",
           "items": [
             {
-              "src": "/images/salon-haussmannien-moulures.jpg",
-              "alt": "Salon ancien restauré avec cheminée en marbre et parquet en chevron",
-              "caption": "Salon restauré : cheminée en marbre conservée, moulures reprises, parquet chevron poncé et vitrifié"
+              "src": "/images/chantiers/niches-arches-sur-mesure.jpg",
+              "alt": "Niches en arche peintes en rose avec rangements bas et cache-radiateur à lames",
+              "caption": "Séjour : niches en arche sur mesure et cache-radiateur intégré"
             },
             {
-              "src": "/images/paris-parquet.jpg",
-              "alt": "Parquet en chêne posé en point de Hongrie",
-              "caption": "Parquet chêne point de Hongrie : pose neuve dans une pièce de réception"
+              "src": "/images/chantiers/chambre-enfant-lit-cabane.jpg",
+              "alt": "Chambre d’enfant avec lit cabane en mezzanine et bureau intégré sur mesure",
+              "caption": "Chambre d’enfant : lit cabane en mezzanine et bureau sur mesure"
             },
             {
-              "src": "/images/service-sdb.jpg",
-              "alt": "Plan vasque en pierre naturelle avec robinetterie en laiton",
-              "caption": "Salle de bain : plan vasque en pierre naturelle, robinetterie laiton, joints époxy"
+              "src": "/images/chantiers/salle-de-bain-carreaux-ciment.jpg",
+              "alt": "Douche en carreaux de ciment, vasque en pierre posée sur un meuble en bois",
+              "caption": "Salle d’eau : carreaux de ciment, vasque en pierre, joints époxy"
             }
           ]
         }

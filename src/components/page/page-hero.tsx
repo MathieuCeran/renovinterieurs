@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { ArrowRight } from "@/components/ui/kit";
+import { altOf } from "@/lib/photos";
 
 /**
  * Hero des pages à gabarit dédié : titre en deux temps (sans + serif
@@ -36,7 +37,7 @@ export function PageHero({
       >
         <Image
           src={image}
-          alt=""
+          alt={altOf(image)}
           fill
           priority
           sizes="100vw"

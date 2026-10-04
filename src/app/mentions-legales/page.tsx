@@ -24,7 +24,7 @@ export default function MentionsLegales() {
         eyebrow="Informations légales"
         line1="Mentions"
         line2="légales"
-        image="/images/salon-haussmannien-moulures.jpg"
+        image="/images/chantiers/niches-arches-sur-mesure.jpg"
         height="44svh"
       />
 

@@ -6,6 +6,7 @@ import { PageHero } from "@/components/page/page-hero";
 import { Commitments } from "@/components/sections/commitments";
 import { Cta } from "@/components/sections/cta";
 import { ArrowRight } from "@/components/ui/kit";
+import { altOf } from "@/lib/photos";
 import { site } from "@/lib/site";
 import { tools } from "@/lib/tools";
 
@@ -62,7 +63,7 @@ export default function OutilsPage() {
         line1="Préparez votre projet"
         line2="avant même de nous appeler"
         intro="Budget au m², gain de classes DPE, planning de chantier : trois outils gratuits, sans inscription, fondés sur nos chiffres de terrain."
-        image="/images/nos-services-hero.jpg"
+        image="/images/chantiers/salon-bibliotheques-parquet-chevron.jpg"
         height="54svh"
         primary={{ label: "Estimer mon budget", href: tools[0].href }}
         secondary={{ label: "Demander un devis", href: "/contact-devis" }}
@@ -89,7 +90,7 @@ export default function OutilsPage() {
                   <div className="relative aspect-4/3 overflow-hidden rounded-[clamp(16px,2vw,24px)]">
                     <Image
                       src={t.image}
-                      alt=""
+                      alt={altOf(t.image)}
                       fill
                       sizes="(max-width: 1024px) 100vw, 33vw"
                       className="object-cover transition-transform duration-[1300ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-107"

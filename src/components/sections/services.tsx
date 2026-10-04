@@ -49,7 +49,7 @@ export function Services() {
                 <div className="relative aspect-4/3 overflow-hidden rounded-[clamp(16px,2vw,24px)]">
                   <Image
                     src={s.image}
-                    alt={`${s.title} — réalisation RenovIntérieurs en Île-de-France`}
+                    alt={s.alt}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover transition-transform duration-[1300ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-107"
@@ -101,7 +101,7 @@ export function Services() {
             <div className="relative min-h-64 overflow-hidden md:min-h-full">
               <Image
                 src={grosOeuvre.image}
-                alt="Enfilade de pièces pendant les travaux de gros œuvre"
+                alt={grosOeuvre.alt}
                 fill
                 sizes="(max-width: 768px) 100vw, 45vw"
                 className="object-cover transition-transform duration-[1400ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-106"

@@ -5,7 +5,7 @@
   "kind": "service",
   "parent": "/nos-services",
   "eyebrow": "Cuisine sur mesure · Paris et Île-de-France",
-  "hero": "/images/paris-cuisine-sur-mesure.jpg",
+  "hero": "/images/chantiers/cuisine-noire-ilot-bois.jpg",
   "intro": [
     "Dans un appartement parisien, la cuisine en kit tombe rarement juste : murs hors d’équerre, gaine à contourner, fenêtre basse, hotte sans conduit. Une cuisine dessinée pour la pièce absorbe ces vides et ces décalages. RenovIntérieurs propose deux voies : la conception sur plan avec notre cuisiniste partenaire, ou des façades sur mesure posées sur des caissons IKEA Metod.",
     "Dans les deux cas, nous pilotons tout ce qui entoure le meuble : plomberie, circuits électriques dédiés, ventilation, crédence, sol et peinture. Un seul devis, un interlocuteur unique, une pose de 2 à 5 jours et un compte-rendu chaque semaine jusqu’à la mise en service."
@@ -48,19 +48,19 @@
           "t": "gallery",
           "items": [
             {
-              "src": "/images/paris-cuisine-sur-mesure.jpg",
-              "alt": "Cuisine sur mesure avec façades toute hauteur et plan de travail usiné",
-              "caption": "Cuisine sur mesure : façades toute hauteur, plan de travail usiné aux cotes de la pièce."
+              "src": "/images/chantiers/cuisine-noire-ilot-bois.jpg",
+              "alt": "Cuisine ouverte noire avec îlot et plans de travail en bois, parquet en chevron",
+              "caption": "Cuisine ouverte : îlot noir, plans de travail bois et rangements hauts sur mesure."
             },
             {
-              "src": "/images/loft-cuisine-cheminee.jpg",
-              "alt": "Cuisine ouverte sur le séjour d’un loft avec cheminée et sol en béton ciré",
-              "caption": "Cuisine ouverte dans un loft : îlot, cheminée et sol en béton ciré continu."
+              "src": "/images/chantiers/cuisine-noyer-laque-blanche.jpg",
+              "alt": "Cuisine linéaire en noyer avec meubles hauts laqués blancs et spots encastrés",
+              "caption": "Cuisine linéaire en noyer : meubles hauts laqués, plan de travail usiné aux cotes de la pièce."
             },
             {
-              "src": "/images/bibliotheque-sur-mesure.webp",
-              "alt": "Bibliothèque sur mesure en bois massif avec niches et rangements fermés",
-              "caption": "Bibliothèque sur mesure en bois massif : la même menuiserie que pour nos façades de cuisine."
+              "src": "/images/chantiers/cuisine-vert-sauge.jpg",
+              "alt": "Cuisine vert sauge avec colonne réfrigérateur intégrée et crédence en marbre vert",
+              "caption": "Cuisine vert sauge : colonne réfrigérateur intégrée, crédence en marbre, façades toute hauteur."
             }
           ]
         }

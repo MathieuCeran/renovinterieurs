@@ -6,6 +6,7 @@ import { Process } from "@/components/sections/process";
 import { LeadForm } from "@/components/sections/lead-form";
 import { ArrowRight, PhoneIcon } from "@/components/ui/kit";
 import { cleanTitle, getPage, visualsFor } from "@/lib/content";
+import { altOf } from "@/lib/photos";
 import { site, zones } from "@/lib/site";
 
 const path = "/contact-devis";
@@ -86,7 +87,7 @@ export default function ContactPage() {
         <div className="relative isolate flex min-h-[max(420px,58svh)] flex-col overflow-hidden bg-ink">
           <Image
             src={hero}
-            alt=""
+            alt={altOf(hero)}
             fill
             priority
             sizes="100vw"

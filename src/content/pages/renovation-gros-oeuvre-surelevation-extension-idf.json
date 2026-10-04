@@ -5,7 +5,7 @@
   "kind": "service",
   "parent": "/nos-services",
   "eyebrow": "Gros œuvre & structure",
-  "hero": "/images/paris-chantier.jpg",
+  "hero": "/images/chantiers/extension-maconnerie-charpente.jpg",
   "intro": [
     "Ouvrir un mur porteur, ajouter un étage, agrandir une maison : ces projets exigent un architecte, un ingénieur structure et une entreprise de gros œuvre qui avancent ensemble. RenovIntérieurs vous met en relation avec ces partenaires sélectionnés en Île-de-France et pilote votre projet du premier échange à la livraison.",
     "Nous ne réalisons pas le gros œuvre nous-mêmes : nous activons les bons partenaires, pilotons les démarches (permis, syndic, Architecte des Bâtiments de France) et restons votre interlocuteur unique. Sans marge intermédiaire ni sous-traitance en cascade, vous économisez jusqu’à 15-20 % sur le total du chantier."
@@ -48,19 +48,19 @@
           "t": "gallery",
           "items": [
             {
-              "src": "/images/loft-beton-cire.jpg",
-              "alt": "Grand volume ouvert avec escalier suspendu et sol en béton ciré",
-              "caption": "Ouverture de mur porteur : un volume traversant, poutre métallique dissimulée, sol béton ciré"
+              "src": "/images/chantiers/charpente-lucarnes-surelevation.jpg",
+              "alt": "Surélévation : charpente bois et lucarnes en cours de montage sous échafaudage",
+              "caption": "Surélévation : charpente bois et lucarnes montées sous échafaudage"
             },
             {
-              "src": "/images/paris-chantier.jpg",
-              "alt": "Chantier de rénovation en cours, structure apparente",
-              "caption": "Chantier en cours : la structure est reprise avant l’intervention du second œuvre"
+              "src": "/images/chantiers/extension-maconnerie-charpente.jpg",
+              "alt": "Extension en maçonnerie de parpaings avec charpente bois en cours de pose",
+              "caption": "Extension : maçonnerie reprise et charpente posée avant l’intervention du second œuvre"
             },
             {
-              "src": "/images/loft-cuisine-cheminee.jpg",
-              "alt": "Loft avec cuisine ouverte, cheminée et sol en béton ciré",
-              "caption": "Loft : cuisine ouverte sur le séjour, cheminée conservée, finitions en béton ciré"
+              "src": "/images/chantiers/cloisons-ossature-metallique.jpg",
+              "alt": "Cloisons en plaques de plâtre sur ossature métallique en cours de montage",
+              "caption": "Redistribution : nouvelles cloisons sur ossature métallique après les travaux de structure"
             }
           ]
         }

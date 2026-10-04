@@ -1,6 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
+import { photos } from "@/lib/photos";
+
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
 /* ------------------------------------------------------------------ */
@@ -136,31 +138,17 @@ export function stripInline(v: string): string {
 /*  Visuels : photothèque locale, choisie selon le sujet               */
 /* ------------------------------------------------------------------ */
 
-const POOL = {
-  salon: "/images/sejour-haussmannien.jpg",
+/** Photos de chantiers réels : toutes les pages hors blog. */
+const POOL = Object.fromEntries(
+  Object.entries(photos).map(([k, p]) => [k, p.src]),
+) as { [K in keyof typeof photos]: string };
+
+/** Visuels d'illustration, réservés aux articles du blog. */
+const BLOG = {
   salonBis: "/images/salon-canape-courbe.jpg",
-  haussmannien: "/images/salon-haussmannien-moulures.jpg",
-  cuisine: "/images/paris-cuisine-sur-mesure.jpg",
-  sdb: "/images/paris-sdb.jpg",
-  sdbSombre: "/images/sdb-douche-italienne.webp",
-  sdbDetail: "/images/service-sdb.jpg",
-  betonCire: "/images/loft-cuisine-cheminee.jpg",
-  loft: "/images/loft-beton-cire.jpg",
-  chantier: "/images/paris-chantier.jpg",
-  parquet: "/images/paris-parquet.jpg",
-  pose: "/images/paris-renovation-appartement.jpg",
-  equipe: "/images/paris-pourquoi-specialiste.jpg",
-  artisan: "/images/savoir-faire-1.jpg",
-  detail: "/images/why-2.jpg",
-  isolation: "/images/dpe-1.jpg",
-  depannage: "/images/nos-services-depannage.jpg",
   menuiserie: "/images/service-renovation.jpg",
-  biblio: "/images/bibliotheque-sur-mesure.webp",
   dressing: "/images/dressing-sur-mesure.webp",
-  parisToits: "/images/paris-zones.jpg",
-  balcon: "/images/balcon-haussmannien-paris.jpg",
-  ville: "/images/ville-hero.jpg",
-  accueil: "/images/nos-services-hero.jpg",
+  biblio: "/images/bibliotheque-sur-mesure.webp",
 } as const;
 
 type Visuals = { hero: string; band: string[] };
@@ -170,46 +158,46 @@ export function visualsFor(slug: string): Visuals {
   const s = slug.toLowerCase();
   const pick = (hero: string, ...band: string[]) => ({ hero, band });
 
+  if (s.startsWith("/conseils"))
+    return pick(BLOG.salonBis, BLOG.menuiserie, BLOG.dressing, BLOG.biblio);
   if (s.includes("beton-cire"))
-    return pick(POOL.loft, POOL.betonCire, POOL.parquet, POOL.detail);
+    return pick(POOL.sdbTravertin, POOL.wc, POOL.sdbNiches, POOL.comptoir);
   if (s.includes("cuisine"))
-    return pick(POOL.cuisine, POOL.biblio, POOL.parquet, POOL.artisan);
+    return pick(POOL.cuisineNoireIlot, POOL.cuisineNoyer, POOL.cuisineSauge, POOL.cuisineBleue);
   if (s.includes("salle-de-bain") || s.includes("joints-epoxy"))
-    return pick(POOL.sdb, POOL.sdbSombre, POOL.sdbDetail, POOL.detail);
+    return pick(POOL.sdbTravertin, POOL.sdbNiches, POOL.sdbDoubleVasque, POOL.wc);
   if (s.includes("isolation") || s.includes("energetique"))
-    return pick(POOL.isolation, POOL.haussmannien, POOL.chantier, POOL.artisan);
+    return pick(POOL.isolationExterieure, POOL.doublage, POOL.cloisons, POOL.fauxPlafond);
   if (s.includes("depannage"))
-    return pick(POOL.depannage, POOL.chantier, POOL.artisan, POOL.detail);
+    return pick(POOL.sdbDoubleVasque, POOL.wc, POOL.placoHydro, POOL.sdbVerriere);
   if (s.includes("debarras"))
-    return pick(POOL.chantier, POOL.pose, POOL.artisan, POOL.detail);
+    return pick(POOL.cloisons, POOL.doublage, POOL.boiseriesPose, POOL.dressing);
   if (s.includes("gros-oeuvre") || s.includes("surelevation"))
-    return pick(POOL.loft, POOL.chantier, POOL.haussmannien, POOL.pose);
+    return pick(POOL.extensionCharpente, POOL.charpenteLucarnes, POOL.cloisons, POOL.ossatureBois);
   if (s.includes("realisations"))
-    return pick(POOL.salon, POOL.cuisine, POOL.sdb, POOL.parquet);
+    return pick(POOL.salonBibliotheques, POOL.cuisineNoireIlot, POOL.sdbTravertin, POOL.bibliothequeArche);
   if (s.includes("nos-services"))
-    return pick(POOL.accueil, POOL.cuisine, POOL.sdb, POOL.loft);
+    return pick(POOL.salonBibliotheques, POOL.cuisineNoireIlot, POOL.sdbTravertin, POOL.fauxPlafond);
   if (s.includes("prix"))
-    return pick(POOL.pose, POOL.cuisine, POOL.sdb, POOL.parquet);
+    return pick(POOL.cuisineNoireIlot, POOL.sdbDoubleVasque, POOL.dressing, POOL.teteDeLit);
   if (s.includes("methode"))
-    return pick(POOL.equipe, POOL.chantier, POOL.artisan, POOL.detail);
+    return pick(POOL.fauxPlafondPose, POOL.cloisons, POOL.menuiserieChene, POOL.cacheRadiateur);
   if (s.includes("a-propos"))
-    return pick(POOL.equipe, POOL.artisan, POOL.pose, POOL.detail);
+    return pick(POOL.fauxPlafondPose, POOL.menuiserieChene, POOL.bibliothequeArche, POOL.cacheRadiateur);
   if (s.includes("contact") || s.includes("guide"))
-    return pick(POOL.salonBis, POOL.haussmannien, POOL.parquet, POOL.cuisine);
+    return pick(POOL.teteDeLit, POOL.niches, POOL.dressing, POOL.cuisineNoyer);
   if (s.includes("faq"))
-    return pick(POOL.haussmannien, POOL.salon, POOL.parquet, POOL.artisan);
-  if (s.includes("conseils"))
-    return pick(POOL.salonBis, POOL.menuiserie, POOL.dressing, POOL.biblio);
+    return pick(POOL.niches, POOL.salonBibliotheques, POOL.dressing, POOL.menuiserieChene);
   if (s === "/renovation-appartement-paris")
-    return pick(POOL.haussmannien, POOL.parisToits, POOL.parquet, POOL.cuisine);
+    return pick(POOL.salonBibliotheques, POOL.bibliothequeArche, POOL.dressing, POOL.cuisineNoireIlot);
   if (s.includes("hauts-de-seine") || s.includes("val-de-marne"))
-    return pick(POOL.salonBis, POOL.balcon, POOL.pose, POOL.cuisine);
+    return pick(POOL.teteDeLit, POOL.facadeToiture, POOL.cuisineBoisFonce, POOL.sdbVerriere);
   if (s.includes("yvelines"))
-    return pick(POOL.salon, POOL.ville, POOL.parquet, POOL.artisan);
+    return pick(POOL.facadeImmeuble, POOL.bibliothequeTv, POOL.chambreEnfant, POOL.sdbCarreauxCiment);
   if (s === "/zones")
-    return pick(POOL.parisToits, POOL.balcon, POOL.ville, POOL.salon);
+    return pick(POOL.facadeImmeuble, POOL.facadeToiture, POOL.facadeEchafaudage, POOL.salonBibliotheques);
 
-  return pick(POOL.accueil, POOL.salon, POOL.parquet, POOL.cuisine);
+  return pick(POOL.salonBibliotheques, POOL.cuisineNoireIlot, POOL.dressing, POOL.sdbTravertin);
 }
 
 /* ------------------------------------------------------------------ */

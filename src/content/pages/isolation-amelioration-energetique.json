@@ -5,7 +5,7 @@
   "kind": "service",
   "parent": "/nos-services",
   "eyebrow": "Isolation & performance énergétique",
-  "hero": "/images/dpe-1.jpg",
+  "hero": "/images/chantiers/isolation-exterieure-laine-de-roche.jpg",
   "intro": [
     "Parois froides, factures de chauffage qui grimpent, étiquette F ou G qui bloque la location ou la vente : les logements franciliens construits avant 1975 cumulent souvent les trois. RenovIntérieurs traite la passoire énergétique de bout en bout, de l’audit DPE au nouveau diagnostic, avec un objectif clair : gagner 2 à 3 classes en une seule opération.",
     "Sur ce type de chantier, nous pilotons l’audit, l’isolation des murs et des combles, la VMC double flux, le remplacement du chauffage et le dossier d’aides MaPrimeRénov’ et CEE. Un interlocuteur unique, un devis détaillé sous 48 h, et vous savez toujours où en est votre chantier."
@@ -55,18 +55,18 @@
           "t": "gallery",
           "items": [
             {
-              "src": "/images/dpe-1.jpg",
-              "alt": "Chantier d’isolation et d’amélioration énergétique en cours",
-              "caption": "Isolation par l’intérieur : doublage des murs froids et traitement des ponts thermiques"
+              "src": "/images/chantiers/isolation-exterieure-laine-de-roche.jpg",
+              "alt": "Isolation des murs en panneaux de laine de roche avant pose du bardage",
+              "caption": "Isolation des murs : panneaux de laine de roche posés en continu pour supprimer les ponts thermiques"
             },
             {
-              "src": "/images/paris-renovation-appartement.jpg",
-              "alt": "Appartement en cours de rénovation, pose des nouveaux revêtements",
-              "caption": "Rénovation combinée : l’isolation est posée avant les finitions, rien n’est déposé deux fois"
+              "src": "/images/chantiers/doublage-plaques-de-platre.jpg",
+              "alt": "Doublage de mur en plaques de plâtre sur rails métalliques",
+              "caption": "Isolation par l’intérieur : doublage des murs froids sur ossature métallique"
             },
             {
-              "src": "/images/savoir-faire-1.jpg",
-              "alt": "Artisan réalisant les finitions d’un chantier de rénovation",
+              "src": "/images/chantiers/cloisons-ossature-metallique.jpg",
+              "alt": "Cloisons en plaques de plâtre sur ossature métallique en cours de montage",
               "caption": "Après le doublage : plâtrerie et peinture reprises dans le même chantier"
             }
           ]

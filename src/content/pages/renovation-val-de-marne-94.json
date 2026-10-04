@@ -5,7 +5,7 @@
   "kind": "zone",
   "parent": "/zones",
   "eyebrow": "Val-de-Marne (94)",
-  "hero": "/images/paris-zones.jpg",
+  "hero": "/images/chantiers/ravalement-toiture-ardoise.jpg",
   "intro": [
     "Le Val-de-Marne change de visage en quelques kilomètres. Au nord, Vincennes, Saint-Mandé et Charenton prolongent le Paris haussmannien de 1880-1900. Le long de la Marne, Nogent, Saint-Maur et Joinville alignent maisons Belle Époque et immeubles 1930. Au sud, Cachan et Arcueil mêlent immeubles 1920-1970, résidences neuves et pavillons. À chaque bâti, sa méthode de rénovation.",
     "RenovIntérieurs pilote le second œuvre dans 10 communes du département : [rénovation d’appartement](/renovation-appartement-paris) haussmannien ou récent, [cuisine sur mesure](/cuisine-sur-mesure-paris), [salle de bain](/salle-de-bain-paris) en béton ciré, sortie de passoire énergétique. Visite technique sous 5 jours, devis détaillé sous 48 h, compte-rendu chaque semaine."
@@ -128,19 +128,19 @@
           "t": "gallery",
           "items": [
             {
-              "src": "/images/sdb-douche-italienne.webp",
-              "alt": "Salle de bain sombre avec douche à l’italienne et baignoire îlot",
-              "caption": "Salle de bain : douche à l’italienne sur natte d’étanchéité, baignoire îlot, joints époxy"
+              "src": "/images/chantiers/salle-de-bain-travertin-douche-italienne.jpg",
+              "alt": "Salle de bain en travertin, douche à l’italienne et robinetterie cuivrée",
+              "caption": "Salle de bain : douche à l’italienne sur natte d’étanchéité, travertin et joints époxy"
             },
             {
-              "src": "/images/why-2.jpg",
-              "alt": "Détail d’un parquet en chevron et d’un habillage en tasseaux de bois",
-              "caption": "Détail de finition : parquet chevron et claustra en tasseaux de bois"
+              "src": "/images/chantiers/cache-radiateur-banc-sur-mesure.jpg",
+              "alt": "Cache-radiateur sur mesure arrondi avec dessus en chêne et banc coffre",
+              "caption": "Détail de finition : cache-radiateur arrondi et dessus en chêne"
             },
             {
-              "src": "/images/bibliotheque-sur-mesure.webp",
-              "alt": "Bibliothèque sur mesure en bois massif avec niches et rangements fermés",
-              "caption": "Bibliothèque sur mesure en bois massif : niches ouvertes et rangements fermés"
+              "src": "/images/chantiers/bibliotheque-meuble-tv-chene.jpg",
+              "alt": "Bibliothèque et meuble TV sur mesure en chêne avec rangements bas fermés",
+              "caption": "Bibliothèque sur mesure en chêne : niches ouvertes et rangements fermés"
             }
           ]
         }

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Blocks, Inline, type Tone } from "@/components/page/blocks";
 import { anchorId } from "@/components/page/inner-hero";
 import { splitHeading, type Block, type Section } from "@/lib/content";
+import { altOf } from "@/lib/photos";
 
 /* ------------------------------------------------------------------ */
 /*  Titre de section : deux lignes, la seconde en italique serif       */
@@ -214,7 +215,9 @@ export function Article({
                 </div>
               </section>
             )}
-            {i === bandAfter && <Band src={images[0]} alt={alt} />}
+            {i === bandAfter && (
+              <Band src={images[0]} alt={altOf(images[0]) || alt} />
+            )}
           </div>
         );
       })}

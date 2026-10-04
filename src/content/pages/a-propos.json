@@ -5,7 +5,7 @@
   "kind": "info",
   "parent": "/",
   "eyebrow": "Qui sommes-nous",
-  "hero": "/images/paris-pourquoi-specialiste.jpg",
+  "hero": "/images/chantiers/faux-plafond-lumineux-pose.jpg",
   "intro": [
     "Rénover à Paris, c’est souvent cinq artisans en direct, cinq plannings désynchronisés et personne pour répondre quand quelque chose ne va pas. RenovIntérieurs, marque de Archi Renov, a été créée pour proposer autre chose : un interlocuteur unique qui pilote la technique, le planning et le budget de votre rénovation intérieure.",
     "Second œuvre tous corps d’état, cuisine et salle de bain sur mesure, isolation, dépannage, débarras : nos artisans qualifiés sont sélectionnés par spécialité, et vous savez toujours où en est votre chantier."
@@ -102,19 +102,19 @@
           "t": "gallery",
           "items": [
             {
-              "src": "/images/paris-pourquoi-specialiste.jpg",
-              "alt": "Conducteur de travaux échangeant avec les artisans sur le chantier",
+              "src": "/images/chantiers/faux-plafond-lumineux-pose.jpg",
+              "alt": "Artisans en finition d’un faux plafond circulaire à éclairage indirect",
               "caption": "Pilotage : un conducteur de travaux, des artisans par spécialité, un compte-rendu hebdomadaire"
             },
             {
-              "src": "/images/savoir-faire-1.jpg",
-              "alt": "Artisan réalisant les finitions d’un chantier de rénovation",
-              "caption": "Finitions : le soin apporté aux derniers détails avant la réception"
+              "src": "/images/chantiers/menuiserie-chene-placards-pose.jpg",
+              "alt": "Pose de placards et niches en chêne sur mesure en cours de chantier",
+              "caption": "Menuiserie : placards et niches en chêne fabriqués et posés aux cotes de la pièce"
             },
             {
-              "src": "/images/why-2.jpg",
-              "alt": "Détail de parquet chevron et de tasseaux bois",
-              "caption": "Parquet chevron et tasseaux bois : des matériaux choisis pour durer"
+              "src": "/images/chantiers/bibliotheque-arche-sur-mesure.jpg",
+              "alt": "Bibliothèque sur mesure en arche, étagères laquées terracotta et éclairage intégré",
+              "caption": "Finitions : laque, éclairage intégré, le soin apporté aux derniers détails avant la réception"
             }
           ]
         }

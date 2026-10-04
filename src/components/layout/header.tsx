@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { ArrowRight, PhoneIcon } from "@/components/ui/kit";
 import { nav, site } from "@/lib/site";
+import { photos } from "@/lib/photos";
 
 /**
  * Deux états : au-dessus du visuel du héros (voile sombre, texte clair)
@@ -199,8 +200,8 @@ export function Header() {
                 className="group relative overflow-hidden rounded-2xl"
               >
                 <Image
-                  src="/images/paris-cuisine-sur-mesure.jpg"
-                  alt="Cuisine sur-mesure réalisée à Paris"
+                  src={photos.cuisineNoireIlot.src}
+                  alt={photos.cuisineNoireIlot.alt}
                   width={640}
                   height={480}
                   className="h-full w-full object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-105"

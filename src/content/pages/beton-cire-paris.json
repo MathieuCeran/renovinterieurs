@@ -5,7 +5,7 @@
   "kind": "service",
   "parent": "/nos-services",
   "eyebrow": "Béton ciré · Paris et Île-de-France",
-  "hero": "/images/loft-beton-cire.jpg",
+  "hero": "/images/chantiers/salle-de-bain-travertin-douche-italienne.jpg",
   "intro": [
     "Le béton ciré est ce revêtement continu, sans joint ni ligne, qui donne à un séjour ou à une douche l’allure d’un volume taillé dans la masse. Sur 2 à 4 mm d’épaisseur, il se pose sur un carrelage existant sans dépose ni recoupe de porte. RenovIntérieurs l’applique à Paris sur les sols, les murs, les douches à l’italienne, les plans de travail et les escaliers.",
     "Nous pilotons le chantier de bout en bout : diagnostic du support, ragréage si nécessaire, primaire, deux à trois couches à la spatule, ponçage, vernis polyuréthane bi-composant. Un interlocuteur unique, des échantillons pour choisir la teinte chez vous, un devis détaillé sous 48 h."
@@ -48,19 +48,19 @@
           "t": "gallery",
           "items": [
             {
-              "src": "/images/loft-beton-cire.jpg",
-              "alt": "Grand volume ouvert avec escalier suspendu et sol en béton ciré",
-              "caption": "Grand volume ouvert, escalier suspendu : sol en béton ciré d’un seul tenant."
+              "src": "/images/chantiers/salle-de-bain-travertin-douche-italienne.jpg",
+              "alt": "Salle de bain en travertin, douche à l’italienne et robinetterie cuivrée",
+              "caption": "Salle de bain minérale : douche à l’italienne de plain-pied, surfaces continues sans seuil."
             },
             {
-              "src": "/images/loft-cuisine-cheminee.jpg",
-              "alt": "Loft avec cuisine ouverte, cheminée et sol en béton ciré",
-              "caption": "Loft : cuisine ouverte, cheminée, sol en béton ciré continu jusqu’au séjour."
+              "src": "/images/chantiers/wc-suspendu-travertin-noyer.jpg",
+              "alt": "WC suspendu avec soubassement en travertin, lave-mains et rangement en noyer",
+              "caption": "WC suspendu : soubassement minéral et mobilier noyer, une finition sobre et facile d’entretien."
             },
             {
-              "src": "/images/paris-chantier.jpg",
-              "alt": "Chantier de rénovation en cours dans un appartement parisien",
-              "caption": "Chantier en cours : la préparation du support fait la qualité de la pose."
+              "src": "/images/chantiers/salle-de-bain-niches-eclairees.jpg",
+              "alt": "Salle de bain aux murs arrondis, niches éclairées par LED au-dessus de la baignoire",
+              "caption": "Murs arrondis et niches lumineuses : la préparation du support fait la qualité de la finition."
             }
           ]
         }

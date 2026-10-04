@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { Pill } from "@/components/ui/kit";
+import { photos } from "@/lib/photos";
 
 const figures = [
   { value: "48 h", label: "Devis détaillé" },
@@ -112,8 +113,8 @@ export function Statement() {
             <div className="mt-14 space-y-4 lg:mt-16">
               <figure className="reveal reveal-zoom relative aspect-4/3 overflow-hidden rounded-[clamp(16px,2vw,24px)] sm:aspect-16/9">
                 <Image
-                  src="/images/paris-renovation-appartement.jpg"
-                  alt="Nos équipes posant un parquet dans un appartement haussmannien"
+                  src={photos.fauxPlafond.src}
+                  alt={photos.fauxPlafond.alt}
                   fill
                   sizes="(max-width: 1024px) 100vw, 62vw"
                   className="object-cover"

@@ -2,13 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { ArrowRight } from "@/components/ui/kit";
+import { photos } from "@/lib/photos";
 import { zones } from "@/lib/site";
 
 const thumbs = [
-  "/images/paris-zones.jpg",
-  "/images/balcon-haussmannien-paris.jpg",
-  "/images/ville-hero.jpg",
-  "/images/salon-haussmannien-moulures.jpg",
+  photos.facadeImmeuble,
+  photos.facadeToiture,
+  photos.facadeEchafaudage,
+  photos.teteDeLit,
 ];
 
 export function Zones() {
@@ -51,8 +52,8 @@ export function Zones() {
                 <span className="flex items-center gap-4">
                   <span className="relative hidden h-14 w-0 shrink-0 overflow-hidden rounded-xl transition-all duration-600 ease-[cubic-bezier(.16,1,.3,1)] group-hover:w-20 md:block">
                     <Image
-                      src={thumbs[i % thumbs.length]}
-                      alt=""
+                      src={thumbs[i % thumbs.length].src}
+                      alt={thumbs[i % thumbs.length].alt}
                       fill
                       sizes="80px"
                       className="object-cover"

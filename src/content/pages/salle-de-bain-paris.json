@@ -5,7 +5,7 @@
   "kind": "service",
   "parent": "/nos-services",
   "eyebrow": "Salle de bain · Paris et Île-de-France",
-  "hero": "/images/sdb-douche-italienne.webp",
+  "hero": "/images/chantiers/salle-de-bain-travertin-douche-italienne.jpg",
   "intro": [
     "Une salle de bain refaite devrait tenir quinze ans. Beaucoup vieillissent en trois : joints noircis, fissure en pied de mur, infiltration sous le receveur. La cause est presque toujours la même, deux raccourcis pris sur les joints et sur l’étanchéité sous carrelage. RenovIntérieurs rénove les salles de bain parisiennes en traitant d’abord ces deux postes.",
     "Nous pilotons la pièce complète : dépose, plomberie cachée, électricité aux volumes de sécurité, ventilation, natte d’étanchéité, carrelage ou béton ciré, joints époxy, meuble et robinetterie. Un interlocuteur unique, un devis détaillé sous 48 h, un compte-rendu hebdomadaire."
@@ -48,19 +48,19 @@
           "t": "gallery",
           "items": [
             {
-              "src": "/images/sdb-douche-italienne.webp",
-              "alt": "Salle de bain sombre haut de gamme avec douche à l’italienne et baignoire îlot",
-              "caption": "Salle de bain sombre : douche à l’italienne, baignoire îlot, joints époxy assortis au carrelage."
+              "src": "/images/chantiers/salle-de-bain-travertin-douche-italienne.jpg",
+              "alt": "Salle de bain en travertin, douche à l’italienne et robinetterie cuivrée",
+              "caption": "Salle de bain en travertin : douche à l’italienne, robinetterie cuivrée, joints époxy assortis."
             },
             {
-              "src": "/images/paris-sdb.jpg",
-              "alt": "Salle de bain claire rénovée avec carrelage grand format",
-              "caption": "Salle de bain claire : carrelage grand format, joints fins, lumière préservée."
+              "src": "/images/chantiers/salle-de-bain-niches-eclairees.jpg",
+              "alt": "Salle de bain aux murs arrondis, niches éclairées par LED au-dessus de la baignoire",
+              "caption": "Murs arrondis et niches éclairées : un carrelage en relief posé au-dessus de la baignoire."
             },
             {
-              "src": "/images/service-sdb.jpg",
-              "alt": "Plan vasque en pierre naturelle avec robinetterie laiton",
-              "caption": "Plan vasque en pierre naturelle et robinetterie laiton : la pierre est hydrofugée avant les joints."
+              "src": "/images/chantiers/salle-de-bain-double-vasque-marbre.jpg",
+              "alt": "Salle de bain à double vasque, meuble suspendu en bois et murs effet marbre",
+              "caption": "Double vasque sur meuble suspendu : la pierre est hydrofugée avant les joints."
             }
           ]
         }

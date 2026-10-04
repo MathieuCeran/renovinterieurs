@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { ArrowRight } from "@/components/ui/kit";
 import { splitHeading } from "@/lib/content";
+import { altOf } from "@/lib/photos";
 
 export function InnerHero({
   h1,
@@ -24,7 +25,7 @@ export function InnerHero({
       <div className="relative isolate flex min-h-[max(460px,70svh)] flex-col overflow-hidden bg-ink">
         <Image
           src={image}
-          alt=""
+          alt={altOf(image)}
           fill
           priority
           sizes="100vw"

@@ -23,7 +23,7 @@ export default function Confidentialite() {
         eyebrow="Vos données"
         line1="Politique de"
         line2="confidentialité"
-        image="/images/salon-canape-courbe.jpg"
+        image="/images/chantiers/chambre-tete-de-lit-noyer.jpg"
         height="44svh"
       />
 
