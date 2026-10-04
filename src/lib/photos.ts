@@ -7,6 +7,56 @@
 const DIR = "/images/chantiers";
 
 export const photos = {
+  // Appartement haussmannien rénové (reportage photo)
+  sejourHaussmannien: {
+    src: `${DIR}/sejour-haussmannien-canape-courbe.jpg`,
+    alt: "Séjour haussmannien rénové, canapé courbe, moulures et parquet en chevron ouvert sur la salle à manger",
+  },
+  salonHaussmannien: {
+    src: `${DIR}/salon-haussmannien-moulures.jpg`,
+    alt: "Salon haussmannien aux moulures restaurées, canapé courbe et miroir de cheminée",
+  },
+  salleAManger: {
+    src: `${DIR}/salle-a-manger-haussmannienne.jpg`,
+    alt: "Salle à manger haussmannienne lumineuse, suspension en albâtre et grandes fenêtres",
+  },
+  tableSalleAManger: {
+    src: `${DIR}/table-salle-a-manger-suspension-albatre.jpg`,
+    alt: "Table de salle à manger dressée sous une suspension en albâtre, murs à moulures",
+  },
+  chambreHaussmannienne: {
+    src: `${DIR}/chambre-haussmannienne-lustre.jpg`,
+    alt: "Chambre haussmannienne avec lustre, armoire en bois et parquet en chevron",
+  },
+  suiteParentale: {
+    src: `${DIR}/suite-parentale-armoire-bois.jpg`,
+    alt: "Suite parentale avec armoire en bois toute hauteur et salle de bain ouverte en pierre",
+  },
+  chambreMarbre: {
+    src: `${DIR}/chambre-suite-marbre-moulures.jpg`,
+    alt: "Chambre ouverte sur une salle de bain en marbre, moulures et miroir ancien conservés",
+  },
+  cuisineIntegree: {
+    src: `${DIR}/cuisine-integree-parquet-versailles.jpg`,
+    alt: "Cuisine intégrée aux façades bois, coin repas avec banquette ronde et parquet Versailles",
+  },
+  entreeCuisine: {
+    src: `${DIR}/entree-cuisine-banquette-ronde.jpg`,
+    alt: "Entrée ouverte sur la cuisine, banquette ronde et appliques murales en laiton",
+  },
+  sdbBaignoireMarbre: {
+    src: `${DIR}/salle-de-bain-baignoire-ilot-marbre-noir.jpg`,
+    alt: "Salle de bain avec baignoire îlot cuivrée, marbre noir veiné et cheminée en marbre",
+  },
+  sdbBaignoireGranit: {
+    src: `${DIR}/salle-de-bain-baignoire-ilot-granit.jpg`,
+    alt: "Baignoire îlot cuivrée et vasque taillée dans la pierre, murs en granit",
+  },
+  salleDeauMarbre: {
+    src: `${DIR}/salle-d-eau-marbre-gris.jpg`,
+    alt: "Salle d’eau en marbre gris avec niche et robinetterie encastrée noire",
+  },
+
   // Cuisines
   cuisineNoireIlot: {
     src: `${DIR}/cuisine-noire-ilot-bois.jpg`,
@@ -71,8 +121,8 @@ export const photos = {
     alt: "Douche en carreaux de ciment, vasque en pierre posée sur un meuble en bois",
   },
   wc: {
-    src: `${DIR}/wc-suspendu-travertin-noyer.jpg`,
-    alt: "WC suspendu avec soubassement en travertin, lave-mains et rangement en noyer",
+    src: `${DIR}/wc-suspendu-travertin.jpg`,
+    alt: "WC suspendu avec plaque de commande encastrée et murs habillés de travertin",
   },
 
   // Menuiserie et agencement sur mesure

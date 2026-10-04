@@ -33,6 +33,18 @@ export const metadata: Metadata = {
 };
 
 const works: Work[] = [
+  { ...photos.sejourHaussmannien, cat: "Séjour" },
+  { ...photos.sdbBaignoireMarbre, cat: "Salle de bain" },
+  { ...photos.cuisineIntegree, cat: "Cuisine" },
+  { ...photos.salonHaussmannien, cat: "Séjour" },
+  { ...photos.chambreHaussmannienne, cat: "Chambre" },
+  { ...photos.sdbBaignoireGranit, cat: "Salle de bain" },
+  { ...photos.salleAManger, cat: "Séjour" },
+  { ...photos.suiteParentale, cat: "Chambre" },
+  { ...photos.entreeCuisine, cat: "Cuisine" },
+  { ...photos.salleDeauMarbre, cat: "Salle de bain" },
+  { ...photos.tableSalleAManger, cat: "Séjour" },
+  { ...photos.chambreMarbre, cat: "Chambre" },
   { ...photos.cuisineNoireIlot, cat: "Cuisine" },
   { ...photos.sdbTravertin, cat: "Salle de bain" },
   { ...photos.salonBibliotheques, cat: "Séjour" },

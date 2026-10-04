@@ -5,7 +5,7 @@
   "kind": "zone",
   "parent": "/zones",
   "eyebrow": "Hauts-de-Seine (92)",
-  "hero": "/images/chantiers/chambre-tete-de-lit-noyer.jpg",
+  "hero": "/images/chantiers/chambre-haussmannienne-lustre.jpg",
   "intro": [
     "Haussmannien à Neuilly et Levallois, Art Déco à Boulogne et Puteaux, tours de La Défense, résidences livrées après 2010 au Trapèze ou à Issy, maisons de Sceaux et d’Antony : les Hauts-de-Seine réunissent toutes les époques de construction d’Île-de-France. Chaque bâti impose ses règles, du plafond à 3 m aux créneaux d’ascenseur de service.",
     "RenovIntérieurs pilote vos travaux de second œuvre dans 18 communes du 92 : [rénovation complète d’appartement](/renovation-appartement-paris), [cuisine sur mesure](/cuisine-sur-mesure-paris), [salle de bain étanche](/salle-de-bain-paris), béton ciré, isolation. Un seul interlocuteur du premier échange à la livraison, une visite technique sous 5 jours, un devis détaillé sous 48 h."
@@ -168,9 +168,9 @@
           "t": "gallery",
           "items": [
             {
-              "src": "/images/chantiers/chambre-tete-de-lit-noyer.jpg",
-              "alt": "Chambre avec tête de lit en noyer, panneaux encadrés et appliques murales",
-              "caption": "Chambre : tête de lit en noyer, panneaux encadrés et appliques intégrées"
+              "src": "/images/chantiers/chambre-haussmannienne-lustre.jpg",
+              "alt": "Chambre haussmannienne avec lustre, armoire en bois et parquet en chevron",
+              "caption": "Chambre : lustre conservé, armoire en bois sur mesure, parquet en chevron repris"
             },
             {
               "src": "/images/chantiers/cuisine-bois-fonce-parquet-chevron.jpg",

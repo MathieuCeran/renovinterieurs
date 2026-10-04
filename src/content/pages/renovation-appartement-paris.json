@@ -5,7 +5,7 @@
   "kind": "service",
   "parent": "/nos-services",
   "eyebrow": "Rénovation d’appartement · Paris 75",
-  "hero": "/images/chantiers/salon-bibliotheques-parquet-chevron.jpg",
+  "hero": "/images/chantiers/salon-haussmannien-moulures.jpg",
   "intro": [
     "Un appartement parisien ne se rénove pas comme un pavillon. Copropriété stricte, palier étroit, ascenseur d’époque, moulures à préserver, parfois avis de l’ABF : chaque chantier commence par une lecture du bâti et du règlement de l’immeuble. RenovIntérieurs intervient dans les 20 arrondissements, sur le haussmannien comme sur les résidences récentes, avec la même exigence de finition.",
     "Nous pilotons l’ensemble du second œuvre : démolition légère, plomberie, électricité, plâtrerie, peinture, sols, menuiserie, cuisine et salle de bain. Un interlocuteur unique, une visite technique sous 5 jours, un devis détaillé sous 48 h et un compte-rendu chaque semaine. Vous savez toujours où en est votre chantier."
@@ -87,9 +87,9 @@
           "t": "gallery",
           "items": [
             {
-              "src": "/images/chantiers/salon-bibliotheques-parquet-chevron.jpg",
-              "alt": "Salon avec bibliothèques rétroéclairées, comptoir arrondi et parquet en chevron",
-              "caption": "Séjour réaménagé : bibliothèques rétroéclairées, parquet en chevron et éclairage repensé."
+              "src": "/images/chantiers/salon-haussmannien-moulures.jpg",
+              "alt": "Salon haussmannien aux moulures restaurées, canapé courbe et miroir de cheminée",
+              "caption": "Salon haussmannien : moulures restaurées, parquet en chevron repris, éclairage repensé."
             },
             {
               "src": "/images/chantiers/bibliotheque-arche-sur-mesure.jpg",
@@ -97,9 +97,9 @@
               "caption": "Bibliothèque sur mesure en arche : menuiserie laquée et éclairage intégré."
             },
             {
-              "src": "/images/chantiers/chambre-tete-de-lit-noyer.jpg",
-              "alt": "Chambre avec tête de lit en noyer, panneaux encadrés et appliques murales",
-              "caption": "Chambre : tête de lit en noyer et appliques murales, finitions sobres."
+              "src": "/images/chantiers/chambre-haussmannienne-lustre.jpg",
+              "alt": "Chambre haussmannienne avec lustre, armoire en bois et parquet en chevron",
+              "caption": "Chambre : lustre, armoire en bois sur mesure et parquet en chevron poncé."
             }
           ]
         }

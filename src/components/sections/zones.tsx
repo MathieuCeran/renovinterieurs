@@ -9,7 +9,7 @@ const thumbs = [
   photos.facadeImmeuble,
   photos.facadeToiture,
   photos.facadeEchafaudage,
-  photos.teteDeLit,
+  photos.chambreHaussmannienne,
 ];
 
 export function Zones() {

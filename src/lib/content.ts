@@ -161,43 +161,43 @@ export function visualsFor(slug: string): Visuals {
   if (s.startsWith("/conseils"))
     return pick(BLOG.salonBis, BLOG.menuiserie, BLOG.dressing, BLOG.biblio);
   if (s.includes("beton-cire"))
-    return pick(POOL.sdbTravertin, POOL.wc, POOL.sdbNiches, POOL.comptoir);
+    return pick(POOL.sdbTravertin, POOL.wc, POOL.sdbBaignoireGranit, POOL.chambreMarbre);
   if (s.includes("cuisine"))
-    return pick(POOL.cuisineNoireIlot, POOL.cuisineNoyer, POOL.cuisineSauge, POOL.cuisineBleue);
+    return pick(POOL.cuisineIntegree, POOL.entreeCuisine, POOL.cuisineNoireIlot, POOL.cuisineSauge);
   if (s.includes("salle-de-bain") || s.includes("joints-epoxy"))
-    return pick(POOL.sdbTravertin, POOL.sdbNiches, POOL.sdbDoubleVasque, POOL.wc);
+    return pick(POOL.sdbTravertin, POOL.sdbBaignoireGranit, POOL.salleDeauMarbre, POOL.wc);
   if (s.includes("isolation") || s.includes("energetique"))
     return pick(POOL.isolationExterieure, POOL.doublage, POOL.cloisons, POOL.fauxPlafond);
   if (s.includes("depannage"))
-    return pick(POOL.sdbDoubleVasque, POOL.wc, POOL.placoHydro, POOL.sdbVerriere);
+    return pick(POOL.salleDeauMarbre, POOL.wc, POOL.placoHydro, POOL.sdbBaignoireMarbre);
   if (s.includes("debarras"))
     return pick(POOL.cloisons, POOL.doublage, POOL.boiseriesPose, POOL.dressing);
   if (s.includes("gros-oeuvre") || s.includes("surelevation"))
     return pick(POOL.extensionCharpente, POOL.charpenteLucarnes, POOL.cloisons, POOL.ossatureBois);
   if (s.includes("realisations"))
-    return pick(POOL.salonBibliotheques, POOL.cuisineNoireIlot, POOL.sdbTravertin, POOL.bibliothequeArche);
+    return pick(POOL.salonHaussmannien, POOL.cuisineNoireIlot, POOL.sdbTravertin, POOL.bibliothequeArche);
   if (s.includes("nos-services"))
-    return pick(POOL.salonBibliotheques, POOL.cuisineNoireIlot, POOL.sdbTravertin, POOL.fauxPlafond);
+    return pick(POOL.sejourHaussmannien, POOL.cuisineIntegree, POOL.sdbBaignoireMarbre, POOL.fauxPlafond);
   if (s.includes("prix"))
-    return pick(POOL.cuisineNoireIlot, POOL.sdbDoubleVasque, POOL.dressing, POOL.teteDeLit);
+    return pick(POOL.salleAManger, POOL.salleDeauMarbre, POOL.cuisineIntegree, POOL.chambreHaussmannienne);
   if (s.includes("methode"))
     return pick(POOL.fauxPlafondPose, POOL.cloisons, POOL.menuiserieChene, POOL.cacheRadiateur);
   if (s.includes("a-propos"))
     return pick(POOL.fauxPlafondPose, POOL.menuiserieChene, POOL.bibliothequeArche, POOL.cacheRadiateur);
   if (s.includes("contact") || s.includes("guide"))
-    return pick(POOL.teteDeLit, POOL.niches, POOL.dressing, POOL.cuisineNoyer);
+    return pick(POOL.chambreHaussmannienne, POOL.sejourHaussmannien, POOL.dressing, POOL.cuisineIntegree);
   if (s.includes("faq"))
-    return pick(POOL.niches, POOL.salonBibliotheques, POOL.dressing, POOL.menuiserieChene);
+    return pick(POOL.sejourHaussmannien, POOL.salonHaussmannien, POOL.dressing, POOL.menuiserieChene);
   if (s === "/renovation-appartement-paris")
-    return pick(POOL.salonBibliotheques, POOL.bibliothequeArche, POOL.dressing, POOL.cuisineNoireIlot);
+    return pick(POOL.salonHaussmannien, POOL.salleAManger, POOL.suiteParentale, POOL.cuisineIntegree);
   if (s.includes("hauts-de-seine") || s.includes("val-de-marne"))
-    return pick(POOL.teteDeLit, POOL.facadeToiture, POOL.cuisineBoisFonce, POOL.sdbVerriere);
+    return pick(POOL.chambreHaussmannienne, POOL.facadeToiture, POOL.cuisineBoisFonce, POOL.sdbBaignoireMarbre);
   if (s.includes("yvelines"))
     return pick(POOL.facadeImmeuble, POOL.bibliothequeTv, POOL.chambreEnfant, POOL.sdbCarreauxCiment);
   if (s === "/zones")
-    return pick(POOL.facadeImmeuble, POOL.facadeToiture, POOL.facadeEchafaudage, POOL.salonBibliotheques);
+    return pick(POOL.facadeImmeuble, POOL.facadeToiture, POOL.facadeEchafaudage, POOL.salonHaussmannien);
 
-  return pick(POOL.salonBibliotheques, POOL.cuisineNoireIlot, POOL.dressing, POOL.sdbTravertin);
+  return pick(POOL.sejourHaussmannien, POOL.cuisineIntegree, POOL.chambreHaussmannienne, POOL.sdbTravertin);
 }
 
 /* ------------------------------------------------------------------ */

@@ -5,7 +5,7 @@
   "kind": "service",
   "parent": "/nos-services",
   "eyebrow": "Dépannage à domicile",
-  "hero": "/images/chantiers/salle-de-bain-double-vasque-marbre.jpg",
+  "hero": "/images/chantiers/salle-d-eau-marbre-gris.jpg",
   "intro": [
     "Une fuite sous l’évier, un disjoncteur qui saute, une porte claquée, une chaudière qui s’arrête en plein hiver : l’urgence domestique ne prévient pas, et ses conséquences dépassent l’inconfort. RenovIntérieurs intervient rapidement à Paris et en Île-de-France, avec un devis écrit avant tout démarrage et une garantie sur le travail réalisé.",
     "Un seul appel couvre les quatre métiers du dépannage : plomberie, électricité, serrurerie, chauffage. Nous pilotons l’intervention du diagnostic à la facture, et si la panne révèle un besoin de rénovation, le même interlocuteur connaît déjà votre logement."
@@ -82,13 +82,13 @@
           "t": "gallery",
           "items": [
             {
-              "src": "/images/chantiers/salle-de-bain-double-vasque-marbre.jpg",
-              "alt": "Salle de bain à double vasque, meuble suspendu en bois et murs effet marbre",
-              "caption": "Plomberie : remplacement de robinetterie et reprise d’évacuations, contrôle avant départ"
+              "src": "/images/chantiers/salle-d-eau-marbre-gris.jpg",
+              "alt": "Salle d’eau en marbre gris avec niche et robinetterie encastrée noire",
+              "caption": "Plomberie : robinetterie encastrée et évacuations reprises, contrôle avant départ"
             },
             {
-              "src": "/images/chantiers/wc-suspendu-travertin-noyer.jpg",
-              "alt": "WC suspendu avec soubassement en travertin, lave-mains et rangement en noyer",
+              "src": "/images/chantiers/wc-suspendu-travertin.jpg",
+              "alt": "WC suspendu avec plaque de commande encastrée et murs habillés de travertin",
               "caption": "WC suspendu : intervention sur bâti-support et mécanisme de chasse"
             },
             {

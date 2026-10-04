@@ -5,7 +5,7 @@
   "kind": "service",
   "parent": "/nos-services",
   "eyebrow": "Cuisine sur mesure · Paris et Île-de-France",
-  "hero": "/images/chantiers/cuisine-noire-ilot-bois.jpg",
+  "hero": "/images/chantiers/cuisine-integree-parquet-versailles.jpg",
   "intro": [
     "Dans un appartement parisien, la cuisine en kit tombe rarement juste : murs hors d’équerre, gaine à contourner, fenêtre basse, hotte sans conduit. Une cuisine dessinée pour la pièce absorbe ces vides et ces décalages. RenovIntérieurs propose deux voies : la conception sur plan avec notre cuisiniste partenaire, ou des façades sur mesure posées sur des caissons IKEA Metod.",
     "Dans les deux cas, nous pilotons tout ce qui entoure le meuble : plomberie, circuits électriques dédiés, ventilation, crédence, sol et peinture. Un seul devis, un interlocuteur unique, une pose de 2 à 5 jours et un compte-rendu chaque semaine jusqu’à la mise en service."
@@ -53,9 +53,9 @@
               "caption": "Cuisine ouverte : îlot noir, plans de travail bois et rangements hauts sur mesure."
             },
             {
-              "src": "/images/chantiers/cuisine-noyer-laque-blanche.jpg",
-              "alt": "Cuisine linéaire en noyer avec meubles hauts laqués blancs et spots encastrés",
-              "caption": "Cuisine linéaire en noyer : meubles hauts laqués, plan de travail usiné aux cotes de la pièce."
+              "src": "/images/chantiers/cuisine-integree-parquet-versailles.jpg",
+              "alt": "Cuisine intégrée aux façades bois, coin repas avec banquette ronde et parquet Versailles",
+              "caption": "Cuisine intégrée : façades bois toute hauteur, coin repas sur mesure avec banquette ronde."
             },
             {
               "src": "/images/chantiers/cuisine-vert-sauge.jpg",
