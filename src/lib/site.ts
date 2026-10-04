@@ -7,7 +7,7 @@ import { photos } from "@/lib/photos";
 
 export const site = {
   name: "RenovIntérieurs",
-  legalName: "RenovIntérieurs — Marque de Archi Renov",
+  legalName: "RenovIntérieurs — piloté par IA RENOV",
   tagline: "Rénovation intérieur & second œuvre",
   url: "https://www.renovinterieurs.fr",
   email: "contact@renovinterieurs.fr",

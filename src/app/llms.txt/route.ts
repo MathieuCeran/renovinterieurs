@@ -19,7 +19,7 @@ export function GET() {
 > ${site.description}
 
 Entreprise de rénovation intérieure et de second œuvre intervenant à Paris et en
-Île-de-France (Hauts-de-Seine, Yvelines, Val-de-Marne). Marque de Archi Renov.
+Île-de-France (Hauts-de-Seine, Yvelines, Val-de-Marne). Piloté par IA RENOV.
 
 ## Contact
 - Téléphone : ${site.phoneDisplay}

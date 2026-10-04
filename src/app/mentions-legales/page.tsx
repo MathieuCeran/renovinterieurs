@@ -31,37 +31,29 @@ export default function MentionsLegales() {
       <div className="container-x py-12 lg:py-16">
         <p className="max-w-3xl rounded-2xl border border-terra/25 bg-terra/6 p-5 text-[0.88rem] leading-relaxed text-ink/80">
           <strong className="font-medium">
-            À compléter avant mise en ligne.
+            Reste à compléter.
           </strong>{" "}
-          Les mentions surlignées doivent être renseignées avec les informations
-          officielles de la société (extrait Kbis, contrat d’assurance, contrat
-          d’hébergement). Elles ne peuvent pas être devinées.
+          Les mentions surlignées (assurance, médiateur de la consommation)
+          doivent être renseignées à partir des contrats de l’entreprise. Elles
+          ne peuvent pas être devinées.
         </p>
       </div>
 
       <div className="container-x pb-8">
         <LegalSection n={1} title="Éditeur du site">
           <p>
-            Le présent site est édité par <ToFill>[Raison sociale]</ToFill>,
-            exerçant sous la marque {site.name},{" "}
-            <ToFill>[forme juridique]</ToFill> au capital de{" "}
-            <ToFill>[montant] €</ToFill>.
+            Le site {site.name} est piloté par IA RENOV, société par actions
+            simplifiée unipersonnelle (SASU) au capital de 1 000 €.
           </p>
           <ul>
             <li>
-              Siège social : <ToFill>[adresse complète]</ToFill>
+              Siège social : 8 rue Gabriel Péri, 92250 La Garenne-Colombes
             </li>
             <li>
-              RCS : <ToFill>[ville et numéro]</ToFill> — SIRET :{" "}
-              <ToFill>[numéro à 14 chiffres]</ToFill>
+              RCS Nanterre 889 976 387 — SIRET : 889 976 387 00023
             </li>
-            <li>
-              TVA intracommunautaire : <ToFill>[FR + 11 caractères]</ToFill>
-            </li>
-            <li>
-              Directeur de la publication :{" "}
-              <ToFill>[nom du représentant légal]</ToFill>
-            </li>
+            <li>TVA intracommunautaire : FR02889976387</li>
+            <li>Directeur de la publication : Ilann Atlan, président</li>
             <li>
               Téléphone : {site.phoneDisplay} — E-mail : {site.email}
             </li>
@@ -70,9 +62,12 @@ export default function MentionsLegales() {
 
         <LegalSection n={2} title="Hébergement">
           <p>
-            Le site est hébergé par <ToFill>[nom de l’hébergeur]</ToFill>,{" "}
-            <ToFill>[adresse]</ToFill>,{" "}
-            <ToFill>[téléphone ou URL de contact]</ToFill>.
+            Le site est hébergé par Vercel Inc., 440 N Barranca Avenue #4133,
+            Covina, CA 91723, États-Unis —{" "}
+            <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
+              vercel.com
+            </a>
+            .
           </p>
         </LegalSection>
 

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { LegalSection, ToFill } from "@/components/page/legal";
+import { LegalSection } from "@/components/page/legal";
 import { PageHero } from "@/components/page/page-hero";
 import { site } from "@/lib/site";
 
@@ -27,25 +27,13 @@ export default function Confidentialite() {
         height="44svh"
       />
 
-      <div className="container-x py-12 lg:py-16">
-        <p className="max-w-3xl rounded-2xl border border-terra/25 bg-terra/6 p-5 text-[0.88rem] leading-relaxed text-ink/80">
-          <strong className="font-medium">
-            À compléter avant mise en ligne.
-          </strong>{" "}
-          Le contenu ci-dessous décrit fidèlement ce que fait le site. Les
-          mentions surlignées (identité du responsable de traitement,
-          sous-traitants réellement utilisés, durées retenues) doivent être
-          validées par le client.
-        </p>
-      </div>
-
-      <div className="container-x pb-8">
+      <div className="container-x pt-12 pb-8 lg:pt-16">
         <LegalSection n={1} title="Responsable de traitement">
           <p>
-            Le responsable du traitement des données collectées sur ce site est{" "}
-            <ToFill>[Raison sociale]</ToFill>, exerçant sous la marque{" "}
-            {site.name}, dont le siège social est situé{" "}
-            <ToFill>[adresse complète]</ToFill>.
+            Le responsable du traitement des données collectées sur ce site est
+            IA RENOV, SASU qui pilote le site {site.name}, dont le siège social
+            est situé 8 rue Gabriel Péri, 92250 La Garenne-Colombes (RCS
+            Nanterre 889 976 387).
           </p>
           <p>
             Contact : {site.email} — {site.phoneDisplay}
@@ -104,17 +92,16 @@ export default function Confidentialite() {
           </p>
           <p>
             Elles peuvent être traitées par les prestataires techniques suivants
-            : <ToFill>[hébergeur]</ToFill>,{" "}
-            <ToFill>[outil de gestion des demandes / CRM]</ToFill>,{" "}
-            <ToFill>[service d’envoi d’e-mails]</ToFill>. Tous sont situés dans
-            l’Union européenne ou présentent des garanties équivalentes.
+            : Vercel Inc. (hébergement du site) et OVHcloud (messagerie qui
+            reçoit les demandes envoyées via le formulaire). Tous sont situés
+            dans l’Union européenne ou présentent des garanties équivalentes.
           </p>
         </LegalSection>
 
         <LegalSection n={5} title="Durée de conservation">
           <ul>
             <li>
-              Demande sans suite : <ToFill>[3 ans]</ToFill> à compter du dernier
+              Demande sans suite : 3 ans à compter du dernier
               contact.
             </li>
             <li>
