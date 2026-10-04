@@ -1,16 +1,15 @@
 import { Blocks } from "@/components/page/blocks";
 import { SectionHeading } from "@/components/page/article";
 import { ArticleToc } from "@/components/page/article-toc";
-import { ArrowRight, PhoneIcon } from "@/components/ui/kit";
-import { site } from "@/lib/site";
+import { ArticleCtaBar } from "@/components/page/article-cta-bar";
 import type { TocEntry } from "@/lib/whatswrong";
 
 /* ------------------------------------------------------------------ */
 /*  Article au format HTML (WhatsWrong)                                */
 /*                                                                     */
-/*  Trois colonnes sur grand écran : sommaire collant, texte à largeur */
-/*  de lecture, encart devis collant. Une colonne sur mobile, sommaire */
-/*  repliable en tête. Styles du corps : .ww-prose (globals.css).      */
+/*  Grand écran : sommaire collant + texte large, barre devis fixée en */
+/*  bas. Mobile : une colonne, sommaire repliable en tête. Styles du   */
+/*  corps : .ww-prose (globals.css).                                   */
 /* ------------------------------------------------------------------ */
 
 export function HtmlArticle({
@@ -40,7 +39,7 @@ export function HtmlArticle({
   return (
     <>
       <section className="container-x py-10 lg:py-16" aria-label="Article">
-        <div className="grid gap-8 lg:grid-cols-[14rem_minmax(0,1fr)] lg:gap-12 xl:grid-cols-[15rem_minmax(0,1fr)_17rem] xl:gap-14">
+        <div className="grid gap-8 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-14 xl:gap-20">
           {/* Sommaire */}
           <aside className="hidden lg:block">
             <div className="sticky top-28 max-h-[calc(100svh-8rem)] overflow-y-auto pr-2">
@@ -50,7 +49,7 @@ export function HtmlArticle({
 
           {/* Texte */}
           <div className="min-w-0">
-            <div className="mx-auto max-w-[46rem]">
+            <div className="max-w-[50rem]">
               <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[0.82rem] text-muted">
                 <span>{readMin} min de lecture</span>
                 {updated && (
@@ -80,39 +79,10 @@ export function HtmlArticle({
               />
             </div>
           </div>
-
-          {/* Encart devis */}
-          <aside className="hidden xl:block">
-            <div className="sticky top-28 rounded-[var(--radius-card)] bg-ink p-7 text-paper">
-              <p className="dot-label text-paper/60">Votre projet</p>
-              <p className="mt-4 text-[1.35rem] leading-tight font-medium tracking-[-0.02em]">
-                Un devis détaillé{" "}
-                <span className="display-italic text-gold-light">sous 48 h</span>
-              </p>
-              <p className="mt-3 text-[0.86rem] leading-relaxed text-paper/65">
-                Visite technique sous 5 jours à Paris et en Île-de-France, un
-                seul interlocuteur du diagnostic à la livraison.
-              </p>
-              <a
-                href="#devis"
-                className="group mt-6 flex items-center justify-between rounded-full bg-terra py-2 pr-2 pl-5 text-[0.9rem] font-medium text-paper transition-colors hover:bg-terra-deep"
-              >
-                Obtenir un devis
-                <span className="flex size-8 items-center justify-center rounded-full bg-paper text-ink">
-                  <ArrowRight className="size-3.5" />
-                </span>
-              </a>
-              <a
-                href={site.phoneHref}
-                className="mt-3 flex items-center justify-center gap-2 rounded-full border border-paper/20 py-2.5 text-[0.86rem] text-paper/85 transition-colors hover:border-paper/50"
-              >
-                <PhoneIcon className="size-3.5" />
-                {site.phoneDisplay}
-              </a>
-            </div>
-          </aside>
         </div>
       </section>
+
+      <ArticleCtaBar />
 
       {faq && faq.items.length > 0 && (
         <section
