@@ -12,7 +12,7 @@ import { publishedArticles, wwPath } from "@/lib/whatswrong";
 
 const path = "/conseils";
 
-const title = "Conseils : tout savoir sur la rénovation à Paris";
+const title = "Blog rénovation : conseils, prix et guides à Paris";
 const description =
   "Prix au m², délais, isolation, cuisine, salle de bain, menuiseries : nos guides pratiques pour préparer et réussir votre projet de rénovation en Île-de-France.";
 
@@ -82,6 +82,7 @@ function loadArticles(): Article[] {
           Math.round(JSON.stringify(page.sections).length / 1300),
         ),
         image: "",
+        date: page.publishedAt ?? "2026-01-01",
       };
       return article;
     })
@@ -98,9 +99,11 @@ function loadArticles(): Article[] {
       // Seulement les images fournies par WhatsWrong : couverture, sinon la
       // première image de l'article, sinon aucune.
       image: a.cover?.url ?? firstImage(a.body) ?? null,
+      date: a.createdAt,
     }));
 
   const catCount: Record<string, number> = {};
+  // L'index trie par date ; l'ordre alphabétique ne sert qu'à alterner les visuels.
   return [...local, ...remote]
     .sort((a, b) => a.title.localeCompare(b.title, "fr"))
     .map((a) => {
@@ -139,24 +142,24 @@ export default function ConseilsPage() {
       />
 
       <PageHero
-        eyebrow="Conseils & guides"
+        eyebrow="Le blog"
         line1="Tout savoir sur"
         line2="la rénovation à Paris"
         intro="Articles, guides et repères de prix pour comprendre les budgets, anticiper les délais et réussir votre projet en Île-de-France."
         image={hero}
+        height="46svh"
         primary={{ label: "Obtenir un devis", href: "#devis" }}
-        secondary={{ label: "Nos services", href: "/nos-services" }}
         footer={
           <p className="text-[0.82rem] text-paper/70">
             <span className="display-italic text-[1.05rem] text-paper">
               {articles.length}
             </span>{" "}
-            guides pratiques, mis à jour pour 2026.
+            articles et guides pratiques.
           </p>
         }
       />
 
-      <div className="py-12 lg:py-16">
+      <div className="py-10 lg:py-14">
         <ArticleIndex articles={articles} />
       </div>
 

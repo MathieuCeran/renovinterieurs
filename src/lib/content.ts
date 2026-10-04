@@ -35,6 +35,8 @@ export type Page = {
   h1: string;
   kind: PageKind;
   parent: Parent;
+  /** Date de publication (AAAA-MM-JJ), pour trier le blog. */
+  publishedAt?: string;
   eyebrow?: string;
   hero?: string;
   intro: string[];
@@ -208,7 +210,7 @@ const PARENT_LABEL: Record<Parent, string> = {
   "/": "Accueil",
   "/nos-services": "Nos services",
   "/zones": "Zones d’intervention",
-  "/conseils": "Conseils",
+  "/conseils": "Blog",
 };
 
 export function breadcrumbFor(

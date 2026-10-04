@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { Article, SectionHeading, Toc } from "@/components/page/article";
+import { ArticleCtaBar } from "@/components/page/article-cta-bar";
 import { Inline, Links } from "@/components/page/blocks";
 import { HtmlArticle } from "@/components/page/html-article";
 import { InnerHero, anchorId } from "@/components/page/inner-hero";
@@ -267,6 +268,7 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
       )}
 
       {page.kind === "article" && <Toc sections={page.sections} />}
+      {page.kind === "article" && <ArticleCtaBar />}
       <Article
         sections={page.sections}
         images={visuals.band}
@@ -350,7 +352,7 @@ function WwPage({ article, path }: { article: WwArticle; path: string }) {
         {
           "@type": "ListItem",
           position: 2,
-          name: "Conseils",
+          name: "Blog",
           item: `${site.url}/conseils`,
         },
         { "@type": "ListItem", position: 3, name: d.title, item: url },
@@ -393,7 +395,7 @@ function WwPage({ article, path }: { article: WwArticle; path: string }) {
         h1={d.title}
         intro={d.description}
         image={d.cover?.url}
-        crumbLabel="Conseils"
+        crumbLabel="Blog"
         crumbHref="/conseils"
       />
       <HtmlArticle
