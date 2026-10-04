@@ -49,6 +49,11 @@ const CAT_IMAGE_ALT: Record<string, string> = {
   "Méthode & étapes": "/images/paris-pourquoi-specialiste.jpg",
 };
 
+/** Première image du corps d'un article WhatsWrong (copie locale). */
+function firstImage(html: string): string | null {
+  return html.match(/<img\b[^>]*\bsrc="([^"]+)"/i)?.[1] ?? null;
+}
+
 /** Classement thématique des guides à partir de leur URL. */
 function categorize(slug: string): string {
   const s = slug;
@@ -59,7 +64,7 @@ function categorize(slug: string): string {
   return "Méthode & étapes";
 }
 
-/** Guides du site + articles WhatsWrong, chacun avec un visuel de thème. */
+/** Guides du site (visuel de thème) + articles WhatsWrong (leurs propres images). */
 function loadArticles(): Article[] {
   const local = allPaths()
     .filter((p) => p.startsWith("/conseils/"))
@@ -67,7 +72,7 @@ function loadArticles(): Article[] {
       const page = getPage(p);
       if (!page) return null;
       const slug = p.replace("/conseils/", "");
-      return {
+      const article: Article = {
         href: p,
         title: page.h1 || cleanTitle(page.title),
         excerpt: page.description || page.intro[0] || "",
@@ -78,18 +83,21 @@ function loadArticles(): Article[] {
         ),
         image: "",
       };
+      return article;
     })
-    .filter((a): a is Article => a !== null);
+    .filter((a) => a !== null);
 
   const remote = publishedArticles()
     .filter((a) => !getPage(wwPath(a)))
-    .map((a) => ({
+    .map((a): Article => ({
       href: wwPath(a),
       title: a.title,
       excerpt: a.description,
       cat: categorize(wwPath(a).replace("/conseils/", "")),
       readMin: Math.max(3, Math.round(a.body.length / 1300)),
-      image: "",
+      // Seulement les images fournies par WhatsWrong : couverture, sinon la
+      // première image de l'article, sinon aucune.
+      image: a.cover?.url ?? firstImage(a.body) ?? null,
     }));
 
   const catCount: Record<string, number> = {};
@@ -97,6 +105,8 @@ function loadArticles(): Article[] {
     .sort((a, b) => a.title.localeCompare(b.title, "fr"))
     .map((a) => {
       const n = (catCount[a.cat] = (catCount[a.cat] ?? 0) + 1);
+      // "" = guide du site, à illustrer par thème ; les articles WhatsWrong gardent les leurs.
+      if (a.image !== "") return a;
       const table = n % 2 === 0 ? CAT_IMAGE_ALT : CAT_IMAGE;
       return { ...a, image: table[a.cat] ?? "/images/salon-canape-courbe.jpg" };
     });

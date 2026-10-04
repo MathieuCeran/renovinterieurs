@@ -14,7 +14,8 @@ export function InnerHero({
 }: {
   h1: string;
   intro?: string;
-  image: string;
+  /** Sans image : fond uni (articles WhatsWrong livrés sans couverture). */
+  image?: string;
   crumbLabel: string;
   crumbHref: string;
 }) {
@@ -22,15 +23,27 @@ export function InnerHero({
 
   return (
     <section data-hero aria-label={h1}>
-      <div className="relative isolate flex min-h-[max(460px,70svh)] flex-col overflow-hidden bg-ink">
-        <Image
-          src={image}
-          alt={altOf(image)}
-          fill
-          priority
-          sizes="100vw"
-          className="anim-zoom -z-10 object-cover object-center"
-        />
+      <div
+        className={`relative isolate flex flex-col overflow-hidden bg-ink ${
+          image ? "min-h-[max(460px,70svh)]" : "min-h-[max(400px,52svh)]"
+        }`}
+      >
+        {!image && (
+          <div
+            aria-hidden
+            className="absolute inset-0 -z-10 bg-[radial-gradient(70%_90%_at_85%_10%,rgba(230,86,43,0.22),transparent_60%),radial-gradient(60%_80%_at_0%_100%,rgba(201,162,39,0.12),transparent_60%)]"
+          />
+        )}
+        {image && (
+          <Image
+            src={image}
+            alt={altOf(image)}
+            fill
+            priority
+            sizes="100vw"
+            className="anim-zoom -z-10 object-cover object-center"
+          />
+        )}
         <div
           aria-hidden
           className="absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgba(10,8,6,0.86)_0%,rgba(10,8,6,0.52)_32%,rgba(10,8,6,0.2)_66%,rgba(10,8,6,0.5)_100%)]"

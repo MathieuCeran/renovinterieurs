@@ -19,7 +19,7 @@ import {
 } from "@/lib/content";
 import { site } from "@/lib/site";
 import {
-  cleanBody,
+  prepareArticle,
   plainText,
   publishedArticle,
   publishedArticles,
@@ -306,7 +306,8 @@ function wwMetadata(a: WwArticle, path: string): Metadata {
   const d = a;
   const title = clamp(cleanTitle(d.title), 60);
   const description = clamp(d.description, 155);
-  const image = d.cover?.url ?? visualsFor(path).hero;
+  // Aucune image inventée : la couverture WhatsWrong, sinon l’image de partage du site.
+  const image = d.cover?.url ?? "/og.jpg";
   return {
     title,
     description,
@@ -318,7 +319,7 @@ function wwMetadata(a: WwArticle, path: string): Metadata {
       siteName: site.name,
       title,
       description,
-      images: [{ url: image, alt: d.cover?.alt ?? d.title }],
+      images: [{ url: image, alt: d.cover?.alt ?? site.name }],
       ...(d.createdAt ? { publishedTime: d.createdAt } : {}),
       ...(d.lastModifiedAt ? { modifiedTime: d.lastModifiedAt } : {}),
     },
@@ -329,7 +330,7 @@ function wwMetadata(a: WwArticle, path: string): Metadata {
 function WwPage({ article, path }: { article: WwArticle; path: string }) {
   const d = article;
   const url = `${site.url}${path}`;
-  const hero = visualsFor(path).hero;
+  const body = prepareArticle(d.body);
   const faq = d.faq?.items?.length
     ? {
         title: d.faq.title,
@@ -361,7 +362,7 @@ function WwPage({ article, path }: { article: WwArticle; path: string }) {
       headline: d.title,
       name: d.title,
       description: d.description,
-      image: `${site.url}${d.cover?.url ?? hero}`,
+      ...(d.cover ? { image: `${site.url}${d.cover.url}` } : {}),
       inLanguage: "fr-FR",
       ...(d.createdAt ? { datePublished: d.createdAt } : {}),
       ...(d.lastModifiedAt ? { dateModified: d.lastModifiedAt } : {}),
@@ -391,11 +392,18 @@ function WwPage({ article, path }: { article: WwArticle; path: string }) {
       <InnerHero
         h1={d.title}
         intro={d.description}
-        image={hero}
+        image={d.cover?.url}
         crumbLabel="Conseils"
         crumbHref="/conseils"
       />
-      <HtmlArticle html={cleanBody(d.body)} cover={d.cover} faq={faq} />
+      <HtmlArticle
+        html={body.html}
+        toc={body.toc}
+        cover={d.cover}
+        faq={faq}
+        readMin={Math.max(3, Math.round(plainText(d.body).split(" ").length / 220))}
+        updatedAt={d.lastModifiedAt ?? d.createdAt ?? null}
+      />
       <Commitments />
       <Cta />
     </>

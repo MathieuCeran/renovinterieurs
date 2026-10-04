@@ -190,6 +190,42 @@ async function internalizeBodyImages(html, slug) {
   return out.replace(/<a\b[^>]*href\s*=\s*["'][^"']*whatswrong\.io[^"']*["'][^>]*>([\s\S]*?)<\/a>/gi, "$1");
 }
 
+/** Liens internes : une redirection est remplacée par l'URL finale, un lien
+    mort est retiré (le texte reste). Évite les sauts inutiles et les 404. */
+async function fixInternalLinks(html) {
+  const host = new URL(SITE_ORIGIN).host.replace(/^www\./, "");
+  const internal = (href) => {
+    if (href.startsWith("/") && !href.startsWith("//")) return href;
+    try {
+      const u = new URL(href);
+      return u.host.replace(/^www\./, "") === host ? u.pathname + u.search + u.hash : null;
+    } catch { return null; }
+  };
+  const hrefs = [...String(html).matchAll(/<a\b[^>]*?\bhref\s*=\s*"([^"]+)"/gi)].map((m) => m[1]);
+  let out = String(html);
+  for (const href of new Set(hrefs)) {
+    const p = internal(href);
+    if (!p) continue;
+    const [pathname, hash = ""] = p.split("#");
+    try {
+      const res = await fetch(SITE_ORIGIN + pathname, { redirect: "follow", signal: AbortSignal.timeout(HTTP_TIMEOUT_MS) });
+      const final = new URL(res.url);
+      if (res.status === 404) {
+        const re = new RegExp(`<a\\b[^>]*href\\s*=\\s*"${href.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"[^>]*>([\\s\\S]*?)<\\/a>`, "gi");
+        out = out.replace(re, "$1");
+        warn(`lien interne mort retiré : ${href}`);
+      } else if (res.ok && final.pathname !== pathname) {
+        const to = final.pathname + (hash ? `#${hash}` : "");
+        out = out.split(`href="${href}"`).join(`href="${to}"`);
+        log(`    lien ${href} → ${to}`);
+      }
+    } catch (e) {
+      warn(`lien interne non vérifié (${href}) : ${e.message}`);
+    }
+  }
+  return out;
+}
+
 /* ---------- Git ---------- */
 
 async function git(...args) {
@@ -262,7 +298,7 @@ async function importArticle({ id, data: d }, taken) {
     description: String(d.description ?? "").trim(),
     mainKeyword: d.mainKeyword ? String(d.mainKeyword).trim() : null,
     cover,
-    body: await internalizeBodyImages(d.body, slug),
+    body: await fixInternalLinks(await internalizeBodyImages(d.body, slug)),
     faq: d.faq?.items?.length ? d.faq : null,
     createdAt: d.createdAt ?? now,
     lastModifiedAt: d.lastModifiedAt ?? now,

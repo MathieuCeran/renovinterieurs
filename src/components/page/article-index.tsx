@@ -12,7 +12,8 @@ export type Article = {
   excerpt: string;
   cat: string;
   readMin: number;
-  image: string;
+  /** null : article WhatsWrong livré sans image, aucun visuel inventé. */
+  image: string | null;
 };
 
 export function ArticleIndex({ articles }: { articles: Article[] }) {
@@ -60,14 +61,16 @@ export function ArticleIndex({ articles }: { articles: Article[] }) {
       {lead && (
         <Link href={lead.href} className="group mt-10 block">
           <article className="grid gap-7 overflow-hidden rounded-[clamp(18px,2.4vw,28px)] border border-line bg-paper md:grid-cols-[1.1fr_1fr] md:gap-0">
-            <div className="relative aspect-16/10 overflow-hidden md:aspect-auto md:min-h-72">
-              <Image
-                src={lead.image}
-                alt=""
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover transition-transform duration-[1300ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-106"
-              />
+            <div className="relative aspect-16/10 overflow-hidden bg-ink/6 md:aspect-auto md:min-h-72">
+              {lead.image && (
+                <Image
+                  src={lead.image}
+                  alt=""
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-[1300ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-106"
+                />
+              )}
             </div>
             <div className="flex flex-col justify-center p-7 pt-0 md:p-10">
               <p className="dot-label text-[0.76rem] text-terra">{lead.cat}</p>
@@ -94,14 +97,16 @@ export function ArticleIndex({ articles }: { articles: Article[] }) {
         {rest.map((a, i) => (
           <li key={a.href} style={{ "--i": i % 3 } as React.CSSProperties}>
             <Link href={a.href} className="group flex h-full flex-col">
-              <div className="relative aspect-16/10 overflow-hidden rounded-[clamp(16px,2vw,24px)]">
-                <Image
-                  src={a.image}
-                  alt=""
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-[1300ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-107"
-                />
+              <div className="relative aspect-16/10 overflow-hidden rounded-[clamp(16px,2vw,24px)] bg-ink/6">
+                {a.image && (
+                  <Image
+                    src={a.image}
+                    alt=""
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-[1300ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-107"
+                  />
+                )}
               </div>
               <p className="dot-label mt-3.5 text-[0.74rem] text-muted">
                 {a.cat} · {a.readMin} min

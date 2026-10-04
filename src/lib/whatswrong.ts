@@ -61,7 +61,7 @@ export function publishedArticle(slug: string): WwArticle | null {
 /* ------------------------------------------------------------------ */
 
 /** Corps d'article nettoyé : balises éditoriales seulement, aucun script. */
-export function cleanBody(html: string): string {
+function cleanBody(html: string): string {
   return sanitizeHtml(html, {
     allowedTags: [
       "h2", "h3", "h4", "p", "br", "hr", "strong", "b", "em", "i", "u",
@@ -72,6 +72,10 @@ export function cleanBody(html: string): string {
     allowedAttributes: {
       a: ["href", "title", "target", "rel"],
       img: ["src", "alt", "width", "height", "loading"],
+      // Ancres du sommaire.
+      h2: ["id"],
+      h3: ["id"],
+      h4: ["id"],
       th: ["colspan", "rowspan", "scope"],
       td: ["colspan", "rowspan"],
     },
@@ -100,6 +104,48 @@ export function cleanBody(html: string): string {
       }),
     },
   });
+}
+
+export type TocEntry = { id: string; title: string };
+
+function anchor(text: string): string {
+  return text
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+/**
+ * Corps prêt à afficher : nettoyé, sommaire extrait des H2 (le sommaire
+ * livré dans le corps est retiré, la page affiche le sien), encadré
+ * « L’essentiel » mis en valeur, tableaux défilables sur mobile.
+ */
+export function prepareArticle(raw: string): { html: string; toc: TocEntry[] } {
+  const withoutToc = raw.replace(/<nav\b[^>]*>[\s\S]*?<\/nav>/gi, "");
+  let html = cleanBody(withoutToc);
+
+  const toc: TocEntry[] = [];
+  const seen = new Set<string>();
+  html = html.replace(/<h2(?:\s+id="([^"]*)")?>([\s\S]*?)<\/h2>/g, (_, id, inner) => {
+    const title = plainText(inner);
+    let slug = id || anchor(title) || `partie-${toc.length + 1}`;
+    while (seen.has(slug)) slug += "-2";
+    seen.add(slug);
+    toc.push({ id: slug, title });
+    return `<h2 id="${slug}">${inner}</h2>`;
+  });
+
+  html = html
+    .replace(
+      /<p><strong>L[’']essentiel<\/strong><\/p>\s*(<ul>[\s\S]*?<\/ul>)/i,
+      '<aside class="ww-key"><p class="ww-key-title">L’essentiel</p>$1</aside>',
+    )
+    .replace(/<table>/g, '<div class="ww-table"><table>')
+    .replace(/<\/table>/g, "</table></div>");
+
+  return { html, toc };
 }
 
 /** Texte brut (FAQ, données structurées). */
