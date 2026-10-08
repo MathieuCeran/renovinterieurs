@@ -6,6 +6,7 @@ import { Commitments } from "@/components/sections/commitments";
 import { Pillars } from "@/components/sections/pillars";
 import { Pricing } from "@/components/sections/pricing";
 import { Process } from "@/components/sections/process";
+import { Reviews } from "@/components/sections/reviews";
 import { Services } from "@/components/sections/services";
 import { Statement } from "@/components/sections/statement";
 import { ToolsBand } from "@/components/sections/tools-band";
@@ -34,6 +35,7 @@ export default function Home() {
       <Commitments />
       <Services />
       <Gallery />
+      <Reviews />
       <Pillars />
       <Zones />
       <Pricing />
