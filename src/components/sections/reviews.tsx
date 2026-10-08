@@ -122,26 +122,39 @@ export function Reviews() {
           </div>
         </div>
 
-        <ul className="reveal-stagger -mx-[clamp(1.15rem,4vw,3.5rem)] mt-12 flex snap-x gap-4 overflow-x-auto px-[clamp(1.15rem,4vw,3.5rem)] pb-2 [scrollbar-width:none] md:mx-0 md:grid md:grid-cols-2 md:overflow-visible md:px-0 lg:grid-cols-3 [&::-webkit-scrollbar]:hidden">
-          {reviews.map((r, i) => (
-            <li
-              key={r.name}
-              style={{ "--i": i } as React.CSSProperties}
-              className="flex w-[82vw] max-w-sm shrink-0 snap-start flex-col rounded-[clamp(16px,2vw,24px)] bg-paper p-6 md:w-auto md:max-w-none lg:p-7"
-            >
-              <div className="flex items-center justify-between">
-                <Stars />
-                <GoogleLogo className="size-5" />
-              </div>
-              <blockquote className="mt-5 flex-1 text-[0.92rem] leading-relaxed text-ink">
-                « {r.text} »
-              </blockquote>
-              <footer className="mt-6 border-t border-line pt-4">
-                <p className="text-[0.9rem] font-medium">{r.name}</p>
-                <p className="mt-0.5 text-[0.78rem] text-muted">{r.project}</p>
-              </footer>
-            </li>
-          ))}
+      </div>
+
+      {/* Carrousel continu : la liste est doublée pour boucler sans saut,
+          pause au survol ou au focus, défilement manuel si mouvement réduit. */}
+      <div className="reviews-marquee reveal mt-12">
+        <ul className="reviews-track">
+          {[...reviews, ...reviews].map((r, i) => {
+            const clone = i >= reviews.length;
+            return (
+              <li
+                key={`${r.name}-${i}`}
+                aria-hidden={clone || undefined}
+                data-clone={clone || undefined}
+                className="w-[min(82vw,370px)] shrink-0 pr-4"
+              >
+                <article className="flex h-full flex-col rounded-[clamp(16px,2vw,24px)] bg-paper p-6 lg:p-7">
+                  <div className="flex items-center justify-between">
+                    <Stars />
+                    <GoogleLogo className="size-5" />
+                  </div>
+                  <blockquote className="mt-5 flex-1 text-[0.92rem] leading-relaxed text-ink">
+                    « {r.text} »
+                  </blockquote>
+                  <footer className="mt-6 border-t border-line pt-4">
+                    <p className="text-[0.9rem] font-medium">{r.name}</p>
+                    <p className="mt-0.5 text-[0.78rem] text-muted">
+                      {r.project}
+                    </p>
+                  </footer>
+                </article>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </section>

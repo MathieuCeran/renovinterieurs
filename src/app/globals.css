@@ -718,3 +718,37 @@ html[data-intro-seen] .intro {
   font-weight: 500;
   color: var(--color-ink);
 }
+
+/* Carrousel d'avis : défilement continu, bords en fondu */
+.reviews-marquee {
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 6%,
+    #000 94%,
+    transparent
+  );
+}
+.reviews-track {
+  display: flex;
+  width: max-content;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .reviews-track {
+    animation: marquee-x 70s linear infinite;
+  }
+  .reviews-marquee:hover .reviews-track,
+  .reviews-marquee:focus-within .reviews-track {
+    animation-play-state: paused;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reviews-marquee {
+    overflow-x: auto;
+    mask-image: none;
+  }
+  .reviews-track [data-clone] {
+    display: none;
+  }
+}
