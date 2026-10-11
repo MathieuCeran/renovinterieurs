@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { LegalSection } from "@/components/page/legal";
 import { PageHero } from "@/components/page/page-hero";
 import { site } from "@/lib/site";
+import { ReinitialiserCookies } from "@/components/ui/google-ads";
 
 const path = "/politique-de-confidentialite";
 const title = "Politique de confidentialité";
@@ -117,18 +118,19 @@ export default function Confidentialite() {
 
         <LegalSection n={6} title="Cookies et traceurs">
           <p>
-            Ce site n’utilise aucun cookie publicitaire ni traceur tiers de
-            mesure d’audience.
+            Ce site utilise Google Analytics (mesure d’audience) et la balise
+            Google Ads (Google Ireland Ltd), qui compte comme conversion une
+            demande de devis envoyée ou un clic sur notre numéro de téléphone.
+            Les cookies correspondants ne sont déposés qu’avec votre accord,
+            donné ou refusé dans le bandeau affiché à la première visite. Sans
+            accord, Google ne reçoit que des signaux sans cookie, qui ne
+            permettent pas de vous identifier. <ReinitialiserCookies />
           </p>
           <p>
             Il utilise uniquement le stockage de session de votre navigateur
             pour ne pas rejouer l’animation d’ouverture à chaque page. Cette
             information reste sur votre appareil, n’est jamais transmise et
             disparaît à la fermeture de l’onglet.
-          </p>
-          <p>
-            Si un outil de mesure d’audience est ajouté par la suite, un bandeau
-            de consentement sera mis en place et cette section mise à jour.
           </p>
         </LegalSection>
 

@@ -8,6 +8,8 @@ import { Header } from "@/components/layout/header";
 import { Intro } from "@/components/ui/intro";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
 import { SmoothScroll } from "@/components/ui/smooth-scroll";
+import { GoogleAds } from "@/components/ui/google-ads";
+import { CONSENT_DEFAULT_SCRIPT } from "@/lib/ads";
 import { grosOeuvre, services, site } from "@/lib/site";
 import "./globals.css";
 
@@ -125,6 +127,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           officiel ne rend pas le fallback <noscript>, posé ci-dessous). */}
       <GoogleTagManager gtmId="GTM-P8SVQPKV" />
       <body className="min-h-dvh">
+        {/* Consentement Google refusé par défaut — doit s’exécuter avant
+            gtm.js (chargé après hydratation), d’où sa place en tête de body. */}
+        <script dangerouslySetInnerHTML={{ __html: CONSENT_DEFAULT_SCRIPT }} />
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
@@ -163,6 +168,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main id="contenu">{children}</main>
         <Footer />
         <ActionBar />
+        <GoogleAds />
       </body>
     </html>
   );

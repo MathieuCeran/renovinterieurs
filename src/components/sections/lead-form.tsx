@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
 
 import { ArrowRight } from "@/components/ui/kit";
+import { ADS_LABEL_LEAD, trackConversion } from "@/lib/ads";
 
 const projets = [
   "Rénovation complète",
@@ -157,6 +158,8 @@ export function LeadForm() {
         body: JSON.stringify(data),
       });
       if (!res.ok) throw new Error("request failed");
+      // En production, ok n’est renvoyé qu’après envoi réel du lead.
+      trackConversion(ADS_LABEL_LEAD);
       setState("done");
     } catch {
       setState("error");
