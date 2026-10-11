@@ -9,6 +9,7 @@ import nodemailer from "nodemailer";
  *   SMTP_USER  adresse complète de la boîte, ex. contact@renovinterieurs.fr
  *   SMTP_PASS  mot de passe de la boîte
  *   LEAD_TO    destinataire des demandes (défaut : SMTP_USER)
+ *   LEAD_BCC   copie cachée de chaque demande (défaut : LEAD_COPY ci-dessous)
  */
 
 export type LeadMail = {
@@ -24,6 +25,9 @@ export type LeadMail = {
   telephone: string;
   message: string;
 };
+
+/** Copie cachée de chaque demande, en plus du destinataire principal. */
+export const LEAD_COPY = "ceran.mete@gmail.com";
 
 export function isMailConfigured() {
   return Boolean(process.env.SMTP_USER && process.env.SMTP_PASS);
@@ -77,6 +81,7 @@ export async function sendLeadMail(lead: LeadMail) {
   await transporter().sendMail({
     from: { name: "RenovIntérieurs — Site web", address: user },
     to,
+    bcc: process.env.LEAD_BCC ?? LEAD_COPY,
     replyTo: lead.email,
     subject,
     text,
