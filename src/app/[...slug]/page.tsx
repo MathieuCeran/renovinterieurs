@@ -114,33 +114,10 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
   const crumbs = breadcrumbFor(path);
   const parentCrumb = crumbs[crumbs.length - 1];
 
-  // Une version publiée depuis WhatsWrong : l'en-tête de la page, puis son
-  // texte à elle, puis les blocs communs.
+  // Une version publiée depuis WhatsWrong : sa description dans les données
+  // structurées, et son texte à la place de celui de la page.
   const version = publishedPageVersion(path);
-  if (version) {
-    const body = preparePageVersion(version);
-    return (
-      <>
-        <InnerHero
-          h1={page.h1}
-          intro={version.description}
-          image={hero}
-          crumbLabel={parentCrumb.label}
-          crumbHref={parentCrumb.href}
-        />
-        <HtmlArticle
-          html={body.html}
-          toc={body.toc}
-          cover={null}
-          faq={null}
-          readMin={body.readMin}
-          updatedAt={version.publishedAt}
-        />
-        <Commitments />
-        <Cta />
-      </>
-    );
-  }
+  const description = version?.description || page.description;
   const url = `${site.url}${path}`;
 
   const faqItems = page.sections.flatMap((s) =>
@@ -178,7 +155,7 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
           "@context": "https://schema.org",
           "@type": "Service",
           name: page.h1,
-          description: page.description,
+          description,
           url,
           image: `${site.url}${hero}`,
           provider: { "@id": `${site.url}#entreprise` },
@@ -189,7 +166,7 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
           "@type": mainType,
           headline: page.h1,
           name: page.h1,
-          description: page.description,
+          description,
           image: `${site.url}${hero}`,
           inLanguage: "fr-FR",
           isPartOf: { "@type": "WebSite", name: site.name, url: site.url },
@@ -198,7 +175,8 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
         },
   ];
 
-  if (faqItems.length > 0) {
+  // La FAQ de la page n'est pas affichée avec une version WhatsWrong.
+  if (faqItems.length > 0 && !version) {
     jsonLd.push({
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -208,6 +186,37 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
         acceptedAnswer: { "@type": "Answer", text: stripInline(f.a) },
       })),
     });
+  }
+
+  // Une version publiée : l'en-tête de la page, puis son texte à elle, puis
+  // les blocs communs.
+  if (version) {
+    const body = preparePageVersion(version);
+    return (
+      <>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <InnerHero
+          h1={page.h1}
+          intro={version.description}
+          image={hero}
+          crumbLabel={parentCrumb.label}
+          crumbHref={parentCrumb.href}
+        />
+        <HtmlArticle
+          html={body.html}
+          toc={body.toc}
+          cover={null}
+          faq={null}
+          readMin={body.readMin}
+          updatedAt={version.publishedAt}
+        />
+        <Commitments />
+        <Cta />
+      </>
+    );
   }
 
   return (

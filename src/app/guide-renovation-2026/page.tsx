@@ -6,7 +6,7 @@ import { HtmlArticle } from "@/components/page/html-article";
 import { PageHero } from "@/components/page/page-hero";
 import { Commitments } from "@/components/sections/commitments";
 import { Cta } from "@/components/sections/cta";
-import { cleanTitle, getPage, visualsFor } from "@/lib/content";
+import { clamp, cleanTitle, getPage, visualsFor } from "@/lib/content";
 import { site } from "@/lib/site";
 import {
   preparePageVersion,
@@ -18,15 +18,19 @@ const page = getPage(path);
 // Une version publiée depuis WhatsWrong : son titre, sa description, son texte.
 const version = publishedPageVersion(path);
 
+const DEFAULT_DESCRIPTION =
+  "Téléchargez le guide complet de la rénovation d’appartement à Paris en 2026 : prix au m², étapes, aides financières et 10 pièges à éviter.";
+
+// Avec une version, mêmes règles que les autres pages (`[...slug]`) :
+// titre et description bornés, description vide → celle de la page.
 const title = version
-  ? cleanTitle(version.title)
+  ? clamp(cleanTitle(version.title), 60)
   : page
     ? cleanTitle(page.title)
     : "Guide gratuit rénovation appartement Paris 2026";
-const description =
-  version?.description ??
-  page?.description ??
-  "Téléchargez le guide complet de la rénovation d’appartement à Paris en 2026 : prix au m², étapes, aides financières et 10 pièges à éviter.";
+const description = version
+  ? clamp(version.description || page?.description || DEFAULT_DESCRIPTION, 155)
+  : (page?.description ?? DEFAULT_DESCRIPTION);
 
 export const metadata: Metadata = {
   title,
@@ -90,11 +94,16 @@ export default function GuidePage() {
     publisher: { "@id": `${site.url}#entreprise` },
     url: `${site.url}${path}`,
     offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
-    hasPart: chapitres.map((c) => ({
-      "@type": "Chapter",
-      name: c.t,
-      description: c.d,
-    })),
+    // Les chapitres ne sont pas affichés avec une version WhatsWrong.
+    ...(version
+      ? {}
+      : {
+          hasPart: chapitres.map((c) => ({
+            "@type": "Chapter",
+            name: c.t,
+            description: c.d,
+          })),
+        }),
   };
 
   return (

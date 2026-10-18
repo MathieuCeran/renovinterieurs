@@ -242,20 +242,43 @@ async function syncPages() {
   try {
     data = await whatswrong("GET", "/api/v1/eli/pages");
   } catch (e) {
-    if (e instanceof RateLimited) throw e;
+    // Une limite d'appels sur les pages n'arrête pas l'import des articles.
     warn(`pages WhatsWrong non lues : ${e.message}`);
     return false;
   }
-  const pages = (data?.pages ?? [])
-    .map((p) => ({
+  // Une réponse sans liste (format inattendu) ne vide jamais pages.json.
+  if (!Array.isArray(data?.pages)) {
+    warn("pages WhatsWrong : réponse sans liste « pages » — fichier conservé");
+    return false;
+  }
+  const pages = [];
+  for (const p of data.pages) {
+    const valid =
+      typeof p?.path === "string" &&
+      p.path.startsWith("/") &&
+      typeof p.html === "string" &&
+      typeof p.title === "string" &&
+      typeof p.description === "string";
+    if (!valid) {
+      warn(`page WhatsWrong ignorée (champs manquants) : ${p?.id ?? "id inconnu"}`);
+      continue;
+    }
+    pages.push({
       id: p.id,
       path: p.path,
       title: p.title,
       description: p.description,
       html: p.html,
       publishedAt: p.publishedAt,
-    }))
-    .sort((a, b) => a.path.localeCompare(b.path));
+    });
+  }
+  pages.sort((a, b) => a.path.localeCompare(b.path));
+  const shown = await versionPaths();
+  for (const p of pages) {
+    if (!shown.has(bare(p.path))) {
+      warn(`${p.path} est publiée dans WhatsWrong, mais sa route n'affiche pas encore les versions WhatsWrong — copiée, sans effet à l'écran`);
+    }
+  }
   const before = await readJson(PAGES_FILE, []);
   if (JSON.stringify(before) === JSON.stringify(pages)) {
     log(`pages : ${pages.length} publiée(s), inchangées`);
@@ -265,6 +288,30 @@ async function syncPages() {
   if (DRY_RUN) return false;
   await writeJson(PAGES_FILE, pages);
   return true;
+}
+
+/* Une adresse sans barre finale (« / » pour l'accueil). */
+function bare(p) {
+  return p.replace(/\/+$/, "") || "/";
+}
+
+// Les gabarits dédiés : ils ne lisent pas les versions WhatsWrong, sauf le
+// guide (même liste que CUSTOM_ROUTES dans src/lib/content.ts).
+const CUSTOM_ROUTES = new Set(["/", "/contact-devis", "/faq", "/realisations-renovation", "/conseils"]);
+const VERSION_ROUTES = ["/guide-renovation-2026"];
+
+/** Les adresses dont la page affiche une version WhatsWrong : les pages JSON
+ *  du gabarit générique, et les gabarits dédiés qui la lisent. */
+async function versionPaths() {
+  const files = await readdir(PAGES_DIR).catch(() => []);
+  const slugs = files
+    .filter((f) => f.endsWith(".json"))
+    .map((f) => {
+      const base = f.slice(0, -".json".length);
+      return base === "index" ? "/" : `/${base.replace(/__/g, "/")}`;
+    })
+    .filter((s) => !CUSTOM_ROUTES.has(s));
+  return new Set([...slugs, ...VERSION_ROUTES].map(bare));
 }
 
 /* ---------- Git ---------- */
