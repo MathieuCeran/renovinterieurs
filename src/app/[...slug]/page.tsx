@@ -27,6 +27,10 @@ import {
   type WwArticle,
   wwPath,
 } from "@/lib/whatswrong";
+import {
+  preparePageVersion,
+  publishedPageVersion,
+} from "@/lib/whatswrong-pages";
 
 /** Pages JSON et articles WhatsWrong (copiés dans le dépôt) : tout est pré-rendu. */
 export const dynamicParams = false;
@@ -63,9 +67,13 @@ export async function generateMetadata({
   }
 
   const hero = page.hero ?? visualsFor(path).hero;
-  const title = clamp(cleanTitle(page.title), 60);
+  // Une version publiée depuis WhatsWrong : son titre et sa description.
+  const version = publishedPageVersion(path);
+  const title = clamp(cleanTitle(version?.title ?? page.title), 60);
   const description = clamp(
-    page.description || stripInline(page.intro[0] ?? ""),
+    version?.description ||
+      page.description ||
+      stripInline(page.intro[0] ?? ""),
     155,
   );
 
@@ -105,6 +113,34 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
   const hero = page.hero ?? visuals.hero;
   const crumbs = breadcrumbFor(path);
   const parentCrumb = crumbs[crumbs.length - 1];
+
+  // Une version publiée depuis WhatsWrong : l'en-tête de la page, puis son
+  // texte à elle, puis les blocs communs.
+  const version = publishedPageVersion(path);
+  if (version) {
+    const body = preparePageVersion(version);
+    return (
+      <>
+        <InnerHero
+          h1={page.h1}
+          intro={version.description}
+          image={hero}
+          crumbLabel={parentCrumb.label}
+          crumbHref={parentCrumb.href}
+        />
+        <HtmlArticle
+          html={body.html}
+          toc={body.toc}
+          cover={null}
+          faq={null}
+          readMin={body.readMin}
+          updatedAt={version.publishedAt}
+        />
+        <Commitments />
+        <Cta />
+      </>
+    );
+  }
   const url = `${site.url}${path}`;
 
   const faqItems = page.sections.flatMap((s) =>
@@ -232,8 +268,8 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
                 ))
               ) : (
                 <p className="mt-4 mb-6 text-[0.95rem] leading-[1.7] text-muted">
-                  Un interlocuteur unique du diagnostic à la réception, un
-                  devis détaillé sous 48 h, un compte-rendu chaque semaine.
+                  Un interlocuteur unique du diagnostic à la réception, un devis
+                  détaillé sous 48 h, un compte-rendu chaque semaine.
                 </p>
               )}
               <ul className="mt-auto grid gap-2.5 border-t border-line pt-5 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
@@ -325,7 +361,12 @@ function wwMetadata(a: WwArticle, path: string): Metadata {
       ...(d.createdAt ? { publishedTime: d.createdAt } : {}),
       ...(d.lastModifiedAt ? { modifiedTime: d.lastModifiedAt } : {}),
     },
-    twitter: { card: "summary_large_image", title, description, images: [image] },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [image],
+    },
   };
 }
 
@@ -403,7 +444,10 @@ function WwPage({ article, path }: { article: WwArticle; path: string }) {
         toc={body.toc}
         cover={d.cover}
         faq={faq}
-        readMin={Math.max(3, Math.round(plainText(d.body).split(" ").length / 220))}
+        readMin={Math.max(
+          3,
+          Math.round(plainText(d.body).split(" ").length / 220),
+        )}
         updatedAt={d.lastModifiedAt ?? d.createdAt ?? null}
       />
       <Commitments />

@@ -52,6 +52,7 @@ const BLOG_PREFIX = "/conseils";
 const STORE_DIR = path.join(ROOT, "src/content/whatswrong");
 const ARTICLES_FILE = path.join(STORE_DIR, "articles.json");
 const STATE_FILE = path.join(STORE_DIR, "_state.json");
+const PAGES_FILE = path.join(STORE_DIR, "pages.json");
 const PAGES_DIR = path.join(ROOT, "src/content/pages");
 const UPLOAD_DIR = path.join(ROOT, "public/uploads/whatswrong");
 const UPLOAD_PUBLIC = "/uploads/whatswrong";
@@ -226,6 +227,46 @@ async function fixInternalLinks(html) {
   return out;
 }
 
+/* ---------- Pages réécrites par Eli ---------- */
+
+/**
+ * Les pages du site publiées depuis WhatsWrong (« Publier sur mon site »),
+ * copiées dans pages.json : le site les affiche à la place de son propre
+ * texte. Une page retirée chez WhatsWrong disparaît du fichier et le site
+ * reprend son texte. Cet appel dit aussi à WhatsWrong que le site est
+ * branché. Une route absente (WhatsWrong pas encore à jour) ne change rien.
+ * Rend vrai si pages.json a changé.
+ */
+async function syncPages() {
+  let data;
+  try {
+    data = await whatswrong("GET", "/api/v1/eli/pages");
+  } catch (e) {
+    if (e instanceof RateLimited) throw e;
+    warn(`pages WhatsWrong non lues : ${e.message}`);
+    return false;
+  }
+  const pages = (data?.pages ?? [])
+    .map((p) => ({
+      id: p.id,
+      path: p.path,
+      title: p.title,
+      description: p.description,
+      html: p.html,
+      publishedAt: p.publishedAt,
+    }))
+    .sort((a, b) => a.path.localeCompare(b.path));
+  const before = await readJson(PAGES_FILE, []);
+  if (JSON.stringify(before) === JSON.stringify(pages)) {
+    log(`pages : ${pages.length} publiée(s), inchangées`);
+    return false;
+  }
+  log(`pages : ${pages.length} publiée(s) — ${pages.map((p) => p.path).join(", ") || "aucune"}`);
+  if (DRY_RUN) return false;
+  await writeJson(PAGES_FILE, pages);
+  return true;
+}
+
 /* ---------- Git ---------- */
 
 async function git(...args) {
@@ -323,6 +364,11 @@ async function main() {
   // Articles déjà publiés du temps de la lecture directe de l'API : repris tels quels.
   const published = (await listArticles("PUBLISHED")).filter((a) => !state.articles[a.id]);
   log(`${drafts.length} article(s) DRAFT, ${published.length} article(s) PUBLISHED à reprendre`);
+
+  // Les pages d'abord : leur commit ne dépend pas des articles.
+  if (await syncPages()) {
+    await commitAndPush("content: pages WhatsWrong mises à jour");
+  }
 
   if (DRY_RUN) {
     for (const c of [...drafts, ...published]) {

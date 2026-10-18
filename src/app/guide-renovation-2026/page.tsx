@@ -2,19 +2,29 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { GuideForm } from "@/components/page/guide-form";
+import { HtmlArticle } from "@/components/page/html-article";
 import { PageHero } from "@/components/page/page-hero";
 import { Commitments } from "@/components/sections/commitments";
 import { Cta } from "@/components/sections/cta";
 import { cleanTitle, getPage, visualsFor } from "@/lib/content";
 import { site } from "@/lib/site";
+import {
+  preparePageVersion,
+  publishedPageVersion,
+} from "@/lib/whatswrong-pages";
 
 const path = "/guide-renovation-2026";
 const page = getPage(path);
+// Une version publiée depuis WhatsWrong : son titre, sa description, son texte.
+const version = publishedPageVersion(path);
 
-const title = page
-  ? cleanTitle(page.title)
-  : "Guide gratuit rénovation appartement Paris 2026";
+const title = version
+  ? cleanTitle(version.title)
+  : page
+    ? cleanTitle(page.title)
+    : "Guide gratuit rénovation appartement Paris 2026";
 const description =
+  version?.description ??
   page?.description ??
   "Téléchargez le guide complet de la rénovation d’appartement à Paris en 2026 : prix au m², étapes, aides financières et 10 pièges à éviter.";
 
@@ -104,87 +114,116 @@ export default function GuidePage() {
         secondary={{ label: "Parler à un expert", href: "/contact-devis" }}
       />
 
-      {/* Chapitres + formulaire */}
-      <section
-        id="guide"
-        className="py-14 lg:py-20"
-        aria-labelledby="chapitres-title"
-      >
-        <div className="container-x grid items-start gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
-          <div>
-            <h2
-              id="chapitres-title"
-              className="text-[clamp(1.5rem,3vw,2.2rem)] leading-[1.06] font-medium tracking-[-0.02em]"
-            >
-              <span className="mask reveal-mask">
-                <span className="block">7 chapitres pour</span>
-              </span>
-              <span className="mask reveal-mask">
-                <span className="display-italic block text-[1.1em]">
-                  décider sereinement
-                </span>
-              </span>
-            </h2>
-
-            <ol className="reveal-stagger mt-8 border-t border-line">
-              {chapitres.map((c, i) => (
-                <li
-                  key={c.t}
-                  style={{ "--i": Math.min(i, 6) } as React.CSSProperties}
-                  className="flex gap-5 border-b border-line py-5"
+      {version ? (
+        <VersionBody />
+      ) : (
+        <>
+          {/* Chapitres + formulaire */}
+          <section
+            id="guide"
+            className="py-14 lg:py-20"
+            aria-labelledby="chapitres-title"
+          >
+            <div className="container-x grid items-start gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+              <div>
+                <h2
+                  id="chapitres-title"
+                  className="text-[clamp(1.5rem,3vw,2.2rem)] leading-[1.06] font-medium tracking-[-0.02em]"
                 >
-                  <span className="display-italic w-8 shrink-0 text-[1.1rem] leading-none text-terra">
-                    {String(i + 1).padStart(2, "0")}
+                  <span className="mask reveal-mask">
+                    <span className="block">7 chapitres pour</span>
                   </span>
-                  <span>
-                    <span className="block text-[1rem] leading-snug font-medium">
-                      {c.t}
-                    </span>
-                    <span className="mt-1.5 block text-[0.88rem] leading-relaxed text-muted">
-                      {c.d}
+                  <span className="mask reveal-mask">
+                    <span className="display-italic block text-[1.1em]">
+                      décider sereinement
                     </span>
                   </span>
-                </li>
-              ))}
-            </ol>
-          </div>
+                </h2>
 
-          <div className="reveal lg:sticky lg:top-28">
-            <GuideForm />
-          </div>
-        </div>
-      </section>
+                <ol className="reveal-stagger mt-8 border-t border-line">
+                  {chapitres.map((c, i) => (
+                    <li
+                      key={c.t}
+                      style={{ "--i": Math.min(i, 6) } as React.CSSProperties}
+                      className="flex gap-5 border-b border-line py-5"
+                    >
+                      <span className="display-italic w-8 shrink-0 text-[1.1rem] leading-none text-terra">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <span>
+                        <span className="block text-[1rem] leading-snug font-medium">
+                          {c.t}
+                        </span>
+                        <span className="mt-1.5 block text-[0.88rem] leading-relaxed text-muted">
+                          {c.d}
+                        </span>
+                      </span>
+                    </li>
+                  ))}
+                </ol>
+              </div>
 
-      {/* Passerelle devis */}
-      <section
-        className="container-x py-10 lg:py-14"
-        aria-label="Projet déjà cadré"
-      >
-        <div className="rounded-[clamp(18px,2.4vw,28px)] border border-line bg-paper p-8 sm:p-10">
-          <p className="dot-label text-terra">Projet déjà clair ?</p>
-          <p className="mt-4 max-w-2xl text-[clamp(1.05rem,1.9vw,1.3rem)] leading-[1.5] font-medium text-balance">
-            Le guide ne remplace pas un échange direct. Décrivez votre projet et
-            recevez un devis détaillé sous 48 h.
-          </p>
-          <div className="mt-6 flex flex-wrap items-center gap-3">
-            <Link
-              href="/contact-devis"
-              className="inline-flex items-center rounded-full bg-ink px-6 py-3 text-[0.86rem] font-medium text-paper transition-colors duration-400 hover:bg-terra"
-            >
-              Demander un devis
-            </Link>
-            <a
-              href={site.phoneHref}
-              className="inline-flex items-center rounded-full border border-line px-6 py-3 text-[0.86rem] font-medium transition-colors duration-400 hover:border-ink"
-            >
-              {site.phoneDisplay}
-            </a>
-          </div>
-        </div>
-      </section>
+              <div className="reveal lg:sticky lg:top-28">
+                <GuideForm />
+              </div>
+            </div>
+          </section>
 
+          {/* Passerelle devis */}
+          <section
+            className="container-x py-10 lg:py-14"
+            aria-label="Projet déjà cadré"
+          >
+            <div className="rounded-[clamp(18px,2.4vw,28px)] border border-line bg-paper p-8 sm:p-10">
+              <p className="dot-label text-terra">Projet déjà clair ?</p>
+              <p className="mt-4 max-w-2xl text-[clamp(1.05rem,1.9vw,1.3rem)] leading-[1.5] font-medium text-balance">
+                Le guide ne remplace pas un échange direct. Décrivez votre
+                projet et recevez un devis détaillé sous 48 h.
+              </p>
+              <div className="mt-6 flex flex-wrap items-center gap-3">
+                <Link
+                  href="/contact-devis"
+                  className="inline-flex items-center rounded-full bg-ink px-6 py-3 text-[0.86rem] font-medium text-paper transition-colors duration-400 hover:bg-terra"
+                >
+                  Demander un devis
+                </Link>
+                <a
+                  href={site.phoneHref}
+                  className="inline-flex items-center rounded-full border border-line px-6 py-3 text-[0.86rem] font-medium transition-colors duration-400 hover:border-ink"
+                >
+                  {site.phoneDisplay}
+                </a>
+              </div>
+            </div>
+          </section>
+        </>
+      )}
       <Commitments />
       <Cta />
+    </>
+  );
+}
+
+/* La version WhatsWrong : son texte, puis le formulaire du guide (l'ancre
+ * #guide des boutons de l'en-tête y mène toujours). */
+function VersionBody() {
+  if (!version) return null;
+  const body = preparePageVersion(version);
+  return (
+    <>
+      <HtmlArticle
+        html={body.html}
+        toc={body.toc}
+        cover={null}
+        faq={null}
+        readMin={body.readMin}
+        updatedAt={version.publishedAt}
+      />
+      <section id="guide" className="container-x py-10 lg:py-14">
+        <div className="mx-auto max-w-xl">
+          <GuideForm />
+        </div>
+      </section>
     </>
   );
 }
