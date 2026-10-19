@@ -47,7 +47,7 @@ async function publishedPages(): Promise<WwPageVersion[]> {
   const key = process.env.WW_API_KEY || process.env.WHATSWRONG_API_KEY;
   if (!key) return [];
   try {
-    const res = await fetch("https://www.whatswrong.io/api/v1/eli/pages", {
+    const res = await fetch(`${process.env.WW_API_BASE || "https://www.whatswrong.io"}/api/v1/eli/pages`, {
       headers: { Authorization: `Bearer ${key}` },
       next: { revalidate: REVALIDATE_SECONDS },
       signal: AbortSignal.timeout(TIMEOUT_MS),

@@ -6,12 +6,11 @@ import sanitizeHtml from "sanitize-html";
 /* ------------------------------------------------------------------ */
 /*  WhatsWrong : articles SEO rédigés par Léa                          */
 /*                                                                     */
-/*  Le site garde une copie de chaque article (texte + images) dans    */
-/*  le dépôt : src/content/whatswrong/articles.json et                 */
-/*  public/uploads/whatswrong/. La copie est faite chaque heure par    */
-/*  GitHub Actions (scripts/whatswrong-sync.mjs), qui confirme ensuite */
-/*  l'URL publique à WhatsWrong. Si WhatsWrong tombe ou si             */
-/*  l'abonnement s'arrête, les articles restent en ligne.              */
+/*  Le site lit ses articles en direct sur l'API de WhatsWrong au      */
+/*  rendu : un article prêt est en ligne au plus une minute après, et  */
+/*  WhatsWrong confirme lui-même sa publication. Les articles copiés   */
+/*  avant (src/content/whatswrong/articles.json, public/uploads/...)   */
+/*  restent le secours si l'API ne répond pas.                         */
 /* ------------------------------------------------------------------ */
 
 export type WwArticle = {
@@ -43,8 +42,17 @@ export function wwPath(a: WwArticle): string {
   return `/conseils/${a.slug}`;
 }
 
-/** Tous les articles publiés, lus dans le dépôt. */
-export function publishedArticles(): WwArticle[] {
+// Le blog sur WhatsWrong : un article prêt y est en ligne au plus une
+// minute après, sans synchronisation ni redéploiement.
+const BLOG_BASE = "https://www.renovinterieurs.fr/conseils";
+const API_BASE = process.env.WW_API_BASE || "https://www.whatswrong.io";
+const REVALIDATE_SECONDS = 60;
+// Au-delà, le site n'attend pas : il affiche les copies du dépôt.
+const TIMEOUT_MS = 2000;
+
+/** Les copies gardées dans le dépôt (articles importés avant la lecture
+ *  directe) : le secours quand WhatsWrong ne répond pas. */
+function storedArticles(): WwArticle[] {
   try {
     return JSON.parse(fs.readFileSync(ARTICLES_FILE, "utf8")) as WwArticle[];
   } catch {
@@ -52,8 +60,65 @@ export function publishedArticles(): WwArticle[] {
   }
 }
 
-export function publishedArticle(slug: string): WwArticle | null {
-  return publishedArticles().find((a) => a.slug === slug) ?? null;
+type LiveArticle = {
+  id: string;
+  slug: string;
+  title: string;
+  description: string;
+  html: string;
+  mainKeyword: string | null;
+  faq: WwArticle["faq"];
+  publishedAt: string;
+  lastModifiedAt: string;
+};
+
+/* Les articles lus en direct sur WhatsWrong (en ligne et prêts à leur
+ * date) ; null si la clé manque ou si l'API ne répond pas. En donnant
+ * l'adresse du blog, WhatsWrong vérifie qu'un nouvel article est en ligne
+ * et lance son suivi : le site n'a rien à lui renvoyer. */
+async function liveArticles(): Promise<LiveArticle[] | null> {
+  const key = process.env.WW_API_KEY || process.env.WHATSWRONG_API_KEY;
+  if (!key) return null;
+  try {
+    const res = await fetch(
+      `${API_BASE}/api/v1/lea/blog?base=${encodeURIComponent(BLOG_BASE)}`,
+      {
+        headers: { Authorization: `Bearer ${key}` },
+        next: { revalidate: REVALIDATE_SECONDS },
+        signal: AbortSignal.timeout(TIMEOUT_MS),
+      },
+    );
+    if (!res.ok) return null;
+    const data = (await res.json()) as { articles?: LiveArticle[] };
+    return Array.isArray(data.articles) ? data.articles : null;
+  } catch {
+    return null;
+  }
+}
+
+/** Tous les articles en ligne : ceux de WhatsWrong en direct (avec la
+ *  couverture de leur copie, s'il y en a une), sinon les copies du dépôt. */
+export async function publishedArticles(): Promise<WwArticle[]> {
+  const stored = storedArticles();
+  const live = await liveArticles();
+  if (live === null) return stored;
+  const byId = new Map(stored.map((a) => [a.id, a]));
+  return live.map((a) => ({
+    id: a.id,
+    slug: byId.get(a.id)?.slug ?? a.slug,
+    title: a.title,
+    description: a.description,
+    body: a.html,
+    mainKeyword: a.mainKeyword,
+    cover: byId.get(a.id)?.cover ?? null,
+    faq: a.faq,
+    createdAt: a.publishedAt,
+    lastModifiedAt: a.lastModifiedAt,
+  }));
+}
+
+export async function publishedArticle(slug: string): Promise<WwArticle | null> {
+  return (await publishedArticles()).find((a) => a.slug === slug) ?? null;
 }
 
 /* ------------------------------------------------------------------ */

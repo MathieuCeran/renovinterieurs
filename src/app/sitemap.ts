@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 import { publishedArticles, wwPath } from "@/lib/whatswrong";
 
 /** Dérivé du store de contenu : toute page ajoutée y apparaît automatiquement. */
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
 
   const priority = (path: string) => {
@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   };
 
   const local = allPaths();
-  const articles = publishedArticles()
+  const articles = (await publishedArticles())
     .map(wwPath)
     .filter((p) => !local.includes(p));
   const paths = [...local, ...articles, "/outils", ...tools.map((t) => t.href)];

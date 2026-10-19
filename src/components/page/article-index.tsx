@@ -61,6 +61,9 @@ function Visual({
           alt=""
           fill
           sizes={sizes}
+          // Une image hébergée chez WhatsWrong : affichée telle quelle, sans
+          // passer par l'optimisation d'images (facturée à l'image).
+          unoptimized={/^https?:\/\//.test(a.image)}
           className="object-cover transition-transform duration-[1300ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-105"
         />
       ) : (

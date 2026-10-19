@@ -33,13 +33,14 @@ import {
 } from "@/lib/whatswrong-pages";
 import { applyWwChanges, wwText } from "@/lib/whatswrong-changes";
 
-/** Pages JSON et articles WhatsWrong (copiés dans le dépôt) : tout est pré-rendu. */
-export const dynamicParams = false;
+/** Pages JSON et articles WhatsWrong pré-rendus ; un nouvel article de
+ *  WhatsWrong (lu en direct) est rendu à sa première visite. */
+export const dynamicParams = true;
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   const paths = [
     ...allSlugs(),
-    ...publishedArticles()
+    ...(await publishedArticles())
       .map(wwPath)
       .filter((p) => !getPage(p)),
   ];
@@ -51,7 +52,7 @@ function slugOf(parts: string[]) {
 }
 
 /** Article WhatsWrong publié sous /conseils/<slug>, sinon null. */
-function wwArticleAt(parts: string[]): WwArticle | null {
+async function wwArticleAt(parts: string[]): Promise<WwArticle | null> {
   if (parts.length !== 2 || parts[0] !== "conseils") return null;
   return publishedArticle(parts[1]);
 }
@@ -63,7 +64,7 @@ export async function generateMetadata({
   const path = slugOf(slug);
   const page = getPage(path);
   if (!page) {
-    const ww = wwArticleAt(slug);
+    const ww = await wwArticleAt(slug);
     return ww ? wwMetadata(ww, path) : {};
   }
 
@@ -105,7 +106,7 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
   const path = slugOf(slug);
   const sourcePage = getPage(path);
   if (!sourcePage) {
-    const ww = wwArticleAt(slug);
+    const ww = await wwArticleAt(slug);
     if (!ww) notFound();
     return <WwPage article={ww} path={path} />;
   }

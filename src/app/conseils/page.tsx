@@ -65,7 +65,7 @@ function categorize(slug: string): string {
 }
 
 /** Guides du site (visuel de thème) + articles WhatsWrong (leurs propres images). */
-function loadArticles(): Article[] {
+async function loadArticles(): Promise<Article[]> {
   const local = allPaths()
     .filter((p) => p.startsWith("/conseils/"))
     .map((p) => {
@@ -88,7 +88,7 @@ function loadArticles(): Article[] {
     })
     .filter((a) => a !== null);
 
-  const remote = publishedArticles()
+  const remote = (await publishedArticles())
     .filter((a) => !getPage(wwPath(a)))
     .map((a): Article => ({
       href: wwPath(a),
@@ -115,9 +115,9 @@ function loadArticles(): Article[] {
     });
 }
 
-export default function ConseilsPage() {
+export default async function ConseilsPage() {
   const { hero } = visualsFor(path);
-  const articles = loadArticles();
+  const articles = await loadArticles();
 
   const jsonLd = {
     "@context": "https://schema.org",
