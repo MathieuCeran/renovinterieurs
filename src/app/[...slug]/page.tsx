@@ -32,6 +32,7 @@ import {
   publishedPageVersion,
 } from "@/lib/whatswrong-pages";
 import { applyWwChanges, wwText } from "@/lib/whatswrong-changes";
+import { applyHtmlChanges } from "@/lib/whatswrong-html";
 
 /** Pages JSON et articles WhatsWrong pré-rendus ; un nouvel article de
  *  WhatsWrong (lu en direct) est rendu à sa première visite. */
@@ -57,9 +58,9 @@ async function wwArticleAt(parts: string[]): Promise<WwArticle | null> {
   return publishedArticle(parts[1]);
 }
 
-/* Un article de Léa optimisé ensuite par Eli et publié : son titre, sa
- * description et son texte sont ceux de la version publiée (le corps est
- * un HTML d'article, il se remplace entier). */
+/* Un article de Léa optimisé ensuite par Eli et publié : son titre et sa
+ * description publiés, ses textes changés un à un dans son HTML (ses blocs
+ * et la mise en page du site restent). */
 async function optimizedArticle(
   article: WwArticle | null,
   path: string,
@@ -71,7 +72,10 @@ async function optimizedArticle(
     ...article,
     title: version.title || article.title,
     description: version.description || article.description,
-    body: version.html || article.body,
+    // Les changements posés dans l'article ; publiée avant eux, son texte.
+    body: version.changes
+      ? applyHtmlChanges(article.body, version.changes)
+      : version.html || article.body,
   };
 }
 
@@ -126,7 +130,9 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
   if (!sourcePage) {
     const ww = await optimizedArticle(await wwArticleAt(slug), path);
     if (!ww) notFound();
-    return <WwPage article={ww} path={path} />;
+    // Ses blocs du site (engagements, appel à l'action) changés eux aussi.
+    const version = await publishedPageVersion(path);
+    return <WwPage article={ww} path={path} ww={wwText(version?.changes ?? null)} />;
   }
 
   // Une version publiée depuis WhatsWrong : ses changements posés dans les
@@ -420,7 +426,15 @@ function wwMetadata(a: WwArticle, path: string): Metadata {
   };
 }
 
-function WwPage({ article, path }: { article: WwArticle; path: string }) {
+function WwPage({
+  article,
+  path,
+  ww,
+}: {
+  article: WwArticle;
+  path: string;
+  ww: (text: string) => string | null;
+}) {
   const d = article;
   const url = `${site.url}${path}`;
   const body = prepareArticle(d.body);
@@ -500,8 +514,8 @@ function WwPage({ article, path }: { article: WwArticle; path: string }) {
         )}
         updatedAt={d.lastModifiedAt ?? d.createdAt ?? null}
       />
-      <Commitments />
-      <Cta />
+      <Commitments ww={ww} />
+      <Cta ww={ww} />
     </>
   );
 }
