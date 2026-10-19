@@ -441,10 +441,12 @@ function WwPage({
   const faq = d.faq?.items?.length
     ? {
         title: d.faq.title,
-        items: d.faq.items.map((f) => ({
-          q: plainText(f.question),
-          a: plainText(f.answer),
-        })),
+        // Ses questions et réponses réécrites (ou retirées) par Eli.
+        items: d.faq.items.flatMap((f) => {
+          const q = ww(plainText(f.question));
+          const a = ww(plainText(f.answer));
+          return q && a ? [{ q, a }] : [];
+        }),
       }
     : null;
 
