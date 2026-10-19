@@ -1,3 +1,4 @@
+import { permanentRedirect } from "next/navigation";
 import { cache } from "react";
 import { plainText, prepareArticle, type TocEntry } from "@/lib/whatswrong";
 import type { WwChanges } from "@/lib/whatswrong-changes";
@@ -44,20 +45,30 @@ function bare(p: string): string {
 
 /* Les pages publiées depuis WhatsWrong, lues sur l'API ; rien si la clé
  * manque ou si l'API ne répond pas. */
-async function publishedPagesUncached(): Promise<WwPageVersion[]> {
+type Published = {
+  pages: WwPageVersion[];
+  redirects: { from: string; to: string }[];
+};
+
+const NONE: Published = { pages: [], redirects: [] };
+
+async function publishedPagesUncached(): Promise<Published> {
   const key = process.env.WW_API_KEY || process.env.WHATSWRONG_API_KEY;
-  if (!key) return [];
+  if (!key) return NONE;
   try {
     const res = await fetch(`${process.env.WW_API_BASE || "https://www.whatswrong.io"}/api/v1/eli/pages`, {
       headers: { Authorization: `Bearer ${key}` },
       next: { revalidate: REVALIDATE_SECONDS },
       signal: AbortSignal.timeout(TIMEOUT_MS),
     });
-    if (!res.ok) return [];
-    const data = (await res.json()) as { pages?: WwPageVersion[] };
-    return Array.isArray(data.pages) ? data.pages : [];
+    if (!res.ok) return NONE;
+    const data = (await res.json()) as Partial<Published>;
+    return {
+      pages: Array.isArray(data.pages) ? data.pages : [],
+      redirects: Array.isArray(data.redirects) ? data.redirects : [],
+    };
   } catch {
-    return [];
+    return NONE;
   }
 }
 
@@ -65,11 +76,14 @@ async function publishedPagesUncached(): Promise<WwPageVersion[]> {
  * réponse (sinon titre et contenu peuvent diverger si l'une expire). */
 const publishedPages = cache(publishedPagesUncached);
 
-/** La version publiée d'une page du site, sinon null. */
+/** La version publiée d'une page du site, sinon null. Une page fusionnée
+ *  dans une autre depuis WhatsWrong redirige (301) vers elle. */
 export async function publishedPageVersion(
   p: string,
 ): Promise<WwPageVersion | null> {
-  const pages = await publishedPages();
+  const { pages, redirects } = await publishedPages();
+  const merged = redirects.find((r) => bare(r.from) === bare(p));
+  if (merged) permanentRedirect(merged.to);
   return pages.find((page) => bare(page.path) === bare(p)) ?? null;
 }
 
