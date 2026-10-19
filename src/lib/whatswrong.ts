@@ -1,3 +1,4 @@
+import { cache } from "react";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -76,7 +77,7 @@ type LiveArticle = {
  * date) ; null si la clé manque ou si l'API ne répond pas. En donnant
  * l'adresse du blog, WhatsWrong vérifie qu'un nouvel article est en ligne
  * et lance son suivi : le site n'a rien à lui renvoyer. */
-async function liveArticles(): Promise<LiveArticle[] | null> {
+async function liveArticlesUncached(): Promise<LiveArticle[] | null> {
   const key = process.env.WW_API_KEY || process.env.WHATSWRONG_API_KEY;
   if (!key) return null;
   try {
@@ -95,6 +96,10 @@ async function liveArticles(): Promise<LiveArticle[] | null> {
     return null;
   }
 }
+
+/* Une lecture par rendu : les métadonnées et la page voient la même
+ * réponse (sinon titre et contenu peuvent diverger si l'une expire). */
+const liveArticles = cache(liveArticlesUncached);
 
 /** Tous les articles en ligne : ceux de WhatsWrong en direct (avec la
  *  couverture de leur copie, s'il y en a une), sinon les copies du dépôt. */

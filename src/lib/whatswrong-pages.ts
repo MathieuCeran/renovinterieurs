@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { plainText, prepareArticle, type TocEntry } from "@/lib/whatswrong";
 import type { WwChanges } from "@/lib/whatswrong-changes";
 
@@ -43,7 +44,7 @@ function bare(p: string): string {
 
 /* Les pages publiées depuis WhatsWrong, lues sur l'API ; rien si la clé
  * manque ou si l'API ne répond pas. */
-async function publishedPages(): Promise<WwPageVersion[]> {
+async function publishedPagesUncached(): Promise<WwPageVersion[]> {
   const key = process.env.WW_API_KEY || process.env.WHATSWRONG_API_KEY;
   if (!key) return [];
   try {
@@ -59,6 +60,10 @@ async function publishedPages(): Promise<WwPageVersion[]> {
     return [];
   }
 }
+
+/* Une lecture par rendu : les métadonnées et la page voient la même
+ * réponse (sinon titre et contenu peuvent diverger si l'une expire). */
+const publishedPages = cache(publishedPagesUncached);
 
 /** La version publiée d'une page du site, sinon null. */
 export async function publishedPageVersion(
