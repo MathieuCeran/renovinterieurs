@@ -11,41 +11,46 @@ import { site } from "@/lib/site";
 import {
   preparePageVersion,
   publishedPageVersion,
+  type WwPageVersion,
 } from "@/lib/whatswrong-pages";
 
 const path = "/guide-renovation-2026";
 const page = getPage(path);
-// Une version publiée depuis WhatsWrong : son titre, sa description, son texte.
-const version = publishedPageVersion(path);
-
 const DEFAULT_DESCRIPTION =
   "Téléchargez le guide complet de la rénovation d’appartement à Paris en 2026 : prix au m², étapes, aides financières et 10 pièges à éviter.";
 
-// Avec une version, mêmes règles que les autres pages (`[...slug]`) :
-// titre et description bornés, description vide → celle de la page.
-const title = version
-  ? clamp(cleanTitle(version.title), 60)
-  : page
-    ? cleanTitle(page.title)
-    : "Guide gratuit rénovation appartement Paris 2026";
-const description = version
-  ? clamp(version.description || page?.description || DEFAULT_DESCRIPTION, 155)
-  : (page?.description ?? DEFAULT_DESCRIPTION);
+/* La description de la page : celle de la version WhatsWrong publiée,
+ * bornée (mêmes règles que `[...slug]`), sinon celle de la page. */
+function descriptionOf(version: WwPageVersion | null): string {
+  return version
+    ? clamp(version.description || page?.description || DEFAULT_DESCRIPTION, 155)
+    : (page?.description ?? DEFAULT_DESCRIPTION);
+}
 
-export const metadata: Metadata = {
-  title,
-  description,
-  alternates: { canonical: path },
-  openGraph: {
-    type: "website",
-    locale: "fr_FR",
-    url: `${site.url}${path}`,
-    siteName: site.name,
+export async function generateMetadata(): Promise<Metadata> {
+  // Une version publiée depuis WhatsWrong : son titre et sa description.
+  const version = await publishedPageVersion(path);
+  const title = version
+    ? clamp(cleanTitle(version.title), 60)
+    : page
+      ? cleanTitle(page.title)
+      : "Guide gratuit rénovation appartement Paris 2026";
+  const description = descriptionOf(version);
+  return {
     title,
     description,
-    images: [{ url: "/og.jpg" }],
-  },
-};
+    alternates: { canonical: path },
+    openGraph: {
+      type: "website",
+      locale: "fr_FR",
+      url: `${site.url}${path}`,
+      siteName: site.name,
+      title,
+      description,
+      images: [{ url: "/og.jpg" }],
+    },
+  };
+}
 
 /** Les 7 chapitres, repris du site actuel. */
 const chapitres = [
@@ -79,8 +84,10 @@ const chapitres = [
   },
 ];
 
-export default function GuidePage() {
+export default async function GuidePage() {
   const { hero } = visualsFor(path);
+  const version = await publishedPageVersion(path);
+  const description = descriptionOf(version);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -124,7 +131,7 @@ export default function GuidePage() {
       />
 
       {version ? (
-        <VersionBody />
+        <VersionBody version={version} />
       ) : (
         <>
           {/* Chapitres + formulaire */}
@@ -215,7 +222,7 @@ export default function GuidePage() {
 
 /* La version WhatsWrong : son texte, puis le formulaire du guide (l'ancre
  * #guide des boutons de l'en-tête y mène toujours). */
-function VersionBody() {
+function VersionBody({ version }: { version: WwPageVersion | null }) {
   if (!version) return null;
   const body = preparePageVersion(version);
   return (

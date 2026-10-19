@@ -69,7 +69,7 @@ export async function generateMetadata({
 
   const hero = page.hero ?? visualsFor(path).hero;
   // Une version publiée depuis WhatsWrong : son titre et sa description.
-  const version = publishedPageVersion(path);
+  const version = await publishedPageVersion(path);
   const title = clamp(cleanTitle(version?.title ?? page.title), 60);
   const description = clamp(
     version?.description ||
@@ -113,7 +113,7 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
   // Une version publiée depuis WhatsWrong : ses changements posés dans les
   // données de la page et ses textes écrits en dur (le design ne bouge pas),
   // sinon — publiée avant eux — son texte entier.
-  const version = publishedPageVersion(path);
+  const version = await publishedPageVersion(path);
   const changes = version?.changes ?? null;
   const page = changes ? applyWwChanges(sourcePage, changes) : sourcePage;
   const ww = wwText(changes);

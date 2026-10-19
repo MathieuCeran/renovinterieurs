@@ -52,7 +52,6 @@ const BLOG_PREFIX = "/conseils";
 const STORE_DIR = path.join(ROOT, "src/content/whatswrong");
 const ARTICLES_FILE = path.join(STORE_DIR, "articles.json");
 const STATE_FILE = path.join(STORE_DIR, "_state.json");
-const PAGES_FILE = path.join(STORE_DIR, "pages.json");
 const PAGES_DIR = path.join(ROOT, "src/content/pages");
 const UPLOAD_DIR = path.join(ROOT, "public/uploads/whatswrong");
 const UPLOAD_PUBLIC = "/uploads/whatswrong";
@@ -227,100 +226,6 @@ async function fixInternalLinks(html) {
   return out;
 }
 
-/* ---------- Pages réécrites par Eli ---------- */
-
-/**
- * Les pages du site publiées depuis WhatsWrong (« Publier sur mon site »),
- * copiées dans pages.json : le site les affiche à la place de son propre
- * texte. Une page retirée chez WhatsWrong disparaît du fichier et le site
- * reprend son texte. Cet appel dit aussi à WhatsWrong que le site est
- * branché. Une route absente (WhatsWrong pas encore à jour) ne change rien.
- * Rend vrai si pages.json a changé.
- */
-async function syncPages() {
-  let data;
-  try {
-    data = await whatswrong("GET", "/api/v1/eli/pages");
-  } catch (e) {
-    // Une limite d'appels sur les pages n'arrête pas l'import des articles.
-    warn(`pages WhatsWrong non lues : ${e.message}`);
-    return false;
-  }
-  // Une réponse sans liste (format inattendu) ne vide jamais pages.json.
-  if (!Array.isArray(data?.pages)) {
-    warn("pages WhatsWrong : réponse sans liste « pages » — fichier conservé");
-    return false;
-  }
-  const pages = [];
-  const validChanges = (c) =>
-    c !== null &&
-    typeof c === "object" &&
-    ["replace", "remove", "insert"].every((k) => Array.isArray(c[k]));
-  for (const p of data.pages) {
-    const valid =
-      typeof p?.path === "string" &&
-      p.path.startsWith("/") &&
-      typeof p.html === "string" &&
-      typeof p.title === "string" &&
-      typeof p.description === "string";
-    if (!valid) {
-      warn(`page WhatsWrong ignorée (champs manquants) : ${p?.id ?? "id inconnu"}`);
-      continue;
-    }
-    pages.push({
-      id: p.id,
-      path: p.path,
-      title: p.title,
-      description: p.description,
-      html: p.html,
-      // Les changements texte par texte (le design du site ne bouge pas) ;
-      // null pour une page publiée avant eux.
-      changes: validChanges(p.changes) ? p.changes : null,
-      publishedAt: p.publishedAt,
-    });
-  }
-  pages.sort((a, b) => a.path.localeCompare(b.path));
-  const shown = await versionPaths();
-  for (const p of pages) {
-    if (!shown.has(bare(p.path))) {
-      warn(`${p.path} est publiée dans WhatsWrong, mais sa route n'affiche pas encore les versions WhatsWrong — copiée, sans effet à l'écran`);
-    }
-  }
-  const before = await readJson(PAGES_FILE, []);
-  if (JSON.stringify(before) === JSON.stringify(pages)) {
-    log(`pages : ${pages.length} publiée(s), inchangées`);
-    return false;
-  }
-  log(`pages : ${pages.length} publiée(s) — ${pages.map((p) => p.path).join(", ") || "aucune"}`);
-  if (DRY_RUN) return false;
-  await writeJson(PAGES_FILE, pages);
-  return true;
-}
-
-/* Une adresse sans barre finale (« / » pour l'accueil). */
-function bare(p) {
-  return p.replace(/\/+$/, "") || "/";
-}
-
-// Les gabarits dédiés : ils ne lisent pas les versions WhatsWrong, sauf le
-// guide (même liste que CUSTOM_ROUTES dans src/lib/content.ts).
-const CUSTOM_ROUTES = new Set(["/", "/contact-devis", "/faq", "/realisations-renovation", "/conseils"]);
-const VERSION_ROUTES = ["/guide-renovation-2026"];
-
-/** Les adresses dont la page affiche une version WhatsWrong : les pages JSON
- *  du gabarit générique, et les gabarits dédiés qui la lisent. */
-async function versionPaths() {
-  const files = await readdir(PAGES_DIR).catch(() => []);
-  const slugs = files
-    .filter((f) => f.endsWith(".json"))
-    .map((f) => {
-      const base = f.slice(0, -".json".length);
-      return base === "index" ? "/" : `/${base.replace(/__/g, "/")}`;
-    })
-    .filter((s) => !CUSTOM_ROUTES.has(s));
-  return new Set([...slugs, ...VERSION_ROUTES].map(bare));
-}
-
 /* ---------- Git ---------- */
 
 async function git(...args) {
@@ -418,11 +323,6 @@ async function main() {
   // Articles déjà publiés du temps de la lecture directe de l'API : repris tels quels.
   const published = (await listArticles("PUBLISHED")).filter((a) => !state.articles[a.id]);
   log(`${drafts.length} article(s) DRAFT, ${published.length} article(s) PUBLISHED à reprendre`);
-
-  // Les pages d'abord : leur commit ne dépend pas des articles.
-  if (await syncPages()) {
-    await commitAndPush("content: pages WhatsWrong mises à jour");
-  }
 
   if (DRY_RUN) {
     for (const c of [...drafts, ...published]) {
