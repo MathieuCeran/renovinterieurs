@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { Inline } from "@/components/page/blocks";
 import { ArrowRight } from "@/components/ui/kit";
 
 const commitments = [
@@ -80,7 +81,24 @@ const prestations = [
   },
 ];
 
-export function Commitments() {
+const HEADING = "Nos engagements, écrits noir sur blanc";
+const LEAD =
+  "Quatre repères simples pour comparer objectivement les devis de rénovation que vous recevez, chez nous comme ailleurs.";
+
+/** `ww` : les textes de la page vus par WhatsWrong (réécrits, ou null si
+ *  retirés) ; sans lui, les textes du site. */
+export function Commitments({
+  ww = (t) => t,
+}: {
+  ww?: (text: string) => string | null;
+}) {
+  const heading = ww(HEADING);
+  const lead = ww(LEAD);
+  const items = commitments.flatMap((c) => {
+    const title = ww(c.title);
+    const text = ww(c.text);
+    return title === null && text === null ? [] : [{ ...c, title, text }];
+  });
   return (
     <section
       className="px-[clamp(0.6rem,2vw,1.5rem)] py-4 lg:py-6"
@@ -93,23 +111,32 @@ export function Commitments() {
               id="engagements-title"
               className="text-[clamp(1.7rem,3.4vw,2.6rem)] leading-[1.05] font-medium tracking-[-0.02em]"
             >
-              <span className="mask reveal-mask">
-                <span className="block">Nos engagements,</span>
-              </span>
-              <span className="mask reveal-mask">
-                <span className="display-italic block text-[1.08em]">
-                  écrits noir sur blanc
+              {heading === null ? null : heading === HEADING ? (
+                <>
+                  <span className="mask reveal-mask">
+                    <span className="block">Nos engagements,</span>
+                  </span>
+                  <span className="mask reveal-mask">
+                    <span className="display-italic block text-[1.08em]">
+                      écrits noir sur blanc
+                    </span>
+                  </span>
+                </>
+              ) : (
+                <span className="mask reveal-mask">
+                  <span className="block">{heading}</span>
                 </span>
-              </span>
+              )}
             </h2>
-            <p className="reveal max-w-sm text-[0.9rem] leading-relaxed text-muted">
-              Quatre repères simples pour comparer objectivement les devis de
-              rénovation que vous recevez, chez nous comme ailleurs.
-            </p>
+            {lead && (
+              <p className="reveal max-w-sm text-[0.9rem] leading-relaxed text-muted">
+                <Inline v={lead} />
+              </p>
+            )}
           </div>
 
           <ul className="reveal-stagger mt-12 grid gap-px overflow-hidden bg-line sm:grid-cols-2 lg:grid-cols-4">
-            {commitments.map((c, i) => (
+            {items.map((c, i) => (
               <li
                 key={c.n}
                 style={{ "--i": i } as React.CSSProperties}
@@ -118,12 +145,16 @@ export function Commitments() {
                 <span className="display-italic text-[1.6rem] leading-none text-terra">
                   {c.n}
                 </span>
-                <h3 className="mt-5 text-[1.05rem] leading-snug font-medium">
-                  {c.title}
-                </h3>
-                <p className="mt-3 text-[0.86rem] leading-relaxed text-muted">
-                  {c.text}
-                </p>
+                {c.title && (
+                  <h3 className="mt-5 text-[1.05rem] leading-snug font-medium">
+                    {c.title}
+                  </h3>
+                )}
+                {c.text && (
+                  <p className="mt-3 text-[0.86rem] leading-relaxed text-muted">
+                    <Inline v={c.text} />
+                  </p>
+                )}
               </li>
             ))}
           </ul>

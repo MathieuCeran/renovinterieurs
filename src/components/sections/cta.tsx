@@ -1,10 +1,25 @@
 import Link from "next/link";
 
+import { Inline } from "@/components/page/blocks";
 import { LeadForm } from "@/components/sections/lead-form";
 import { PhoneIcon } from "@/components/ui/kit";
 import { site } from "@/lib/site";
 
-export function Cta() {
+const LABEL = "Un projet de rénovation ?";
+const HEADING = "Parlons-en.";
+const LEAD =
+  "Décrivez votre projet, votre commune et votre budget. Visite technique sous 5 jours, devis détaillé sous 48 h.";
+
+/** `ww` : les textes de la page vus par WhatsWrong (réécrits, ou null si
+ *  retirés) ; sans lui, les textes du site. */
+export function Cta({
+  ww = (t) => t,
+}: {
+  ww?: (text: string) => string | null;
+}) {
+  const label = ww(LABEL);
+  const heading = ww(HEADING);
+  const lead = ww(LEAD);
   return (
     <section
       id="devis"
@@ -15,22 +30,23 @@ export function Cta() {
           <div className="grid items-start gap-10 lg:grid-cols-[1fr_1.05fr] lg:gap-16">
             {/* --- Argumentaire --- */}
             <div className="flex h-full flex-col lg:sticky lg:top-28">
-              <p className="dot-label reveal-sm text-paper/60">
-                Un projet de rénovation ?
-              </p>
+              {label && (
+                <p className="dot-label reveal-sm text-paper/60">{label}</p>
+              )}
 
               <h2 className="mt-6 text-[clamp(2.4rem,5.6vw,4.4rem)] leading-[0.95] font-medium tracking-[-0.03em]">
                 <span className="mask reveal-mask">
                   <span className="display-italic block text-[1.05em]">
-                    Parlons-en.
+                    {heading}
                   </span>
                 </span>
               </h2>
 
-              <p className="reveal mt-6 max-w-md text-[0.98rem] leading-relaxed text-paper/70">
-                Décrivez votre projet, votre commune et votre budget. Visite
-                technique sous 5 jours, devis détaillé sous 48 h.
-              </p>
+              {lead && (
+                <p className="reveal mt-6 max-w-md text-[0.98rem] leading-relaxed text-paper/70">
+                  <Inline v={lead} tone="dark" />
+                </p>
+              )}
 
               <div className="reveal mt-9 space-y-2.5">
                 <a

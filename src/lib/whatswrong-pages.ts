@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 import { plainText, prepareArticle, type TocEntry } from "@/lib/whatswrong";
+import type { WwChanges } from "@/lib/whatswrong-changes";
 
 /* ------------------------------------------------------------------ */
 /*  WhatsWrong : pages du site réécrites par Eli                       */
@@ -20,6 +21,8 @@ export type WwPageVersion = {
   title: string;
   description: string;
   html: string;
+  /** Texte par texte, posé dans les composants du site ; null : `html`. */
+  changes?: WwChanges | null;
   publishedAt: string;
 };
 

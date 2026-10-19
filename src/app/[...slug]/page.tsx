@@ -31,6 +31,7 @@ import {
   preparePageVersion,
   publishedPageVersion,
 } from "@/lib/whatswrong-pages";
+import { applyWwChanges, wwText } from "@/lib/whatswrong-changes";
 
 /** Pages JSON et articles WhatsWrong (copiés dans le dépôt) : tout est pré-rendu. */
 export const dynamicParams = false;
@@ -102,21 +103,27 @@ export async function generateMetadata({
 export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
   const { slug } = await params;
   const path = slugOf(slug);
-  const page = getPage(path);
-  if (!page) {
+  const sourcePage = getPage(path);
+  if (!sourcePage) {
     const ww = wwArticleAt(slug);
     if (!ww) notFound();
     return <WwPage article={ww} path={path} />;
   }
+
+  // Une version publiée depuis WhatsWrong : ses changements posés dans les
+  // données de la page et ses textes écrits en dur (le design ne bouge pas),
+  // sinon — publiée avant eux — son texte entier.
+  const version = publishedPageVersion(path);
+  const changes = version?.changes ?? null;
+  const page = changes ? applyWwChanges(sourcePage, changes) : sourcePage;
+  const ww = wwText(changes);
 
   const visuals = visualsFor(path);
   const hero = page.hero ?? visuals.hero;
   const crumbs = breadcrumbFor(path);
   const parentCrumb = crumbs[crumbs.length - 1];
 
-  // Une version publiée depuis WhatsWrong : sa description dans les données
-  // structurées, et son texte à la place de celui de la page.
-  const version = publishedPageVersion(path);
+  // Sa description dans les données structurées.
   const description = version?.description || page.description;
   const url = `${site.url}${path}`;
 
@@ -176,7 +183,7 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
   ];
 
   // La FAQ de la page n'est pas affichée avec une version WhatsWrong.
-  if (faqItems.length > 0 && !version) {
+  if (faqItems.length > 0 && (!version || changes)) {
     jsonLd.push({
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -190,7 +197,7 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
 
   // Une version publiée : l'en-tête de la page, puis son texte à elle, puis
   // les blocs communs.
-  if (version) {
+  if (version && !changes) {
     const body = preparePageVersion(version);
     return (
       <>
@@ -277,8 +284,13 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
                 ))
               ) : (
                 <p className="mt-4 mb-6 text-[0.95rem] leading-[1.7] text-muted">
-                  Un interlocuteur unique du diagnostic à la réception, un devis
-                  détaillé sous 48 h, un compte-rendu chaque semaine.
+                  <Inline
+                    v={
+                      ww(
+                        "Un interlocuteur unique du diagnostic à la réception, un devis détaillé sous 48 h, un compte-rendu chaque semaine.",
+                      ) ?? ""
+                    }
+                  />
                 </p>
               )}
               <ul className="mt-auto grid gap-2.5 border-t border-line pt-5 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
@@ -286,7 +298,9 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
                   "Devis détaillé sous 48 h",
                   "Visite technique sous 5 jours",
                   "SAV 12 mois après livraison",
-                ].map((t) => (
+                ]
+                  .flatMap((t) => ww(t) ?? [])
+                  .map((t) => (
                   <li
                     key={t}
                     className="flex items-center gap-2.5 text-[0.84rem] font-medium text-ink"
@@ -327,10 +341,18 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
           aria-labelledby="related-title"
         >
           <div className="grid gap-5 border-t border-line pt-7 lg:grid-cols-[1.05fr_0.95fr] lg:items-end lg:gap-16">
-            <SectionHeading id="related-title" title="Pour aller plus loin" />
+            <SectionHeading
+              id="related-title"
+              title={ww("Pour aller plus loin") ?? "Pour aller plus loin"}
+            />
             <p className="reveal max-w-md text-[0.95rem] leading-relaxed text-muted lg:pb-2">
-              Les pages qui complètent celle-ci : méthode, prix, zones et
-              réalisations.
+              <Inline
+                v={
+                  ww(
+                    "Les pages qui complètent celle-ci : méthode, prix, zones et réalisations.",
+                  ) ?? ""
+                }
+              />
             </p>
           </div>
           <div className="mt-8 lg:mt-10">
@@ -339,8 +361,8 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
         </section>
       )}
 
-      <Commitments />
-      <Cta />
+      <Commitments ww={ww} />
+      <Cta ww={ww} />
     </>
   );
 }

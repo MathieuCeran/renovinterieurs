@@ -252,6 +252,10 @@ async function syncPages() {
     return false;
   }
   const pages = [];
+  const validChanges = (c) =>
+    c !== null &&
+    typeof c === "object" &&
+    ["replace", "remove", "insert"].every((k) => Array.isArray(c[k]));
   for (const p of data.pages) {
     const valid =
       typeof p?.path === "string" &&
@@ -269,6 +273,9 @@ async function syncPages() {
       title: p.title,
       description: p.description,
       html: p.html,
+      // Les changements texte par texte (le design du site ne bouge pas) ;
+      // null pour une page publiée avant eux.
+      changes: validChanges(p.changes) ? p.changes : null,
       publishedAt: p.publishedAt,
     });
   }
