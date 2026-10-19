@@ -26,7 +26,8 @@ export type WwChanges = {
   }[];
 };
 
-/** La clé d'un texte : la même fonction que WhatsWrong, à l'identique. */
+/** La clé d'un texte : la même fonction que WhatsWrong, à l'identique.
+ *  Sans espace : un libellé collé à son détail garde la même clé. */
 export function wwKey(value: string): string {
   return String(value)
     .replace(/\]\([^)]*\)/g, " ")
@@ -36,8 +37,7 @@ export function wwKey(value: string): string {
     .replace(/\p{M}/gu, "")
     .toLowerCase()
     .replace(/(\d)\s*[x×]\s*(?=\d)/g, "$1 ")
-    .replace(/[^\p{L}\p{N}]+/gu, " ")
-    .trim();
+    .replace(/[^\p{L}\p{N}]+/gu, "");
 }
 
 function decode(text: string): string {
@@ -111,8 +111,8 @@ export function wwText(
   changes: WwChanges | null,
 ): (text: string) => string | null {
   if (!changes) return (text) => text;
-  const replaced = new Map(changes.replace.map((c) => [c.match, c]));
-  const removed = new Set(changes.remove.map((c) => c.match));
+  const replaced = new Map(changes.replace.map((c) => [wwKey(c.match), c]));
+  const removed = new Set(changes.remove.map((c) => wwKey(c.match)));
   return (text) => {
     const key = wwKey(text);
     if (removed.has(key)) return null;
@@ -178,7 +178,8 @@ function insert(page: Page, changes: WwChanges, missed: string[]): Page {
   const sections = page.sections.map((s) => ({ ...s, blocks: [...s.blocks] }));
   const intro = [...page.intro];
   for (const add of changes.insert) {
-    const at = sections.findIndex((s) => wwKey(s.title) === add.match);
+    const match = wwKey(add.match);
+    const at = sections.findIndex((s) => wwKey(s.title) === match);
     if (at !== -1) {
       if (add.place === "end") {
         sections[at].blocks.push(...toBlocks(add.blocks));
@@ -191,7 +192,7 @@ function insert(page: Page, changes: WwChanges, missed: string[]): Page {
       }
       continue;
     }
-    const inIntro = intro.findIndex((t) => wwKey(t) === add.match);
+    const inIntro = intro.findIndex((t) => wwKey(t) === match);
     if (inIntro !== -1) {
       const blocks = toBlocks(add.blocks);
       intro.splice(
@@ -207,7 +208,7 @@ function insert(page: Page, changes: WwChanges, missed: string[]): Page {
     let placed = false;
     for (const section of sections) {
       const index = section.blocks.findIndex((b) =>
-        blockTexts(b).some((t) => wwKey(t) === add.match),
+        blockTexts(b).some((t) => wwKey(t) === match),
       );
       if (index === -1) continue;
       // Après le bloc entier (un paragraphe, mais aussi des cartes, une

@@ -7,6 +7,8 @@ import { site } from "@/lib/site";
 
 const LABEL = "Un projet de rénovation ?";
 const HEADING = "Parlons-en.";
+const GUIDE =
+  "Pas encore prêt ? Téléchargez notre guide gratuit : [rénover son appartement à Paris en 2026 (PDF)](/guide-renovation-2026)";
 const LEAD =
   "Décrivez votre projet, votre commune et votre budget. Visite technique sous 5 jours, devis détaillé sous 48 h.";
 
@@ -20,6 +22,7 @@ export function Cta({
   const label = ww(LABEL);
   const heading = ww(HEADING);
   const lead = ww(LEAD);
+  const guide = ww(GUIDE);
   return (
     <section
       id="devis"
@@ -101,15 +104,23 @@ export function Cta({
                 </a>
               </div>
 
-              <p className="reveal mt-auto border-t border-paper/15 pt-6 text-[0.86rem] leading-relaxed text-paper/60 lg:mt-8">
-                Pas encore prêt ? Téléchargez notre guide gratuit :{" "}
-                <Link
-                  href="/guide-renovation-2026"
-                  className="font-medium text-paper underline decoration-paper/40 underline-offset-4 hover:decoration-paper"
-                >
-                  rénover son appartement à Paris en 2026 (PDF)
-                </Link>
-              </p>
+              {guide && (
+                <p className="reveal mt-auto border-t border-paper/15 pt-6 text-[0.86rem] leading-relaxed text-paper/60 lg:mt-8">
+                  {guide === GUIDE ? (
+                    <>
+                      Pas encore prêt ? Téléchargez notre guide gratuit :{" "}
+                      <Link
+                        href="/guide-renovation-2026"
+                        className="font-medium text-paper underline decoration-paper/40 underline-offset-4 hover:decoration-paper"
+                      >
+                        rénover son appartement à Paris en 2026 (PDF)
+                      </Link>
+                    </>
+                  ) : (
+                    <Inline v={guide} tone="dark" />
+                  )}
+                </p>
+              )}
             </div>
 
             {/* --- Formulaire --- */}
