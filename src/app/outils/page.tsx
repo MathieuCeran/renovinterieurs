@@ -9,13 +9,14 @@ import { ArrowRight } from "@/components/ui/kit";
 import { altOf } from "@/lib/photos";
 import { site } from "@/lib/site";
 import { tools } from "@/lib/tools";
+import { withWw, wwMetadata } from "@/lib/whatswrong-overlay";
 
 const path = "/outils";
 const title = "Outils gratuits pour préparer votre rénovation";
 const description =
   "Trois outils gratuits et sans inscription : estimez votre budget au m², simulez votre gain de classes DPE et générez le planning de votre chantier.";
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: path },
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function OutilsPage() {
+function OutilsPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -131,3 +132,7 @@ export default function OutilsPage() {
     </>
   );
 }
+
+// La version publiée depuis WhatsWrong, s'il y en a une.
+export const generateMetadata = () => wwMetadata(path, metadata);
+export default withWw(path, OutilsPage);

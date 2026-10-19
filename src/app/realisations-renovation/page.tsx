@@ -8,6 +8,7 @@ import { Pillars } from "@/components/sections/pillars";
 import { cleanTitle, getPage, visualsFor } from "@/lib/content";
 import { photos } from "@/lib/photos";
 import { site } from "@/lib/site";
+import { withWw, wwMetadata } from "@/lib/whatswrong-overlay";
 
 const path = "/realisations-renovation";
 const page = getPage(path);
@@ -17,7 +18,7 @@ const description =
   page?.description ??
   "Appartements haussmanniens, cuisines sur-mesure, salles de bain, béton ciré : nos chantiers livrés à Paris et en Île-de-France.";
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: path },
@@ -78,7 +79,7 @@ const works: Work[] = [
   { ...photos.isolationExterieure, cat: "Gros œuvre" },
 ];
 
-export default function RealisationsPage() {
+function RealisationsPage() {
   const { hero } = visualsFor(path);
 
   const jsonLd = {
@@ -131,3 +132,7 @@ export default function RealisationsPage() {
     </>
   );
 }
+
+// La version publiée depuis WhatsWrong, s'il y en a une.
+export const generateMetadata = () => wwMetadata(path, metadata);
+export default withWw(path, RealisationsPage);

@@ -8,6 +8,7 @@ import { Cta } from "@/components/sections/cta";
 import rawGroups from "@/content/faq.json";
 import { visualsFor } from "@/lib/content";
 import { faq as homeFaq, site } from "@/lib/site";
+import { withWw, wwMetadata } from "@/lib/whatswrong-overlay";
 
 const path = "/faq";
 
@@ -15,7 +16,7 @@ const title = "Questions fréquentes sur la rénovation";
 const description =
   "Prix au m², délais, garanties, copropriété, joints époxy, DPE, surélévation : toutes les réponses de nos conducteurs de travaux, Paris & Île-de-France.";
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: path },
@@ -39,7 +40,7 @@ const groups: FaqGroup[] = [
   ...(rawGroups as FaqGroup[]),
 ];
 
-export default function FaqPage() {
+function FaqPage() {
   const { hero } = visualsFor(path);
   const total = groups.reduce((n, g) => n + g.items.length, 0);
 
@@ -139,3 +140,7 @@ export default function FaqPage() {
     </>
   );
 }
+
+// La version publiée depuis WhatsWrong, s'il y en a une.
+export const generateMetadata = () => wwMetadata(path, metadata);
+export default withWw(path, FaqPage);

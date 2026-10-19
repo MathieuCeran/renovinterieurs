@@ -8,10 +8,11 @@ import { ArrowRight, PhoneIcon } from "@/components/ui/kit";
 import { cleanTitle, getPage, visualsFor } from "@/lib/content";
 import { altOf } from "@/lib/photos";
 import { site, zones } from "@/lib/site";
+import { withWw, wwMetadata } from "@/lib/whatswrong-overlay";
 
 const path = "/contact-devis";
 
-export async function generateMetadata(): Promise<Metadata> {
+async function siteMetadata(): Promise<Metadata> {
   const page = getPage(path);
   const title = page?.title ?? "Contact & devis gratuit — RenovIntérieurs";
   const description =
@@ -57,7 +58,7 @@ const promesses = [
   },
 ];
 
-export default function ContactPage() {
+function ContactPage() {
   const { hero } = visualsFor(path);
 
   const jsonLd = {
@@ -317,3 +318,9 @@ export default function ContactPage() {
     </>
   );
 }
+
+// La version publiée depuis WhatsWrong, s'il y en a une.
+export async function generateMetadata(): Promise<Metadata> {
+  return wwMetadata(path, await siteMetadata());
+}
+export default withWw(path, ContactPage);
