@@ -57,6 +57,24 @@ async function wwArticleAt(parts: string[]): Promise<WwArticle | null> {
   return publishedArticle(parts[1]);
 }
 
+/* Un article de Léa optimisé ensuite par Eli et publié : son titre, sa
+ * description et son texte sont ceux de la version publiée (le corps est
+ * un HTML d'article, il se remplace entier). */
+async function optimizedArticle(
+  article: WwArticle | null,
+  path: string,
+): Promise<WwArticle | null> {
+  if (article === null) return null;
+  const version = await publishedPageVersion(path);
+  if (version === null) return article;
+  return {
+    ...article,
+    title: version.title || article.title,
+    description: version.description || article.description,
+    body: version.html || article.body,
+  };
+}
+
 export async function generateMetadata({
   params,
 }: PageProps<"/[...slug]">): Promise<Metadata> {
@@ -64,7 +82,7 @@ export async function generateMetadata({
   const path = slugOf(slug);
   const page = getPage(path);
   if (!page) {
-    const ww = await wwArticleAt(slug);
+    const ww = await optimizedArticle(await wwArticleAt(slug), path);
     return ww ? wwMetadata(ww, path) : {};
   }
 
@@ -106,7 +124,7 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
   const path = slugOf(slug);
   const sourcePage = getPage(path);
   if (!sourcePage) {
-    const ww = await wwArticleAt(slug);
+    const ww = await optimizedArticle(await wwArticleAt(slug), path);
     if (!ww) notFound();
     return <WwPage article={ww} path={path} />;
   }
