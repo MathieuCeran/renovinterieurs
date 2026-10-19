@@ -11,7 +11,7 @@ import type { Block, Page, Section } from "@/lib/content";
 /*  `wwText`. Chaque texte se retrouve par sa clé (`wwKey`).            */
 /* ------------------------------------------------------------------ */
 
-export type WwBlock =
+type WwBlock =
   | { kind: "heading"; level: number; text: string }
   | { kind: "text"; html: string };
 
@@ -28,7 +28,7 @@ export type WwChanges = {
 
 /** La clé d'un texte : la même fonction que WhatsWrong, à l'identique.
  *  Sans espace : un libellé collé à son détail garde la même clé. */
-export function wwKey(value: string): string {
+function wwKey(value: string): string {
   return String(value)
     .replace(/\]\([^)]*\)/g, " ")
     .replace(/<[^>]+>/g, " ")
