@@ -13,7 +13,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     if (path === "/") return 1;
     if (path.startsWith("/conseils/")) return 0.5;
     if (path.startsWith("/outils/")) return 0.6;
-    if (/^\/(mentions-legales|politique-de-confidentialite)$/.test(path))
+    if (
+      /^\/(mentions-legales|politique-de-confidentialite|ai-instruction)$/.test(
+        path,
+      )
+    )
       return 0.2;
     return 0.8;
   };
@@ -22,7 +26,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const articles = (await publishedArticles())
     .map(wwPath)
     .filter((p) => !local.includes(p));
-  const paths = [...local, ...articles, "/outils", ...tools.map((t) => t.href)];
+  const paths = [
+    ...local,
+    ...articles,
+    "/outils",
+    ...tools.map((t) => t.href),
+    "/ai-instruction",
+  ];
 
   return paths.map((path) => ({
     url: `${site.url}${path === "/" ? "" : path}`,

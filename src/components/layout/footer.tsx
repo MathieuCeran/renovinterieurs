@@ -243,6 +243,12 @@ export function Footer() {
             >
               Politique de confidentialité
             </Link>
+            <Link
+              href="/ai-instruction"
+              className="text-muted transition-colors hover:text-ink"
+            >
+              AI instructions
+            </Link>
           </div>
         </div>
       </div>
