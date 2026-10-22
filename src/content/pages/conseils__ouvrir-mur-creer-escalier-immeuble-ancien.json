@@ -1,0 +1,209 @@
+{
+  "title": "Ouvrir un mur ou créer un escalier dans un immeuble ancien",
+  "description": "Mur à pans de bois, dalle béton à percer : ce que deux reprises de structure à Paris 16e apprennent aux propriétaires, de l’étude à l’étaiement, avant d’ouvrir un mur ou de créer une trémie.",
+  "h1": "Ouvrir un mur ou créer un escalier dans un immeuble ancien : ce que deux chantiers parisiens nous apprennent",
+  "kind": "article",
+  "parent": "/conseils",
+  "publishedAt": "2026-10-22",
+  "eyebrow": "Conseils gros œuvre",
+  "hero": "/images/chantiers/tremie-etaiement-sous-sol.jpg",
+  "intro": [
+    "Abattre une cloison pour ouvrir la cuisine, relier un sous-sol au rez-de-chaussée par un escalier : sur le papier, ce sont des travaux d’aménagement. Dans un immeuble ancien, ce sont d’abord des questions de structure.",
+    "Deux dossiers récents dans le 16e arrondissement, suivis par IA RENOV, la société qui porte RenovIntérieurs, montrent ce qui se joue avant le premier coup de masse. Les études ont été menées par un bureau d’études structure partenaire, les travaux confiés à des entreprises partenaires."
+  ],
+  "sections": [
+    {
+      "title": "À retenir",
+      "blocks": [
+        {
+          "t": "callout",
+          "title": "À retenir",
+          "v": "Un mur qui n’a pas l’air porteur peut l’être devenu avec le temps, surtout dans un bâtiment en bois du XIXe siècle. Avant toute ouverture de mur ou de plancher, un diagnostic sur place et une étude de structure fixent la solution, l’étaiement et les contrôles. Les entreprises chiffrent ensuite sur cette base.",
+          "href": "/renovation-gros-oeuvre-surelevation-extension-idf",
+          "label": "Voir notre page gros œuvre"
+        }
+      ]
+    },
+    {
+      "title": "Porteur, semi-porteur ou cloison : l’âge du bâtiment change tout",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Dans le premier dossier, un immeuble R+3 du XIXe siècle à murs en maçonnerie et pans de bois, le mur à ouvrir était fait de montants de bois verticaux. Aucune diagonale de contreventement, des sections modestes : sur le papier, rien d’un mur porteur."
+        },
+        {
+          "t": "p",
+          "v": "Le diagnostic a pourtant conclu à un mur « semi-porteur ». En plus d’un siècle, un bâtiment se tasse et certains montants finissent par reprendre une partie des charges des étages. Les ignorer, c’est prendre le risque de fissures ou d’un affaissement du plancher au-dessus."
+        },
+        {
+          "t": "ul",
+          "items": [
+            "Un mur peut être considéré non porteur par calcul et rester chargé dans les faits.",
+            "Les planchers sur poutres en bois réagissent mal à une reprise de charges improvisée.",
+            "Plus le bâtiment est ancien, plus le relevé sur place compte face aux plans d’origine, souvent absents."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deux chantiers, deux structures",
+      "blocks": [
+        {
+          "t": "table",
+          "head": [
+            "",
+            "Ouverture de mur",
+            "Trémie d’escalier"
+          ],
+          "rows": [
+            [
+              "Bâtiment",
+              "Immeuble R+3 du XIXe siècle, pans de bois",
+              "Immeuble R+5, poteaux et poutres mixtes acier-béton"
+            ],
+            [
+              "Élément touché",
+              "Mur en montants de bois",
+              "Dalle béton armé de 22 cm sur sous-sol"
+            ],
+            [
+              "Difficulté",
+              "Bois ancien, charges réelles incertaines",
+              "Ouverture de 3,50 × 3,20 m, charges et portée importantes"
+            ],
+            [
+              "Solution",
+              "Portique acier : poutre IPE180 sur deux poteaux IPE160",
+              "Cadre en charpente métallique avec ses propres fondations"
+            ],
+            [
+              "Vigilance",
+              "Contact entre l’acier et la structure ancienne",
+              "Méthode de découpe de la dalle et assemblages"
+            ]
+          ],
+          "note": "Paris 16e, dossiers d’octobre 2026. Solutions dimensionnées par le bureau d’études structure, propres à chaque bâtiment."
+        },
+        {
+          "t": "gallery",
+          "items": [
+            {
+              "src": "/images/chantiers/mur-pans-de-bois-avant-ouverture.jpg",
+              "alt": "Mur intérieur mis à nu dans un immeuble du XIXe siècle : montants et traverses en bois avant ouverture",
+              "caption": "Le mur à pans de bois mis à nu, avant ouverture."
+            },
+            {
+              "src": "/images/chantiers/portique-metallique-ouverture-mur.jpg",
+              "alt": "Visualisation d’un portique métallique projeté sur un mur à ouvrir : poutre en tête et deux poteaux",
+              "caption": "Le portique acier projeté sur ce même mur."
+            },
+            {
+              "src": "/images/chantiers/tremie-etaiement-sous-sol.jpg",
+              "alt": "Sous-sol étayé sous une dalle béton, poutre métallique posée avant la découpe d’une trémie d’escalier",
+              "caption": "La dalle étayée avant la découpe de la trémie."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pourquoi un portique plutôt qu’une simple poutre",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Pour le mur à pans de bois, deux options ont été comparées : une poutre acier seule, posée sur les montants restants, ou un portique complet. La poutre seule aurait reporté les charges sur des bois dont la résistance réelle est inconnue."
+        },
+        {
+          "t": "p",
+          "v": "Le portique les descend jusqu’au plancher : une poutre IPE180 franchit l’ouverture, deux poteaux IPE160 la portent, et chaque poteau est soudé à une platine de 10 mm posée sur mortier qui répartit l’effort. En tête, une cale acier et un matage au mortier assurent le contact avec la structure existante."
+        }
+      ]
+    },
+    {
+      "title": "Créer une trémie dans une dalle béton",
+      "blocks": [
+        {
+          "t": "p",
+          "v": "Pour le second dossier, la dalle était saine. Le problème venait de la taille de l’ouverture : 3,50 × 3,20 m dans un plancher qui porte entre la façade et une poutre mixte. Une fois la dalle découpée, ses charges doivent trouver un autre chemin."
+        },
+        {
+          "t": "p",
+          "v": "Le bureau d’études a prévu un cadre en charpente métallique autour de la trémie, appuyé sur la poutre mixte et sur un poteau béton existants, et descendu au sol par de nouveaux poteaux sur semelles en béton armé. La découpe se fait sous étaiement, une fois ce cadre en place."
+        }
+      ]
+    },
+    {
+      "title": "Les étapes avant d’ouvrir",
+      "blocks": [
+        {
+          "t": "steps",
+          "items": [
+            {
+              "title": "Relevé et diagnostic",
+              "text": "Sur place : nature des murs et planchers, état des bois ou du béton, sections, sens de portée."
+            },
+            {
+              "title": "Étude de structure",
+              "text": "Le bureau d’études compare les solutions, dimensionne les profilés et dessine chaque assemblage."
+            },
+            {
+              "title": "Accord de la copropriété",
+              "text": "En immeuble, l’intervention sur la structure passe par l’assemblée générale, étude à l’appui."
+            },
+            {
+              "title": "Devis des entreprises",
+              "text": "Chaque entreprise partenaire chiffre sur les plans d’exécution : des devis comparables, signés directement avec elle."
+            },
+            {
+              "title": "Étaiement, pose, contrôle",
+              "text": "Étais avant toute découpe, pose et mise en charge, puis vérification des dimensions et des assemblages contre l’étude."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Questions fréquentes",
+      "blocks": [
+        {
+          "t": "faq",
+          "items": [
+            {
+              "q": "Un mur en bois peut-il être porteur ?",
+              "a": "Oui. Dans les immeubles anciens à pans de bois, des montants qui n’étaient pas prévus pour porter peuvent reprendre des charges avec le temps. Seul un diagnostic sur place permet de trancher."
+            },
+            {
+              "q": "Faut-il une étude de structure pour créer un escalier entre deux niveaux ?",
+              "a": "Dès qu’il faut découper un plancher porteur, oui : la trémie interrompt le chemin des charges. L’étude dit comment les reprendre, avec quels profilés et quelles fondations."
+            },
+            {
+              "q": "Qui réalise et garantit les travaux ?",
+              "a": "Les travaux sont exécutés par des entreprises partenaires spécialisées, qui signent leur devis directement avec vous et portent leurs propres assurances, dont la garantie décennale. RenovIntérieurs pilote le projet : diagnostic, étude, choix des entreprises, suivi du chantier."
+            },
+            {
+              "q": "Combien de temps prévoir ?",
+              "a": "Cela dépend surtout de l’étude et de l’accord de copropriété, qui précèdent les travaux. Un premier échange permet d’estimer le calendrier de votre projet."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Gros œuvre, surélévation & extension",
+      "href": "/renovation-gros-oeuvre-surelevation-extension-idf",
+      "desc": "Mur porteur, surélévation, extension"
+    },
+    {
+      "label": "Rénovation d’appartement à Paris",
+      "href": "/renovation-appartement-paris",
+      "desc": "Tous corps d’état, Paris & IDF"
+    },
+    {
+      "label": "Comment se passe un projet",
+      "href": "/methode",
+      "desc": "Les 5 étapes, du premier appel à la livraison"
+    }
+  ]
+}

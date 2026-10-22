@@ -250,6 +250,19 @@ export const photos = {
     src: `${DIR}/ravalement-facade-echafaudage.jpg`,
     alt: "Façade d’immeuble ancien entièrement échafaudée pour sa rénovation",
   },
+  // Reprises de structure, Paris 16e (dossier technique d'octobre 2026)
+  murPansDeBois: {
+    src: `${DIR}/mur-pans-de-bois-avant-ouverture.jpg`,
+    alt: "Mur intérieur mis à nu dans un immeuble du XIXe siècle : montants et traverses en bois avant ouverture",
+  },
+  portiqueOuvertureMur: {
+    src: `${DIR}/portique-metallique-ouverture-mur.jpg`,
+    alt: "Visualisation d’un portique métallique projeté sur un mur à ouvrir : poutre en tête et deux poteaux",
+  },
+  tremieEtaiement: {
+    src: `${DIR}/tremie-etaiement-sous-sol.jpg`,
+    alt: "Sous-sol étayé sous une dalle béton, poutre métallique posée avant la découpe d’une trémie d’escalier",
+  },
 } as const;
 
 export type Photo = (typeof photos)[keyof typeof photos];
