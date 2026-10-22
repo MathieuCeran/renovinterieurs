@@ -249,6 +249,15 @@ export function Footer() {
             >
               AI instructions
             </Link>
+            <span className="text-muted">
+              Site conçu par{" "}
+              <a
+                href="https://ajdstudio.fr/"
+                className="text-ink/70 underline-offset-4 transition-colors hover:text-ink hover:underline"
+              >
+                ajd.studio
+              </a>
+            </span>
           </div>
         </div>
       </div>
