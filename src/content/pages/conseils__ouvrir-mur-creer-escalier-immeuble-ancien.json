@@ -1,6 +1,6 @@
 {
   "title": "Ouvrir un mur ou créer un escalier dans un immeuble ancien",
-  "description": "Mur à pans de bois, dalle béton à percer : ce que deux reprises de structure à Paris 16e apprennent aux propriétaires, de l’étude à l’étaiement, avant d’ouvrir un mur ou de créer une trémie.",
+  "description": "Mur à pans de bois, dalle béton à percer : ce que deux reprises de structure à Paris 16e apprennent avant d’ouvrir un mur ou de créer un escalier.",
   "h1": "Ouvrir un mur ou créer un escalier dans un immeuble ancien : ce que deux chantiers parisiens nous apprennent",
   "kind": "article",
   "parent": "/conseils",
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "title": "Porteur, semi-porteur ou cloison : l’âge du bâtiment change tout",
+      "title": "Porteur ou cloison : l’âge du bâtiment change tout",
       "blocks": [
         {
           "t": "p",
