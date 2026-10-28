@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { ArrowRight } from "@/components/ui/kit";
 import { parseInline, type Block } from "@/lib/content";
+import { imageSize } from "@/lib/image-size";
 
 export type Tone = "light" | "dark";
 
@@ -600,30 +601,47 @@ function Gallery({
 }: {
   items: { src: string; alt: string; caption: string }[];
 }) {
+  // Rangées justifiées : chaque photo garde son format (jamais recadrée), les
+  // photos d'une rangée ont la même hauteur et la rangée remplit la largeur.
+  const photos = items.map((g) => ({ ...g, ...(imageSize(g.src) ?? { width: 4, height: 3 }) }));
+  const parRangee = Math.ceil(photos.length / Math.ceil(photos.length / 3));
+  const rangees: (typeof photos)[] = [];
+  for (let i = 0; i < photos.length; i += parRangee) rangees.push(photos.slice(i, i + parRangee));
+  let n = 0;
   return (
-    <ul className="reveal-stagger grid gap-4 sm:grid-cols-3">
-      {items.map((g, i) => (
-        <li key={g.src + g.caption} style={{ "--i": i } as React.CSSProperties}>
-          <figure className="group">
-            <div className="relative aspect-4/5 overflow-hidden rounded-[clamp(18px,2.4vw,28px)]">
-              <Image
-                src={g.src}
-                alt={g.alt}
-                fill
-                sizes="(min-width: 1024px) 420px, (min-width: 640px) 33vw, 100vw"
-                className="object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.04]"
-              />
-            </div>
-            <figcaption className="mt-4 flex gap-3 text-[0.88rem] leading-snug text-muted">
-              <span className="display-italic shrink-0 text-terra">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <span>{g.caption}</span>
-            </figcaption>
-          </figure>
-        </li>
+    <div className="reveal-stagger grid gap-4">
+      {rangees.map((rangee, r) => (
+        <ul key={r} className="flex flex-col gap-4 sm:flex-row sm:items-start">
+          {rangee.map((g) => {
+            const i = n++;
+            return (
+              <li
+                key={g.src + g.caption}
+                className="min-w-0 basis-0"
+                style={{ "--i": i, flexGrow: g.width / g.height } as React.CSSProperties}
+              >
+                <figure className="group">
+                  <div className="overflow-hidden rounded-[clamp(14px,2vw,24px)] bg-white">
+                    <Image
+                      src={g.src}
+                      alt={g.alt}
+                      width={g.width}
+                      height={g.height}
+                      sizes="(min-width: 1024px) 640px, (min-width: 640px) 50vw, 100vw"
+                      className="h-auto w-full transition-transform duration-[1200ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.02]"
+                    />
+                  </div>
+                  <figcaption className="mt-4 flex gap-3 text-[0.88rem] leading-snug text-muted">
+                    <span className="display-italic shrink-0 text-terra">{String(i + 1).padStart(2, "0")}</span>
+                    <span>{g.caption}</span>
+                  </figcaption>
+                </figure>
+              </li>
+            );
+          })}
+        </ul>
       ))}
-    </ul>
+    </div>
   );
 }
 

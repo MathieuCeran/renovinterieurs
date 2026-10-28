@@ -58,13 +58,13 @@
           "rows": [
             [
               "Bâtiment",
-              "Immeuble R+3 du XIXe siècle, pans de bois",
+              "Immeuble R+3 du XIXe siècle, sans sous-sol, pans de bois",
               "Immeuble R+5, poteaux et poutres mixtes acier-béton"
             ],
             [
               "Élément touché",
               "Mur en montants de bois",
-              "Dalle béton armé de 22 cm sur sous-sol"
+              "Dalle béton armé de 22 cm, au-dessus d’un sous-sol à dallage béton"
             ],
             [
               "Difficulté",
@@ -115,7 +115,22 @@
         },
         {
           "t": "p",
-          "v": "Le portique les descend jusqu’au plancher : une poutre IPE180 franchit l’ouverture, deux poteaux IPE160 la portent, et chaque poteau est soudé à une platine de 10 mm posée sur mortier qui répartit l’effort. En tête, une cale acier et un matage au mortier assurent le contact avec la structure existante."
+          "v": "Le portique les descend jusqu’au plancher : une poutre IPE180 franchit l’ouverture, deux poteaux IPE160 la portent, assemblés par quatre boulons M12, et chaque poteau est soudé à une platine de 10 mm posée sur mortier qui répartit l’effort. En tête, une cale acier et un matage au mortier assurent le contact avec la structure existante."
+        },
+        {
+          "t": "gallery",
+          "items": [
+            {
+              "src": "/images/chantiers/elevation-portique-ouverture-mur.png",
+              "alt": "Élévation du portique d’ouverture : poutre IPE180 sur deux poteaux IPE160 entre les murs existants, ouverture de 255 cm sur 265 cm de haut, platines de 10 mm (400 × 250 mm) soudées en pied et posées sur mortier, étais provisoires",
+              "caption": "Élévation du portique : 255 cm de large, 265 cm sous poutre."
+            },
+            {
+              "src": "/images/chantiers/coupe-portique-poutre-ipe.png",
+              "alt": "Coupe technique du portique : poutre IPE180, poteau IPE160, platine de pied, boulons M12, cale acier, matage au mortier et étaiement provisoire",
+              "caption": "Coupe A-A : boulons M12, cale acier et platine de pied."
+            }
+          ]
         }
       ]
     },
@@ -129,6 +144,21 @@
         {
           "t": "p",
           "v": "Le bureau d’études a prévu un cadre en charpente métallique autour de la trémie, appuyé sur la poutre mixte et sur un poteau béton existants, et descendu au sol par de nouveaux poteaux sur semelles en béton armé. La découpe se fait sous étaiement, une fois ce cadre en place."
+        },
+        {
+          "t": "gallery",
+          "items": [
+            {
+              "src": "/images/chantiers/schema-renfort-tremie-escalier.png",
+              "alt": "Schéma de principe du renfort de trémie : cadre métallique autour de l’ouverture de 3,50 × 3,20 m, poteaux sur semelles en béton armé, appuis sur la poutre mixte et le poteau béton existants",
+              "caption": "Schéma de principe, sans valeur d’exécution : le cadre et ses fondations."
+            },
+            {
+              "src": "/images/chantiers/details-assemblages-tremie.png",
+              "alt": "Plans de détail des assemblages de la trémie : cornière sur la poutre existante, platines, tiges M12 scellées chimiquement dans un poteau béton",
+              "caption": "Détails d’assemblage sur la structure existante."
+            }
+          ]
         }
       ]
     },
