@@ -1,4 +1,5 @@
 import type { Block, Page, Section } from "@/lib/content";
+import { relabelLinks } from "@/lib/link-labels";
 
 /* ------------------------------------------------------------------ */
 /*  WhatsWrong : les changements d'une page, texte par texte           */
@@ -72,7 +73,7 @@ function toBlocks(blocks: WwBlock[]): Block[] {
       return [{ t: "h3", v: decode(block.text) }];
     }
     const out: Block[] = [];
-    for (const m of block.html.matchAll(
+    for (const m of relabelLinks(block.html).matchAll(
       /<(p|ul|ol)\b[^>]*>([\s\S]*?)<\/\1>/gi,
     )) {
       if (m[1].toLowerCase() === "p") {
@@ -120,7 +121,7 @@ export function wwText(
     if (!change) return text;
     // Un texte sans lien garde la ponctuation d'Eli telle quelle.
     return /\[[^\]]+\]\(/.test(text) || /<a\b/i.test(change.html)
-      ? toInline(change.html)
+      ? toInline(relabelLinks(`<p>${change.html}</p>`).replace(/^<p>|<\/p>$/g, ""))
       : decode(change.text);
   };
 }

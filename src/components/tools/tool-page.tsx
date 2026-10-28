@@ -29,17 +29,15 @@ export function ToolPage({
   const jsonLd = [
     {
       "@context": "https://schema.org",
-      "@type": "WebApplication",
+      // Page d'outil, et non « WebApplication » : ce type exige pour Google une note (aggregateRating)
+      // qu'un simulateur gratuit n'a pas, et le bloc était signalé invalide.
+      "@type": "WebPage",
       name: tool.name,
       url: `${site.url}${tool.href}`,
       description: tool.description,
-      applicationCategory: "BusinessApplication",
-      operatingSystem: "Tout navigateur web",
-      browserRequirements: "JavaScript activé",
       inLanguage: "fr-FR",
       isAccessibleForFree: true,
-      offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
-      provider: { "@id": `${site.url}#entreprise` },
+      publisher: { "@id": `${site.url}#entreprise` },
       keywords: tool.keywords.join(", "),
     },
     {

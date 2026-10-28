@@ -19,19 +19,17 @@ export function Services() {
             className="text-[clamp(2.2rem,5vw,3.6rem)] leading-[0.98] font-medium tracking-[-0.03em]"
           >
             <span className="mask reveal-mask">
-              <span className="block">Savoir-faire</span>
-            </span>
-            <span className="mask reveal-mask">
-              <span className="display-italic block text-[1.08em] leading-[1]">
-                &amp; expertise
+              <span className="block">
+                Savoir-faire{" "}
+                <span className="display-italic text-[1.08em] leading-[1]">&amp; expertise</span>
               </span>
             </span>
           </h2>
 
           <div className="flex flex-col items-start gap-7 lg:pb-2">
             <p className="reveal max-w-md text-[0.92rem] leading-relaxed text-muted">
-              Six métiers maîtrisés en interne, pilotés par un seul
-              interlocuteur. Chaque poste est traité avec le même niveau
+              Six métiers réalisés par des entreprises partenaires spécialisées,
+              pilotés par un seul interlocuteur. Chaque poste est traité avec le même niveau
               d’exigence — du diagnostic à la finition.
             </p>
 
@@ -82,10 +80,8 @@ export function Services() {
             <div className="p-8 sm:p-11 lg:p-14">
               <p className="dot-label text-paper/60">{grosOeuvre.eyebrow}</p>
               <h3 className="mt-5 max-w-lg text-[clamp(1.7rem,3.2vw,2.6rem)] leading-[1.03] font-medium tracking-[-0.02em]">
-                Gros œuvre, surélévation
-                <span className="display-italic block text-[1.08em]">
-                  &amp; extension
-                </span>
+                Gros œuvre, surélévation{" "}
+                <span className="display-italic text-[1.08em]">&amp; extension</span>
               </h3>
               <p className="mt-5 max-w-xl text-[0.93rem] leading-relaxed text-paper/70">
                 {grosOeuvre.text}

@@ -1,14 +1,14 @@
 {
   "title": "Salle de bain Paris : étanche, joints époxy 15-20 ans",
-  "description": "Rénovation de salle de bain à Paris : natte d’étanchéité, joints époxy sans noircissement pendant 15 à 20 ans, douche à l’italienne. Devis sous 48 h.",
+  "description": "Rénovation de salle de bain à Paris : natte d’étanchéité, joints époxy sans noircissement pendant 15 à 20 ans, douche à l’italienne. Chiffrage sous 48 h.",
   "h1": "Salle de bain à Paris : étanche, durable, sans joints qui noircissent",
   "kind": "service",
   "parent": "/nos-services",
   "eyebrow": "Salle de bain · Paris et Île-de-France",
   "hero": "/images/chantiers/salle-de-bain-travertin-douche-italienne.jpg",
   "intro": [
-    "Une salle de bain refaite devrait tenir quinze ans. Beaucoup vieillissent en trois : joints noircis, fissure en pied de mur, infiltration sous le receveur. La cause est presque toujours la même, deux raccourcis pris sur les joints et sur l’étanchéité sous carrelage. RenovIntérieurs rénove les salles de bain parisiennes en traitant d’abord ces deux postes.",
-    "Nous pilotons la pièce complète : dépose, plomberie cachée, électricité aux volumes de sécurité, ventilation, natte d’étanchéité, carrelage ou béton ciré, joints époxy, meuble et robinetterie. Un interlocuteur unique, un devis détaillé sous 48 h, un compte-rendu hebdomadaire."
+    "Une salle de bain refaite devrait tenir quinze ans. Beaucoup vieillissent en trois : joints noircis, fissure en pied de mur, infiltration sous le receveur. La cause est presque toujours la même, deux raccourcis pris sur les joints et sur l’étanchéité sous carrelage. RenovIntérieurs pilote la rénovation des salles de bain parisiennes en faisant traiter d’abord ces deux postes par des entreprises partenaires.",
+    "Nous pilotons la pièce complète : dépose, plomberie cachée, électricité aux volumes de sécurité, ventilation, natte d’étanchéité, carrelage ou béton ciré, joints époxy, meuble et robinetterie. Un interlocuteur unique, un chiffrage détaillé sous 48 h, un compte-rendu hebdomadaire."
   ],
   "sections": [
     {
@@ -31,18 +31,18 @@
             },
             {
               "value": "12 mois",
-              "label": "de SAV après livraison"
+              "label": "de suivi après réception"
             }
           ]
         }
       ]
     },
     {
-      "title": "Salles de bain réalisées",
+      "title": "Salles de bain pilotées",
       "blocks": [
         {
           "t": "p",
-          "v": "Trois ambiances, une même règle : l’étanchéité se joue sous le carrelage, avant tout ce qui se voit. [Voir nos réalisations](/realisations-renovation)."
+          "v": "Trois ambiances, une même règle : l’étanchéité se joue sous le carrelage, avant tout ce qui se voit. [Voir nos projets](/realisations-renovation)."
         },
         {
           "t": "gallery",
@@ -87,7 +87,7 @@
             },
             {
               "title": "Une plomberie accessible",
-              "text": "Alimentation en PER, évacuations en PVC pression, vannes d’arrêt accessibles pour ne jamais casser un carreau en cas de fuite. En urgence, [notre dépannage plomberie](/depannage) intervient dans Paris et la petite couronne."
+              "text": "Alimentation en PER, évacuations en PVC pression, vannes d’arrêt accessibles pour ne jamais casser un carreau en cas de fuite. En urgence, [notre dépannage plomberie](/depannage) est organisé dans Paris et la petite couronne."
             },
             {
               "title": "Une électricité aux volumes",
@@ -95,14 +95,14 @@
             },
             {
               "title": "Meuble, vasque, robinetterie",
-              "text": "Plan vasque en pierre, quartz ou béton ciré, meuble suspendu, robinetterie choisie avec vous et posée par nos équipes."
+              "text": "Plan vasque en pierre, quartz ou béton ciré, meuble suspendu, robinetterie choisie avec vous et posée par les entreprises partenaires."
             }
           ]
         }
       ]
     },
     {
-      "title": "Nos signatures techniques",
+      "title": "Choix techniques",
       "blocks": [
         {
           "t": "callout",
@@ -154,11 +154,11 @@
               "2 à 5 jours de pose, 7 jours de séchage"
             ]
           ],
-          "note": "TVA à 10 % sur l’amélioration d’un logement de plus de 2 ans. Le devis établi après visite technique fait seul foi."
+          "note": "TVA à 10 % sur l’amélioration d’un logement de plus de 2 ans. Le chiffrage établi après visite technique fait seul foi."
         },
         {
           "t": "p",
-          "v": "Chaque étape, de la visite technique sous 5 jours au SAV 12 mois, est détaillée sur [notre méthode](/methode)."
+          "v": "Chaque étape, de la visite technique sous 5 jours au suivi après réception, est détaillée sur [notre méthode](/methode)."
         }
       ]
     },
@@ -189,7 +189,7 @@
     {
       "label": "Notre méthode",
       "href": "/methode",
-      "desc": "Visite sous 5 jours, devis sous 48 h, compte-rendu hebdomadaire, SAV 12 mois."
+      "desc": "Visite sous 5 jours, chiffrage sous 48 h, compte-rendu hebdomadaire, suivi après réception."
     },
     {
       "label": "Prix de rénovation",
@@ -207,9 +207,24 @@
       "desc": "Étapes, budget, erreurs à éviter."
     },
     {
-      "label": "Nos réalisations",
+      "label": "Nos projets",
       "href": "/realisations-renovation",
-      "desc": "Douches à l’italienne, plans vasques, salles de bain livrées à Paris."
+      "desc": "Douches à l’italienne, plans vasques, salles de bain pilotées à Paris."
+    },
+    {
+      "label": "Joint époxy",
+      "href": "/conseils/joint-epoxy",
+      "desc": "Avantages, mise en œuvre et prix au m² des joints époxy."
+    },
+    {
+      "label": "Petite salle de bain de 3 m²",
+      "href": "/conseils/petite-salle-de-bain-3m2",
+      "desc": "Douche 70×90, vasque compacte : bien aménager un petit volume."
+    },
+    {
+      "label": "Idées de rénovation par budget",
+      "href": "/conseils/idee-renovation-salle-bain",
+      "desc": "Du rafraîchissement dès 800 € à la rénovation complète."
     }
   ]
 }

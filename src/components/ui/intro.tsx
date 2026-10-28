@@ -15,7 +15,7 @@ export function Intro() {
       <div className="intro-card">
         <Image
           src="/brand/monogram.png"
-          alt=""
+          alt="Monogramme RenovIntérieurs"
           width={300}
           height={300}
           priority

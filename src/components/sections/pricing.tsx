@@ -11,11 +11,9 @@ export function Pricing() {
             className="text-[clamp(2.2rem,5vw,3.6rem)] leading-[0.98] font-medium tracking-[-0.03em]"
           >
             <span className="mask reveal-mask">
-              <span className="block">Prix au m²</span>
-            </span>
-            <span className="mask reveal-mask">
-              <span className="display-italic block text-[1.08em] leading-[1]">
-                en Île-de-France
+              <span className="block">
+                Prix au m²{" "}
+                <span className="display-italic text-[1.08em] leading-[1]">en Île-de-France</span>
               </span>
             </span>
           </h2>

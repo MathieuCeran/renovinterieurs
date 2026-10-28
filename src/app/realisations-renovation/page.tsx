@@ -5,7 +5,7 @@ import { PageHero } from "@/components/page/page-hero";
 import { Commitments } from "@/components/sections/commitments";
 import { Cta } from "@/components/sections/cta";
 import { Pillars } from "@/components/sections/pillars";
-import { cleanTitle, getPage, visualsFor } from "@/lib/content";
+import { cleanTitle, getPage, pageTitle, visualsFor } from "@/lib/content";
 import { photos } from "@/lib/photos";
 import { site } from "@/lib/site";
 import { withWw, wwMetadata } from "@/lib/whatswrong-overlay";
@@ -13,13 +13,13 @@ import { withWw, wwMetadata } from "@/lib/whatswrong-overlay";
 const path = "/realisations-renovation";
 const page = getPage(path);
 
-const title = page ? cleanTitle(page.title) : "Nos réalisations de rénovation";
+const title = page ? cleanTitle(page.title) : "Nos projets de rénovation";
 const description =
   page?.description ??
-  "Appartements haussmanniens, cuisines sur-mesure, salles de bain, béton ciré : nos chantiers livrés à Paris et en Île-de-France.";
+  "Appartements haussmanniens, cuisines sur-mesure, salles de bain, béton ciré : les chantiers que nous pilotons à Paris et en Île-de-France.";
 
 const metadata: Metadata = {
-  title,
+  title: pageTitle(title),
   description,
   alternates: { canonical: path },
   openGraph: {
@@ -113,10 +113,10 @@ function RealisationsPage() {
       />
 
       <PageHero
-        eyebrow="Nos réalisations"
+        eyebrow="Nos projets"
         line1="Des projets concrets,"
         line2="des résultats visibles"
-        intro="Cuisines, salles de bain, menuiserie sur mesure, gros œuvre : nos chantiers, en photos réelles."
+        intro="Cuisines, salles de bain, menuiserie sur mesure, gros œuvre : les chantiers que nous pilotons, en photos réelles."
         image={hero}
         primary={{ label: "Obtenir un devis", href: "#devis" }}
         secondary={{ label: "Nos services", href: "/nos-services" }}

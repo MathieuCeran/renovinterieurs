@@ -7,8 +7,8 @@
   "eyebrow": "Nos services",
   "hero": "/images/chantiers/sejour-haussmannien-canape-courbe.jpg",
   "intro": [
-    "Vous cherchez une entreprise capable de prendre votre rénovation en charge de bout en bout, sans multiplier les prestataires. RenovIntérieurs pilote le second œuvre tous corps d’état à Paris et en Île-de-France : appartement, cuisine, salle de bain, béton ciré, isolation, gros œuvre avec nos partenaires, dépannage et débarras. Visite technique sous 5 jours, devis détaillé sous 48 h.",
-    "Chaque service a sa page, avec ses signatures techniques, ses prix et ses réalisations. Pour situer votre budget, consultez [nos prix au m²](/prix-renovation) ; pour le déroulé d’un chantier, lisez [notre méthode en cinq étapes](/methode)."
+    "Vous cherchez un interlocuteur capable de piloter votre rénovation de bout en bout, sans multiplier les prestataires. RenovIntérieurs pilote le second œuvre tous corps d’état à Paris et en Île-de-France : appartement, cuisine, salle de bain, béton ciré, isolation, gros œuvre avec nos partenaires, dépannage et débarras. Visite technique sous 5 jours, chiffrage détaillé sous 48 h.",
+    "Chaque service a sa page, avec ses signatures techniques, ses prix et ses projets. Pour situer votre budget, consultez [nos prix au m²](/prix-renovation) ; pour le déroulé d’un chantier, lisez [notre méthode en cinq étapes](/methode)."
   ],
   "sections": [
     {
@@ -66,11 +66,11 @@
       "blocks": [
         {
           "t": "p",
-          "v": "Salle de bain ou rénovation complète, le cadre ne change pas : un interlocuteur unique pilote les artisans, vous recevez un compte-rendu chaque semaine et le SAV court 12 mois après la livraison. Les attestations de garantie (décennale, biennale, parfait achèvement, RC pro) vous sont remises avant le démarrage."
+          "v": "Salle de bain ou rénovation complète, le cadre ne change pas : un interlocuteur unique pilote les entreprises partenaires, vous recevez un compte-rendu chaque semaine et un suivi organisé par RenovIntérieurs court 12 mois après la réception. Les attestations de garantie des entreprises partenaires (décennale, biennale, parfait achèvement, RC pro) sont vérifiées puis vous sont remises avant le démarrage."
         },
         {
           "t": "p",
-          "v": "Nous intervenons dans les 20 arrondissements de Paris, dans les Hauts-de-Seine, les Yvelines et le Val-de-Marne. Retrouvez [nos communes d’intervention](/zones) et [nos réalisations récentes](/realisations-renovation)."
+          "v": "Nous pilotons des projets dans les 20 arrondissements de Paris, dans les Hauts-de-Seine, les Yvelines et le Val-de-Marne. Retrouvez [nos communes d’intervention](/zones) et [nos projets récents](/realisations-renovation)."
         }
       ]
     },
@@ -88,10 +88,10 @@
             {
               "label": "Notre méthode en cinq étapes",
               "href": "/methode",
-              "desc": "Du premier échange au SAV 12 mois."
+              "desc": "Du premier échange au suivi après réception."
             },
             {
-              "label": "Nos réalisations",
+              "label": "Nos projets",
               "href": "/realisations-renovation",
               "desc": "Séjours haussmanniens, cuisines, salles de bain, lofts."
             },

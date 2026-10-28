@@ -12,16 +12,14 @@ export function Pillars() {
             className="text-[clamp(2.2rem,5vw,3.6rem)] leading-[0.98] font-medium tracking-[-0.03em]"
           >
             <span className="mask reveal-mask">
-              <span className="block">Ce qui nous</span>
-            </span>
-            <span className="mask reveal-mask">
-              <span className="display-italic block text-[1.08em] leading-[1]">
-                distingue
+              <span className="block">
+                Ce qui nous{" "}
+                <span className="display-italic text-[1.08em] leading-[1]">distingue</span>
               </span>
             </span>
           </h2>
           <p className="reveal max-w-md text-[0.92rem] leading-relaxed text-muted lg:pb-2">
-            Un artisanat exigeant, un souci obsessionnel du détail et un
+            Une exigence d’artisan, un souci obsessionnel du détail et un
             accompagnement sans sous-traitance opaque : trois engagements tenus
             sur chaque chantier.
           </p>

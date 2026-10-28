@@ -6,7 +6,7 @@ import { HtmlArticle } from "@/components/page/html-article";
 import { PageHero } from "@/components/page/page-hero";
 import { Commitments } from "@/components/sections/commitments";
 import { Cta } from "@/components/sections/cta";
-import { clamp, cleanTitle, getPage, visualsFor } from "@/lib/content";
+import { clamp, cleanTitle, getPage, pageTitle, visualsFor } from "@/lib/content";
 import { site } from "@/lib/site";
 import {
   preparePageVersion,
@@ -37,7 +37,7 @@ export async function generateMetadata(): Promise<Metadata> {
       : "Guide gratuit rénovation appartement Paris 2026";
   const description = descriptionOf(version);
   return {
-    title,
+    title: pageTitle(title),
     description,
     alternates: { canonical: path },
     openGraph: {
@@ -64,7 +64,7 @@ const chapitres = [
   },
   {
     t: "Les 5 étapes clés du projet",
-    d: "Du premier échange à la livraison + SAV, avec durées indicatives.",
+    d: "Du premier échange à la réception + suivi, avec durées indicatives.",
   },
   {
     t: "Les aides financières 2026",
@@ -147,11 +147,9 @@ export default async function GuidePage() {
                   className="text-[clamp(1.5rem,3vw,2.2rem)] leading-[1.06] font-medium tracking-[-0.02em]"
                 >
                   <span className="mask reveal-mask">
-                    <span className="block">7 chapitres pour</span>
-                  </span>
-                  <span className="mask reveal-mask">
-                    <span className="display-italic block text-[1.1em]">
-                      décider sereinement
+                    <span className="block">
+                      7 chapitres pour{" "}
+                      <span className="display-italic text-[1.1em]">décider sereinement</span>
                     </span>
                   </span>
                 </h2>
@@ -194,7 +192,7 @@ export default async function GuidePage() {
               <p className="dot-label text-terra">Projet déjà clair ?</p>
               <p className="mt-4 max-w-2xl text-[clamp(1.05rem,1.9vw,1.3rem)] leading-[1.5] font-medium text-balance">
                 Le guide ne remplace pas un échange direct. Décrivez votre
-                projet et recevez un devis détaillé sous 48 h.
+                projet et recevez un chiffrage détaillé sous 48 h.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <Link

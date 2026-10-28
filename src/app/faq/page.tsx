@@ -6,7 +6,7 @@ import { PageHero } from "@/components/page/page-hero";
 import { Commitments } from "@/components/sections/commitments";
 import { Cta } from "@/components/sections/cta";
 import rawGroups from "@/content/faq.json";
-import { visualsFor } from "@/lib/content";
+import { pageTitle, visualsFor } from "@/lib/content";
 import { faq as homeFaq, site } from "@/lib/site";
 import { withWw, wwMetadata } from "@/lib/whatswrong-overlay";
 
@@ -17,7 +17,7 @@ const description =
   "Prix au m², délais, garanties, copropriété, joints époxy, DPE, surélévation : toutes les réponses de nos conducteurs de travaux, Paris & Île-de-France.";
 
 const metadata: Metadata = {
-  title,
+  title: pageTitle(title),
   description,
   alternates: { canonical: path },
   openGraph: {

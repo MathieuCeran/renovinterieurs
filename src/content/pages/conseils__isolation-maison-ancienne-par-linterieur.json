@@ -44,7 +44,7 @@
             },
             {
               "value": "60 à 95 €/m²",
-              "label": "posé, tarif RenovIntérieurs"
+              "label": "posé, tarif des entreprises partenaires"
             },
             {
               "value": "R ≥ 3,7",
@@ -134,7 +134,7 @@
         },
         {
           "t": "p",
-          "v": "Côté budget, l’isolation sous rampants coûte 50 à 150 €/m² TTC pose comprise ; RenovIntérieurs se situe entre 60 et 95 €/m² posé. Si la couverture est à refaire, le sarking (isolant rigide posé sur les chevrons depuis l’extérieur) revient à 150 à 250 €/m² mais supprime les ponts thermiques de structure. Une fenêtre de toit ajoute 800 à 1 500 €."
+          "v": "Côté budget, l’isolation sous rampants coûte 50 à 150 €/m² TTC pose comprise ; les entreprises partenaires de RenovIntérieurs se situent entre 60 et 95 €/m² posé. Si la couverture est à refaire, le sarking (isolant rigide posé sur les chevrons depuis l’extérieur) revient à 150 à 250 €/m² mais supprime les ponts thermiques de structure. Une fenêtre de toit ajoute 800 à 1 500 €."
         }
       ]
     },
@@ -189,7 +189,7 @@
       "blocks": [
         {
           "t": "p",
-          "v": "Pour les murs, le marché s’étend de 50 à 130 €/m² TTC selon la technique et l’isolant ; RenovIntérieurs se positionne entre 60 et 95 €/m² posé. Ajoutez les travaux liés : reprises électriques, plinthes et tableaux, VMC double flux, menuiseries. Un bilan énergétique en amont hiérarchise les pertes et permet de phaser le chantier en une ou plusieurs campagnes."
+          "v": "Pour les murs, le marché s’étend de 50 à 130 €/m² TTC selon la technique et l’isolant ; les entreprises partenaires de RenovIntérieurs se positionnent entre 60 et 95 €/m² posé. Ajoutez les travaux liés : reprises électriques, plinthes et tableaux, VMC double flux, menuiseries. Un bilan énergétique en amont hiérarchise les pertes et permet de phaser le chantier en une ou plusieurs campagnes."
         },
         {
           "t": "ul",
@@ -222,7 +222,7 @@
             },
             {
               "q": "Combien coûte l’isolation des murs par l’intérieur ?",
-              "a": "Entre 50 et 130 €/m² TTC sur le marché, 60 à 95 €/m² posé chez RenovIntérieurs en Île-de-France, hors travaux connexes (menuiseries, VMC, reprises d’enduit). MaPrimeRénov’, CEE, éco-PTZ et TVA à 5,5 % réduisent le reste à charge."
+              "a": "Entre 50 et 130 €/m² TTC sur le marché, 60 à 95 €/m² posé chez les entreprises partenaires de RenovIntérieurs en Île-de-France, hors travaux connexes (menuiseries, VMC, reprises d’enduit). MaPrimeRénov’, CEE, éco-PTZ et TVA à 5,5 % réduisent le reste à charge."
             }
           ]
         }

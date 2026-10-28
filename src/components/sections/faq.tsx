@@ -19,11 +19,9 @@ export function Faq() {
               className="text-[clamp(2.1rem,4.4vw,3.2rem)] leading-[1] font-medium tracking-[-0.03em]"
             >
               <span className="mask reveal-mask">
-                <span className="block">Questions</span>
-              </span>
-              <span className="mask reveal-mask">
-                <span className="display-italic block text-[1.08em] leading-[1]">
-                  fréquentes
+                <span className="block">
+                  Questions{" "}
+                  <span className="display-italic text-[1.08em] leading-[1]">fréquentes</span>
                 </span>
               </span>
             </h2>

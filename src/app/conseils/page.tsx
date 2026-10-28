@@ -6,7 +6,7 @@ import { PageHero } from "@/components/page/page-hero";
 import { Commitments } from "@/components/sections/commitments";
 import { Cta } from "@/components/sections/cta";
 import { ArrowRight } from "@/components/ui/kit";
-import { allPaths, cleanTitle, getPage, visualsFor } from "@/lib/content";
+import { allPaths, cleanTitle, getPage, pageTitle, visualsFor } from "@/lib/content";
 import { site } from "@/lib/site";
 import { publishedArticles, wwPath } from "@/lib/whatswrong";
 
@@ -17,7 +17,7 @@ const description =
   "Prix au m², délais, isolation, cuisine, salle de bain, menuiseries : nos guides pratiques pour préparer et réussir votre projet de rénovation en Île-de-France.";
 
 export const metadata: Metadata = {
-  title,
+  title: pageTitle(title),
   description,
   alternates: { canonical: path },
   openGraph: {
@@ -169,10 +169,8 @@ export default async function ConseilsPage() {
           <div>
             <p className="dot-label text-paper/60">Le condensé, en PDF</p>
             <h2 className="mt-4 max-w-xl text-[clamp(1.5rem,3vw,2.3rem)] leading-[1.06] font-medium tracking-[-0.02em]">
-              Rénover son appartement à Paris
-              <span className="display-italic block text-[1.08em]">
-                le guide 2026
-              </span>
+              Rénover son appartement à Paris :{" "}
+              <span className="display-italic text-[1.08em]">le guide 2026</span>
             </h2>
             <p className="mt-4 max-w-lg text-[0.93rem] leading-relaxed text-paper/70">
               10 pages : prix au m², étapes clés, aides financières, 10 pièges à

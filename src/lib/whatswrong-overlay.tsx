@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+
+import { pageTitle } from "@/lib/content";
 import {
   cloneElement,
   Fragment,
@@ -248,7 +250,7 @@ export async function wwMetadata(path: string, metadata: Metadata): Promise<Meta
   if (version === null) return metadata;
   return {
     ...metadata,
-    title: version.title || metadata.title,
+    title: version.title ? pageTitle(version.title) : metadata.title,
     description: version.description || metadata.description,
     openGraph: metadata.openGraph && {
       ...metadata.openGraph,

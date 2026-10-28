@@ -189,7 +189,7 @@ export function LeadForm() {
         </h3>
         <p className="mt-4 max-w-sm text-[0.92rem] leading-relaxed text-muted">
           Merci {data.nom.split(" ")[0]}. Nous revenons vers vous sous 24 h
-          ouvrées pour caler la visite technique — puis votre devis détaillé
+          ouvrées pour caler la visite technique — puis votre chiffrage détaillé
           sous 48 h.
         </p>
       </div>

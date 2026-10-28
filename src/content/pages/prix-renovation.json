@@ -1,6 +1,6 @@
 {
   "title": "Prix rénovation appartement Paris 2026 : tarifs au m²",
-  "description": "Grille 2026 des prix de rénovation au m² à Paris et en Île-de-France, exemples chiffrés, TVA 10 % et 5,5 %, aides et durées. Devis détaillé sous 48 h.",
+  "description": "Grille 2026 des prix de rénovation au m² à Paris et en Île-de-France, exemples chiffrés, TVA 10 % et 5,5 %, aides et durées. Chiffrage détaillé sous 48 h.",
   "h1": "Prix d’une rénovation : la grille au m² en 2026",
   "kind": "info",
   "parent": "/",
@@ -8,7 +8,7 @@
   "hero": "/images/chantiers/salle-a-manger-haussmannienne.jpg",
   "intro": [
     "Combien coûte une rénovation à Paris ? Entre 250 et 2 500 € HT par m² selon le niveau de travaux : rafraîchissement, rénovation partielle, complète ou haut de gamme. Cette page réunit notre grille 2026, les facteurs qui font bouger le devis, des exemples chiffrés et le point sur la TVA et les aides.",
-    "Ces fourchettes sont indicatives et valent pour un appartement à Paris ou en Île-de-France. Seul un devis établi après [visite technique](/methode) engage RenovIntérieurs : il est détaillé poste par poste et remis sous 48 h."
+    "Ces fourchettes sont indicatives et valent pour un appartement à Paris ou en Île-de-France. Seul un chiffrage établi après [visite technique](/methode) est ferme : RenovIntérieurs rassemble les devis des entreprises partenaires, les détaille poste par poste et vous les remet sous 48 h."
   ],
   "sections": [
     {
@@ -170,7 +170,7 @@
           "items": [
             {
               "title": "TVA à 10 %",
-              "text": "S’applique aux travaux d’amélioration, de transformation et d’entretien d’un logement achevé depuis plus de deux ans. C’est le cas de la quasi-totalité de nos chantiers de second œuvre."
+              "text": "S’applique aux travaux d’amélioration, de transformation et d’entretien d’un logement achevé depuis plus de deux ans. C’est le cas de la quasi-totalité des chantiers de second œuvre que nous pilotons."
             },
             {
               "title": "TVA à 5,5 %",
@@ -215,7 +215,7 @@
         },
         {
           "t": "p",
-          "v": "Pour voir l’enchaînement des phases avant de signer, ouvrez [le planning de chantier](/outils/planning-travaux-renovation) ou lisez [le déroulé en cinq étapes](/methode), du premier échange au SAV 12 mois."
+          "v": "Pour voir l’enchaînement des phases avant de signer, ouvrez [le planning de chantier](/outils/planning-travaux-renovation) ou lisez [le déroulé en cinq étapes](/methode), du premier échange au suivi après réception."
         }
       ]
     },
@@ -227,11 +227,11 @@
           "items": [
             {
               "q": "Pourquoi une fourchette plutôt qu’un prix fixe au m² ?",
-              "a": "Parce que deux appartements de 60 m² n’ont jamais le même état de départ ni les mêmes finitions. La grille vous situe ; la visite technique, gratuite, fixe le chiffre. Le devis détaillé arrive 48 h après."
+              "a": "Parce que deux appartements de 60 m² n’ont jamais le même état de départ ni les mêmes finitions. La grille vous situe ; la visite technique, gratuite, fixe le chiffre. Le chiffrage détaillé arrive 48 h après."
             },
             {
-              "q": "Le devis engage-t-il RenovIntérieurs sur les prix ?",
-              "a": "Oui. Le devis est établi poste par poste après visite et engage RenovIntérieurs sur les montants indiqués. Aucun supplément n’est possible sans avenant signé de votre part."
+              "q": "Les prix du chiffrage sont-ils fermes ?",
+              "a": "Oui. Le chiffrage est établi poste par poste après visite, à partir des devis des entreprises partenaires, qui s’engagent sur leurs montants. Aucun supplément n’est possible sans avenant signé de votre part."
             },
             {
               "q": "Le gros œuvre est-il compris dans ces fourchettes ?",

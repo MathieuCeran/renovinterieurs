@@ -1,6 +1,6 @@
 {
   "title": "Rénovation appartement et maison Hauts-de-Seine (92)",
-  "description": "Rénovation d’appartement et de maison dans 18 communes du 92, de Neuilly à Sceaux. Interlocuteur unique, visite sous 5 jours, devis détaillé sous 48 h.",
+  "description": "Rénovation d’appartement et de maison dans 18 communes du 92, de Neuilly à Sceaux. Interlocuteur unique, visite sous 5 jours, chiffrage détaillé sous 48 h.",
   "h1": "Rénovation dans les Hauts-de-Seine : 18 communes, un interlocuteur unique",
   "kind": "zone",
   "parent": "/zones",
@@ -8,7 +8,7 @@
   "hero": "/images/chantiers/chambre-haussmannienne-lustre.jpg",
   "intro": [
     "Haussmannien à Neuilly et Levallois, Art Déco à Boulogne et Puteaux, tours de La Défense, résidences livrées après 2010 au Trapèze ou à Issy, maisons de Sceaux et d’Antony : les Hauts-de-Seine réunissent toutes les époques de construction d’Île-de-France. Chaque bâti impose ses règles, du plafond à 3 m aux créneaux d’ascenseur de service.",
-    "RenovIntérieurs pilote vos travaux de second œuvre dans 18 communes du 92 : [rénovation complète d’appartement](/renovation-appartement-paris), [cuisine sur mesure](/cuisine-sur-mesure-paris), [salle de bain étanche](/salle-de-bain-paris), béton ciré, isolation. Un seul interlocuteur du premier échange à la livraison, une visite technique sous 5 jours, un devis détaillé sous 48 h."
+    "RenovIntérieurs pilote vos travaux de second œuvre dans 18 communes du 92 : [rénovation complète d’appartement](/renovation-appartement-paris), [cuisine sur mesure](/cuisine-sur-mesure-paris), [salle de bain étanche](/salle-de-bain-paris), béton ciré, isolation. Un seul interlocuteur du premier échange à la réception, une visite technique sous 5 jours, un chiffrage détaillé sous 48 h."
   ],
   "sections": [
     {
@@ -23,7 +23,7 @@
             },
             {
               "value": "48 h",
-              "label": "pour recevoir votre devis détaillé"
+              "label": "pour recevoir votre chiffrage détaillé"
             },
             {
               "value": "5 jours",
@@ -31,7 +31,7 @@
             },
             {
               "value": "10 ans",
-              "label": "de garantie décennale"
+              "label": "de garantie décennale, portée par les entreprises partenaires"
             }
           ]
         }
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "title": "Nos interventions commune par commune",
+      "title": "Les projets que nous pilotons, commune par commune",
       "blocks": [
         {
           "t": "cards",
@@ -158,11 +158,11 @@
       ]
     },
     {
-      "title": "Réalisations dans l’ouest parisien",
+      "title": "Projets dans l’ouest parisien",
       "blocks": [
         {
           "t": "p",
-          "v": "Du séjour haussmannien restauré au grand volume contemporain, trois chantiers représentatifs ; d’autres photos dans [nos réalisations](/realisations-renovation)."
+          "v": "Du séjour haussmannien restauré au grand volume contemporain, trois chantiers représentatifs ; d’autres photos dans [nos projets](/realisations-renovation)."
         },
         {
           "t": "gallery",
@@ -232,8 +232,8 @@
           "t": "faq",
           "items": [
             {
-              "q": "Intervenez-vous dans les tours résidentielles de La Défense ?",
-              "a": "Oui, à Puteaux comme à Courbevoie. Nous obtenons l’autorisation en assemblée générale, réservons les créneaux d’ascenseur de service, protégeons les parties communes et remettons les attestations d’assurance avant le premier jour. Vous n’avez aucune démarche à mener auprès du syndic."
+              "q": "Pilotez-vous des projets dans les tours résidentielles de La Défense ?",
+              "a": "Oui, à Puteaux comme à Courbevoie. Nous obtenons l’autorisation en assemblée générale, réservons les créneaux d’ascenseur de service, protégeons les parties communes et remettons les attestations d’assurance des entreprises partenaires avant le premier jour. Vous n’avez aucune démarche à mener auprès du syndic."
             },
             {
               "q": "Mon appartement de Boulogne ou de Clichy est classé F : que proposez-vous ?",
@@ -241,7 +241,7 @@
             },
             {
               "q": "Une maison de Sceaux ou de Bois-Colombes peut-elle garder son cachet ?",
-              "a": "C’est le principe de nos chantiers de maison : parquets en chêne, cheminées en marbre, escaliers à balustres et moulures sont restaurés pendant que plomberie, électricité, isolation et chauffage sont refaits. Le planning détaillé vous est remis avec le devis."
+              "a": "C’est le principe des chantiers de maison que nous pilotons : parquets en chêne, cheminées en marbre, escaliers à balustres et moulures sont restaurés pendant que plomberie, électricité, isolation et chauffage sont refaits. Le planning détaillé vous est remis avec le devis."
             }
           ]
         }

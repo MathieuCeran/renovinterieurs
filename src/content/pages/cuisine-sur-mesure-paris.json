@@ -1,6 +1,6 @@
 {
   "title": "Cuisine sur mesure Paris : sur plan ou façades Metod",
-  "description": "Cuisine sur mesure à Paris : conçue sur plan ou façades sur mesure sur caissons IKEA Metod. Chêne, laque, quartz, inox. Devis détaillé sous 48 h.",
+  "description": "Cuisine sur mesure à Paris : conçue sur plan ou façades sur mesure sur caissons IKEA Metod. Chêne, laque, quartz, inox. Chiffrage détaillé sous 48 h.",
   "h1": "Cuisine sur mesure à Paris : dessinée sur plan ou façades sur Metod",
   "kind": "service",
   "parent": "/nos-services",
@@ -8,7 +8,7 @@
   "hero": "/images/chantiers/cuisine-integree-parquet-versailles.jpg",
   "intro": [
     "Dans un appartement parisien, la cuisine en kit tombe rarement juste : murs hors d’équerre, gaine à contourner, fenêtre basse, hotte sans conduit. Une cuisine dessinée pour la pièce absorbe ces vides et ces décalages. RenovIntérieurs propose deux voies : la conception sur plan avec notre cuisiniste partenaire, ou des façades sur mesure posées sur des caissons IKEA Metod.",
-    "Dans les deux cas, nous pilotons tout ce qui entoure le meuble : plomberie, circuits électriques dédiés, ventilation, crédence, sol et peinture. Un seul devis, un interlocuteur unique, une pose de 2 à 5 jours et un compte-rendu chaque semaine jusqu’à la mise en service."
+    "Dans les deux cas, nous pilotons tout ce qui entoure le meuble : plomberie, circuits électriques dédiés, ventilation, crédence, sol et peinture. Un seul chiffrage détaillé, un interlocuteur unique, une pose de 2 à 5 jours et un compte-rendu chaque semaine jusqu’à la mise en service."
   ],
   "sections": [
     {
@@ -19,7 +19,7 @@
           "items": [
             {
               "value": "48 h",
-              "label": "pour un devis détaillé"
+              "label": "pour un chiffrage détaillé"
             },
             {
               "value": "2 à 5 jours",
@@ -38,11 +38,11 @@
       ]
     },
     {
-      "title": "Nos cuisines à Paris",
+      "title": "Les cuisines que nous pilotons à Paris",
       "blocks": [
         {
           "t": "p",
-          "v": "Deux approches, un même niveau de finition : [nos réalisations](/realisations-renovation) montrent le résultat en situation."
+          "v": "Deux approches, un même niveau de finition : [nos projets](/realisations-renovation) montrent le résultat en situation."
         },
         {
           "t": "gallery",
@@ -78,7 +78,7 @@
             },
             {
               "title": "Une conception validée en 3D",
-              "text": "Sous 7 à 10 jours, une modélisation 3D et un devis poste par poste : caissons, façades, plan, électroménager, montage et pose."
+              "text": "Sous 7 à 10 jours, une modélisation 3D et un chiffrage poste par poste : caissons, façades, plan, électroménager, montage et pose."
             },
             {
               "title": "La conception sur plan",
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "title": "Nos signatures : matériaux et finitions",
+      "title": "Matériaux et finitions",
       "blocks": [
         {
           "t": "callout",
@@ -116,7 +116,7 @@
         {
           "t": "callout",
           "title": "Compatibles Metod depuis 2014",
-          "v": "Nos façades se posent sans modification sur la quasi-totalité des cuisines Metod vendues depuis 2014. Vos caissons restent en place, et leur garantie fabricant aussi.",
+          "v": "Les façades sur mesure se posent sans modification sur la quasi-totalité des cuisines Metod vendues depuis 2014. Vos caissons restent en place, et leur garantie fabricant aussi.",
           "href": "/conseils/renovation-cuisine-complete",
           "label": "Lire le guide de la rénovation de cuisine"
         }
@@ -157,7 +157,7 @@
         },
         {
           "t": "p",
-          "v": "Le déroulé d’un chantier, du premier échange au SAV 12 mois, est décrit sur [notre méthode](/methode)."
+          "v": "Le déroulé d’un chantier, du premier échange au suivi après réception, est décrit sur [notre méthode](/methode)."
         }
       ]
     },
@@ -169,7 +169,7 @@
           "items": [
             {
               "q": "Pouvez-vous ne changer que les façades de ma cuisine IKEA ?",
-              "a": "Oui, si les caissons Metod sont en bon état. Nous les conservons et posons des façades en chêne, laque ou stratifié. C’est la demande la plus fréquente pour transformer une cuisine sans la déposer."
+              "a": "Oui, si les caissons Metod sont en bon état. Les caissons sont conservés et les façades en chêne, laque ou stratifié sont posées par les entreprises partenaires. C’est la demande la plus fréquente pour transformer une cuisine sans la déposer."
             },
             {
               "q": "Puis-je cuisiner pendant les travaux ?",
@@ -188,7 +188,7 @@
     {
       "label": "Notre méthode",
       "href": "/methode",
-      "desc": "Relevé, conception 3D, devis sous 48 h, pose et SAV 12 mois."
+      "desc": "Relevé, conception 3D, chiffrage sous 48 h, pose et suivi après réception."
     },
     {
       "label": "Prix de rénovation",
@@ -206,14 +206,24 @@
       "desc": "Étapes, matériaux, erreurs à éviter."
     },
     {
-      "label": "Nos réalisations",
+      "label": "Nos projets",
       "href": "/realisations-renovation",
-      "desc": "Cuisines sur plan et façades Metod livrées à Paris."
+      "desc": "Cuisines sur plan et façades Metod pilotées à Paris."
     },
     {
       "label": "Rénovation dans le Val-de-Marne",
       "href": "/renovation-val-de-marne-94",
       "desc": "Vincennes, Saint-Mandé, Saint-Maur, Nogent."
+    },
+    {
+      "label": "Verrière intérieure atelier",
+      "href": "/conseils/verriere-interieure",
+      "desc": "Séparer la cuisine sans perdre la lumière : prix et profilés."
+    },
+    {
+      "label": "Joint époxy",
+      "href": "/conseils/joint-epoxy",
+      "desc": "Pour une crédence et un plan carrelés qui ne noircissent pas."
     }
   ]
 }

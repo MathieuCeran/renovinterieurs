@@ -11,11 +11,9 @@ export function Process() {
             className="text-[clamp(2.2rem,5vw,3.6rem)] leading-[0.98] font-medium tracking-[-0.03em]"
           >
             <span className="mask reveal-mask">
-              <span className="block">Cinq étapes,</span>
-            </span>
-            <span className="mask reveal-mask">
-              <span className="display-italic block text-[1.08em] leading-[1]">
-                zéro mauvaise surprise
+              <span className="block">
+                Cinq étapes,{" "}
+                <span className="display-italic text-[1.08em] leading-[1]">zéro mauvaise surprise</span>
               </span>
             </span>
           </h2>

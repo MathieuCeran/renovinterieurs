@@ -73,7 +73,7 @@ export function Header() {
           >
             <Image
               src="/brand/monogram.png"
-              alt=""
+              alt="Logo RenovIntérieurs"
               width={300}
               height={300}
               priority

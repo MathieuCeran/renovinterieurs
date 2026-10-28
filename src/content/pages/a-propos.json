@@ -1,102 +1,75 @@
 {
-  "title": "À propos de RenovIntérieurs, rénovation à Paris et IDF",
-  "description": "RenovIntérieurs, marque de Archi Renov : pilotage de vos travaux de rénovation à Paris et en Île-de-France, artisans qualifiés, interlocuteur unique.",
-  "h1": "RenovIntérieurs : une marque de Archi Renov, un interlocuteur unique",
+  "title": "Qui sommes-nous : RenovIntérieurs et Ilann Atlan",
+  "description": "RenovIntérieurs, marque d’IA RENOV fondée par Ilann Atlan : nous pilotons vos travaux de rénovation à Paris et en Île-de-France.",
+  "h1": "RenovIntérieurs : Ilann Atlan, un interlocuteur unique pour vos travaux",
   "kind": "info",
   "parent": "/",
   "eyebrow": "Qui sommes-nous",
   "hero": "/images/chantiers/faux-plafond-lumineux-pose.jpg",
-  "intro": [
-    "Rénover à Paris, c’est souvent cinq artisans en direct, cinq plannings désynchronisés et personne pour répondre quand quelque chose ne va pas. RenovIntérieurs, marque de Archi Renov, a été créée pour proposer autre chose : un interlocuteur unique qui pilote la technique, le planning et le budget de votre rénovation intérieure.",
-    "Second œuvre tous corps d’état, cuisine et salle de bain sur mesure, isolation, dépannage, débarras : nos artisans qualifiés sont sélectionnés par spécialité, et vous savez toujours où en est votre chantier."
-  ],
+  "intro": [],
   "sections": [
     {
-      "title": "En bref",
+      "title": "Qui pilote vos travaux",
       "blocks": [
         {
-          "t": "stats",
-          "items": [
+          "t": "founder",
+          "name": "Ilann Atlan",
+          "role": "Fondateur et président d’IA RENOV",
+          "photo": {
+            "src": "/images/equipe/ilann-atlan-portrait.jpg",
+            "alt": "Portrait d’Ilann Atlan, fondateur et président d’IA RENOV, dans un salon haussmannien rénové",
+            "width": 1022,
+            "height": 1532
+          },
+          "text": [
+            "Ilann Atlan a fondé IA RENOV, la société qui porte RenovIntérieurs ainsi qu’[Archi Renov](https://www.archi-renov.com/) et Archi Pilote Rénovation. Il pilote des projets de rénovation à Paris et en Île-de-France : étude du bien, chiffrage détaillé par lot, sélection des entreprises partenaires et suivi du chantier jusqu’à la réception.",
+            "Son rôle est d’être votre interlocuteur unique. Les travaux sont réalisés par des entreprises partenaires spécialisées, qui établissent leurs devis, facturent leurs travaux et portent leurs propres assurances ; IA RENOV vérifie leurs attestations avant le démarrage."
+          ],
+          "facts": [
             {
-              "value": "48 h",
-              "label": "pour un devis détaillé poste par poste"
+              "label": "Société",
+              "value": "IA RENOV, SASU"
             },
             {
-              "value": "5 jours",
-              "label": "pour la visite technique"
+              "label": "Créée en",
+              "value": "2020"
             },
             {
-              "value": "10 ans",
-              "label": "de garantie décennale"
+              "label": "Siège",
+              "value": "La Garenne-Colombes (92)"
             },
             {
-              "value": "12 mois",
-              "label": "de SAV après livraison"
+              "label": "Marques",
+              "value": "RenovIntérieurs, Archi Renov, Archi Pilote Rénovation"
             }
           ]
         }
       ]
     },
     {
-      "title": "Ce qui nous guide",
+      "title": "Qui fait quoi",
       "blocks": [
         {
           "t": "cards",
           "items": [
             {
-              "title": "Un savoir-faire artisanal",
-              "text": "De la plâtrerie à la pose de matériaux nobles, chaque étape est confiée à un artisan de la spécialité. Le soin des finitions fait la différence au quotidien."
+              "title": "RenovIntérieurs vous accueille",
+              "text": "Le nom sous lequel vous nous contactez : un seul interlocuteur, du premier appel à la réception, qui comprend votre projet et vous conseille sur les choix techniques."
             },
             {
-              "title": "La qualité dans chaque détail",
-              "text": "Parquet chevron, tasseaux bois, éclairages encastrés : chaque élément compose un ensemble cohérent et durable. Un chantier n’est livré que lorsque tout est en place."
+              "title": "IA RENOV pilote le projet",
+              "text": "La société d’Ilann Atlan étudie le bien, établit le chiffrage détaillé par lot, sélectionne les entreprises partenaires, fixe le planning, suit le chantier chaque semaine et organise la réception. [Notre méthode en 5 étapes](/methode)."
             },
             {
-              "title": "Un accompagnement de A à Z",
-              "text": "Du premier diagnostic à la livraison, un interlocuteur unique pilote votre projet. Pas de sous-traitance opaque, pas de surprise en cours de route."
+              "title": "Les entreprises partenaires réalisent",
+              "text": "Des entreprises indépendantes, choisies par spécialité. Elles établissent leurs devis, réalisent et facturent leurs travaux et portent leurs propres garanties (décennale, biennale, parfait achèvement) ; nous vérifions leurs attestations avant le démarrage."
             }
           ]
         }
       ]
     },
     {
-      "title": "Comment nous travaillons",
-      "blocks": [
-        {
-          "t": "p",
-          "v": "Un seul devis, un seul planning, un seul responsable si un problème survient après livraison. Nous pilotons les corps d’état dans le bon ordre, anticipons les blocages avant qu’ils immobilisent le chantier et vous adressons un compte-rendu chaque semaine. [Les 5 étapes sont décrites sur notre page méthode](/methode)."
-        },
-        {
-          "t": "p",
-          "v": "Les choix techniques sont pris avant la pose, pas en cours de chantier : joints époxy en pièces humides, nattes d’étanchéité sous les douches, béton ciré, cuisines conçues sur plan. [Toutes nos prestations sont présentées ici](/nos-services), et nos fourchettes de prix au m² sont publiques [sur la page prix](/prix-renovation)."
-        },
-        {
-          "t": "p",
-          "v": "Sur certains projets, vous pouvez acheter vos matériaux directement auprès de nos fournisseurs partenaires, aux conditions professionnelles. Cette option est étudiée à chaque devis : le budget reste lisible de bout en bout, sans reconstitution après coup."
-        }
-      ]
-    },
-    {
-      "title": "Nos garanties",
-      "blocks": [
-        {
-          "t": "p",
-          "v": "Chaque chantier est couvert par les garanties légales, et les attestations d’assurance vous sont remises avant le démarrage."
-        },
-        {
-          "t": "ul",
-          "items": [
-            "Garantie décennale : 10 ans sur les ouvrages.",
-            "Garantie biennale : 2 ans sur les équipements.",
-            "Garantie de parfait achèvement : 1 an après réception.",
-            "Responsabilité civile professionnelle à jour.",
-            "SAV 12 mois après la livraison, levée des réserves incluse."
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Sur nos chantiers",
+      "title": "Des projets que nous avons pilotés",
       "blocks": [
         {
           "t": "gallery",
@@ -109,7 +82,7 @@
             {
               "src": "/images/chantiers/menuiserie-chene-placards-pose.jpg",
               "alt": "Pose de placards et niches en chêne sur mesure en cours de chantier",
-              "caption": "Menuiserie : placards et niches en chêne fabriqués et posés aux cotes de la pièce"
+              "caption": "Menuiserie : placards et niches en chêne fabriqués et posés par la menuiserie partenaire aux cotes de la pièce"
             },
             {
               "src": "/images/chantiers/bibliotheque-arche-sur-mesure.jpg",
@@ -125,11 +98,7 @@
       "blocks": [
         {
           "t": "p",
-          "v": "Notre siège est à La Garenne-Colombes. Nous intervenons dans les 20 arrondissements de [Paris](/renovation-appartement-paris), dans les [Hauts-de-Seine](/renovation-hauts-de-seine-92), les [Yvelines](/renovation-yvelines-78) et le [Val-de-Marne](/renovation-val-de-marne-94). Visite technique sous 5 jours et devis sous 48 h, quelle que soit la commune."
-        },
-        {
-          "t": "p",
-          "v": "Nos avis clients sont publiés sur Google, et [nos réalisations](/realisations-renovation) montrent le niveau de finition attendu. Pour parler de votre projet, appelez le 06 12 24 55 27, écrivez à contact@renovinterieurs.fr ou [utilisez le formulaire de contact](/contact-devis)."
+          "v": "Notre siège est à La Garenne-Colombes. Nous pilotons des projets dans les 20 arrondissements de [Paris](/renovation-appartement-paris), dans les [Hauts-de-Seine](/renovation-hauts-de-seine-92), les [Yvelines](/renovation-yvelines-78) et le [Val-de-Marne](/renovation-val-de-marne-94). Visite technique sous 5 jours, quelle que soit la commune."
         }
       ]
     }
@@ -138,7 +107,7 @@
     {
       "label": "Notre méthode",
       "href": "/methode",
-      "desc": "Les 5 étapes, du premier échange au SAV"
+      "desc": "Les 5 étapes, du premier échange au suivi après réception"
     },
     {
       "label": "Prix de la rénovation",
@@ -151,9 +120,9 @@
       "desc": "Second œuvre, cuisine, salle de bain, isolation, dépannage, débarras"
     },
     {
-      "label": "Nos réalisations",
+      "label": "Nos projets",
       "href": "/realisations-renovation",
-      "desc": "Chantiers livrés à Paris et en Île-de-France"
+      "desc": "Chantiers pilotés à Paris et en Île-de-France"
     },
     {
       "label": "Contact et devis",

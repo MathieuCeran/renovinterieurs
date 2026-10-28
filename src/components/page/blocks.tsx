@@ -730,6 +730,47 @@ function compose(blocks: Block[]): Group[] {
   return out;
 }
 
+/* ------------------------------------------------------------------ */
+/*  Fondateur : portrait entier (jamais recadré), présentation, repères */
+/* ------------------------------------------------------------------ */
+
+function Founder({ name, role, photo, text, facts }: Extract<Block, { t: "founder" }>) {
+  return (
+    <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-14">
+      <figure className="lg:col-span-5">
+        <Image
+          src={photo.src}
+          alt={photo.alt}
+          width={photo.width}
+          height={photo.height}
+          sizes="(min-width: 1024px) 34vw, 100vw"
+          className="mx-auto h-auto max-h-[38rem] w-auto rounded-[clamp(18px,2.4vw,28px)] object-contain"
+        />
+      </figure>
+      <div className="lg:col-span-7">
+        <p className="dot-label text-[0.74rem] text-terra">Le fondateur</p>
+        <h3 className="mt-4 text-[clamp(2rem,3.4vw,2.8rem)] leading-[1.05] font-medium tracking-[-0.02em] text-ink">{name}</h3>
+        <p className="mt-2 text-[0.95rem] text-muted">{role}</p>
+        <div className="mt-6 space-y-4 text-[1rem] leading-relaxed text-ink/80">
+          {text.map((p, i) => (
+            <p key={i}>
+              <Inline v={p} />
+            </p>
+          ))}
+        </div>
+        <dl className="mt-8 grid gap-px overflow-hidden rounded-2xl bg-line sm:grid-cols-2">
+          {facts.map((f) => (
+            <div key={f.label} className="bg-paper px-5 py-4">
+              <dt className="text-[0.72rem] font-medium tracking-[0.1em] text-muted uppercase">{f.label}</dt>
+              <dd className="mt-1 text-[0.95rem] text-ink">{f.value}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </div>
+  );
+}
+
 export function Blocks({
   blocks,
   tone = "light",
@@ -772,6 +813,8 @@ export function Blocks({
                 return <Gallery key={i} items={b.items} />;
               case "links":
                 return <Links key={i} items={b.items} />;
+              case "founder":
+                return <Founder key={i} {...b} />;
               default:
                 return null;
             }

@@ -7,7 +7,7 @@
   "eyebrow": "Dépannage à domicile",
   "hero": "/images/chantiers/salle-d-eau-marbre-gris.jpg",
   "intro": [
-    "Une fuite sous l’évier, un disjoncteur qui saute, une porte claquée, une chaudière qui s’arrête en plein hiver : l’urgence domestique ne prévient pas, et ses conséquences dépassent l’inconfort. RenovIntérieurs intervient rapidement à Paris et en Île-de-France, avec un devis écrit avant tout démarrage et une garantie sur le travail réalisé.",
+    "Une fuite sous l’évier, un disjoncteur qui saute, une porte claquée, une chaudière qui s’arrête en plein hiver : l’urgence domestique ne prévient pas, et ses conséquences dépassent l’inconfort. RenovIntérieurs organise rapidement l’intervention d’entreprises partenaires à Paris et en Île-de-France, avec un devis écrit avant tout démarrage et la garantie de l’entreprise intervenante sur le travail réalisé.",
     "Un seul appel couvre les quatre métiers du dépannage : plomberie, électricité, serrurerie, chauffage. Nous pilotons l’intervention du diagnostic à la facture, et si la panne révèle un besoin de rénovation, le même interlocuteur connaît déjà votre logement."
   ],
   "sections": [
@@ -27,7 +27,7 @@
             },
             {
               "value": "2 ans",
-              "label": "de garantie sur la main-d’œuvre"
+              "label": "de garantie de l’entreprise partenaire sur la main-d’œuvre"
             },
             {
               "value": "10 %",
@@ -38,11 +38,11 @@
       ]
     },
     {
-      "title": "Nos interventions",
+      "title": "Les interventions",
       "blocks": [
         {
           "t": "p",
-          "v": "Nos techniciens se déplacent dans les 20 arrondissements de [Paris](/renovation-appartement-paris), dans les [Hauts-de-Seine](/renovation-hauts-de-seine-92), les Yvelines et le Val-de-Marne, en véhicule équipé des pièces courantes."
+          "v": "Les techniciens des entreprises partenaires se déplacent dans les 20 arrondissements de [Paris](/renovation-appartement-paris), dans les [Hauts-de-Seine](/renovation-hauts-de-seine-92), les Yvelines et le Val-de-Marne, en véhicule équipé des pièces courantes."
         },
         {
           "t": "cards",
@@ -53,7 +53,7 @@
             },
             {
               "title": "Électricité",
-              "text": "Disjoncteur qui saute, prise qui chauffe, point lumineux hors service, tableau vétuste. Nous cherchons la cause avant de réarmer."
+              "text": "Disjoncteur qui saute, prise qui chauffe, point lumineux hors service, tableau vétuste. La cause est recherchée avant de réarmer."
             },
             {
               "title": "Serrurerie",
@@ -76,7 +76,7 @@
       "blocks": [
         {
           "t": "p",
-          "v": "Diagnostic, réparation, contrôle du bon fonctionnement avant de partir : le dépannage se termine par un chantier nettoyé. [Voir nos réalisations](/realisations-renovation)."
+          "v": "Diagnostic, réparation, contrôle du bon fonctionnement avant de partir : le dépannage se termine par un chantier nettoyé. [Voir nos projets](/realisations-renovation)."
         },
         {
           "t": "gallery",
@@ -115,12 +115,12 @@
             "Pièces de marques professionnelles facturées au prix catalogue fournisseur.",
             "Aucun supplément sans avenant signé.",
             "Facture détaillée remise immédiatement, conforme aux exigences de votre assureur ou de votre bailleur.",
-            "Garantie écrite sur la main-d’œuvre et sur les pièces remplacées."
+            "Garantie écrite de l’entreprise intervenante sur la main-d’œuvre et sur les pièces remplacées."
           ]
         },
         {
           "t": "p",
-          "v": "Nous traitons l’urgence, puis nous vous disons ce qu’elle révèle. Une installation électrique qui saute à répétition, une chaudière qui multiplie les pannes ou une fuite récurrente appellent parfois une mise en sécurité, une mise aux normes du tableau ou une [salle de bain à refaire](/salle-de-bain-paris). Vous décidez, sans pression, avec un devis distinct."
+          "v": "L’urgence est traitée, puis nous vous disons ce qu’elle révèle. Une installation électrique qui saute à répétition, une chaudière qui multiplie les pannes ou une fuite récurrente appellent parfois une mise en sécurité, une mise aux normes du tableau ou une [salle de bain à refaire](/salle-de-bain-paris). Vous décidez, sans pression, avec un devis distinct."
         }
       ]
     },
@@ -175,7 +175,7 @@
             },
             {
               "q": "Je suis locataire : qui paie la réparation ?",
-              "a": "Pour une réparation urgente qui menace l’habitabilité (fuite, panne de chauffage en hiver, panne électrique majeure), vous pouvez faire intervenir un professionnel et demander le remboursement au propriétaire. Conservez la facture conforme que nous remettons et envoyez-la en recommandé."
+              "a": "Pour une réparation urgente qui menace l’habitabilité (fuite, panne de chauffage en hiver, panne électrique majeure), vous pouvez faire intervenir un professionnel et demander le remboursement au propriétaire. Conservez la facture conforme remise par l’entreprise et envoyez-la en recommandé."
             }
           ]
         }
@@ -204,9 +204,9 @@
       "desc": "Quand la fuite révèle une pièce à refaire"
     },
     {
-      "label": "Nos réalisations",
+      "label": "Nos projets",
       "href": "/realisations-renovation",
-      "desc": "Chantiers livrés à Paris et en Île-de-France"
+      "desc": "Chantiers pilotés à Paris et en Île-de-France"
     },
     {
       "label": "Débarras et nettoyage",

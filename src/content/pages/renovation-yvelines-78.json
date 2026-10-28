@@ -1,6 +1,6 @@
 {
   "title": "Rénovation maison et appartement Yvelines (78)",
-  "description": "Versailles, Saint-Germain, Le Vésinet, Maisons-Laffitte et les boucles de la Seine : rénovation patrimoniale et second œuvre pilotés. Devis sous 48 h.",
+  "description": "Versailles, Saint-Germain, Le Vésinet, Maisons-Laffitte et les boucles de la Seine : rénovation patrimoniale et second œuvre pilotés. Chiffrage sous 48 h.",
   "h1": "Rénovation dans les Yvelines : patrimoine, boucles de Seine et dossiers ABF",
   "kind": "zone",
   "parent": "/zones",
@@ -8,7 +8,7 @@
   "hero": "/images/chantiers/ravalement-immeuble-ancien.jpg",
   "intro": [
     "Appartements bourgeois du XVIIIe et du XIXe siècle autour du château de Versailles, villas Belle Époque de 1880 à 1920 sur les boucles de la Seine, hôtels particuliers du Vieux Marché à Saint-Germain, pavillons familiaux partout ailleurs : le bâti yvelinois se restaure plus qu’il ne se remplace. Parquets d’époque, vitraux, cheminées et boiseries sont des atouts à conserver.",
-    "Dans 7 communes de l’est du département, RenovIntérieurs accompagne cette exigence : [rénovation complète](/renovation-appartement-paris) respectueuse de l’existant, mise aux normes de l’électricité et de la plomberie, [isolation compatible avec les prescriptions patrimoniales](/isolation-amelioration-energetique), dossiers ABF constitués et suivis. Un interlocuteur unique, un devis détaillé sous 48 h."
+    "Dans 7 communes de l’est du département, RenovIntérieurs accompagne cette exigence : [rénovation complète](/renovation-appartement-paris) respectueuse de l’existant, mise aux normes de l’électricité et de la plomberie, [isolation compatible avec les prescriptions patrimoniales](/isolation-amelioration-energetique), dossiers ABF constitués et suivis. Un interlocuteur unique, un chiffrage détaillé sous 48 h."
   ],
   "sections": [
     {
@@ -27,7 +27,7 @@
             },
             {
               "value": "12 mois",
-              "label": "de SAV après la livraison"
+              "label": "de suivi après la réception"
             },
             {
               "value": "1",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "title": "Nos interventions commune par commune",
+      "title": "Les projets que nous pilotons, commune par commune",
       "blocks": [
         {
           "t": "cards",
@@ -70,7 +70,7 @@
             },
             {
               "title": "Saint-Germain-en-Laye",
-              "text": "Appartements de standing du centre, hôtels particuliers du Vieux Marché, villas de Hennemont et de Bel-Air, en grande partie dans le secteur sauvegardé. Second œuvre complet du diagnostic à la livraison, matériaux choisis pour le bâti ancien.",
+              "text": "Appartements de standing du centre, hôtels particuliers du Vieux Marché, villas de Hennemont et de Bel-Air, en grande partie dans le secteur sauvegardé. Second œuvre complet du diagnostic à la réception, matériaux choisis pour le bâti ancien.",
               "href": "/renovation-appartement-paris"
             },
             {
@@ -85,7 +85,7 @@
             },
             {
               "title": "Croissy-sur-Seine",
-              "text": "Maisons des bords de Seine, villas du Mont aux parquets, vitraux et escaliers d’époque, appartements bourgeois du centre. Nous restaurons ces éléments au lieu de les remplacer et modernisons plomberie, électricité, isolation et chauffage.",
+              "text": "Maisons des bords de Seine, villas du Mont aux parquets, vitraux et escaliers d’époque, appartements bourgeois du centre. Ces éléments sont restaurés au lieu d’être remplacés par les entreprises partenaires, qui modernisent aussi plomberie, électricité, isolation et chauffage.",
               "href": "/renovation-appartement-paris"
             },
             {
@@ -103,11 +103,11 @@
       ]
     },
     {
-      "title": "Réalisations de restauration et de second œuvre",
+      "title": "Projets de restauration et de second œuvre",
       "blocks": [
         {
           "t": "p",
-          "v": "Le type de finition que nous visons sur les maisons et appartements anciens des Yvelines ; la galerie complète est visible sur [la page réalisations](/realisations-renovation)."
+          "v": "Le type de finition que nous visons sur les maisons et appartements anciens des Yvelines ; la galerie complète est visible sur [la page projets](/realisations-renovation)."
         },
         {
           "t": "gallery",
@@ -181,12 +181,12 @@
               "a": "Non, tant que rien ne change vu de l’extérieur. Si le projet touche aux fenêtres, à la façade ou à une devanture dans le périmètre protégé, nous préparons la déclaration préalable avec plans, photos et descriptif, puis suivons l’instruction, comptée entre 2 et 4 mois. Le planning du chantier en tient compte dès le devis."
             },
             {
-              "q": "Restaurez-vous les villas Belle Époque du Vésinet et de Croissy ?",
-              "a": "Oui, c’est une part importante de notre activité dans les boucles de la Seine. Parquets anciens, vitraux, cheminées et escaliers sont restaurés, tandis que l’électricité, la plomberie, l’isolation et le chauffage sont refaits selon les règles actuelles. Notre [offre de rénovation](/renovation-appartement-paris) précise ce que nous pilotons."
+              "q": "Pilotez-vous la restauration des villas Belle Époque du Vésinet et de Croissy ?",
+              "a": "Oui, c’est une part importante des projets que nous pilotons dans les boucles de la Seine. Parquets anciens, vitraux, cheminées et escaliers sont restaurés, tandis que l’électricité, la plomberie, l’isolation et le chauffage sont refaits selon les règles actuelles. Notre [offre de rénovation](/renovation-appartement-paris) précise ce que nous pilotons."
             },
             {
-              "q": "Comment traitez-vous l’humidité d’une maison en bord de Seine au Pecq ou à Chatou ?",
-              "a": "La visite technique repère les remontées capillaires et les parois les plus exposées. Nous traitons ensuite l’étanchéité et l’isolation avant d’engager cloisons, revêtements et peintures, pour un résultat qui tient sans reprise à court terme. Les salles de bain reçoivent nattes d’étanchéité et joints époxy."
+              "q": "Comment l’humidité d’une maison en bord de Seine au Pecq ou à Chatou est-elle traitée ?",
+              "a": "La visite technique repère les remontées capillaires et les parois les plus exposées. L’étanchéité et l’isolation sont ensuite traitées avant d’engager cloisons, revêtements et peintures, pour un résultat qui tient sans reprise à court terme. Les salles de bain reçoivent nattes d’étanchéité et joints époxy."
             }
           ]
         }
@@ -217,7 +217,7 @@
     {
       "label": "Comment se déroule un chantier",
       "href": "/methode",
-      "desc": "Visite sous 5 jours, devis sous 48 h, suivi hebdomadaire"
+      "desc": "Visite sous 5 jours, chiffrage sous 48 h, suivi hebdomadaire"
     },
     {
       "label": "Nos autres zones",

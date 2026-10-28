@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Script from "next/script";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 
 import { ADS_ID, ADS_LABEL_TEL, CONSENT_KEY, setConsent, trackConversion } from "@/lib/ads";
 
@@ -13,16 +13,27 @@ import { ADS_ID, ADS_LABEL_TEL, CONSENT_KEY, setConsent, trackConversion } from 
    (exigence CNIL), charge gtag.js pour Google Ads et compte les clics sur
    les liens tel:, éparpillés dans plusieurs composants, via un seul
    écouteur sur le document. */
+function readConsent(): "granted" | "denied" | null {
+  try {
+    const v = localStorage.getItem(CONSENT_KEY);
+    return v === "granted" || v === "denied" ? v : null;
+  } catch {
+    return null;
+  }
+}
+
+function subscribeConsent(onChange: () => void) {
+  window.addEventListener("storage", onChange);
+  return () => window.removeEventListener("storage", onChange);
+}
+
 export function GoogleAds() {
-  const [choix, setChoix] = useState<"granted" | "denied" | null | undefined>(undefined);
+  // Choix enregistré (lu côté navigateur seulement : undefined au rendu serveur), puis réponse donnée ici.
+  const stored = useSyncExternalStore(subscribeConsent, readConsent, () => undefined);
+  const [answer, setAnswer] = useState<"granted" | "denied" | null>(null);
+  const choix = answer ?? stored;
 
   useEffect(() => {
-    let v: string | null = null;
-    try {
-      v = localStorage.getItem(CONSENT_KEY);
-    } catch {}
-    setChoix(v === "granted" || v === "denied" ? v : null);
-
     const onClick = (e: MouseEvent) => {
       const a = (e.target as Element | null)?.closest?.('a[href^="tel:"]');
       if (a) trackConversion(ADS_LABEL_TEL);
@@ -33,7 +44,7 @@ export function GoogleAds() {
 
   const repondre = (ok: boolean) => {
     setConsent(ok);
-    setChoix(ok ? "granted" : "denied");
+    setAnswer(ok ? "granted" : "denied");
   };
 
   return (

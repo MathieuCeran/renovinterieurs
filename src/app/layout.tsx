@@ -10,7 +10,7 @@ import { ScrollProgress } from "@/components/ui/scroll-progress";
 import { SmoothScroll } from "@/components/ui/smooth-scroll";
 import { GoogleAds } from "@/components/ui/google-ads";
 import { CONSENT_DEFAULT_SCRIPT } from "@/lib/ads";
-import { grosOeuvre, services, site } from "@/lib/site";
+import { founderLd, grosOeuvre, services, site } from "@/lib/site";
 import "./globals.css";
 
 const inter = Inter({
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
         url: "/og.jpg",
         width: 1200,
         height: 630,
-        alt: "Séjour haussmannien rénové par RenovIntérieurs à Paris",
+        alt: "Séjour haussmannien rénové à Paris, projet piloté par RenovIntérieurs",
       },
     ],
   },
@@ -79,7 +79,7 @@ export const viewport: Viewport = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "GeneralContractor",
+  "@type": "ProfessionalService",
   "@id": `${site.url}#entreprise`,
   name: site.name,
   legalName: site.legalName,
@@ -89,6 +89,8 @@ const jsonLd = {
   telephone: site.phoneDisplay,
   image: [`${site.url}/og.jpg`],
   logo: `${site.url}/brand/logo.png`,
+  founder: founderLd,
+  parentOrganization: { "@type": "Organization", name: "IA RENOV", legalName: "IA RENOV SASU" },
   knowsLanguage: "fr-FR",
   currenciesAccepted: "EUR",
   areaServed: [

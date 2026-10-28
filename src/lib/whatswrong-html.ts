@@ -10,6 +10,7 @@ import {
 import { parseDocument } from "htmlparser2";
 
 import { wwKey, type WwBlock, type WwChanges } from "@/lib/whatswrong-changes";
+import { relabelLinks } from "@/lib/link-labels";
 
 type Element = ReturnType<typeof findAll>[number];
 
@@ -76,7 +77,7 @@ export function applyHtmlChanges(html: string, changes: WwChanges): string {
   const replaced = changes.replace.flatMap((r) => at(r.match).map((el) => ({ el, r })));
   const inserted = changes.insert.flatMap((i) => at(i.match).map((el) => ({ el, i })));
   for (const { el, i } of inserted) {
-    const nodes = fragment(blocksHtml(i.blocks));
+    const nodes = fragment(relabelLinks(blocksHtml(i.blocks)));
     const heading = /^h[1-6]$/.test(el.name);
     if (i.place === "before") {
       nodes.forEach((node) => prepend(el, node));
@@ -91,7 +92,7 @@ export function applyHtmlChanges(html: string, changes: WwChanges): string {
   }
   for (const { el, r } of replaced) {
     const heading = /^h[1-6]$/.test(el.name);
-    const next = fragment(`<${el.name}>${heading ? r.text.replace(/</g, "&lt;") : r.html}</${el.name}>`)[0] as Element;
+    const next = fragment(relabelLinks(`<${el.name}>${heading ? r.text.replace(/</g, "&lt;") : r.html}</${el.name}>`))[0] as Element;
     next.attribs = el.attribs;
     replaceElement(el, next);
   }

@@ -116,6 +116,10 @@ function* texts(page) {
         case "links":
           for (const it of b.items) yield ["links", `${it.label} ${it.desc ?? ""}`];
           break;
+        case "founder":
+          yield ["founder", `${b.name} ${b.role} ${b.text.join(" ")} ${b.photo.alt}`];
+          for (const f of b.facts) yield ["founder", `${f.label} ${f.value}`];
+          break;
         default:
           err("?", `type de bloc inconnu : ${b.t}`);
       }

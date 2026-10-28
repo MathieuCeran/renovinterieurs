@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+import { pageTitle } from "@/lib/content";
+
 import { PlanningSimulator } from "@/components/tools/planning-simulator";
 import { ToolPage } from "@/components/tools/tool-page";
 import { site } from "@/lib/site";
@@ -8,7 +10,7 @@ import { getTool } from "@/lib/tools";
 const tool = getTool("planning-travaux-renovation")!;
 
 export const metadata: Metadata = {
-  title: tool.title,
+  title: pageTitle(tool.title),
   description: tool.description,
   keywords: tool.keywords,
   alternates: { canonical: tool.href },
@@ -43,7 +45,7 @@ export default function Page() {
                 Ces durées couvrent le chantier lui-même. Elles n’incluent ni
                 l’étude préalable, ni l’approvisionnement des pièces sur-mesure
                 — une cuisine ou des menuiseries fabriquées sur mesure demandent
-                souvent 6 à 10 semaines de fabrication, que nous lançons en
+                souvent 6 à 10 semaines de fabrication, que nous faisons lancer en
                 parallèle du gros des travaux.
               </p>
             </>
@@ -140,7 +142,7 @@ export default function Page() {
         },
         {
           q: "Que se passe-t-il à la réception ?",
-          a: "Nous réalisons une visite de réception avec vous, consignons les éventuelles réserves et les levons. La garantie de parfait achèvement court un an, la biennale deux ans et la décennale dix ans. Nous assurons en plus un SAV de 12 mois.",
+          a: "Nous organisons la visite de réception avec vous et les entreprises concernées, consignons les éventuelles réserves et veillons à leur levée. La garantie de parfait achèvement court un an, la biennale deux ans et la décennale dix ans : ce sont celles des entreprises partenaires. Nous organisons en plus un suivi de 12 mois.",
         },
       ]}
       related={[
@@ -153,7 +155,7 @@ export default function Page() {
           label: "Rénovation complète de maison",
           href: "/conseils/renovation-complete-maison-ile-de-france",
         },
-        { label: "Nos réalisations", href: "/realisations-renovation" },
+        { label: "Nos projets", href: "/realisations-renovation" },
         { label: "Demander un devis", href: "/contact-devis" },
       ]}
     >

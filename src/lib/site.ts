@@ -15,9 +15,33 @@ export const site = {
   phoneHref: "tel:+33612245527",
   whatsapp: "https://wa.me/33612245527",
   area: "Île-de-France",
-  title: "Entreprise rénovation Paris & IDF — devis 48h | RenovIntérieurs",
+  title: "Rénovation Paris & IDF : pilotage de vos travaux | RenovIntérieurs",
   description:
-    "Rénovation appartement à Paris & Île-de-France : second œuvre tous corps d’état, cuisine sur-mesure, salle de bain, isolation DPE. Devis 48 h.",
+    "Rénovation d’appartement à Paris et en Île-de-France : nous pilotons vos travaux avec des entreprises partenaires. Chiffrage détaillé sous 48 h.",
+} as const;
+
+/**
+ * Le fondateur, auteur des contenus (EEAT) : une personne identifiable,
+ * reliée à l'entreprise et à sa page sur Archi Renov.
+ */
+export const founder = {
+  name: "Ilann Atlan",
+  jobTitle: "Fondateur et président d’IA RENOV",
+  image: "/images/equipe/ilann-atlan-portrait.jpg",
+  page: "/a-propos",
+  sameAs: ["https://www.archi-renov.com/a-propos-ia-renov-ilann-atlan/"],
+} as const;
+
+/** Données structurées du fondateur, référencées par @id dans les pages et les articles. */
+export const founderLd = {
+  "@type": "Person",
+  "@id": `${site.url}#ilann-atlan`,
+  name: founder.name,
+  jobTitle: founder.jobTitle,
+  image: `${site.url}${founder.image}`,
+  url: `${site.url}${founder.page}`,
+  worksFor: { "@id": `${site.url}#entreprise` },
+  sameAs: founder.sameAs,
 } as const;
 
 export const nav = [
@@ -65,17 +89,17 @@ export const nav = [
   },
   { label: "Zones", href: "/zones" },
   { label: "Prix", href: "/prix-renovation" },
-  { label: "Réalisations", href: "/realisations-renovation" },
+  { label: "Projets", href: "/realisations-renovation" },
   { label: "Blog", href: "/conseils" },
   { label: "Contact", href: "/contact-devis" },
 ] as const;
 
 export const heroSlides = [
   {
-    eyebrow: "Entreprise rénovation Paris & IDF",
+    eyebrow: "Pilotage de rénovation Paris & IDF",
     titleTop: "Rénovation d’appartement",
     titleBottom: "à Paris & en Île-de-France",
-    text: "Second œuvre tous corps d’état, cuisine sur-mesure, salle de bain étanche, parquet, béton ciré, sortie de passoire énergétique. Un seul interlocuteur, devis détaillé sous 48 h.",
+    text: "Pilotage de vos travaux de second œuvre tous corps d’état : cuisine sur-mesure, salle de bain étanche, parquet, béton ciré, sortie de passoire énergétique. Un seul interlocuteur, chiffrage détaillé sous 48 h.",
     primary: { label: "Obtenir un devis", href: "#devis" },
     secondary: { label: "Nous contacter", href: "/contact-devis" },
     image: photos.sejourHaussmannien.src,
@@ -85,9 +109,9 @@ export const heroSlides = [
     eyebrow: "Spécialistes du haussmannien",
     titleTop: "Restauration patrimoniale",
     titleBottom: "& standards modernes",
-    text: "Moulures, parquets point de Hongrie, cheminées en marbre — nous savons préserver le cachet haussmannien tout en intégrant l’isolation, la performance énergétique et les normes 2026.",
+    text: "Moulures, parquets point de Hongrie, cheminées en marbre — nous pilotons des projets qui préservent le cachet haussmannien tout en intégrant l’isolation, la performance énergétique et les normes 2026.",
     primary: {
-      label: "Voir nos réalisations",
+      label: "Voir nos projets",
       href: "/realisations-renovation",
     },
     secondary: { label: "Nous contacter", href: "/contact-devis" },
@@ -98,7 +122,7 @@ export const heroSlides = [
     eyebrow: "Signatures techniques",
     titleTop: "Joints époxy, béton ciré,",
     titleBottom: "nattes d’étanchéité",
-    text: "Zéro noircissement, étanchéité totale, durabilité 15-20 ans. Nos signatures techniques font la différence entre une rénovation qui dure et une rénovation à refaire dans 5 ans.",
+    text: "Zéro noircissement, étanchéité totale, durabilité 15-20 ans. Les signatures techniques que nous prescrivons font la différence entre une rénovation qui dure et une rénovation à refaire dans 5 ans.",
     primary: { label: "Demander un devis", href: "#devis" },
     secondary: { label: "Découvrir nos services", href: "/nos-services" },
     image: photos.sdbBaignoireMarbre.src,
@@ -123,14 +147,14 @@ export const trustPoints = [
   "Devis gratuit",
   "Intervention rapide",
   "Interlocuteur unique",
-  "Second œuvre spécialisé",
+  "Entreprises partenaires spécialisées",
   "100% Île-de-France",
 ] as const;
 
 export const services = [
   {
     title: "Rénovation d’appartement",
-    text: "Second œuvre tous corps d’état, du diagnostic à la livraison clé en main.",
+    text: "Second œuvre tous corps d’état, du diagnostic à la réception : projet piloté clé en main.",
     href: "/renovation-appartement-paris",
     image: photos.salleAManger.src,
     alt: photos.salleAManger.alt,
@@ -170,7 +194,7 @@ export const services = [
   },
   {
     title: "Dépannage urgent",
-    text: "Plomberie, électricité, serrurerie, chauffage. Intervention rapide, devis transparent.",
+    text: "Plomberie, électricité, serrurerie, chauffage. Intervention rapide par des entreprises partenaires, devis transparent.",
     href: "/depannage",
     image: photos.wc.src,
     alt: photos.wc.alt,
@@ -190,13 +214,13 @@ export const grosOeuvre = {
 export const pillars = [
   {
     title: "Un savoir-faire artisanal",
-    text: "Nos équipes maîtrisent chaque étape de la rénovation intérieure. De la plâtrerie à la pose de matériaux nobles, nous apportons un soin particulier aux finitions qui font toute la différence dans votre quotidien.",
+    text: "Les entreprises partenaires que nous sélectionnons maîtrisent chaque étape de la rénovation intérieure. De la plâtrerie à la pose de matériaux nobles, nous veillons à la qualité des finitions qui font toute la différence dans votre quotidien.",
     image: photos.menuiserieChene.src,
     alt: photos.menuiserieChene.alt,
   },
   {
     title: "La qualité dans chaque détail",
-    text: "Parquet chevron, tasseaux bois, éclairages encastrés — chaque élément est pensé pour créer un ensemble cohérent et durable. Nous ne livrons un chantier que lorsque chaque détail est parfait.",
+    text: "Parquet chevron, tasseaux bois, éclairages encastrés — chaque élément est pensé pour créer un ensemble cohérent et durable. Nous n’organisons la réception d’un chantier que lorsque chaque détail est contrôlé.",
     image: photos.cuisineNoyerClaustra.src,
     alt: photos.cuisineNoyerClaustra.alt,
   },
@@ -318,7 +342,7 @@ export const process = [
   {
     step: "03",
     title: "Devis détaillé",
-    text: "Sous 48 h. Poste par poste, sans ligne floue, avec planning prévisionnel.",
+    text: "Sous 48 h. Les devis des entreprises partenaires, détaillés poste par poste, sans ligne floue, avec planning prévisionnel.",
   },
   {
     step: "04",
@@ -327,8 +351,8 @@ export const process = [
   },
   {
     step: "05",
-    title: "Livraison & SAV",
-    text: "Réception des travaux, levée des réserves, SAV 12 mois et garanties légales.",
+    title: "Réception & suivi",
+    text: "Réception des travaux organisée, levée des réserves, suivi 12 mois après réception ; garanties légales portées par les entreprises partenaires.",
   },
 ] as const;
 
@@ -347,24 +371,24 @@ export const faq = [
   },
   {
     q: "Pourquoi des joints époxy plutôt que des joints classiques ?",
-    a: "Les joints ciment noircissent en quelques mois et se fissurent. Les joints époxy que nous posons systématiquement en salle de bain et cuisine sont étanches, ne noircissent pas, ne bougent pas et durent 15-20 ans.",
+    a: "Les joints ciment noircissent en quelques mois et se fissurent. Les joints époxy que nous prescrivons systématiquement en salle de bain et cuisine, et que posent les entreprises partenaires, sont étanches, ne noircissent pas, ne bougent pas et durent 15-20 ans.",
     link: { label: "En savoir plus", href: "/salle-de-bain-paris" },
   },
   {
-    q: "Sortez-vous un appartement classé DPE F ou G ?",
-    a: "Oui, c’est une de nos expertises. Nous traitons les passoires énergétiques de bout en bout : audit DPE, isolation, VMC double-flux, remplacement du chauffage, accompagnement MaPrimeRénov' et CEE. Objectif : gagner 2-3 classes DPE.",
+    q: "Pilotez-vous la sortie d’un appartement classé DPE F ou G ?",
+    a: "Oui, c’est une de nos expertises. Nous pilotons la sortie de passoire énergétique de bout en bout : audit DPE, isolation, VMC double-flux et remplacement du chauffage réalisés par les entreprises partenaires, accompagnement MaPrimeRénov' et CEE. Objectif : gagner 2-3 classes DPE.",
     link: {
       label: "Voir notre offre isolation",
       href: "/isolation-amelioration-energetique",
     },
   },
   {
-    q: "Quelles garanties offrez-vous sur vos travaux ?",
-    a: "Trois garanties légales sur tous nos chantiers : garantie décennale (10 ans), garantie biennale (2 ans, équipements), garantie de parfait achèvement (1 an). Plus responsabilité civile professionnelle à jour. Attestations fournies avant démarrage.",
+    q: "Quelles garanties couvrent les travaux ?",
+    a: "Les entreprises partenaires portent les trois garanties légales : garantie décennale (10 ans), garantie biennale (2 ans, équipements), garantie de parfait achèvement (1 an), ainsi que leur responsabilité civile professionnelle. Nous vérifions leurs attestations avant le démarrage et vous les remettons.",
   },
   {
     q: "Comment se déroule un projet avec RenovIntérieurs ?",
-    a: "5 étapes : (1) premier échange par téléphone/WhatsApp, (2) visite technique sous 5 jours, (3) devis détaillé sous 48 h, (4) travaux pilotés tous corps d’état avec compte-rendu hebdo, (5) livraison et SAV 12 mois. Un seul interlocuteur du diagnostic à la remise des clés.",
+    a: "5 étapes : (1) premier échange par téléphone/WhatsApp, (2) visite technique sous 5 jours, (3) chiffrage détaillé sous 48 h à partir des devis des entreprises partenaires, (4) travaux pilotés tous corps d’état avec compte-rendu hebdo, (5) réception et suivi 12 mois. Un seul interlocuteur du diagnostic à la remise des clés.",
   },
 ] as const;
 
@@ -413,7 +437,7 @@ export const footerInfo = [
   { label: "Prix de la rénovation", href: "/prix-renovation" },
   { label: "Zones d’intervention", href: "/zones" },
   { label: "Outils gratuits", href: "/outils" },
-  { label: "Réalisations", href: "/realisations-renovation" },
+  { label: "Projets", href: "/realisations-renovation" },
   { label: "À propos", href: "/a-propos" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact-devis" },

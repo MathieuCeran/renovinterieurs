@@ -1,6 +1,6 @@
 {
   "title": "Combien coûte la rénovation complète d’une maison ?",
-  "description": "Budget d’une rénovation complète de maison selon la surface et l’état du bâti : postes lourds, marge d’imprévus, durée et aides. Devis détaillé sous 48 h.",
+  "description": "Budget d’une rénovation complète de maison selon la surface et l’état du bâti : postes lourds, marge d’imprévus, durée et aides.",
   "h1": "Rénovation complète d’une maison : quel budget prévoir",
   "kind": "article",
   "parent": "/conseils",
@@ -23,7 +23,7 @@
         },
         {
           "t": "p",
-          "v": "RenovIntérieurs pilote le second œuvre d’une maison comme celui d’un appartement : [rénovation tous corps d’état](/renovation-appartement-paris) avec un interlocuteur unique. Quand le projet touche la structure, l’équipe s’appuie sur des architectes DPLG et des ingénieurs pour le [gros œuvre, la surélévation ou l’extension](/renovation-gros-oeuvre-surelevation-extension-idf)."
+          "v": "RenovIntérieurs pilote le second œuvre d’une maison comme celui d’un appartement : [rénovation tous corps d’état](/renovation-appartement-paris) avec un interlocuteur unique. Quand le projet touche la structure, RenovIntérieurs s’appuie sur des architectes DPLG et des ingénieurs partenaires pour le [gros œuvre, la surélévation ou l’extension](/renovation-gros-oeuvre-surelevation-extension-idf)."
         }
       ]
     },
@@ -212,7 +212,7 @@
         },
         {
           "t": "p",
-          "v": "RenovIntérieurs programme une visite technique sous 5 jours puis remet un devis poste par poste sous 48 h, avec planning prévisionnel et compte-rendu hebdomadaire pendant les travaux. Pour une maison en Île-de-France, la [rénovation tous corps d’état](/renovation-appartement-paris) est pilotée par un interlocuteur unique, du diagnostic à la livraison, avec décennale, biennale, parfait achèvement et SAV 12 mois."
+          "v": "RenovIntérieurs programme une visite technique sous 5 jours puis remet sous 48 h un chiffrage poste par poste (les devis des entreprises partenaires, rassemblés et détaillés), avec planning prévisionnel et compte-rendu hebdomadaire pendant les travaux. Pour une maison en Île-de-France, la [rénovation tous corps d’état](/renovation-appartement-paris) est pilotée par un interlocuteur unique, du diagnostic à la réception, avec les garanties décennale, biennale et de parfait achèvement portées par les entreprises partenaires, et un suivi organisé pendant 12 mois après la réception."
         },
         {
           "t": "faq",
@@ -238,7 +238,7 @@
     {
       "label": "Rénovation tous corps d’état",
       "href": "/renovation-appartement-paris",
-      "desc": "Second œuvre complet piloté par un interlocuteur unique, devis sous 48 h."
+      "desc": "Second œuvre complet piloté par un interlocuteur unique, chiffrage sous 48 h."
     },
     {
       "label": "Gros œuvre, surélévation, extension",

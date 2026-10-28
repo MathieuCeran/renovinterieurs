@@ -18,8 +18,9 @@ export function GET() {
 
 > ${site.description}
 
-Entreprise de rénovation intérieure et de second œuvre intervenant à Paris et en
-Île-de-France (Hauts-de-Seine, Yvelines, Val-de-Marne). Piloté par IA RENOV.
+Marque de pilotage de rénovation intérieure et de second œuvre à Paris et en
+Île-de-France (Hauts-de-Seine, Yvelines, Val-de-Marne), pilotée par IA RENOV. Les
+travaux sont réalisés par des entreprises partenaires indépendantes.
 
 ## Contact
 - Téléphone : ${site.phoneDisplay}
@@ -37,10 +38,10 @@ TVA réduite à 10 % sur les travaux d'amélioration d'un logement de plus de 2 
 ${process.map((s) => `${s.step}. ${s.title} — ${s.text}`).join("\n")}
 
 ## Engagements
-- Devis détaillé sous 48 h, visite technique sous 5 jours
+- Chiffrage détaillé sous 48 h (devis des entreprises partenaires), visite technique sous 5 jours
 - Un interlocuteur unique du diagnostic à la remise des clés
-- Garantie décennale (10 ans), biennale (2 ans), parfait achèvement (1 an)
-- SAV 12 mois après livraison
+- Garanties légales (décennale 10 ans, biennale 2 ans, parfait achèvement 1 an) portées par les entreprises partenaires, attestations vérifiées
+- Suivi 12 mois après réception
 
 ## Outils gratuits
 ${tools.map((t) => `- [${t.name}](${site.url}${t.href}) : ${t.short}`).join("\n")}
@@ -63,8 +64,8 @@ ${zones.map((p) => `- ${site.url}${p}`).join("\n")}
 ${guides.map((p) => `- ${site.url}${p}`).join("\n")}
 
 ---
-Les fourchettes de prix et les durées sont indicatives. Seul un devis établi après
-visite technique engage l'entreprise.
+Les fourchettes de prix et les durées sont indicatives. Seuls les devis des
+entreprises partenaires, établis après visite technique, les engagent.
 `;
 
   return new Response(md, {

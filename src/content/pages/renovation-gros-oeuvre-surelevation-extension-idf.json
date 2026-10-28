@@ -7,7 +7,7 @@
   "eyebrow": "Gros œuvre & structure",
   "hero": "/images/chantiers/extension-maconnerie-charpente.jpg",
   "intro": [
-    "Ouvrir un mur porteur, ajouter un étage, agrandir une maison : ces projets exigent un architecte, un ingénieur structure et une entreprise de gros œuvre qui avancent ensemble. RenovIntérieurs vous met en relation avec ces partenaires sélectionnés en Île-de-France et pilote votre projet du premier échange à la livraison.",
+    "Ouvrir un mur porteur, ajouter un étage, agrandir une maison : ces projets exigent un architecte, un ingénieur structure et une entreprise de gros œuvre qui avancent ensemble. RenovIntérieurs vous met en relation avec ces partenaires sélectionnés en Île-de-France et pilote votre projet du premier échange à la réception.",
     "Nous ne réalisons pas le gros œuvre nous-mêmes : nous activons les bons partenaires, pilotons les démarches (permis, syndic, Architecte des Bâtiments de France) et restons votre interlocuteur unique. Sans marge intermédiaire ni sous-traitance en cascade, vous économisez jusqu’à 15-20 % sur le total du chantier."
   ],
   "sections": [
@@ -38,11 +38,11 @@
       ]
     },
     {
-      "title": "Nos chantiers de structure",
+      "title": "Les chantiers de structure que nous pilotons",
       "blocks": [
         {
           "t": "p",
-          "v": "Volumes réunis, murs porteurs ouverts, second œuvre livré dans la continuité : quelques chantiers pilotés avec nos partenaires, [d’autres sont visibles dans nos réalisations](/realisations-renovation)."
+          "v": "Volumes réunis, murs porteurs ouverts, second œuvre enchaîné dans la continuité : quelques chantiers pilotés avec nos partenaires, [d’autres sont visibles dans nos projets](/realisations-renovation)."
         },
         {
           "t": "gallery",
@@ -94,7 +94,7 @@
             },
             {
               "title": "Second œuvre dans la continuité",
-              "text": "Cloisons, électricité, plomberie, isolation et finitions par nos artisans, comme pour une [rénovation d’appartement à Paris](/renovation-appartement-paris).",
+              "text": "Cloisons, électricité, plomberie, isolation et finitions par les entreprises partenaires, comme pour une [rénovation d’appartement à Paris](/renovation-appartement-paris).",
               "href": "/renovation-appartement-paris"
             }
           ]
@@ -130,7 +130,7 @@
         },
         {
           "t": "p",
-          "v": "Nous intervenons dans toute l’Île-de-France, avec une présence forte dans les [Hauts-de-Seine](/renovation-hauts-de-seine-92), à Paris et dans les Yvelines. Sur un immeuble haussmannien, nos partenaires ont l’habitude des dossiers ABF, de la pierre de taille et des reprises de plancher ancien. Pour une maison, lisez [notre guide de la rénovation complète en Île-de-France](/conseils/renovation-complete-maison-ile-de-france)."
+          "v": "Nous pilotons des projets dans toute l’Île-de-France, avec une présence forte dans les [Hauts-de-Seine](/renovation-hauts-de-seine-92), à Paris et dans les Yvelines. Sur un immeuble haussmannien, nos partenaires ont l’habitude des dossiers ABF, de la pierre de taille et des reprises de plancher ancien. Pour une maison, lisez [notre guide de la rénovation complète en Île-de-France](/conseils/renovation-complete-maison-ile-de-france)."
         }
       ]
     },
@@ -196,7 +196,7 @@
     {
       "label": "Notre méthode",
       "href": "/methode",
-      "desc": "Du premier échange à la livraison, un interlocuteur unique"
+      "desc": "Du premier échange à la réception, un interlocuteur unique"
     },
     {
       "label": "Prix de la rénovation",
@@ -214,9 +214,9 @@
       "desc": "Étapes, budget, autorisations"
     },
     {
-      "label": "Nos réalisations",
+      "label": "Nos projets",
       "href": "/realisations-renovation",
-      "desc": "Chantiers livrés avec nos partenaires"
+      "desc": "Chantiers pilotés avec nos partenaires"
     },
     {
       "label": "Rénovation dans les Yvelines",

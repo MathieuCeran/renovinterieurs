@@ -1,14 +1,14 @@
 {
   "title": "Rénovation appartement Paris : second œuvre, devis 48 h",
-  "description": "Rénovation d’appartement à Paris, du haussmannien au loft : second œuvre tous corps d’état, un interlocuteur unique, devis détaillé sous 48 h.",
+  "description": "Rénovation d’appartement à Paris, du haussmannien au loft : second œuvre tous corps d’état, un interlocuteur unique, chiffrage détaillé sous 48 h.",
   "h1": "Rénovation d’appartement à Paris : du haussmannien au loft",
   "kind": "service",
   "parent": "/nos-services",
   "eyebrow": "Rénovation d’appartement · Paris 75",
   "hero": "/images/chantiers/salon-haussmannien-moulures.jpg",
   "intro": [
-    "Un appartement parisien ne se rénove pas comme un pavillon. Copropriété stricte, palier étroit, ascenseur d’époque, moulures à préserver, parfois avis de l’ABF : chaque chantier commence par une lecture du bâti et du règlement de l’immeuble. RenovIntérieurs intervient dans les 20 arrondissements, sur le haussmannien comme sur les résidences récentes, avec la même exigence de finition.",
-    "Nous pilotons l’ensemble du second œuvre : démolition légère, plomberie, électricité, plâtrerie, peinture, sols, menuiserie, cuisine et salle de bain. Un interlocuteur unique, une visite technique sous 5 jours, un devis détaillé sous 48 h et un compte-rendu chaque semaine. Vous savez toujours où en est votre chantier."
+    "Un appartement parisien ne se rénove pas comme un pavillon. Copropriété stricte, palier étroit, ascenseur d’époque, moulures à préserver, parfois avis de l’ABF : chaque chantier commence par une lecture du bâti et du règlement de l’immeuble. RenovIntérieurs pilote des projets dans les 20 arrondissements, sur le haussmannien comme sur les résidences récentes, avec la même exigence de finition.",
+    "Nous pilotons l’ensemble du second œuvre : démolition légère, plomberie, électricité, plâtrerie, peinture, sols, menuiserie, cuisine et salle de bain. Un interlocuteur unique, une visite technique sous 5 jours, un chiffrage détaillé sous 48 h et un compte-rendu chaque semaine. Vous savez toujours où en est votre chantier."
   ],
   "sections": [
     {
@@ -19,7 +19,7 @@
           "items": [
             {
               "value": "48 h",
-              "label": "pour un devis poste par poste"
+              "label": "pour un chiffrage poste par poste"
             },
             {
               "value": "5 jours",
@@ -31,7 +31,7 @@
             },
             {
               "value": "10 ans",
-              "label": "de garantie décennale"
+              "label": "de garantie décennale, portée par les entreprises partenaires"
             }
           ]
         }
@@ -42,7 +42,7 @@
       "blocks": [
         {
           "t": "p",
-          "v": "Le parc parisien n’est pas homogène, et nos interventions non plus. Voici comment nous lisons la ville, secteur par secteur, et ce que l’on nous demande le plus souvent dans chacun."
+          "v": "Le parc parisien n’est pas homogène, et nos projets non plus. Voici comment nous lisons la ville, secteur par secteur, et ce que l’on nous demande le plus souvent dans chacun."
         },
         {
           "t": "cards",
@@ -77,11 +77,11 @@
       ]
     },
     {
-      "title": "Réalisations à Paris",
+      "title": "Nos projets à Paris",
       "blocks": [
         {
           "t": "p",
-          "v": "Trois chantiers parisiens qui résument notre façon de faire : conserver ce qui a de la valeur, moderniser le reste. [Voir toutes nos réalisations](/realisations-renovation)."
+          "v": "Trois chantiers parisiens pilotés qui résument notre façon de faire : conserver ce qui a de la valeur, moderniser le reste. [Voir tous nos projets](/realisations-renovation)."
         },
         {
           "t": "gallery",
@@ -116,12 +116,12 @@
               "text": "Visite technique sous 5 jours : état des murs, des planchers et des réseaux, contraintes de copropriété, hiérarchie de vos priorités."
             },
             {
-              "title": "Un devis poste par poste",
+              "title": "Un chiffrage poste par poste",
               "text": "Sous 48 h, par corps de métier, avec planning prévisionnel, matériaux nommés et options. Aucun supplément sans avenant signé."
             },
             {
               "title": "Le second œuvre tous corps d’état",
-              "text": "Plomberie, électricité aux normes, plâtrerie, peinture, sols, menuiserie. Un seul devis, un seul contrat, une seule garantie."
+              "text": "Plomberie, électricité aux normes, plâtrerie, peinture, sols, menuiserie. Un seul interlocuteur, un seul planning, un chiffrage consolidé ; chaque entreprise partenaire porte ses propres garanties."
             },
             {
               "title": "Cuisine et salle de bain intégrées",
@@ -133,15 +133,15 @@
               "text": "Parties communes protégées, gravats évacués au fil du chantier, syndic et gardien prévenus avant le premier jour."
             },
             {
-              "title": "Livraison et SAV 12 mois",
-              "text": "Réception point par point, levée des réserves, attestations décennale, biennale et parfait achèvement remises."
+              "title": "Réception et suivi 12 mois",
+              "text": "Réception point par point, levée des réserves, attestations décennale, biennale et parfait achèvement des entreprises partenaires remises."
             }
           ]
         }
       ]
     },
     {
-      "title": "Nos signatures techniques",
+      "title": "Choix techniques",
       "blocks": [
         {
           "t": "callout",
@@ -193,11 +193,11 @@
               "4 à 6 mois"
             ]
           ],
-          "note": "TVA à 10 % sur l’amélioration d’un logement de plus de 2 ans, 5,5 % sur les travaux énergétiques éligibles. Seul le devis établi après visite technique fait foi."
+          "note": "TVA à 10 % sur l’amélioration d’un logement de plus de 2 ans, 5,5 % sur les travaux énergétiques éligibles. Seul le chiffrage établi après visite technique fait foi."
         },
         {
           "t": "p",
-          "v": "Notre façon de piloter un chantier, de la visite technique à la livraison, est décrite étape par étape sur [la page méthode](/methode)."
+          "v": "Notre façon de piloter un chantier, de la visite technique à la réception, est décrite étape par étape sur [la page méthode](/methode)."
         }
       ]
     },
@@ -228,7 +228,7 @@
     {
       "label": "Notre méthode",
       "href": "/methode",
-      "desc": "Visite sous 5 jours, devis sous 48 h, compte-rendu hebdomadaire, SAV 12 mois."
+      "desc": "Visite sous 5 jours, chiffrage sous 48 h, compte-rendu hebdomadaire, suivi après réception."
     },
     {
       "label": "Prix de rénovation",
@@ -246,9 +246,9 @@
       "desc": "Le guide chiffré, poste par poste."
     },
     {
-      "label": "Nos réalisations",
+      "label": "Nos projets",
       "href": "/realisations-renovation",
-      "desc": "Séjours, cuisines, salles de bain et parquets livrés à Paris."
+      "desc": "Séjours, cuisines, salles de bain et parquets pilotés à Paris."
     },
     {
       "label": "Débarras et nettoyage",
@@ -259,6 +259,16 @@
       "label": "Dépannage urgent",
       "href": "/depannage",
       "desc": "Plomberie, électricité, serrurerie, chauffage : devis écrit avant intervention."
+    },
+    {
+      "label": "Choisir une entreprise de rénovation",
+      "href": "/conseils/entreprise-renovation-paris",
+      "desc": "Garanties, devis, délais : les critères avant de signer."
+    },
+    {
+      "label": "PV de réception de travaux",
+      "href": "/conseils/pv-reception-de-travaux",
+      "desc": "Réserves, garanties : bien clore un chantier."
     }
   ]
 }

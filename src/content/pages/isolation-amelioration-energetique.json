@@ -1,14 +1,14 @@
 {
   "title": "Isolation et sortie de passoire DPE F/G en Île-de-France",
-  "description": "Audit DPE, isolation murs et combles, VMC double flux, pompe à chaleur : gagnez 2 à 3 classes DPE avec MaPrimeRénov’ et CEE. Devis détaillé sous 48 h.",
+  "description": "Audit DPE, isolation murs et combles, VMC double flux, pompe à chaleur : gagnez 2 à 3 classes DPE avec MaPrimeRénov’ et CEE. Chiffrage détaillé sous 48 h.",
   "h1": "Isolation et DPE : sortir votre logement de la classe F ou G",
   "kind": "service",
   "parent": "/nos-services",
   "eyebrow": "Isolation & performance énergétique",
   "hero": "/images/chantiers/isolation-exterieure-laine-de-roche.jpg",
   "intro": [
-    "Parois froides, factures de chauffage qui grimpent, étiquette F ou G qui bloque la location ou la vente : les logements franciliens construits avant 1975 cumulent souvent les trois. RenovIntérieurs traite la passoire énergétique de bout en bout, de l’audit DPE au nouveau diagnostic, avec un objectif clair : gagner 2 à 3 classes en une seule opération.",
-    "Sur ce type de chantier, nous pilotons l’audit, l’isolation des murs et des combles, la VMC double flux, le remplacement du chauffage et le dossier d’aides MaPrimeRénov’ et CEE. Un interlocuteur unique, un devis détaillé sous 48 h, et vous savez toujours où en est votre chantier."
+    "Parois froides, factures de chauffage qui grimpent, étiquette F ou G qui bloque la location ou la vente : les logements franciliens construits avant 1975 cumulent souvent les trois. RenovIntérieurs pilote la sortie de passoire énergétique de bout en bout, de l’audit DPE au nouveau diagnostic, avec un objectif clair : gagner 2 à 3 classes en une seule opération.",
+    "Sur ce type de chantier, nous pilotons l’audit, l’isolation des murs et des combles, la VMC double flux, le remplacement du chauffage et le dossier d’aides MaPrimeRénov’ et CEE. Un interlocuteur unique, un chiffrage détaillé sous 48 h, et vous savez toujours où en est votre chantier."
   ],
   "sections": [
     {
@@ -45,11 +45,11 @@
       ]
     },
     {
-      "title": "Nos chantiers énergétiques",
+      "title": "Les chantiers énergétiques que nous pilotons",
       "blocks": [
         {
           "t": "p",
-          "v": "Doublage des murs froids, combles, ventilation, chauffage : voici le type de chantier que nous menons à Paris et en petite couronne, souvent couplé à une rénovation intérieure. [D’autres projets sont présentés dans nos réalisations](/realisations-renovation)."
+          "v": "Doublage des murs froids, combles, ventilation, chauffage : voici le type de chantier que nous pilotons à Paris et en petite couronne, souvent couplé à une rénovation intérieure. [D’autres projets sont présentés dans nos projets](/realisations-renovation)."
         },
         {
           "t": "gallery",
@@ -100,7 +100,7 @@
               "text": "Nous montons le dossier d’aides et calculons votre reste à charge dès le devis. Vous n’avez pas de démarche supplémentaire à faire."
             },
             {
-              "title": "Nouveau DPE à la livraison",
+              "title": "Nouveau DPE à la réception",
               "text": "Réception, mesure d’étanchéité à l’air si applicable, puis nouveau diagnostic certifié pour valider les classes gagnées et débloquer les aides."
             }
           ]
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "title": "Nos signatures techniques",
+      "title": "Choix techniques",
       "blocks": [
         {
           "t": "callout",
@@ -118,7 +118,7 @@
         {
           "t": "callout",
           "title": "VMC double flux, même en haussmannien",
-          "v": "L’échangeur récupère jusqu’à 90 % de la chaleur de l’air extrait pour préchauffer l’air entrant. Dans un appartement aux moulures préservées, nous adaptons le passage des gaines pour limiter l’impact visuel."
+          "v": "L’échangeur récupère jusqu’à 90 % de la chaleur de l’air extrait pour préchauffer l’air entrant. Dans un appartement aux moulures préservées, le passage des gaines est adapté par l’entreprise partenaire pour limiter l’impact visuel."
         },
         {
           "t": "callout",
@@ -132,11 +132,11 @@
       "blocks": [
         {
           "t": "p",
-          "v": "Visite technique sous 5 jours, devis poste par poste sous 48 h avec calcul des aides, puis travaux pilotés par un interlocuteur unique avec compte-rendu hebdomadaire. [Notre méthode en 5 étapes est détaillée ici](/methode)."
+          "v": "Visite technique sous 5 jours, chiffrage poste par poste sous 48 h avec calcul des aides, puis travaux pilotés par un interlocuteur unique avec compte-rendu hebdomadaire. [Notre méthode en 5 étapes est détaillée ici](/methode)."
         },
         {
           "t": "p",
-          "v": "Nous intervenons dans les 20 arrondissements de [Paris](/renovation-appartement-paris), dans les [Hauts-de-Seine](/renovation-hauts-de-seine-92), les Yvelines et le Val-de-Marne. Pour comprendre le calendrier des interdictions de location, lisez [notre guide pour sortir d’une passoire énergétique](/conseils/sortir-passoire-energetique-dpe-f-g) et [nos conseils sur l’isolation d’une maison ancienne par l’intérieur](/conseils/isolation-maison-ancienne-par-linterieur)."
+          "v": "Nous pilotons des projets dans les 20 arrondissements de [Paris](/renovation-appartement-paris), dans les [Hauts-de-Seine](/renovation-hauts-de-seine-92), les Yvelines et le Val-de-Marne. Pour comprendre le calendrier des interdictions de location, lisez [notre guide pour sortir d’une passoire énergétique](/conseils/sortir-passoire-energetique-dpe-f-g) et [nos conseils sur l’isolation d’une maison ancienne par l’intérieur](/conseils/isolation-maison-ancienne-par-linterieur)."
         }
       ]
     },
@@ -183,7 +183,7 @@
           "items": [
             {
               "q": "Quelles aides sont mobilisables pour sortir d’une classe F ou G ?",
-              "a": "MaPrimeRénov’, les certificats d’économie d’énergie (CEE), l’éco-PTZ et la TVA à 5,5 %. Le cumul peut atteindre 60 à 80 % du coût selon vos revenus. Les travaux doivent être réalisés par des entreprises RGE, ce que nous garantissons dans le devis."
+              "a": "MaPrimeRénov’, les certificats d’économie d’énergie (CEE), l’éco-PTZ et la TVA à 5,5 %. Le cumul peut atteindre 60 à 80 % du coût selon vos revenus. Les travaux doivent être réalisés par des entreprises RGE, ce que nous vérifions avant de les retenir dans le chiffrage."
             },
             {
               "q": "Faut-il isoler avant ou pendant la rénovation intérieure ?",
@@ -202,7 +202,7 @@
     {
       "label": "Notre méthode",
       "href": "/methode",
-      "desc": "Visite sous 5 jours, devis sous 48 h, compte-rendu hebdomadaire"
+      "desc": "Visite sous 5 jours, chiffrage sous 48 h, compte-rendu hebdomadaire"
     },
     {
       "label": "Prix de la rénovation",
@@ -225,9 +225,9 @@
       "desc": "Matériaux, épaisseurs, points de vigilance"
     },
     {
-      "label": "Nos réalisations",
+      "label": "Nos projets",
       "href": "/realisations-renovation",
-      "desc": "Chantiers livrés à Paris et en Île-de-France"
+      "desc": "Chantiers pilotés à Paris et en Île-de-France"
     },
     {
       "label": "Simulateur DPE",

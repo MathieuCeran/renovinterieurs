@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+import { pageTitle } from "@/lib/content";
+
 import { DpeSimulator } from "@/components/tools/dpe-simulator";
 import { ToolPage } from "@/components/tools/tool-page";
 import { site } from "@/lib/site";
@@ -8,7 +10,7 @@ import { getTool } from "@/lib/tools";
 const tool = getTool("simulateur-dpe-passoire-energetique")!;
 
 export const metadata: Metadata = {
-  title: tool.title,
+  title: pageTitle(tool.title),
   description: tool.description,
   keywords: tool.keywords,
   alternates: { canonical: tool.href },

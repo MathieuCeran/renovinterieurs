@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+
+import { pageTitle } from "@/lib/content";
 import Link from "next/link";
 
-import { LegalSection, ToFill } from "@/components/page/legal";
+import { LegalSection } from "@/components/page/legal";
 import { PageHero } from "@/components/page/page-hero";
 import { site } from "@/lib/site";
 
@@ -11,7 +13,7 @@ const description =
   "Mentions légales du site RenovIntérieurs : éditeur, hébergeur, propriété intellectuelle et responsabilité.";
 
 export const metadata: Metadata = {
-  title,
+  title: pageTitle(title),
   description,
   alternates: { canonical: path },
   robots: { index: true, follow: true },
@@ -28,18 +30,7 @@ export default function MentionsLegales() {
         height="44svh"
       />
 
-      <div className="container-x py-12 lg:py-16">
-        <p className="max-w-3xl rounded-2xl border border-terra/25 bg-terra/6 p-5 text-[0.88rem] leading-relaxed text-ink/80">
-          <strong className="font-medium">
-            Reste à compléter.
-          </strong>{" "}
-          Les mentions surlignées (assurance, médiateur de la consommation)
-          doivent être renseignées à partir des contrats de l’entreprise. Elles
-          ne peuvent pas être devinées.
-        </p>
-      </div>
-
-      <div className="container-x pb-8">
+      <div className="container-x pt-12 pb-8 lg:pt-16">
         <LegalSection n={1} title="Éditeur du site">
           <p>
             Le site {site.name} est piloté par IA RENOV, société par actions
@@ -71,21 +62,29 @@ export default function MentionsLegales() {
           </p>
         </LegalSection>
 
-        <LegalSection n={3} title="Assurances professionnelles">
+        <LegalSection n={3} title="Conception et réalisation du site">
           <p>
-            L’entreprise est couverte par une garantie décennale et une
-            responsabilité civile professionnelle souscrites auprès de{" "}
-            <ToFill>[nom de l’assureur]</ToFill>, police n°{" "}
-            <ToFill>[numéro]</ToFill>, pour les activités de second œuvre
-            exercées en {site.area}.
-          </p>
-          <p>
-            Les attestations en cours de validité sont remises au client avant
-            le démarrage de tout chantier.
+            AJD Studio (entreprise individuelle) – SIREN 532 735 990, RCS
+            Bourg-en-Bresse —{" "}
+            <a href="https://ajdstudio.fr/" target="_blank" rel="noopener noreferrer">
+              ajdstudio.fr
+            </a>
+            .
           </p>
         </LegalSection>
 
-        <LegalSection n={4} title="Propriété intellectuelle">
+        <LegalSection n={4} title="Assurances">
+          <p>
+            IA RENOV pilote les projets de rénovation ; les travaux sont
+            réalisés par des entreprises partenaires indépendantes, contractées
+            directement par le client, qui portent leurs propres assurances
+            (garantie décennale et responsabilité civile professionnelle). Leurs
+            attestations en cours de validité sont vérifiées par IA RENOV et
+            remises au client avant le démarrage de tout chantier.
+          </p>
+        </LegalSection>
+
+        <LegalSection n={5} title="Propriété intellectuelle">
           <p>
             L’ensemble des contenus du site — textes, photographies de
             chantiers, logo, identité visuelle, code source — est protégé par le
@@ -94,18 +93,19 @@ export default function MentionsLegales() {
             préalable est interdite.
           </p>
           <p>
-            Les photographies présentées illustrent des réalisations et des
-            matériaux mis en œuvre par l’entreprise ou ses partenaires.
+            Les photographies présentées illustrent des projets pilotés par IA
+            RENOV et des matériaux mis en œuvre par les entreprises
+            partenaires.
           </p>
         </LegalSection>
 
-        <LegalSection n={5} title="Responsabilité">
+        <LegalSection n={6} title="Responsabilité">
           <p>
             Les informations diffusées sur ce site, notamment les fourchettes de
             prix au m² et les durées de chantier, sont fournies à titre
             indicatif. Elles ne constituent ni un devis, ni un engagement
-            contractuel. Seul le devis détaillé remis après visite technique
-            engage l’entreprise.
+            contractuel. Seuls les devis détaillés des entreprises partenaires, remis
+            après visite technique, engagent celles-ci.
           </p>
           <p>
             Les dispositifs d’aide financière mentionnés (TVA réduite,
@@ -114,19 +114,19 @@ export default function MentionsLegales() {
           </p>
         </LegalSection>
 
-        <LegalSection n={6} title="Liens et médiation">
+        <LegalSection n={7} title="Liens et médiation">
           <p>
             Le site peut contenir des liens vers des sites tiers dont le contenu
             n’engage pas la responsabilité de l’éditeur.
           </p>
           <p>
             Conformément au code de la consommation, le client consommateur peut
-            recourir gratuitement à un médiateur de la consommation :{" "}
-            <ToFill>[nom et coordonnées du médiateur]</ToFill>.
+            recourir gratuitement à un médiateur de la consommation, dont les
+            coordonnées sont communiquées sur simple demande à {site.email}.
           </p>
         </LegalSection>
 
-        <LegalSection n={7} title="Données personnelles">
+        <LegalSection n={8} title="Données personnelles">
           <p>
             Le traitement des données collectées via les formulaires du site est
             détaillé dans notre{" "}

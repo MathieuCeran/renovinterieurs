@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Process } from "@/components/sections/process";
 import { LeadForm } from "@/components/sections/lead-form";
 import { ArrowRight, PhoneIcon } from "@/components/ui/kit";
-import { cleanTitle, getPage, visualsFor } from "@/lib/content";
+import { getPage, pageTitle, visualsFor } from "@/lib/content";
 import { altOf } from "@/lib/photos";
 import { site, zones } from "@/lib/site";
 import { withWw, wwMetadata } from "@/lib/whatswrong-overlay";
@@ -17,10 +17,10 @@ async function siteMetadata(): Promise<Metadata> {
   const title = page?.title ?? "Contact & devis gratuit — RenovIntérieurs";
   const description =
     page?.description ??
-    "Décrivez votre projet de rénovation : visite technique sous 5 jours, devis détaillé sous 48 h. Paris & Île-de-France.";
+    "Décrivez votre projet de rénovation : visite technique sous 5 jours, chiffrage détaillé sous 48 h. Paris & Île-de-France.";
 
   return {
-    title: cleanTitle(title),
+    title: pageTitle(title),
     description,
     alternates: { canonical: path },
     openGraph: {
@@ -68,7 +68,7 @@ function ContactPage() {
     url: `${site.url}${path}`,
     mainEntity: {
       "@id": `${site.url}#entreprise`,
-      "@type": "GeneralContractor",
+      "@type": "ProfessionalService",
       name: site.name,
       telephone: site.phoneDisplay,
       email: site.email,
@@ -157,11 +157,9 @@ function ContactPage() {
               className="text-[clamp(1.5rem,3vw,2.2rem)] leading-[1.06] font-medium tracking-[-0.02em]"
             >
               <span className="mask reveal-mask">
-                <span className="block">Ce qui se passe</span>
-              </span>
-              <span className="mask reveal-mask">
-                <span className="display-italic block text-[1.1em]">
-                  après l’envoi
+                <span className="block">
+                  Ce qui se passe{" "}
+                  <span className="display-italic text-[1.1em]">après l’envoi</span>
                 </span>
               </span>
             </h2>
@@ -276,8 +274,9 @@ function ContactPage() {
             </div>
 
             <p className="reveal mt-7 border-t border-line pt-5 text-[0.84rem] leading-relaxed text-muted">
-              Garantie décennale, biennale et parfait achèvement — attestations
-              fournies avant le démarrage du chantier.
+              Garanties décennale, biennale et parfait achèvement portées par les
+              entreprises partenaires — attestations vérifiées et remises avant
+              le démarrage du chantier.
             </p>
           </div>
 
@@ -293,7 +292,7 @@ function ContactPage() {
         <div className="container-x border-t border-line pt-8">
           <div className="flex flex-wrap items-baseline justify-between gap-3">
             <h2 id="zones-contact" className="dot-label text-muted">
-              Nous intervenons
+              Nous pilotons des projets
             </h2>
             <span className="display-italic text-[0.95rem] text-muted">
               Paris &amp; Île-de-France

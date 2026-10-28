@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+import { pageTitle } from "@/lib/content";
+
 import { BudgetEstimator } from "@/components/tools/budget-estimator";
 import { ToolPage } from "@/components/tools/tool-page";
 import { site } from "@/lib/site";
@@ -8,7 +10,7 @@ import { getTool } from "@/lib/tools";
 const tool = getTool("estimateur-budget-renovation")!;
 
 export const metadata: Metadata = {
-  title: tool.title,
+  title: pageTitle(tool.title),
   description: tool.description,
   keywords: tool.keywords,
   alternates: { canonical: tool.href },
@@ -110,8 +112,8 @@ export default function Page() {
                 les travaux indissociablement liés.
               </p>
               <p>
-                Un même devis peut donc mélanger deux taux. Nous les distinguons
-                ligne par ligne : c’est une garantie de transparence, et cela
+                Un même devis peut donc mélanger deux taux. Nous veillons à ce qu’ils
+                soient distingués ligne par ligne : c’est une garantie de transparence, et cela
                 facilite le montage des dossiers d’aide.
               </p>
             </>
@@ -121,7 +123,7 @@ export default function Page() {
       faq={[
         {
           q: "Cette estimation vaut-elle devis ?",
-          a: "Non. Elle donne un ordre de grandeur fondé sur les fourchettes observées en Île-de-France. Seule une visite technique permet un chiffrage engageant — nous la réalisons sous 5 jours, et le devis détaillé suit sous 48 h.",
+          a: "Non. Elle donne un ordre de grandeur fondé sur les fourchettes observées en Île-de-France. Seule une visite technique permet un chiffrage engageant — nous la menons sous 5 jours, et le chiffrage détaillé suit sous 48 h.",
         },
         {
           q: "Les prix affichés sont-ils HT ou TTC ?",

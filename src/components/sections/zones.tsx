@@ -26,18 +26,16 @@ export function Zones() {
             className="text-[clamp(2.2rem,5vw,3.6rem)] leading-[0.98] font-medium tracking-[-0.03em]"
           >
             <span className="mask reveal-mask">
-              <span className="block">Où nous</span>
-            </span>
-            <span className="mask reveal-mask">
-              <span className="display-italic block text-[1.08em] leading-[1]">
-                intervenons
+              <span className="block">
+                Où nous{" "}
+                <span className="display-italic text-[1.08em] leading-[1]">intervenons</span>
               </span>
             </span>
           </h2>
           <p className="reveal max-w-md text-[0.92rem] leading-relaxed text-muted lg:pb-2">
-            Nos équipes interviennent sur l’ensemble des 20 arrondissements de
+            Nous pilotons des projets sur l’ensemble des 20 arrondissements de
             Paris et en priorité sur les Hauts-de-Seine, les Yvelines et le
-            Val-de-Marne. Visite technique sous 5 jours, devis détaillé sous 48
+            Val-de-Marne. Visite technique sous 5 jours, chiffrage détaillé sous 48
             h.
           </p>
         </div>

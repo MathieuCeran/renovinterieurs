@@ -9,7 +9,7 @@
   "hero": "/images/paris-renovation-appartement.jpg",
   "intro": [
     "Une rénovation intérieure de maison suit toujours la même séquence : diagnostics, structure, réseaux, isolation, chauffage et ventilation, puis finitions. Respecter cet ordre évite de déposer un parquet neuf pour reprendre une canalisation oubliée.",
-    "RenovIntérieurs pilote ce type de chantier en [rénovation tous corps d’état](/renovation-appartement-paris), maison comme appartement, avec un interlocuteur unique du relevé à la livraison."
+    "RenovIntérieurs pilote ce type de chantier en [rénovation tous corps d’état](/renovation-appartement-paris), maison comme appartement, avec un interlocuteur unique du relevé à la réception."
   ],
   "sections": [
     {
@@ -56,7 +56,7 @@
       "blocks": [
         {
           "t": "p",
-          "v": "Le déroulé complet d’un projet avec RenovIntérieurs, du premier échange au SAV, est décrit sur [notre page méthode](/methode). Sur le chantier lui-même, les phases s’enchaînent ainsi."
+          "v": "Le déroulé complet d’un projet avec RenovIntérieurs, du premier échange au suivi après réception, est décrit sur [notre page méthode](/methode). Sur le chantier lui-même, les phases s’enchaînent ainsi."
         },
         {
           "t": "steps",
@@ -206,11 +206,11 @@
       ]
     },
     {
-      "title": "Un interlocuteur unique du relevé à la livraison",
+      "title": "Un interlocuteur unique du relevé à la réception",
       "blocks": [
         {
           "t": "p",
-          "v": "Un chantier tous corps d’état se tient par son organisation : un plan arrêté, un séquençage réaliste et un pilotage serré des intervenants, des matériaux et des délais. C’est ce que RenovIntérieurs met en place sur chaque [rénovation tous corps d’état](/renovation-appartement-paris), à Paris comme dans le [Val-de-Marne](/renovation-val-de-marne-94) : visite technique sous 5 jours, devis poste par poste sous 48 h, compte-rendu hebdomadaire, SAV 12 mois."
+          "v": "Un chantier tous corps d’état se tient par son organisation : un plan arrêté, un séquençage réaliste et un pilotage serré des intervenants, des matériaux et des délais. C’est ce que RenovIntérieurs met en place sur chaque [rénovation tous corps d’état](/renovation-appartement-paris), à Paris comme dans le [Val-de-Marne](/renovation-val-de-marne-94) : visite technique sous 5 jours, chiffrage poste par poste sous 48 h, compte-rendu hebdomadaire, suivi organisé pendant 12 mois après la réception."
         },
         {
           "t": "faq",
@@ -236,7 +236,7 @@
     {
       "label": "Rénovation tous corps d’état",
       "href": "/renovation-appartement-paris",
-      "desc": "Second œuvre complet, du relevé à la livraison."
+      "desc": "Second œuvre complet, du relevé à la réception."
     },
     {
       "label": "Planning de travaux",

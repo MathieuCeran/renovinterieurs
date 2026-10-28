@@ -1,7 +1,10 @@
+import Link from "next/link";
+
 import { Blocks } from "@/components/page/blocks";
 import { SectionHeading } from "@/components/page/article";
 import { ArticleToc } from "@/components/page/article-toc";
 import { ArticleCtaBar } from "@/components/page/article-cta-bar";
+import { founder } from "@/lib/site";
 import type { TocEntry } from "@/lib/whatswrong";
 
 /* ------------------------------------------------------------------ */
@@ -19,6 +22,7 @@ export function HtmlArticle({
   faq,
   readMin,
   updatedAt,
+  byline = false,
 }: {
   html: string;
   toc: TocEntry[];
@@ -26,6 +30,8 @@ export function HtmlArticle({
   faq: { title: string; items: { q: string; a: string }[] } | null;
   readMin: number;
   updatedAt: string | null;
+  /** Signature de l'auteur (articles du blog). */
+  byline?: boolean;
 }) {
   const updated = updatedAt
     ? new Intl.DateTimeFormat("fr-FR", {
@@ -51,6 +57,18 @@ export function HtmlArticle({
           <div className="min-w-0">
             <div className="max-w-[50rem]">
               <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[0.82rem] text-muted">
+                {byline && (
+                  <>
+                    <span>
+                      Par{" "}
+                      <Link href={founder.page} className="font-medium text-ink underline-offset-4 hover:underline">
+                        {founder.name}
+                      </Link>
+                      , fondateur
+                    </span>
+                    <span aria-hidden className="size-1 rounded-full bg-line" />
+                  </>
+                )}
                 <span>{readMin} min de lecture</span>
                 {updated && (
                   <>

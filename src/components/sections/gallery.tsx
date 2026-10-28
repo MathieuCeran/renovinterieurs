@@ -20,11 +20,9 @@ export function Gallery() {
             className="text-[clamp(2.2rem,5vw,3.6rem)] leading-[0.98] font-medium tracking-[-0.03em]"
           >
             <span className="mask reveal-mask">
-              <span className="block">Nos</span>
-            </span>
-            <span className="mask reveal-mask">
-              <span className="display-italic block text-[1.08em] leading-[1]">
-                réalisations
+              <span className="block">
+                Nos{" "}
+                <span className="display-italic text-[1.08em] leading-[1]">projets</span>
               </span>
             </span>
           </h2>
@@ -32,13 +30,13 @@ export function Gallery() {
           <div className="flex flex-col items-start gap-7 lg:pb-2">
             <p className="reveal max-w-md text-[0.92rem] leading-relaxed text-muted">
               Appartements haussmanniens, cuisines sur-mesure, douches à
-              l’italienne : des chantiers livrés en Île-de-France, finition par
+              l’italienne : des chantiers que nous pilotons en Île-de-France, finition par
               finition.
             </p>
 
             <div className="reveal">
               <Pill href="/realisations-renovation">
-                Toutes nos réalisations
+                Tous nos projets
               </Pill>
             </div>
           </div>

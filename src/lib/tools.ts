@@ -29,7 +29,7 @@ export const tools: Tool[] = [
     short: "Chiffrez votre rénovation au m², poste par poste.",
     title: "Estimateur de budget rénovation au m² — Paris & Île-de-France",
     description:
-      "Estimez le budget de votre rénovation d’appartement en 30 secondes : prix au m² selon le niveau de finition, répartition par poste et TVA applicable. Gratuit, sans inscription.",
+      "Estimez en 30 secondes le budget de votre rénovation d’appartement : prix au m² selon la finition, répartition par poste et TVA. Gratuit.",
     eyebrow: "Outil gratuit",
     line1: "Estimez le budget",
     line2: "de votre rénovation",
@@ -373,7 +373,7 @@ export const PHASES: Phase[] = [
     id: "reception",
     label: "Réception & levée des réserves",
     part: 4,
-    lots: "Visite, réserves, SAV 12 mois",
+    lots: "Visite, réserves, suivi 12 mois",
   },
 ] as const;
 

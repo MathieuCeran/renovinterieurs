@@ -4,6 +4,7 @@ import { allPaths } from "@/lib/content";
 import { tools } from "@/lib/tools";
 import { site } from "@/lib/site";
 import { publishedArticles, wwPath } from "@/lib/whatswrong";
+import { mergedPaths } from "@/lib/whatswrong-pages";
 
 /** Dérivé du store de contenu : toute page ajoutée y apparaît automatiquement. */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -26,8 +27,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const articles = (await publishedArticles())
     .map(wwPath)
     .filter((p) => !local.includes(p));
+  // Une page fusionnée dans une autre depuis WhatsWrong redirige : elle n'a rien à faire dans le plan du site.
+  const merged = await mergedPaths();
   const paths = [
-    ...local,
+    ...local.filter((p) => !merged.has(p)),
     ...articles,
     "/outils",
     ...tools.map((t) => t.href),

@@ -69,12 +69,19 @@ export function InnerHero({
                   /
                 </li>
                 <li>
-                  <Link
-                    href={crumbHref}
-                    className="transition-colors hover:text-paper"
-                  >
-                    {crumbLabel}
-                  </Link>
+                  {/* Page rattachée à l'accueil : la page elle-même, plutôt que « Accueil / Accueil ». */}
+                  {crumbHref === "/" ? (
+                    <span aria-current="page" className="text-paper">
+                      {lead}
+                    </span>
+                  ) : (
+                    <Link
+                      href={crumbHref}
+                      className="transition-colors hover:text-paper"
+                    >
+                      {crumbLabel}
+                    </Link>
+                  )}
                 </li>
               </ol>
             </nav>

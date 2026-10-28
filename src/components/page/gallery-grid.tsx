@@ -26,7 +26,7 @@ export function GalleryGrid({ works }: { works: Work[] }) {
         <div className="flex flex-wrap items-baseline justify-between gap-3">
           <p className="dot-label text-muted">Filtrer</p>
           <span className="display-italic text-[0.95rem] text-muted">
-            {shown.length} réalisation{shown.length > 1 ? "s" : ""}
+            {shown.length} projet{shown.length > 1 ? "s" : ""}
           </span>
         </div>
         <ul className="mt-5 flex flex-wrap gap-2">

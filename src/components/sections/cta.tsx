@@ -10,7 +10,7 @@ const HEADING = "Parlons-en.";
 const GUIDE =
   "Pas encore prêt ? Téléchargez notre guide gratuit : [rénover son appartement à Paris en 2026 (PDF)](/guide-renovation-2026)";
 const LEAD =
-  "Décrivez votre projet, votre commune et votre budget. Visite technique sous 5 jours, devis détaillé sous 48 h.";
+  "Décrivez votre projet, votre commune et votre budget. Visite technique sous 5 jours, chiffrage détaillé sous 48 h.";
 
 /** `ww` : les textes de la page vus par WhatsWrong (réécrits, ou null si
  *  retirés) ; sans lui, les textes du site. */

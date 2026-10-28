@@ -24,7 +24,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2.5">
               <Image
                 src="/brand/monogram.png"
-                alt=""
+                alt="Logo RenovIntérieurs"
                 width={300}
                 height={300}
                 className="size-10"
@@ -34,9 +34,9 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-6 max-w-sm text-[0.92rem] leading-relaxed text-muted">
-              Spécialiste de la rénovation intérieure en Île-de-France. Second
-              œuvre, isolation, dépannage et débarras — un seul interlocuteur
-              pour tous vos travaux.
+              Pilotage de rénovation intérieure en Île-de-France. Second œuvre,
+              isolation, dépannage et débarras avec des entreprises partenaires
+              — un seul interlocuteur pour tous vos travaux.
             </p>
 
             <div className="mt-7 space-y-2.5 text-[0.9rem]">

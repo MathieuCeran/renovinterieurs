@@ -108,18 +108,24 @@ export async function publishedArticles(): Promise<WwArticle[]> {
   const live = await liveArticles();
   if (live === null) return stored;
   const byId = new Map(stored.map((a) => [a.id, a]));
-  return live.map((a) => ({
-    id: a.id,
-    slug: byId.get(a.id)?.slug ?? a.slug,
-    title: a.title,
-    description: a.description,
-    body: a.html,
-    mainKeyword: a.mainKeyword,
-    cover: byId.get(a.id)?.cover ?? null,
-    faq: a.faq,
-    createdAt: a.publishedAt,
-    lastModifiedAt: a.lastModifiedAt,
-  }));
+  return live.map((a) => {
+    const copy = byId.get(a.id);
+    // Copie relue (« nous pilotons, les entreprises partenaires réalisent ») : elle prime
+    // tant que l'article n'a pas été modifié dans WhatsWrong depuis.
+    const reviewed = copy !== undefined && copy.lastModifiedAt >= a.lastModifiedAt;
+    return {
+      id: a.id,
+      slug: copy?.slug ?? a.slug,
+      title: reviewed ? copy.title : a.title,
+      description: reviewed ? copy.description : a.description,
+      body: reviewed ? copy.body : a.html,
+      mainKeyword: a.mainKeyword,
+      cover: copy?.cover ?? null,
+      faq: reviewed ? copy.faq : a.faq,
+      createdAt: a.publishedAt,
+      lastModifiedAt: a.lastModifiedAt,
+    };
+  });
 }
 
 export async function publishedArticle(slug: string): Promise<WwArticle | null> {

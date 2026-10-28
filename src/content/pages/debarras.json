@@ -1,14 +1,14 @@
 {
   "title": "Débarras appartement, cave et succession à Paris et IDF",
-  "description": "Débarras d’appartement, cave ou local à Paris et en Île-de-France : succession, fin de bail, après travaux. Tri, évacuation, nettoyage. Devis sous 48 h.",
+  "description": "Débarras d’appartement, cave ou local à Paris et en Île-de-France : succession, fin de bail, après travaux. Tri, évacuation, nettoyage.",
   "h1": "Débarras : succession, fin de bail et nettoyage fin de chantier",
   "kind": "service",
   "parent": "/nos-services",
   "eyebrow": "Débarras & nettoyage",
   "hero": "/images/chantiers/cloisons-ossature-metallique.jpg",
   "intro": [
-    "Un appartement à vider avant la signature chez le notaire, un local à restituer en fin de bail, une cave saturée, un chantier à nettoyer avant livraison : à Paris, un débarras se heurte vite aux paliers étroits, aux ascenseurs inaccessibles et aux filières de déchets. RenovIntérieurs prend en charge le tri, l’évacuation et la remise au propre en un seul devis.",
-    "Nous pilotons l’opération de la visite d’estimation à la remise des justificatifs : équipe formée, camion adapté aux rues parisiennes, parties communes protégées, filières de recyclage respectées. Vous gardez la main sur ce qui doit être conservé, nous nous occupons du reste."
+    "Un appartement à vider avant la signature chez le notaire, un local à restituer en fin de bail, une cave saturée, un chantier à nettoyer avant livraison : à Paris, un débarras se heurte vite aux paliers étroits, aux ascenseurs inaccessibles et aux filières de déchets. RenovIntérieurs organise et pilote le tri, l’évacuation et la remise au propre avec une entreprise partenaire spécialisée, pour un seul chiffrage.",
+    "Nous pilotons l’opération de la visite d’estimation à la remise des justificatifs : l’entreprise partenaire mobilise une équipe formée et un camion adapté aux rues parisiennes, protège les parties communes et respecte les filières de recyclage. Vous gardez la main sur ce qui doit être conservé, nous organisons le reste."
   ],
   "sections": [
     {
@@ -23,7 +23,7 @@
             },
             {
               "value": "48 h",
-              "label": "pour le devis détaillé après visite"
+              "label": "pour le chiffrage détaillé après visite"
             },
             {
               "value": "72 h",
@@ -38,11 +38,11 @@
       ]
     },
     {
-      "title": "Nos interventions",
+      "title": "Les interventions que nous pilotons",
       "blocks": [
         {
           "t": "p",
-          "v": "Nous intervenons dans les 20 arrondissements de Paris et en petite couronne, notamment dans le [Val-de-Marne](/renovation-val-de-marne-94) et les [Hauts-de-Seine](/renovation-hauts-de-seine-92). La deuxième couronne est possible sur devis."
+          "v": "Nous pilotons des débarras dans les 20 arrondissements de Paris et en petite couronne, notamment dans le [Val-de-Marne](/renovation-val-de-marne-94) et les [Hauts-de-Seine](/renovation-hauts-de-seine-92). La deuxième couronne est possible sur devis."
         },
         {
           "t": "cards",
@@ -76,11 +76,11 @@
       ]
     },
     {
-      "title": "Avant et après nos passages",
+      "title": "Avant et après les interventions",
       "blocks": [
         {
           "t": "p",
-          "v": "Un espace vidé, nettoyé, puis parfois rénové dans la foulée par nos artisans : [voir nos réalisations](/realisations-renovation)."
+          "v": "Un espace vidé, nettoyé, puis parfois rénové dans la foulée par des entreprises partenaires : [voir nos projets](/realisations-renovation)."
         },
         {
           "t": "gallery",
@@ -98,7 +98,7 @@
             {
               "src": "/images/chantiers/dressing-entree-parquet-chevron.jpg",
               "alt": "Dressing d’entrée toute hauteur aux façades beiges, parquet en chevron",
-              "caption": "Appartement livré propre, prêt à être présenté à un acquéreur ou à un locataire"
+              "caption": "Appartement remis propre, prêt à être présenté à un acquéreur ou à un locataire"
             }
           ]
         }
@@ -115,7 +115,7 @@
           "t": "ul",
           "items": [
             "Visite gratuite sur place : volume estimé au m³, contraintes d’accès, objets à conserver identifiés avec vous.",
-            "Devis détaillé sous 48 h, prix forfaitaire ferme ou prix au m³ si le volume est incertain.",
+            "Chiffrage détaillé sous 48 h, prix forfaitaire ferme ou prix au m³ si le volume est incertain.",
             "Tri par filière : revalorisation (Emmaüs, Le Relais, recycleries), DEEE en éco-organismes agréés, déchets dangereux en filière spécialisée.",
             "Papiers, photos et documents personnels mis de côté, jamais jetés sans votre validation.",
             "Bordereaux de volumes par filière, attestations de don et facture conforme, utiles au notaire ou à l’assurance.",
@@ -167,7 +167,7 @@
           "items": [
             {
               "q": "Dois-je être présent pendant le débarras ?",
-              "a": "Non. Nous pouvons intervenir avec vos clés et vous restituer le bien vidé. Pour une succession où des choix de tri restent à faire, votre présence ou celle d’un mandataire est recommandée au moins en début d’intervention."
+              "a": "Non. L’entreprise partenaire peut intervenir avec vos clés et vous restituer le bien vidé. Pour une succession où des choix de tri restent à faire, votre présence ou celle d’un mandataire est recommandée au moins en début d’intervention."
             },
             {
               "q": "Que deviennent les meubles et objets en bon état ?",
@@ -175,7 +175,7 @@
             },
             {
               "q": "Mon immeuble n’a pas d’ascenseur : est-ce un problème ?",
-              "a": "Non, c’est fréquent dans le bâti parisien. Nous renforçons l’équipe, utilisons des sangles de portage et, pour les pièces très volumineuses ou les étages élevés, un monte-meuble par la fenêtre. Ces contraintes figurent dans le devis."
+              "a": "Non, c’est fréquent dans le bâti parisien. L’équipe est renforcée, avec des sangles de portage et, pour les pièces très volumineuses ou les étages élevés, un monte-meuble par la fenêtre. Ces contraintes figurent dans le devis."
             }
           ]
         }
@@ -201,10 +201,10 @@
     {
       "label": "Les étapes d’une rénovation intérieure",
       "href": "/conseils/renovation-interieure-maison-etapes",
-      "desc": "Du débarras à la livraison"
+      "desc": "Du débarras à la réception"
     },
     {
-      "label": "Nos réalisations",
+      "label": "Nos projets",
       "href": "/realisations-renovation",
       "desc": "Logements vidés, nettoyés, rénovés"
     },

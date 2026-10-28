@@ -1,14 +1,14 @@
 {
   "title": "Zones d’intervention : Paris, 92, 78 et 94",
-  "description": "RenovIntérieurs rénove à Paris et dans les Hauts-de-Seine, les Yvelines et le Val-de-Marne. Visite technique sous 5 jours, devis détaillé sous 48 h.",
+  "description": "Nous pilotons vos travaux de rénovation à Paris, dans les Hauts-de-Seine, les Yvelines et le Val-de-Marne. Visite technique sous 5 jours.",
   "h1": "Nos zones d’intervention : Paris, 92, 78 et 94",
   "kind": "hub",
   "parent": "/",
   "eyebrow": "Zones",
   "hero": "/images/chantiers/ravalement-immeuble-ancien.jpg",
   "intro": [
-    "Une entreprise qui connaît votre type d’immeuble gagne du temps dès la visite technique. RenovIntérieurs intervient dans les 20 arrondissements de Paris et dans trois départements voisins : Hauts-de-Seine, Yvelines et Val-de-Marne. Haussmannien, art déco ou résidence moderne, chaque page départementale décrit le bâti local et nos interventions commune par commune.",
-    "Le cadre reste le même partout : visite technique sous 5 jours, [devis détaillé sous 48 h](/methode), un interlocuteur unique du diagnostic à la livraison et une [grille de prix au m²](/prix-renovation) établie pour l’Île-de-France."
+    "Une entreprise qui connaît votre type d’immeuble gagne du temps dès la visite technique. RenovIntérieurs pilote des projets dans les 20 arrondissements de Paris et dans trois départements voisins : Hauts-de-Seine, Yvelines et Val-de-Marne. Haussmannien, art déco ou résidence moderne, chaque page départementale décrit le bâti local et les projets que nous pilotons commune par commune.",
+    "Le cadre reste le même partout : visite technique sous 5 jours, [chiffrage détaillé sous 48 h](/methode), un interlocuteur unique du diagnostic à la réception et une [grille de prix au m²](/prix-renovation) établie pour l’Île-de-France."
   ],
   "sections": [
     {
@@ -46,7 +46,7 @@
       "blocks": [
         {
           "t": "p",
-          "v": "La liste complète des communes où nos équipes se déplacent pour une visite technique, un chantier de second œuvre, [un dépannage](/depannage) ou [un débarras](/debarras)."
+          "v": "La liste complète des communes où nous nous déplaçons pour une visite technique ou pilotons un chantier de second œuvre, [un dépannage](/depannage) ou [un débarras](/debarras)."
         },
         {
           "t": "ul",
@@ -59,7 +59,7 @@
         },
         {
           "t": "p",
-          "v": "Votre commune n’apparaît pas ? Décrivez votre projet via [le formulaire de contact](/contact-devis) et nous vous dirons si nous pouvons intervenir. Pour un aperçu de ce que nous livrons, parcourez [nos réalisations](/realisations-renovation)."
+          "v": "Votre commune n’apparaît pas ? Décrivez votre projet via [le formulaire de contact](/contact-devis) et nous vous dirons si nous pouvons piloter votre projet. Pour un aperçu des chantiers que nous pilotons, parcourez [nos projets](/realisations-renovation)."
         }
       ]
     },
@@ -85,9 +85,9 @@
               "desc": "Cinq étapes, un interlocuteur unique."
             },
             {
-              "label": "Nos réalisations",
+              "label": "Nos projets",
               "href": "/realisations-renovation",
-              "desc": "Chantiers livrés à Paris et en Île-de-France."
+              "desc": "Chantiers pilotés à Paris et en Île-de-France."
             },
             {
               "label": "Blog",

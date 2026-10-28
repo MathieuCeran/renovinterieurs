@@ -89,11 +89,9 @@ export function Reviews() {
             className="text-[clamp(2rem,4.6vw,3.3rem)] leading-[1] font-medium tracking-[-0.03em]"
           >
             <span className="mask reveal-mask">
-              <span className="block">Ce que disent</span>
-            </span>
-            <span className="mask reveal-mask">
-              <span className="display-italic block text-[1.08em] leading-[1.05]">
-                nos clients
+              <span className="block">
+                Ce que disent{" "}
+                <span className="display-italic text-[1.08em] leading-[1.05]">nos clients</span>
               </span>
             </span>
           </h2>

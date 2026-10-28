@@ -76,6 +76,12 @@ async function publishedPagesUncached(): Promise<Published> {
  * réponse (sinon titre et contenu peuvent diverger si l'une expire). */
 const publishedPages = cache(publishedPagesUncached);
 
+/** Adresses fusionnées dans une autre depuis WhatsWrong : elles redirigent, le plan du site les omet. */
+export async function mergedPaths(): Promise<Set<string>> {
+  const { redirects } = await publishedPages();
+  return new Set(redirects.map((r) => bare(r.from)));
+}
+
 /** La version publiée d'une page du site, sinon null. Une page fusionnée
  *  dans une autre depuis WhatsWrong redirige (301) vers elle. */
 export async function publishedPageVersion(

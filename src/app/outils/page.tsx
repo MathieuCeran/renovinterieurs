@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+
+import { pageTitle } from "@/lib/content";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,7 +19,7 @@ const description =
   "Trois outils gratuits et sans inscription : estimez votre budget au m², simulez votre gain de classes DPE et générez le planning de votre chantier.";
 
 const metadata: Metadata = {
-  title,
+  title: pageTitle(title),
   description,
   alternates: { canonical: path },
   openGraph: {

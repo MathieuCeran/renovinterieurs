@@ -18,7 +18,15 @@ export type Block =
   | { t: "steps"; items: { title: string; text: string }[] }
   | { t: "faq"; items: { q: string; a: string }[] }
   | { t: "gallery"; items: { src: string; alt: string; caption: string }[] }
-  | { t: "links"; items: { label: string; href: string; desc?: string }[] };
+  | { t: "links"; items: { label: string; href: string; desc?: string }[] }
+  | {
+      t: "founder";
+      name: string;
+      role: string;
+      photo: { src: string; alt: string; width: number; height: number };
+      text: string[];
+      facts: { label: string; value: string }[];
+    };
 
 export type Section = {
   title: string;
@@ -239,9 +247,25 @@ export function splitHeading(h1: string): [string, string | null] {
  */
 export function cleanTitle(title: string): string {
   const BRAND = /\s*[|–—‒-]\s*RenovInt[eé]rieurs?\s*$/iu;
+  // Séparateur orphelin en fin de titre (« … sous 48 h | ») : il produisait « | | RenovIntérieurs ».
+  const DANGLING = /\s*[|–—‒-]\s*$/u;
   let t = title.trim();
-  while (BRAND.test(t)) t = t.replace(BRAND, "").trim();
+  while (BRAND.test(t) || DANGLING.test(t)) t = t.replace(BRAND, "").replace(DANGLING, "").trim();
   return t;
+}
+
+/** Au-delà, Google tronque le titre dans ses résultats. */
+const TITLE_MAX = 60;
+const BRAND_SUFFIX = " | RenovIntérieurs";
+
+/**
+ * Titre de page pour les métadonnées : la marque n'est ajoutée (par le
+ * gabarit du layout) que si le titre complet tient en 60 signes ; sinon
+ * le titre seul, pour que l'essentiel reste lisible dans Google.
+ */
+export function pageTitle(title: string): string | { absolute: string } {
+  const t = cleanTitle(title);
+  return t.length + BRAND_SUFFIX.length <= TITLE_MAX ? t : { absolute: t };
 }
 
 /** Tronque proprement sur un mot, avec une ellipse. */

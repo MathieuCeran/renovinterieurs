@@ -1,6 +1,6 @@
 {
   "title": "Notre méthode : votre chantier en cinq étapes",
-  "description": "Premier échange, visite technique sous 5 jours, devis détaillé sous 48 h, travaux pilotés, livraison et SAV 12 mois : le déroulé de votre chantier.",
+  "description": "Premier échange, visite technique sous 5 jours, chiffrage détaillé sous 48 h, travaux pilotés, réception et suivi 12 mois : le déroulé de votre chantier.",
   "h1": "Comment ça se passe : votre chantier en cinq étapes",
   "kind": "info",
   "parent": "/",
@@ -8,7 +8,7 @@
   "hero": "/images/chantiers/faux-plafond-lumineux-pose.jpg",
   "intro": [
     "Un chantier de rénovation inquiète rarement par son ampleur, plutôt par ses inconnues : qui appeler, quand, pour quel montant. RenovIntérieurs répond par un déroulé fixe en cinq étapes, appliqué à chaque projet, de la salle de bain à la [rénovation complète d’un appartement](/renovation-appartement-paris). Vous savez toujours où en est votre chantier.",
-    "Un interlocuteur unique pilote les artisans, vous rend compte chaque semaine et reste joignable après la livraison. Les délais indiqués ci-dessous valent pour tous nos chantiers, à Paris comme en Île-de-France."
+    "Un interlocuteur unique pilote les entreprises partenaires, vous rend compte chaque semaine et reste joignable après la réception. Les délais indiqués ci-dessous valent pour tous les chantiers que nous pilotons, à Paris comme en Île-de-France."
   ],
   "sections": [
     {
@@ -26,16 +26,16 @@
               "text": "Notre chef de chantier se déplace dans les cinq jours. Il relève les surfaces, examine les réseaux existants et note les contraintes de copropriété. C’est là que se décident les choix techniques : nattes d’étanchéité, joints époxy, reprise de l’électricité. Visite gratuite et sans engagement."
             },
             {
-              "title": "Devis détaillé sous 48 h",
-              "text": "Deux jours après la visite, vous recevez un devis poste par poste : matériaux retenus, quantités, options et planning prévisionnel. Rien n’est facturé en plus sans avenant signé. Pour situer votre budget avant même la visite, consultez [nos prix au m²](/prix-renovation)."
+              "title": "Chiffrage détaillé sous 48 h",
+              "text": "Deux jours après la visite, vous recevez un chiffrage poste par poste, qui rassemble les devis des entreprises partenaires : matériaux retenus, quantités, options et planning prévisionnel. Rien n’est facturé en plus sans avenant signé. Pour situer votre budget avant même la visite, consultez [nos prix au m²](/prix-renovation)."
             },
             {
               "title": "Travaux pilotés, compte-rendu hebdomadaire",
-              "text": "Devis signé, le chantier démarre selon le planning convenu. Le chef de chantier pilote tous les corps d’état, anticipe les commandes et protège les parties communes. Chaque semaine, vous recevez un compte-rendu avec photos d’avancement et les points à valider."
+              "text": "Devis signés avec les entreprises partenaires, le chantier démarre selon le planning convenu. Le chef de chantier pilote tous les corps d’état, anticipe les commandes et protège les parties communes. Chaque semaine, vous recevez un compte-rendu avec photos d’avancement et les points à valider."
             },
             {
-              "title": "Livraison et SAV 12 mois",
-              "text": "Réception point par point avec vous, levée des réserves, remise des attestations de garantie et des conseils d’entretien des matériaux. Pendant les 12 mois qui suivent, tout désordre signalé est repris sans facturation."
+              "title": "Réception et suivi 12 mois",
+              "text": "Réception point par point avec vous, levée des réserves, remise des attestations de garantie et des conseils d’entretien des matériaux. Pendant les 12 mois qui suivent, tout désordre signalé est transmis à l’entreprise partenaire concernée, qui le reprend au titre de la garantie de parfait achèvement ; nous suivons cette reprise."
             }
           ]
         }
@@ -53,7 +53,7 @@
             },
             {
               "value": "48 h",
-              "label": "Devis détaillé après visite"
+              "label": "Chiffrage détaillé après visite"
             },
             {
               "value": "Hebdo",
@@ -61,7 +61,7 @@
             },
             {
               "value": "12 mois",
-              "label": "SAV après la livraison"
+              "label": "Suivi après la réception"
             }
           ]
         }
@@ -72,7 +72,7 @@
       "blocks": [
         {
           "t": "p",
-          "v": "Quatre protections s’appliquent à chaque chantier RenovIntérieurs. Les attestations vous sont remises avant le démarrage, sans que vous ayez à les réclamer."
+          "v": "Quatre protections s’appliquent à chaque chantier piloté par RenovIntérieurs ; elles sont portées par les entreprises partenaires. Nous vérifions leurs attestations et vous les remettons avant le démarrage, sans que vous ayez à les réclamer."
         },
         {
           "t": "cards",
@@ -87,11 +87,11 @@
             },
             {
               "title": "Parfait achèvement, 1 an",
-              "text": "Un an pour reprendre tout désordre signalé à la réception ou dans l’année qui suit. Notre SAV 12 mois l’applique à la lettre."
+              "text": "Un an pour reprendre tout désordre signalé à la réception ou dans l’année qui suit. Le suivi de 12 mois après réception, organisé par RenovIntérieurs, s’appuie sur cette garantie."
             },
             {
               "title": "Responsabilité civile professionnelle",
-              "text": "Assurance à jour sur l’ensemble de nos interventions, pour les dommages causés à votre logement ou aux parties communes pendant les travaux."
+              "text": "Assurance à jour des entreprises partenaires sur l’ensemble de leurs interventions, pour les dommages causés à votre logement ou aux parties communes pendant les travaux."
             }
           ]
         }
@@ -161,9 +161,9 @@
       "desc": "Huit métiers, un interlocuteur unique."
     },
     {
-      "label": "Nos réalisations",
+      "label": "Nos projets",
       "href": "/realisations-renovation",
-      "desc": "Chantiers livrés à Paris et en Île-de-France."
+      "desc": "Chantiers pilotés à Paris et en Île-de-France."
     },
     {
       "label": "À propos de RenovIntérieurs",
@@ -184,6 +184,11 @@
       "label": "Débarras et nettoyage",
       "href": "/debarras",
       "desc": "Succession, fin de bail, après travaux : tri, évacuation, justificatifs."
+    },
+    {
+      "label": "PV de réception de travaux",
+      "href": "/conseils/pv-reception-de-travaux",
+      "desc": "Ce que contient le procès-verbal et comment lever les réserves."
     }
   ]
 }

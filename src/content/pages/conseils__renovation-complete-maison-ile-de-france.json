@@ -1,7 +1,7 @@
 {
-  "title": "Rénovation complète de maison en Île-de-France : le guide",
+  "title": "Rénover une maison en Île-de-France : démarches",
   "description": "Prix au m² par département, ordre des travaux, démarches, aides énergétiques et déroulé du chantier pour rénover entièrement une maison en Île-de-France.",
-  "h1": "Rénovation complète de maison en Île-de-France : budget, ordre des travaux et démarches",
+  "h1": "Rénovation complète de maison en Île-de-France : démarches et organisation du chantier",
   "kind": "article",
   "parent": "/conseils",
   "publishedAt": "2026-09-29",
@@ -63,7 +63,7 @@
         },
         {
           "t": "p",
-          "v": "L’isolation sous toiture se traite avant tout aménagement des combles, sous peine de reprises évitables. Le déroulé complet d’un projet avec RenovIntérieurs, du premier échange au SAV, est détaillé sur [notre page méthode](/methode) ; le détail phase par phase figure dans [notre guide des étapes d’une rénovation intérieure](/conseils/renovation-interieure-maison-etapes)."
+          "v": "L’isolation sous toiture se traite avant tout aménagement des combles, sous peine de reprises évitables. Le déroulé complet d’un projet avec RenovIntérieurs, du premier échange au suivi après réception, est détaillé sur [notre page méthode](/methode) ; le détail phase par phase figure dans [notre guide des étapes d’une rénovation intérieure](/conseils/renovation-interieure-maison-etapes)."
         }
       ]
     },
@@ -76,10 +76,25 @@
         },
         {
           "t": "table",
-          "head": ["Département", "Standard", "Haut de gamme", "Prestige"],
+          "head": [
+            "Département",
+            "Standard",
+            "Haut de gamme",
+            "Prestige"
+          ],
           "rows": [
-            ["Hauts-de-Seine (92)", "1 000 à 1 500 €/m²", "1 500 à 2 500 €/m²", "Jusqu’à 4 500 €/m² à Neuilly-sur-Seine et Saint-Cloud"],
-            ["Yvelines (78)", "1 020 à 1 550 €/m²", "1 550 à 2 600 €/m²", "Jusqu’à 4 800 €/m² au Vésinet et à Maisons-Laffitte"]
+            [
+              "Hauts-de-Seine (92)",
+              "1 000 à 1 500 €/m²",
+              "1 500 à 2 500 €/m²",
+              "Jusqu’à 4 500 €/m² à Neuilly-sur-Seine et Saint-Cloud"
+            ],
+            [
+              "Yvelines (78)",
+              "1 020 à 1 550 €/m²",
+              "1 550 à 2 600 €/m²",
+              "Jusqu’à 4 800 €/m² au Vésinet et à Maisons-Laffitte"
+            ]
           ],
           "note": "Prix HT indicatifs 2026. TVA à 10 % sur l’amélioration d’un logement de plus de 2 ans."
         },
@@ -125,7 +140,7 @@
       "blocks": [
         {
           "t": "p",
-          "v": "Beaucoup de maisons franciliennes sont classées F ou G au DPE. Un audit énergétique repère les priorités avant toute mise en œuvre ; les gains sont plus nets quand l’enveloppe et le chauffage sont pensés ensemble. L’objectif de RenovIntérieurs sur ces chantiers : gagner 2 à 3 classes DPE."
+          "v": "Beaucoup de maisons franciliennes sont classées F ou G au DPE. Un audit énergétique repère les priorités avant toute mise en œuvre ; les gains sont plus nets quand l’enveloppe et le chauffage sont pensés ensemble. L’objectif visé sur ces chantiers pilotés par RenovIntérieurs : gagner 2 à 3 classes DPE."
         },
         {
           "t": "ul",
@@ -146,11 +161,11 @@
       "blocks": [
         {
           "t": "p",
-          "v": "Visite technique sous 5 jours après le premier échange, pour lire le bâti, les accès et le périmètre. Devis détaillé sous 48 h, poste par poste. Puis un chef de projet dédié, interlocuteur unique pour les arbitrages et le calendrier, avec compte-rendu hebdomadaire et photos de suivi."
+          "v": "Visite technique sous 5 jours après le premier échange, pour lire le bâti, les accès et le périmètre. Chiffrage détaillé sous 48 h, poste par poste, à partir des devis des entreprises partenaires. Puis un chef de projet dédié, interlocuteur unique pour les arbitrages et le calendrier, avec compte-rendu hebdomadaire et photos de suivi."
         },
         {
           "t": "p",
-          "v": "Le pilotage couvre tous les postes : cloisons, peinture, sols, plomberie, électricité, isolation, chauffage, parquet, béton ciré, cuisine sur mesure et salle de bain étanche. La réception se fait point par point, avec levée des réserves, SAV 12 mois et garanties décennale, biennale et de parfait achèvement, attestations fournies avant démarrage."
+          "v": "Le pilotage couvre tous les postes : cloisons, peinture, sols, plomberie, électricité, isolation, chauffage, parquet, béton ciré, cuisine sur mesure et salle de bain étanche. La réception est organisée point par point, avec levée des réserves, un suivi pendant 12 mois et les garanties décennale, biennale et de parfait achèvement portées par les entreprises partenaires, dont nous vérifions les attestations avant le démarrage."
         },
         {
           "t": "p",
@@ -185,7 +200,7 @@
     {
       "label": "Rénovation tous corps d’état",
       "href": "/renovation-appartement-paris",
-      "desc": "Second œuvre complet, du relevé à la livraison."
+      "desc": "Second œuvre complet, du relevé à la réception."
     },
     {
       "label": "Estimateur de budget",

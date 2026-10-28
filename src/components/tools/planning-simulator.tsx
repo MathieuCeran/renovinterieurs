@@ -61,7 +61,7 @@ export function PlanningSimulator() {
                 className="mt-[0.6em] size-1.5 shrink-0 rounded-full bg-terra"
               />
               <span>
-                Devis détaillé sous 48 h, planning prévisionnel inclus.
+                Chiffrage détaillé sous 48 h, planning prévisionnel inclus.
               </span>
             </li>
           </ul>

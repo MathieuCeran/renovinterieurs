@@ -16,8 +16,8 @@ const commitments = [
   },
   {
     n: "03",
-    title: "Garanties légales complètes",
-    text: "Décennale 10 ans, biennale 2 ans, parfait achèvement 1 an. Attestations fournies avant le démarrage.",
+    title: "Garanties légales des partenaires",
+    text: "Décennale 10 ans, biennale 2 ans, parfait achèvement 1 an, portées par les entreprises partenaires. Attestations vérifiées avant le démarrage.",
   },
   {
     n: "04",
@@ -83,7 +83,7 @@ const prestations = [
 
 const HEADING = "Nos engagements, écrits noir sur blanc";
 const LEAD =
-  "Quatre repères simples pour comparer objectivement les devis de rénovation que vous recevez, chez nous comme ailleurs.";
+  "Quatre repères simples pour comparer objectivement les devis de rénovation que vous recevez, qu’ils passent par RenovIntérieurs ou non.";
 
 /** `ww` : les textes de la page vus par WhatsWrong (réécrits, ou null si
  *  retirés) ; sans lui, les textes du site. */
@@ -114,11 +114,9 @@ export function Commitments({
               {heading === null ? null : heading === HEADING ? (
                 <>
                   <span className="mask reveal-mask">
-                    <span className="block">Nos engagements,</span>
-                  </span>
-                  <span className="mask reveal-mask">
-                    <span className="display-italic block text-[1.08em]">
-                      écrits noir sur blanc
+                    <span className="block">
+                      Nos engagements,{" "}
+                      <span className="display-italic text-[1.08em]">écrits noir sur blanc</span>
                     </span>
                   </span>
                 </>
@@ -169,7 +167,7 @@ export function Commitments({
                 href="#devis"
                 className="group inline-flex items-center gap-3 rounded-full bg-ink py-1.5 pr-1.5 pl-5 text-[0.84rem] font-medium text-paper transition-colors duration-500 hover:bg-terra hover:text-paper"
               >
-                Comparer avec notre devis
+                Comparer avec un chiffrage détaillé
                 <span className="pill-arrow flex size-8 items-center justify-center rounded-full bg-terra text-paper transition-colors duration-500 group-hover:bg-paper group-hover:text-terra">
                   <ArrowRight className="size-3" />
                 </span>

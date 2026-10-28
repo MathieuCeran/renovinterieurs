@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+import { pageTitle } from "@/lib/content";
+
 import { LegalSection } from "@/components/page/legal";
 import { PageHero } from "@/components/page/page-hero";
 import { site } from "@/lib/site";
@@ -11,7 +13,7 @@ const description =
   "Quelles données RenovIntérieurs collecte via ses formulaires, pourquoi, combien de temps elles sont conservées et comment exercer vos droits.";
 
 export const metadata: Metadata = {
-  title,
+  title: pageTitle(title),
   description,
   alternates: { canonical: path },
   robots: { index: true, follow: true },

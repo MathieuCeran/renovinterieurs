@@ -57,7 +57,7 @@
         {
           "t": "stats",
           "items": [
-            { "value": "10 000 à 50 000 €", "label": "pour une cuisine clé en main" },
+            { "value": "10 000 à 50 000 €", "label": "pour une cuisine complète" },
             { "value": "25 à 40 %", "label": "du budget rénovation d’un appartement" },
             { "value": "40 à 60 %", "label": "d’économie avec des caissons Metod habillés" },
             { "value": "10 à 15 %", "label": "de marge pour les imprévus" }
@@ -145,11 +145,11 @@
         {
           "t": "ul",
           "items": [
-            "Devis détaillé sous 48 h après la visite : poste par poste, planning prévisionnel, variantes de matériaux.",
+            "Chiffrage détaillé sous 48 h après la visite : devis des entreprises partenaires détaillés poste par poste, planning prévisionnel, variantes de matériaux.",
             "Plan 3D remis sous 7 à 10 jours par le cuisiniste partenaire, avec sélection de façades et de plans de travail.",
-            "Aucun supplément sans avenant signé : le devis initial reste ferme.",
+            "Aucun supplément sans avenant signé : le devis initial de chaque entreprise partenaire reste ferme.",
             "Compte-rendu hebdomadaire pendant les travaux, un interlocuteur unique jusqu’à la réception.",
-            "Garanties remises à la livraison : décennale 10 ans, biennale 2 ans, parfait achèvement 1 an, SAV 12 mois."
+            "Attestations de garanties des entreprises partenaires remises à la réception : décennale 10 ans, biennale 2 ans, parfait achèvement 1 an, avec un suivi organisé pendant 12 mois."
           ]
         }
       ]
@@ -163,7 +163,7 @@
         },
         {
           "t": "p",
-          "v": "Une garantie inférieure à dix ans sur les caissons signale souvent une densité de panneau insuffisante, et des charnières qui ne tiendront pas. Ce critère pèse plus que l’esthétique d’une façade. Pour un projet piloté de bout en bout à Paris et en Île-de-France, consultez notre [service de cuisine sur mesure](/cuisine-sur-mesure-paris) : conception sur plan ou Metod habillé, devis sous 48 h."
+          "v": "Une garantie inférieure à dix ans sur les caissons signale souvent une densité de panneau insuffisante, et des charnières qui ne tiendront pas. Ce critère pèse plus que l’esthétique d’une façade. Pour un projet piloté de bout en bout à Paris et en Île-de-France, consultez notre [service de cuisine sur mesure](/cuisine-sur-mesure-paris) : conception sur plan ou Metod habillé, chiffrage sous 48 h."
         },
         {
           "t": "faq",

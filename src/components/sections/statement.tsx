@@ -6,8 +6,8 @@ import { photos } from "@/lib/photos";
 const figures = [
   { value: "48 h", label: "Devis détaillé" },
   { value: "5 jours", label: "Visite technique" },
-  { value: "10 ans", label: "Garantie décennale" },
-  { value: "12 mois", label: "SAV après livraison" },
+  { value: "10 ans", label: "Décennale des entreprises partenaires" },
+  { value: "12 mois", label: "Suivi après réception" },
 ];
 
 /** Les corps d’état pilotés en interne — repris du texte du site. */
@@ -34,7 +34,7 @@ export function Statement() {
             <p className="dot-label text-muted">Notre équipe</p>
 
             <p className="mt-7 text-[0.82rem] leading-relaxed text-muted">
-              Six corps d’état pilotés en interne, sur un seul et même
+              Six corps d’état pilotés par un seul interlocuteur, sur un seul et même
               chantier.
             </p>
 
@@ -57,7 +57,7 @@ export function Statement() {
             <div className="mt-8 flex items-center gap-3">
               <Image
                 src="/brand/monogram.png"
-                alt=""
+                alt="Monogramme RenovIntérieurs"
                 width={300}
                 height={300}
                 className="size-9 shrink-0 opacity-70"
@@ -94,11 +94,11 @@ export function Statement() {
             <div className="reveal mt-10 grid max-w-3xl gap-6 text-[0.98rem] leading-relaxed text-muted sm:grid-cols-2">
               <p>
                 Chez RenovIntérieurs, notre équipe pilote l’ensemble des corps
-                de métier pour vous garantir un résultat à la hauteur de vos
+                de métier et veille à un résultat à la hauteur de vos
                 attentes.
               </p>
               <p>
-                Nous intervenons sur tous les postes du second œuvre :
+                Nous pilotons tous les postes du second œuvre, réalisés par des entreprises partenaires :
                 plomberie, électricité, plâtrerie, peinture, revêtements,
                 menuiserie. Un seul contact, une vision d’ensemble, zéro
                 mauvaise surprise.

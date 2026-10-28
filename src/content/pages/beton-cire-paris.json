@@ -1,14 +1,14 @@
 {
   "title": "Béton ciré Paris : sols, murs, douches sans joint",
-  "description": "Béton ciré à Paris : sols, murs, douches à l’italienne et plans de travail en 2 à 4 mm, sans joint. Pose possible sur carrelage existant. Devis sous 48 h.",
+  "description": "Béton ciré à Paris : sols, murs, douches à l’italienne et plans de travail, sans joint, posable sur carrelage existant. Chiffrage détaillé sous 48 h.",
   "h1": "Béton ciré à Paris : sols, murs et douches d’un seul tenant",
   "kind": "service",
   "parent": "/nos-services",
   "eyebrow": "Béton ciré · Paris et Île-de-France",
   "hero": "/images/chantiers/salle-de-bain-travertin-douche-italienne.jpg",
   "intro": [
-    "Le béton ciré est ce revêtement continu, sans joint ni ligne, qui donne à un séjour ou à une douche l’allure d’un volume taillé dans la masse. Sur 2 à 4 mm d’épaisseur, il se pose sur un carrelage existant sans dépose ni recoupe de porte. RenovIntérieurs l’applique à Paris sur les sols, les murs, les douches à l’italienne, les plans de travail et les escaliers.",
-    "Nous pilotons le chantier de bout en bout : diagnostic du support, ragréage si nécessaire, primaire, deux à trois couches à la spatule, ponçage, vernis polyuréthane bi-composant. Un interlocuteur unique, des échantillons pour choisir la teinte chez vous, un devis détaillé sous 48 h."
+    "Le béton ciré est ce revêtement continu, sans joint ni ligne, qui donne à un séjour ou à une douche l’allure d’un volume taillé dans la masse. Sur 2 à 4 mm d’épaisseur, il se pose sur un carrelage existant sans dépose ni recoupe de porte. RenovIntérieurs pilote à Paris son application par des entreprises partenaires spécialisées, sur les sols, les murs, les douches à l’italienne, les plans de travail et les escaliers.",
+    "Nous pilotons le chantier de bout en bout : diagnostic du support, ragréage si nécessaire, primaire, deux à trois couches à la spatule, ponçage, vernis polyuréthane bi-composant. Un interlocuteur unique, des échantillons pour choisir la teinte chez vous, un chiffrage détaillé sous 48 h."
   ],
   "sections": [
     {
@@ -31,18 +31,18 @@
             },
             {
               "value": "10 ans",
-              "label": "de garantie décennale"
+              "label": "de garantie décennale, portée par l’entreprise partenaire"
             }
           ]
         }
       ]
     },
     {
-      "title": "Béton ciré : nos réalisations",
+      "title": "Béton ciré : nos projets",
       "blocks": [
         {
           "t": "p",
-          "v": "Le béton ciré ne pardonne pas un support mal préparé ; c’est là que nous passons le plus de temps. [Voir nos réalisations](/realisations-renovation)."
+          "v": "Le béton ciré ne pardonne pas un support mal préparé ; c’est là que les entreprises partenaires passent le plus de temps. [Voir nos projets](/realisations-renovation)."
         },
         {
           "t": "gallery",
@@ -99,7 +99,7 @@
       ]
     },
     {
-      "title": "Nos signatures : pose et teintes",
+      "title": "Pose et teintes",
       "blocks": [
         {
           "t": "callout",
@@ -109,7 +109,7 @@
         {
           "t": "callout",
           "title": "Des teintes testées chez vous",
-          "v": "Toute la palette RAL et NCS, du gris perle au terracotta. Nous laissons des échantillons de 20 × 20 cm pour juger avec votre lumière avant de valider."
+          "v": "Toute la palette RAL et NCS, du gris perle au terracotta. Des échantillons de 20 × 20 cm sont laissés chez vous pour juger avec votre lumière avant de valider."
         },
         {
           "t": "callout",
@@ -155,7 +155,7 @@
         },
         {
           "t": "p",
-          "v": "La visite technique, le devis et le suivi hebdomadaire suivent [notre méthode](/methode), la même pour tous nos chantiers."
+          "v": "La visite technique, le devis et le suivi hebdomadaire suivent [notre méthode](/methode), la même pour tous les chantiers que nous pilotons."
         }
       ]
     },
@@ -186,7 +186,7 @@
     {
       "label": "Notre méthode",
       "href": "/methode",
-      "desc": "Visite sous 5 jours, devis sous 48 h, compte-rendu hebdomadaire, SAV 12 mois."
+      "desc": "Visite sous 5 jours, devis sous 48 h, compte-rendu hebdomadaire, suivi après réception."
     },
     {
       "label": "Prix de rénovation",
@@ -204,9 +204,9 @@
       "desc": "Le comparatif pour choisir en connaissance de cause."
     },
     {
-      "label": "Nos réalisations",
+      "label": "Nos projets",
       "href": "/realisations-renovation",
-      "desc": "Lofts, séjours et douches en béton ciré livrés à Paris."
+      "desc": "Lofts, séjours et douches en béton ciré pilotés à Paris."
     },
     {
       "label": "Rénovation dans le Val-de-Marne",

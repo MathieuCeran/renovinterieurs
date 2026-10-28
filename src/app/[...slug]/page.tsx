@@ -9,16 +9,8 @@ import { InnerHero, anchorId } from "@/components/page/inner-hero";
 import { PhoneIcon, Pill } from "@/components/ui/kit";
 import { Commitments } from "@/components/sections/commitments";
 import { Cta } from "@/components/sections/cta";
-import {
-  allSlugs,
-  breadcrumbFor,
-  clamp,
-  cleanTitle,
-  getPage,
-  stripInline,
-  visualsFor,
-} from "@/lib/content";
-import { site } from "@/lib/site";
+import { allSlugs, breadcrumbFor, clamp, cleanTitle, getPage, pageTitle, stripInline, visualsFor } from "@/lib/content";
+import { founder, founderLd, site } from "@/lib/site";
 import {
   prepareArticle,
   plainText,
@@ -102,7 +94,7 @@ export async function generateMetadata({
   );
 
   return {
-    title,
+    title: pageTitle(title),
     description,
     alternates: { canonical: path },
     openGraph: {
@@ -145,6 +137,7 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
 
   const visuals = visualsFor(path);
   const hero = page.hero ?? visuals.hero;
+  const about = path === founder.page;
   const crumbs = breadcrumbFor(path);
   const parentCrumb = crumbs[crumbs.length - 1];
 
@@ -161,7 +154,9 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
       ? "Service"
       : page.kind === "article"
         ? "Article"
-        : "WebPage";
+        : path === founder.page
+          ? "AboutPage"
+          : "WebPage";
 
   const jsonLd: Record<string, unknown>[] = [
     {
@@ -203,6 +198,8 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
           inLanguage: "fr-FR",
           isPartOf: { "@type": "WebSite", name: site.name, url: site.url },
           publisher: { "@id": `${site.url}#entreprise` },
+          ...(page.kind === "article" ? { author: { "@id": `${site.url}#ilann-atlan` } } : {}),
+          ...(path === founder.page ? { mainEntity: founderLd } : {}),
           mainEntityOfPage: url,
         },
   ];
@@ -244,6 +241,7 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
           faq={null}
           readMin={body.readMin}
           updatedAt={version.publishedAt}
+          byline={page.kind === "article"}
         />
         <Commitments />
         <Cta />
@@ -272,7 +270,7 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
           className="container-x pt-12 pb-4 lg:pt-16 lg:pb-6"
           aria-label="Introduction"
         >
-          <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14">
+          <div className={about ? "max-w-4xl" : "grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14"}>
             <div className="flex flex-col">
               <p className="dot-label reveal-sm text-muted">
                 {page.eyebrow ?? parentCrumb.label}
@@ -294,6 +292,8 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
               </div>
             </div>
 
+            {/* Sur « À propos », pas de carte de services : la page parle de qui nous sommes. */}
+            {!about && (
             <aside className="reveal flex flex-col rounded-[clamp(18px,2.4vw,28px)] bg-paper p-7 lg:p-8">
               <p className="dot-label text-[0.74rem] text-terra">
                 Ce que nous pilotons
@@ -312,7 +312,7 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
                   <Inline
                     v={
                       ww(
-                        "Un interlocuteur unique du diagnostic à la réception, un devis détaillé sous 48 h, un compte-rendu chaque semaine.",
+                        "Un interlocuteur unique du diagnostic à la réception, un chiffrage détaillé sous 48 h, un compte-rendu chaque semaine.",
                       ) ?? ""
                     }
                   />
@@ -322,7 +322,7 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
                 {[
                   "Devis détaillé sous 48 h",
                   "Visite technique sous 5 jours",
-                  "SAV 12 mois après livraison",
+                  "Suivi 12 mois après réception",
                 ]
                   .flatMap((t) => ww(t) ?? [])
                   .map((t) => (
@@ -347,6 +347,7 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
                 ))}
               </ul>
             </aside>
+            )}
           </div>
         </section>
       )}
@@ -386,7 +387,8 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
         </section>
       )}
 
-      <Commitments ww={ww} />
+      {/* Les engagements ont leur bandeau partout ailleurs ; ici ils feraient doublon. */}
+      {!about && <Commitments ww={ww} />}
       <Cta ww={ww} />
     </>
   );
@@ -403,7 +405,7 @@ function wwMetadata(a: WwArticle, path: string): Metadata {
   // Aucune image inventée : la couverture WhatsWrong, sinon l’image de partage du site.
   const image = d.cover?.url ?? "/og.jpg";
   return {
-    title,
+    title: pageTitle(title),
     description,
     alternates: { canonical: path },
     openGraph: {
@@ -477,6 +479,7 @@ function WwPage({
       ...(d.lastModifiedAt ? { dateModified: d.lastModifiedAt } : {}),
       isPartOf: { "@type": "WebSite", name: site.name, url: site.url },
       publisher: { "@id": `${site.url}#entreprise` },
+      author: { "@id": `${site.url}#ilann-atlan` },
       mainEntityOfPage: url,
     },
   ];
@@ -515,6 +518,7 @@ function WwPage({
           Math.round(plainText(d.body).split(" ").length / 220),
         )}
         updatedAt={d.lastModifiedAt ?? d.createdAt ?? null}
+        byline
       />
       <Commitments ww={ww} />
       <Cta ww={ww} />

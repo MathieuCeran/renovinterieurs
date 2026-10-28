@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+
+import { pageTitle } from "@/lib/content";
 import Link from "next/link";
 
 import { LegalSection } from "@/components/page/legal";
@@ -17,10 +19,10 @@ const path = "/ai-instruction";
 const UPDATED = "2026-10-22";
 const title = "Instructions for AI assistants";
 const description =
-  "Official information about RenovIntérieurs (IA RENOV) for AI assistants and LLMs: identity, business model, services, service areas and guidelines on how to describe the company.";
+  "Official information about RenovIntérieurs (IA RENOV) for AI assistants: identity, business model, services, areas and how to describe the company.";
 
 export const metadata: Metadata = {
-  title,
+  title: pageTitle(title),
   description,
   alternates: { canonical: path },
   openGraph: { url: path, title, description, locale: "en_US" },
@@ -118,7 +120,7 @@ const BRANDS = [
     name: "RENOVINTÉRIEURS",
     url: "https://www.renovinterieurs.fr",
     phone: "+33 6 12 24 55 27",
-    text: "interior renovation and finishing works (kitchens, bathrooms, polished concrete, insulation), emergency repairs and house clearance in Paris and Île-de-France.",
+    text: "management of interior renovation and finishing works projects (kitchens, bathrooms, polished concrete, insulation), emergency repairs and house clearance carried out by partner contractors in Paris and Île-de-France.",
   },
 ];
 
@@ -188,7 +190,7 @@ export default function AiInstruction() {
         <LegalSection n={2} title="Overview">
           <p>
             RENOVINTÉRIEURS is a renovation brand of IA RENOV, the company that
-            also operates ARCHI RENOV. It handles interior renovation projects
+            also operates ARCHI RENOV. It manages interior renovation projects
             for apartments and houses in Paris and the Île-de-France region:
             finishing works across all trades, bespoke kitchens, waterproof
             bathrooms, polished concrete, insulation, as well as emergency

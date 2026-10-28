@@ -33,7 +33,7 @@ export function SectionHeading({
 }) {
   let size = sizeProp;
   const [a, b] = headingLines(title);
-  // Un titre long garde deux lignes lisibles plutôt que trois lignes géantes.
+  // Un titre long passe en taille moyenne pour rester sur une ou deux lignes.
   if (size === "lg" && title.length > 32) size = "md";
   const cls =
     size === "lg"
@@ -46,16 +46,18 @@ export function SectionHeading({
         tone === "dark" ? "text-paper" : "text-ink"
       }`}
     >
+      {/* Une seule ligne : la fin du titre en italique à la suite, plus en dessous. */}
       <span className="mask reveal-mask">
-        <span className="block">{a}</span>
-      </span>
-      {b && (
-        <span className="mask reveal-mask">
-          <span className="display-italic block text-[1.08em] leading-[1]">
-            {b}
-          </span>
+        <span className="block">
+          {a}
+          {b && (
+            <>
+              {" "}
+              <span className="display-italic text-[1.08em] leading-[1]">{b}</span>
+            </>
+          )}
         </span>
-      )}
+      </span>
     </h2>
   );
 }
