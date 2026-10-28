@@ -60,6 +60,8 @@ async function optimizedArticle(
   if (article === null) return null;
   const version = await publishedPageVersion(path);
   if (version === null) return article;
+  // Copie relue : une optimisation publiée avant la relecture ne la remplace pas.
+  if (article.reviewedAt && (version.publishedAt ?? "") <= article.reviewedAt) return article;
   return {
     ...article,
     title: version.title || article.title,

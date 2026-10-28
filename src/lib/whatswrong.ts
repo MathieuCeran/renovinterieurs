@@ -29,6 +29,8 @@ export type WwArticle = {
   } | null;
   createdAt: string;
   lastModifiedAt: string;
+  /** Date de la relecture juridique de la copie du dépôt : ce qui a été publié avant ne la remplace pas. */
+  reviewedAt?: string;
 };
 
 const ARTICLES_FILE = path.join(
@@ -112,7 +114,7 @@ export async function publishedArticles(): Promise<WwArticle[]> {
     const copy = byId.get(a.id);
     // Copie relue (« nous pilotons, les entreprises partenaires réalisent ») : elle prime
     // tant que l'article n'a pas été modifié dans WhatsWrong depuis.
-    const reviewed = copy !== undefined && copy.lastModifiedAt >= a.lastModifiedAt;
+    const reviewed = copy?.reviewedAt !== undefined && a.lastModifiedAt <= copy.reviewedAt;
     return {
       id: a.id,
       slug: copy?.slug ?? a.slug,
@@ -124,6 +126,7 @@ export async function publishedArticles(): Promise<WwArticle[]> {
       faq: reviewed ? copy.faq : a.faq,
       createdAt: a.publishedAt,
       lastModifiedAt: a.lastModifiedAt,
+      ...(reviewed ? { reviewedAt: copy.reviewedAt } : {}),
     };
   });
 }
