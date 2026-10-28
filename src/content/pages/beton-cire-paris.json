@@ -38,7 +38,7 @@
       ]
     },
     {
-      "title": "Béton ciré : nos projets",
+      "title": "Béton ciré et finitions minérales, en images",
       "blocks": [
         {
           "t": "p",
@@ -47,6 +47,11 @@
         {
           "t": "gallery",
           "items": [
+            {
+              "src": "/images/chantiers/salle-de-bains-beton-cire-baignoire.jpg",
+              "alt": "Salle de bains d’un appartement haussmannien en béton ciré clair : sol, plan double vasque et baignoire d’un seul tenant, cheminée en marbre et porte-fenêtre sur balcon",
+              "caption": "Illustration : sol, plan de vasques et baignoire en béton ciré, sans un joint."
+            },
             {
               "src": "/images/chantiers/salle-de-bain-travertin-douche-italienne.jpg",
               "alt": "Salle de bain en travertin, douche à l’italienne et robinetterie cuivrée",
