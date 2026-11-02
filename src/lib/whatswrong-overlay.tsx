@@ -90,7 +90,9 @@ function newSections(blocks: WwBlock[]): ReactNode {
     if ((block.kind === "heading" && block.level === 2) || groups.length === 0) groups.push([block]);
     else groups[groups.length - 1].push(block);
   }
-  return groups.map((group, index) => {
+  // Un intertitre seul, son texte refusé dans WhatsWrong, ne fait pas une section.
+  const filled = groups.filter((group) => group.some((block) => block.kind === "text"));
+  return filled.map((group, index) => {
     const [first, ...rest] = group;
     return first.kind === "heading" && first.level === 2 ? (
       <section key={`ww-${index}`} className="container-x py-12 lg:py-16">
@@ -107,7 +109,14 @@ function newSections(blocks: WwBlock[]): ReactNode {
   });
 }
 
+/* Une section du site : une nouvelle section se pose avant elle, jamais dans
+   sa colonne de titre. */
+function isSection(element: ReactElement<Record<string, unknown>>): boolean {
+  return element.type === "section" || typeof element.props["aria-labelledby"] === "string";
+}
+
 class Overlay {
+  private hoisted: { before: WwBlock[]; end: WwBlock[] }[] = [];
   private replaced: Map<string, WwChanges["replace"][number]>;
   private removed: Set<string>;
   private inserts: Map<string, WwChanges["insert"]>;
@@ -172,7 +181,21 @@ class Overlay {
     }
     if (Array.isArray(node)) return node.map((child, index) => <Fragment key={index}>{this.node(child)}</Fragment>);
     if (!isValidElement<Record<string, unknown>>(node)) return node;
-    const element = node;
+    if (!isSection(node)) return this.rendered(node);
+    this.hoisted.push({ before: [], end: [] });
+    const output = this.rendered(node);
+    const { before, end: after } = this.hoisted.pop() ?? { before: [], end: [] };
+    if (before.length === 0 && after.length === 0) return output;
+    return (
+      <>
+        {newSections(before)}
+        {output}
+        {after.length > 0 && <div className="container-x py-10">{newBlocks(after)}</div>}
+      </>
+    );
+  }
+
+  private rendered(element: ReactElement<Record<string, unknown>>): ReactNode {
     // Une phrase du JSX (un paragraphe avec un lien) : remplacée entière.
     if (typeof element.type === "string" && !INLINE.has(element.type) && isPhrase(element.props.children as ReactNode)) {
       const key = wwKey(textOf(element));
@@ -205,9 +228,19 @@ class Overlay {
   private around(original: ReactElement<Record<string, unknown>>, element: ReactElement): ReactNode {
     const inserts = this.anchored(original);
     if (inserts.length === 0) return element;
-    const before = inserts.filter((i) => i.place === "before").flatMap((i) => i.blocks);
+    let before = inserts.filter((i) => i.place === "before").flatMap((i) => i.blocks);
+    const section = this.hoisted.at(-1);
+    if (section && before[0]?.kind === "heading" && before[0].level === 2) {
+      section.before.push(...before);
+      before = [];
+    }
     const after = inserts.filter((i) => i.place === "after").flatMap((i) => i.blocks);
-    const end = inserts.filter((i) => i.place === "end").flatMap((i) => i.blocks);
+    let end = inserts.filter((i) => i.place === "end").flatMap((i) => i.blocks);
+    if (section && end.length > 0) {
+      // « À la fin de la section » : à sa suite, jamais dans la balise du titre.
+      section.end.push(...end);
+      end = [];
+    }
     const withEnd =
       end.length === 0
         ? element

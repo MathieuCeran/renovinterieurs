@@ -82,6 +82,28 @@ export async function mergedPaths(): Promise<Set<string>> {
   return new Set(redirects.map((r) => bare(r.from)));
 }
 
+/* Les avis clients ne se réécrivent jamais : ni un avis, ni sa signature, ni
+   leur section, même si une version publiée les change. */
+const REVIEW_HEADING =
+  /\bavis (?:clients?|google|v[ée]rifi[ée]s)\b|\b(?:nos|les|vos) avis\b|^avis\b|\bavis sur google\b|t[ée]moignages?|ils nous ont confi|ce que disent/i;
+const REVIEW_TEXT = /^\s*[«“"]|·\s*(?:avis|[ée]valuation)\s+google/i;
+const isReviewHeading = (text: string) => text.length <= 120 && REVIEW_HEADING.test(text);
+
+function withoutReviewEdits<C extends { replace: { text: string }[]; remove: { text: string }[]; insert: { text: string; place: string }[] }>(changes: C): C {
+  const touches = (change: { text: string }) => REVIEW_TEXT.test(change.text) || isReviewHeading(change.text);
+  return {
+    ...changes,
+    replace: changes.replace.filter((change) => !touches(change)),
+    remove: changes.remove.filter((change) => !touches(change)),
+    insert: changes.insert.filter((insert) => !(insert.place === "end" && isReviewHeading(insert.text))),
+  };
+}
+
+const withoutReviews = <V extends { changes?: unknown }>(version: V): V => {
+  const changes = version.changes as Parameters<typeof withoutReviewEdits>[0] | null | undefined;
+  return changes ? { ...version, changes: withoutReviewEdits(changes) } : version;
+};
+
 /** La version publiée d'une page du site, sinon null. Une page fusionnée
  *  dans une autre depuis WhatsWrong redirige (301) vers elle. */
 export async function publishedPageVersion(
@@ -90,7 +112,8 @@ export async function publishedPageVersion(
   const { pages, redirects } = await publishedPages();
   const merged = redirects.find((r) => bare(r.from) === bare(p));
   if (merged) permanentRedirect(merged.to);
-  return pages.find((page) => bare(page.path) === bare(p)) ?? null;
+  const version = pages.find((page) => bare(page.path) === bare(p)) ?? null;
+  return version && withoutReviews(version);
 }
 
 /** Le texte prêt à afficher : sans les blocs communs, assaini, avec son
