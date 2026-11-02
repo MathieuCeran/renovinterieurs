@@ -24,6 +24,8 @@ export type LeadMail = {
   email: string;
   telephone: string;
   message: string;
+  /** Source de la demande (publicité, SEO…) : voir lib/attribution.ts. */
+  provenance: [string, string][];
 };
 
 /** Copie cachée de chaque demande, en plus du destinataire principal. */
@@ -66,7 +68,7 @@ export async function sendLeadMail(lead: LeadMail) {
     ["Délai", lead.delai],
     ["Message", lead.message],
     ["Reçu le", new Date(lead.receivedAt).toLocaleString("fr-FR", { timeZone: "Europe/Paris" })],
-    ["Source", lead.source],
+    ...lead.provenance,
   ];
   const filled = rows.filter(([, v]) => v && v !== "—");
 

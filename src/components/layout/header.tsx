@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 import { ArrowRight, PhoneIcon } from "@/components/ui/kit";
+import { captureAttribution } from "@/lib/attribution";
 import { nav, site } from "@/lib/site";
 import { photos } from "@/lib/photos";
 
@@ -18,6 +19,11 @@ import { photos } from "@/lib/photos";
  * donc lisible même si le basculement n’a pas lieu.
  */
 export function Header() {
+  /* Provenance du visiteur, relevée à son arrivée : voir lib/attribution.ts. */
+  useEffect(() => {
+    captureAttribution();
+  }, []);
+
   const [solid, setSolid] = useState(false);
   const [open, setOpen] = useState(false);
   const [services, setServices] = useState(false);

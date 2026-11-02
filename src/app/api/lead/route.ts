@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 
+import { attributionRows } from "@/lib/attribution";
 import { isMailConfigured, sendLeadMail } from "@/lib/mail";
 
 /**
@@ -22,6 +23,7 @@ type Lead = {
   telephone?: string;
   message?: string;
   consent?: boolean;
+  attribution?: unknown;
 };
 
 const isEmail = (v: string) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
@@ -63,6 +65,7 @@ export async function POST(request: Request) {
     email,
     telephone,
     message: (body.message ?? "").slice(0, 4000),
+    provenance: attributionRows(body.attribution),
   };
 
   const webhook = process.env.LEAD_WEBHOOK_URL;

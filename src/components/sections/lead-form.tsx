@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, type FormEvent } from "react";
 
 import { ArrowRight } from "@/components/ui/kit";
 import { ADS_LABEL_LEAD, trackConversion } from "@/lib/ads";
+import { getAttribution } from "@/lib/attribution";
 
 const projets = [
   "Rénovation complète",
@@ -155,7 +156,7 @@ export function LeadForm() {
       const res = await fetch("/api/lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, attribution: getAttribution() }),
       });
       if (!res.ok) throw new Error("request failed");
       // En production, ok n’est renvoyé qu’après envoi réel du lead.

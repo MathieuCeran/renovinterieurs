@@ -46,7 +46,10 @@ export default function Confidentialite() {
         <LegalSection n={2} title="Données collectées">
           <p>
             Le site ne collecte que les données que vous saisissez
-            volontairement dans ses formulaires. Aucune création de compte n’est
+            volontairement dans ses formulaires, ainsi que la provenance de
+            votre visite (moteur de recherche, publicité ou site d’origine,
+            campagne, page d’arrivée), relevée sans cookie et transmise
+            uniquement avec le formulaire. Aucune création de compte n’est
             possible.
           </p>
           <p>

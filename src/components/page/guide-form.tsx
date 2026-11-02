@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 
 import { ArrowRight } from "@/components/ui/kit";
+import { getAttribution } from "@/lib/attribution";
 
 type State = "idle" | "sending" | "done" | "error";
 
@@ -30,6 +31,7 @@ export function GuideForm() {
           commune: "—",
           message: "Demande de téléchargement du guide PDF.",
           consent: true,
+          attribution: getAttribution(),
         }),
       });
       if (!res.ok) throw new Error();
