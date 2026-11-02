@@ -92,15 +92,20 @@ export default function Confidentialite() {
 
         <LegalSection n={4} title="Destinataires et sous-traitants">
           <p>
-            Vos données sont destinées aux seules équipes de {site.name} en
-            charge du chiffrage et du suivi de chantier. Elles ne sont ni
+            Vos données sont destinées à IA RENOV, aux équipes de {site.name}
+            en charge du chiffrage et du suivi de chantier et, dans la stricte
+            mesure nécessaire à votre projet, aux entreprises partenaires qui
+            établissent les devis et réalisent les travaux. Elles ne sont ni
             vendues, ni louées, ni cédées à des tiers à des fins commerciales.
           </p>
           <p>
             Elles peuvent être traitées par les prestataires techniques suivants
             : Vercel Inc. (hébergement du site) et OVHcloud (messagerie qui
-            reçoit les demandes envoyées via le formulaire). Tous sont situés
-            dans l’Union européenne ou présentent des garanties équivalentes.
+            reçoit les demandes envoyées via les formulaires). Une copie de
+            chaque demande est adressée au prestataire technique du site, pour
+            s’assurer de sa bonne réception. Les transferts hors de l’Union
+            européenne sont encadrés par les garanties prévues par le règlement
+            général sur la protection des données.
           </p>
         </LegalSection>
 
@@ -111,9 +116,9 @@ export default function Confidentialite() {
               contact.
             </li>
             <li>
-              Client : durée de la relation contractuelle, puis conservation des
-              pièces comptables et des garanties pendant la durée légale
-              (jusqu’à 10 ans pour la décennale).
+              Client : durée de la relation contractuelle, puis archivage des
+              pièces comptables et des garanties pendant les durées imposées par
+              la loi (jusqu’à 10 ans pour la décennale).
             </li>
             <li>
               Inscription au guide : jusqu’au retrait de votre consentement.
@@ -129,13 +134,18 @@ export default function Confidentialite() {
             Les cookies correspondants ne sont déposés qu’avec votre accord,
             donné ou refusé dans le bandeau affiché à la première visite. Sans
             accord, Google ne reçoit que des signaux sans cookie, qui ne
-            permettent pas de vous identifier. <ReinitialiserCookies />
+            permettent pas de vous identifier. Votre choix est conservé six
+            mois, puis vous est demandé à nouveau ; vous pouvez le modifier à
+            tout moment avec le lien « Gérer les cookies » en bas de chaque
+            page. <ReinitialiserCookies />
           </p>
           <p>
-            Il utilise uniquement le stockage de session de votre navigateur
-            pour ne pas rejouer l’animation d’ouverture à chaque page. Cette
-            information reste sur votre appareil, n’est jamais transmise et
-            disparaît à la fermeture de l’onglet.
+            Sans votre accord, il n’utilise que le stockage de votre navigateur
+            nécessaire à son fonctionnement : l’enregistrement de votre choix
+            sur les cookies, et le stockage de session qui évite de rejouer
+            l’animation d’ouverture à chaque page. Ces informations restent sur
+            votre appareil et ne sont jamais transmises ; la seconde disparaît
+            à la fermeture de l’onglet.
           </p>
         </LegalSection>
 
@@ -150,8 +160,9 @@ export default function Confidentialite() {
         <LegalSection n={8} title="Vos droits">
           <p>
             Vous disposez d’un droit d’accès, de rectification, d’effacement, de
-            limitation, d’opposition et de portabilité sur vos données, ainsi
-            que du droit de retirer votre consentement à tout moment.
+            limitation, d’opposition et de portabilité sur vos données, du droit
+            de retirer votre consentement à tout moment et de définir des
+            directives sur le sort de vos données après votre décès.
           </p>
           <p>
             Pour les exercer, écrivez à {site.email} en précisant votre demande.

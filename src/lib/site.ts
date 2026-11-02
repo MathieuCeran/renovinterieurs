@@ -7,7 +7,7 @@ import { photos } from "@/lib/photos";
 
 export const site = {
   name: "RenovIntérieurs",
-  legalName: "RenovIntérieurs — piloté par IA RENOV",
+  legalName: "IA RENOV",
   tagline: "Rénovation intérieur & second œuvre",
   url: "https://www.renovinterieurs.fr",
   email: "contact@renovinterieurs.fr",
@@ -22,14 +22,18 @@ export const site = {
 
 /**
  * Le fondateur, auteur des contenus (EEAT) : une personne identifiable,
- * reliée à l'entreprise et à sa page sur Archi Renov.
+ * reliée à l'entreprise et à ses pages sur les trois autres marques d'IA RENOV.
  */
 export const founder = {
   name: "Ilann Atlan",
   jobTitle: "Fondateur et président d’IA RENOV",
   image: "/images/equipe/ilann-atlan-portrait.jpg",
   page: "/a-propos",
-  sameAs: ["https://www.archi-renov.com/a-propos-ia-renov-ilann-atlan/"],
+  sameAs: [
+    "https://heritagebati.fr/qui-sommes-nous/",
+    "https://www.archi-renov.com/a-propos-ia-renov-ilann-atlan/",
+    "https://www.archipiloterenovation.com/qui-sommes-nous",
+  ],
 } as const;
 
 /** Données structurées du fondateur, référencées par @id dans les pages et les articles. */

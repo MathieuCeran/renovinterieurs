@@ -2,36 +2,39 @@
 
 import Link from "next/link";
 import Script from "next/script";
-import { useEffect, useState, useSyncExternalStore } from "react";
+import { type ReactNode, useEffect, useSyncExternalStore } from "react";
 
-import { ADS_ID, ADS_LABEL_TEL, CONSENT_KEY, setConsent, trackConversion } from "@/lib/ads";
+import {
+  ADS_ID,
+  ADS_LABEL_TEL,
+  CONSENT_EVENT,
+  readConsent,
+  resetConsent,
+  setConsent,
+  trackConversion,
+  type Choice,
+} from "@/lib/ads";
 
 /* Bandeau de consentement + balise Google Ads.
 
    Le consentement par défaut (refusé) est posé dans le layout, avant GTM.
    Ce composant affiche le choix « Refuser / Accepter » au même niveau
-   (exigence CNIL), charge gtag.js pour Google Ads et compte les clics sur
-   les liens tel:, éparpillés dans plusieurs composants, via un seul
-   écouteur sur le document. */
-function readConsent(): "granted" | "denied" | null {
-  try {
-    const v = localStorage.getItem(CONSENT_KEY);
-    return v === "granted" || v === "denied" ? v : null;
-  } catch {
-    return null;
-  }
-}
-
+   (exigence CNIL), redemandé six mois après le dernier choix, charge
+   gtag.js pour Google Ads et compte les clics sur les liens tel:,
+   éparpillés dans plusieurs composants, via un seul écouteur sur le
+   document. */
 function subscribeConsent(onChange: () => void) {
+  window.addEventListener(CONSENT_EVENT, onChange);
   window.addEventListener("storage", onChange);
-  return () => window.removeEventListener("storage", onChange);
+  return () => {
+    window.removeEventListener(CONSENT_EVENT, onChange);
+    window.removeEventListener("storage", onChange);
+  };
 }
 
 export function GoogleAds() {
-  // Choix enregistré (lu côté navigateur seulement : undefined au rendu serveur), puis réponse donnée ici.
-  const stored = useSyncExternalStore(subscribeConsent, readConsent, () => undefined);
-  const [answer, setAnswer] = useState<"granted" | "denied" | null>(null);
-  const choix = answer ?? stored;
+  // Choix enregistré et encore valable (lu côté navigateur seulement : undefined au rendu serveur).
+  const choix = useSyncExternalStore<Choice | null | undefined>(subscribeConsent, readConsent, () => undefined);
 
   useEffect(() => {
     const onClick = (e: MouseEvent) => {
@@ -41,11 +44,6 @@ export function GoogleAds() {
     document.addEventListener("click", onClick, { capture: true });
     return () => document.removeEventListener("click", onClick, { capture: true });
   }, []);
-
-  const repondre = (ok: boolean) => {
-    setConsent(ok);
-    setAnswer(ok ? "granted" : "denied");
-  };
 
   return (
     <>
@@ -76,14 +74,14 @@ export function GoogleAds() {
           <div className="flex gap-2">
             <button
               type="button"
-              onClick={() => repondre(false)}
+              onClick={() => setConsent(false)}
               className="flex-1 rounded-full border border-current px-4 py-2.5 font-medium"
             >
               Refuser
             </button>
             <button
               type="button"
-              onClick={() => repondre(true)}
+              onClick={() => setConsent(true)}
               className="flex-1 rounded-full border border-current px-4 py-2.5 font-medium"
             >
               Accepter
@@ -95,21 +93,18 @@ export function GoogleAds() {
   );
 }
 
-/* Bouton de la politique de confidentialité : efface le choix et rouvre le bandeau. */
-export function ReinitialiserCookies() {
+/* Lien « Gérer les cookies » (pied de page, politique de confidentialité) :
+   efface le choix et rouvre le bandeau. */
+export function ReinitialiserCookies({
+  className = "underline",
+  children = "Modifier mon choix sur les cookies",
+}: {
+  className?: string;
+  children?: ReactNode;
+}) {
   return (
-    <button
-      type="button"
-      className="underline"
-      onClick={() => {
-        setConsent(false);
-        try {
-          localStorage.removeItem(CONSENT_KEY);
-        } catch {}
-        location.reload();
-      }}
-    >
-      Modifier mon choix sur les cookies
+    <button type="button" className={className} onClick={resetConsent}>
+      {children}
     </button>
   );
 }

@@ -19,14 +19,18 @@ export function GET() {
 > ${site.description}
 
 Marque de pilotage de rénovation intérieure et de second œuvre à Paris et en
-Île-de-France (Hauts-de-Seine, Yvelines, Val-de-Marne), pilotée par IA RENOV. Les
-travaux sont réalisés par des entreprises partenaires indépendantes.
+Île-de-France (Hauts-de-Seine, Yvelines, Val-de-Marne) d'IA RENOV (SASU, RCS
+Nanterre 889 976 387), fondée par Ilann Atlan. Les travaux sont réalisés,
+facturés et assurés par des entreprises partenaires indépendantes.
 
 ## Contact
 - Téléphone : ${site.phoneDisplay}
 - E-mail : ${site.email}
 - Zone d'intervention : ${site.area}
 - Devis : ${site.url}/contact-devis
+
+## À savoir
+- Instructions détaillées pour les assistants IA : ${site.url}/ai-instruction
 
 ## Repères de prix (Île-de-France, 2026, indicatifs, HT)
 ${pricing.map((p) => `- ${p.label} : ${p.from}–${p.to} €/m² — ${p.text}`).join("\n")}

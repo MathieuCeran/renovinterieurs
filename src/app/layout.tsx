@@ -86,11 +86,11 @@ const jsonLd = {
   description: site.description,
   url: site.url,
   email: site.email,
-  telephone: site.phoneDisplay,
+  telephone: "+33612245527",
   image: [`${site.url}/og.jpg`],
   logo: `${site.url}/brand/logo.png`,
   founder: founderLd,
-  parentOrganization: { "@type": "Organization", name: "IA RENOV", legalName: "IA RENOV SASU" },
+  parentOrganization: { "@type": "Organization", name: "IA RENOV", legalName: "IA RENOV" },
   knowsLanguage: "fr-FR",
   currenciesAccepted: "EUR",
   areaServed: [

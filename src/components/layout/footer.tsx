@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+import { ReinitialiserCookies } from "@/components/ui/google-ads";
 import {
   footerInfo,
   footerServices,
@@ -249,10 +250,15 @@ export function Footer() {
             >
               AI instructions
             </Link>
+            <ReinitialiserCookies className="text-muted transition-colors hover:text-ink">
+              Gérer les cookies
+            </ReinitialiserCookies>
             <span className="text-muted">
               Site conçu par{" "}
               <a
                 href="https://ajdstudio.fr/"
+                target="_blank"
+                rel="noopener"
                 className="text-ink/70 underline-offset-4 transition-colors hover:text-ink hover:underline"
               >
                 ajd.studio
