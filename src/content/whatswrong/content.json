@@ -3753,18 +3753,5 @@
    "publishedAt": "2026-10-19T23:03:16.421Z"
   }
  ],
- "redirects": [
-  {
-   "from": "/prix-renovation",
-   "to": "/renovation-appartement-paris"
-  },
-  {
-   "from": "/realisations-renovation",
-   "to": "/"
-  },
-  {
-   "from": "/renovation-appartement-paris",
-   "to": "/outils/estimateur-budget-renovation"
-  }
- ]
+ "redirects": []
 }
