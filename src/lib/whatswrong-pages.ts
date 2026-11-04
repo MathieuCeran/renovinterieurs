@@ -2,7 +2,7 @@ import { permanentRedirect } from "next/navigation";
 import { cache } from "react";
 import { plainText, prepareArticle, type TocEntry } from "@/lib/whatswrong";
 import { wwContent } from "@/lib/whatswrong-content";
-import type { WwChanges } from "@/lib/whatswrong-changes";
+import { wwKey, type WwChanges } from "@/lib/whatswrong-changes";
 
 /* ------------------------------------------------------------------ */
 /*  WhatsWrong : pages du site réécrites par Eli                       */
@@ -20,6 +20,9 @@ export type WwPageVersion = {
   path: string;
   title: string;
   description: string;
+  /** Le titre et la description de la page avant WhatsWrong ; null : inconnus. */
+  baseTitle?: string | null;
+  baseDescription?: string | null;
   html: string;
   /** Texte par texte, posé dans les composants du site ; null : `html`. */
   changes?: WwChanges | null;
@@ -37,14 +40,6 @@ function bare(p: string): string {
   return p.replace(/\/+$/, "") || "/";
 }
 
-/* Fusions enregistrées dans WhatsWrong par erreur : ces pages clés doivent
- * rester en ligne, chaque synchro les réimposerait sinon. */
-const IGNORED_REDIRECTS = new Set([
-  "/renovation-appartement-paris",
-  "/prix-renovation",
-  "/realisations-renovation",
-]);
-
 /* Les pages publiées depuis WhatsWrong, enregistrées dans le dépôt. */
 type Published = {
   pages: WwPageVersion[];
@@ -54,7 +49,7 @@ type Published = {
 const publishedPages = cache(
   async (): Promise<Published> => ({
     pages: wwContent.pages as WwPageVersion[],
-    redirects: wwContent.redirects.filter((r) => !IGNORED_REDIRECTS.has(bare(r.from))),
+    redirects: wwContent.redirects,
   }),
 );
 
@@ -96,6 +91,28 @@ export async function publishedPageVersion(
   if (merged) permanentRedirect(merged.to);
   const version = pages.find((page) => bare(page.path) === bare(p)) ?? null;
   return version && withoutReviews(version);
+}
+
+/* Sans la marque du site, la ponctuation ni la casse. */
+const metaKey = (text: string) =>
+  wwKey(text.replace(/\s*[|–—‒-]\s*RenovInt[eé]rieurs?\s*$/iu, ""));
+
+/**
+ * Le titre ou la description à afficher : celui de WhatsWrong, sauf si le code
+ * du site a changé depuis la publication (il ne correspond plus à ce que la page
+ * portait alors) — le développeur reste maître. Base inconnue : WhatsWrong.
+ */
+export function wwMeta(
+  mine: string | null | undefined,
+  theirs: string | null | undefined,
+  base: string | null | undefined,
+): string | null | undefined {
+  if (!theirs) return mine;
+  if (!mine || !base) return theirs;
+  const own = metaKey(mine);
+  const before = metaKey(base);
+  // Le code peut raccourcir à l'affichage (60 ou 155 signes) : même début.
+  return own.startsWith(before) || before.startsWith(own) ? theirs : mine;
 }
 
 /** Le texte prêt à afficher : sans les blocs communs, assaini, avec son

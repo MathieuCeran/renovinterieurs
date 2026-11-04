@@ -13,8 +13,9 @@ l'enregistre et le sert lui-même, comme un CMS.
 - Une erreur de l'API ou une perte suspecte ne touche jamais les fichiers.
 - Les copies relues de `src/content/whatswrong/articles.json` gardent la priorité
   tant que l'article n'a pas changé dans WhatsWrong depuis (`reviewedAt`).
-- Les fusions listées dans `IGNORED_REDIRECTS` (`src/lib/whatswrong-pages.ts`) sont
-  ignorées : elles ont été enregistrées par erreur dans WhatsWrong.
+- Le code reste maître : si le `title` ou la description d'une page changent dans le
+  code après la publication (`wwMeta`), le site garde les siens. Un texte modifié
+  garde lui aussi la version du code. `content.json` est généré : ne pas l'éditer.
 
 ## Prérequis
 

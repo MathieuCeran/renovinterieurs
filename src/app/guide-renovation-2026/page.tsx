@@ -11,8 +11,7 @@ import { site } from "@/lib/site";
 import {
   preparePageVersion,
   publishedPageVersion,
-  type WwPageVersion,
-} from "@/lib/whatswrong-pages";
+  type WwPageVersion, wwMeta } from "@/lib/whatswrong-pages";
 
 const path = "/guide-renovation-2026";
 const page = getPage(path);
@@ -23,7 +22,10 @@ const DEFAULT_DESCRIPTION =
  * bornée (mêmes règles que `[...slug]`), sinon celle de la page. */
 function descriptionOf(version: WwPageVersion | null): string {
   return version
-    ? clamp(version.description || page?.description || DEFAULT_DESCRIPTION, 155)
+    ? clamp(
+        wwMeta(page?.description, version.description, version.baseDescription) || DEFAULT_DESCRIPTION,
+        155,
+      )
     : (page?.description ?? DEFAULT_DESCRIPTION);
 }
 
@@ -31,7 +33,7 @@ export async function generateMetadata(): Promise<Metadata> {
   // Une version publiée depuis WhatsWrong : son titre et sa description.
   const version = await publishedPageVersion(path);
   const title = version
-    ? clamp(cleanTitle(version.title), 60)
+    ? clamp(cleanTitle(wwMeta(page?.title, version.title, version.baseTitle) ?? version.title), 60)
     : page
       ? cleanTitle(page.title)
       : "Guide gratuit rénovation appartement Paris 2026";

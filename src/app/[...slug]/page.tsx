@@ -22,6 +22,7 @@ import {
 import {
   preparePageVersion,
   publishedPageVersion,
+  wwMeta,
 } from "@/lib/whatswrong-pages";
 import { applyWwChanges, wwText } from "@/lib/whatswrong-changes";
 import { applyHtmlChanges } from "@/lib/whatswrong-html";
@@ -87,9 +88,13 @@ export async function generateMetadata({
   const hero = page.hero ?? visualsFor(path).hero;
   // Une version publiée depuis WhatsWrong : son titre et sa description.
   const version = await publishedPageVersion(path);
-  const title = clamp(cleanTitle(version?.title ?? page.title), 60);
+  // Le code a changé depuis la publication : le développeur reste maître.
+  const title = clamp(
+    cleanTitle(wwMeta(page.title, version?.title, version?.baseTitle) ?? page.title),
+    60,
+  );
   const description = clamp(
-    version?.description ||
+    wwMeta(page.description, version?.description, version?.baseDescription) ||
       page.description ||
       stripInline(page.intro[0] ?? ""),
     155,
@@ -144,7 +149,8 @@ export default async function InnerPage({ params }: PageProps<"/[...slug]">) {
   const parentCrumb = crumbs[crumbs.length - 1];
 
   // Sa description dans les données structurées.
-  const description = version?.description || page.description;
+  const description =
+    wwMeta(page.description, version?.description, version?.baseDescription) || page.description;
   const url = `${site.url}${path}`;
 
   const faqItems = page.sections.flatMap((s) =>

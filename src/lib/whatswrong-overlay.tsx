@@ -10,7 +10,7 @@ import {
 } from "react";
 
 import { wwKey, type WwBlock, type WwChanges } from "@/lib/whatswrong-changes";
-import { publishedPageVersion } from "@/lib/whatswrong-pages";
+import { publishedPageVersion, wwMeta } from "@/lib/whatswrong-pages";
 
 /* ============================================================================
    Les pages écrites à la main (outils, FAQ, contact, réalisations…) avec
@@ -281,14 +281,18 @@ export function withWw<P extends object>(
 export async function wwMetadata(path: string, metadata: Metadata): Promise<Metadata> {
   const version = await publishedPageVersion(path);
   if (version === null) return metadata;
+  const mine = typeof metadata.openGraph?.title === "string" ? metadata.openGraph.title : null;
+  const title = wwMeta(mine, version.title, version.baseTitle);
+  const keepsTitle = mine !== null && title === mine;
+  const description = wwMeta(metadata.description, version.description, version.baseDescription);
   return {
     ...metadata,
-    title: version.title ? pageTitle(version.title) : metadata.title,
-    description: version.description || metadata.description,
+    title: !keepsTitle && title ? pageTitle(title) : metadata.title,
+    description: description ?? metadata.description,
     openGraph: metadata.openGraph && {
       ...metadata.openGraph,
-      title: version.title || metadata.openGraph.title,
-      description: version.description || metadata.openGraph.description,
+      title: title || metadata.openGraph.title,
+      description: description || metadata.openGraph.description,
     },
   };
 }
