@@ -1,0 +1,44 @@
+name: WhatsWrong sync
+
+# WhatsWrong crée le contenu ; cette tâche l'enregistre dans le dépôt, et le site
+# le sert lui-même. Toutes les 3 h, ou tout de suite : Actions › Run workflow.
+on:
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/whatswrong-sync.yml
+      - scripts/whatswrong-sync.mjs
+
+concurrency:
+  group: whatswrong-sync
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+      - run: node scripts/whatswrong-sync.mjs
+        env:
+          WW_API_KEY: ${{ secrets.WW_API_KEY }}
+          WW_BLOG_BASE: https://www.renovinterieurs.fr/conseils
+          WW_CONTENT_FILE: src/content/whatswrong/content.json
+      - run: |
+          mkdir -p public/whatswrong
+          git add src/content/whatswrong public/whatswrong
+          git diff --cached --quiet && exit 0
+          git config user.name "whatswrong-sync[bot]"
+          git config user.email "whatswrong-sync[bot]@users.noreply.github.com"
+          git commit -m "content: contenu WhatsWrong mis à jour"
+          git pull --rebase
+          git push
