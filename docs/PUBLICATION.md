@@ -1,26 +1,25 @@
 # Publication WhatsWrong (articles et pages)
 
-Depuis le 19/10/2026, le site **lit WhatsWrong en direct**, au rendu, avec un
-cache d'une minute. Plus de synchronisation GitHub ni de redéploiement :
+Depuis le 04/11/2026, WhatsWrong ne sert qu'à **créer** le contenu : le site
+l'enregistre et le sert lui-même, comme un CMS.
 
-- **Articles de Léa** (`/conseils/<slug>`) : `src/lib/whatswrong.ts` lit
-  `GET /api/v1/lea/blog?base=https://www.renovinterieurs.fr/conseils`. Un
-  article prêt est en ligne au plus une minute après. WhatsWrong vérifie
-  lui-même qu'il répond à son adresse et le passe « publié » (c'est ce qui
-  démarre son suivi SEO) : le site n'a rien à renvoyer.
-- **Pages réécrites par Eli** : `src/lib/whatswrong-pages.ts` lit
-  `GET /api/v1/eli/pages` ; les changements sont posés texte par texte dans
-  les données de la page (`src/lib/whatswrong-changes.ts`), le design ne
-  bouge pas.
-
-Si l'API ne répond pas en 2 secondes : les articles copiés avant le
-19/10 (`src/content/whatswrong/articles.json`, `public/uploads/whatswrong/`)
-restent affichés, et les pages gardent leur propre texte.
+- L'Action `.github/workflows/whatswrong-sync.yml` (toutes les 3 h, ou Actions ›
+  Run workflow) lance `scripts/whatswrong-sync.mjs`, qui lit `GET /api/v1/sync`
+  et écrit `src/content/whatswrong/content.json` et `public/whatswrong/` (les
+  images), puis commite si quelque chose a changé. Le commit déclenche le déploiement.
+- Le site ne lit que ces fichiers (`src/lib/whatswrong-content.ts`). Il n'appelle
+  jamais WhatsWrong pour s'afficher : si le service ou le compte s'arrête, rien ne
+  bouge.
+- Une erreur de l'API ou une perte suspecte ne touche jamais les fichiers.
+- Les copies relues de `src/content/whatswrong/articles.json` gardent la priorité
+  tant que l'article n'a pas changé dans WhatsWrong depuis (`reviewedAt`).
+- Les fusions listées dans `IGNORED_REDIRECTS` (`src/lib/whatswrong-pages.ts`) sont
+  ignorées : elles ont été enregistrées par erreur dans WhatsWrong.
 
 ## Prérequis
 
-- Variable d'environnement **`WW_API_KEY`** sur Vercel (production).
-- Facultatif : `WW_API_BASE` pour viser un autre WhatsWrong (tests locaux).
+- Secret **`WW_API_KEY`** dans le dépôt GitHub (Settings › Secrets and variables ›
+  Actions). La clé n'est plus lue sur Vercel.
 
 ## Points d'attention
 
@@ -28,5 +27,5 @@ restent affichés, et les pages gardent leur propre texte.
   (`src/content/pages/conseils__<slug>.json`) reste masqué : le guide passe
   d'abord.
 - Le HTML des articles est assaini à l'affichage (`cleanBody`).
-- Les images des nouveaux articles sont servies par WhatsWrong, affichées
-  telles quelles (sans optimisation d'images Vercel, facturée à l'image).
+- Les images sont servies depuis `public/whatswrong/`, affichées telles quelles
+  (sans optimisation d'images Vercel, facturée à l'image).

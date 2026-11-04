@@ -4,14 +4,16 @@ import path from "node:path";
 
 import sanitizeHtml from "sanitize-html";
 
+import { wwContent } from "@/lib/whatswrong-content";
+
 /* ------------------------------------------------------------------ */
 /*  WhatsWrong : articles SEO rédigés par Léa                          */
 /*                                                                     */
-/*  Le site lit ses articles en direct sur l'API de WhatsWrong au      */
-/*  rendu : un article prêt est en ligne au plus une minute après, et  */
-/*  WhatsWrong confirme lui-même sa publication. Les articles copiés   */
-/*  avant (src/content/whatswrong/articles.json, public/uploads/...)   */
-/*  restent le secours si l'API ne répond pas.                         */
+/*  Le site lit ses articles dans whatswrong-content, écrit par        */
+/*  l'Action : ils sont en ligne au déploiement qui suit, et WhatsWrong */
+/*  confirme lui-même leur publication. Les copies relues               */
+/*  (src/content/whatswrong/articles.json) gardent la priorité tant     */
+/*  que l'article n'a pas changé depuis.                                */
 /* ------------------------------------------------------------------ */
 
 export type WwArticle = {
@@ -45,16 +47,7 @@ export function wwPath(a: WwArticle): string {
   return `/conseils/${a.slug}`;
 }
 
-// Le blog sur WhatsWrong : un article prêt y est en ligne au plus une
-// minute après, sans synchronisation ni redéploiement.
-const BLOG_BASE = "https://www.renovinterieurs.fr/conseils";
-const API_BASE = process.env.WW_API_BASE || "https://www.whatswrong.io";
-const REVALIDATE_SECONDS = 60;
-// Au-delà, le site n'attend pas : il affiche les copies du dépôt.
-const TIMEOUT_MS = 2000;
-
-/** Les copies gardées dans le dépôt (articles importés avant la lecture
- *  directe) : le secours quand WhatsWrong ne répond pas. */
+/** Les copies relues gardées dans le dépôt. */
 function storedArticles(): WwArticle[] {
   try {
     return JSON.parse(fs.readFileSync(ARTICLES_FILE, "utf8")) as WwArticle[];
@@ -75,40 +68,16 @@ type LiveArticle = {
   lastModifiedAt: string;
 };
 
-/* Les articles lus en direct sur WhatsWrong (en ligne et prêts à leur
- * date) ; null si la clé manque ou si l'API ne répond pas. En donnant
- * l'adresse du blog, WhatsWrong vérifie qu'un nouvel article est en ligne
- * et lance son suivi : le site n'a rien à lui renvoyer. */
-async function liveArticlesUncached(): Promise<LiveArticle[] | null> {
-  const key = process.env.WW_API_KEY || process.env.WHATSWRONG_API_KEY;
-  if (!key) return null;
-  try {
-    const res = await fetch(
-      `${API_BASE}/api/v1/lea/blog?base=${encodeURIComponent(BLOG_BASE)}`,
-      {
-        headers: { Authorization: `Bearer ${key}` },
-        next: { revalidate: REVALIDATE_SECONDS },
-        signal: AbortSignal.timeout(TIMEOUT_MS),
-      },
-    );
-    if (!res.ok) return null;
-    const data = (await res.json()) as { articles?: LiveArticle[] };
-    return Array.isArray(data.articles) ? data.articles : null;
-  } catch {
-    return null;
-  }
-}
+/* Les articles enregistrés dans le dépôt par l'Action. WhatsWrong vérifie
+ * lui-même qu'un nouvel article est en ligne et lance son suivi. */
+const liveArticles = cache(
+  async (): Promise<LiveArticle[]> => wwContent.articles as LiveArticle[],
+);
 
-/* Une lecture par rendu : les métadonnées et la page voient la même
- * réponse (sinon titre et contenu peuvent diverger si l'une expire). */
-const liveArticles = cache(liveArticlesUncached);
-
-/** Tous les articles en ligne : ceux de WhatsWrong en direct (avec la
- *  couverture de leur copie, s'il y en a une), sinon les copies du dépôt. */
+/** Tous les articles en ligne (avec la couverture de leur copie, s'il y en a une). */
 export async function publishedArticles(): Promise<WwArticle[]> {
   const stored = storedArticles();
   const live = await liveArticles();
-  if (live === null) return stored;
   const byId = new Map(stored.map((a) => [a.id, a]));
   return live.map((a) => {
     const copy = byId.get(a.id);

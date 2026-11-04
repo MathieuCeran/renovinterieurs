@@ -1,15 +1,15 @@
 import { permanentRedirect } from "next/navigation";
 import { cache } from "react";
 import { plainText, prepareArticle, type TocEntry } from "@/lib/whatswrong";
+import { wwContent } from "@/lib/whatswrong-content";
 import type { WwChanges } from "@/lib/whatswrong-changes";
 
 /* ------------------------------------------------------------------ */
 /*  WhatsWrong : pages du site réécrites par Eli                       */
 /*                                                                     */
-/*  Quand une page est publiée depuis WhatsWrong (« Publier sur mon    */
-/*  site »), le site la lit en direct sur l'API au rendu : elle est    */
-/*  en ligne au plus une minute après, sans synchro ni redéploiement.  */
-/*  Si l'API ne répond pas, la page garde son propre texte.            */
+/*  Une page publiée depuis WhatsWrong (« Publier sur mon site ») est   */
+/*  enregistrée dans le dépôt par l'Action (whatswrong-content) : elle  */
+/*  est en ligne au déploiement qui suit.                               */
 /*  La page garde son en-tête, ses visuels, ses formulaires et ses     */
 /*  appels à l'action ; son titre, sa description et son texte         */
 /*  viennent de WhatsWrong. Sans version publiée, rien ne change.      */
@@ -26,12 +26,6 @@ export type WwPageVersion = {
   publishedAt: string;
 };
 
-// Une page publiée s'affiche au plus une minute après : une lecture
-// partagée par toutes les pages (cache de données de Next).
-const REVALIDATE_SECONDS = 60;
-// Au-delà, le site n'attend pas : il affiche son propre texte.
-const TIMEOUT_MS = 2000;
-
 /* Les blocs communs à toutes les pages (Commitments, Cta) : la page les
  * affiche déjà, leur texte repris dans la version WhatsWrong ferait
  * doublon. */
@@ -43,38 +37,26 @@ function bare(p: string): string {
   return p.replace(/\/+$/, "") || "/";
 }
 
-/* Les pages publiées depuis WhatsWrong, lues sur l'API ; rien si la clé
- * manque ou si l'API ne répond pas. */
+/* Fusions enregistrées dans WhatsWrong par erreur : ces pages clés doivent
+ * rester en ligne, chaque synchro les réimposerait sinon. */
+const IGNORED_REDIRECTS = new Set([
+  "/renovation-appartement-paris",
+  "/prix-renovation",
+  "/realisations-renovation",
+]);
+
+/* Les pages publiées depuis WhatsWrong, enregistrées dans le dépôt. */
 type Published = {
   pages: WwPageVersion[];
   redirects: { from: string; to: string }[];
 };
 
-const NONE: Published = { pages: [], redirects: [] };
-
-async function publishedPagesUncached(): Promise<Published> {
-  const key = process.env.WW_API_KEY || process.env.WHATSWRONG_API_KEY;
-  if (!key) return NONE;
-  try {
-    const res = await fetch(`${process.env.WW_API_BASE || "https://www.whatswrong.io"}/api/v1/eli/pages`, {
-      headers: { Authorization: `Bearer ${key}` },
-      next: { revalidate: REVALIDATE_SECONDS },
-      signal: AbortSignal.timeout(TIMEOUT_MS),
-    });
-    if (!res.ok) return NONE;
-    const data = (await res.json()) as Partial<Published>;
-    return {
-      pages: Array.isArray(data.pages) ? data.pages : [],
-      redirects: Array.isArray(data.redirects) ? data.redirects : [],
-    };
-  } catch {
-    return NONE;
-  }
-}
-
-/* Une lecture par rendu : les métadonnées et la page voient la même
- * réponse (sinon titre et contenu peuvent diverger si l'une expire). */
-const publishedPages = cache(publishedPagesUncached);
+const publishedPages = cache(
+  async (): Promise<Published> => ({
+    pages: wwContent.pages as WwPageVersion[],
+    redirects: wwContent.redirects.filter((r) => !IGNORED_REDIRECTS.has(bare(r.from))),
+  }),
+);
 
 /** Adresses fusionnées dans une autre depuis WhatsWrong : elles redirigent, le plan du site les omet. */
 export async function mergedPaths(): Promise<Set<string>> {
