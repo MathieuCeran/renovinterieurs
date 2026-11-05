@@ -14,7 +14,8 @@
    "faq": null,
    "publishedAt": "2026-10-04T08:56:55.614Z",
    "lastModifiedAt": "2026-10-04T09:02:18.566Z",
-   "state": "PUBLISHED"
+   "state": "PUBLISHED",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983"
   },
   {
    "id": "13906334-4e41-4dad-ae98-7242b6caa193",
@@ -44,7 +45,8 @@
    },
    "publishedAt": "2026-10-08T08:00:00.000Z",
    "lastModifiedAt": "2026-10-08T15:37:58.205Z",
-   "state": "PUBLISHED"
+   "state": "PUBLISHED",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983"
   },
   {
    "id": "1e47f6d9-e18c-412c-b6ee-fa426d749721",
@@ -66,7 +68,8 @@
    },
    "publishedAt": "2026-10-15T17:54:11.792Z",
    "lastModifiedAt": "2026-10-15T18:18:57.349Z",
-   "state": "PUBLISHED"
+   "state": "PUBLISHED",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983"
   },
   {
    "id": "28129ea7-490f-4dfc-84f8-18d0d1367b1e",
@@ -95,8 +98,9 @@
     ]
    },
    "publishedAt": "2026-11-05T08:00:00.000Z",
-   "lastModifiedAt": "2026-11-03T08:09:55.773Z",
-   "state": "DRAFT"
+   "lastModifiedAt": "2026-11-05T11:12:46.754Z",
+   "state": "PUBLISHED",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983"
   },
   {
    "id": "5c321364-5513-4db1-8db3-6970a362f777",
@@ -126,7 +130,8 @@
    },
    "publishedAt": "2026-10-04T08:00:00.000Z",
    "lastModifiedAt": "2026-10-04T08:47:32.036Z",
-   "state": "PUBLISHED"
+   "state": "PUBLISHED",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983"
   },
   {
    "id": "a3ebaa65-2602-4324-9ecf-203f85728e4c",
@@ -156,7 +161,8 @@
    },
    "publishedAt": "2026-10-15T08:00:00.000Z",
    "lastModifiedAt": "2026-10-15T13:27:27.205Z",
-   "state": "PUBLISHED"
+   "state": "PUBLISHED",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983"
   },
   {
    "id": "ba5e1388-5191-4311-b245-32bf02ef4cc9",
@@ -186,7 +192,8 @@
    },
    "publishedAt": "2026-10-20T08:00:00.000Z",
    "lastModifiedAt": "2026-10-20T08:09:05.128Z",
-   "state": "PUBLISHED"
+   "state": "PUBLISHED",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983"
   },
   {
    "id": "bb461726-3f82-40cc-bb01-c6b24bce83c6",
@@ -200,7 +207,8 @@
    "faq": null,
    "publishedAt": "2026-10-06T08:00:00.000Z",
    "lastModifiedAt": "2026-10-06T15:12:59.273Z",
-   "state": "PUBLISHED"
+   "state": "PUBLISHED",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983"
   },
   {
    "id": "dd0423cb-b886-43d1-9b5e-29794ef8c67e",
@@ -226,7 +234,8 @@
    },
    "publishedAt": "2026-10-13T08:00:00.000Z",
    "lastModifiedAt": "2026-10-13T11:49:11.359Z",
-   "state": "PUBLISHED"
+   "state": "PUBLISHED",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983"
   },
   {
    "id": "f3a333ec-38f4-4007-96ff-937e772fb1d5",
@@ -256,7 +265,8 @@
    },
    "publishedAt": "2026-11-03T08:00:00.000Z",
    "lastModifiedAt": "2026-11-03T08:07:58.366Z",
-   "state": "PUBLISHED"
+   "state": "PUBLISHED",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983"
   },
   {
    "id": "f6a57687-97eb-4be9-8b16-cbc365548c63",
@@ -286,12 +296,14 @@
    },
    "publishedAt": "2026-10-23T08:00:00.000Z",
    "lastModifiedAt": "2026-10-23T08:03:22.606Z",
-   "state": "PUBLISHED"
+   "state": "PUBLISHED",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983"
   }
  ],
  "pages": [
   {
    "id": "bd0f22e5-4627-4331-8e53-77511d2ebb9b",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/",
    "url": "https://renovinterieurs.fr/",
    "title": "Rénovation intérieure Paris & IDF : devis 48 h",
@@ -459,6 +471,7 @@
   },
   {
    "id": "1fcf778b-2cf6-40fb-9958-17a4c8c17258",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/beton-cire-paris",
    "url": "https://renovinterieurs.fr/beton-cire-paris",
    "title": "Pose béton ciré Paris : sols, murs, douches sans joint",
@@ -566,6 +579,7 @@
   },
   {
    "id": "3753c9ac-41fb-48ec-9d17-786a8638ce1a",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/conseils/beton-cire-texture",
    "url": "https://renovinterieurs.fr/conseils/beton-cire-texture",
    "title": "Béton ciré texture : rendu lisse, épaisseur et entretien",
@@ -693,6 +707,7 @@
   },
   {
    "id": "e63927be-7397-4345-8b5e-6313a98a442c",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/conseils/bibliotheque-sur-mesure",
    "url": "https://renovinterieurs.fr/conseils/bibliotheque-sur-mesure",
    "title": "Blog rénovation : conseils, prix et guides à Paris |",
@@ -862,6 +877,7 @@
   },
   {
    "id": "a591eafa-c382-497d-97b9-6a490895ece6",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/conseils/entreprise-renovation-paris",
    "url": "https://renovinterieurs.fr/conseils/entreprise-renovation-paris",
    "title": "Entreprise de rénovation Paris : devis sous 48 h en 2026",
@@ -984,6 +1000,7 @@
   },
   {
    "id": "09d96a27-cbfc-4efd-a4f5-3e2b9679ec68",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/conseils/idee-renovation-salle-bain",
    "url": "https://renovinterieurs.fr/conseils/idee-renovation-salle-bain",
    "title": "Idée rénovation salle de bain dès 800 € | RenovIntérieurs",
@@ -1103,6 +1120,7 @@
   },
   {
    "id": "9ea3b363-fc52-47e1-89e0-fee3f7773477",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/conseils/joint-epoxy",
    "url": "https://renovinterieurs.fr/conseils/joint-epoxy",
    "title": "Joint époxy à Paris : pose, prix et devis sous 48 h",
@@ -1215,6 +1233,7 @@
   },
   {
    "id": "aae4dd00-8352-4105-bb9c-89b7e0e58887",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/conseils/ouvrir-mur-creer-escalier-immeuble-ancien",
    "url": "https://renovinterieurs.fr/conseils/ouvrir-mur-creer-escalier-immeuble-ancien",
    "title": "Ouvrir un mur ou créer un escalier dans un immeuble ancien",
@@ -1314,6 +1333,7 @@
   },
   {
    "id": "2953e07c-4020-4340-aab6-ffcd2af41618",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/conseils/pv-reception-de-travaux",
    "url": "https://renovinterieurs.fr/conseils/pv-reception-de-travaux",
    "title": "PV réception de travaux : activer vos garanties en 2026",
@@ -1481,6 +1501,7 @@
   },
   {
    "id": "3c2f0b39-4b13-4ee9-a311-cc323d49ee18",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/conseils/renovation-salle-de-bain-complete",
    "url": "https://renovinterieurs.fr/conseils/renovation-salle-de-bain-complete",
    "title": "Rénovation salle de bain complète : étapes, prix, délais",
@@ -1662,6 +1683,7 @@
   },
   {
    "id": "22d5948c-9392-4b21-888f-188b28bec803",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/conseils/sortir-passoire-energetique-dpe-f-g",
    "url": "https://renovinterieurs.fr/conseils/sortir-passoire-energetique-dpe-f-g",
    "title": "Comment sortir d’une passoire énergétique (DPE F ou G)",
@@ -1789,6 +1811,7 @@
   },
   {
    "id": "aad5e16e-132b-41b3-9d45-d401009401ec",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/conseils/verriere-interieure",
    "url": "https://renovinterieurs.fr/conseils/verriere-interieure",
    "title": "Verrière intérieure : guide et conseils | RenovIntérieurs",
@@ -1993,6 +2016,7 @@
   },
   {
    "id": "b31ebe1d-dd3d-4f0f-8429-e8d7a4ceecc7",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/cuisine-sur-mesure-paris",
    "url": "https://renovinterieurs.fr/cuisine-sur-mesure-paris",
    "title": "Conception cuisine sur mesure Paris | RenovIntérieurs",
@@ -2147,6 +2171,7 @@
   },
   {
    "id": "b511ad54-654d-4ada-9aa1-9ae8516ed278",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/depannage",
    "url": "https://renovinterieurs.fr/depannage",
    "title": "Dépannage plomberie et électricité à Paris et IDF",
@@ -2276,6 +2301,7 @@
   },
   {
    "id": "bcdfa6ca-44ec-4a41-bd1d-2015bf47868e",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/isolation-amelioration-energetique",
    "url": "https://renovinterieurs.fr/isolation-amelioration-energetique",
    "title": "Isolation et sortie de passoire DPE F/G en Île-de-France",
@@ -2383,6 +2409,7 @@
   },
   {
    "id": "a8133631-cfc2-4b60-9a74-538b64ed90f7",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/methode",
    "url": "https://renovinterieurs.fr/methode",
    "title": "Notre méthode de rénovation en 5 étapes  RenovIntérieurs",
@@ -2495,6 +2522,7 @@
   },
   {
    "id": "e57b2ebe-b779-40c6-96a5-452d4c8a8f5f",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/outils",
    "url": "https://renovinterieurs.fr/outils",
    "title": "Outils gratuits pour préparer votre rénovation à Paris",
@@ -2599,6 +2627,7 @@
   },
   {
    "id": "e0ff26ac-7a0f-4fd5-b44b-49b1a8449761",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/outils/estimateur-budget-renovation",
    "url": "https://renovinterieurs.fr/outils/estimateur-budget-renovation",
    "title": "Devis rénovation appartement Paris : budget estimé au m²",
@@ -2708,6 +2737,7 @@
   },
   {
    "id": "a20c2d8d-494a-4eb6-bba3-459d8c36ce68",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/outils/planning-travaux-renovation",
    "url": "https://renovinterieurs.fr/outils/planning-travaux-renovation",
    "title": "Planning de travaux : durée estimée semaine par semaine",
@@ -2825,6 +2855,7 @@
   },
   {
    "id": "413b8ab7-95e7-4975-a839-e3cf1baac96e",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/outils/simulateur-dpe-passoire-energetique",
    "url": "https://renovinterieurs.fr/outils/simulateur-dpe-passoire-energetique",
    "title": "Simulateur DPE : gagner des classes | RenovIntérieurs",
@@ -2961,6 +2992,7 @@
   },
   {
    "id": "1957b3bb-eda4-41ee-a451-b44415a08e7f",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/prix-renovation",
    "url": "https://renovinterieurs.fr/prix-renovation",
    "title": "Prix rénovation au m² Paris 2026 : grille et tarifs",
@@ -3113,6 +3145,7 @@
   },
   {
    "id": "281c1944-e1a2-49b0-b595-5e097e22b301",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/renovation-appartement-paris",
    "url": "https://renovinterieurs.fr/renovation-appartement-paris",
    "title": "Devis rénovation appartement Paris sous 48 h |",
@@ -3283,6 +3316,7 @@
   },
   {
    "id": "f058ebb7-6704-46e6-a1cf-cd6809f8781f",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/renovation-gros-oeuvre-surelevation-extension-idf",
    "url": "https://renovinterieurs.fr/renovation-gros-oeuvre-surelevation-extension-idf",
    "title": "Gros œuvre, surélévation et extension en Île-de-France",
@@ -3390,6 +3424,7 @@
   },
   {
    "id": "3a227d3b-9f69-4eb9-8c8e-1628550c6acb",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/renovation-val-de-marne-94",
    "url": "https://renovinterieurs.fr/renovation-val-de-marne-94",
    "title": "Rénovation maison Val-de-Marne : devis sous 48 h",
@@ -3442,6 +3477,7 @@
   },
   {
    "id": "7d557b93-73ab-4492-9623-7eae313f80ec",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/renovation-yvelines-78",
    "url": "https://renovinterieurs.fr/renovation-yvelines-78",
    "title": "Rénovation maison Yvelines (78) : devis sous 48 h",
@@ -3592,6 +3628,7 @@
   },
   {
    "id": "b67f7389-c186-4a15-b02a-8f2435412a96",
+   "siteId": "0d7792b7-7f8b-4b7c-9fa5-b7a0a6dd3983",
    "path": "/zones",
    "url": "https://renovinterieurs.fr/zones",
    "title": "Zones d’intervention : Paris, 92, 78 et 94 | RenovIntérieurs",
