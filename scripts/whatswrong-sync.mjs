@@ -16,6 +16,8 @@
  *   WW_CONTENT_FILE        default whatswrong/content.json
  *   WW_IMAGES_DIR          default public/whatswrong
  *   WW_IMAGES_URL          default /whatswrong
+ *   WW_PAGES_ONLY          1: the pages and redirects only (the blog lives elsewhere)
+ *   WW_ALLOW_LOSS          1: accept a list that empties (see refuseSuspiciousLoss)
  */
 import { createHash } from 'node:crypto'
 import fs from 'node:fs/promises'
@@ -49,6 +51,13 @@ function keepCopy(reason) {
   process.exit(0)
 }
 
+/* The same, but it will not fix itself: green, with a warning on the run. Leaving
+ * WhatsWrong ends here too, and must never turn into a failure every hour. */
+function keepCopyWithWarning(reason) {
+  console.log(`::warning title=WhatsWrong sync::${reason} Your content is safe. If you left WhatsWrong, delete this job.`)
+  keepCopy(reason)
+}
+
 async function readSaved() {
   try {
     return JSON.parse(await fs.readFile(FILE, 'utf8'))
@@ -64,6 +73,9 @@ async function fetchContent() {
       headers: { Authorization: `Bearer ${KEY}` },
       signal: AbortSignal.timeout(API_TIMEOUT_MS),
     })
+    if (response.status >= 400 && response.status < 500 && response.status !== 429) {
+      keepCopyWithWarning(`the API refused the request (${response.status}): new content will not arrive.`)
+    }
     if (!response.ok) {
       keepCopy(`the API answered ${response.status}.`)
     }
@@ -81,21 +93,23 @@ async function fetchContent() {
   }
 }
 
-const countItems = (saved) => saved.articles.length + saved.pages.length
-
-/* One article removed on purpose follows through; a list that empties or
- * loses more than half of what it held is treated as a problem. */
+/* A removal on purpose follows through. A list of at least 5 items that loses
+ * everything is treated as a problem: the job fails and says what to do, so it
+ * is never silently stuck. Checked list by list. */
 function refuseSuspiciousLoss(previous, next) {
-  if (previous === null) {
+  if (previous === null || process.env.WW_ALLOW_LOSS === '1') {
     return
   }
-  const before = countItems(previous)
-  const after = countItems(next)
-  if (before > 0 && after === 0) {
-    keepCopy(`the API returned nothing while the site holds ${before} items.`)
-  }
-  if (before >= 4 && after < before / 2) {
-    keepCopy(`the API returned ${after} items while the site holds ${before}.`)
+  const lists = process.env.WW_PAGES_ONLY === '1' ? ['pages', 'redirects'] : ['articles', 'pages', 'redirects']
+  for (const list of lists) {
+    const before = previous[list]?.length ?? 0
+    if (before >= 5 && next[list].length === 0) {
+      console.error(
+        `Content kept: the API returned no ${list} while the site holds ${before}. ` +
+          'If you removed them on purpose, run the job once with WW_ALLOW_LOSS=1.',
+      )
+      process.exit(1)
+    }
   }
 }
 
@@ -120,7 +134,8 @@ function imageUrls(text, domain) {
       }
     }
   }
-  return [...found]
+  // Longest first: replacing an address must not touch a longer one it starts.
+  return [...found].sort((a, b) => b.length - a.length)
 }
 
 async function existingImage(hash) {
@@ -158,6 +173,9 @@ async function copyImage(url) {
   }
 }
 
+// Only what this script wrote: the folder may hold other files.
+const OWN_IMAGE = /^[0-9a-f]{20}\.(?:jpg|png|webp|avif|gif)$/
+
 /* Same content, same file: the job only commits when something changed. */
 function stable(content) {
   const byKey = (key) => (a, b) => String(a[key]).localeCompare(String(b[key]))
@@ -178,16 +196,19 @@ async function removeUnusedImages(used) {
   const names = await fs.readdir(IMAGES_DIR).catch(() => [])
   await Promise.all(
     names
-      .filter((name) => !used.has(name))
+      .filter((name) => OWN_IMAGE.test(name) && !used.has(name))
       .map((name) => fs.rm(path.join(IMAGES_DIR, name), { force: true })),
   )
 }
 
 if (!KEY) {
-  keepCopy('WW_API_KEY is not set.')
+  keepCopyWithWarning('WW_API_KEY is not set: new content will not arrive.')
 }
 
 const content = await fetchContent()
+if (process.env.WW_PAGES_ONLY === '1') {
+  content.articles = []
+}
 refuseSuspiciousLoss(await readSaved(), content)
 
 let text = stable(content)
