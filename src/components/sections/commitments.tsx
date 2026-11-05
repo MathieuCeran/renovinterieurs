@@ -7,12 +7,12 @@ const commitments = [
   {
     n: "01",
     title: "Devis détaillé sous 48 h",
-    text: "Visite technique sous 5 jours, chiffrage poste par poste et planning prévisionnel remis avec le devis.",
+    text: "Après une visite technique sous 5 jours : chiffrage poste par poste et planning prévisionnel remis avec le devis.",
   },
   {
     n: "02",
     title: "Un interlocuteur unique",
-    text: "Un seul contact du diagnostic à la remise des clés, compte-rendu hebdomadaire, aucune sous-traitance opaque.",
+    text: "Jusqu’à la remise des clés, un seul contact depuis le diagnostic, compte-rendu hebdomadaire, aucune sous-traitance opaque.",
   },
   {
     n: "03",
