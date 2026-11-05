@@ -113,6 +113,31 @@ function refuseSuspiciousLoss(previous, next) {
   }
 }
 
+/* A language deleted from WhatsWrong leaves its content on the site: only what
+ * belongs to an active language follows WhatsWrong. Nothing of the kind before
+ * the API sends its active languages. */
+function keepDeletedLanguages(previous, next) {
+  if (previous === null || !Array.isArray(next.sites)) {
+    return
+  }
+  const active = new Set(next.sites)
+  const keys = {
+    articles: (article) => article.url ?? article.id,
+    pages: (page) => page.path,
+    redirects: (redirect) => redirect.from,
+  }
+  for (const [list, key] of Object.entries(keys)) {
+    if (list === 'articles' && process.env.WW_PAGES_ONLY === '1') {
+      continue
+    }
+    const taken = new Set(next[list].map(key))
+    const kept = (previous[list] ?? []).filter(
+      (item) => item.siteId && !active.has(item.siteId) && !taken.has(key(item)),
+    )
+    next[list].push(...kept)
+  }
+}
+
 /* Every image address of the content on another host than the site. */
 function imageUrls(text, domain) {
   const found = new Set()
@@ -209,7 +234,9 @@ const content = await fetchContent()
 if (process.env.WW_PAGES_ONLY === '1') {
   content.articles = []
 }
-refuseSuspiciousLoss(await readSaved(), content)
+const saved = await readSaved()
+keepDeletedLanguages(saved, content)
+refuseSuspiciousLoss(saved, content)
 
 let text = stable(content)
 const used = new Set()
@@ -219,6 +246,11 @@ for (const url of imageUrls(text, content.domain ?? '')) {
     used.add(name)
     text = text.replaceAll(url, `${IMAGES_URL}/${name}`)
   }
+}
+
+// The images of a deleted language are already local: they stay too.
+for (const [, name] of text.matchAll(/\/([0-9a-f]{20}\.(?:jpg|png|webp|avif|gif))\b/g)) {
+  used.add(name)
 }
 
 // Written whole, then swapped: a crash never leaves half a file.
