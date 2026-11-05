@@ -18,6 +18,7 @@
  *   WW_IMAGES_URL          default /whatswrong
  *   WW_PAGES_ONLY          1: the pages and redirects only (the blog lives elsewhere)
  *   WW_ALLOW_LOSS          1: accept a list that empties (see refuseSuspiciousLoss)
+ *                          and drop what a deleted language left on the site
  */
 import { createHash } from 'node:crypto'
 import fs from 'node:fs/promises'
@@ -117,20 +118,25 @@ function refuseSuspiciousLoss(previous, next) {
  * belongs to an active language follows WhatsWrong. Nothing of the kind before
  * the API sends its active languages. */
 function keepDeletedLanguages(previous, next) {
-  if (previous === null || !Array.isArray(next.sites)) {
+  if (previous === null || !Array.isArray(next.sites) || process.env.WW_ALLOW_LOSS === '1') {
     return
   }
   const active = new Set(next.sites)
+  const bare = (path) => path.replace(/\/+$/, '') || '/'
   const keys = {
     articles: (article) => article.url ?? article.id,
-    pages: (page) => page.path,
-    redirects: (redirect) => redirect.from,
+    pages: (page) => bare(page.path),
+    redirects: (redirect) => bare(redirect.from),
   }
   for (const [list, key] of Object.entries(keys)) {
     if (list === 'articles' && process.env.WW_PAGES_ONLY === '1') {
       continue
     }
-    const taken = new Set(next[list].map(key))
+    // A page online wins over an old redirect at the same address.
+    const taken = new Set([
+      ...next[list].map(key),
+      ...(list === 'redirects' ? next.pages.map(keys.pages) : []),
+    ])
     const kept = (previous[list] ?? []).filter(
       (item) => item.siteId && !active.has(item.siteId) && !taken.has(key(item)),
     )
@@ -180,12 +186,14 @@ async function copyImage(url) {
     const type = (response.headers.get('content-type') ?? '').split(';')[0].trim()
     const extension = EXTENSIONS[type]
     if (!response.ok || extension === undefined) {
-      console.log(`Image not copied (${response.status}, ${type}): ${url}`)
+      // SVG stays on its address on purpose; anything else still depends on it.
+      const log = type === 'image/svg+xml' ? '' : '::warning title=WhatsWrong sync::'
+      console.log(`${log}Image not copied (${response.status}, ${type}): ${url}`)
       return null
     }
     const bytes = Buffer.from(await response.arrayBuffer())
     if (bytes.length > MAX_IMAGE_BYTES) {
-      console.log(`Image too large, not copied: ${url}`)
+      console.log(`::warning title=WhatsWrong sync::Image too large, not copied: ${url}`)
       return null
     }
     await fs.mkdir(IMAGES_DIR, { recursive: true })
@@ -193,7 +201,7 @@ async function copyImage(url) {
     await fs.writeFile(path.join(IMAGES_DIR, name), bytes)
     return name
   } catch (error) {
-    console.log(`Image not copied (${error.message}): ${url}`)
+    console.log(`::warning title=WhatsWrong sync::Image not copied (${error.message}): ${url}`)
     return null
   }
 }
@@ -235,8 +243,9 @@ if (process.env.WW_PAGES_ONLY === '1') {
   content.articles = []
 }
 const saved = await readSaved()
-keepDeletedLanguages(saved, content)
+// On what the API really answered: kept items must not hide an empty answer.
 refuseSuspiciousLoss(saved, content)
+keepDeletedLanguages(saved, content)
 
 let text = stable(content)
 const used = new Set()
@@ -244,7 +253,9 @@ for (const url of imageUrls(text, content.domain ?? '')) {
   const name = await copyImage(url)
   if (name !== null) {
     used.add(name)
-    text = text.replaceAll(url, `${IMAGES_URL}/${name}`)
+    // The whole address only: a longer one that could not be copied stays intact.
+    const whole = new RegExp(`${url.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?=["'\\\\\\s<>)])`, 'g')
+    text = text.replace(whole, `${IMAGES_URL}/${name}`)
   }
 }
 
